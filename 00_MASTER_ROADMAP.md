@@ -64,9 +64,9 @@ German Grade = ((10 - 7.5) / (10 - 4)) × 3 + 1 = 2.25 ("Gut" / Good) ✅
 | **Winter 2028** | **Jul 2028** | **~24-27 months** | **B2** | **✅ Done Jan 2028** | **✅ Done Apr-Jun** | **✅✅ BEST** |
 
 ### Key reasons:
-- Bond (2yr from Aug 2025) ends **Aug 2027** — well before departure
-- Resign **Jun/Jul 2028** → 3 months notice → leave **Sep/Oct 2028** → perfect timing
-- Passport renewed with 10-year validity
+- Bond ends **~Jan 2028** → resign immediately → 3 months notice → free **Apr 2028**
+- 4-6 months free (Apr-Oct 2028) for visa, prep, travel
+- Passport valid till **2032** ✅ — no renewal needed
 - Enough time for German B2, IELTS 7.0, APS, savings, portfolio
 
 ### Application Strategy:
@@ -85,21 +85,9 @@ German Grade = ((10 - 7.5) / (10 - 4)) × 3 + 1 = 2.25 ("Gut" / Good) ✅
 
 ---
 
-## 🛂 CRITICAL: PASSPORT RENEWAL
+## 🛂 PASSPORT STATUS
 
-> ⚠️ YOUR PASSPORT EXPIRES IN 2028. YOU MUST RENEW IT IMMEDIATELY.
-
-German student visa requires passport valid for **at least 12-15 months** beyond entry.
-
-| Action | Detail |
-|:---|:---|
-| **When** | Apply by **June-August 2026** (don't wait!) |
-| **How** | passportindia.gov.in → Re-issue of Passport |
-| **Cost** | ₹1,500 (normal) or ₹3,500 (Tatkal) |
-| **Processing** | Normal: 2-4 weeks, Tatkal: 1-3 days |
-| **New Validity** | 10 years from issue date |
-
-**DO THIS IN THE NEXT 3-4 MONTHS. Non-negotiable.**
+✅ **Passport valid until 2032** — no renewal needed. Well covered for Oct 2028 entry to Germany.
 
 ---
 
@@ -113,7 +101,7 @@ German student visa requires passport valid for **at least 12-15 months** beyond
 | IELTS Exam | ₹16,250 |
 | APS Certificate | ₹18,000 |
 | Uni-assist fees (per uni) | ₹1,500-2,000 × 6 = ~₹10,000 |
-| Passport Renewal | ₹1,500-3,500 |
+| Passport | ✅ Valid till 2032 — no cost |
 | Visa Fee | ₹6,500 |
 | Flight | ₹40,000-70,000 |
 | First month deposit/rent | ₹80,000-1,00,000 |

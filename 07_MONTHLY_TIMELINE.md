@@ -21,13 +21,12 @@
 - [ ] 📝 LAST SEM EXAMS! Request provisional certificate from CBIT ASAP
 - [ ] 📝 Get consolidated mark sheet from CBIT
 - [ ] 📝 Note: Final degree cert may take till Jun-Sep 2026 (provisional is OK for APS + unis)
-- [ ] 🛂 **APPLY FOR PASSPORT RENEWAL** (critical — expiring 2028!)
+- [ ] 🛂 **APPLY FOR PASSPORT RENEWAL** — ✅ NOT NEEDED (valid till 2032)
 - [ ] 💰 Research SBI/HDFC Credila education loans (awareness stage)
 
 ### June 2026
 - [ ] 🇩🇪 Complete Nicos Weg A1, start A2
 - [ ] 💻 C programming: linked lists, makefiles, GDB debugging
-- [ ] 🛂 Receive renewed passport
 - [ ] 📝 Organize all academic documents in a folder (physical + digital scans)
 
 ### July 2026
@@ -200,7 +199,7 @@
 
 | Deadline | Action | Date |
 |:---|:---|:---|
-| **PASSPORT RENEWAL** | Apply on passportindia.gov.in | **May-Jun 2026** |
+| **PASSPORT** | ✅ Valid till 2032 | **No action needed** |
 | **IELTS EXAM** | Take IELTS Academic | **Oct-Nov 2027** |
 | **APS CERTIFICATE** | Apply on aps-india.de | **Oct 2027** |
 | **GOETHE A1 EXAM** | For Bremerhaven | **Nov 2027** |
