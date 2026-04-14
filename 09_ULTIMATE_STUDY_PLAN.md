@@ -1,0 +1,516 @@
+# 🗓️ ULTIMATE STUDY PLAN — 3-4 Hours/Day
+
+> **Start Date**: May 1, 2026
+> **Target**: Winter 2028 Germany Admission + Embedded Systems Competence
+> **Daily Budget**: 3-4 hours (1.5 hrs morning + 1.5-2.5 hrs evening/weekend)
+> **Weekly Budget**: ~21-28 hrs (weekdays 3 hrs × 5 + weekends 6-13 hrs)
+> **Total Available**: ~2,200-2,800 hours over 27 months
+
+---
+
+## ⏰ DAILY TIME SLOTS
+
+### Weekday Template (Mon-Fri)
+
+| Time | Duration | Slot Name | Notes |
+|:---|:---|:---|:---|
+| **5:00 - 6:30 AM** | 1.5 hrs | 🔶 MORNING BLOCK | Highest quality. Brain is fresh. Hardware available at home. |
+| **7:30 - 9:00 AM** | 1.5 hrs | 🎧 COMMUTE IN | Audio ONLY. German podcasts/lessons (passive). |
+| **12:30 - 12:45 PM** | 15 min | 📱 LUNCH ANKI | Anki flashcard review (German vocab). |
+| **6:30 - 8:30 PM** | 2 hrs | 🎧 COMMUTE BACK | Audio ONLY. German podcasts (passive). |
+| **9:30 - 11:00 PM** | 1.5 hrs | 🔷 EVENING BLOCK | Only on days with energy. Theory/reading/light coding. |
+
+**Realistic weekday active study: 3 hrs** (morning + evening)
+**Passive commute audio: 3.5 hrs** (bonus, not counted as core)
+
+### Weekend Template
+
+| Time | Duration | Slot Name |
+|:---|:---|:---|
+| **Saturday 7:00 AM - 1:00 PM** | 6 hrs | 🟢 SAT DEEP STUDY (with breaks) |
+| **Saturday 3:00 - 5:00 PM** | 2 hrs | 🟢 SAT AFTERNOON |
+| **Sunday 8:00 AM - 12:00 PM** | 4 hrs | 🟡 SUN MORNING |
+| **Sunday 2:00 - 4:00 PM** | 2 hrs | 🟡 SUN AFTERNOON |
+
+**Weekend total: ~14 hrs** (8 hrs Saturday + 6 hrs Sunday)
+
+### Weekly Total
+
+| Source | Hours |
+|:---|:---|
+| Morning blocks (5 days) | 7.5 hrs |
+| Evening blocks (3-4 days, not daily) | 4.5-6 hrs |
+| Commute audio (passive, bonus) | ~10 hrs |
+| Saturday | 8 hrs |
+| Sunday | 6 hrs |
+| Lunch Anki (5 days) | 1.25 hrs |
+| **TOTAL ACTIVE** | **~27-29 hrs/week** |
+| **+ Passive audio** | **~10 hrs/week bonus** |
+
+---
+
+## 📋 SUBJECT SPLIT RULES
+
+### The 60/20/20 Rule (Phases 1-4, May 2026 - Jun 2027)
+
+| Subject | % of Time | Why |
+|:---|:---|:---|
+| **Embedded Systems** (C + STM32 + RTOS) | **60%** | Core skill — longest to build |
+| **German Language** | **20%** | Start early, consistency matters |
+| **IELTS** (from Apr 2027) / Portfolio | **20%** | IELTS prep starts later |
+
+### The 40/30/30 Rule (Phases 5-6, Jul 2027 - Dec 2027)
+
+| Subject | % of Time | Why |
+|:---|:---|:---|
+| **Embedded Systems** | **40%** | VHDL + advanced topics |
+| **German Language** | **30%** | B2 push |
+| **IELTS** | **30%** | Exam in Oct/Nov 2027 |
+
+### The 20/40/40 Rule (Phase 7, Jan - Jul 2028)
+
+| Subject | % of Time | Why |
+|:---|:---|:---|
+| **Embedded** (portfolio polish) | **20%** | Maintenance mode |
+| **German** (B2 exam + practice) | **40%** | Final push |
+| **Applications** (SOP, docs, uni apps) | **40%** | Primary focus |
+
+---
+
+## 📅 WEEKLY SCHEDULE TEMPLATE (Phases 1-4)
+
+| Day | Morning 5:00-6:30 | Commute 🎧 | Evening 9:30-11:00 | Weight |
+|:---|:---|:---|:---|:---|
+| **Monday** | 💻 Embedded (C/STM32) | 🇩🇪 German audio | 🇩🇪 German (grammar/writing) | Emb + Ger |
+| **Tuesday** | 💻 Embedded (C/STM32) | 🇩🇪 German audio | 💻 Embedded (theory/reading) | Embedded heavy |
+| **Wednesday** | 🇩🇪 German (Nicos Weg) | 🇩🇪 German audio | 💻 Embedded (coding) | Mixed |
+| **Thursday** | 💻 Embedded (C/STM32) | 🇩🇪 German audio | 🇩🇪 German (AI conversation) | Mixed |
+| **Friday** | 🇩🇪 German (review + Anki) | 🇩🇪 German audio | 💻 Embedded (review) | Mixed |
+| **Saturday** | 💻 Embedded (7 AM - 1 PM, 6 hrs project work) | — | 🇩🇪 German (3-5 PM, speaking) | Embedded heavy |
+| **Sunday** | 💻 Embedded (8 AM - 12 PM, hands-on) | — | 🇩🇪 German (2-4 PM, review + Anki) | Mixed |
+
+---
+
+---
+
+# PHASE 1: C PROGRAMMING FOUNDATION
+
+## 📆 May 1 - June 30, 2026 (9 weeks)
+
+**Goal**: Write C programs confidently without AI. Understand memory, pointers, bitwise ops.
+**Resources**: K&R "The C Programming Language" book, Jacob Sorber YouTube, GCC on WSL2
+**Hardware**: Your PC with WSL2 (install gcc if not done)
+
+---
+
+### Week 1 (May 1-7): Setup + C Basics
+
+| Day | Morning (5:00-6:30) | Evening (9:30-11:00) | Weekend |
+|:---|:---|:---|:---|
+| **Mon** | Install WSL2 + gcc. Write "Hello World". Compile with `gcc -o hello hello.c`. Run it. Understand what each step does. | Read K&R Chapter 1 (pages 1-30). Take notes. | — |
+| **Tue** | Write 5 programs: variables, printf formatting, scanf input. All from scratch, no copy-paste. | Continue K&R Chapter 1. Write the exercises. | — |
+| **Wed** | 🇩🇪 German: Install Anki + download A1 deck. Create DW account. Watch first Nicos Weg video. | Write programs using if/else, switch. Solve 3 problems. | — |
+| **Thu** | Write programs using for/while/do-while loops. Print patterns (triangle, pyramid). | Read K&R Chapter 2 (data types, operators). | — |
+| **Fri** | 🇩🇪 German: Nicos Weg lesson 2-3. Write 5 German words in Anki. | Write programs using nested loops. Print multiplication table. | — |
+| **Sat** | 💻 (7 AM - 1 PM): Functions in C. Write 10 functions: factorial, fibonacci, isPrime, reverse string, count vowels, etc. ALL from scratch. Test with different inputs. | 🇩🇪 (3-5 PM): Nicos Weg lessons 4-5. Review Anki. | |
+| **Sun** | 💻 (8-12): Arrays in C. Write programs: find max/min, sort an array (bubble sort), search, reverse array. | 🇩🇪 (2-4): German alphabet, numbers 1-100, basic greetings. Practice pronunciation. | |
+
+**Week 1 Checkpoint**:
+- [ ] WSL2 + gcc working
+- [ ] Can write basic C programs (variables, loops, functions, arrays)
+- [ ] Nicos Weg started, Anki installed with A1 deck
+- [ ] 10+ small C programs written and compiled
+
+---
+
+### Week 2 (May 8-14): Strings + Functions Deep
+
+| Slot | Focus | Specific Tasks |
+|:---|:---|:---|
+| **Morning × 3** | 💻 Strings in C | `strlen`, `strcmp`, `strcpy`, `strcat` — write your OWN versions. Don't use library functions. Understand null terminator `\0`. |
+| **Morning × 2** | 🇩🇪 German | Nicos Weg lessons 6-10. Practice "Ich heiße...", "Ich komme aus...", "Ich bin..." |
+| **Evening × 3** | 💻 Functions deep | Pass by value vs pass by reference (pointers intro). Recursive functions. Function prototypes. |
+| **Evening × 2** | 🇩🇪 German | Anki review (15-20 min). Write 5 simple German sentences. |
+| **Saturday** | 💻 (6 hrs): Write a complete program: "Student Record System" using arrays + structs + functions. Menu-driven. Save 5 students, display, search by name. | 🇩🇪 (2 hrs): Nicos Weg + pronunciation practice |
+| **Sunday** | 💻 (4 hrs): Debug your Student Record System. Add more features. Write a Makefile for it. | 🇩🇪 (2 hrs): Review all German learned so far. Anki. |
+
+**Week 2 Checkpoint**:
+- [ ] Can manipulate strings manually (without library)
+- [ ] Understand pass-by-value vs pass-by-reference
+- [ ] Student Record System program working
+- [ ] ~20 German words learned, basic self-introduction
+
+---
+
+### Week 3 (May 15-21): POINTERS — The Most Important Week
+
+| Slot | Focus | Specific Tasks |
+|:---|:---|:---|
+| **Morning × 3** | 💻 Pointers Level 1 | What is a pointer? `int *p = &x;` Pointer arithmetic. Print addresses. Draw memory diagrams on paper. `sizeof` pointer vs variable. |
+| **Morning × 2** | 🇩🇪 German | Nicos Weg lessons 11-15. Learn present tense verbs (sein, haben, machen, gehen). |
+| **Evening × 3** | 💻 Pointers Level 2 | Array-pointer relationship. `arr[i]` = `*(arr + i)`. Passing arrays to functions. Pointer to pointer `int **pp`. |
+| **Evening × 2** | 🇩🇪 German | Anki. Write 3 sentences about your day using present tense. |
+| **Saturday** | 💻 (6 hrs): Pointers Level 3 — Dynamic memory: `malloc`, `calloc`, `free`. Write programs that create arrays at runtime. Understand memory leaks. Draw heap vs stack diagrams. | 🇩🇪 (2 hrs): Nicos Weg + learn numbers, days, months in German |
+| **Sunday** | 💻 (4 hrs): Function pointers. Callback functions. Write a sorting function that takes a comparison function pointer. | 🇩🇪 (2 hrs): Review week's German. ChatGPT: "Quiz me on German A1 vocabulary." |
+
+> [!CAUTION]
+> **This week is CRITICAL.** If you don't understand pointers deeply, everything in embedded systems will be impossible. Do NOT rush. Draw memory diagrams on paper. Print addresses. Visualize where data lives.
+
+**Week 3 Checkpoint**:
+- [ ] Can explain pointers on paper with memory diagrams
+- [ ] Understand malloc/free, heap vs stack
+- [ ] Can use function pointers
+- [ ] ~40 German words, basic present tense verbs
+
+---
+
+### Week 4 (May 22-28): Structs + Bitwise
+
+| Slot | Focus | Specific Tasks |
+|:---|:---|:---|
+| **Morning × 3** | 💻 Structs | `struct`, `typedef`, nested structs, array of structs, pointer to struct (`→` operator). |
+| **Morning × 2** | 🇩🇪 German | Nicos Weg lessons 16-20. Learn articles (der/die/das). |
+| **Evening × 3** | 💻 Bitwise operations | AND `&`, OR `|`, XOR `^`, NOT `~`, Left shift `<<`, Right shift `>>`. SET bit, CLEAR bit, TOGGLE bit, CHECK bit. Write macros: `#define SET_BIT(x,n) (x |= (1 << n))` |
+| **Evening × 2** | 🇩🇪 German | Anki. Practice articles with nouns (der Tisch, die Lampe, das Buch). |
+| **Saturday** | 💻 (6 hrs): Combine everything — write a "Hardware Register Simulator." Create a struct that represents a 32-bit register. Write functions to set/clear/toggle/read individual bits. Print register in binary. This simulates EXACTLY what you'll do on STM32. | 🇩🇪 (2 hrs): Nicos Weg + ChatGPT conversation |
+| **Sunday** | 💻 (4 hrs): Linked list implementation from scratch. Insert, delete, print, reverse, find. Use malloc for each node. | 🇩🇪 (2 hrs): Full review. Test yourself on 50 words. |
+
+**Week 4 Checkpoint**:
+- [ ] Comfortable with structs and typedef
+- [ ] Can do bitwise SET/CLEAR/TOGGLE/CHECK — THIS IS ESSENTIAL FOR STM32
+- [ ] Hardware register simulator working
+- [ ] Linked list implemented from scratch
+- [ ] ~60 German words, articles introduced
+- [ ] **PUSH 3+ programs to GitHub** — create a "C-Programming-Practice" repo
+
+---
+
+### Week 5 (May 29 - Jun 4): Enums, Unions, Volatile, Const, File I/O
+
+| Slot | Focus | Specific Tasks |
+|:---|:---|:---|
+| **Morning × 3** | 💻 Advanced C types | `enum` (state machines!), `union` (memory overlay), `volatile` (CRITICAL for embedded — prevents compiler optimization of hardware registers), `const` correctness, `static` keyword (in functions vs global scope). |
+| **Morning × 2** | 🇩🇪 German | Nicos Weg lessons 21-25. Accusative case introduction (den/einen). |
+| **Evening × 3** | 💻 File I/O + preprocessor | `fopen`, `fread`, `fwrite`, `fprintf`. Read/write CSV files. `#define`, `#ifdef`, `#include` guards, macro functions. |
+| **Evening × 2** | 🇩🇪 German | Write 5 sentences using accusative case. ChatGPT correct them. |
+| **Saturday** | 💻 (6 hrs): Write a "Data Logger Simulator" in pure C. Read fake sensor values (random), timestamp them, write to CSV file. Read back and display statistics (min, max, avg). Use structs, file I/O, dynamic memory. | 🇩🇪 (2 hrs): Nicos Weg + Anki bulk review |
+| **Sunday** | 💻 (4 hrs): Circular buffer implementation in C. This is THE most used data structure in embedded systems. | 🇩🇪 (2 hrs): ChatGPT voice: "Speak to me in simple German A1." |
+
+**Week 5 Checkpoint**:
+- [ ] Understand `volatile` and `const` (interview questions!)
+- [ ] Can read/write files in C
+- [ ] Data logger simulator working
+- [ ] Circular buffer implemented — **you'll use this on STM32 for UART**
+- [ ] ~80 German words, accusative case basics
+
+---
+
+### Week 6 (Jun 5-11): Makefiles, GDB, Compilation Deep
+
+| Slot | Focus | Specific Tasks |
+|:---|:---|:---|
+| **Morning × 3** | 💻 Build system | Write Makefiles from scratch. Understand `gcc -c`, `-o`, `-Wall`, `-g`, `-O2`. Multi-file projects with headers. Understand compilation pipeline: preprocess → compile → assemble → link. |
+| **Morning × 2** | 🇩🇪 German | Nicos Weg lessons 26-30. Past tense introduction (Perfekt with haben/sein). |
+| **Evening × 3** | 💻 GDB debugging | Compile with `-g`. Set breakpoints. Step through code. Print variables. Watch expressions. Find and fix bugs using GDB, not printf. |
+| **Evening × 2** | 🇩🇪 German | Anki. Write 5 past tense sentences. |
+| **Saturday** | 💻 (6 hrs): Multi-file C project. Split your previous programs into separate .c and .h files. Write a proper Makefile. Practice GDB on each program. Introduce intentional bugs and fix them with GDB. | 🇩🇪 (2 hrs): Review all Nicos Weg A1 so far |
+| **Sunday** | 💻 (4 hrs): Interview prep — write solutions to: "Reverse a string in-place", "Check if a string is palindrome", "Find duplicates in array", "Implement stack using array". | 🇩🇪 (2 hrs): Numbers review, time telling in German |
+
+**Week 6 Checkpoint**:
+- [ ] Can write Makefiles for multi-file projects
+- [ ] Can debug with GDB (not just printf)
+- [ ] Understand complete compilation pipeline
+- [ ] **Push multi-file project to GitHub**
+
+---
+
+### Week 7-8 (Jun 12-25): Queue, State Machine, Memory Layout + C Review
+
+| Week | Morning | Evening | Weekend |
+|:---|:---|:---|:---|
+| **Week 7** | 💻 Queue implementation (array-based + linked-list-based). State machine pattern in C (using enum + function pointers). | 🇩🇪 German (Nicos Weg 31-40 + Anki) + 💻 Memory layout study (text, data, BSS, heap, stack — DRAW IT) | 💻 Sat: Build a vending machine state machine in C. Sun: Complete C review — go through ALL programs written |
+| **Week 8** | 💻 `typedef` patterns for embedded, packed structs, bit fields, memory-mapped I/O concept (preview for STM32). | 🇩🇪 German (Nicos Weg 41-50) + 💻 Write interview answers for: "Explain stack vs heap", "What is volatile?", "What is a function pointer?" | 💻 Sat: **FINAL C PROJECT** — combine everything into one polished GitHub repo with README. Sun: German review + plan Phase 2 |
+
+**Week 8 Checkpoint — END OF PHASE 1**:
+- [ ] ✅ C programming solid: pointers, structs, bitwise, malloc, linked list, queue, circular buffer, Makefiles, GDB
+- [ ] ✅ GitHub has "C-Practice" repo with 15+ programs + READMEs
+- [ ] ✅ German A1: ~100 words, basic sentences, Nicos Weg A1 half done
+- [ ] ✅ Can answer 10+ common C interview questions confidently
+
+---
+
+---
+
+# PHASE 2: STM32 MICROCONTROLLER BASICS
+
+## 📆 July 1 - September 30, 2026 (13 weeks)
+
+**Goal**: Program STM32 for GPIO, UART, Timers, Interrupts, ADC. Build 1 complete project.
+**Resources**: STM32CubeIDE, STM32F411 Reference Manual, Controllerstech YouTube, FastBit Embedded YouTube
+**Hardware**: Your STM32 board + USB cable + LEDs + push buttons + potentiometer + sensor (if any)
+
+---
+
+### Week 9-10 (Jul 1-14): STM32 Setup + GPIO
+
+| Task | Details | Time |
+|:---|:---|:---|
+| **Install** | STM32CubeIDE on Windows. Create first project for your STM32 board. | Morning 1 session |
+| **Understand** | What is HAL? What are registers? What is the clock system? Read first 50 pages of reference manual "Memory Map" section. | 2 morning sessions |
+| **Blink LED (HAL)** | Use CubeMX to configure GPIO pin → generate code → blink LED. Understand WHAT got generated. | 1 session |
+| **Blink LED (Register)** | Write the SAME blink purely by writing to RCC and GPIO registers. No HAL. Understand each bit you set. | Weekend (4-6 hrs) |
+| **Button Input** | Read button state. Blink LED only when button pressed. Internal pull-up/pull-down. | 1-2 sessions |
+| **German** | Continue Nicos Weg A1 (complete by end of July!). Daily Anki. Commute audio. | 2 mornings + 2 evenings + weekends |
+
+### Week 11-12 (Jul 15-28): UART
+
+| Task | Details |
+|:---|:---|
+| **UART theory** | Watch Controllerstech UART videos. Read reference manual USART section. Understand baud rate, start/stop bits, frame format. |
+| **UART (HAL)** | Send "Hello World" over UART to PC serial terminal (Putty/Tera Term). |
+| **UART (Register)** | Configure UART purely through registers. Calculate baud rate register value manually. |
+| **UART printf** | Redirect printf to UART (retarget). Use printf for debugging. |
+| **UART receive** | Receive characters from PC, echo back. Character-based menu system. |
+| **German** | Nicos Weg A1 final lessons. Take self-test. Prep for Goethe A1 if ready. |
+
+### Week 13-15 (Jul 29 - Aug 18): Timers + Interrupts
+
+| Task | Details |
+|:---|:---|
+| **Timer theory** | What are timers? Prescaler, auto-reload, counting modes. |
+| **Timer delay** | Replace `HAL_Delay` with a hardware timer. Blink LED at exact 500ms using timer. |
+| **Timer interrupt** | Configure timer interrupt to toggle LED. Understand NVIC, priority. |
+| **External interrupt** | Button press via EXTI interrupt (not polling). Understand ISR, debouncing. |
+| **PWM** | Generate PWM output to dim an LED. Vary duty cycle with potentiometer (ADC → PWM). |
+| **German** | Start Nicos Weg A2. Continue daily Anki (now ~120+ words). |
+
+### Week 16-17 (Aug 19 - Sep 1): ADC + Combine
+
+| Task | Details |
+|:---|:---|
+| **ADC theory** | Resolution, sampling time, channels, triggering. |
+| **ADC single** | Read potentiometer value. Print to UART. |
+| **ADC continuous + DMA** | Continuous ADC reading with DMA transfer. Understanding DMA at basic level. |
+| **Combine** | Timer interrupt triggers ADC → value sent over UART → PC displays. This is a mini data logger. |
+| **German** | Nicos Weg A2 in progress. Easy German YouTube for listening. |
+
+### Week 18-21 (Sep 2-30): PORTFOLIO PROJECT 1 🏆
+
+**Project: "STM32 Environmental Monitor"**
+
+| Week | Task |
+|:---|:---|
+| **Week 18** | Plan project. Wire sensor (temperature/humidity if available, or use potentiometer to simulate). Get basic reading working. |
+| **Week 19** | Add timer-based periodic sampling (every 1 second). Store readings in circular buffer (you already built this in C!). Send data over UART in CSV format. |
+| **Week 20** | Add features: min/max/avg display, button to change modes, LED status indicators. Clean up code. Organize into multiple files with proper headers. |
+| **Week 21** | **Document on GitHub**: README with description, photo of setup, circuit diagram, how to build, how to flash, what you learned. Record a 30-second demo video. |
+
+**Week 21 Checkpoint — END OF PHASE 2**:
+- [ ] ✅ GPIO, UART, Timers, Interrupts, ADC on STM32 — working and understood
+- [ ] ✅ Portfolio Project 1 on GitHub with full documentation
+- [ ] ✅ Can explain each topic in an interview
+- [ ] ✅ German A1 complete, A2 in progress (~150+ words)
+- [ ] ✅ **READY TO APPLY TO EMBEDDED STARTUPS** (if choosing Path B)
+
+---
+
+---
+
+# PHASE 3: FreeRTOS + PROTOCOLS
+
+## 📆 October 1 - December 31, 2026 (13 weeks)
+
+**Goal**: FreeRTOS basics on STM32. SPI/I2C working knowledge. Interview-ready for mid-level companies.
+
+### Oct (Weeks 22-25): FreeRTOS
+
+| Week | Topic | Hands-On |
+|:---|:---|:---|
+| 22 | What is RTOS? Why use it? Tasks, task states, priorities. | Create 2 tasks: one blinks LED, one prints to UART. |
+| 23 | Queues — inter-task communication. | Task 1 reads ADC → sends value via queue → Task 2 prints it. |
+| 24 | Semaphores — synchronization. Binary + counting. | Button ISR gives semaphore → task takes it → processes data. |
+| 25 | Mutexes, priority inversion. | Shared UART resource protected by mutex. Two tasks printing without garbled output. |
+
+### Nov (Weeks 26-29): SPI + I2C
+
+| Week | Topic | Hands-On |
+|:---|:---|:---|
+| 26 | SPI theory. MOSI/MISO/CLK/CS. Modes. Timing diagrams. | If you have SPI device: read its data. If not: loopback test (connect MOSI to MISO). |
+| 27 | I2C theory. SDA/SCL. Addressing. ACK/NACK. Start/Stop. | If you have I2C sensor (MPU6050, BMP280, etc.): read data. |
+| 28 | Compare SPI vs I2C vs UART. When to use which. | Write comparison notes for interviews. Practice explaining verbally. |
+| 29 | **Protocol debugging**: Use your Sipeed SLogic analyzer to capture SPI/I2C waveforms in PulseView. | Match what you see on screen with what you coded. THIS is real engineering. |
+
+### Dec (Weeks 30-34): PORTFOLIO PROJECT 2 + German B1 Start 🏆
+
+**Project: "FreeRTOS Multi-Sensor Dashboard"**
+- 3 tasks: sensor reading (ADC/I2C), data processing (filtering), UART output
+- Use queues for inter-task communication
+- Use mutex for UART access
+- Timer task for periodic sampling
+- Document on GitHub
+
+**German**: Start Nicos Weg B1. Daily Anki (~200+ words). Consider Goethe A1 exam in Dec.
+
+**Week 34 Checkpoint — END OF PHASE 3**:
+- [ ] ✅ FreeRTOS: tasks, queues, semaphores, mutexes on STM32
+- [ ] ✅ SPI and I2C understood and (ideally) used with real hardware
+- [ ] ✅ Portfolio Project 2 on GitHub
+- [ ] ✅ German A2 complete, B1 started
+- [ ] ✅ **READY TO APPLY TO MID-LEVEL EMBEDDED COMPANIES**
+
+---
+
+---
+
+# PHASE 4: PROTOCOLS DEEP + LINUX BASICS
+
+## 📆 January - June 2027 (26 weeks)
+
+### Jan-Mar 2027: Communication Protocols Deep
+- CAN bus basics (theory + if hardware available)
+- UART RS485 multi-device
+- Protocol error handling patterns
+- **Portfolio Project 3**: ESP32 IoT device (WiFi + MQTT + sensor → cloud dashboard)
+
+### Apr-Jun 2027: Linux Embedded + IELTS Start
+- Linux CLI mastery on WSL2
+- Shell scripting (bash)
+- Cross-compilation basics
+- **IELTS diagnostic test** (April)
+- **IELTS Foundation study begins** — 2 hrs/week on Sunday afternoons
+- German B1 → B2 bridge starts
+
+**Week 52 Checkpoint — END OF PHASE 4**:
+- [ ] ✅ 3 portfolio projects on GitHub
+- [ ] ✅ Linux command line confident
+- [ ] ✅ German B1 level
+- [ ] ✅ IELTS prep started
+- [ ] ✅ Can pass mid-level embedded company interviews
+
+---
+
+---
+
+# PHASE 5: VHDL + IELTS INTENSIVE
+
+## 📆 July - December 2027 (26 weeks)
+
+### Jul-Sep 2027: VHDL/Verilog Basics (for RWU application)
+- Digital logic review
+- VHDL syntax, simulation
+- Simple designs: counter, FSM, ALU
+- **Portfolio Project 4**: VHDL simulation project on GitHub
+
+### Oct-Nov 2027: IELTS + APS + German B2
+- **TAKE IELTS EXAM** (Oct/Nov 2027) — target 7.0
+- **Apply for APS Certificate** on aps-india.de
+- **German B2 solidification** — Goethe B2 prep materials
+- Shortlist final 6 universities
+
+### Nov-Dec 2027: Application Season
+- Take **Goethe A1/A2 exam** (for Bremerhaven proof)
+- Write motivation letter drafts
+- Create Europass CV
+- Receive APS certificate
+- **SUBMIT BREMERHAVEN APPLICATION** (deadline Dec 31)
+- Customize SOPs for each university
+
+**Week 78 Checkpoint — END OF PHASE 5**:
+- [ ] ✅ 4 portfolio projects on GitHub
+- [ ] ✅ IELTS 7.0 achieved
+- [ ] ✅ APS certificate in hand
+- [ ] ✅ German B2 level, A1/A2 Goethe certificate
+- [ ] ✅ Bremerhaven Summer 2028 application submitted
+
+---
+
+---
+
+# PHASE 6: APPLICATIONS + FINAL PREP
+
+## 📆 January - July 2028 (26 weeks)
+
+### Jan 2028
+- [ ] Bond ends → **SUBMIT RESIGNATION** (3-month notice)
+- [ ] Take **Goethe B2 exam**
+- [ ] Continue Winter 2028 application prep
+
+### Feb-Mar 2028
+- [ ] Notice period (working at Unistring / embedded company)
+- [ ] Prepare all Winter 2028 documents
+- [ ] Summer 2028 results may arrive
+
+### Apr 2028
+- [ ] **Last working day**
+- [ ] **Submit RWU application** (deadline Apr 15)
+- [ ] Get Arbeitszeugnis from all employers
+
+### May-Jul 2028
+- [ ] **Submit Winter 2028 applications** (Dortmund, FH Westküste, etc.)
+- [ ] Open blocked account (Expatrio/Fintiba — €11,904)
+- [ ] Get health insurance
+- [ ] German immersion — daily B2 practice
+- [ ] Final GitHub portfolio polish
+
+### Aug-Sep 2028
+- [ ] Accept admission, book VFS visa appointment
+- [ ] Attend visa interview
+- [ ] Receive visa, book flight, arrange housing
+
+### October 2028
+# ✈️ FLY TO GERMANY. START YOUR NEW LIFE. 🇩🇪
+
+---
+
+---
+
+## 📊 FULL 27-MONTH OVERVIEW
+
+| Month | Embedded Focus | German | IELTS | Milestone |
+|:---|:---|:---|:---|:---|
+| May 2026 | C basics (variables, loops, functions) | Nicos Weg A1 start | — | WSL2 + gcc setup |
+| Jun 2026 | C deep (pointers, bitwise, structs, Makefile, GDB) | Nicos Weg A1 | — | GitHub C repo |
+| Jul 2026 | STM32 GPIO + UART | Nicos Weg A1 complete → A2 start | — | LED + UART working |
+| Aug 2026 | STM32 Timers + Interrupts + ADC | Nicos Weg A2 | — | ADC + timer working |
+| Sep 2026 | **Project 1**: STM32 Environmental Monitor | A2 continue | — | ★ GitHub Project 1 |
+| Oct 2026 | FreeRTOS: tasks, queues | A2 complete → B1 start | — | FreeRTOS tasks running |
+| Nov 2026 | FreeRTOS: semaphores, mutexes | B1 grammar | — | Multi-task system |
+| Dec 2026 | SPI + I2C + **Project 2** | B1 + Goethe A1 exam? | — | ★ GitHub Project 2 |
+| Jan 2027 | Protocols deep (CAN, RS485) | B1 continue | — | Protocol knowledge |
+| Feb 2027 | ESP32 + ESP-IDF basics | B1 complete | — | ESP32 working |
+| Mar 2027 | **Project 3**: IoT device | B1→B2 bridge start | — | ★ GitHub Project 3 |
+| Apr 2027 | Linux CLI + shell scripting | B2 course (DW) | IELTS diagnostic | Start IELTS prep |
+| May 2027 | Cross-compilation | B2 grammar | IELTS foundation | |
+| Jun 2027 | Linux deep | B2 writing | IELTS practice | |
+| Jul 2027 | VHDL basics | B2 speaking (italki) | IELTS mock tests | |
+| Aug 2027 | VHDL designs | B2 solidification | IELTS intensive | |
+| Sep 2027 | **Project 4**: VHDL simulation | B2 exam prep | IELTS final prep | ★ GitHub Project 4 |
+| Oct 2027 | Portfolio polish | B2 continue | **★ IELTS EXAM** | APS application |
+| Nov 2027 | Interview prep | Goethe A1/A2 exam | IELTS results | APS received |
+| Dec 2027 | Review all | B2 practice | — | **★ BREMERHAVEN APP** |
+| Jan 2028 | Maintenance | B2 / Goethe B2 exam | — | Bond ends, resign |
+| Feb 2028 | — | B2 practice | — | Notice period |
+| Mar 2028 | — | B2 immersion | — | Winter 2028 prep |
+| Apr 2028 | — | B2 immersion | — | **★ RWU application**, last day |
+| May 2028 | Final polish | B2 immersion | — | Blocked account |
+| Jun 2028 | — | B2 immersion | — | **★ DORTMUND APP** |
+| Jul 2028 | — | B2 immersion | — | Admission decisions |
+
+---
+
+## 🔑 THE ONE RULE THAT MAKES THIS WORK
+
+> ### **Never break the chain. Every single day: minimum 2 hours. No exceptions.**
+>
+> Sick? → Do 30 min of Anki from bed.
+> Exhausted? → Read 10 pages of K&R.
+> Travel? → German audio on phone.
+> Festival? → 1 hour morning before celebrations.
+>
+> **Consistency beats intensity. 2 hours × 810 days = 1,620 hours.**
+> **This is more than enough for Germany.**
+
+---
+
+*Previously: `08_DECISION_ANALYSIS.md` — Full strategic analysis*
+*Next: Start May 1, 2026. C programming. K&R Chapter 1. 5:00 AM.*
