@@ -218,12 +218,12 @@
 
 ## DAY 17 — Sunday, May 17 🟨 REVIEW + PROJECT
 
-### 💻 Warmup (6:30-7:30) — Review Pointers So Far
+### 💻 Warmup (7:30-8:30) — Review Pointers So Far
 - Re-draw ALL memory diagrams from this week from MEMORY
 - Re-write `swap_right()` from memory
 - Can you explain to someone what a pointer is in 3 sentences?
 
-### 💻 Deep Session 1 (7:45-9:15) — Double Pointers
+### 💻 Deep Session 1 (8:45-10:15) — Double Pointers
 
 **What to learn**: A pointer to a pointer. `int **pp` stores the address of a pointer, which stores the address of an int.
 
@@ -248,7 +248,7 @@
    - Write `void allocate(int **ptr, int n)` — function that allocates memory and returns it through a pointer parameter
    - **Where this is used in embedded**: Passing buffer pointers out of functions. `HAL_UART_Receive()` uses similar patterns.
 
-### 💻 Deep Session 2 (9:30-11:00) — Dynamic 2D Array
+### 💻 Deep Session 2 (10:30-12:00) — Dynamic 2D Array
 
 Write `dynamic_2d.c`:
 - Allocate a 2D array at runtime using double pointers:
@@ -260,7 +260,7 @@ Write `dynamic_2d.c`:
 - Fill with values, print it, then FREE everything in reverse order
 - **This is how image buffers, sensor data matrices, and display framebuffers work in embedded**
 
-### 💻 Deep Session 3 (11:15-12:45) — Function Pointers (Preview)
+### 💻 Deep Session 3 (12:15-12:45) — Function Pointers (Preview)
 
 **What to learn**: In C, functions have addresses too. You can store a function's address in a pointer and call it later. This is how callbacks work in embedded (interrupt handlers, RTOS task functions).
 

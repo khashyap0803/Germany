@@ -102,8 +102,11 @@
    - Print: "Your German grade: 2.25"
 
 ### 💻 Deep Session 1 (7:45-9:15 AM) — Conditions
-Continue into if/else, switch/case, logical operators. Write `conditions.c` and `switch_demo.c`.
-See Day 3 below for details (originally covered there, now moved forward since Day 2 is a full Saturday).
+
+Write `conditions.c` and `switch_demo.c`:
+- `if/else` chain, logical operators (`&&`, `||`, `!`), ternary operator
+- `switch/case` for month names — discover what happens if you forget `break`
+- **Embedded insight**: Short-circuit evaluation in `if (a && b)` — if `a` is false, `b` is NEVER checked (prevents null pointer crashes)
 
 ### 💻 Deep Session 2 (9:30-11:00 AM) — Loops
 for, while, do-while, nested loops. Write `loops.c` and `patterns.c`.

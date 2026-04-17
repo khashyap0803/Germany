@@ -183,12 +183,12 @@
 
 ## DAY 24 — Sunday, May 24 🟨 REVIEW + GPIO SIMULATOR
 
-### 💻 Warmup (6:30-7:30) — Struct + Bitwise Review
+### 💻 Warmup (7:30-8:30) — Struct + Bitwise Review
 - Write all 4 bit macros from memory
 - Create a struct from memory
 - Quick 20-min review of toughest concepts
 
-### 💻 Deep Session 1-3 (7:45 AM-12:45 PM) — GPIO Register Simulator
+### 💻 Deep Session 1-3 (8:45 AM-12:45 PM) — GPIO Register Simulator
 
 **THE CAPSTONE PROJECT for Weeks 3-4.** This combines structs + bitwise and simulates a real STM32 GPIO port.
 

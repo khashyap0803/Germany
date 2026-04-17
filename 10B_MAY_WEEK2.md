@@ -170,7 +170,7 @@
 
 ## DAY 10 — Sunday, May 10 🟨 REVIEW
 
-### 💻 Warmup (6:30-7:30) — Function Mastery
+### 💻 Warmup (7:30-8:30 AM) — Function Mastery
 
 **What to learn**: Scope rules, static variables, multi-file programs, header files.
 
@@ -181,7 +181,7 @@
    - `static` variable inside a function — what happens across multiple calls?
    - **Ask Google AI**: "What does `static` mean in 3 different contexts in C: static variable in function, static global variable, static function?"
 
-### 💻 Deep Session 1 (7:45-9:15) — Multi-file Programs
+### 💻 Deep Session 1 (8:45-10:15) — Multi-file Programs
 
 **What to learn**: How professional C projects are organized — separate `.c` files for each module, `.h` files for interfaces.
 
@@ -195,14 +195,14 @@
    - **What to understand**: Why `.h` files exist (to share function prototypes). What `#include` guards are: `#ifndef MATH_UTILS_H` / `#define MATH_UTILS_H` / `#endif`
    - **THIS IS HOW ALL PROFESSIONAL EMBEDDED CODE IS STRUCTURED.** Every STM32 project has dozens of `.c` and `.h` file pairs.
 
-### 💻 Deep Session 2 (9:30-11:00) — Deeper Array Exercises
+### 💻 Deep Session 2 (10:30-12:00) — Deeper Array Exercises
 
 Write `search.c`:
 - Linear search: scan every element. O(n). Simple but slow.
 - Binary search: only works on sorted array. O(log n). Fast.
 - **Think about this**: If your STM32 has a lookup table of 1000 sensor calibration values, binary search finds the right one in ~10 comparisons instead of ~500. That's the difference between hitting a real-time deadline or missing it.
 
-### 💻 Deep Session 3 (11:15-12:45) — Selection Sort
+### 💻 Deep Session 3 (12:15-12:45) — Selection Sort
 
 Write `selection_sort.c`:
 - Different algorithm from bubble sort
@@ -245,7 +245,7 @@ Pick 2 programs from this week. Close all references. Type from MEMORY:
 
 If stuck, review solution, close it, wait 5 minutes, try again.
 
-> **Note**: The student records project and Git push are moved to next Saturday (Day 16). Weekday mornings are coding-only.
+> **Note**: Student records project and Git push are on Day 10 (Sunday). Weekday mornings are coding-only.
 
 ### 🎧 Commute: Review Nicos Weg 6-10 | 📱 Lunch: Anki | 📖 Bed: K&R Chapter 4 start
 
