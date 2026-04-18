@@ -3,7 +3,7 @@
 > **Topics**: Development environment, variables, data types, printf/scanf, operators, conditions, loops
 > **K&R Chapters**: Chapter 1 (Tutorial Introduction), Chapter 2 (Types, Operators, Expressions)
 > **Programs to write**: 12-15
-> **German**: Nicos Weg Lessons 1-5, learn 20 words
+> **German**: Nicos Weg Lessons 1-6, learn 20 words
 > **📚 Full resource details**: See `10_RESOURCES.md`
 
 ---

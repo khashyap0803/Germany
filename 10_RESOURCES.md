@@ -196,10 +196,10 @@ No new technical books. Focus on:
 | volatile keyword | "The volatile keyword in C" | Week 5 |
 | const keyword | "const in C — what does it really mean?" | Week 5 |
 | Makefiles | "How to write a Makefile" | Week 5-6 |
-| GDB debugging | "GDB Tutorial: Finding Bugs in C Programs" | Week 5-6 |
+| GDB debugging | "GDB Tutorial: Finding Bugs in C Programs" | Week 3+ |
 | Enums | "Enums in C" | Week 5 |
 | State machines | "State Machines in C" | Week 5 |
-| Multi-file projects | "Splitting your C code into multiple files" | Week 5-6 |
+| Multi-file projects | "Splitting your C code into multiple files" | Week 2+ |
 
 ---
 
@@ -250,14 +250,6 @@ No new technical books. Focus on:
 > **Why NOT subscription**: You only need 2 courses from Udemy. At ₹549 each = ₹1,098 total, permanent ownership, lifetime access. Subscription at ₹4,500/year means you lose access if you cancel, and you're paying 4× more for only 2 courses.
 >
 > **How to catch sales**: Add courses to Udemy wishlist → Udemy emails you when they go on sale. Or check every Sunday during weekly review. Sales happen every 2-3 weeks. Both courses will drop to ₹399.
-
-### Books (If Budget Allows)
-
-| Book | Price | Why | Priority |
-|:---|:---|:---|:---|
-| **"Making Embedded Systems" by Elecia White** | ~₹800-1200 | Best book on embedded systems design patterns. Bridges C → real firmware. | 🟡 Medium (buy in July) |
-| **"Mastering the FreeRTOS Real Time Kernel"** by Richard Barry | **FREE PDF** from freertos.org | Official FreeRTOS guide. Essential for Phase 3. | 🟢 Download now, use Oct 2026 |
-| **"The Definitive Guide to ARM Cortex-M3/M4 Processors"** by Joseph Yiu | ~₹1000-1500 | Deep ARM architecture understanding | 🔴 Low (nice-to-have for 2027) |
 
 ---
 

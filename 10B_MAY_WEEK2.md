@@ -34,7 +34,7 @@
 
 #### 💻 CODE (45 min) — 5:25 to 6:10 AM
 
-**Program 1 — `arrays.c`** in `week2/` folder:
+**Program 1 — `arrays.c`** in `week2/` folder (continue from Day 4 if incomplete, or redo for mastery):
 - Declare an array of 5 exam marks
 - Print all elements using a for loop
 - Calculate sum and average
