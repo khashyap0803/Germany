@@ -300,7 +300,7 @@ Write a program that dynamically allocates an array, fills it from user input, s
 
 > **Note**: Full review, Git push, and German mega review happen next Saturday (Day 23). For today, just reinforce this week’s pointer concepts.
 
-### 🎧 Commute: Nicos Weg 16 | 📱 Lunch: Anki | 📖 Bed: K&R pp. 118-125
+### 🎧 Commute: Review Nicos Weg 11-15 | 📱 Lunch: Anki | 📖 Bed: K&R pp. 118-125
 
 ---
 
