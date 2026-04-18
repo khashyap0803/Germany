@@ -5,6 +5,7 @@
 > **Programs to write**: 10-12
 > **German**: Nicos Weg Lessons 16-20, food vocab, daily routine sentences
 > **Embedded Connection**: THIS week is the bridge to hardware. Structs = how STM32 peripheral registers are organized. Bitwise = how you read/write individual register bits.
+> **📚 Full resource details**: See `10_RESOURCES.md`
 
 ---
 
@@ -12,230 +13,406 @@
 
 ### 🔶 Morning (5:10-6:30 AM) — struct Basics
 
-**What to learn**: A struct groups related data together. Instead of separate arrays for name, CGPA, branch — you create ONE `struct Student` that holds all three.
+---
 
-**How to learn**:
-1. **(5:10-5:20)** Read **K&R Chapter 6** pages 127-133 (Structure basics). Notice how K&R introduces structs for representing points and rectangles — very elegant.
+#### 📺 WATCH FIRST (20 min) — 5:10 to 5:30 AM
 
-2. **(5:20-5:50)** Write `struct_basics.c`:
-   - Define: `struct Student { char name[50]; float cgpa; char branch[30]; int year; };`
-   - Use `typedef` to create a cleaner alias: `typedef struct Student Student;` — now you write `Student s;` instead of `struct Student s;`
-   - Create a student, fill in values, print everything
-   - Create an array of 3 students, fill them, print in table format
-   - **What to understand**: Struct members are stored contiguously in memory (with possible padding for alignment). Draw the memory layout on paper!
-   - **Ask Google AI**: "Explain struct padding and alignment in C. Why does `sizeof(struct)` sometimes give a larger number than I expect?"
+1. **Neso Academy: "Structures in C (Part 1)"** (~10 min)
+   - Focus on: Why structs exist (group related data), declaring, accessing members with `.`
+2. **Neso Academy: "Structures in C (Part 2)"** (~8 min)
+   - Focus on: Array of structs, initializing structs
 
-3. **(5:50-6:20)** Write `struct_functions.c`:
-   - Write `void print_student(Student s)` — pass struct by VALUE (copies entire struct!)
-   - Write `void print_student_ptr(Student *s)` — pass by POINTER (efficient, no copy)
-   - Use arrow operator for pointer: `s->name` instead of `(*s).name`
-   - **KEY**: In embedded, you ALWAYS pass structs by pointer (by reference) because RAM is limited. Copying a 100-byte struct every function call wastes stack.
-   - Write `void update_cgpa(Student *s, float new_cgpa)` — modifying through pointer
+> **Alternative**: **Jacob Sorber: "Structs in C — everything you need to know"** (~15 min) — more practical, terminal demos
 
-4. **(6:20-6:30)** Draw memory diagram comparing `Student s` (on stack) vs `Student *s` (pointer to struct, struct might be on heap).
+---
 
-### 🎧 Commute: Nicos Weg Lesson 16 (food vocabulary: das Brot, die Milch) | 📱 Lunch: Anki | 📖 Bed: K&R pp. 133-140
+#### 📖 READ (5 min)
 
-### ✅ Day 19: `struct_basics.c` + `struct_functions.c`. Understand `->` operator.
+- **K&R Chapter 6** pages 127-133 (Structure basics). Notice how K&R introduces structs for representing points and rectangles — very elegant.
+- Or: **Beej's Guide** → "Structs" → https://beej.us/guide/bgc/html/split/structs.html
+
+---
+
+#### 💻 CODE (45 min) — 5:30 to 6:15 AM
+
+**Program 1 — `struct_basics.c`:**
+- Define: `struct Student { char name[50]; float cgpa; char branch[30]; int year; };`
+- Use `typedef` to create a cleaner alias: `typedef struct Student Student;` — now you write `Student s;` instead of `struct Student s;`
+- Create a student, fill in values, print everything
+- Create an array of 3 students, fill them, print in table format
+- **What to understand**: Struct members are stored contiguously in memory (with possible padding for alignment). Draw the memory layout on paper!
+- **Ask Google AI**: "Explain struct padding and alignment in C. Why does `sizeof(struct)` sometimes give a larger number than I expect?"
+
+---
+
+#### 🧪 TEST YOURSELF
+
+- **learn-c.org**: "Structures" → https://www.learn-c.org/en/Structures
+- **HackerRank**: "Boxes through a Tunnel" → https://www.hackerrank.com/challenges/too-high-boxes (uses structs)
+
+---
+
+### 🎧 Commute: Nicos Weg Lesson 16 | 📱 Lunch: Anki | 📖 Bed: K&R pp. 133-140 (struct and pointers)
+
+### ✅ Day 19: `struct_basics.c` with typedef and array of structs.
 
 ---
 
 ## DAY 20 — Wednesday, May 20
 
-### 🔶 Morning (5:10-6:30 AM) — Array of Structs + Real-World Data
+### 🔶 Morning (5:10-6:30 AM) — 🇩🇪 German + Struct Pointers
 
-**What to learn**: Arrays of structs are HOW data is organized in every embedded system — sensor readings, configuration parameters, task lists, peripheral descriptors.
+---
 
-**How to learn**:
-1. **(5:10-5:45)** Rewrite your Week 2 student records program using structs:
-   Write `student_system.c`:
-   - `Student students[MAX_STUDENTS];`
-   - Functions: `add_student()`, `find_by_name()`, `sort_by_cgpa()`, `print_all()`
-   - Compare with the parallel arrays version — how much CLEANER is the struct version?
-   - **This is the difference between beginner and intermediate C.** Structs make code readable and maintainable.
+#### 📺 GERMAN (15 min) — 5:10 to 5:25 AM
 
-2. **(5:45-6:15)** Write `university_db.c`:
-   - Define nested structs:
-     ```
-     struct Requirement { float min_cgpa; float min_ielts; int need_experience; };
-     struct University { char name[50]; char city[30]; struct Requirement req; };
-     ```
-   - Create an array of YOUR target universities (FH Dortmund, HS Bremerhaven, etc.)
-   - Write a function `int check_eligibility(University *uni, float my_cgpa, float my_ielts)`
-   - **Nested structs** = how STM32 peripheral definitions work. `GPIO->MODER` is a struct member of a struct.
+- **DW Nicos Weg app**: Lesson 17
+- **Learn German with Anja** (YouTube): Search "German Food Vocabulary" (~10 min)
+  - New words: das Brot (bread), die Milch (milk), der Käse (cheese), das Wasser (water), der Kaffee (coffee)
 
-3. **(6:15-6:30)** Write `sizeof_struct.c`:
-   - Print sizeof for each of your structs
-   - Try `__attribute__((packed))` — see how it changes size (removes padding)
-   - **Embedded insight**: Packed structs are used when you need exact memory layout (parsing protocol packets, reading sensor registers)
+---
 
-### 🎧 Commute: Nicos Weg Lesson 17 | 📱 Lunch: Anki (German articles quiz yourself) | 📖 Bed: K&R pp. 140-148
+#### 📺 WATCH (15 min) — 5:25 to 5:40 AM
 
-### ✅ Day 20: `student_system.c` + `university_db.c` + `sizeof_struct.c`. Nested structs mastered.
+1. **Neso Academy: "Pointer to Structure in C"** (~10 min)
+   - Focus on: The `->` (arrow) operator. `ptr->name` is the same as `(*ptr).name` — arrow is cleaner.
+2. **Neso Academy: "Passing Structures to Functions"** (~8 min)
+   - Focus on: Pass by value (copies entire struct — wasteful!) vs pass by pointer (efficient, uses `->`)
+
+---
+
+#### 💻 CODE (40 min) — 5:40 to 6:20 AM
+
+**Program 2 — `struct_functions.c`:**
+- Write `void print_student(Student s)` — pass struct by VALUE (copies entire struct!)
+- Write `void print_student_ptr(Student *s)` — pass by POINTER (efficient, no copy), use `s->name`, `s->cgpa`
+- Write `void update_cgpa(Student *s, float new_cgpa)` — modify through pointer
+- **Key learning**: In embedded, you ALWAYS pass structs by pointer. Copying 100-byte structs wastes precious stack space.
+
+**Program 3 — `nested_structs.c`:**
+- Define `struct Address { char city[30]; int pincode; };`
+- Define `struct Employee { char name[50]; struct Address addr; float salary; };`
+- Access: `emp.addr.city` or with pointer: `emp_ptr->addr.city`
+
+---
+
+#### 🧪 TEST YOURSELF
+
+- **HackerRank**: "Small Triangles, Large Triangles" → https://www.hackerrank.com/challenges/small-triangles-large-triangles (sorting structs)
+
+---
+
+### 📖 Bed: K&R pp. 48-53 (bitwise operators section — read this TONIGHT for tomorrow!)
+
+### ✅ Day 20: `struct_functions.c` + `nested_structs.c`. German food vocab started.
 
 ---
 
 ## DAY 21 — Thursday, May 21
 
-### 🔶 Morning (5:10-6:30 AM) — Dynamic Structs + Linked List Preview
+### 🔶 Morning (5:10-6:30 AM) — Bitwise Operators
 
-**What to learn**: Allocating structs dynamically with malloc. Self-referential structs (a struct that contains a pointer to itself = linked list node).
+---
 
-**How to learn**:
-1. **(5:10-5:40)** Write `dynamic_structs.c`:
-   - Allocate a single student: `Student *s = malloc(sizeof(Student));`
-   - Fill values using `->` operator
-   - Allocate an array of N students: `Student *arr = malloc(n * sizeof(Student));`
-   - Access using `arr[i].name` or `(arr + i)->name`
-   - Free everything. Run Valgrind.
+#### 📺 WATCH FIRST (25 min) — 5:10 to 5:35 AM
 
-2. **(5:40-6:15)** Write `linked_list_intro.c`:
-   - Define: `typedef struct Node { int data; struct Node *next; } Node;`
-   - Draw on paper:
-     ```
-     [data=10|next] → [data=20|next] → [data=30|next] → NULL
-     ```
-   - Create 3 nodes manually (malloc each one), link them, traverse and print
-   - Don't implement insert/delete yet — just understand the CONCEPT
-   - **Why linked lists matter for embedded**: FreeRTOS task lists, message queues, timer lists — ALL are linked lists internally
+1. **Neso Academy: "Bitwise Operators in C (Part 1)"** (~12 min)
+   - Focus on: AND `&`, OR `|`, XOR `^`, NOT `~` — with truth tables
+2. **Neso Academy: "Bitwise Operators in C (Part 2)"** (~10 min)
+   - Focus on: Left shift `<<`, Right shift `>>` — these are multiply/divide by powers of 2!
 
-3. **(6:15-6:30)** Re-draw the linked list on paper. Can you visualize what `head->next->next->data` means?
+> **Supplement**: **Jacob Sorber: "Bit manipulation in C"** (~12 min) — practical embedded examples
 
-### 🎧 Commute: Nicos Weg Lesson 18 | 📱 Lunch: Anki | 📖 Bed: K&R pp. 148-155 (Self-referential structures)
+---
 
-### ✅ Day 21: `dynamic_structs.c` + `linked_list_intro.c`. Valgrind clean. Paper diagrams done.
+#### 📖 READ — K&R pp. 48-53 (Bitwise Operators section in Chapter 2)
+
+---
+
+#### 💻 CODE (40 min) — 5:35 to 6:15 AM
+
+**Program 4 — `bitwise_basics.c`:**
+- Print a number in binary (write a function that prints each bit)
+- Demonstrate AND: `a & b` — used for MASKING (checking if a specific bit is set)
+- Demonstrate OR: `a | b` — used for SETTING bits
+- Demonstrate XOR: `a ^ b` — used for TOGGLING bits
+- Demonstrate NOT: `~a` — inverts all bits
+- Demonstrate shifts: `1 << 3` = 8 (set bit 3), `16 >> 2` = 4
+
+**Program 5 — `bit_manipulation.c`:**
+Write these 4 essential macros (you'll use them on STM32!):
+```c
+#define SET_BIT(reg, bit)    ((reg) |=  (1 << (bit)))
+#define CLEAR_BIT(reg, bit)  ((reg) &= ~(1 << (bit)))
+#define TOGGLE_BIT(reg, bit) ((reg) ^=  (1 << (bit)))
+#define CHECK_BIT(reg, bit)  ((reg) &   (1 << (bit)))
+```
+- Test each: set bit 3, clear bit 3, toggle bit 5, check if bit 7 is set
+- Print the number in binary before and after each operation
+
+---
+
+#### 🧪 TEST YOURSELF
+
+- **HackerRank**: "Bitwise Operators" → https://www.hackerrank.com/challenges/bitwise-operators-in-c
+- **Ask Google AI**: "In STM32, how do I set GPIO pin 5 HIGH using bitwise operations on the BSRR register?"
+
+---
+
+### 🎧 Commute: Nicos Weg Lesson 18 | 📖 Bed: K&R bitwise section re-read
+
+### ✅ Day 21: `bitwise_basics.c` + `bit_manipulation.c` with 4 essential macros. **THIS IS DIRECT STM32 PREP.**
 
 ---
 
 ## DAY 22 — Friday, May 22
 
-### 🔶 Morning (5:10-6:30 AM) — BITWISE OPERATORS 🔧
+### 🔶 Morning (5:10-6:30 AM) — 🇩🇪 German + Bit Fields & Structs Combined
 
-**What to learn**: `&` (AND), `|` (OR), `^` (XOR), `~` (NOT), `<<` (left shift), `>>` (right shift). These are HOW you talk to hardware registers.
+---
 
-**How to learn**:
-1. **(5:10-5:20)** Read **K&R pages 48-53** (Bitwise operators section). ALSO read **Beej's Guide** section on bitwise — it has better diagrams.
+#### 📺 GERMAN (15 min) — 5:10 to 5:25 AM
 
-2. **(5:20-5:50)** Write `bitwise_basics.c`:
-   - Print numbers in binary using a function: `void print_binary(unsigned int n, int bits)`
-   - Test ALL operators:
-     - `0b1100 & 0b1010` = `0b1000` (AND — both bits must be 1)
-     - `0b1100 | 0b1010` = `0b1110` (OR — either bit can be 1)
-     - `0b1100 ^ 0b1010` = `0b0110` (XOR — exactly one bit must be 1)
-     - `~0b1100` = flip all bits
-     - `1 << 3` = `0b1000` (shift 1 left by 3 positions = bit 3)
-   - **KEY INSIGHT**: `1 << n` = "set bit n". This is the MOST USED pattern in embedded C.
+- **DW Nicos Weg app**: Lesson 19
+- Practice: "Ich lerne Deutsch." "Ich arbeite bei Unistring." "Ich möchte in Deutschland studieren."
 
-3. **(5:50-6:20)** Write `bit_macros.c` — THE 4 macros you'll use on every STM32 project:
-   - `SET_BIT(reg, bit)` — set a bit to 1: `reg |= (1 << bit)`
-   - `CLEAR_BIT(reg, bit)` — set a bit to 0: `reg &= ~(1 << bit)`
-   - `TOGGLE_BIT(reg, bit)` — flip a bit: `reg ^= (1 << bit)`
-   - `CHECK_BIT(reg, bit)` — read a bit: `(reg >> bit) & 1`
-   - Test each macro, print binary before and after
-   - **THESE 4 MACROS ARE THE FOUNDATION OF ALL EMBEDDED PROGRAMMING.** Memorize them.
+---
 
-4. **(6:20-6:30)** Test: Can you write all 4 macros from memory? If not, practice until you can.
+#### 📺 WATCH (12 min) — 5:25 to 5:37 AM
 
-### 🎧 Commute: Nicos Weg Lesson 19 | 📱 Lunch: Anki | 📖 Bed: K&R bitwise exercises
+- **Neso Academy: "Bit Fields in C"** (~10 min)
+  - Focus on: Controlling exactly how many bits each struct member uses. Used in embedded for memory-mapped I/O.
+- Search YouTube: **"Bit manipulation for embedded systems"** — any short video (<10 min)
 
-### ✅ Day 22: `bitwise_basics.c` + `bit_macros.c`. ALL 4 bit macros memorized.
+---
+
+#### 💻 CODE (45 min) — 5:37 to 6:22 AM
+
+**Program 6 — `bit_fields.c`:**
+```c
+typedef struct {
+    unsigned int led_on    : 1;  // 1 bit: 0 or 1
+    unsigned int mode      : 3;  // 3 bits: 0-7
+    unsigned int speed     : 4;  // 4 bits: 0-15
+    unsigned int reserved  : 24; // remaining bits
+} GPIO_Config;
+```
+- Set `config.led_on = 1;` `config.mode = 5;` `config.speed = 10;`
+- Print `sizeof(GPIO_Config)` — it's 4 bytes (32 bits total), packed!
+- **This is EXACTLY how STM32 peripheral registers are defined in the CMSIS headers.**
+
+**Program 7 — `register_simulator.c`:**
+- Create a struct representing a 32-bit hardware register
+- Write functions: `set_bit()`, `clear_bit()`, `toggle_bit()`, `read_bit()`
+- Print the register in binary after each operation
+- Simulate: "Turn on LED on pin 5" → `SET_BIT(GPIOA_ODR, 5)`
+- **THIS program simulates EXACTLY what you'll do on STM32 in July.**
+
+---
+
+#### 🧪 TEST YOURSELF
+
+- Look at the actual STM32F411 reference manual GPIO chapter (just skim the register description page) — can you see how the struct/bitwise patterns you just wrote map to real hardware?
+
+---
+
+### 📖 Bed: K&R Chapter 6 self-referential structures (pp. 140-145 — linked lists preview)
+
+### ✅ Day 22: `bit_fields.c` + `register_simulator.c`. The bridge to real hardware.
 
 ---
 
 ## DAY 23 — Saturday, May 23 🟩 BIG DAY
 
-### 💻 Warmup (6:30-7:30 AM) — Bit Manipulation Patterns
-
-**What to learn**: Common bit manipulation patterns used in embedded firmware — bit fields, masks, extracting values from registers.
-
-**How to learn**:
-1. **(6:30-6:55)** Write `bit_patterns.c`:
-   - Set multiple bits at once using a mask: `reg |= (0b11 << 4)` — sets bits 4 and 5
-   - Clear specific bits using a mask: `reg &= ~(0b11 << 4)` — clears bits 4 and 5
-   - Extract a field: `value = (reg >> 4) & 0b11` — get bits 5:4 as a 2-bit number
-   - **Real embedded example**: STM32 GPIO MODER register uses 2 bits per pin.
-     - Pin 5 mode is at bits [11:10]
-     - To set pin 5 as output: `GPIOA->MODER |= (0b01 << (5 * 2))`
-     - To clear pin 5 mode first: `GPIOA->MODER &= ~(0b11 << (5 * 2))`
-
-2. **(6:55-7:20)** Write `flags.c`:
-   - Use a single `uint8_t` to store 8 boolean flags (instead of 8 separate `int` variables)
-   - Define: `#define FLAG_LED    (1 << 0)`, `#define FLAG_MOTOR  (1 << 1)`, `#define FLAG_BUZZER (1 << 2)`
-   - Set flag: `status |= FLAG_LED;`
-   - Check flag: `if (status & FLAG_LED) { ... }`
-   - Clear flag: `status &= ~FLAG_LED;`
-   - **Memory saved**: 1 byte for 8 flags vs 32 bytes for 8 ints. On a micro with 20KB RAM, this matters!
-
-3. **(7:20-7:45)** Write `rgb_color.c`:
-   - Pack RGB color into a single `uint32_t`: `color = (r << 16) | (g << 8) | b`
-   - Extract components: `r = (color >> 16) & 0xFF`, `g = (color >> 8) & 0xFF`, `b = color & 0xFF`
-   - This is EXACTLY how display drivers encode pixel colors
-
-4. **(7:50-8:00)** Quick test: Given `uint32_t reg = 0x0000F0F0`, what are bits 15:12? Calculate by hand, then verify with code.
-
-### 📖 Evening: Beej's Guide — bitwise section review
-
-### ✅ Day 23: `bit_patterns.c` + `flags.c` + `rgb_color.c`. Bit field extraction understood.
-
-> **Note**: Day 23 is Saturday. Use the full Saturday template from the overview for time slots. The morning session times above are just the warmup — continue with Deep Sessions 1-3 (7:45 AM-12:45 PM) working on these programs. German 2:00-5:00 PM.
+### 💻 Warmup (6:30-7:30 AM) — Linked List Part 1
 
 ---
 
-## DAY 24 — Sunday, May 24 🟨 REVIEW + GPIO SIMULATOR
+#### 📺 WATCH FIRST (25 min) — 6:30 to 6:55 AM
 
-### 💻 Warmup (7:30-8:30) — Struct + Bitwise Review
-- Write all 4 bit macros from memory
-- Create a struct from memory
-- Quick 20-min review of toughest concepts
+1. **mycodeschool: "Introduction to Linked List"** (~11 min)
+   - Search: https://www.youtube.com/watch?v=NobHlGUjV3g
+   - Focus on: Why linked lists exist (dynamic size, efficient insert/delete), vs arrays (random access, contiguous)
+2. **mycodeschool: "Inserting a node at beginning"** (~12 min)
+   - Focus on: Creating a node with `malloc`, setting `next` pointer, updating `head`
 
-### 💻 Deep Session 1-3 (8:45 AM-12:45 PM) — GPIO Register Simulator
+> **Alternative**: **Neso Academy: "Linked List in C"** (~15 min)
 
-**THE CAPSTONE PROJECT for Weeks 3-4.** This combines structs + bitwise and simulates a real STM32 GPIO port.
+---
 
-Write `register_simulator.c`:
+#### 📖 READ — K&R pp. 140-145 (self-referential structures, linked allocation)
 
-**What you're building**: A simulation of the STM32 GPIO peripheral — same registers, same bit fields, same operations — running on your PC.
+---
 
-**Approach** (spend 4-5 hours on this):
-1. Define a GPIO struct with registers: MODER, ODR, IDR, BSRR
-2. Each register is a `uint32_t` (32 bits, just like real STM32)
-3. Implement functions:
-   - `gpio_set_mode(GPIO *port, int pin, int mode)` — set pin mode (input/output/alt/analog)
-   - `gpio_write_pin(GPIO *port, int pin, int value)` — set pin high or low
-   - `gpio_read_pin(GPIO *port, int pin)` — read pin state
-   - `gpio_toggle_pin(GPIO *port, int pin)` — toggle pin
-4. ADD `print_register(uint32_t reg, char *name)` — print register in binary with bit labels
-5. Write a `main()` that simulates: set PA5 as output → turn on LED → toggle it 5 times → read state
+#### 💻 CODE (35 min) — 6:55 to 7:30 AM
 
-**Reference**: Open the STM32F411 reference manual (you have CubeIDE installed → Help → Reference Manual), look at GPIO chapter. Compare YOUR register layout with the REAL one.
+**Program 8 — `linked_list.c`** (Part 1):
+```c
+typedef struct Node {
+    int data;
+    struct Node *next;  // self-referential!
+} Node;
+```
+- Create nodes with `malloc`
+- Link them: `node1->next = node2;`
+- Traverse and print all nodes
+- Insert at beginning (update head pointer)
 
-**Why this matters**: When you start STM32 in July, you'll write `GPIOA->MODER |= (1 << 10);` and you'll ALREADY know what it does. Most people hit STM32 with zero bitwise knowledge and get stuck for weeks.
+---
 
-**Tracker Roadmap Connection**: This directly maps to your Embedded_Systems_Tracker Week 04 "ARM Cortex-M Architecture & STM32 MCU Deep Dive" and Week 05-06 C foundations.
+### 💻 Deep Session 1 (7:45-9:15 AM) — Linked List Part 2
 
-### 🇩🇪 German (2:00-5:00) — Sunday template
-- Nicos Weg Lessons 19-20
-- Google AI: Practice describing your daily routine in German:
-  - "Ich stehe um fünf Uhr auf" (I wake up at 5)
-  - "Ich gehe zur Arbeit" (I go to work)
-  - "Ich lerne C-Programmierung" (I learn C programming)
-- Anki: mega review + 10 new daily routine cards
+---
 
-### ✅ Day 24: `register_simulator.c` COMPLETE. This is your most important program of the month.
+#### 📺 WATCH (20 min) — 7:45 to 8:05 AM
+
+1. **mycodeschool: "Inserting a node at nth position"** (~12 min)
+2. **mycodeschool: "Deleting a node at nth position"** (~10 min)
+
+---
+
+#### 💻 CODE (65 min) — 8:05 to 9:10 AM
+
+Continue `linked_list.c`:
+- Insert at end
+- Insert at position N
+- Delete by value
+- Delete by position
+- Reverse the list (the classic interview question!)
+- Print count of nodes
+
+---
+
+### 💻 Deep Session 2 (9:30-11:00 AM) — Combined Struct + Bitwise Project
+
+---
+
+#### 💻 CODE — **"Hardware Register Simulator"** (extended weekend project)
+
+Build a complete register simulation combining everything from this week:
+- Define a `Peripheral` struct with multiple 32-bit registers
+- Simulate GPIO: ODR (output data register), IDR (input data register), MODER (mode register)
+- Write functions: `gpio_set_mode(pin, mode)`, `gpio_write(pin, value)`, `gpio_read(pin)`
+- Print register state in binary/hex after each operation
+- **This is your first "embedded" program** — even though it runs on your PC, the logic is identical to real STM32 driver code.
+
+---
+
+### 💻 Deep Session 3 (11:15 AM-12:45 PM) — More Linked List Practice
+
+---
+
+#### 📺 WATCH (10 min)
+
+- **mycodeschool: "Reverse a linked list (iterative)"** (~10 min)
+
+---
+
+#### 💻 CODE
+
+- Implement reverse linked list from scratch (iterative, using 3 pointers)
+- If time: implement reverse recursively
+- Push all code to GitHub with README updates
+
+---
+
+### 🇩🇪 German (2:00-5:00 PM)
+
+- **DW Nicos Weg**: Lessons 19-20 (2:00-3:30 PM)
+- **Learn German with Anja** (YouTube): "German Daily Routine Vocabulary" (~12 min)
+  - aufstehen (wake up), frühstücken (have breakfast), arbeiten (work), lernen (study), schlafen (sleep)
+- **Google AI Pro** voice mode (3:45-5:00 PM): Describe your daily routine in German
+- **Anki**: Add 10 new cards (daily routine verbs + food vocab)
+
+---
+
+### ✅ Day 23: `linked_list.c` (full CRUD) + hardware register simulator project + Git push. German daily routine.
+
+---
+
+## DAY 24 — Sunday, May 24 🟨 REVIEW + PRACTICE
+
+### 💻 Practice (7:30-9:00 AM) — typedef Patterns + Enum Preview
+
+---
+
+#### 📺 WATCH (15 min) — 7:30 to 7:45 AM
+
+- **Neso Academy: "typedef in C"** (~8 min)
+  - Focus on: `typedef` creates aliases. `typedef unsigned int uint32_t;` — THIS is how STM32 header files define types.
+- **Neso Academy: "Unions in C"** (~10 min)
+  - Focus on: Union members share the SAME memory (unlike struct where each gets its own)
+
+---
+
+#### 💻 CODE (60 min) — 7:45 to 8:45 AM
+
+**Program 9 — `typedef_patterns.c`:**
+- `typedef unsigned char  uint8_t;`  ← 8-bit unsigned (used everywhere in embedded)
+- `typedef unsigned short uint16_t;` ← 16-bit unsigned
+- `typedef unsigned int   uint32_t;` ← 32-bit unsigned
+- `typedef void (*callback_t)(void);` ← function pointer typedef
+- **This is EXACTLY what `<stdint.h>` defines.** Embedded code uses `uint8_t`, `uint16_t`, `uint32_t` instead of `int`, `short`, etc. for portability.
+
+**Program 10 — `union_demo.c`:**
+- Show that union members share space: changing one changes the other
+- Use case: Parse a 32-bit register as either a whole `uint32_t` or 4 separate `uint8_t` bytes
+
+---
+
+### 💻 MEMORY TEST (9:15-12:00 PM)
+
+Close ALL references. Write from memory:
+1. A struct with typedef, passed to function by pointer (using `->`)
+2. The 4 bitwise macros: SET, CLEAR, TOGGLE, CHECK
+3. A linked list: create 3 nodes, print all, reverse the list
+4. The circular buffer from last week
+
+**Rate yourself**:
+- Can you write all 4? → Ready for Week 5
+- Can write 2-3? → OK, review the weak ones tonight
+- Can write 0-1? → STOP. Re-watch videos and practice before moving on.
+
+---
+
+### 🇩🇪 German (2:00-4:00 PM) + 📋 Weekly Review (4:00-4:30 PM)
+
+- Anki mega review. Target: 60+ cards reviewed.
+- **Notion**: Log Week 4 metrics, rate understanding of structs/bitwise, plan Week 5
+
+---
+
+### ✅ Day 24: `typedef_patterns.c` + `union_demo.c` + memory re-write test. Weekly review.
 
 ---
 
 ## DAY 25 — Monday, May 25 🟦 WEEKDAY
 
-### 🔶 Morning (5:10-6:30 AM) — Quick Struct + Bitwise Drill
+### 🔶 Morning (5:10-6:30 AM) — Refactor ALL Programs with typedef
 
-From memory, write:
-1. A struct for sensor data (timestamp, temp, humidity)
-2. The 4 bit manipulation macros (SET, CLEAR, TOGGLE, CHECK)
+---
 
-> **Note**: Full polish, Git push, and German mega review happen next Saturday (Day 30). This is a quick reinforcement.
+#### 💻 CODE (70 min) — 5:10 to 6:20 AM
 
-### 🎧 Commute: Review Nicos Weg 16-20 | 📱 Lunch: Anki | 📖 Bed: K&R Chapter 6 review
+Go through your Week 4 programs and:
+1. Replace all `int` with `int32_t` (from `<stdint.h>`) where appropriate
+2. Replace all `unsigned int` with `uint32_t`
+3. Add `const` to function parameters that shouldn't be modified
+4. This is **embedded coding style** — start writing like a firmware engineer
+
+---
+
+#### 🧪 PREPARE FOR WEEK 5
+
+- Preview: K&R Chapter 4 (preprocessor section, pp. 86-92) — read tonight before bed
+- Search YouTube: **Jacob Sorber "volatile in C"** — bookmark for Day 27
+- Search YouTube: **Jacob Sorber "State Machines in C"** — bookmark for Day 26
+
+---
+
+### 🎧 Commute: Nicos Weg Lesson 20 | 📱 Lunch: Anki | 📖 Bed: K&R pp. 86-92 (preprocessor preview)
+
+### ✅ Day 25: Refactored code with stdint.h types. Week 5 resources bookmarked.
 
 ---
 
@@ -244,9 +421,14 @@ From memory, write:
 | Metric | Target | Done? |
 |:---|:---|:---|
 | Programs written | 10+ (cumulative 40+) | [ ] |
-| Register simulator | COMPLETE and on GitHub | [ ] |
-| Bit macros | All 4 from MEMORY | [ ] |
-| K&R Chapter 6 | Read completely | [ ] |
+| Neso Academy videos watched | 8-10 | [ ] |
+| mycodeschool linked list videos | 4-5 | [ ] |
+| Comfortable with structs and typedef | YES | [ ] |
+| Can do bitwise SET/CLEAR/TOGGLE/CHECK | YES — essential for STM32 | [ ] |
+| Hardware register simulator working | YES | [ ] |
+| Linked list implemented from scratch | YES (insert, delete, print, reverse) | [ ] |
+| Understand unions and bit fields | YES | [ ] |
+| K&R pp. 48-53 + 127-150 read | YES | [ ] |
 | Nicos Weg lessons | 16-20 (cumulative: 20) | [ ] |
 | German words in Anki | 70+ (cumulative) | [ ] |
-| German sentences | Say 15 from memory | [ ] |
+| **PUSH 3+ programs to GitHub** | YES | [ ] |

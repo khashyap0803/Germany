@@ -5,6 +5,7 @@
 > **Programs to write**: 6-8
 > **German**: Nicos Weg Lessons 21-25, review all vocabulary, first attempt at writing a paragraph
 > **Goal**: Finish May with solid C fundamentals ready for STM32 in July
+> **📚 Full resource details**: See `10_RESOURCES.md`
 
 ---
 
@@ -12,79 +13,122 @@
 
 ### 🔶 Morning (5:10-6:30 AM) — Enums + State Machines
 
-**What to learn**: `enum` gives names to numbers. State machines are THE design pattern for embedded firmware — every embedded device is a state machine.
+---
 
-**How to learn**:
-1. **(5:10-5:20)** Read **K&R section on enumerations** (pp. 39-40). Short section.
-2. **(5:20-5:50)** Write `enum_states.c`:
-   - Define: `typedef enum { STATE_IDLE, STATE_RUNNING, STATE_ERROR, STATE_DONE } State;`
-   - These become 0, 1, 2, 3 automatically
-   - Write a state machine using `switch(current_state)` in a `while(1)` loop
-   - Simulate: Traffic light controller — RED → GREEN → YELLOW → RED
-   - Each state prints what's happening, waits (use `sleep(1)` on Linux), transitions to next state
-   - **Why state machines are EVERYTHING in embedded**:
-     - Washing machine? State machine (fill → wash → rinse → spin → done)
-     - UART driver? State machine (idle → receiving → processing → sending)
-     - Your STM32 LED blink? State machine (on → wait → off → wait)
-     - FreeRTOS task states? State machine (ready → running → blocked → suspended)
+#### 📺 WATCH FIRST (20 min) — 5:10 to 5:30 AM
 
-3. **(5:50-6:20)** Write `state_machine_menu.c`:
-   - A vending machine simulator with states: IDLE → COIN_INSERTED → ITEM_SELECTED → DISPENSING → CHANGE → IDLE
-   - Use enums for states AND for items
-   - This is EXACTLY the kind of code you'll write on STM32 for real products
+1. **Neso Academy: "Enumeration in C"** (~8 min)
+   - Focus on: `enum` gives names to numbers. Much cleaner than `#define STATE_IDLE 0`
+2. **Jacob Sorber: "State Machines in C"** (~15 min)
+   - Focus on: The `switch(current_state)` pattern inside a `while(1)` loop. This is the heart of ALL embedded firmware.
 
-4. **(6:20-6:30)** Review: Can you explain what a state machine is without looking? Draw the traffic light state diagram on paper (circles and arrows).
+> **Deeper understanding**: Search YouTube: "State Machine Design Pattern in C" — any video under 15 min that shows a practical example
 
-### 🎧 Commute: Nicos Weg Lesson 21 | 📱 Lunch: Anki | 📖 Bed: K&R Chapter 4 (pp. 85-90, Preprocessor intro)
+---
 
-### ✅ Day 26: `enum_states.c` + `state_machine_menu.c`. State machine concept mastered.
+#### 📖 READ (5 min)
+
+- **K&R section on enumerations** (pp. 39-40). Short section — only 2 pages.
+
+---
+
+#### 💻 CODE (45 min) — 5:30 to 6:15 AM
+
+**Program 1 — `enum_states.c`:**
+```c
+typedef enum { STATE_IDLE, STATE_RUNNING, STATE_ERROR, STATE_DONE } State;
+```
+- These become 0, 1, 2, 3 automatically
+- Write a state machine using `switch(current_state)` in a `while(1)` loop
+- Simulate: **Traffic light controller** — RED → GREEN → YELLOW → RED
+- Each state prints what's happening, waits (use `sleep(1)` from `<unistd.h>` on Linux), transitions to next state
+
+**Why state machines are EVERYTHING in embedded**:
+- Washing machine? State machine (fill → wash → rinse → spin → done)
+- UART driver? State machine (idle → receiving → processing → sending)
+- Your STM32 LED blink? State machine (on → wait → off → wait)
+- FreeRTOS task states? State machine (ready → running → blocked → suspended)
+
+---
+
+#### 🧪 TEST YOURSELF
+
+- Modify your traffic light to handle a "pedestrian button press" (new state transition)
+- **Exercism**: `resistor-color-duo` → https://exercism.org/tracks/c/exercises/resistor-color-duo (uses enums)
+
+---
+
+### 🎧 Commute: Nicos Weg Lesson 21 | 📱 Lunch: Anki | 📖 Bed: K&R Chapter 4 preprocessor section (pp. 86-92)
+
+### ✅ Day 26: `enum_states.c` — traffic light state machine working.
 
 ---
 
 ## DAY 27 — Wednesday, May 27
 
-### 🔶 Morning (5:10-6:30 AM) — volatile, const, static, extern — Storage Classes
+### 🔶 Morning (5:10-6:30 AM) — 🇩🇪 German + volatile, const, static
 
-**What to learn**: These 4 keywords control HOW and WHERE variables are stored and accessed. They're used in EVERY embedded C file.
+---
 
-**How to learn**:
-1. **(5:10-5:15)** Jacob Sorber videos (watch these short ones): "The static keyword" (~5 min), "volatile in C" (~6 min), "extern in C" (~4 min)
+#### 📺 GERMAN (15 min) — 5:10 to 5:25 AM
 
-2. **(5:15-5:45)** Write `storage_classes.c` — demonstrate each one:
+- **DW Nicos Weg app**: Lesson 22
+- **Learn German with Anja** (YouTube): Search "German Accusative Case for Beginners" (~12 min)
+  - Key: der → den (masculine accusative only changes!), die stays die, das stays das
+  - Practice: "Ich habe **den** Computer." "Ich trinke **den** Kaffee."
 
-   **`const`**:
-   - `const int MAX_TEMP = 150;` — value CANNOT be changed after initialization
-   - Try to modify it: compiler error!
-   - **Embedded use**: Configuration values, calibration constants, lookup tables stored in FLASH
+---
 
-   **`static`** (3 different meanings!):
-   - Static local variable: retains value between function calls (like a mini-global)
-   - Static global variable: visible only in this `.c` file (file scope)
-   - Static function: callable only within this `.c` file (information hiding)
-   - **Embedded use**: Static variables = persistent counters in interrupt handlers. Static functions = internal module functions hidden from other modules.
+#### 📺 WATCH (20 min) — 5:25 to 5:45 AM
 
-   **`volatile`**:
-   - `volatile int sensor_value;` — tells compiler "this value can change at ANY time without the code changing it"
-   - WITHOUT volatile, compiler might optimize away your loop: `while (flag == 0) {}` → compiler sees flag never changes → removes the loop!
-   - **Embedded use**: EVERY hardware register access, EVERY shared variable in interrupts. If you forget `volatile` on an ISR flag, your code WILL break at -O2 optimization. This is the #1 embedded C bug that students miss.
-   - **Ask Google AI**: "Give me a real example of a bug caused by missing `volatile` in embedded C. Show the assembly difference."
+1. **Jacob Sorber: "The volatile keyword in C"** (~10 min)
+   - Focus on: `volatile` tells the compiler "this variable can change WITHOUT your code changing it" (hardware registers, ISR variables). Compiler must NOT optimize it away.
+2. **Jacob Sorber: "const in C — what does it really mean?"** (~8 min)
+   - Focus on: `const int *p` (pointer to const int — can't change value) vs `int * const p` (const pointer — can't change where it points)
+3. **Neso Academy: "Storage Classes in C — static, extern"** (~12 min)
+   - Focus on: `static` in 3 contexts, `extern` for cross-file variables
 
-   **`extern`**:
-   - `extern int count;` — "this variable EXISTS in another file, don't allocate memory, just reference it"
-   - Used in header files to share global variables across `.c` files
-   - **Embedded use**: Sharing configuration between modules
+---
 
-3. **(5:45-6:20)** Write a multi-file example:
-   - `config.h` — declare `extern const int MAX_SENSORS;`
-   - `config.c` — define `const int MAX_SENSORS = 8;`
-   - `main.c` — `#include "config.h"` and use `MAX_SENSORS`
-   - Compile: `gcc main.c config.c -o main -Wall`
+#### 📖 READ
 
-4. **(6:20-6:30)** Quick quiz yourself: What's the difference between `const int *p` and `int * const p` and `static int x` and `volatile int y`?
+- **Beej's Guide** → "The C Preprocessor" → https://beej.us/guide/bgc/html/split/the-c-preprocessor.html (more beginner-friendly than K&R for this topic)
 
-### 🎧 Commute: Nicos Weg Lesson 22 | 📱 Lunch: Anki | 📖 Bed: K&R Chapter 4 pp. 90-93
+---
 
-### ✅ Day 27: `storage_classes.c` + multi-file extern example. ALL 4 keywords understood.
+#### 💻 CODE (35 min) — 5:45 to 6:20 AM
+
+**Program 2 — `volatile_const.c`:**
+```c
+volatile int sensor_value = 0;  // Might change from hardware/ISR
+const int MAX_SENSORS = 10;     // Read-only constant
+
+// const pointer vs pointer to const:
+int x = 5, y = 10;
+const int *p1 = &x;    // Can change where p1 points, but NOT *p1
+int * const p2 = &x;   // Can change *p2, but NOT where p2 points
+const int * const p3 = &x;  // Can change NOTHING
+```
+- Demonstrate what happens when you try to modify a `const` — compiler error!
+- Simulate `volatile`: In embedded, `volatile` is used for:
+  - Hardware registers that change by themselves (ADC result, timer counter)
+  - Variables modified inside an ISR (interrupt service routine)
+
+**Why these matter for embedded interviews**:
+> "What is volatile and when do you use it?" — The #1 most-asked embedded C interview question. If you can't answer it, you fail the interview.
+
+---
+
+#### 🧪 TEST YOURSELF
+
+- **Ask Google AI**: "Give me 5 interview questions about volatile, const, and static in C. Quiz me and I'll answer."
+- Write the answers in a file: `keyword_interview_answers.c`
+
+---
+
+### 📖 Bed: K&R pp. 86-92 (preprocessor: #define, #include, conditional compilation)
+
+### ✅ Day 27: `volatile_const.c` + `keyword_interview_answers.c`. German accusative case started.
 
 ---
 
@@ -92,237 +136,373 @@
 
 ### 🔶 Morning (5:10-6:30 AM) — File I/O
 
-**What to learn**: Reading from and writing to files. In embedded, you might not have files — but you WILL have data logging, configuration parsing, and firmware update buffers that work the same way.
+---
 
-**How to learn**:
-1. **(5:10-5:20)** Read **K&R Chapter 7** pages 151-160 (Standard I/O)
+#### 📺 WATCH FIRST (20 min) — 5:10 to 5:30 AM
 
-2. **(5:20-5:50)** Write `file_io.c`:
-   - Write to file: `FILE *fp = fopen("log.txt", "w"); fprintf(fp, "Sensor: %d\n", value); fclose(fp);`
-   - Read from file: `FILE *fp = fopen("log.txt", "r"); fscanf(fp, ...); fclose(fp);`
-   - Read line by line: `fgets(line, sizeof(line), fp)`
-   - Append mode: `fopen("log.txt", "a")` — add without overwriting
-   - **ALWAYS check**: `if (fp == NULL) { perror("Error"); return 1; }`
-   - **Embedded connection**: Data logging to SD card, reading config files, storing calibration data
+1. **Neso Academy: "File Handling in C (Part 1)"** (~10 min)
+   - Focus on: `fopen()`, `fclose()`, file modes ("r", "w", "a")
+2. **Neso Academy: "File Handling in C (Part 2)"** (~10 min)
+   - Focus on: `fprintf()`, `fscanf()`, `fgets()`, `fread()`, `fwrite()`
+3. **Neso Academy: "File Handling in C (Part 3)"** (~8 min) — if time permits
+   - Focus on: `fseek()`, `ftell()`, binary vs text mode
 
-3. **(5:50-6:20)** Write `csv_parser.c`:
-   - Read a simple CSV file (name,cgpa,branch)
-   - Parse each line using `strtok()` or manual comma splitting
-   - Store in array of structs
-   - **Why this matters**: Parsing structured data is what embedded devices do with sensor packets, GPS NMEA sentences, AT commands from modems
+---
 
-4. **(6:20-6:30)** Write `binary_file.c`:
-   - Write struct to file in binary mode: `fwrite(&student, sizeof(Student), 1, fp);`
-   - Read it back: `fread(&student, sizeof(Student), 1, fp);`
-   - **Embedded use**: EEPROM emulation, firmware image reading, raw sensor data storage
+#### 📖 READ
 
-### 🎧 Commute: Nicos Weg Lesson 23 | 📱 Lunch: Anki | 📖 Bed: K&R Chapter 7 finish
+- **K&R Chapter 7** (Input and Output) — pp. 151-168
+- Or: **Beej's Guide** → "File I/O" → https://beej.us/guide/bgc/html/split/file-input-output.html
 
-### ✅ Day 28: `file_io.c` + `csv_parser.c` + `binary_file.c`. fopen/fclose/fprintf/fscanf/fwrite/fread all used.
+---
+
+#### 💻 CODE (40 min) — 5:30 to 6:10 AM
+
+**Program 3 — `file_io.c`:**
+- Open a file for writing: `FILE *fp = fopen("data.txt", "w");`
+- **ALWAYS check if fopen returned NULL** (file might not exist or no permission)
+- Write 10 sensor readings using `fprintf(fp, "%d, %.2f\n", id, value);` — CSV format
+- Close the file: `fclose(fp);`
+- Re-open for reading: `fp = fopen("data.txt", "r");`
+- Read back with `fscanf()` and print to console
+- Calculate min, max, average from the file data
+
+**Program 4 — `logger.c`:**
+- A simple data logger:
+  - Ask user for sensor readings (temperature values)
+  - Append each reading to a file with timestamp: `fprintf(fp, "%d, %.1f\n", count, temp);`
+  - File mode "a" (append) — doesn't overwrite existing data
+  - At the end, read the file and print statistics
+
+---
+
+#### 🧪 TEST YOURSELF
+
+- **HackerRank**: search for "File" challenges in C domain
+- **Exercism**: `phone-number` → https://exercism.org/tracks/c/exercises/phone-number
+
+---
+
+### 🎧 Commute: Nicos Weg Lesson 23 | 📖 Bed: K&R chapter 7 continued
+
+### ✅ Day 28: `file_io.c` + `logger.c`. Can read/write CSV files.
 
 ---
 
 ## DAY 29 — Friday, May 29
 
-### 🔶 Morning (5:10-6:30 AM) — Preprocessor + Makefile
-
-**What to learn**: `#define`, `#ifdef`, `#ifndef`, `#include` guards, conditional compilation. Plus: how to write a Makefile so you don't type long `gcc` commands every time.
-
-**How to learn**:
-1. **(5:10-5:20)** Read **K&R pages 88-93** (Macro substitution, Conditional inclusion)
-
-2. **(5:20-5:45)** Write `preprocessor.c`:
-   - Simple macros: `#define PI 3.14159`, `#define MAX(a,b) ((a) > (b) ? (a) : (b))`
-   - **WARNING**: Macro pitfall: `MAX(i++, j++)` — i or j gets incremented twice! This is a classic C bug.
-   - Conditional compilation:
-     ```
-     #define DEBUG 1
-     #ifdef DEBUG
-         printf("Debug: x = %d\n", x);
-     #endif
-     ```
-   - **Embedded use**: Same code compiled for different boards: `#ifdef STM32F411` vs `#ifdef STM32F103`. Debug prints compiled out in release builds.
-
-3. **(5:45-6:15)** Write your first `Makefile`:
-   - For your week5 multi-file project
-   - Rules: `all`, `clean`, variable for compiler and flags
-   - Target/dependency/recipe structure
-   - Watch **Jacob Sorber: "Makefiles"** (~8 min) if stuck
-   - **This is mandatory knowledge**: Every professional embedded project uses Make or CMake. No more typing `gcc main.c utils.c math.c -o main -Wall -g` by hand.
-
-4. **(6:15-6:30)** Add include guards to ALL your `.h` files from this month:
-   ```
-   #ifndef MATH_UTILS_H
-   #define MATH_UTILS_H
-   // declarations here
-   #endif
-   ```
-
-### 🎧 Commute: Nicos Weg Lesson 24 | 📱 Lunch: Anki | 📖 Bed: Review K&R chapters 1-7 (skim)
-
-### ✅ Day 29: `preprocessor.c` + first `Makefile`. Conditional compilation understood.
+### 🔶 Morning (5:10-6:30 AM) — 🇩🇪 German + Preprocessor
 
 ---
 
-## DAY 30 — Saturday, May 30 🟩 REVIEW + GIT PUSH DAY
+#### 📺 GERMAN (15 min) — 5:10 to 5:25 AM
 
-### 💻 Full Morning (6:30 AM - 12:30 PM) — Re-type + Polish + Push
+- **DW Nicos Weg app**: Lesson 24
+- Practice accusative: write 10 sentences using "Ich habe..." "Ich sehe..." "Ich brauche..."
 
-**Session 1 (6:30-8:00)**: Re-type your 5 hardest programs from memory:
-1. Bubble sort (swap + nested loops)
-2. Your own strlen (pointer traversal to `\0`)
-3. Pointer swap function (pass by reference)
-4. Malloc + array + free (dynamic memory)
-5. Bit manipulation macros (SET, CLEAR, TOGGLE, CHECK)
+---
 
-**Time yourself.** Each should take under 10 minutes. If any takes longer than 15 min, that topic needs more practice in June.
+#### 📺 WATCH (15 min) — 5:25 to 5:40 AM
 
-**Session 2 (8:15-9:45)**: Polish register simulator + student records — add comments, clean up code, write README for each.
+- **Jacob Sorber: "The C Preprocessor — #define, #ifdef, #include"** (~12 min)
+  - Focus on: `#define` macros, `#include` guards, conditional compilation `#ifdef`/`#ifndef`
+- **Neso Academy: "Macros in C"** (~8 min)
+  - Focus on: Function-like macros (`#define MAX(a,b)`) — advantages (no function call overhead) and pitfalls (double evaluation)
 
-**Session 3 (10:00-12:00)**: Git push ALL remaining weeks:
-- `git add . → git commit -m "Weeks 4-5: structs, bitwise, file I/O" → git push`
-- Update main README with full month progress
-- **Milestone**: Your GitHub now shows 30 days of green!
+---
+
+#### 📖 READ — K&R pp. 86-92 (Preprocessor section in Chapter 4)
+
+---
+
+#### 💻 CODE (40 min) — 5:40 to 6:20 AM
+
+**Program 5 — `preprocessor.c`:**
+```c
+#define PI 3.14159
+#define MAX(a, b) ((a) > (b) ? (a) : (b))
+#define ARRAY_SIZE(arr) (sizeof(arr) / sizeof(arr[0]))
+
+#ifdef DEBUG
+    #define LOG(msg) printf("[DEBUG] %s\n", msg)
+#else
+    #define LOG(msg)  // Does nothing in release
+#endif
+```
+- Compile with: `gcc preprocessor.c -o prog -DDEBUG` → debug prints appear
+- Compile without: `gcc preprocessor.c -o prog` → debug prints disappear
+- **This is EXACTLY how embedded firmware switches between debug and release builds.**
+- Demonstrate the `MAX(a++, b++)` pitfall — double evaluation!
+
+**Program 6 — `include_guard.c`:**
+- Create a header file with proper include guards:
+```c
+// my_header.h
+#ifndef MY_HEADER_H
+#define MY_HEADER_H
+
+// declarations here
+void my_function(void);
+
+#endif // MY_HEADER_H
+```
+- Include it twice in main.c — show that without guards, you get "redefinition" errors
+- **Every single `.h` file in STM32 projects uses include guards.**
+
+---
+
+#### 🧪 TEST YOURSELF
+
+- Compile with `-E` flag: `gcc -E preprocessor.c` — see what the preprocessor produces (expanded macros, included headers). This is eye-opening!
+
+---
+
+### 📖 Bed: Start thinking about what you'll review this weekend for the month test
+
+### ✅ Day 29: `preprocessor.c` + `include_guard.c`. Understand conditional compilation.
+
+---
+
+## DAY 30 — Saturday, May 30 🟩 DATA LOGGER SIMULATOR + MAKEFILE
+
+### 💻 Warmup (6:30-7:30 AM) — Makefile Deep
+
+---
+
+#### 📺 WATCH FIRST (15 min) — 6:30 to 6:45 AM
+
+- **Jacob Sorber: "How to Write a Makefile"** (~12 min)
+  - Focus on: targets, prerequisites, recipes, variables, pattern rules
+- Or: **CodeVault: "Makefiles in C"** (~15 min) — more practical example
+
+---
+
+#### 📖 READ
+
+- **Beej's Guide to C** → Appendix on Makefiles (if available)
+- Or: **Programiz**: "C Makefile Tutorial" (Google it — clean tutorial)
+
+---
+
+#### 💻 CODE (45 min) — 6:45 to 7:30 AM
+
+Write a **proper Makefile** for your multi-file project from Week 2:
+```makefile
+CC = gcc
+CFLAGS = -Wall -Wextra -g
+SOURCES = main.c math_utils.c
+HEADERS = math_utils.h
+TARGET = main
+
+$(TARGET): $(SOURCES) $(HEADERS)
+	$(CC) $(CFLAGS) $(SOURCES) -o $(TARGET)
+
+clean:
+	rm -f $(TARGET) *.o
+
+.PHONY: clean
+```
+- Understand each line. What is `$(CC)`? What is `.PHONY`?
+- Add a `debug` target that compiles with `-DDEBUG`
+- **Makefile is how ALL professional embedded projects are built.** Even when you use STM32CubeIDE, there's a Makefile underneath.
+
+---
+
+### 💻 Deep Session 1 (7:45-9:15 AM) — Data Logger Simulator Project 🏆
+
+---
+
+#### 💻 CODE (90 min)
+
+**Program 7 — `data_logger_simulator/`** (multi-file project):
+
+This combines EVERYTHING from May into one program:
+
+**File structure:**
+```
+data_logger_simulator/
+├── main.c              — Main loop with state machine menu
+├── sensor.h / sensor.c — Sensor data generation (random values)
+├── logger.h / logger.c — File I/O: write readings to CSV
+├── stats.h / stats.c   — Statistics: min, max, avg from data
+├── buffer.h / buffer.c — Circular buffer for recent readings
+├── Makefile            — Build everything with `make`
+└── README.md           — What it does, how to build, what you learned
+```
+
+**Features:**
+1. Generate fake sensor data (random temperature 15.0-45.0°C)
+2. Store in circular buffer (last 10 readings)
+3. Log all readings to CSV file with timestamps
+4. Display statistics (min, max, avg) from circular buffer
+5. Menu-driven using enum state machine
+6. Compile with Makefile
+
+**What this proves you know:**
+- ✅ Structs (sensor readings, ring buffer)
+- ✅ Pointers (passing structs, circular buffer logic)
+- ✅ Bitwise (not in this project, but you know it)
+- ✅ File I/O (CSV logging)
+- ✅ Enums (state machine)
+- ✅ Multi-file organization (.c + .h pairs)
+- ✅ Makefile
+- ✅ Dynamic memory (if you `malloc` the buffer)
+
+---
+
+### 💻 Deep Session 2 (9:30-11:00 AM) — Continue Data Logger
+
+Continue building. Focus on clean code:
+- Add `const` to read-only parameters
+- Use `uint32_t` instead of `unsigned int`
+- Add comments explaining WHY, not WHAT
+- Handle errors (null file pointer, malloc failure)
+
+---
+
+### 💻 Deep Session 3 (11:15 AM-12:45 PM) — GDB + Final Polish
+
+- Compile with `-g`
+- Run through GDB: set breakpoints, step through the state machine, inspect the circular buffer contents
+- Fix any remaining bugs
+- Push to GitHub: `git add .` → `git commit -m "May final project: data logger simulator"` → `git push`
+
+---
 
 ### 🇩🇪 German (2:00-5:00 PM)
-- Nicos Weg Lesson 24-25
-- Google AI: Practice describing your week in German
-- Anki: mega review all 100+ cards
 
-### ✅ Day 30: 5 programs from memory. All code pushed. GitHub portfolio updated.
-
----
-
-## DAY 31 — Sunday, May 31 🟨 THE MONTH TEST
-
-### 💻 Morning (7:30 AM - 12:30 PM) — FINAL TEST + PORTFOLIO UPDATE
-
-**THE TEST**: Write ONE complete program that uses EVERYTHING you learned this month. No references. No AI. No internet. Just you, `nano`, and `gcc`.
-
-**Program**: `month_test.c` — An embedded sensor data system simulator:
-
-Requirements (write ALL from scratch):
-1. **Structs**: `SensorReading` with timestamp, temperature, humidity, status flags
-2. **Array of structs**: Store 10 readings
-3. **Pointers**: Pass arrays by pointer to functions
-4. **Dynamic memory**: Allocate reading array with malloc, free at end
-5. **Bitwise**: Use flags field to store: `FLAG_VALID`, `FLAG_ALARM`, `FLAG_CALIBRATED`
-6. **Functions**: `add_reading()`, `find_max_temp()`, `count_alarms()`, `print_all()`
-7. **File I/O**: Save readings to `sensor_log.csv`, then read them back
-8. **Enum**: State machine for sensor states: INIT → READING → PROCESSING → LOGGING → IDLE
-9. **Preprocessor**: `#define MAX_READINGS 10`, `#ifdef DEBUG`
-10. **Multi-file**: Split into `sensor.h`, `sensor.c`, `main.c`, and a `Makefile`
-
-**Grading yourself**:
-- Can compile with `make` → ✅
-- All 10 features present → ✅
-- Valgrind shows zero leaks → ✅
-- Code is clean and commented → ✅
-
-### 🇩🇪 German (2:00-5:00) — END OF MONTH CELEBRATION + REVIEW
-- Nicos Weg Lesson 25 (if not done)
-- **Write a paragraph in German** (5-7 sentences):
-  ```
-  Ich heiße Khashyap. Ich bin dreiundzwanzig Jahre alt.
-  Ich komme aus Indien. Ich bin Ingenieur.
-  Ich lerne Deutsch und C-Programmierung.
-  Ich möchte nach Deutschland gehen.
-  Ich stehe jeden Tag um fünf Uhr auf.
-  ```
-- Have Google AI correct your paragraph, explain errors
-- Anki: FINAL mega review — how many of 100+ cards do you know?
-
-### 💻 Git Push + Portfolio (after German)
-- Push `month_test.c` to GitHub
-- Update README with COMPLETE month 1 summary
-- Take screenshot of your GitHub contribution graph — it should show 30+ days of green!
-- **This is the start of your portfolio.** By the time German universities see this (2028), you'll have 24 months of green squares and 15+ professional projects.
-
-### ✅ Day 31: Month test PASSED. 30+ programs on GitHub. 100+ German words. Month 1 COMPLETE.
+- **DW Nicos Weg**: Lessons 24-25 (2:00-3:30 PM)
+- **Write a paragraph in German** (3:30-4:00 PM): 5-7 sentences about yourself, your job, your goals. Use dict.cc for words you don't know.
+- **Google AI Pro** (4:00-5:00 PM): "Read my German paragraph and correct it. Explain each correction."
+- **Anki**: Mega review — clear all pending cards
 
 ---
 
-## 📊 MAY 2026 — FINAL SCORECARD
+### ✅ Day 30: Data logger simulator COMPLETE. Multi-file project with Makefile. Git pushed. German paragraph written.
 
-| Metric | Target | Result | Notes |
+---
+
+## DAY 31 — Sunday, May 31 🟨 MONTH TEST + REVIEW 🏆
+
+### 💻 MONTH TEST (7:30-12:30 PM)
+
+---
+
+**This is your self-assessment. No videos. No books. No Google AI. Just you and gcc.**
+
+#### Test 1: Write From Memory (7:30-9:00 AM)
+
+Close ALL references. Open a blank file. Write these from memory:
+
+1. **A program with a struct, typedef, and passing struct by pointer** — 15 min
+2. **The 4 bitwise macros (SET, CLEAR, TOGGLE, CHECK)** — 5 min
+3. **A linked list with insert, delete, and print** — 20 min
+4. **A circular buffer with push and pop** — 15 min
+5. **A swap function using pointers** — 5 min
+6. **A bubble sort function** — 10 min
+
+**Scoring**: If you can write 5/6 without looking → you're READY for Phase 2. 3-4/6 → review weak areas this week. Under 3 → repeat key exercises before moving on.
+
+---
+
+#### Test 2: HackerRank Challenge Session (9:15-10:45 AM)
+
+Go to **HackerRank C domain** → attempt 5 challenges you haven't done:
+- https://www.hackerrank.com/domains/c
+
+Try challenges from these categories:
+- "Structs and Enums"
+- "Dynamic Array in C"
+- "Printing Tokens"
+- Any challenge rated "Medium"
+
+---
+
+#### Test 3: Interview Questions (11:00 AM-12:30 PM)
+
+Open a file `may_review.c`. Write answers (in comments) to these questions:
+1. What is a pointer? Draw a memory diagram.
+2. What is the difference between stack and heap?
+3. What does `volatile` mean and when do you use it?
+4. What is a function pointer? Give an example use case.
+5. Explain `const int *p` vs `int * const p`
+6. What is a buffer overflow and how do you prevent it?
+7. What is the compilation pipeline (preprocess → compile → assemble → link)?
+8. What is a state machine? Why is it important in embedded?
+9. What is typedef and why do we use stdint.h types in embedded?
+10. Explain SET_BIT, CLEAR_BIT macros — how do they work?
+
+---
+
+### 🇩🇪 German Final Review (2:00-4:00 PM)
+
+- Anki: can you get through ALL cards with ≥80% correct?
+- Count: how many German words do you know? Target: 80+
+- Read your German paragraph from yesterday — can you say it from memory?
+- Nicos Weg: how many lessons completed? Target: 20-25
+
+---
+
+### 📋 MONTHLY REVIEW (4:00-5:00 PM)
+
+Open **Notion** → May 2026 Review:
+
+| Metric | Target | Actual | Notes |
 |:---|:---|:---|:---|
-| C programs written | 30+ | [ ] | Count them in your C-Practice folder |
-| GitHub commits | 15+ | [ ] | Check contribution graph |
-| K&R chapters read | 1-7 | [ ] | Should be comfortable with chapters 1-6 |
-| Programs from memory | 10+ | [ ] | Bubble sort, strlen, swap, malloc, bit macros, etc. |
-| GDB debugging sessions | 5+ | [ ] | Should know: break, run, next, print, quit |
-| Valgrind runs | 3+ | [ ] | Should know how to detect leaks |
-| Nicos Weg lessons | 20-25 | [ ] | Almost finished A1 content |
-| German words in Anki | 100+ | [ ] | Check Anki stats |
-| German sentences written | 15+ | [ ] | Count in your notebook |
-| 5 AM wake-ups | ≥ 25/31 | [ ] | Be honest with yourself |
+| C programs written from scratch | 30+ | ___ | |
+| GitHub commits | 15+ | ___ | |
+| Programs you can re-write from MEMORY | 10+ | ___ | |
+| K&R chapters completed | Chapters 1-7 | ___ | |
+| Neso Academy videos watched | 40+ | ___ | |
+| mycodeschool pointers playlist | ALL 15 | ___ | |
+| HackerRank challenges completed | 15+ | ___ | |
+| Nicos Weg lessons completed | 20-25 | ___ | |
+| German words in Anki | 80+ | ___ | |
+| German sentences you can say | 15+ | ___ | |
+| Days where you woke at 5 AM | ≥ 25 of 31 | ___ | |
+| Total active study hours | ~90 hours | ___ | |
+| Memory test score | 5/6 or better | ___ | |
+| Data logger project on GitHub | ✅ | ___ | |
+
+**Reflection questions:**
+- What was the hardest topic this month?
+- What would you do differently?
+- Are you ready for STM32 in July? (Be honest)
+- Rate your C confidence: 1-10
 
 ---
 
-## 🔭 WHAT'S NEXT — JUNE 2026 PREVIEW
-
-| Topic | Description |
-|:---|:---|
-| **Linked Lists complete** | Insert, delete, reverse, doubly linked, circular |
-| **Makefiles deep** | Variables, pattern rules, automatic variables |
-| **GDB mastery** | Watchpoints, conditional breakpoints, core dumps |
-| **K&R finish** | Chapters 7-8, Appendix A (grammar reference) |
-| **Start using CLion** | JetBrains IDE for multi-file C projects |
-| **Educative course start** | "Grokking the Behavioral Interview" (5h) — prep for Unistring exit conversations |
-| **German A1 continue** | Nicos Weg A1 finish, start Duolingo for grammar drills |
-
-> **June is when baby C becomes real C.** Dynamic data structures, proper build systems, proper debugging. The bridge to STM32 in July.
+### ✅ Day 31: Month test COMPLETED. All metrics logged. June plan reviewed.
 
 ---
 
-## 🗂️ YOUR FOLDER AFTER MAY 31
+## 📚 WEEK 5 RESOURCE CHECKLIST
 
-```
-C-Practice/
-├── README.md            ← Updated weekly
-├── .gitignore
-├── week1/
-│   ├── hello.c, variables.c, input.c, datatypes.c
-│   ├── operators.c, ascii.c, type_casting.c
-│   ├── conditions.c, switch_demo.c
-│   ├── loops.c, patterns.c, number_games.c
-│   ├── functions.c, calculator.c
-│   └── (10-15 files)
-├── week2/
-│   ├── arrays.c, array_operations.c
-│   ├── bubble_sort.c, selection_sort.c, search.c
-│   ├── strings_basic.c, my_strlen.c, my_reverse.c, my_strcmp.c, my_strcpy.c
-│   ├── string_library.c, safe_input.c
-│   ├── matrix.c, string_array.c
-│   ├── scope.c, math_utils.h, math_utils.c
-│   └── student_records.c (10-12 files)
-├── week3/
-│   ├── pointer_basics.c, pointer_sizes.c, pointer_arithmetic.c
-│   ├── pointer_vs_array.c, swap.c, pass_by_ref.c
-│   ├── array_functions.c, const_pointers.c, string_pointers.c
-│   ├── malloc_demo.c, dynamic_string.c
-│   ├── double_pointer.c, dynamic_2d.c, function_pointers.c
-│   └── phonebook.c (10-12 files)
-├── week4/
-│   ├── struct_basics.c, struct_functions.c
-│   ├── student_system.c, university_db.c, sizeof_struct.c
-│   ├── dynamic_structs.c, linked_list_intro.c
-│   ├── bitwise_basics.c, bit_macros.c, bit_patterns.c
-│   ├── flags.c, rgb_color.c
-│   └── register_simulator.c  ⭐ (10-12 files)
-├── week5/
-│   ├── enum_states.c, state_machine_menu.c
-│   ├── storage_classes.c, config.h, config.c
-│   ├── file_io.c, csv_parser.c, binary_file.c
-│   ├── preprocessor.c
-│   ├── Makefile                ⭐
-│   ├── sensor.h, sensor.c     ⭐
-│   └── month_test.c           ⭐ (8-10 files)
-└── (TOTAL: 50-60 files, all hand-written, zero AI code)
-```
+All resources used this week:
+- [ ] Jacob Sorber: "State Machines in C" (Day 26)
+- [ ] Neso Academy: "Enumeration in C" (Day 26)
+- [ ] Jacob Sorber: "volatile in C" (Day 27)
+- [ ] Jacob Sorber: "const in C" (Day 27)
+- [ ] Neso Academy: "File Handling Parts 1-3" (Day 28)
+- [ ] Jacob Sorber: "The C Preprocessor" (Day 29)
+- [ ] Jacob Sorber: "How to Write a Makefile" (Day 30)
+- [ ] K&R Chapters 4 (preprocessor) and 7 (I/O) (ongoing)
+- [ ] Beej's Guide: Preprocessor and File I/O chapters (reference)
+- [ ] HackerRank C domain (Day 31 test)
 
 ---
 
-> **You started with `printf("Hello World")`. You ended with a multi-file, Makefile-built, Valgrind-tested sensor system simulator with structs, pointers, bitwise, file I/O, and state machines.**
->
-> **In 31 days, you went from zero to C fundamentals. The hard part is over. Now comes the fun part: STM32.**
+## 🎯 END OF MAY — WHAT'S NEXT?
+
+**June 2026 (Phase 1 continued — Weeks 6-8):**
+- Makefile mastery, GDB expertise
+- Queue data structure, more state machine patterns
+- Packed structs, bit fields deep, memory-mapped I/O concept
+- **FINAL C PROJECT**: Polished GitHub repo with 15+ programs + READMEs
+- German A1 completion (finish Nicos Weg A1)
+
+**July 2026 (Phase 2 — STM32):**
+- Buy FastBit Udemy courses (₹399 each on sale)
+- Install STM32CubeIDE
+- Start: GPIO → UART → Timers → Interrupts → ADC
+- Your first blinking LED — but you'll understand EVERY BIT you set

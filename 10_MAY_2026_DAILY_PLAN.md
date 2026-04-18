@@ -120,7 +120,7 @@
 | App | Verdict | How to Use |
 |:---|:---|:---|
 | **Embedded_Systems_Tracker** (Python desktop) | ✅ **USE the roadmap data as REFERENCE** | The 72-week curriculum inside `roadmap_seed.json` has excellent topic ordering and 213 resources. Consult it when planning next month's topics. Don't try to follow its timeline (it assumed full-time study from Jan 2026). |
-| **Embedded_Systems_Career_Guide** (Android) | ✅ **INSTALL and use 15 min/day on commute** | Tested the `es-guide-q6` LLM — it gives detailed, well-structured embedded systems explanations (UART, GPIO etc.) with code examples. Use the flashcards and quizzes on your phone during evening commute as a supplement. The LLM runs locally on this PC via Ollama, so the app works offline once loaded. |
+| **Embedded_Systems_Career_Guide** (Android) | ✅ **INSTALL and use 15 min/day on commute** | Uses your **fine-tuned `es-guide-q6` (Qwen3-30B-A3B) LLM** running locally via Ollama on your PC, tunneled via ngrok. The app does **NOT** use any cloud/Gemini API — it's 100% self-hosted. Use the flashcards and quizzes on your phone during evening commute as a supplement to reinforce embedded concepts. |
 
 ---
 
@@ -183,8 +183,11 @@
 
 ## 📅 WEEKLY BREAKDOWN — SEE SEPARATE FILES
 
+> **📚 RESOURCE GUIDE**: See **`10_RESOURCES.md`** for the complete list of books, YouTube playlists, practice platforms, and tools mapped to each week.
+
 | File | Dates | Topic |
 |:---|:---|:---|
+| **`10_RESOURCES.md`** | — | 📚 Master Resource Guide: books, videos, platforms, tools for ALL weeks |
 | **`10A_MAY_WEEK1.md`** | May 1-4 (Fri-Mon) | Setup + C Basics: variables, printf, scanf, operators, conditions, loops |
 | **`10B_MAY_WEEK2.md`** | May 5-11 (Tue-Mon) | Functions + Arrays: function design, arrays, sorting, strings |
 | **`10C_MAY_WEEK3.md`** | May 12-18 (Tue-Mon) | POINTERS — The most important week |
