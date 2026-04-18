@@ -21,6 +21,12 @@
 │  STEP 3 — TEST  (10-15 min)                             │
 │  Solve a challenge on HackerRank/Exercism/learn-c.org.  │
 │  If you fail → go back to STEP 1 for that topic.        │
+│                                                         │
+│  STEP 4 — EXPLAIN  (2-3 min)                            │
+│  Close everything. Explain the concept OUT LOUD as if   │
+│  teaching someone. If you can't explain it without      │
+│  looking at code → you don't truly understand it.       │
+│  THIS is what makes you irreplaceable by AI.            │
 └─────────────────────────────────────────────────────────┘
 ```
 

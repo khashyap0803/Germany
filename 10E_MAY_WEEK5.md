@@ -476,6 +476,22 @@ Open **Notion** → May 2026 Review:
 
 ---
 
+### 🛡️ AI SUPERVISOR READINESS CHECK (Answer honestly)
+
+After completing May, you should be able to:
+- [ ] **EXPLAIN** pointers, stack/heap, volatile on a whiteboard — no code, no AI, just you and a marker
+- [ ] **SPOT BUGS** in code you've never seen before — because you've debugged 20+ of your own bugs manually
+- [ ] **DEBUG** a segfault using `gdb` without asking AI for help
+- [ ] **READ** a 32-bit register value in hex/binary and know which bits are set
+- [ ] **DRAW** the memory layout of a struct with padding — on paper, from memory
+- [ ] **WRITE** a state machine and a circular buffer from scratch — these are in EVERY embedded device ever made
+
+> If you can do 5/6 of these: **you are already more capable than 90% of CSE graduates who learned with Copilot.** You understand the machine. They understand the prompt. When AI generates wrong code, they panic. You debug.
+
+> **This is your edge. Protect it. Never stop learning the WHY.**
+
+---
+
 ## 📚 WEEK 5 RESOURCE CHECKLIST
 
 All resources used this week:

@@ -144,7 +144,62 @@
 
 ---
 
+## 🛡️ FUTURE-PROOFING STRATEGY — Why This Plan Works in an AI World
+
+> **Last updated**: April 2026. This section addresses the reality that AI (Copilot, Claude, Cursor, Flux AI) can already generate code, route PCBs, and assist debugging. By 2028, AI agents will be even more capable.
+
+### The Plan's Core Thesis
+
+> **You are NOT learning C to be a C coder. You are learning HOW COMPUTERS WORK at the hardware level so you can VERIFY, DEBUG, and CERTIFY any code — whether written by a human or an AI.**
+
+### What This Plan Builds That AI Cannot Replace
+
+| Week | Skill Built | Why AI Can't Replace It |
+|:---|:---|:---|
+| **Week 1** | Understanding compilation pipeline, memory layout, data types | AI generates code but doesn't know YOUR hardware's constraints. You catch the bug when `sizeof(int)` differs on ARM vs x86. |
+| **Week 2** | Writing algorithms from scratch (sort, search, string ops) | When AI-generated code fails on an edge case in your sensor data, YOU know how the algorithm works and can fix it. |
+| **Week 3** | Deep pointer understanding, memory diagrams, GDB debugging | AI hallucinates dangling pointers and memory leaks. You spot them because you've drawn 50 memory diagrams by hand. |
+| **Week 4** | Register-level bit manipulation, struct-to-hardware mapping | When the AI-generated STM32 driver doesn't work, you read the datasheet, check the BSRR register, and find the bug. |
+| **Week 5** | State machines, volatile/const, system-level thinking | You design HOW the system behaves. AI fills in the code. You verify it meets safety requirements. |
+
+### Your Role in 2028-2033
+
+```
+┌────────────────────────────────────────────────────┐
+│                                                    │
+│   YOU (Human Engineer)     AI (Agent/Copilot)      │
+│   ──────────────────────   ──────────────────      │
+│   Define WHAT to build     Generate HOW to code    │
+│   Review for correctness   Produce boilerplate     │
+│   Debug with oscilloscope  Suggest fixes           │
+│   Test on real hardware    Run simulations          │
+│   Sign safety reports      Flag potential issues    │
+│   Explain to stakeholders  Generate documentation  │
+│   Adapt to new hardware    Follow templates         │
+│                                                    │
+│   YOU are the SUPERVISOR. AI is the TOOL.           │
+│                                                    │
+└────────────────────────────────────────────────────┘
+```
+
+### The German Advantage (AI Can't Do This)
+
+- AI can translate German → but can't build trust with your Teamleiter over lunch
+- AI can auto-route a PCB → but can't feel that the voltage regulator is overheating
+- AI can pass coding contests → but can't certify firmware to ISO 26262 (human sign-off required by law)
+- AI can generate a CV → but can't sit in an interview at Bosch Stuttgart and explain your project in B2 German
+
+---
+
 ## 🧠 HOW TO USE AI CORRECTLY (The "AI Detox" Protocol)
+
+### Why "AI Detox" Makes You MORE Valuable (Not Less)
+
+In 2028, every engineer will have AI. The differentiator is:
+- **Engineer who learned WITH AI from day 1** → can't explain code, can't debug without AI, replaced by better AI
+- **Engineer who learned WITHOUT AI first** → understands fundamentals, can AUDIT AI output, supervises AI → **irreplaceable**
+
+> **Your AI Detox isn't anti-technology. It's building the foundation that makes you a 10× AI-powered engineer later.**
 
 ### ✅ AI IS ALLOWED FOR:
 - "Explain what a pointer is in C. Use a diagram."
@@ -161,7 +216,9 @@
 - Any form of copy-pasting AI-generated code into your files
 
 ### The Rule:
-> **AI explains concepts. YOU write code. Testing is done with `gcc -Wall` and `gdb`, NOT by asking AI to fix errors.**
+> **Phase 1-2 (May-Sep 2026): AI explains concepts. YOU write ALL code manually.**
+> **Phase 3+ (Oct 2026+): You START using AI to generate boilerplate, BUT you REVIEW every line and can explain it.**
+> **This phased approach builds the foundation first, then teaches you to supervise AI effectively.**
 
 ---
 
@@ -173,6 +230,9 @@
 | GitHub commits | **15+** |
 | Programs you can re-write from MEMORY | **10+** |
 | K&R chapters completed | **Chapters 1-7** |
+| Bugs found and fixed using `gcc -Wall` + `gdb` (NOT AI) | **20+** |
+| Concepts you can explain on a whiteboard WITHOUT code | **10+** (pointers, stack/heap, volatile, etc.) |
+| Memory diagrams drawn on paper | **15+** |
 | Nicos Weg lessons completed | **~20-25 lessons (A1)** |
 | German words in Anki | **100+** |
 | German sentences you can say | **15+** |
