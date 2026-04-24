@@ -1,7 +1,9 @@
 # 📅 WEEK 5 — May 26-31 (Tue-Sun): SPECIAL TOPICS + MONTH REVIEW
 
 > **Topics**: enum, volatile, const, static, extern, file I/O, preprocessor, Makefile, month test
-> **K&R Chapters**: Chapter 4 (finish — Preprocessor), Chapter 7 (Input/Output) start
+> **K.N. King Chapters**: Ch 22 (Input/Output), Ch 14 revisit (Preprocessor), review all chapters
+> **K&R Bed Reading**: Chapter 4 (finish — Preprocessor), Chapter 7 (Input/Output)
+> **FastBit Udemy**: Remaining sections + review
 > **Programs to write**: 6-8
 > **German**: Nicos Weg Lessons 21-25, review all vocabulary, first attempt at writing a paragraph
 > **Goal**: Finish May with solid C fundamentals ready for STM32 in July

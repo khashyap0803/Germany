@@ -1,7 +1,9 @@
 # 📅 WEEK 1 — May 1-4 (Fri-Mon): SETUP + C BASICS
 
 > **Topics**: Development environment, variables, data types, printf/scanf, operators, conditions, loops
-> **K&R Chapters**: Chapter 1 (Tutorial Introduction), Chapter 2 (Types, Operators, Expressions)
+> **K.N. King Chapters**: Ch 1-5 (Introducing C, C Fundamentals, Formatted I/O, Expressions, Selection Statements)
+> **K&R Bed Reading**: Chapter 1 (Tutorial Introduction), Chapter 2 (Types, Operators, Expressions)
+> **FastBit Udemy**: Sections 1-4 (Introduction, Hello World, Data types, Variables)
 > **Programs to write**: 12-15
 > **German**: Nicos Weg Lessons 1-6, learn 20 words
 > **📚 Full resource details**: See `10_RESOURCES.md`
@@ -18,9 +20,9 @@
    - Don't take notes — just absorb the big picture
    - You'll recognize every topic when you encounter it in May
 
-2. **Print K&R Chapters 1-2** (pages 1-53) from your PDF
-   - File: `f:\Documents\DEVELOP\Books\The C Programming Language (Kernighan Ritchie).pdf`
-   - Print and keep at your desk for morning study sessions
+2. **Open K.N. King PDF** — skim the Table of Contents to see what chapters you'll cover
+   - File: `f:\Documents\DEVELOP\Books\C Programming - A Modern Approach - 2nd_Ed(C89, c99) - King by .pdf`
+   - Bookmark Chapters 1-5 in Adobe Acrobat Reader Pro — these are your Week 1 reading
 
 ---
 
@@ -32,15 +34,17 @@
 
 #### 📺 WATCH FIRST (15 min) — 5:10 to 5:25 AM
 
-Watch these Neso Academy videos (search on YouTube or use the playlist in `10_RESOURCES.md`):
+Watch these videos (choose one track):
 
+**Option A — FastBit Udemy (PRIMARY):**
+- Open FastBit "Embedded C Programming" course → Section 1: Introduction
+- Watch at 1.5× speed
+
+**Option B — Neso Academy (FREE supplement):**
 1. **Neso Academy: "Introduction to C Programming"** (~8 min)
-   - Focus on: What is C? Why is it used in embedded systems? What makes it different from Python?
-
 2. **Neso Academy: "First C Program"** (~7 min)
-   - Focus on: Structure of a C program — `#include`, `main()`, `printf`, semicolons, curly braces
 
-> **Alternative**: If Neso's style doesn't click → watch **Jenny's Lectures: "C Programming Introduction"** instead.
+> **Rule**: FastBit is your primary video. Use Neso for quick 7-min explanations of specific concepts when you need a second perspective.
 
 ---
 
@@ -84,8 +88,9 @@ mkdir week1 && cd week1
 
 #### 📖 READ (if time remains) — 6:15 to 6:30 AM
 
-- Open: **Beej's Guide to C** → Chapter 2: "Hello, World!" → https://beej.us/guide/bgc/html/split/hello-world.html
-- Skim the explanations for `#include`, `main`, `printf` — Beej explains it more simply than K&R
+- Open: **K.N. King Chapter 2** — "C Fundamentals" → read sections 2.1-2.4 (program structure, comments, variables)
+- Highlight key points in Adobe Acrobat Reader Pro
+- **Bed reading tonight**: Open K&R Chapter 1 (pp. 9-35) for the concise "expert" take on the same topics
 
 ---
 

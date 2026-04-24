@@ -29,7 +29,7 @@
 | Time | Duration | Activity | Where | Tool |
 |:---|:---|:---|:---|:---|
 | **5:00 AM** | 10 min | Wake up. Water. Wash face. **NO PHONE.** | — | Alarm |
-| **5:10 - 6:30 AM** | 1h 20m | 🔶 **MORNING BLOCK — C study** | Home desk | WSL + gcc + K&R book |
+| **5:10 - 6:30 AM** | 1h 20m | 🔶 **MORNING BLOCK — C study** | Home desk | WSL + gcc + K.N. King book |
 | **6:30 - 7:00 AM** | 30m | Get ready, breakfast | — | — |
 | **7:00 - 8:30 AM** | 1.5h | 🎧 **COMMUTE IN — German audio** | Bus/train | DW Nicos Weg + AnkiDroid |
 | **8:30 AM** | — | Arrive Unistring | — | — |
@@ -37,7 +37,7 @@
 | **7:00 - 8:30 PM** | 1.5h | 🎧 **COMMUTE BACK — German audio** | Bus/train | Easy German / DW podcasts |
 | _If leave at 8 PM_ | _8:00 - 9:30 PM_ | _Same commute audio_ | — | — |
 | **9:00/9:30 PM** | 30m | Dinner | — | — |
-| **9:30 - 10:00 PM** | 30m | 📖 **BED READING — K&R book** (theory only, no coding) | Bed | K&R book (physical or PDF) |
+| **9:30 - 10:00 PM** | 30m | 📖 **BED READING — K&R book** (theory only, no coding) | Bed | K&R PDF (concise "expert" reference) |
 | **10:00 PM** | — | **SLEEP. Non-negotiable.** | — | — |
 
 > **Weekday active coding: only 1h 20m.** That's why weekends are CRITICAL.
@@ -83,7 +83,8 @@
 | Tool | When | How to Use |
 |:---|:---|:---|
 | **WSL2 + gcc** | Every morning 5:10 AM | Open terminal → `wsl` → `cd /mnt/f/Documents/DEVELOP/C-Practice` → write, compile, run |
-| **K&R Book (PDF/physical)** | Bed reading 9:30 PM + weekend reference | Read the chapter BEFORE you code it. Take notes on paper. |
+| **K.N. King Book (PDF)** | Morning study 5:10 AM + weekend deep sessions | PRIMARY textbook. Read the chapter → do 5 exercises → then code. |
+| **K&R Book (PDF)** | Bed reading 9:30 PM | REFERENCE only. Read K&R's version of same topic for the concise "expert" perspective. |
 | **AnkiDroid** | Commute + lunch (3x daily) | 5 new German cards morning, review all at lunch, re-review on commute back |
 | **DW Nicos Weg app** | Commute IN (7-8:30 AM) | Watch video lessons with earphones. Repeat phrases out loud quietly. |
 | **dict.cc** | Whenever you encounter unknown German word | Look up, then immediately add to Anki |
@@ -126,13 +127,15 @@
 
 ## 📚 BOOKS & RESOURCES FOR MAY
 
-### Must-Have (Download/Buy NOW)
+### Must-Have (Already Owned)
 
 | Resource | Format | Where to Get | How to Use |
 |:---|:---|:---|:---|
-| **"The C Programming Language" (K&R, 2nd ed)** | PDF or physical | Search online for PDF, or buy on Amazon (~₹300) | **PRIMARY textbook.** Read chapters in order. Do EVERY exercise. |
-| **Jacob Sorber YouTube channel** | Video (free) | youtube.com/@JacobSorber | Watch 1 video per weekday morning BEFORE coding. Topics perfectly match K&R chapters. |
-| **Beej's Guide to C Programming** | Free web guide | beej.us/guide/bgc/ | **Supplement** when K&R explanation is unclear. More modern, beginner-friendly. |
+| **"C Programming: A Modern Approach" (K.N. King, 2nd ed)** | PDF | `Books/C Programming - A Modern Approach - 2nd_Ed(C89, c99) - King by .pdf` | **PRIMARY textbook.** Read chapters in order. Do 5+ exercises per chapter. THE book that fixes "I understand but can't write code." |
+| **"The C Programming Language" (K&R, 2nd ed)** | PDF | `Books/The C Programming Language (Kernighan Ritchie).pdf` | **REFERENCE** — Read K&R's version of the same topic for the concise "expert" perspective. Bed-time reading. |
+| **FastBit Embedded C Course (Udemy)** | Video (16.5h) | Udemy (purchased) — repo: `Courses/FastBit-Embedded-C/` | Watch at 1.5× speed AFTER reading King. Visual reinforcement. Don't copy code from the repo — write it yourself first. |
+| **Jacob Sorber YouTube channel** | Video (free) | youtube.com/@JacobSorber | Watch AFTER you've tried something and want deeper understanding. |
+| **Beej's Guide to C Programming** | Free web guide | beej.us/guide/bgc/ | **Supplement** when King's explanation needs a second perspective. |
 
 ### Nice-to-Have
 
@@ -229,7 +232,8 @@ In 2028, every engineer will have AI. The differentiator is:
 | C programs written from scratch | **30+** |
 | GitHub commits | **15+** |
 | Programs you can re-write from MEMORY | **10+** |
-| K&R chapters completed | **Chapters 1-7** |
+| K.N. King chapters completed | **Chapters 1-14** (C Fundamentals → Structs) |
+| K&R chapters read (reference) | **Chapters 1-7** (bed reading) |
 | Bugs found and fixed using `gcc -Wall` + `gdb` (NOT AI) | **20+** |
 | Concepts you can explain on a whiteboard WITHOUT code | **10+** (pointers, stack/heap, volatile, etc.) |
 | Memory diagrams drawn on paper | **15+** |

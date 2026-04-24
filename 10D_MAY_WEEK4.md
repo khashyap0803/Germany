@@ -1,7 +1,9 @@
 # 📅 WEEK 4 — May 19-25 (Tue-Mon): STRUCTS + BITWISE — Gateway to STM32
 
 > **Topics**: struct, typedef, nested structs, pointer to struct, bitwise operators, bit manipulation, register simulation
-> **K&R Chapters**: Chapter 6 (Structures), Chapter 2 revisit (Bitwise section pp. 48-53)
+> **K.N. King Chapters**: Ch 14, 16 (Preprocessor, Structures/Unions/Enumerations)
+> **K&R Bed Reading**: Chapter 6 (Structures), Chapter 2 revisit (Bitwise section pp. 45-48)
+> **FastBit Udemy**: Sections 14-16 (Structures, Bitfields, Embedded-specific topics)
 > **Programs to write**: 10-12
 > **German**: Nicos Weg Lessons 16-20, food vocab, daily routine sentences
 > **Embedded Connection**: THIS week is the bridge to hardware. Structs = how STM32 peripheral registers are organized. Bitwise = how you read/write individual register bits.

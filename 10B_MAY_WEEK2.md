@@ -1,7 +1,9 @@
 # 📅 WEEK 2 — May 5-11 (Tue-Mon): FUNCTIONS DEEP + ARRAYS + STRINGS
 
 > **Topics**: Multi-file programs, arrays (1D, 2D), sorting algorithms, string manipulation, C standard library
-> **K&R Chapters**: Chapter 2 (finish), Chapter 3 (Control Flow), Chapter 4 (Functions and Program Structure) start
+> **K.N. King Chapters**: Ch 6-10 (Loops, Basic Types, Arrays, Functions, Program Organization)
+> **K&R Bed Reading**: Chapter 2 (finish), Chapter 3 (Control Flow), Chapter 4 (Functions) start
+> **FastBit Udemy**: Sections 5-8 (Operators, Decision making, Bitwise, Loops)
 > **Programs to write**: 10-12
 > **German**: Nicos Weg Lessons 6-10, 15 more words, numbers 1-100
 > **📚 Full resource details**: See `10_RESOURCES.md`

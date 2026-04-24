@@ -1,7 +1,9 @@
 # 📅 WEEK 3 — May 12-18 (Tue-Mon): POINTERS ⚠️ MOST IMPORTANT WEEK
 
 > **Topics**: Addresses, dereferencing, pointer arithmetic, pass-by-reference, arrays & pointers, malloc/free, double pointers, function pointers
-> **K&R Chapters**: Chapter 5 (Pointers and Arrays) — THE most critical chapter
+> **K.N. King Chapters**: Ch 11-13, 17 (Pointers, Pointers and Arrays, Strings, Advanced Uses of Pointers)
+> **K&R Bed Reading**: Chapter 5 (Pointers and Arrays) — THE most critical chapter
+> **FastBit Udemy**: Sections 9-13 (Functions, Pointers, Strings, Structures)
 > **Programs to write**: 10-12
 > **German**: Nicos Weg Lessons 11-15, articles (der/die/das), basic verbs
 > **⚠️ MANDATORY**: Draw memory diagrams on PAPER every single day

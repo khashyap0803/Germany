@@ -1,6 +1,6 @@
 # 📚 MASTER RESOURCE GUIDE — What to Learn From, Where, and When
 
-> **Last Updated**: April 18, 2026
+> **Last Updated**: April 24, 2026
 > **Purpose**: Every learning session needs a source. This file maps EXACT resources to every topic in your roadmap.
 > **Rule**: Before you code, you WATCH or READ. Before you move on, you TEST yourself.
 
@@ -35,73 +35,72 @@
 ## 📕 COMPLETE BOOK LIBRARY — Phase-by-Phase
 
 > **Location**: Keep all books in `f:\Documents\DEVELOP\Books\`
-> **Printing**: Print the chapters you're actively using. Physical pages > PDF for bed-reading.
+> **Annotations**: Use Adobe Acrobat Reader Pro to highlight and annotate directly in PDF. Use paper notebook for memory diagrams, pointer chains, and register layouts.
 > **College Library**: You have unlimited access — download whatever you need.
 
 ### 📋 COPY THESE TO YOUR BOOKS DIRECTORY NOW
 
 Find these on your external drive or download from your college online library. Place them all in `f:\Documents\DEVELOP\Books\`:
 
-#### ✅ Already in Books directory
-- [x] `The C Programming Language (Kernighan Ritchie).pdf` — K&R 2nd edition
-- [x] `C_Programming.pdf` — Comprehensive C reference
-- [x] `mastering-stm32-2nd_docutr_com.pdf` — Mastering STM32 by Carmine Noviello
+#### ✅ Already in Books directory (ALL VERIFIED)
+- [x] `C Programming - A Modern Approach - 2nd_Ed(C89, c99) - King by .pdf` — K.N. King 2nd edition (**PRIMARY for Phase 1**)
+- [x] `The C Programming Language (Kernighan Ritchie).pdf` — K&R 2nd edition (reference)
+- [x] `C_Programming.pdf` — K&R 2nd edition (scanned backup copy)
+- [x] `mastering-stm32-2nd_docutr_com.pdf` — Mastering STM32 by Carmine Noviello, 2nd ed (910 pages)
+- [x] `making_embedded_systems.pdf` — Making Embedded Systems by Elecia White, 2nd ed (428 pages)
+- [x] `8051-microcontroller-and-embedded-systems-...pdf` — The 8051 Microcontroller by Mazidi, 2nd ed (641 pages)
+- [x] `Mastering-the-FreeRTOS-Real-Time-Kernel.v1.1.0.pdf` — FreeRTOS official guide by Richard Barry (304 pages)
+- [x] `toaz.info-yiu-j-the-definitive-guide-...pdf` — ARM Cortex-M3/M4 Definitive Guide by Joseph Yiu, 3rd ed (1,055 pages)
+- [x] `Linux Device Drivers Third Edition.pdf` — LDD3 by Corbet et al. (638 pages)
+- [x] `computer-system-architecture-morris-mano-third-edition.pdf` — Computer System Architecture by Mano, 3rd ed (524 pages)
+- [x] `Azal2020-01-22-12-16-48-75016.pdf` — Digital Design with Verilog HDL by Mano & Ciletti, 5th ed (565 pages)
+- [x] `M.-Morris-Mano-Digital-Design-Prentice-Hall-1995.pdf` — Digital Design by Mano (1995 edition, supplementary)
+- [x] `computer-organization-and-design-risc-v-edition-...pdf` — Computer Organization & Design RISC-V by Patterson & Hennessy, 2nd ed (1,137 pages)
+- [x] `books-library.net-07281709Ee1R6.pdf` — Test-Driven Development for Embedded C by James Grenning (365 pages)
 
-#### 📦 Copy from external drive (you said you have these)
-- [ ] **"Computer System Architecture"** by Morris Mano — digital logic, CPU architecture
-- [ ] **"Digital Design"** by Morris Mano — combinational/sequential logic, FSMs
-- [ ] **"The 8051 Microcontroller and Embedded Systems"** by Muhammad Ali Mazidi (2nd ed) — assembly + C, peripheral interfacing
-- [ ] Any other Mazidi books you have (8086, ARM, PIC, AVR)
-
-#### 📥 Download from college library
-- [ ] **"Making Embedded Systems"** by Elecia White (O'Reilly, 2nd ed 2024) — embedded design patterns, THE bridge book
-- [ ] **"The Definitive Guide to ARM Cortex-M3 and Cortex-M4 Processors"** by Joseph Yiu (3rd ed) — ARM architecture deep dive
-- [ ] **"Mastering the FreeRTOS Real Time Kernel"** by Richard Barry — also **FREE** at https://freertos.org/Documentation/161204_Mastering_the_FreeRTOS_Real_Time_Kernel-A_Hands-On_Tutorial_Guide.pdf
-- [ ] **"Test Driven Development for Embedded C"** by James W. Grenning — TDD for firmware (portfolio gold)
-- [ ] **"Linux Device Drivers"** by Corbet, Rubini, Kroah-Hartman (3rd ed) — also **FREE** at https://lwn.net/Kernel/LDD3/ — for Phase 4
-- [ ] **"Computer Organization and Design: RISC-V Edition"** by Patterson & Hennessy — modern computer architecture, better than Mano for understanding pipelines/caches
+> **Total: 14 books, ~7,500+ pages. Library is 100% complete. No additional purchases needed.**
 
 ---
 
 ### Phase 1 — C Programming (May-June 2026)
 
-| # | Book | Location | Role | Print? |
-|:---|:---|:---|:---|:---|
-| 1 | **"The C Programming Language" (K&R, 2nd ed)** | `Books/The C Programming Language (Kernighan Ritchie).pdf` | **PRIMARY** — read chapters in order | ✅ Print Ch 1-7 |
-| 2 | **"C Programming" (comprehensive)** | `Books/C_Programming.pdf` | **Supplement** — more examples than K&R | No |
-| 3 | **"Beej's Guide to C Programming"** | https://beej.us/guide/bgc/ | **Modern reference** — clearer than K&R, covers C11/C17 | No (use online) |
-| 4 | **"Modern C" by Jens Gustedt** | https://gustedt.gitlabpages.inria.fr/modern-c/ (free PDF) | **Advanced reference** — modern C best practices | No |
+| # | Book | Location | Role |
+|:---|:---|:---|:---|
+| 1 | **"C Programming: A Modern Approach" (K.N. King, 2nd ed)** | `Books/C Programming - A Modern Approach - 2nd_Ed(C89, c99) - King by .pdf` | ⭐ **PRIMARY** — read chapters in order, do 5+ exercises per chapter. Covers C99. Best C learning book for self-study. |
+| 2 | **"The C Programming Language" (K&R, 2nd ed)** | `Books/The C Programming Language (Kernighan Ritchie).pdf` | **REFERENCE** — bed-time reading. Read K&R's concise version of the same topic after learning from King. |
+| 3 | **"Beej's Guide to C Programming"** | https://beej.us/guide/bgc/ | **Supplement** — modern reference, covers C11/C17, clearer explanations for some topics |
+| 4 | **"Modern C" by Jens Gustedt** | https://gustedt.gitlabpages.inria.fr/modern-c/ (free PDF) | **Advanced reference** — modern C best practices, for Phase 3+ |
 
 ### Phase 2 — STM32 Microcontrollers (Jul-Sep 2026)
 
-| # | Book | Location | Role | Print? |
-|:---|:---|:---|:---|:---|
-| 5 | **"Mastering STM32" by Carmine Noviello (2nd ed)** | `Books/mastering-stm32-2nd_docutr_com.pdf` | ⭐ **PRIMARY for Phase 2** — 700+ pages covering GPIO, UART, timers, DMA, everything on STM32. Best STM32 book. | ✅ Print the chapter you're on |
-| 6 | **"The 8051 Microcontroller" by Mazidi** | `Books/` (copy from external) | **Context** — compare 8051 architecture with ARM. Many Indian companies still use 8051. | No |
-| 7 | **"Making Embedded Systems" by Elecia White** | `Books/` (download) | **Design patterns** — how to structure firmware projects, hardware abstraction layers, state machines | No |
+| # | Book | Location | Role |
+|:---|:---|:---|:---|
+| 5 | **"Mastering STM32" by Carmine Noviello (2nd ed)** | `Books/mastering-stm32-2nd_docutr_com.pdf` | ⭐ **PRIMARY for Phase 2** — 910 pages covering GPIO, UART, timers, DMA, everything on STM32. #1 STM32 book. |
+| 6 | **"The 8051 Microcontroller" by Mazidi** | `Books/8051-microcontroller-...pdf` | **Supplementary** — compare 8051 architecture with ARM. Good for microcontroller fundamentals. |
+| 7 | **"Making Embedded Systems" by Elecia White (2nd ed)** | `Books/making_embedded_systems.pdf` | **Design patterns** — how to structure firmware projects, HALs, state machines. #1 embedded design book. |
 
 ### Phase 3 — FreeRTOS (Oct-Dec 2026)
 
-| # | Book | Location | Role | Print? |
-|:---|:---|:---|:---|:---|
-| 8 | **"Mastering the FreeRTOS Real Time Kernel"** by Richard Barry | `Books/` (free download) | ⭐ **PRIMARY for Phase 3** — official guide by FreeRTOS creator. Tasks, queues, semaphores, mutexes. | ✅ Print task/queue chapters |
-| 9 | **"Making Embedded Systems" by Elecia White** | (same as #7) | **Complement** — chapters on interrupts, memory management, debugging patterns | — |
+| # | Book | Location | Role |
+|:---|:---|:---|:---|
+| 8 | **"Mastering the FreeRTOS Real Time Kernel"** by Richard Barry | `Books/Mastering-the-FreeRTOS-Real-Time-Kernel.v1.1.0.pdf` | ⭐ **PRIMARY for Phase 3** — official guide by FreeRTOS creator. #1 and ONLY RTOS book needed. |
+| 9 | **"Making Embedded Systems" by Elecia White** | (same as #7) | **Complement** — chapters on interrupts, memory management, debugging patterns |
 
 ### Phase 4 — Protocols + Linux (Jan-Jun 2027)
 
-| # | Book | Location | Role | Print? |
-|:---|:---|:---|:---|:---|
-| 10 | **"The Definitive Guide to ARM Cortex-M3/M4"** by Joseph Yiu | `Books/` (download) | **ARM architecture** — NVIC, MPU, exception handling, bus system. Deep understanding for interviews. | No |
-| 11 | **"Linux Device Drivers" (LDD3)** by Corbet et al. | `Books/` (free download) | **Linux kernel** — device drivers, char devices, kernel modules. For embedded Linux phase. | No |
-| 12 | **"Computer System Architecture"** by Morris Mano | `Books/` (copy from external) | **Computer architecture** — CPU design, memory hierarchy, I/O — deepens understanding of how MCUs work internally | No |
+| # | Book | Location | Role |
+|:---|:---|:---|:---|
+| 10 | **"The Definitive Guide to ARM Cortex-M3/M4"** by Joseph Yiu | `Books/toaz.info-yiu-j-the-definitive-guide-...pdf` | **ARM architecture bible** — NVIC, MPU, exception handling. #1 ARM book, uncontested. |
+| 11 | **"Linux Device Drivers" (LDD3)** by Corbet et al. | `Books/Linux Device Drivers Third Edition.pdf` | **Linux kernel concepts** — char devices, kernel modules. Supplement with free Bootlin training materials for modern APIs. |
+| 12 | **"Computer System Architecture"** by Morris Mano | `Books/computer-system-architecture-morris-mano-third-edition.pdf` | **Computer architecture** — CPU design, memory hierarchy. Supplementary to Patterson & Hennessy. |
 
 ### Phase 5 — VHDL + Advanced (Jul-Dec 2027)
 
-| # | Book | Location | Role | Print? |
-|:---|:---|:---|:---|:---|
-| 13 | **"Digital Design"** by Morris Mano | `Books/` (copy from external) | **Digital logic** — combinational/sequential circuits, FSMs, VHDL foundations | No |
-| 14 | **"Computer Organization and Design: RISC-V Edition"** by Patterson & Hennessy | `Books/` (download) | **Modern architecture** — pipelines, caches, memory systems. Better than Mano for FH interviews. | No |
-| 15 | **"Test Driven Development for Embedded C"** by Grenning | `Books/` (download) | **Portfolio differentiator** — TDD in firmware. German companies love structured testing. | No |
+| # | Book | Location | Role |
+|:---|:---|:---|:---|
+| 13 | **"Digital Design with Verilog HDL" (5th ed)** by Mano & Ciletti | `Books/Azal2020-01-22-12-16-48-75016.pdf` | **Digital logic** — combinational/sequential circuits, FSMs, Verilog. Latest edition (5th). |
+| 14 | **"Computer Organization and Design: RISC-V Edition"** by Patterson & Hennessy | `Books/computer-organization-and-design-risc-v-edition-...pdf` | **#1 computer organization book** — pipelines, caches, memory systems. RISC-V edition is the gold standard. |
+| 15 | **"Test Driven Development for Embedded C"** by Grenning | `Books/books-library.net-07281709Ee1R6.pdf` | **Portfolio differentiator** — TDD in firmware. The ONLY book in this category. German companies love structured testing. |
 
 ### Phase 6 — Applications (Jan-Jul 2028)
 
@@ -112,17 +111,28 @@ No new technical books. Focus on:
 
 ---
 
-### Chapter-to-Week Mapping (K&R) — May 2026
+### Chapter-to-Week Mapping (K.N. King) — May 2026
 
-| K&R Chapter | Pages | Topics | Your Week |
-|:---|:---|:---|:---|
-| **Ch 1**: A Tutorial Introduction | pp. 1-35 | Hello World, variables, loops, functions, arrays, character I/O | **Week 1-2** |
-| **Ch 2**: Types, Operators, Expressions | pp. 36-53 | Data types, operators, type conversion, bitwise ops | **Week 1 + Week 4** |
-| **Ch 3**: Control Flow | pp. 54-66 | if/else, switch, loops, break/continue, goto | **Week 2** |
-| **Ch 4**: Functions and Program Structure | pp. 67-92 | Functions, scope, headers, preprocessor, multi-file | **Week 2 + Week 5** |
-| **Ch 5**: Pointers and Arrays | pp. 93-126 | Pointers, pointer arithmetic, arrays, multi-dim arrays, function pointers | **Week 3** ⚠️ CRITICAL |
-| **Ch 6**: Structures | pp. 127-150 | struct, typedef, self-referential structs, bit-fields | **Week 4** |
-| **Ch 7**: Input and Output | pp. 151-168 | printf/scanf deep, file I/O, fopen/fclose/fread/fwrite | **Week 5** |
+| K.N. King Chapter | Topics | Your Week |
+|:---|:---|:---|
+| **Ch 1-2**: Introducing C + C Fundamentals | History, program structure, comments, variables, types, assignment | **Week 1** |
+| **Ch 3**: Formatted I/O | printf/scanf deep dive, format specifiers | **Week 1** |
+| **Ch 4**: Expressions | Operators, type conversion, precedence | **Week 1** |
+| **Ch 5**: Selection Statements | if/else, switch, conditional expressions | **Week 1-2** |
+| **Ch 6**: Loops | while, for, do-while, break, continue | **Week 2** |
+| **Ch 7**: Basic Types | Integer types, floating types, type conversion, typedef | **Week 2** |
+| **Ch 8**: Arrays | 1D arrays, multi-dimensional arrays, sizeof with arrays | **Week 2** |
+| **Ch 9**: Functions | Function definitions, arguments, return, recursion | **Week 2** |
+| **Ch 10**: Program Organization | Header files, multi-file programs, scope, storage duration | **Week 2** |
+| **Ch 11**: Pointers | Pointer variables, address/indirection operators, pointer arithmetic | **Week 3** ⚠️ CRITICAL |
+| **Ch 12**: Pointers and Arrays | Pointer-array relationship, pointer as arguments, strings | **Week 3** ⚠️ CRITICAL |
+| **Ch 13**: Strings | String literals, string library, arrays of strings | **Week 3** |
+| **Ch 14**: The Preprocessor | #define, #include, conditional compilation, macros | **Week 4-5** |
+| **Ch 16**: Structures, Unions, Enumerations | struct, typedef, unions, bit-fields, enums | **Week 4** |
+| **Ch 17**: Advanced Uses of Pointers | Dynamic memory (malloc/free), linked lists, function pointers | **Week 3-4** |
+| **Ch 22**: Input/Output | File I/O (fopen, fclose, fprintf, fscanf, fread, fwrite) | **Week 5** |
+
+> **K&R Bed Reading Mapping**: Read K&R Ch 1-7 in parallel (30 min before sleep) for the concise "expert" perspective on the same topics.
 
 ---
 
@@ -244,18 +254,18 @@ No new technical books. Focus on:
 
 ---
 
-## 💰 RECOMMENDED PURCHASES (Phase 2+, Not for May)
+## 💰 PURCHASED COURSES
 
-### Udemy Courses (Buy individually, NOT subscription)
+### Udemy Courses (Already Bought)
 
-| # | Course | Instructor | Normal/Sale | Buy When | Use When | Why |
-|:---|:---|:---|:---|:---|:---|:---|
-| 1 | **"Microcontroller Embedded C Programming: Absolute Beginners"** | FastBit Embedded Brain Academy | ₹549 / ₹399 | June 2026 | July 2026 (Phase 2 start) | Bridges pure C → embedded C. Covers STM32 register-level programming. |
-| 2 | **"Mastering Microcontroller and Embedded Driver Development"** | FastBit Embedded Brain Academy | ₹549 / ₹399 | June 2026 | July 2026 (Phase 2) | GPIO, SPI, I2C, UART, interrupt drivers from scratch on STM32. THE course for driver development. |
+| # | Course | Instructor | Hours | Repo | Use When |
+|:---|:---|:---|:---|:---|:---|
+| 1 | **"Microcontroller Embedded C Programming: Absolute Beginners"** | FastBit Embedded Brain Academy | 16.5h | `Courses/FastBit-Embedded-C/` | **Phase 1 (May 2026)** — watch at 1.5× alongside K.N. King. Visual reinforcement of C concepts with embedded context. |
+| 2 | **"Mastering Microcontroller and Embedded Driver Development"** | FastBit Embedded Brain Academy | 28.5h | (clone when Phase 2 starts) | **Phase 2 (Jul 2026)** — GPIO, SPI, I2C, UART drivers from scratch on STM32. THE course for driver dev. |
+| 3 | **"Mastering Microcontroller: Timers, PWM, CAN, Low Power (MCU2)"** | FastBit Embedded Brain Academy | 29h | (clone when Phase 2-3 starts) | **Phase 2-3 (Aug-Dec 2026)** — Advanced peripherals, CAN bus, power management. |
+| 4 | **"Learn everything about Linux! 100+ hours v2026"** | — | 100h+ | — | **Phase 4 (Jan 2027)** — Linux CLI, networking, shell scripting, Docker, Git, Kubernetes. |
 
-> **Why NOT subscription**: You only need 2 courses from Udemy. At ₹549 each = ₹1,098 total, permanent ownership, lifetime access. Subscription at ₹4,500/year means you lose access if you cancel, and you're paying 4× more for only 2 courses.
->
-> **How to catch sales**: Add courses to Udemy wishlist → Udemy emails you when they go on sale. Or check every Sunday during weekly review. Sales happen every 2-3 weeks. Both courses will drop to ₹399.
+> **Daily Flow**: Read K.N. King chapter → do 5 exercises → watch FastBit lesson on same topic at 1.5× → code along (write yourself, don't copy) → do 2 more King exercises.
 
 ---
 
@@ -274,7 +284,6 @@ No new technical books. Focus on:
 
 | Course | Use When |
 |:---|:---|
-| **"Learn everything about Linux! 100+ hours"** | Phase 4 (Apr 2027) — Linux CLI, shell scripting |
 | **"Master of Essential C++ Programming"** | Phase 5 (Jul 2027) — C++ fundamentals |
 
 ---
@@ -319,7 +328,7 @@ No new technical books. Focus on:
 | Tool | Purpose |
 |:---|:---|
 | **Udemy Linux course** | Linux CLI mastery |
-| **VMware Workstation Pro** | Linux VM for embedded Linux development |
+| **VMware Workstation Pro** | Linux VMs for embedded Linux development (Fedora Workstation + openSUSE Tumbleweed already installed, 40GB/6GB RAM each) |
 | **Altium Designer** | PCB design for portfolio project |
 | **MATLAB R2024b** | Signal processing, control systems (if needed) |
 | **Arduino Cloud** (GitHub Pack) | Arduino IoT projects |
