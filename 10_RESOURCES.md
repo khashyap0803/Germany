@@ -264,6 +264,7 @@ No new technical books. Focus on:
 | 2 | **"Mastering Microcontroller and Embedded Driver Development"** | FastBit Embedded Brain Academy | 28.5h | (clone when Phase 2 starts) | **Phase 2 (Jul 2026)** — GPIO, SPI, I2C, UART drivers from scratch on STM32. THE course for driver dev. |
 | 3 | **"Mastering Microcontroller: Timers, PWM, CAN, Low Power (MCU2)"** | FastBit Embedded Brain Academy | 29h | (clone when Phase 2-3 starts) | **Phase 2-3 (Aug-Dec 2026)** — Advanced peripherals, CAN bus, power management. |
 | 4 | **"Learn everything about Linux! 100+ hours v2026"** | — | 100h+ | — | **Phase 4 (Jan 2027)** — Linux CLI, networking, shell scripting, Docker, Git, Kubernetes. |
+| 5 | **"Mastering Zephyr RTOS with DeviceTree and Board Bring Up"** | FastBit Embedded Brain Academy | 9h | (clone when Phase 3-4 starts) | **Phase 3-4 (Dec 2026-Jan 2027)** — AFTER FreeRTOS mastery. Zephyr workspace, DeviceTree, custom board porting. Runs on your STM32F411 + Nucleo-L476RG. |
 
 > **Daily Flow**: Read K.N. King chapter → do 5 exercises → watch FastBit lesson on same topic at 1.5× → code along (write yourself, don't copy) → do 2 more King exercises.
 
