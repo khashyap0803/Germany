@@ -1,0 +1,25 @@
+# PDF Books (too large for GitHub, keep locally only)
+Books/*.pdf
+
+# Compiled binaries (only push .c source files)
+C-Practice/**/hello
+C-Practice/**/hello_world
+C-Practice/**/p[0-9]*
+C-Practice/**/variables
+C-Practice/**/*.o
+C-Practice/**/*.out
+C-Practice/**/*.exe
+
+# General compiled C output (no extension = likely binary)
+# Push only .c and .h files from C-Practice
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE files
+.vscode/
+*.swp
+*.swo
+*~
