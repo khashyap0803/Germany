@@ -1,7 +1,8 @@
 # 🇩🇪 KHASHYAP — Masters in Embedded Systems, Germany
 ## Complete Roadmap | Target: Winter Semester 2028 (October 2028)
 
-> **Last Updated**: March 30, 2026
+> **Last Updated**: May 7, 2026
+> **Strategy**: Type 3 "AI Supervisor Engineer" — manual foundations → AI acceleration
 > **Created by**: AI-assisted planning (verify all info on official websites)
 
 ---
@@ -130,9 +131,13 @@ German Grade = ((10 - 7.5) / (10 - 4)) × 3 + 1 = 2.25 ("Gut" / Good) ✅
 
 ## See other files in this directory:
 - `01_UNIVERSITIES.md` — Complete university list with requirements
-- `02_DAILY_SCHEDULE.md` — Optimized 24-hour schedule with AI automation
-- `03_GERMAN_LANGUAGE.md` — B2 roadmap with AI-powered learning
+- `02_DAILY_SCHEDULE.md` — Optimized 24-hour schedule
+- `03_GERMAN_LANGUAGE.md` — B2 roadmap
 - `04_IELTS_PREP.md` — IELTS preparation plan
 - `05_APPLICATION_DOCS.md` — APS, motivation letter, SOP strategy
-- `06_EMBEDDED_LEARNING.md` — Parallel embedded systems skill plan
+- `06_EMBEDDED_LEARNING.md` — Embedded systems learning path (overview)
 - `07_MONTHLY_TIMELINE.md` — Month-by-month action checklist
+- `09_ULTIMATE_STUDY_PLAN.md` — **MAIN PLAN**: AI-accelerated 20-month detailed schedule
+- `10_GOLDEN_RULES.md` — Study philosophy, AI detox protocol, debugging tips
+- `10_RESOURCES.md` — Complete book/course/platform library with phase mapping
+- `10A-10E_MAY_WEEK*.md` — Detailed daily plans for May 2026 weeks

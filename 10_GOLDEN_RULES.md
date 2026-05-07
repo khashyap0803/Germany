@@ -198,23 +198,36 @@ Google AI (LAST RESORT)  → Ask to EXPLAIN only. Never ask to write code.
 2030: ??? (your career peak begins)
 ```
 
-**AI growth is exponential. Your plan must account for a world where AI can:**
-- Write complete firmware from a prompt
-- Auto-debug using logic analyzers + JTAG
-- Generate and simulate PCB designs
+**AI growth is exponential. As of May 2026, AI CAN already:**
+- Write complete firmware from a prompt (Ember AI)
+- Auto-debug using serial monitor → fix → re-upload cycles (Ember AI)
+- Generate and auto-route PCB designs (Flux AI)
+- Run AI agents directly ON MCUs via server (ESP-Claw, OpenClaw)
+- Decode JTAG, logic analyzer, oscilloscope output automatically
+- Read datasheets and generate register-level driver code
 - Pass most coding interviews
 
-### Why You're NOT Doomed (The Embedded Advantage)
+**These tools are REAL. The demos are REAL. The threat is REAL.**
 
-Software (CSE) is being eaten by AI first because:
-- Software is 100% digital → AI can read, write, test, deploy it end-to-end
-- No physical hardware needed
+### Why You're NOT Doomed (But the Game Has Changed)
 
-Embedded is being eaten LAST because:
-- **Hardware is physical** → AI can't solder, can't feel if a chip is overheating
-- **Safety-critical** → ISO 26262 (automotive), IEC 62304 (medical) REQUIRE human sign-off by LAW
-- **Hardware-specific** → Every board is different. AI needs YOUR knowledge of YOUR specific hardware.
-- **Debugging is physical** → Oscilloscope, logic analyzer, multimeter require human hands and eyes
+**The "write basic GPIO driver from a tutorial" job IS dying.** Accept this.
+
+What AI tools do WELL (the 95% they handle):
+- Boilerplate firmware generation
+- Protocol driver skeleton code
+- PCB auto-routing from schematic
+- Simple IoT application logic
+- Code completion for common patterns
+
+What AI tools FAIL at (the 5% where your salary lives):
+- **Production reliability**: Demo shows 95% working. Production needs 100%. The 5% gap costs €2M in product recalls.
+- **Thermal/physical issues**: AI sees a thermal camera feed but can't FEEL that the voltage regulator is 10°C hotter than expected under load
+- **Race conditions at edge cases**: Only happen at 37°C, 80% CPU load, with specific interrupt timing
+- **Safety certification**: ISO 26262 (automotive), IEC 62304 (medical) REQUIRE human sign-off BY LAW
+- **System-level architecture decisions**: FreeRTOS vs Zephyr for THIS specific product with THESE constraints
+- **Debugging new/undocumented hardware**: Chips released yesterday, custom boards, prototype PCBs
+- **Cross-team negotiation**: Explaining to the German Teamleiter WHY the firmware crashed in B2 German
 
 ### Your Role in 2028-2033: AI SUPERVISOR
 

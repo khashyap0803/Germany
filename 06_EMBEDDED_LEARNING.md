@@ -1,81 +1,110 @@
 # 💻 EMBEDDED SYSTEMS LEARNING PLAN
 
-## Goal: Build real skills (not copy-paste) + GitHub portfolio
-## Time: Evenings + weekends, alternating with German study
+## Strategy: Type 3 "AI Supervisor Engineer" — manual foundations → AI-accelerated mastery
+## Time: Mornings (5:00-6:30) + Evenings (9:30-11:00) + Weekends (14 hrs)
+## See `09_ULTIMATE_STUDY_PLAN.md` for the DETAILED daily/weekly schedule
+
+---
+
+## AI DETOX PROTOCOL
+
+| Phase | Period | AI Rule |
+|---|---|---|
+| **Phase 1-2** | May–Sep 2026 | 🔴 **AI BANNED for code.** AI only explains concepts. YOU write ALL code. |
+| **Phase 3** | Oct–Dec 2026 | 🟡 **Supervised AI.** AI generates boilerplate. You REVIEW and EXPLAIN every line. |
+| **Phase 4+** | Jan 2027+ | 🟢 **AI Partner.** Generate, review, test, sign off — like a senior engineer. |
 
 ---
 
 ## LEARNING PATH (Priority Order)
 
-### 1. C Programming DEEP (Apr - May 2026) — 8 weeks
+### 1. C Programming DEEP (May - Jun 2026) — 9 weeks
 **Why**: Foundation of ALL embedded work. You MUST know C properly.
 
-| Topic | Resource | Practice |
+| Topic | Primary Resource | Secondary Resource | Practice |
+|:---|:---|:---|:---|
+| C fundamentals, types, operators | K.N. King "C Programming: A Modern Approach" 2nd Ed | FastBit "Embedded C" course at 1.5× | King exercises (5+ per chapter) |
+| Pointers, memory, structs | K.N. King Ch 11-19 | Neso Academy YouTube (7-min concepts) | Draw memory diagrams on paper |
+| Bitwise operations | K.N. King Ch 20 + FastBit bitwise sections | Jacob Sorber YouTube | Solve 5 problems/week |
+| Linked lists, queues | K.N. King Ch 17 + practice | Exercism C track | Implement from scratch, no AI |
+| Makefiles, compilation pipeline | GCC on WSL2 | FastBit build system sections | Build multi-file projects |
+| Debugging | GDB on WSL2 | See `10_GOLDEN_RULES.md` GDB cheat sheet | Debug real bugs manually |
+
+**Reference (Bed Reading)**: K&R "The C Programming Language" 2nd Ed — concise expert perspective
+
+**Pipeline**: Read King → Do exercises → Watch FastBit → Code yourself → EXPLAIN out loud
+
+### 2. Microcontroller Programming (Jul - Sep 2026) — 13 weeks
+**Why**: Core of embedded systems. Register-level understanding.
+
+| Topic | Primary Resource | Course | Hardware |
+|:---|:---|:---|:---|
+| GPIO, UART (HAL + Register) | "Mastering STM32" by Carmine Noviello | FastBit MCU1 (28.5h) | STM32F411 Black Pill + Nucleo-L476RG |
+| Timers, Interrupts, ADC | Reference Manual RM0383/RM0351 | FastBit MCU2 (29h) | STM32 boards + sensors |
+| PWM, DMA basics | Mastering STM32 book | FastBit MCU2 | Breadboard + LEDs + potentiometer |
+| SPI, I2C protocols | Mastering STM32 + datasheets | FastBit MCU1/MCU2 | Logic analyzer (Sipeed SLogic) |
+
+**Debugger Setup**:
+- Nucleo onboard ST-Link/V2-1 (primary — SWD only, rock solid)
+- Robocraze metal ST-Link V2 (backup/portable — SWD only)
+- Both connect to STM32CubeIDE or OpenOCD+GDB
+
+**Portfolio Project 1**: "STM32 Environmental Monitor" — ADC + timer + UART + circular buffer → GitHub
+
+### 3. RTOS + Zephyr (Oct - Dec 2026) — 13 weeks
+**Why**: Required for embedded roles. Industry moving to Zephyr.
+
+| Topic | Primary Resource | Course |
 |:---|:---|:---|
-| Pointers, memory, structs | "C Programming" by K&R | Write code from scratch |
-| Bitwise operations | YouTube: Jacob Sorber | Solve 5 problems/week |
-| Linked lists, queues | Neetcode / LeetCode Easy | Implement from memory |
-| Makefiles, compilation | GCC on WSL2 | Build projects without IDE |
-| Debugging | GDB on WSL2 | Debug real bugs |
+| FreeRTOS: tasks, queues, semaphores | "Mastering the FreeRTOS Real Time Kernel" (free PDF, 304p) | FastBit "FreeRTOS with STM32Fx" (14h) — buy Sep 2026 |
+| FreeRTOS: mutexes, priority inversion | FreeRTOS book + STM32 hands-on | FastBit FreeRTOS course |
+| Zephyr RTOS: setup, DeviceTree, board porting | Zephyr official docs | FastBit "Mastering Zephyr RTOS" (9h) — already purchased |
+| Zephyr: custom board bring-up | FastBit course + Zephyr docs | Port to STM32F411 + Nucleo-L476RG |
 
-**AI Usage**: When stuck, ask Claude/ChatGPT to EXPLAIN, not give you the answer. Then try again yourself.
+**AI Tools Introduction**: Start using Copilot/Ember for FreeRTOS boilerplate (YOU verify every line)
 
-### 2. Microcontroller Programming (Jun - Sep 2026) — 16 weeks
-**Why**: Core of embedded systems. You have STM32 + ESP32.
+**Portfolio Project 2**: "FreeRTOS Multi-Sensor Dashboard" + Zephyr re-implementation → GitHub
 
-| Topic | Resource | Hardware |
+### 4. Protocols + Linux + AI Tools Mastery (Jan - Jun 2027) — 26 weeks
+**Why**: Complete the embedded stack. Master AI tools as a supervisor.
+
+| Topic | Resource | AI Tool to Learn |
 |:---|:---|:---|
-| GPIO, timers, interrupts | STM32CubeIDE tutorials | STM32 board |
-| ADC, DAC, PWM | Fastbit Embedded (YouTube) | STM32 + sensors |
-| SPI, I2C, UART | Controller Tech (YouTube) | STM32 + modules |
-| ESP-IDF framework | Espressif docs | ESP32 |
-| WiFi/BLE projects | ESP-IDF examples | ESP32 |
+| CAN bus, RS485 | FastBit MCU2 + books | Ember AI for firmware iteration |
+| ESP32 + IoT (WiFi/MQTT) | ESP-IDF docs + ESP32-S3 board | Copilot for boilerplate |
+| Linux CLI, shell scripting | "Linux 100+ hours" Udemy course | — |
+| Linux device drivers | LDD3 book + Bootlin training | — |
+| Cross-compilation | WSL2 + Fedora VM + openSUSE VM | — |
+| PCB design basics | KiCad + Flux AI | Flux AI for auto-routing |
 
-**Portfolio Project 1**: Build a real sensor data logger with STM32 + I2C sensor + UART output → document on GitHub
+**Old PC Project**: Deploy Linux From Scratch on Core 2 Duo (real hardware kernel experience)
+**Linux VMs**: Fedora Workstation + openSUSE Tumbleweed (already installed, VMware, 40GB/6GB RAM each)
 
-### 3. RTOS (Oct - Dec 2026) — 12 weeks
-**Why**: Required for many embedded roles and masters programs.
+**Portfolio Project 3**: ESP32 IoT device — AI-accelerated (generate 60%, verify 100%) → GitHub
 
-| Topic | Resource |
-|:---|:---|
-| FreeRTOS basics | "Mastering the FreeRTOS Real Time Kernel" (free PDF) |
-| Tasks, queues, semaphores | Hands-on with STM32 + FreeRTOS |
-| Mutexes, event groups | Practice exercises |
-| RTOS on ESP32 | ESP-IDF (uses FreeRTOS internally) |
-
-**Portfolio Project 2**: Multi-task embedded application using FreeRTOS on STM32
-
-### 4. Communication Protocols Deep Dive (Jan - Mar 2027) — 12 weeks
-| Protocol | Level |
-|:---|:---|
-| SPI — master/slave, modes, timing | Deep |
-| I2C — addressing, multi-slave | Deep |
-| UART — baud, framing, RS232/485 | Deep |
-| CAN bus — automotive focus | Intermediate |
-| USB basics | Awareness |
-
-### 5. Linux Embedded Basics (Apr - Jun 2027) — 12 weeks
-**Use WSL2 on your Windows PC for this!**
+### 5. VHDL + Portfolio Polish (Jul - Dec 2027) — 26 weeks
 
 | Topic | Resource |
 |:---|:---|
-| Linux command line mastery | Linux Journey (free website) |
-| Shell scripting (bash) | WSL2 practice |
-| Cross-compilation | Build for ARM on x86 |
-| Buildroot / Yocto basics | Awareness level |
-| Device drivers concept | Reading + videos |
+| Digital logic review | Neso Academy (YouTube) + Morris Mano book |
+| VHDL basics + simulation | Free VHDL tutorials, HDLBits |
+| Counter, FSM, ALU designs | Practice + Joseph Yiu ARM book |
 
-### 6. VHDL/Verilog Basics (Jul - Sep 2027) — 12 weeks
-**Why**: Required prerequisite for RWU application.
+**Portfolio Project 4**: VHDL/Verilog design + AI-assisted PCB (Flux) → GitHub
 
-| Topic | Resource |
-|:---|:---|
-| Digital logic review | Neso Academy (YouTube) |
-| VHDL basics | Free VHDL tutorials online |
-| Verilog basics | HDLBits (free interactive) |
-| Simple designs | Counter, FSM, ALU |
+---
 
-**Portfolio Project 3**: Simple FPGA project in VHDL (can simulate without hardware using online tools)
+## 🔧 HARDWARE INVENTORY
+
+| Hardware | Status | Use For |
+|:---|:---|:---|
+| STM32F411CEU6 (WeAct Black Pill) | ✅ Owned | Phase 2-3: bare-metal + FreeRTOS + Zephyr |
+| Nucleo-L476RG | ✅ Owned | Phase 2-3: HAL + onboard ST-Link for debugging both boards |
+| ESP32-S3 N8R2 | ✅ Owned | Phase 4: IoT + WiFi/BLE projects |
+| Robocraze ST-Link V2 (metal shell) | ✅ Owned | Backup/portable SWD programmer |
+| Sipeed SLogic analyzer | ✅ Owned | Protocol debugging (SPI/I2C/UART waveforms) |
+| Core 2 Duo PC (LGA775, 4GB DDR2) | ✅ Found | Phase 4: Linux From Scratch target |
+| Raspberry Pi 4 | ❌ Buy late 2026 | Phase 4: Embedded Linux |
 
 ---
 
@@ -97,18 +126,31 @@ sudo apt update
 sudo apt install gcc-arm-none-eabi gdb-multiarch make cmake git
 ```
 
-### Delete Linux Dual Boot
-- Boot into Windows
-- Open Disk Management
-- Delete the Linux partitions
-- Extend Windows or create a data partition
-- Free up 1TB Gen3 SSD for project files
+### VMware VMs (Phase 4)
+- **Fedora Workstation**: 40GB disk, 6GB RAM — main Linux dev VM
+- **openSUSE Tumbleweed**: 40GB disk, 6GB RAM — secondary (rolling release)
 
 ### Storage Organization
 - **1TB Gen4 SSD**: Windows + WSL2 + all installed software
 - **1TB Gen3 SSD**: Projects, German resources, IELTS material, documents
 - **512GB SATA SSD**: Backups of important documents
 - **512GB HDD**: ⚠️ FAILING — stop using it, replace when budget allows
+
+---
+
+## 📚 COURSE LIBRARY (All Purchased — 183+ Hours)
+
+| # | Course | Hours | Phase |
+|:---|:---|:---|:---|
+| 1 | FastBit Embedded C Programming | 16.5h | Phase 1 (May 2026) |
+| 2 | FastBit MCU Driver Development (MCU1) | 28.5h | Phase 2 (Jul 2026) |
+| 3 | FastBit Timers/PWM/CAN (MCU2) | 29h | Phase 2-3 (Aug-Dec 2026) |
+| 4 | FastBit Zephyr RTOS | 9h | Phase 3 (Dec 2026) |
+| 5 | Linux 100+ hours | 100h+ | Phase 4 (Jan 2027) |
+| **Buy Jun** | FastBit ARM Cortex-M3/M4 | 15h | Phase 2 |
+| **Buy Sep** | FastBit FreeRTOS | 14h | Phase 3 |
+
+See `10_RESOURCES.md` for complete book + platform library.
 
 ---
 
@@ -125,11 +167,13 @@ README.md should include:
 - What you learned
 ```
 
-### Target: 3-4 solid projects by mid-2028
-1. **Sensor Data Logger** (STM32 + I2C + UART) — Jun-Aug 2026
-2. **FreeRTOS Multi-task System** (STM32 + FreeRTOS) — Nov 2026-Jan 2027
-3. **IoT Device** (ESP32 + WiFi + sensors) — Apr-Jun 2027
-4. **VHDL/Verilog Design** (simulation) — Aug-Sep 2027
+### Target: 4 solid projects by mid-2028
+1. **STM32 Environmental Monitor** (STM32 + ADC + UART + timer) — Sep 2026
+2. **FreeRTOS Multi-Sensor Dashboard** + Zephyr branch (STM32 + RTOS) — Dec 2026
+3. **IoT Device** (ESP32 + WiFi + MQTT + sensors, AI-accelerated) — Mar 2027
+4. **VHDL Design** + AI-assisted PCB (Flux) — Aug 2027
 
-### Key Rule:
-> **WRITE EVERY LINE OF CODE YOURSELF. Use AI to EXPLAIN, not to WRITE FOR YOU. The goal is LEARNING, not impressing GitHub visitors with AI-generated code.**
+### Key Rules:
+> **Phase 1-2**: WRITE EVERY LINE OF CODE YOURSELF. No AI code generation. No copy-paste.
+> **Phase 3+**: AI generates boilerplate → YOU review, verify, debug, and sign off on every line.
+> **Always**: The goal is UNDERSTANDING, not impressing GitHub visitors with AI-generated code.

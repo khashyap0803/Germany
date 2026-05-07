@@ -8,16 +8,20 @@
 
 ### April 2026
 - [ ] 🇩🇪 Start Nicos Weg A1 (morning study blocks)
-- [ ] 🇩🇪 Install Duolingo German + Anki + download DW audio
-- [ ] 💻 Start C programming deep study (K&R book)
-- [ ] 💻 Set up WSL2 on Windows, install gcc-arm-none-eabi
+- [ ] 🇩🇪 Install AnkiDroid + download A1 deck + install DW app
+- [ ] 💻 Start C programming deep study (K.N. King "C Programming: A Modern Approach")
+- [ ] 💻 Watch FastBit "Embedded C" course at 1.5× alongside King
+- [ ] 💻 Set up WSL2 on Windows, install gcc + gdb
+- [ ] 💻 🔴 AI BANNED for code — write everything manually
 - [ ] 💻 Delete Linux dual-boot partition, free up Gen3 SSD
 - [ ] 💰 Start saving ₹10-15K/month
 - [ ] 📝 Start habit tracker (daily: German ✅, Embedded ✅, Anki ✅)
 
 ### May 2026
 - [ ] 🇩🇪 Continue Nicos Weg A1
-- [ ] 💻 C programming: pointers, memory management, bitwise ops
+- [ ] 💻 C programming: K.N. King Ch 1-14 + FastBit Embedded C (variables, loops, functions, arrays)
+- [ ] 💻 🔴 AI BANNED for code — Pipeline: Read King → Exercises → FastBit → Code → EXPLAIN
+- [ ] 📝 Sister's wedding (May 1-13) — light study, Anki only
 - [ ] 📝 LAST SEM EXAMS! Request provisional certificate from CBIT ASAP
 - [ ] 📝 Get consolidated mark sheet from CBIT
 - [ ] 📝 Note: Final degree cert may take till Jun-Sep 2026 (provisional is OK for APS + unis)
@@ -26,37 +30,44 @@
 
 ### June 2026
 - [ ] 🇩🇪 Complete Nicos Weg A1, start A2
-- [ ] 💻 C programming: linked lists, makefiles, GDB debugging
+- [ ] 💻 C deep: K.N. King Ch 15-27 (pointers, bitwise, structs, Makefile, GDB)
+- [ ] 💻 🔴 AI BANNED — draw memory diagrams on paper for pointers
 - [ ] 📝 Organize all academic documents in a folder (physical + digital scans)
+- [ ] 💻 **Buy FastBit ARM Cortex-M3/M4 course** (for Phase 2 prep)
 
 ### July 2026
 - [ ] 🇩🇪 Nicos Weg A2 in progress
-- [ ] 💻 Start STM32 microcontroller programming (GPIO, timers)
-- [ ] 💻 Install STM32CubeIDE, start first program (blink LED — but understand WHY)
+- [ ] 💻 Start STM32 microcontroller programming (GPIO, UART)
+- [ ] 💻 FastBit MCU1 course + "Mastering STM32" book
+- [ ] 💻 🔴 AI BANNED — write both HAL and register-level code
+- [ ] 💻 Use Nucleo onboard ST-Link (primary) + Robocraze ST-Link V2 (backup)
 
 ### August 2026
 - [ ] 🇩🇪 Continue A2 + Easy German podcast during commute
-- [ ] 💻 STM32: interrupts, ADC, PWM
-- [ ] 💻 Start Portfolio Project 1 (sensor data logger)
+- [ ] 💻 STM32: timers, interrupts, ADC, PWM (FastBit MCU2 starts)
+- [ ] 💻 Start Portfolio Project 1 (STM32 Environmental Monitor)
 
 ### September 2026
 - [ ] 🇩🇪 Complete A2, take self-assessment
-- [ ] 💻 STM32: SPI, I2C, UART communication
 - [ ] 💻 Complete Portfolio Project 1, document on GitHub
+- [ ] 💻 **Buy FastBit FreeRTOS course** (for Phase 3)
+- [ ] 💻 SPI, I2C, UART protocols with logic analyzer
 
 ### October 2026
 - [ ] 🇩🇪 Start Nicos Weg B1
-- [ ] 💻 Start FreeRTOS study
-- [ ] 💻 ESP32 + ESP-IDF basics
+- [ ] 💻 Start FreeRTOS study (FastBit course + FreeRTOS book)
+- [ ] 💻 🟡 AI SUPERVISED — Copilot for FreeRTOS boilerplate, YOU verify every line
 
 ### November 2026
 - [ ] 🇩🇪 B1 grammar focus (cases, tenses)
-- [ ] 💻 FreeRTOS: tasks, queues, semaphores
-- [ ] 💻 Start Portfolio Project 2 (FreeRTOS multi-task)
+- [ ] 💻 FreeRTOS: tasks, queues, semaphores, mutexes
+- [ ] 💻 SPI + I2C deep dive with protocol debugging (Sipeed SLogic)
 
 ### December 2026
-- [ ] 🇩🇪 B1 practice: chatting with AI + writing exercises
-- [ ] 💻 FreeRTOS: mutexes, event groups
+- [ ] 🇩🇪 B1 practice + consider Goethe A1 exam
+- [ ] 💻 **Zephyr RTOS introduction** (FastBit Zephyr course, 9h)
+- [ ] 💻 Port Blinky to STM32F411 + Nucleo in Zephyr, write DeviceTree from scratch
+- [ ] 💻 Start Portfolio Project 2 (FreeRTOS + Zephyr branch)
 - [ ] 💰 End of year financial review — how much saved?
 
 ---
@@ -65,16 +76,20 @@
 
 ### January 2027
 - [ ] 🇩🇪 Continue B1, Deep grammar
-- [ ] 💻 Communication protocols: SPI deep dive
-- [ ] 💻 Complete Portfolio Project 2, document on GitHub
+- [ ] 💻 Communication protocols: CAN bus, RS485
+- [ ] 💻 🟢 AI PARTNER — learn Ember AI, Flux AI, Copilot for embedded workflows
+- [ ] 💻 Complete Portfolio Project 2, document on GitHub (FreeRTOS + Zephyr)
+- [ ] 💻 Start "Linux 100+ hours" Udemy course
 
 ### February 2027
 - [ ] 🇩🇪 B1 completion approaching
-- [ ] 💻 I2C, UART/RS485 deep dive
+- [ ] 💻 ESP32 + ESP-IDF basics (ESP32-S3 N8R2 board)
+- [ ] 💻 Linux CLI mastery (course + WSL2 + Fedora VM)
 
 ### March 2027
 - [ ] 🇩🇪 Complete B1, start B1→B2 bridge
-- [ ] 💻 CAN bus basics
+- [ ] 💻 **Portfolio Project 3**: ESP32 IoT device (AI-accelerated: generate 60%, verify 100%)
+- [ ] 💻 Deploy Linux on old Core 2 Duo PC (Linux From Scratch target)
 - [ ] 📝 Research all target universities, bookmark official pages
 
 ### April 2027
