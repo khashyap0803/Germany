@@ -1,6 +1,6 @@
 # 📅 MAY 2026 — MASTER OVERVIEW
 
-> **Period**: May 1 (Thursday) → May 31 (Saturday)
+> **Period**: May 1 (Friday) → May 31 (Sunday)
 > **Month Goal**: C programming fundamentals + German A1 start
 > **AI Status**: 🔴 **BANNED for code** — AI only explains concepts, YOU write ALL code
 > **Status**: Working at Unistring (9 AM - 7/8 PM, 4hr commute)
