@@ -247,9 +247,12 @@ void uart2_init(uint32_t baud) {
     GPIOA->AFR[0] |=  (7U << 12);  // AF7 = USART2
     
     // 4. Configure USART2
-    // BRR = fCLK / baud_rate
-    // If APB1 = 16 MHz (HSI), BRR = 16000000 / 115200 ≈ 139 = 0x8B
-    USART2->BRR = SystemCoreClock / 2 / baud;  // APB1 = SYSCLK/2
+    // BRR = fCLK_APB1 / baud_rate
+    // At default HSI (no PLL): APB1 prescaler = 1, so APB1 = 16 MHz
+    // BRR = 16000000 / 115200 ≈ 139 = 0x8B
+    // NOTE: After PLL config (Week 5), APB1 prescaler = 2, and timer
+    // clocks double, but USART clock = APB1 = SYSCLK/2. Recalculate!
+    USART2->BRR = 16000000UL / baud;  // Hardcoded for HSI default
     
     USART2->CR1 = 0;
     USART2->CR1 |= USART_CR1_TE;    // Transmitter enable
