@@ -1,4 +1,4 @@
-# 📅 WEEK 3 — Jun 16-22 (Mon-Sun): STATE MACHINES + ADVANCED C + MEMORY LAYOUT
+# 📅 WEEK 3 — Jun 15-21 (Mon-Sun): STATE MACHINES + ADVANCED C + MEMORY LAYOUT
 
 > **Topics**: State machines with enum + function pointers, memory layout (text/data/BSS/heap/stack), typedef patterns, packed structs, bit fields, function pointers deep
 > **K.N. King Chapters**: Ch 16 (Structures, Unions, Enumerations deep), Ch 20 (Low-Level Programming)
@@ -11,7 +11,7 @@
 
 ---
 
-## DAY 15 — Monday, Jun 16
+## DAY 15 — Monday, Jun 15
 
 ### 🔶 Morning Block (5:10 - 6:30 AM) — STATE MACHINES (Part 1)
 
@@ -151,7 +151,7 @@ int main(void) {
 
 ---
 
-## DAY 16 — Tuesday, Jun 17
+## DAY 16 — Tuesday, Jun 16
 
 ### 🔶 Morning Block (5:10 - 6:30 AM) — STATE MACHINES (Part 2) + FUNCTION POINTERS DEEP
 
@@ -244,7 +244,7 @@ int main(void) {
 
 ---
 
-## DAY 17 — Wednesday, Jun 18
+## DAY 17 — Wednesday, Jun 17
 
 ### 🔶 Morning Block (5:10 - 6:30 AM) — MEMORY LAYOUT
 
@@ -354,7 +354,7 @@ size tiny     # Much smaller!
 
 ---
 
-## DAY 18 — Thursday, Jun 19
+## DAY 18 — Thursday, Jun 18
 
 ### 🔶 Morning Block (5:10 - 6:30 AM) — PACKED STRUCTS + BIT FIELDS
 
@@ -499,7 +499,7 @@ int main(void) {
 
 ---
 
-## DAY 19 — Friday, Jun 20
+## DAY 19 — Friday, Jun 19
 
 ### 🔶 Morning Block (5:10 - 6:30 AM) — UNIONS + ADVANCED PATTERNS
 
@@ -547,7 +547,7 @@ Create an array of Variant and process each based on its type tag.
 
 ---
 
-## DAY 20-21 — Saturday-Sunday, Jun 21-22 (DEEP STUDY + REVIEW)
+## DAY 20-21 — Saturday-Sunday, Jun 20-21 (DEEP STUDY + REVIEW)
 
 ### Saturday (6:30 AM - 12:45 PM)
 

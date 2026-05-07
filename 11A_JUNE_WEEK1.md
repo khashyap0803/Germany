@@ -1,4 +1,4 @@
-# 📅 WEEK 1 — Jun 1-8 (Mon-Sun): MAKEFILES + GDB + MULTI-FILE PROJECTS
+# 📅 WEEK 1 — Jun 1-7 (Mon-Sun): MAKEFILES + GDB + MULTI-FILE PROJECTS
 
 > **Topics**: Compilation pipeline, gcc flags, Makefiles, multi-file C projects, header files, include guards, GDB debugging
 > **K.N. King Chapters**: Ch 15 (Writing Large Programs), Ch 14 revisit (Preprocessor deep)

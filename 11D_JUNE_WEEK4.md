@@ -1,4 +1,4 @@
-# 📅 WEEK 4 — Jun 23-30 (Mon-Tue): PHASE 1 CAPSTONE + MONTH TEST + STM32 PREP
+# 📅 WEEK 4 — Jun 22-30 (Mon-Tue): PHASE 1 CAPSTONE + MONTH TEST + STM32 PREP
 
 > **Topics**: Final C capstone project, comprehensive month test, Phase 1 exit exam, STM32 prep
 > **K.N. King Chapters**: Ch 22 (I/O deep), Ch 24 (Error Handling), review ALL chapters
@@ -9,7 +9,7 @@
 
 ---
 
-## DAY 22 — Monday, Jun 23
+## DAY 22 — Monday, Jun 22
 
 ### 🔶 Morning Block (5:10 - 6:30 AM) — CAPSTONE PROJECT PLANNING
 
@@ -55,7 +55,7 @@ Today: Plan the architecture. Write ALL header files. Implement `config.h`, `rin
 
 ---
 
-## DAY 23 — Tuesday, Jun 24
+## DAY 23 — Tuesday, Jun 23
 
 ### 🔶 Morning Block (5:10 - 6:30 AM) — CAPSTONE: CORE IMPLEMENTATION
 
@@ -95,7 +95,7 @@ void uart_printf(const char *fmt, ...);  // Use stdarg.h for variadic
 
 ---
 
-## DAY 24 — Wednesday, Jun 25
+## DAY 24 — Wednesday, Jun 24
 
 ### 🔶 Morning Block (5:10 - 6:30 AM) — CAPSTONE: STATE MACHINE + INTEGRATION
 
@@ -165,7 +165,7 @@ timestamp,reading,status
 
 ---
 
-## DAY 25 — Thursday, Jun 26
+## DAY 25 — Thursday, Jun 25
 
 ### 🔶 Morning Block (5:10 - 6:30 AM) — CAPSTONE: POLISH + DOCUMENTATION
 
@@ -202,7 +202,7 @@ timestamp,reading,status
 
 ---
 
-## DAY 26 — Friday, Jun 27
+## DAY 26 — Friday, Jun 26
 
 ### 🔶 Morning Block (5:10 - 6:30 AM) — PHASE 1 COMPREHENSIVE TEST
 
@@ -281,7 +281,7 @@ int main(void) {
 
 ---
 
-## DAY 27-28 — Saturday-Sunday, Jun 28-29 (FINAL WEEKEND)
+## DAY 27-28 — Saturday-Sunday, Jun 27-28 (FINAL WEEKEND)
 
 ### Saturday (6:30 AM - 12:45 PM) — CAPSTONE FINALIZATION
 
@@ -344,7 +344,7 @@ C-Practice/
 
 ---
 
-## DAY 29 — Monday, Jun 30 — LAST DAY OF PHASE 1
+## DAY 29 — Monday, Jun 29
 
 ### 🔶 Morning Block (5:10 - 6:30 AM) — PHASE 1 EXIT INTERVIEW
 
@@ -367,6 +367,22 @@ C-Practice/
 ### 🎧 Commute — Final German A1 review
 - Listen to Nicos Weg A1 highlights
 - Practice: introduce yourself, daily routine, family, food, past tense
+
+---
+
+## DAY 30 — Tuesday, Jun 30 — LAST DAY OF PHASE 1
+
+### 🔶 Morning Block (5:10 - 6:30 AM) — FINAL REVIEW + JULY PREP
+
+- Review your Phase 1 test scores from Day 26
+- Re-attempt any test you failed
+- Read FastBit MCU1 course description — preview what July looks like
+- Ensure STM32CubeIDE is installed and working
+- **Buy FastBit ARM Cortex-M3/M4 course** (if not done yet)
+
+### 🎧 Commute — German A1 final review
+- Full vocabulary review on AnkiDroid
+- Practice full self-introduction in German
 
 ---
 

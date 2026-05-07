@@ -152,10 +152,10 @@ Before starting STM32 in July, you MUST be able to:
 
 | File | Dates | Topic |
 |:---|:---|:---|
-| **`11A_JUNE_WEEK1.md`** | Jun 1-8 (Mon-Sun) | Makefiles + GDB + Multi-file projects + Compilation pipeline |
-| **`11B_JUNE_WEEK2.md`** | Jun 9-15 (Mon-Sun) | Dynamic memory deep + Linked lists + Queues + Circular buffer |
-| **`11C_JUNE_WEEK3.md`** | Jun 16-22 (Mon-Sun) | State machines + Advanced C patterns + Memory layout |
-| **`11D_JUNE_WEEK4.md`** | Jun 23-30 (Mon-Tue) | Phase 1 CAPSTONE project + Month test + STM32 prep |
+| **`11A_JUNE_WEEK1.md`** | Jun 1-7 (Mon-Sun) | Makefiles + GDB + Multi-file projects + Compilation pipeline |
+| **`11B_JUNE_WEEK2.md`** | Jun 8-14 (Mon-Sun) | Dynamic memory deep + Linked lists + Queues + Circular buffer |
+| **`11C_JUNE_WEEK3.md`** | Jun 15-21 (Mon-Sun) | State machines + Advanced C patterns + Memory layout |
+| **`11D_JUNE_WEEK4.md`** | Jun 22-30 (Mon-Tue) | Phase 1 CAPSTONE project + Month test + STM32 prep |
 
 ---
 

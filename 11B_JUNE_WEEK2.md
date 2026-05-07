@@ -1,4 +1,4 @@
-# 📅 WEEK 2 — Jun 9-15 (Mon-Sun): DYNAMIC MEMORY + LINKED LISTS + QUEUES
+# 📅 WEEK 2 — Jun 8-14 (Mon-Sun): DYNAMIC MEMORY + LINKED LISTS + QUEUES
 
 > **Topics**: malloc/calloc/realloc/free deep, linked lists (singly, doubly), stacks, queues, circular buffers
 > **K.N. King Chapters**: Ch 17 (Advanced Uses of Pointers — linked lists, function pointers)
@@ -11,7 +11,7 @@
 
 ---
 
-## DAY 8 — Monday, Jun 9
+## DAY 8 — Monday, Jun 8
 
 ### 🔶 Morning Block (5:10 - 6:30 AM) — DYNAMIC MEMORY DEEP DIVE
 
@@ -119,7 +119,7 @@ int main(void) {
 
 ---
 
-## DAY 9 — Tuesday, Jun 10
+## DAY 9 — Tuesday, Jun 9
 
 ### 🔶 Morning Block (5:10 - 6:30 AM) — SINGLY LINKED LIST (Part 1)
 
@@ -194,7 +194,7 @@ Write a **Makefile** for this project.
 
 ---
 
-## DAY 10 — Wednesday, Jun 11
+## DAY 10 — Wednesday, Jun 10
 
 ### 🔶 Morning Block (5:10 - 6:30 AM) — LINKED LIST (Part 2) + ADVANCED OPS
 
@@ -247,7 +247,7 @@ return slow  // slow is at the middle
 
 ---
 
-## DAY 11 — Thursday, Jun 12
+## DAY 11 — Thursday, Jun 11
 
 ### 🔶 Morning Block (5:10 - 6:30 AM) — STACK IMPLEMENTATION
 
@@ -305,7 +305,7 @@ Use your stack to check if a string has balanced brackets: `{[()]}` → valid, `
 
 ---
 
-## DAY 12 — Friday, Jun 13
+## DAY 12 — Friday, Jun 12
 
 ### 🔶 Morning Block (5:10 - 6:30 AM) — QUEUE + CIRCULAR BUFFER
 
@@ -367,7 +367,7 @@ int cbuf_count(const CircularBuffer *cb);
 
 ---
 
-## DAY 13 — Saturday, Jun 14 (DEEP STUDY DAY)
+## DAY 13 — Saturday, Jun 13 (DEEP STUDY DAY)
 
 ### 💻 C Deep Sessions (6:30 AM - 12:45 PM)
 
@@ -406,7 +406,7 @@ Write answers for:
 
 ---
 
-## DAY 14 — Sunday, Jun 15 (REVIEW + GIT)
+## DAY 14 — Sunday, Jun 14 (REVIEW + GIT)
 
 ### 💻 Morning (7:30 AM - 12:30 PM)
 
