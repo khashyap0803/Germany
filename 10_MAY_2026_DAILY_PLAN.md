@@ -1,7 +1,8 @@
 # 📅 MAY 2026 — MASTER OVERVIEW
 
-> **Period**: May 1 (Friday) → May 31 (Sunday)
+> **Period**: May 1 (Thursday) → May 31 (Saturday)
 > **Month Goal**: C programming fundamentals + German A1 start
+> **AI Status**: 🔴 **BANNED for code** — AI only explains concepts, YOU write ALL code
 > **Status**: Working at Unistring (9 AM - 7/8 PM, 4hr commute)
 >
 > **Your PC (Custom Build)**:
@@ -12,13 +13,15 @@
 > - OS: Windows 11 + WSL2 Ubuntu 22.04
 >
 > **Embedded Hardware Available**:
-> - MCUs: STM32F411CEU6 (Black Pill), ESP32, ESP8266
+> - MCUs: STM32F411CEU6 (Black Pill), Nucleo-L476RG, ESP32-S3 N8R2, ESP8266
+> - Programmers: Nucleo onboard ST-Link/V2-1 (SWD), Robocraze metal ST-Link V2 (SWD)
 > - Debug: Sipeed SLogic logic analyzer, Digital Multimeter
 > - Sensors: BMP280, ADXL345, GPS Module, Ultrasonic, IR, LDR, DHT11
 > - Displays: 0.96" OLED (SSD1306), 16x2 LCD
 > - Comms: FT232 USB-UART, HC-05 Bluetooth, nRF24L01
 > - Passives: Full resistor kit (10Ω-1MΩ), capacitors, LEDs, pushbuttons
 > - Tools: Soldering iron, breadboards, jumper wires, glue gun, PCB etching kit
+> - Old PC: Core 2 Duo, LGA775, 4GB DDR2 (for Phase 4 Linux From Scratch)
 
 ---
 
@@ -149,7 +152,7 @@
 
 ## 🛡️ FUTURE-PROOFING STRATEGY — Why This Plan Works in an AI World
 
-> **Last updated**: April 2026. This section addresses the reality that AI (Copilot, Claude, Cursor, Flux AI) can already generate code, route PCBs, and assist debugging. By 2028, AI agents will be even more capable.
+> **Last updated**: May 2026. AI tools (Ember AI, Flux AI, ESP-Claw, Copilot) can now generate firmware, auto-debug via serial monitors, route PCBs, and run AI agents directly on MCUs. By 2028, they'll be even more capable. This section explains why your fundamentals-first approach is the correct strategy.
 
 ### The Plan's Core Thesis
 
