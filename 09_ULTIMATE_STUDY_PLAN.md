@@ -1,10 +1,11 @@
-# 🗓️ ULTIMATE STUDY PLAN — 3-4 Hours/Day
+# 🗓️ ULTIMATE STUDY PLAN — 3-4 Hours/Day (AI-Accelerated)
 
 > **Start Date**: May 1, 2026
 > **Target**: Winter 2028 Germany Admission + Embedded Systems Competence
+> **Strategy**: Type 3 "AI Supervisor Engineer" — learn fundamentals manually, then accelerate with AI tools
 > **Daily Budget**: 3-4 hours (1.5 hrs morning + 1.5-2.5 hrs evening/weekend)
 > **Weekly Budget**: ~21-28 hrs (weekdays 3 hrs × 5 + weekends 6-13 hrs)
-> **Total Available**: ~2,200-2,800 hours over 27 months
+> **Total Available**: ~1,800-2,200 hours over ~20 months (AI-compressed from 27)
 
 ---
 
@@ -97,9 +98,15 @@
 
 ## 📆 May 1 - June 30, 2026 (9 weeks)
 
+> ⚠️ **AI BANNED FOR CODE in Phase 1-2.** Write every line manually. AI may only explain concepts.
+
 **Goal**: Write C programs confidently without AI. Understand memory, pointers, bitwise ops.
-**Resources**: K&R "The C Programming Language" book, Jacob Sorber YouTube, GCC on WSL2
-**Hardware**: Your PC with WSL2 (install gcc if not done)
+**Primary Book**: K.N. King "C Programming: A Modern Approach" 2nd Ed (read chapters, do 5+ exercises each)
+**Reference Book**: K&R "The C Programming Language" 2nd Ed (bed reading, concise expert perspective)
+**Video (Primary)**: FastBit Udemy "Embedded C Programming" at 1.5× (watch AFTER reading King)
+**Video (Supplement)**: Neso Academy YouTube (quick 7-min concept explanations)
+**Hardware**: Your PC with WSL2 + gcc
+**Pipeline**: Read King → Do exercises → Watch FastBit → Code yourself → EXPLAIN out loud
 
 ---
 
@@ -107,11 +114,11 @@
 
 | Day | Morning (5:00-6:30) | Evening (9:30-11:00) | Weekend |
 |:---|:---|:---|:---|
-| **Mon** | Install WSL2 + gcc. Write "Hello World". Compile with `gcc -o hello hello.c`. Run it. Understand what each step does. | Read K&R Chapter 1 (pages 1-30). Take notes. | — |
-| **Tue** | Write 5 programs: variables, printf formatting, scanf input. All from scratch, no copy-paste. | Continue K&R Chapter 1. Write the exercises. | — |
+| **Mon** | Install WSL2 + gcc. Write "Hello World". Compile with `gcc -Wall -Wextra -o hello hello.c`. Run it. | Read K.N. King Ch 1-2 (Introducing C, C Fundamentals). Highlight in Acrobat Pro. | — |
+| **Tue** | Write 5 programs: variables, printf formatting, scanf input. All from scratch, no copy-paste. | Watch FastBit Sec 1-2 at 1.5×. Do King Ch 2 exercises (pick 5). | — |
 | **Wed** | 🇩🇪 German: Install Anki + download A1 deck. Create DW account. Watch first Nicos Weg video. | Write programs using if/else, switch. Solve 3 problems. | — |
-| **Thu** | Write programs using for/while/do-while loops. Print patterns (triangle, pyramid). | Read K&R Chapter 2 (data types, operators). | — |
-| **Fri** | 🇩🇪 German: Nicos Weg lesson 2-3. Write 5 German words in Anki. | Write programs using nested loops. Print multiplication table. | — |
+| **Thu** | Write programs using for/while/do-while loops. Print patterns (triangle, pyramid). | Read K.N. King Ch 4-5 (Expressions, Selection). Watch FastBit Sec 3-4. | — |
+| **Fri** | 🇩🇪 German: Nicos Weg lesson 2-3. Write 5 German words in Anki. | Write programs using nested loops. Do King Ch 5 exercises. | — |
 | **Sat** | 💻 (7 AM - 1 PM): Functions in C. Write 10 functions: factorial, fibonacci, isPrime, reverse string, count vowels, etc. ALL from scratch. Test with different inputs. | 🇩🇪 (3-5 PM): Nicos Weg lessons 4-5. Review Anki. | |
 | **Sun** | 💻 (8-12): Arrays in C. Write programs: find max/min, sort an array (bubble sort), search, reverse array. | 🇩🇪 (2-4): German alphabet, numbers 1-100, basic greetings. Practice pronunciation. | |
 
@@ -245,9 +252,14 @@
 
 ## 📆 July 1 - September 30, 2026 (13 weeks)
 
+> ⚠️ **AI BANNED FOR CODE in Phase 2.** Write every driver manually. AI may only explain register descriptions.
+
 **Goal**: Program STM32 for GPIO, UART, Timers, Interrupts, ADC. Build 1 complete project.
-**Resources**: STM32CubeIDE, STM32F411 Reference Manual, Controllerstech YouTube, FastBit Embedded YouTube
-**Hardware**: Your STM32 board + USB cable + LEDs + push buttons + potentiometer + sensor (if any)
+**Primary Book**: "Mastering STM32" by Carmine Noviello (910 pages)
+**Primary Course**: FastBit "Mastering MCU Driver Development" (MCU1, 28.5h)
+**Secondary Course**: FastBit "Timers, PWM, CAN, Low Power" (MCU2, 29h) — start in Aug
+**Hardware**: STM32F411 Black Pill + Nucleo-L476RG + Robocraze ST-Link V2 + breadboard + sensors
+**Debugger**: Nucleo onboard ST-Link (primary) + Robocraze ST-Link V2 (portable backup)
 
 ---
 
@@ -316,11 +328,18 @@
 
 ---
 
-# PHASE 3: FreeRTOS + PROTOCOLS
+# PHASE 3: FreeRTOS + ZEPHYR + PROTOCOLS
 
 ## 📆 October 1 - December 31, 2026 (13 weeks)
 
-**Goal**: FreeRTOS basics on STM32. SPI/I2C working knowledge. Interview-ready for mid-level companies.
+> 🟡 **AI SUPERVISED from Phase 3.** AI generates boilerplate → YOU review, explain, and fix every line.
+> Learn to USE Ember AI, Copilot, and similar tools as a Type 3 engineer.
+
+**Goal**: FreeRTOS basics on STM32. Zephyr RTOS intro. SPI/I2C working knowledge.
+**FreeRTOS Course**: FastBit "FreeRTOS with STM32Fx" (14h) — buy in Sep 2026
+**FreeRTOS Book**: "Mastering the FreeRTOS Real Time Kernel" by Richard Barry (304 pages)
+**Zephyr Course**: FastBit "Mastering Zephyr RTOS with DeviceTree" (9h) — already purchased
+**AI Tools**: Start using Copilot/Ember for boilerplate generation (YOU verify every line)
 
 ### Oct (Weeks 22-25): FreeRTOS
 
@@ -340,14 +359,22 @@
 | 28 | Compare SPI vs I2C vs UART. When to use which. | Write comparison notes for interviews. Practice explaining verbally. |
 | 29 | **Protocol debugging**: Use your Sipeed SLogic analyzer to capture SPI/I2C waveforms in PulseView. | Match what you see on screen with what you coded. THIS is real engineering. |
 
-### Dec (Weeks 30-34): PORTFOLIO PROJECT 2 + German B1 Start 🏆
+### Dec (Weeks 30-34): ZEPHYR + PORTFOLIO PROJECT 2 + German B1 Start 🏆
 
-**Project: "FreeRTOS Multi-Sensor Dashboard"**
+**Weeks 30-31: Zephyr RTOS Introduction**
+- Complete FastBit Zephyr course (9h at 1.5× = ~6h)
+- Set up Zephyr toolchain on WSL2
+- Port Blinky to your STM32F411 Black Pill + Nucleo-L476RG in Zephyr
+- Write DeviceTree for your boards from scratch (not copy from samples)
+- Compare FreeRTOS vs Zephyr: same project, two implementations
+
+**Weeks 32-34: Portfolio Project 2 — "FreeRTOS Multi-Sensor Dashboard"**
 - 3 tasks: sensor reading (ADC/I2C), data processing (filtering), UART output
 - Use queues for inter-task communication
 - Use mutex for UART access
 - Timer task for periodic sampling
-- Document on GitHub
+- **Bonus**: Re-implement core functionality in Zephyr as a second branch
+- Document both versions on GitHub
 
 **German**: Start Nicos Weg B1. Daily Anki (~200+ words). Consider Goethe A1 exam in Dec.
 
@@ -362,20 +389,29 @@
 
 ---
 
-# PHASE 4: PROTOCOLS DEEP + LINUX BASICS
+# PHASE 4: PROTOCOLS DEEP + LINUX + AI TOOLS MASTERY
 
 ## 📆 January - June 2027 (26 weeks)
 
-### Jan-Mar 2027: Communication Protocols Deep
+> 🟢 **AI PARTNER from Phase 4.** Use AI as a senior engineer would — generate, review, test, sign off.
+> Use Flux AI for PCB design, Ember AI for firmware iteration, Copilot for boilerplate.
+
+### Jan-Mar 2027: Communication Protocols + AI-Accelerated Development
 - CAN bus basics (theory + if hardware available)
 - UART RS485 multi-device
 - Protocol error handling patterns
+- **AI Tool Training**: Learn Ember AI, Flux AI, Copilot for embedded workflows
 - **Portfolio Project 3**: ESP32 IoT device (WiFi + MQTT + sensor → cloud dashboard)
+  - Use AI to generate 60% of boilerplate → YOU verify, debug, and document
+- **Old PC Linux Project**: Deploy Linux From Scratch on Core 2 Duo (real hardware kernel experience)
+- **Linux Course**: Start "Learn everything about Linux" (100h+ Udemy course)
+- **Linux VMs**: Use Fedora Workstation + openSUSE Tumbleweed (already installed in VMware, 40GB/6GB RAM each)
 
 ### Apr-Jun 2027: Linux Embedded + IELTS Start
-- Linux CLI mastery on WSL2
+- Linux CLI mastery (course + WSL2 + VMs)
 - Shell scripting (bash)
 - Cross-compilation basics
+- Linux device drivers (LDD3 book + Bootlin free training)
 - **IELTS diagnostic test** (April)
 - **IELTS Foundation study begins** — 2 hrs/week on Sunday afternoons
 - German B1 → B2 bridge starts
@@ -464,37 +500,34 @@
 
 ---
 
-## 📊 FULL 27-MONTH OVERVIEW
+## 📊 FULL OVERVIEW (AI-Accelerated: ~20 Months Active + 7 Months Application)
 
-| Month | Embedded Focus | German | IELTS | Milestone |
-|:---|:---|:---|:---|:---|
-| May 2026 | C basics (variables, loops, functions) | Nicos Weg A1 start | — | WSL2 + gcc setup |
-| Jun 2026 | C deep (pointers, bitwise, structs, Makefile, GDB) | Nicos Weg A1 | — | GitHub C repo |
-| Jul 2026 | STM32 GPIO + UART | Nicos Weg A1 complete → A2 start | — | LED + UART working |
-| Aug 2026 | STM32 Timers + Interrupts + ADC | Nicos Weg A2 | — | ADC + timer working |
-| Sep 2026 | **Project 1**: STM32 Environmental Monitor | A2 continue | — | ★ GitHub Project 1 |
-| Oct 2026 | FreeRTOS: tasks, queues | A2 complete → B1 start | — | FreeRTOS tasks running |
-| Nov 2026 | FreeRTOS: semaphores, mutexes | B1 grammar | — | Multi-task system |
-| Dec 2026 | SPI + I2C + **Project 2** | B1 + Goethe A1 exam? | — | ★ GitHub Project 2 |
-| Jan 2027 | Protocols deep (CAN, RS485) | B1 continue | — | Protocol knowledge |
-| Feb 2027 | ESP32 + ESP-IDF basics | B1 complete | — | ESP32 working |
-| Mar 2027 | **Project 3**: IoT device | B1→B2 bridge start | — | ★ GitHub Project 3 |
-| Apr 2027 | Linux CLI + shell scripting | B2 course (DW) | IELTS diagnostic | Start IELTS prep |
-| May 2027 | Cross-compilation | B2 grammar | IELTS foundation | |
-| Jun 2027 | Linux deep | B2 writing | IELTS practice | |
-| Jul 2027 | VHDL basics | B2 speaking (italki) | IELTS mock tests | |
-| Aug 2027 | VHDL designs | B2 solidification | IELTS intensive | |
-| Sep 2027 | **Project 4**: VHDL simulation | B2 exam prep | IELTS final prep | ★ GitHub Project 4 |
-| Oct 2027 | Portfolio polish | B2 continue | **★ IELTS EXAM** | APS application |
-| Nov 2027 | Interview prep | Goethe A1/A2 exam | IELTS results | APS received |
-| Dec 2027 | Review all | B2 practice | — | **★ BREMERHAVEN APP** |
-| Jan 2028 | Maintenance | B2 / Goethe B2 exam | — | Bond ends, resign |
-| Feb 2028 | — | B2 practice | — | Notice period |
-| Mar 2028 | — | B2 immersion | — | Winter 2028 prep |
-| Apr 2028 | — | B2 immersion | — | **★ RWU application**, last day |
-| May 2028 | Final polish | B2 immersion | — | Blocked account |
-| Jun 2028 | — | B2 immersion | — | **★ DORTMUND APP** |
-| Jul 2028 | — | B2 immersion | — | Admission decisions |
+| Month | Embedded Focus | AI Tools | German | IELTS | Milestone |
+|:---|:---|:---|:---|:---|:---|
+| May 2026 | C basics — K.N. King Ch 1-14 + FastBit Embedded C | 🔴 BANNED | Nicos Weg A1 start | — | WSL2 + gcc setup |
+| Jun 2026 | C deep — pointers, bitwise, structs, Makefile, GDB | 🔴 BANNED | Nicos Weg A1 | — | GitHub C repo |
+| Jul 2026 | STM32 GPIO + UART (FastBit MCU1) | 🔴 BANNED | A1 complete → A2 | — | LED + UART working |
+| Aug 2026 | STM32 Timers + Interrupts + ADC (FastBit MCU2) | 🔴 BANNED | Nicos Weg A2 | — | ADC + timer working |
+| Sep 2026 | **Project 1**: STM32 Environmental Monitor | 🔴 BANNED | A2 continue | — | ★ GitHub Project 1 |
+| Oct 2026 | FreeRTOS: tasks, queues (FastBit FreeRTOS) | 🟡 SUPERVISED | A2 → B1 start | — | FreeRTOS running |
+| Nov 2026 | FreeRTOS: semaphores, mutexes + SPI/I2C | 🟡 SUPERVISED | B1 grammar | — | Multi-task system |
+| Dec 2026 | Zephyr RTOS + **Project 2** | 🟡 SUPERVISED | B1 + Goethe A1? | — | ★ GitHub Project 2 |
+| Jan 2027 | Protocols (CAN, RS485) + AI tools training | 🟢 PARTNER | B1 continue | — | Ember/Flux learned |
+| Feb 2027 | ESP32 + Linux basics (100h course) | 🟢 PARTNER | B1 complete | — | ESP32 working |
+| Mar 2027 | **Project 3**: IoT device (AI-accelerated) | 🟢 PARTNER | B1→B2 bridge | — | ★ GitHub Project 3 |
+| Apr 2027 | Linux deep + device drivers + shell scripting | 🟢 PARTNER | B2 course (DW) | IELTS diagnostic | IELTS prep starts |
+| May 2027 | Cross-compilation + Linux kernel (old PC project) | 🟢 PARTNER | B2 grammar | IELTS foundation | |
+| Jun 2027 | Linux deep + VHDL basics start | 🟢 PARTNER | B2 writing | IELTS practice | |
+| Jul 2027 | VHDL designs + simulations | 🟢 PARTNER | B2 speaking | IELTS mock tests | |
+| Aug 2027 | **Project 4**: VHDL + AI-assisted PCB design (Flux) | 🟢 PARTNER | B2 solidification | IELTS intensive | ★ GitHub Project 4 |
+| Sep 2027 | Portfolio polish + interview prep | 🟢 PARTNER | B2 exam prep | IELTS final prep | |
+| Oct 2027 | Interview prep | 🟢 PARTNER | B2 continue | **★ IELTS EXAM** | APS application |
+| Nov 2027 | Review all | 🟢 PARTNER | Goethe A1/A2 exam | IELTS results | APS received |
+| Dec 2027 | Maintenance | 🟢 PARTNER | B2 practice | — | **★ BREMERHAVEN APP** |
+| Jan 2028 | Maintenance | 🟢 PARTNER | Goethe B2 exam | — | Bond ends, resign |
+| Feb-Apr 2028 | — | — | B2 immersion | — | Notice period, RWU app |
+| May-Jul 2028 | Final polish | — | B2 immersion | — | Applications, blocked account |
+| **Oct 2028** | — | — | — | — | **✈️ FLY TO GERMANY** |
 
 ---
 
@@ -503,7 +536,7 @@
 > ### **Never break the chain. Every single day: minimum 2 hours. No exceptions.**
 >
 > Sick? → Do 30 min of Anki from bed.
-> Exhausted? → Read 10 pages of K&R.
+> Exhausted? → Read 10 pages of K.N. King.
 > Travel? → German audio on phone.
 > Festival? → 1 hour morning before celebrations.
 >
@@ -512,5 +545,51 @@
 
 ---
 
+## 🤖 THE AI STRATEGY: TYPE 3 ENGINEER
+
+```
+TYPE 1 — "Code Monkey" (DYING by 2028)
+├── Writes drivers by following tutorials
+├── Can't explain WHY the code works
+└── AI replaces 80% of this role
+
+TYPE 2 — "Traditional Engineer" (SHRINKING)
+├── Understands hardware + software deeply
+├── Refuses to use AI tools
+└── 2× slower than Type 3
+
+TYPE 3 — "AI Supervisor Engineer" (YOUR TARGET) ← GROWING
+├── Understands hardware + software deeply (Phase 1-2 foundation)
+├── USES Ember/Flux/Copilot to generate 80% of code (Phase 3+)
+├── VERIFIES every line because they understand fundamentals
+├── DEBUGS what AI can't (hardware, timing, race conditions)
+├── SIGNS safety certifications (legally required human)
+└── 5× more productive than Type 2 → highest salary tier
+```
+
+> **Phase 1-2 (May-Sep 2026)**: Build the foundation WITHOUT AI. No shortcuts.
+> **Phase 3+ (Oct 2026+)**: USE AI to accelerate. You verify, debug, and sign off.
+> **2028+**: You're the engineer who SUPERVISES AI output. That's the job.
+
+---
+
+## 📚 COURSE LIBRARY (All Purchased)
+
+| # | Course | Hours | Phase |
+|:---|:---|:---|:---|
+| 1 | FastBit Embedded C Programming | 16.5h | Phase 1 (May 2026) |
+| 2 | FastBit MCU Driver Development (MCU1) | 28.5h | Phase 2 (Jul 2026) |
+| 3 | FastBit Timers/PWM/CAN (MCU2) | 29h | Phase 2-3 (Aug-Dec 2026) |
+| 4 | FastBit Zephyr RTOS | 9h | Phase 3 (Dec 2026) |
+| 5 | Linux 100+ hours | 100h+ | Phase 4 (Jan 2027) |
+| **Buy Jun 2026** | FastBit ARM Cortex-M3/M4 | 15h | Phase 2 |
+| **Buy Sep 2026** | FastBit FreeRTOS | 14h | Phase 3 |
+
+## 📕 BOOK LIBRARY (14 Books, All Verified)
+
+See `10_RESOURCES.md` for complete list with filenames and phase mapping.
+
+---
+
 *Previously: `08_DECISION_ANALYSIS.md` — Full strategic analysis*
-*Next: Start May 1, 2026. C programming. K&R Chapter 1. 5:00 AM.*
+*Next: Start May 1, 2026. C programming. K.N. King Chapter 1. 5:00 AM.*
