@@ -32,10 +32,16 @@
 | 10D | [Week 4](10D_MAY_WEEK4.md) | May 19-25: Structs + Bitwise → STM32 bridge |
 | 10E | [Week 5](10E_MAY_WEEK5.md) | May 26-31: Special topics + Month test |
 | 11📅 | [June Overview](11_JUNE_2026_DAILY_PLAN.md) | June master overview, Phase 1 exit criteria |
-| 11A | [Week 6](11A_JUNE_WEEK1.md) | Jun 1-8: Makefiles + GDB + Multi-file projects |
-| 11B | [Week 7](11B_JUNE_WEEK2.md) | Jun 9-15: Linked lists + Queues + Circular buffer |
-| 11C | [Week 8](11C_JUNE_WEEK3.md) | Jun 16-22: State machines + Memory layout + Bit fields |
-| 11D | [Week 9](11D_JUNE_WEEK4.md) | Jun 23-30: Phase 1 CAPSTONE + Test + STM32 prep |
+| 11A | [Week 6](11A_JUNE_WEEK1.md) | Jun 1-7: Makefiles + GDB + Multi-file projects |
+| 11B | [Week 7](11B_JUNE_WEEK2.md) | Jun 8-14: Linked lists + Queues + Circular buffer |
+| 11C | [Week 8](11C_JUNE_WEEK3.md) | Jun 15-21: State machines + Memory layout + Bit fields |
+| 11D | [Week 9](11D_JUNE_WEEK4.md) | Jun 22-30: Phase 1 CAPSTONE + Test + STM32 prep |
+| 12📅 | [July Overview](12_JULY_2026_DAILY_PLAN.md) | **PHASE 2**: STM32 hardware, tools, HAL+Register philosophy |
+| 12A | [Week 10](12A_JULY_WEEK1.md) | Jul 1-5: STM32 setup + ARM architecture + first blink |
+| 12B | [Week 11](12B_JULY_WEEK2.md) | Jul 6-12: GPIO deep — all modes + alternate functions |
+| 12C | [Week 12](12C_JULY_WEEK3.md) | Jul 13-19: UART — HAL + register + printf redirect |
+| 12D | [Week 13](12D_JULY_WEEK4.md) | Jul 20-26: UART interrupts + NVIC + SysTick |
+| 12E | [Week 14](12E_JULY_WEEK5.md) | Jul 27-31: Timers + PLL + month review |
 
 ### Code & Practice
 | Directory | Contents |
