@@ -124,11 +124,12 @@ Google AI (LAST RESORT)  → Ask to EXPLAIN only. Never ask to write code.
 
 - [ ] Wake at 5:00 AM. No phone for first 10 minutes.
 - [ ] Compile with `gcc -Wall -Wextra` — ALWAYS. Read EVERY warning.
-- [ ] Write at least 1 C program per day (weekdays) or 3-5 (weekends)
+- [ ] Write at least 1 C program per weekday (2-3 on weekends)
 - [ ] Draw at least 1 memory diagram per day on paper (Week 3+)
 - [ ] Do the EXPLAIN step out loud — even if it feels silly
 - [ ] Push code to GitHub every Sunday
 - [ ] Review Anki German cards 3× daily (morning, lunch, commute)
+- [ ] Update `PROGRESS.md` every Sunday at 4:00 PM
 
 ### Coding Habits
 
@@ -253,7 +254,7 @@ What AI tools FAIL at (the 5% where your salary lives):
 
 | Phase | Period | AI Rule |
 |---|---|---|
-| **Phase 1-2** | May–Sep 2026 | 🔴 **AI BANNED for code.** AI only explains concepts. YOU write ALL code. |
+| **Phase 1-2** | May–Oct 2026 | 🔴 **AI BANNED for code.** AI only explains concepts. YOU write ALL code. |
 | **Phase 3** | Oct–Dec 2026 | 🟡 **Supervised AI.** AI generates boilerplate. You REVIEW and EXPLAIN every line. |
 | **Phase 4+** | Jan 2027+ | 🟢 **AI Partner.** You use AI as a senior engineer would — generate, review, test, sign off. |
 
@@ -363,8 +364,8 @@ gdb ./prog                      # Start GDB
 
 | Date | Milestone | You Can... |
 |---|---|---|
-| **May 31, 2026** | Phase 1 complete | Write any C program with pointers, structs, file I/O from scratch |
-| **Sep 30, 2026** | Phase 2 complete | Write STM32 GPIO/UART/SPI/I2C drivers from register level |
+| **Jul 15, 2026** | Phase 1 complete | Write any C program with pointers, structs, file I/O from scratch |
+| **Oct 15, 2026** | Phase 2 complete | Write STM32 GPIO/UART/SPI/I2C drivers from register level |
 | **Dec 31, 2026** | Phase 3 complete | Build a FreeRTOS multi-task embedded application |
 | **Jun 30, 2027** | Phase 4 complete | Write Linux device drivers, understand ARM architecture |
 | **Dec 31, 2027** | Phase 5 complete | Digital design + VHDL, TDD for firmware, portfolio complete |
@@ -372,12 +373,13 @@ gdb ./prog                      # Start GDB
 
 ### The Non-Negotiables
 
-1. **5:00 AM wake-up** — 25+ days per month. No exceptions except illness.
+1. **5:00 AM wake-up** — aim for 25+ days per month. If you miss 3+ days in a week, trigger the **Recovery Protocol** (see `00_MASTER_ROADMAP.md` Contingency Protocols).
 2. **Code EVERY day** — even 1 small program on the worst day is better than 0.
 3. **No AI code until October 2026** — the foundation must be built by hand.
 4. **German EVERY day** — 3+ hours passive (commute), 15 min active (Anki). No days off.
-5. **Sunday weekly review** — track progress, adjust next week, push to GitHub.
+5. **Sunday weekly review** — track progress in `PROGRESS.md`, adjust next week, push to GitHub.
 6. **Monthly readiness check** — answer the 6 questions honestly.
+7. **Quarterly deload week** — every 3 months, take one light week (see `00_MASTER_ROADMAP.md` Deload Schedule).
 
 ---
 

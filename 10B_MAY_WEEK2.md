@@ -4,9 +4,12 @@
 > **K.N. King Chapters**: Ch 6-10 (Loops, Basic Types, Arrays, Functions, Program Organization)
 > **K&R Bed Reading**: Chapter 2 (finish), Chapter 3 (Control Flow), Chapter 4 (Functions) start
 > **FastBit Udemy**: Sections 5-8 (Operators, Decision making, Bitwise, Loops)
-> **Programs to write**: 10-12
+> **Programs to write**: 8-10 (1-2 per weekday, 3-5 on Saturday)
 > **German**: Nicos Weg Lessons 6-10, 15 more words, numbers 1-100
 > **📚 Full resource details**: See `10_RESOURCES.md`
+>
+> ⚠️ **WEDDING DISRUPTION**: Sister's wedding (May 1-13) may still be affecting schedule.
+> If behind, **prioritize**: arrays → sorting → strings. Functions will carry from Week 1.
 
 ---
 
@@ -447,7 +450,7 @@ If stuck, review solution, close it, wait 5 minutes, try again.
 - Use **dict.cc** to check correctness
 
 ### 📋 Weekly Review (4:00-4:30 PM)
-- **Notion**: Log hours, programs, what was hardest
+- **PROGRESS.md**: Log hours, programs, what was hardest. Update the Week 2 row.
 - Plan adjustments for Week 3 (Pointers — the hardest week)
 
 ---

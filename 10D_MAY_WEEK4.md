@@ -4,7 +4,7 @@
 > **K.N. King Chapters**: Ch 14, 16 (Preprocessor, Structures/Unions/Enumerations)
 > **K&R Bed Reading**: Chapter 6 (Structures), Chapter 2 revisit (Bitwise section pp. 45-48)
 > **FastBit Udemy**: Sections 14-16 (Structures, Bitfields, Embedded-specific topics)
-> **Programs to write**: 10-12
+> **Programs to write**: 8-10 (1-2 per weekday, 3-4 on Saturday)
 > **German**: Nicos Weg Lessons 16-20, food vocab, daily routine sentences
 > **Embedded Connection**: THIS week is the bridge to hardware. Structs = how STM32 peripheral registers are organized. Bitwise = how you read/write individual register bits.
 > **📚 Full resource details**: See `10_RESOURCES.md`
@@ -380,7 +380,7 @@ Close ALL references. Write from memory:
 ### 🇩🇪 German (2:00-4:00 PM) + 📋 Weekly Review (4:00-4:30 PM)
 
 - Anki mega review. Target: 60+ cards reviewed.
-- **Notion**: Log Week 4 metrics, rate understanding of structs/bitwise, plan Week 5
+- **PROGRESS.md**: Log Week 4 metrics, rate understanding of structs/bitwise, plan Week 5
 
 ---
 

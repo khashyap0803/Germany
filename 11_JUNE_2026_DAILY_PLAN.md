@@ -4,7 +4,7 @@
 > **Month Goal**: Complete C mastery — Makefiles, GDB, data structures, state machines, Phase 1 capstone
 > **AI Status**: 🔴 **BANNED for code** — AI only explains concepts, YOU write ALL code
 > **Status**: Working at Unistring (9 AM - 7/8 PM, 4hr commute)
-> **Phase**: Phase 1 Final Month — After June, you move to STM32 (Phase 2) in July
+> **Phase**: Phase 1 continues (ends Jul 15 — extended 2 weeks to absorb May wedding disruption)
 >
 > **K.N. King Chapters**: Ch 15-22, 24, 26 (Large Programs, Advanced Pointers, Low-Level, I/O, Error Handling)
 > **K&R Bed Reading**: Ch 4 (finish), Ch 5 (Pointers revisit), Ch 6 (Structures revisit), Ch 7 (I/O), Ch 8 (UNIX System Interface)
@@ -12,7 +12,8 @@
 >
 > **End-of-Month Goal**: You can write ANY C program from scratch — linked lists, queues, state machines,
 > multi-file projects with Makefiles, debug with GDB, and EXPLAIN every concept on a whiteboard.
-> **If you cannot do this by June 30, you are NOT ready for STM32.**
+> **If you cannot do this by July 15, you are NOT ready for STM32.**
+> (Original target was June 30; extended 2 weeks due to May wedding.)
 
 ---
 
@@ -117,7 +118,7 @@
 | Bugs found and fixed using `gcc -Wall` + `gdb` (NOT AI) | **25+** |
 | Data structures implemented from scratch | **5+** (linked list, queue, stack, circular buffer, hash table) |
 | Memory diagrams drawn on paper | **20+** |
-| Nicos Weg lessons completed | **25-50 (A1 finish → A2 start)** |
+| Nicos Weg lessons completed | **25-50 (A1 continues — aim to finish by July)** |
 | German words in Anki | **150+ total** (100 from May + 50 new) |
 | Days where you woke at 5 AM | **≥ 25 of 30** |
 | Total active study hours | **~100 hours** |
@@ -125,7 +126,7 @@
 
 ---
 
-## 🎯 PHASE 1 EXIT CRITERIA (Must Pass by June 30)
+## 🎯 PHASE 1 EXIT CRITERIA (Must Pass by July 15)
 
 Before starting STM32 in July, you MUST be able to:
 
@@ -142,7 +143,7 @@ Before starting STM32 in July, you MUST be able to:
 □ Answer 15 C interview questions on a whiteboard (no computer)
 ```
 
-**If any answer is NO → you need 1 more week of C before starting STM32.**
+**If any answer is NO → use the Jul 1-15 buffer weeks for catch-up before starting STM32 on Jul 16.**
 
 ---
 

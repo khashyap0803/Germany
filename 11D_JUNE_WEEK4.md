@@ -4,7 +4,8 @@
 > **K.N. King Chapters**: Ch 22 (I/O deep), Ch 24 (Error Handling), review ALL chapters
 > **K&R Bed Reading**: Chapter 7 (I/O), Chapter 8 (UNIX System Interface — preview for embedded)
 > **Goal**: Prove you're ready for STM32. One polished project. One comprehensive test.
-> **German**: Nicos Weg Lessons 41-50 (finish A1!), start A2
+> **Note**: Phase 1 extends through Jul 15. June capstone + test determines if you use Jul 1-15 for catch-up or early STM32 prep.
+> **German**: Nicos Weg Lessons 41-50 (aim to finish A1 by mid-July)
 > **📚 Full resource details**: See `10_RESOURCES.md`
 
 ---
@@ -271,8 +272,8 @@ int main(void) {
 - Test 4 in < 15 min: ✅
 - Test 5 all 3 bugs found: ✅
 
-**If you failed any test → spend the weekend re-practicing that topic.**
-**If you passed all 5 → you are READY for STM32.**
+**If you failed any test → use Jul 1-15 buffer weeks to re-practice that topic.**
+**If you passed all 5 → you can start STM32 prep early (install CubeIDE, read Mastering STM32 Ch 1).**
 
 ### ✅ Day 26 Checklist
 - [ ] All 5 tests attempted
@@ -309,7 +310,7 @@ C-Practice/
 └── week9/     # CAPSTONE: Embedded System Simulator
 ```
 
-**That's 9 weeks, 50+ programs, 1 capstone. You built this WITHOUT AI.** 💪
+**That's 11 weeks (including wedding buffer), 50+ programs, 1 capstone. You built this WITHOUT AI.** 💪
 
 ### Saturday Afternoon — German (2:00-5:00 PM)
 - Nicos Weg Lessons 45-48
@@ -322,17 +323,18 @@ C-Practice/
 - Skim the first 30 pages
 - Understand what STM32CubeIDE is, what HAL is, what CMSIS is
 
-**9:15-10:45**: Install **STM32CubeIDE** on Windows
+**9:15-10:45**: Install **STM32CubeIDE** on Windows (if not already done)
 - Download from st.com
 - Create your first empty project for STM32F411CEU6
 - Don't code anything — just see the IDE, see the generated files
+- **Note**: Full STM32 work starts July 16. This is just preview/setup.
 
 **11:00-12:30**: Watch **FastBit MCU1 course** — Section 1 (Introduction)
 - Watch at 1.5× speed
 - Get the big picture of what July-September will look like
 
 ### Sunday Afternoon — German (2:00-4:00 PM)
-- Nicos Weg Lessons 49-50 → **A1 COMPLETE!** 🎉
+- Nicos Weg Lessons 49-50 → **A1 nearly complete!** (finish remaining in July buffer if needed) 🎉
 - Review all vocabulary
 - Write a paragraph about yourself in German (past + present tense)
 
@@ -347,6 +349,8 @@ C-Practice/
 ## DAY 29 — Monday, Jun 29
 
 ### 🔶 Morning Block (5:10 - 6:30 AM) — PHASE 1 EXIT INTERVIEW
+
+> **Note**: If you pass this exit interview, you have the option to start STM32 early (Jul 1) or use Jul 1-15 for deeper capstone polish. Either way, Phase 2 officially starts Jul 16.
 
 **Pretend you're in a job interview. Answer these OUT LOUD (not in your head):**
 
@@ -394,15 +398,16 @@ C-Practice/
 - [ ] ✅ Zero warnings, zero memory leaks in all programs
 - [ ] ✅ 50+ programs in C-Practice repo, properly organized
 - [ ] ✅ STM32CubeIDE installed, first empty project created
-- [ ] ✅ Nicos Weg A1 COMPLETE (50 lessons), 150+ Anki cards
-- [ ] ✅ **READY FOR PHASE 2: STM32 MICROCONTROLLER PROGRAMMING** 🚀
+- [ ] ✅ Nicos Weg A1 nearly complete (~50 lessons), 150+ Anki cards
+- [ ] ✅ Update `PROGRESS.md` with Phase 1 retrospective
+- [ ] ✅ **READY FOR PHASE 2: STM32 MICROCONTROLLER PROGRAMMING (starts Jul 16)** 🚀
 
 ---
 
 ## 🎯 PHASE 1 COMPLETE — WHAT YOU'VE BUILT
 
 ```
-MAY-JUNE 2026: 9 WEEKS OF PURE C PROGRAMMING
+MAY-JULY 2026: 11 WEEKS OF PURE C PROGRAMMING (includes 2-week wedding buffer)
 
 Week 1:  Setup + basics → "I can write Hello World"
 Week 2:  Functions + arrays → "I can solve problems"
@@ -422,5 +427,5 @@ You can explain EVERYTHING on a whiteboard.
 THIS is your foundation. THIS is what makes you a Type 3 engineer.
 AI can generate code. YOU understand why it works.
 
-JULY 1st → STM32 begins. The real hardware journey starts. 🔧
+JULY 16th → STM32 begins. The real hardware journey starts. 🔧
 ```

@@ -15,7 +15,7 @@
 - [ ] 💻 🔴 AI BANNED for code — write everything manually
 - [ ] 💻 Delete Linux dual-boot partition, free up Gen3 SSD
 - [ ] 💰 Start saving ₹10-15K/month
-- [ ] 📝 Start habit tracker (daily: German ✅, Embedded ✅, Anki ✅)
+- [ ] 📝 Start tracking progress in `PROGRESS.md` (update every Sunday)
 
 ### May 2026
 - [ ] 🇩🇪 Continue Nicos Weg A1
@@ -25,30 +25,30 @@
 - [ ] 📝 LAST SEM EXAMS! Request provisional certificate from CBIT ASAP
 - [ ] 📝 Get consolidated mark sheet from CBIT
 - [ ] 📝 Note: Final degree cert may take till Jun-Sep 2026 (provisional is OK for APS + unis)
-- [ ] 🛂 **APPLY FOR PASSPORT RENEWAL** — ✅ NOT NEEDED (valid till 2032)
-- [ ] 💰 Research SBI/HDFC Credila education loans (awareness stage)
+- [ ] 🛂 **PASSPORT** — ✅ Valid till 2032, **no renewal needed**
+- [ ] 💰 Continue saving ₹10-15K/month (loan research starts Jan 2027)
 
 ### June 2026
-- [ ] 🇩🇪 Complete Nicos Weg A1, start A2
+- [ ] 🇩🇪 Continue Nicos Weg A1 (aim to finish by end of July)
 - [ ] 💻 C deep: K.N. King Ch 15-27 (pointers, bitwise, structs, Makefile, GDB)
 - [ ] 💻 🔴 AI BANNED — draw memory diagrams on paper for pointers
 - [ ] 📝 Organize all academic documents in a folder (physical + digital scans)
 - [ ] 💻 **Buy FastBit ARM Cortex-M3/M4 course** (for Phase 2 prep)
 
 ### July 2026
-- [ ] 🇩🇪 Nicos Weg A2 in progress
+- [ ] 🇩🇪 Complete Nicos Weg A1, begin A2 transition
 - [ ] 💻 Start STM32 microcontroller programming (GPIO, UART)
 - [ ] 💻 FastBit MCU1 course + "Mastering STM32" book
 - [ ] 💻 🔴 AI BANNED — write both HAL and register-level code
 - [ ] 💻 Use Nucleo onboard ST-Link (primary) + Robocraze ST-Link V2 (backup)
 
 ### August 2026
-- [ ] 🇩🇪 Continue A2 + Easy German podcast during commute
+- [ ] 🇩🇪 Nicos Weg A2 in progress + Easy German podcast during commute
 - [ ] 💻 STM32: timers, interrupts, ADC, PWM (FastBit MCU2 starts)
 - [ ] 💻 Start Portfolio Project 1 (STM32 Environmental Monitor)
 
 ### September 2026
-- [ ] 🇩🇪 Complete A2, take self-assessment
+- [ ] 🇩🇪 Continue A2, take self-assessment in Oct
 - [ ] 💻 Complete Portfolio Project 1, document on GitHub
 - [ ] 💻 **Buy FastBit FreeRTOS course** (for Phase 3)
 - [ ] 💻 SPI, I2C, UART protocols with logic analyzer
@@ -69,6 +69,7 @@
 - [ ] 💻 Port Blinky to STM32F411 + Nucleo in Zephyr, write DeviceTree from scratch
 - [ ] 💻 Start Portfolio Project 2 (FreeRTOS + Zephyr branch)
 - [ ] 💰 End of year financial review — how much saved?
+- [ ] 📝 **DELOAD WEEK (last week of Dec)** — light review, no new topics, extra rest
 
 ---
 
@@ -80,6 +81,7 @@
 - [ ] 💻 🟢 AI PARTNER — learn Ember AI, Flux AI, Copilot for embedded workflows
 - [ ] 💻 Complete Portfolio Project 2, document on GitHub (FreeRTOS + Zephyr)
 - [ ] 💻 Start "Linux 100+ hours" Udemy course
+- [ ] 💰 **Start education loan research** — compare SBI Scholar Loan vs HDFC Credila vs others. Get aware of requirements.
 
 ### February 2027
 - [ ] 🇩🇪 B1 completion approaching
@@ -97,6 +99,7 @@
 - [ ] 💻 Start Linux embedded basics (WSL2)
 - [ ] 📝 **START IELTS PREPARATION** — take diagnostic test
 - [ ] 📝 Start DAAD database university search (final list)
+- [ ] 📝 **DELOAD WEEK (last week of Apr)** — recharge before IELTS ramp-up
 
 ### May 2027
 - [ ] 🇩🇪 B2 course content
@@ -107,13 +110,14 @@
 - [ ] 🇩🇪 B2 grammar + writing
 - [ ] 📝 IELTS: intensive practice
 - [ ] 💻 Cross-compilation, shell scripting
-- [ ] 💻 Start Portfolio Project 3 (IoT device)
+- [ ] 💻 Linux device drivers (LDD3 book + Bootlin training)
 
 ### July 2027
 - [ ] 🇩🇪 B2 speaking practice (italki starts)
 - [ ] 📝 IELTS: mock tests every weekend
 - [ ] 💻 Start VHDL/Verilog basics
 - [ ] 💰 Bond still running (~extended by leaves, expect ~Jan 2028 completion)
+- [ ] 📝 **DELOAD WEEK (last week of Jul)** — mid-year recharge
 
 ### August 2027
 - [ ] 🇩🇪 B2 solidification
@@ -128,22 +132,27 @@
 ### October 2027
 - [ ] 📝 **TAKE IELTS EXAM** (target: 7.0)
 - [ ] 🇩🇪 Continue B2 study
-- [ ] 📝 Apply for **APS Certificate** on aps-india.de
+- [ ] 📝 **DELOAD WEEK (last week of Oct)** — post-IELTS recovery
 - [ ] 📝 Shortlist final 6 universities
+
+### August-September 2027 (APS APPLICATION — MOVED EARLIER)
+- [ ] 📝 **Apply for APS Certificate** on aps-india.de (moved from Oct to Aug for buffer)
+- [ ] 📝 Prepare all APS documents: Class 10/12 marksheets, all 8 semester marksheets, degree cert, passport
+- [ ] 📝 Link DigiLocker for faster APS processing
 
 ### November 2027
 - [ ] 📝 Receive IELTS score — retake in Dec if below 6.5
-- [ ] 📝 APS certificate processing (3-4 weeks)
+- [ ] 📝 APS certificate — should be received by now (applied Aug/Sep, 3-4 weeks processing) ✅
 - [ ] 📝 Start writing motivation letter drafts (use AI workflow)
 - [ ] 📝 Create Europass CV
 - [ ] 🇩🇪 **Take Goethe A1/A2 exam** (if Bremerhaven requires certified proof)
 
 ### December 2027
-- [ ] 📝 Receive APS certificate ✅
+- [ ] 📝 APS certificate in hand ✅ (applied Aug/Sep, received Oct/Nov)
 - [ ] 📝 **SUBMIT BREMERHAVEN APPLICATION** (Summer 2028, deadline Dec 31)
 - [ ] 📝 Customize motivation letters for each university
 - [ ] 📝 IELTS retake if needed
-- [ ] 💰 Talk to bank about education loan pre-approval
+- [ ] 💰 **Apply for education loan pre-approval** (SBI/HDFC Credila — research started Jan 2027)
 - [ ] 🇩🇪 B2 practice continues
 
 ---
@@ -172,8 +181,10 @@
 ### April 2028
 - [ ] 📝 **LAST WORKING DAY at Unistring** (~end of 3-month notice) 🎉
 - [ ] 📝 **Submit RWU application** (Winter 2028, deadline Apr 15)
-- [ ] 📝 Get experience/relieving certificates from Unistring
+- [ ] 📝 **Email Dortmund pre-check**: Send merged PDF to service-esm@fh-dortmund.de
+- [ ] 📝 Get experience/relieving certificates + Arbeitszeugnis from Unistring
 - [ ] 📝 Post-grad experience: Jul 2026 → Apr 2028 = ~21 months
+- [ ] 📝 **DELOAD WEEK (last week of Apr)** — celebrate freedom, mental reset
 
 ### May-June 2028 (FREE — Focus 100% on Germany prep)
 - [ ] 📝 **Submit Winter 2028 applications** to Dortmund, FH Westküste, etc.
@@ -216,7 +227,7 @@
 |:---|:---|:---|
 | **PASSPORT** | ✅ Valid till 2032 | **No action needed** |
 | **IELTS EXAM** | Take IELTS Academic | **Oct-Nov 2027** |
-| **APS CERTIFICATE** | Apply on aps-india.de | **Oct 2027** |
+| **APS CERTIFICATE** | Apply on aps-india.de | **Aug-Sep 2027** (moved earlier for buffer) |
 | **GOETHE A1 EXAM** | For Bremerhaven | **Nov 2027** |
 | **BREMERHAVEN APPLICATION** | Summer 2028 (non-EU) | **Dec 31, 2027** |
 | **RWU APPLICATION** | Winter 2028 | **Apr 15, 2028** |

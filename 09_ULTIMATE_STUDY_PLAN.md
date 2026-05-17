@@ -1,11 +1,14 @@
 # 🗓️ ULTIMATE STUDY PLAN — 3-4 Hours/Day (AI-Accelerated)
 
-> **Start Date**: May 1, 2026
+> **Start Date**: May 1, 2026 (actual productive start: ~May 14, due to sister's wedding May 1-13)
 > **Target**: Winter 2028 Germany Admission + Embedded Systems Competence
 > **Strategy**: Type 3 "AI Supervisor Engineer" — learn fundamentals manually, then accelerate with AI tools
-> **Daily Budget**: 3-4 hours (1.5 hrs morning + 1.5-2.5 hrs evening/weekend)
-> **Weekly Budget**: ~21-28 hrs (weekdays 3 hrs × 5 + weekends 6-13 hrs)
-> **Total Available**: ~1,800-2,200 hours over ~20 months (AI-compressed from 27)
+> **Daily Budget**: ~1.5 hours weekdays (morning block) + ~16.5 hours weekends
+> **Weekly Budget**: ~24 hrs active (weekdays 1.5 hrs × 5 + weekends 16.5 hrs) + ~17 hrs passive audio
+> **Total Available**: ~2,000-2,400 active hours over ~25 months (with buffers)
+>
+> ⚠️ **Timeline adjusted May 16, 2026**: 2-week buffer added to Phase 1 to absorb wedding disruption.
+> This does NOT affect the Winter 2028 target — Phase 6 has 6+ months of flexibility.
 
 ---
 
@@ -21,32 +24,35 @@
 | **6:30 - 8:30 PM** | 2 hrs | 🎧 COMMUTE BACK | Audio ONLY. German podcasts (passive). |
 | **9:30 - 11:00 PM** | 1.5 hrs | 🔷 EVENING BLOCK | Only on days with energy. Theory/reading/light coding. |
 
-**Realistic weekday active study: 3 hrs** (morning + evening)
+**Realistic weekday active study: ~1.5 hrs** (morning block only — evening blocks removed as impractical)
 **Passive commute audio: 3.5 hrs** (bonus, not counted as core)
 
 ### Weekend Template
 
 | Time | Duration | Slot Name |
 |:---|:---|:---|
-| **Saturday 7:00 AM - 1:00 PM** | 6 hrs | 🟢 SAT DEEP STUDY (with breaks) |
-| **Saturday 3:00 - 5:00 PM** | 2 hrs | 🟢 SAT AFTERNOON |
-| **Sunday 8:00 AM - 12:00 PM** | 4 hrs | 🟡 SUN MORNING |
-| **Sunday 2:00 - 4:00 PM** | 2 hrs | 🟡 SUN AFTERNOON |
+| **Saturday 7:30 AM - 12:30 PM** | 5 hrs | 🟢 SAT EMBEDDED DEEP STUDY (with breaks) |
+| **Saturday 1:30 - 4:30 PM** | 3 hrs | 🟢 SAT GERMAN (grammar + writing) |
+| **Saturday 5:00 - 6:30 PM** | 1.5 hrs | 🟢 SAT GERMAN SPEAKING (AI/italki) |
+| **Sunday 8:30 - 11:30 AM** | 3 hrs | 🟡 SUN EMBEDDED PROJECTS (hands-on) |
+| **Sunday 1:00 - 3:00 PM** | 2 hrs | 🟡 SUN GERMAN (review + Anki) |
+| **Sunday 3:00 - 5:00 PM** | 2 hrs | 🟡 SUN IELTS / PORTFOLIO (from Apr 2027) |
 
-**Weekend total: ~14 hrs** (8 hrs Saturday + 6 hrs Sunday)
+**Weekend total: ~16.5 hrs** (9.5 hrs Saturday + 7 hrs Sunday)
 
 ### Weekly Total
 
 | Source | Hours |
 |:---|:---|
-| Morning blocks (5 days) | 7.5 hrs |
-| Evening blocks (3-4 days, not daily) | 4.5-6 hrs |
-| Commute audio (passive, bonus) | ~10 hrs |
-| Saturday | 8 hrs |
-| Sunday | 6 hrs |
+| Morning blocks (5 days) | 6.5 hrs |
 | Lunch Anki (5 days) | 1.25 hrs |
-| **TOTAL ACTIVE** | **~27-29 hrs/week** |
-| **+ Passive audio** | **~10 hrs/week bonus** |
+| Saturday | 9.5 hrs |
+| Sunday | 7 hrs |
+| **TOTAL ACTIVE** | **~24 hrs/week** |
+| **+ Passive commute audio** | **~17.5 hrs/week bonus** |
+
+> [!NOTE]
+> Evening coding blocks were removed — they don't work after a 14-hour work+commute day. All weekday learning happens in the morning block. Weekends carry the heavy load.
 
 ---
 
@@ -80,15 +86,15 @@
 
 ## 📅 WEEKLY SCHEDULE TEMPLATE (Phases 1-4)
 
-| Day | Morning 5:00-6:30 | Commute 🎧 | Evening 9:30-11:00 | Weight |
+| Day | Morning 5:10-6:30 | Commute 🎧 | Bed Reading (optional) | Weight |
 |:---|:---|:---|:---|:---|
-| **Monday** | 💻 Embedded (C/STM32) | 🇩🇪 German audio | 🇩🇪 German (grammar/writing) | Emb + Ger |
-| **Tuesday** | 💻 Embedded (C/STM32) | 🇩🇪 German audio | 💻 Embedded (theory/reading) | Embedded heavy |
-| **Wednesday** | 🇩🇪 German (Nicos Weg) | 🇩🇪 German audio | 💻 Embedded (coding) | Mixed |
-| **Thursday** | 💻 Embedded (C/STM32) | 🇩🇪 German audio | 🇩🇪 German (AI conversation) | Mixed |
-| **Friday** | 🇩🇪 German (review + Anki) | 🇩🇪 German audio | 💻 Embedded (review) | Mixed |
-| **Saturday** | 💻 Embedded (7 AM - 1 PM, 6 hrs project work) | — | 🇩🇪 German (3-5 PM, speaking) | Embedded heavy |
-| **Sunday** | 💻 Embedded (8 AM - 12 PM, hands-on) | — | 🇩🇪 German (2-4 PM, review + Anki) | Mixed |
+| **Monday** | 💻 Embedded (C/STM32) | 🇩🇪 German audio | 💻 K&R theory | Embedded |
+| **Tuesday** | 💻 Embedded (C/STM32) | 🇩🇪 German audio | 🇩🇪 German reading | Mixed |
+| **Wednesday** | 🇩🇪 German (Nicos Weg) | 🇩🇪 German audio | 💻 Embedded theory | Mixed |
+| **Thursday** | 💻 Embedded (C/STM32) | 🇩🇪 German audio | 🇩🇪 German review | Mixed |
+| **Friday** | 🇩🇪 German (review + Anki) | 🇩🇪 German audio | 💻 Embedded review | Mixed |
+| **Saturday** | 💻 Embedded (7:30 AM - 12:30 PM, 5 hrs) | — | 🇩🇪 German (1:30-6:30 PM, 4.5 hrs) | Embedded heavy |
+| **Sunday** | 💻 Embedded (8:30-11:30 AM, 3 hrs) | — | 🇩🇪 German (1-3 PM) + IELTS/Portfolio (3-5 PM) | Mixed |
 
 ---
 
@@ -96,23 +102,29 @@
 
 # PHASE 1: C PROGRAMMING FOUNDATION
 
-## 📆 May 1 - June 30, 2026 (9 weeks)
+## 📆 May 1 - July 15, 2026 (11 weeks, including 2-week wedding buffer)
 
 > ⚠️ **AI BANNED FOR CODE in Phase 1-2.** Write every line manually. AI may only explain concepts.
+> ⚠️ **Wedding disruption**: May 1-13 was largely lost to sister's wedding. Productive start: ~May 14.
+> **Adjusted**: Phase 1 extended by 2 weeks (originally 9 weeks → now 11 weeks). This does NOT affect Winter 2028.
 
 **Goal**: Write C programs confidently without AI. Understand memory, pointers, bitwise ops.
-**Primary Book**: K.N. King "C Programming: A Modern Approach" 2nd Ed (read chapters, do 5+ exercises each)
+**Primary Book**: K.N. King "C Programming: A Modern Approach" 2nd Ed (read chapters, do 3-5 exercises each)
 **Reference Book**: K&R "The C Programming Language" 2nd Ed (bed reading, concise expert perspective)
 **Video (Primary)**: FastBit Udemy "Embedded C Programming" at 1.5× (watch AFTER reading King)
 **Video (Supplement)**: Neso Academy YouTube (quick 7-min concept explanations)
 **Hardware**: Your PC with WSL2 + gcc
 **Pipeline**: Read King → Do exercises → Watch FastBit → Code yourself → EXPLAIN out loud
+**Realistic pace**: 1-2 programs per weekday, 3-5 per weekend day
+
+> [!IMPORTANT]
+> **Schedule Note**: The weekly tables below label slots as "Morning" and "Evening/Bed Reading". In practice, **evening blocks were removed** — you're too exhausted after 14-hr days. Treat "Evening" items as **optional bed reading** or redistribute them to weekend sessions. The separate detailed files (`10A-10E_MAY_WEEK*.md`, `11A-11D_JUNE_WEEK*.md`) have the corrected daily schedules.
 
 ---
 
 ### Week 1 (May 1-7): Setup + C Basics
 
-| Day | Morning (5:00-6:30) | Evening (9:30-11:00) | Weekend |
+| Day | Morning (5:10-6:30) | Bed Reading / Optional | Weekend |
 |:---|:---|:---|:---|
 | **Mon** | Install WSL2 + gcc. Write "Hello World". Compile with `gcc -Wall -Wextra -o hello hello.c`. Run it. | Read K.N. King Ch 1-2 (Introducing C, C Fundamentals). Highlight in Acrobat Pro. | — |
 | **Tue** | Write 5 programs: variables, printf formatting, scanf input. All from scratch, no copy-paste. | Watch FastBit Sec 1-2 at 1.5×. Do King Ch 2 exercises (pick 5). | — |
@@ -238,11 +250,20 @@
 | **Week 7** | 💻 Queue implementation (array-based + linked-list-based). State machine pattern in C (using enum + function pointers). | 🇩🇪 German (Nicos Weg 31-40 + Anki) + 💻 Memory layout study (text, data, BSS, heap, stack — DRAW IT) | 💻 Sat: Build a vending machine state machine in C. Sun: Complete C review — go through ALL programs written |
 | **Week 8** | 💻 `typedef` patterns for embedded, packed structs, bit fields, memory-mapped I/O concept (preview for STM32). | 🇩🇪 German (Nicos Weg 41-50) + 💻 Write interview answers for: "Explain stack vs heap", "What is volatile?", "What is a function pointer?" | 💻 Sat: **FINAL C PROJECT** — combine everything into one polished GitHub repo with README. Sun: German review + plan Phase 2 |
 
-**Week 8 Checkpoint — END OF PHASE 1**:
+### Week 9 (Jun 26 - Jul 15): Phase 1 Buffer / Catch-Up
+
+> ⚠️ **This is the 2-week wedding buffer.** Use this time to:
+> - Catch up on any topics you fell behind on during May
+> - Re-do programs you couldn't get working
+> - Extra pointer/bitwise practice if needed
+> - If fully caught up: preview STM32 (install STM32CubeIDE, read first chapter of "Mastering STM32")
+
+**Week 9 (Jul 15) Checkpoint — END OF PHASE 1**:
 - [ ] ✅ C programming solid: pointers, structs, bitwise, malloc, linked list, queue, circular buffer, Makefiles, GDB
 - [ ] ✅ GitHub has "C-Practice" repo with 15+ programs + READMEs
 - [ ] ✅ German A1: ~100 words, basic sentences, Nicos Weg A1 half done
 - [ ] ✅ Can answer 10+ common C interview questions confidently
+- [ ] ✅ Update `PROGRESS.md` with Phase 1 retrospective
 
 ---
 
@@ -250,9 +271,10 @@
 
 # PHASE 2: STM32 MICROCONTROLLER BASICS
 
-## 📆 July 1 - September 30, 2026 (13 weeks)
+## 📆 July 16 - October 15, 2026 (13 weeks)
 
 > ⚠️ **AI BANNED FOR CODE in Phase 2.** Write every driver manually. AI may only explain register descriptions.
+> ⚠️ **Note**: Start date shifted 2 weeks from original (Jul 1 → Jul 16) to absorb Phase 1 wedding buffer.
 
 **Goal**: Program STM32 for GPIO, UART, Timers, Interrupts, ADC. Build 1 complete project.
 **Primary Book**: "Mastering STM32" by Carmine Noviello (910 pages)
@@ -263,7 +285,7 @@
 
 ---
 
-### Week 9-10 (Jul 1-14): STM32 Setup + GPIO
+### Week 10-11 (Jul 16-28): STM32 Setup + GPIO
 
 | Task | Details | Time |
 |:---|:---|:---|
@@ -274,7 +296,7 @@
 | **Button Input** | Read button state. Blink LED only when button pressed. Internal pull-up/pull-down. | 1-2 sessions |
 | **German** | Continue Nicos Weg A1 (complete by end of July!). Daily Anki. Commute audio. | 2 mornings + 2 evenings + weekends |
 
-### Week 11-12 (Jul 15-28): UART
+### Week 12-13 (Jul 29 - Aug 11): UART
 
 | Task | Details |
 |:---|:---|
@@ -285,7 +307,7 @@
 | **UART receive** | Receive characters from PC, echo back. Character-based menu system. |
 | **German** | Nicos Weg A1 final lessons. Take self-test. Prep for Goethe A1 if ready. |
 
-### Week 13-15 (Jul 29 - Aug 18): Timers + Interrupts
+### Week 14-16 (Aug 12 - Sep 1): Timers + Interrupts
 
 | Task | Details |
 |:---|:---|
@@ -296,7 +318,7 @@
 | **PWM** | Generate PWM output to dim an LED. Vary duty cycle with potentiometer (ADC → PWM). |
 | **German** | Start Nicos Weg A2. Continue daily Anki (now ~120+ words). |
 
-### Week 16-17 (Aug 19 - Sep 1): ADC + Combine
+### Week 17-18 (Sep 2 - Sep 15): ADC + Combine
 
 | Task | Details |
 |:---|:---|
@@ -306,18 +328,18 @@
 | **Combine** | Timer interrupt triggers ADC → value sent over UART → PC displays. This is a mini data logger. |
 | **German** | Nicos Weg A2 in progress. Easy German YouTube for listening. |
 
-### Week 18-21 (Sep 2-30): PORTFOLIO PROJECT 1 🏆
+### Week 19-22 (Sep 16 - Oct 15): PORTFOLIO PROJECT 1 🏆
 
 **Project: "STM32 Environmental Monitor"**
 
 | Week | Task |
 |:---|:---|
-| **Week 18** | Plan project. Wire sensor (temperature/humidity if available, or use potentiometer to simulate). Get basic reading working. |
-| **Week 19** | Add timer-based periodic sampling (every 1 second). Store readings in circular buffer (you already built this in C!). Send data over UART in CSV format. |
-| **Week 20** | Add features: min/max/avg display, button to change modes, LED status indicators. Clean up code. Organize into multiple files with proper headers. |
-| **Week 21** | **Document on GitHub**: README with description, photo of setup, circuit diagram, how to build, how to flash, what you learned. Record a 30-second demo video. |
+| **Week 19** | Plan project. Wire sensor (temperature/humidity if available, or use potentiometer to simulate). Get basic reading working. |
+| **Week 20** | Add timer-based periodic sampling (every 1 second). Store readings in circular buffer (you already built this in C!). Send data over UART in CSV format. |
+| **Week 21** | Add features: min/max/avg display, button to change modes, LED status indicators. Clean up code. Organize into multiple files with proper headers. |
+| **Week 22** | **Document on GitHub**: README with description, photo of setup, circuit diagram, how to build, how to flash, what you learned. Record a 30-second demo video. |
 
-**Week 21 Checkpoint — END OF PHASE 2**:
+**Week 22 Checkpoint — END OF PHASE 2**:
 - [ ] ✅ GPIO, UART, Timers, Interrupts, ADC on STM32 — working and understood
 - [ ] ✅ Portfolio Project 1 on GitHub with full documentation
 - [ ] ✅ Can explain each topic in an interview
@@ -330,7 +352,7 @@
 
 # PHASE 3: FreeRTOS + ZEPHYR + PROTOCOLS
 
-## 📆 October 1 - December 31, 2026 (13 weeks)
+## 📆 October 16 - December 31, 2026 (11 weeks)
 
 > 🟡 **AI SUPERVISED from Phase 3.** AI generates boilerplate → YOU review, explain, and fix every line.
 > Learn to USE Ember AI, Copilot, and similar tools as a Type 3 engineer.
@@ -520,9 +542,9 @@
 | Jun 2027 | Linux deep + VHDL basics start | 🟢 PARTNER | B2 writing | IELTS practice | |
 | Jul 2027 | VHDL designs + simulations | 🟢 PARTNER | B2 speaking | IELTS mock tests | |
 | Aug 2027 | **Project 4**: VHDL + AI-assisted PCB design (Flux) | 🟢 PARTNER | B2 solidification | IELTS intensive | ★ GitHub Project 4 |
-| Sep 2027 | Portfolio polish + interview prep | 🟢 PARTNER | B2 exam prep | IELTS final prep | |
-| Oct 2027 | Interview prep | 🟢 PARTNER | B2 continue | **★ IELTS EXAM** | APS application |
-| Nov 2027 | Review all | 🟢 PARTNER | Goethe A1/A2 exam | IELTS results | APS received |
+| Sep 2027 | Portfolio polish + interview prep | 🟢 PARTNER | B2 exam prep | IELTS final prep | APS application |
+| Oct 2027 | Interview prep | 🟢 PARTNER | B2 continue | **★ IELTS EXAM** | APS received |
+| Nov 2027 | Review all | 🟢 PARTNER | Goethe A1/A2 exam | IELTS results | Shortlist 6 unis |
 | Dec 2027 | Maintenance | 🟢 PARTNER | B2 practice | — | **★ BREMERHAVEN APP** |
 | Jan 2028 | Maintenance | 🟢 PARTNER | Goethe B2 exam | — | Bond ends, resign |
 | Feb-Apr 2028 | — | — | B2 immersion | — | Notice period, RWU app |
@@ -533,15 +555,16 @@
 
 ## 🔑 THE ONE RULE THAT MAKES THIS WORK
 
-> ### **Never break the chain. Every single day: minimum 2 hours. No exceptions.**
+> ### **Never break the chain. Every single day: minimum 1 hour active study. No exceptions.**
 >
-> Sick? → Do 30 min of Anki from bed.
+> Sick? → Do 15 min of Anki from bed.
 > Exhausted? → Read 10 pages of K.N. King.
 > Travel? → German audio on phone.
-> Festival? → 1 hour morning before celebrations.
+> Festival? → 30 min morning before celebrations.
+> Really can't? → **See Contingency Protocols in `00_MASTER_ROADMAP.md`.** It's okay. Resume tomorrow.
 >
-> **Consistency beats intensity. 2 hours × 810 days = 1,620 hours.**
-> **This is more than enough for Germany.**
+> **Consistency beats intensity. 1-2 hours × 750 days = 1,000-1,500 active hours.**
+> **Combined with 17 hrs/week passive audio, this is more than enough for Germany.**
 
 ---
 
@@ -567,7 +590,7 @@ TYPE 3 — "AI Supervisor Engineer" (YOUR TARGET) ← GROWING
 └── 5× more productive than Type 2 → highest salary tier
 ```
 
-> **Phase 1-2 (May-Sep 2026)**: Build the foundation WITHOUT AI. No shortcuts.
+> **Phase 1-2 (May-Oct 2026)**: Build the foundation WITHOUT AI. No shortcuts.
 > **Phase 3+ (Oct 2026+)**: USE AI to accelerate. You verify, debug, and sign off.
 > **2028+**: You're the engineer who SUPERVISES AI output. That's the job.
 

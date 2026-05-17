@@ -1,12 +1,16 @@
 # 📅 WEEK 1 — May 1-4 (Fri-Mon): SETUP + C BASICS
 
-> **Topics**: Development environment, variables, data types, printf/scanf, operators, conditions, loops
-> **K.N. King Chapters**: Ch 1-5 (Introducing C, C Fundamentals, Formatted I/O, Expressions, Selection Statements)
-> **K&R Bed Reading**: Chapter 1 (Tutorial Introduction), Chapter 2 (Types, Operators, Expressions)
-> **FastBit Udemy**: Sections 1-4 (Introduction, Hello World, Data types, Variables)
-> **Programs to write**: 12-15
-> **German**: Nicos Weg Lessons 1-6, learn 20 words
+> **Topics**: Environment setup, WSL2 + gcc, printf, scanf, variables, data types, operators, conditions, basic loops
+> **K.N. King Chapters**: Ch 1-3 (Introducing C, C Fundamentals, Formatted I/O)
+> **K&R Bed Reading**: Chapter 1 (A Tutorial Introduction) — read pp. 5-22 SLOWLY
+> **FastBit Udemy**: Sections 1-4 (Introduction, IDE setup, Data types, Variables)
+> **Programs to write**: 8-10 (1-2 per weekday session, more on weekends)
+> **German**: Start Nicos Weg Lesson 1, set up AnkiDroid, download A1 deck
 > **📚 Full resource details**: See `10_RESOURCES.md`
+>
+> ⚠️ **WEDDING DISRUPTION**: Sister's wedding (May 1-13) may consume significant time.
+> If this week is lost/partial, **that's OK** — you have 11 weeks for Phase 1 (through Jul 15).
+> The 2-week buffer absorbs exactly this scenario. Do what you can, don't stress about falling behind.
 
 ---
 
@@ -408,7 +412,7 @@ This is your first "portfolio-worthy" program. It combines everything from Days 
 ---
 
 ### 🇩🇪 German Review (2:00-3:00 PM)
-- Write 10 German sentences from MEMORY in a notebook (or Notion)
+- Write 10 German sentences from MEMORY in a notebook
 - Use **dict.cc** to check correctness
 - **Learn German with Anja** (YouTube): Search "German Numbers 1-100" — watch and repeat
 
@@ -416,7 +420,7 @@ This is your first "portfolio-worthy" program. It combines everything from Days 
 - Clear ALL pending Anki cards. Target: 20+ cards mastered.
 
 ### 📋 Weekly Review (4:00-4:30 PM)
-- Open **Notion** → Create "May 2026" page → "Week 1" sub-page
+- Open **`PROGRESS.md`** → update Week 1 row with actual metrics
 - Log: hours studied, programs written, German words learned, what was hardest, what to improve
 
 ---
@@ -429,7 +433,7 @@ This is your first "portfolio-worthy" program. It combines everything from Days 
 - [ ] HackerRank/learn-c.org exercises done
 - [ ] German: 10 sentences written from memory
 - [ ] Anki: 20+ cards reviewed
-- [ ] Weekly review in Notion completed
+- [ ] Weekly review in `PROGRESS.md` completed
 
 ---
 

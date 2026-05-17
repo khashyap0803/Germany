@@ -92,7 +92,7 @@
 | **DW Nicos Weg app** | Commute IN (7-8:30 AM) | Watch video lessons with earphones. Repeat phrases out loud quietly. |
 | **dict.cc** | Whenever you encounter unknown German word | Look up, then immediately add to Anki |
 | **PomoDone** | Morning block + weekend sessions | Set 25-min Pomodoro timers. Track how many you complete per day. |
-| **Notion** | Sunday 4:00 PM weekly review | Log: hours studied, programs written, German words learned, mood, blockers |
+| **PROGRESS.md** (in this repo) | Sunday 4:00 PM weekly review | **ONE tracking system.** Log: hours studied, programs written, German words learned, mood, blockers |
 
 ### Weekly Tools
 
@@ -222,7 +222,7 @@ In 2028, every engineer will have AI. The differentiator is:
 - Any form of copy-pasting AI-generated code into your files
 
 ### The Rule:
-> **Phase 1-2 (May-Sep 2026): AI explains concepts. YOU write ALL code manually.**
+> **Phase 1-2 (May-Oct 2026): AI explains concepts. YOU write ALL code manually.**
 > **Phase 3+ (Oct 2026+): You START using AI to generate boilerplate, BUT you REVIEW every line and can explain it.**
 > **This phased approach builds the foundation first, then teaches you to supervise AI effectively.**
 

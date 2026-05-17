@@ -1,13 +1,15 @@
 # 🇩🇪 GERMAN LANGUAGE — A1 to B2 ROADMAP
 
 ## Target: B2 by July 2028 (~28 months from April 2026)
-## Required: 500-600 hours total
+## Required: 600-750 hours active study (FSI estimate for B2)
+## Your plan: ~500-670 active hours + ~1,400 passive commute audio hours
 
 ---
 
 ## PHASE BREAKDOWN
 
-### Phase 1: A1 (Apr - Jun 2026) — 3 months, ~80 hours
+### Phase 1: A1 (Apr - Jul 2026) — ~4 months, ~80 hours active
+> **Note**: April 2026 = setup/orientation month (install apps, download decks). Structured daily study began **May 1, 2026** per the Ultimate Study Plan. **Wedding disruption (May 1-13)** pushed productive start to ~May 14.
 | Resource | Type | When |
 |:---|:---|:---|
 | **Nicos Weg A1** (DW) | Main structured course | Morning study (3x/week) |
@@ -18,7 +20,7 @@
 
 **Milestone**: Complete Nicos Weg A1, know 500+ words, basic sentences
 
-### Phase 2: A2 (Jul - Sep 2026) — 3 months, ~80 hours
+### Phase 2: A2 (Aug - Oct 2026) — 3 months, ~80 hours
 | Resource | Type | When |
 |:---|:---|:---|
 | **Nicos Weg A2** (DW) | Main course | Morning study |

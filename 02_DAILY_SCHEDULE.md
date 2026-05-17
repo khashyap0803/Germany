@@ -1,33 +1,41 @@
 # ⏰ OPTIMIZED 24-HOUR DAILY SCHEDULE
 
+> **Last Updated**: May 16, 2026 (reconciled with actual May execution data)
+
 ## YOUR REAL CONSTRAINTS (No BS)
-- **Commute**: 4 hrs/day — crowded, noisy, multiple transfers → **NOT usable for reading/writing**
+- **Commute**: 4 hrs/day — crowded, noisy, multiple transfers → **NOT usable for reading/writing/coding, but usable for audio** (German podcasts, passive listening)
 - **Office**: 9 AM - 6:30 PM (best) to 8 PM (worst) → ~9.5-11 hrs
 - **Gym**: Willing to compromise → **FREED UP 5-7 AM = 2 HOURS**
-- **Sleep**: Must sleep by 12 AM, wake at 5 AM = **5 hours sleep** (minimum)
-- **Health**: Cannot compromise on sleep
+- **Sleep**: Must sleep by 10:00 PM, wake at 5 AM = **7 hours sleep** (non-negotiable minimum)
+- **Health**: Sleep and mental health are prerequisites, not luxuries
 
-## ⚡ THE SCHEDULE (Weekdays — Best Case: Leave office 6:30 PM)
+## ⚡ THE ACTUAL SCHEDULE (Weekdays — Best Case: Leave office 6:30 PM)
+
+> ⚠️ **Reality check (May 2026)**: Evening study blocks don't work — you're physically exhausted after 9.5-hr office + 4-hr commute. The morning block is your ONLY reliable weekday coding time. Accept this.
 
 | Time | Activity | Duration | Notes |
 |:---|:---|:---|:---|
-| **5:00 AM** | Wake up | — | Alarm, cold water, freshen up |
-| **5:15 - 7:00 AM** | 🎯 **DEEP STUDY** | **1 hr 45 min** | German OR Embedded (alternate days) |
-| **7:00 - 7:30 AM** | Get ready, breakfast | 30 min | |
-| **7:30 - 9:00 AM** | Commute to office | 1.5 hrs | 🎧 **Audio-only**: German podcast in earbuds |
-| **9:00 - 6:30 PM** | Office | 9.5 hrs | Use lunch break for Anki (15 min) |
-| **6:30 - 8:30 PM** | Commute home | 2 hrs | 🎧 **Audio-only**: German podcast/audiobook |
+| **5:00 AM** | Wake up | 10 min | Alarm, cold water, freshen up. **NO PHONE.** |
+| **5:10 - 6:30 AM** | 🎯 **MORNING DEEP STUDY** | **1 hr 20 min** | C/Embedded OR German (alternate days). This is your ONLY active weekday block. |
+| **6:30 - 7:00 AM** | Get ready, breakfast | 30 min | |
+| **7:00 - 8:30 AM** | Commute to office | 1.5 hrs | 🎧 **Audio-only**: German podcast/Nicos Weg (passive listening) |
+| **8:30 AM - 6:30 PM** | Office | ~10 hrs | Use lunch break for Anki (15 min) |
+| **6:30 - 8:30 PM** | Commute home | 2 hrs | 🎧 **Audio-only**: German podcast/Easy German (passive) |
 | **8:30 - 9:00 PM** | Dinner, freshen up | 30 min | |
-| **9:00 - 10:30 PM** | 🎯 **EVENING STUDY** | **1 hr 30 min** | German OR Embedded (alternate days) |
-| **10:30 - 11:00 PM** | 📱 Anki flashcards | 30 min | German vocab review (spaced repetition) |
-| **11:00 - 11:30 PM** | Wind down | 30 min | No screens, prepare for sleep |
-| **11:30 PM - 5:00 AM** | 😴 Sleep | **5.5 hrs** | Non-negotiable minimum |
+| **9:00 - 9:30 PM** | 📖 **Bed reading** (optional) | 30 min | K&R book, theory only. Skip if exhausted. |
+| **9:30 - 10:00 PM** | Wind down | 30 min | No screens, prepare for sleep |
+| **10:00 PM - 5:00 AM** | 😴 **Sleep** | **7 hrs** | **Non-negotiable.** Sleep debt kills consistency. |
 
-## 📊 Weekday Study Hours Breakdown
+## 📊 Weekday Study Hours Breakdown (HONEST)
 
-| Category | Morning | Commute Audio | Lunch | Evening | Anki | **TOTAL** |
-|:---|:---|:---|:---|:---|:---|:---|
-| **Study Time** | 1.75 hrs | ~1.5 hrs passive | 0.25 hrs | 1.5 hrs | 0.5 hrs | **5.5 hrs/day** |
+| Category | Hours | Type | Notes |
+|:---|:---|:---|:---|
+| Morning block | 1.3 hrs | ⚡ Active (coding/grammar) | This is where real learning happens |
+| Commute audio | 3.5 hrs | 🎧 Passive (listening) | Valuable for German ear training, NOT counted as core study |
+| Lunch Anki | 0.25 hrs | 📱 Active (flashcards) | Quick review |
+| Bed reading (optional) | 0-0.5 hrs | 📖 Semi-active | Only when energy permits |
+| **TOTAL ACTIVE** | **~1.5-1.8 hrs/day** | | |
+| **+ Passive audio** | **~3.5 hrs/day** | | Bonus, not core |
 
 > **COMMUTE NOTE**: Even in crowded buses, you CAN wear earbuds and listen to German podcasts/lessons passively. You can't read/write, but passive listening is STILL valuable at A1-B1 level. It trains your ear.
 
@@ -35,16 +43,17 @@
 
 | Time | Activity | Duration |
 |:---|:---|:---|
-| 5:00 - 7:00 AM | 🎯 **DEEP STUDY** | **2 hrs** (extra important on late days) |
-| 7:00 - 7:30 AM | Get ready | 30 min |
-| 7:30 - 9:00 AM | Commute (audio) | 1.5 hrs |
-| 9:00 - 8:00 PM | Office | 11 hrs |
-| 8:00 - 10:00 PM | Commute (audio) | 2 hrs |
-| 10:00 - 10:30 PM | Dinner | 30 min |
-| 10:30 - 11:00 PM | Anki only | 30 min |
-| 11:00 PM - 5:00 AM | Sleep | 6 hrs |
+| 5:00 - 6:30 AM | 🎯 **DEEP STUDY** | **1.3 hrs** (even more critical on late days) |
+| 6:30 - 7:00 AM | Get ready | 30 min |
+| 7:00 - 8:30 AM | Commute (audio) | 1.5 hrs |
+| 8:30 AM - 8:00 PM | Office | 11.5 hrs |
+| 8:00 - 9:30 PM | Commute (audio) | 1.5 hrs |
+| 9:30 - 10:00 PM | Dinner | 30 min |
+| 10:00 PM - 5:00 AM | **Sleep** | **7 hrs** |
 
-**Late days = only 2.5 hrs study + audio. That's okay. Consistency > intensity.**
+**Late days = only 1.3 hrs active + 3 hrs passive audio. That's okay. Consistency > intensity.**
+
+> ⚠️ On late days, skip bed reading entirely. Sleep is more valuable than 30 min of tired reading.
 
 ## 🏋️ GYM STRATEGY
 - **Drop daily gym during intense study phases**
@@ -80,16 +89,19 @@
 
 **Sunday total: ~7 hours study**
 
-## 📊 WEEKLY STUDY HOURS TOTAL
+## 📊 WEEKLY STUDY HOURS TOTAL (HONEST NUMBERS)
 
-| Day | Study Hours |
-|:---|:---|
-| Mon-Fri (best case avg) | 5 × 5 = 25 hrs |
-| Saturday | 9.5 hrs |
-| Sunday | 7 hrs |
-| **WEEKLY TOTAL** | **~41.5 hrs** |
+| Day | Active Study | Passive Audio | Notes |
+|:---|:---|:---|:---|
+| Mon-Fri (avg) | 5 × 1.5 = **7.5 hrs** | 5 × 3.5 = 17.5 hrs | Morning blocks only |
+| Saturday | **9.5 hrs** | — | Power study day |
+| Sunday | **7 hrs** | — | Balanced day |
+| **WEEKLY ACTIVE** | **~24 hrs** | ~17.5 hrs passive | |
 
-> This is MASSIVE. Even if you're 70% consistent, that's **~29 hrs/week** which is more than enough for German B2 + IELTS + Embedded skills in 28 months.
+> At 70% consistency, that's **~17 hrs/week active + 12 hrs passive**. Over 28 months (~120 weeks), that's **~2,040 active hours + ~1,440 passive hours**. This is enough for German B2 + IELTS + Embedded skills.
+
+> [!IMPORTANT]
+> The old estimate of "41.5 hrs/week" counted passive commute audio as study time AND assumed evening coding blocks that don't work in practice. **24 hrs/week active is the honest number.** Plan accordingly.
 
 ---
 
@@ -133,8 +145,8 @@
 | Task | Tool | How |
 |:---|:---|:---|
 | **Schedule reminders** | Google Calendar | Set recurring study blocks with notifications |
-| **Habit tracking** | Habitica / Loop Habit Tracker | Track daily: German ✅, Embedded ✅, Anki ✅ |
-| **Deadline tracking** | Google Sheets / Notion | All university deadlines in one place |
+| **Habit tracking** | PROGRESS.md (this repo) | Weekly review Sundays at 4 PM — the ONE tracking tool |
+| **Deadline tracking** | Google Sheets / `07_MONTHLY_TIMELINE.md` | All university deadlines tracked in the roadmap |
 | **Document checklist** | This STUDY folder | Keep all docs organized digitally |
 
 ---
@@ -143,7 +155,9 @@
 
 To avoid burnout, alternate focus areas:
 
-| Day | Morning (5:15-7 AM) | Evening (9-10:30 PM) |
+> ⚠️ **Note**: Evening blocks were removed from the corrected schedule (you're too exhausted after 14-hr work+commute days). The evening column below is **aspirational/optional** — only do it if you genuinely have energy. The morning block is what counts.
+
+| Day | Morning (5:10-6:30 AM) | Evening (optional, if energy) |
 |:---|:---|:---|
 | **Monday** | 🇩🇪 German grammar | 💻 Embedded theory |
 | **Tuesday** | 💻 Embedded coding | 🇩🇪 German writing |

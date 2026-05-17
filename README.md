@@ -2,14 +2,15 @@
 
 > Private repository tracking my journey to pursue a Master's degree in Embedded Systems at a German University of Applied Sciences (Fachhochschule).
 > **Strategy**: Type 3 "AI Supervisor Engineer" — manual foundations → AI-accelerated mastery
-> **Last Updated**: May 7, 2026
+> **Last Updated**: May 16, 2026 (audit reconciliation — timelines, hours, and inconsistencies fixed)
 
 ## 📋 Documents
 
 ### Core Roadmap
 | # | File | Description |
 |:---|:---|:---|
-| 00 | [Master Roadmap](00_MASTER_ROADMAP.md) | Main overview — profile, CGPA, finances, strategy |
+| 📊 | [Progress Tracker](PROGRESS.md) | **⭐ WEEKLY TRACKING** — update every Sunday |
+| 00 | [Master Roadmap](00_MASTER_ROADMAP.md) | Main overview — profile, CGPA, finances, contingency protocols, deload schedule |
 | 01 | [Universities](01_UNIVERSITIES.md) | 6 target universities with requirements & fit scores |
 | 02 | [Daily Schedule](02_DAILY_SCHEDULE.md) | Optimized 24hr schedule |
 | 03 | [German Language](03_GERMAN_LANGUAGE.md) | A1 → B2 roadmap (28 months) |
@@ -65,7 +66,7 @@
 | IELTS Target | 7.0 |
 | German Target | B2 |
 | Blocked Account | €11,904 (~₹11L) |
-| Study Hours/Week | ~28-41 hrs |
+| Study Hours/Week | ~24 hrs active + ~17 hrs passive |
 | Courses Purchased | 5 (183+ hours) |
 | Books (Digital) | 14 |
 
@@ -73,7 +74,7 @@
 
 | Phase | Period | AI Access |
 |:---|:---|:---|
-| Phase 1-2 | May–Sep 2026 | 🔴 **BANNED** — write all code manually |
+| Phase 1-2 | May–Oct 2026 | 🔴 **BANNED** — write all code manually |
 | Phase 3 | Oct–Dec 2026 | 🟡 **SUPERVISED** — AI generates, YOU verify |
 | Phase 4+ | Jan 2027+ | 🟢 **PARTNER** — use AI like a senior engineer |
 
@@ -83,7 +84,7 @@
 |:---|:---|
 | **Passport** | ✅ Valid till 2032 — no action needed |
 | Oct-Nov 2027 | IELTS exam |
-| Oct 2027 | APS certificate application |
+| Aug-Sep 2027 | APS certificate application (moved earlier for buffer) |
 | Dec 31, 2027 | Bremerhaven application (Summer 2028) |
 | Jan 2028 | Bond ends → Submit resignation |
 | Apr 15, 2028 | RWU application (Winter 2028) |

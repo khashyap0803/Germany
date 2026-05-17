@@ -12,10 +12,10 @@
 | **Cost** | ₹18,000 (non-refundable) |
 | **Processing** | 3-4 weeks (digital system) |
 | **Website** | [aps-india.de](https://www.aps-india.de/) |
-| **When to apply** | After graduation (May 2026), apply by **Sep-Oct 2027** |
+| **When to apply** | After graduation (May 2026), apply by **Aug-Sep 2027** (moved earlier from Oct for buffer) |
 
 ### Documents Needed:
-- [ ] Valid passport (first + last pages) — **RENEW FIRST IF EXPIRING**
+- [ ] Valid passport (first + last pages) — ✅ **Valid till 2032, no renewal needed**
 - [ ] Class 10 mark sheet + certificate
 - [ ] Class 12 mark sheet + certificate
 - [ ] All 8 semester mark sheets
@@ -26,9 +26,9 @@
 
 ### Timeline:
 - **May 2026**: Graduate, collect all final documents
-- **Jun-Jul 2026**: Get passport renewed
-- **Oct 2027**: Apply for APS (after IELTS is done)
-- **Nov 2027**: APS certificate received
+- **Jun-Jul 2026**: ✅ Passport valid till 2032 — no action needed
+- **Aug-Sep 2027**: Apply for APS (after IELTS prep is underway, 2 months before Bremerhaven deadline)
+- **Sep-Oct 2027**: APS certificate received (3-4 weeks processing)
 
 ---
 
@@ -131,7 +131,7 @@ Use the Europass CV format (standard in Europe): https://europass.europa.eu/
 - [ ] IELTS/TOEFL score report
 - [ ] Motivation letter (customized for each university!)
 - [ ] CV (Europass format)
-- [ ] Passport copy (renewed, valid 2+ years)
+- [ ] Passport copy — ✅ Valid till 2032, no renewal needed
 - [ ] German language certificate (A1 for Bremerhaven / B2 if German-taught)
 - [ ] Uni-assist application fee (~€75 per university)
 - [ ] Course descriptions / Module handbook from CBIT (to prove ECTS equivalence)

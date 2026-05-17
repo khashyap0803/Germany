@@ -41,9 +41,10 @@
 | ECTS | 210 (may need extra modules for 180) |
 | IELTS/TOEFL | 6.0 / 70 iBT |
 | Prerequisites | **VHDL/Verilog + OOP (C++/Java)** knowledge required |
+| ⚠️ ECTS | **210 required** — your B.E. ECE (CBIT) is likely ~180 ECTS. May need bridging modules (+1-2 semesters). **Risk factor.** |
 | Intake | **Winter** — deadline April 15 |
 | Website | rwu.de |
-| **Fit Score** | ⭐⭐⭐⭐ (lower IELTS req, but BW tuition) |
+| **Fit Score** | ⭐⭐⭐⭐ (lower IELTS req, but BW tuition + ECTS gap risk) |
 
 ### 4. FH Westküste + HAW Hamburg — M.Sc. Microelectronic Systems
 | Field | Detail |
@@ -86,10 +87,15 @@
 ## APPLICATION STRATEGY
 
 1. **Apply to minimum 6 universities** across different German states
-2. **Primary**: FH Dortmund + HS Bremerhaven
-3. **Secondary**: RWU + FH Westküste/HAW Hamburg
-4. **Backup**: HS Fulda (if German B2+) + HS Esslingen
-5. **Use uni-assist** for most (centralized portal)
-6. **Do Dortmund pre-check early**: Email merged PDF to service-esm@fh-dortmund.de
-7. **Search DAAD database** yourself: https://www2.daad.de/deutschland/studienangebote/international-programmes/en/ — filter Master + English + Embedded/Electrical
-8. **Search mygermanuniversity.com** — filter by tuition-free + English + FH
+2. **Primary #1**: FH Dortmund (180 ECTS OK, free tuition, strongest embedded program)
+3. **Primary #2**: HS Bremerhaven (experience boost, early deadline Dec 31)
+4. **Secondary**: FH Westküste/HAW Hamburg
+5. **Caution**: RWU (ECTS gap risk — you may have 180 vs their 210 requirement; also €1,500/sem BW fee)
+6. **Backup**: HS Fulda (if German B2+) + HS Esslingen
+7. **Use uni-assist** for most (centralized portal)
+8. **Do Dortmund pre-check early (Apr 2028)**: Email merged PDF to service-esm@fh-dortmund.de
+9. **Search DAAD database** yourself: https://www2.daad.de/deutschland/studienangebote/international-programmes/en/ — filter Master + English + Embedded/Electrical
+10. **Search mygermanuniversity.com** — filter by tuition-free + English + FH
+
+> [!IMPORTANT]
+> **Prioritize FH Dortmund** over RWU. Dortmund accepts 180 ECTS (which your CBIT degree provides), has no tuition fees, and has the strongest embedded systems curriculum match. RWU requires 210 ECTS and charges €1,500/semester.

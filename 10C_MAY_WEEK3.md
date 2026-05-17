@@ -4,7 +4,7 @@
 > **K.N. King Chapters**: Ch 11-13, 17 (Pointers, Pointers and Arrays, Strings, Advanced Uses of Pointers)
 > **K&R Bed Reading**: Chapter 5 (Pointers and Arrays) — THE most critical chapter
 > **FastBit Udemy**: Sections 9-13 (Functions, Pointers, Strings, Structures)
-> **Programs to write**: 10-12
+> **Programs to write**: 8-10 (1-2 per weekday, 3-4 on Saturday)
 > **German**: Nicos Weg Lessons 11-15, articles (der/die/das), basic verbs
 > **⚠️ MANDATORY**: Draw memory diagrams on PAPER every single day
 > **📚 Full resource details**: See `10_RESOURCES.md`
@@ -504,7 +504,7 @@ MEMORY MAP OF A C PROGRAM:
 - Write 15 sentences using present tense verbs
 
 ### 📋 Weekly Review (4:00-4:30 PM)
-- This was the HARDEST week. Log everything in Notion.
+- This was the HARDEST week. Log everything in `PROGRESS.md`.
 - Rate your pointer understanding: 1-10. Below 7? Re-watch mycodeschool videos.
 
 ---

@@ -1,7 +1,7 @@
 # 💻 EMBEDDED SYSTEMS LEARNING PLAN
 
 ## Strategy: Type 3 "AI Supervisor Engineer" — manual foundations → AI-accelerated mastery
-## Time: Mornings (5:00-6:30) + Evenings (9:30-11:00) + Weekends (14 hrs)
+## Time: Mornings (5:10-6:30) + Weekends (~16.5 hrs) + Passive commute audio (~17 hrs/week)
 ## See `09_ULTIMATE_STUDY_PLAN.md` for the DETAILED daily/weekly schedule
 
 ---
@@ -10,7 +10,7 @@
 
 | Phase | Period | AI Rule |
 |---|---|---|
-| **Phase 1-2** | May–Sep 2026 | 🔴 **AI BANNED for code.** AI only explains concepts. YOU write ALL code. |
+| **Phase 1-2** | May–Oct 2026 | 🔴 **AI BANNED for code.** AI only explains concepts. YOU write ALL code. |
 | **Phase 3** | Oct–Dec 2026 | 🟡 **Supervised AI.** AI generates boilerplate. You REVIEW and EXPLAIN every line. |
 | **Phase 4+** | Jan 2027+ | 🟢 **AI Partner.** Generate, review, test, sign off — like a senior engineer. |
 
@@ -18,12 +18,12 @@
 
 ## LEARNING PATH (Priority Order)
 
-### 1. C Programming DEEP (May - Jun 2026) — 9 weeks
+### 1. C Programming DEEP (May - Jul 2026) — 11 weeks (includes 2-week wedding buffer)
 **Why**: Foundation of ALL embedded work. You MUST know C properly.
 
 | Topic | Primary Resource | Secondary Resource | Practice |
 |:---|:---|:---|:---|
-| C fundamentals, types, operators | K.N. King "C Programming: A Modern Approach" 2nd Ed | FastBit "Embedded C" course at 1.5× | King exercises (5+ per chapter) |
+| C fundamentals, types, operators | K.N. King "C Programming: A Modern Approach" 2nd Ed | FastBit "Embedded C" course at 1.5× | King exercises (3-5 per chapter) |
 | Pointers, memory, structs | K.N. King Ch 11-19 | Neso Academy YouTube (7-min concepts) | Draw memory diagrams on paper |
 | Bitwise operations | K.N. King Ch 20 + FastBit bitwise sections | Jacob Sorber YouTube | Solve 5 problems/week |
 | Linked lists, queues | K.N. King Ch 17 + practice | Exercism C track | Implement from scratch, no AI |
@@ -34,7 +34,7 @@
 
 **Pipeline**: Read King → Do exercises → Watch FastBit → Code yourself → EXPLAIN out loud
 
-### 2. Microcontroller Programming (Jul - Sep 2026) — 13 weeks
+### 2. Microcontroller Programming (Jul 16 - Oct 15, 2026) — 13 weeks
 **Why**: Core of embedded systems. Register-level understanding.
 
 | Topic | Primary Resource | Course | Hardware |
@@ -51,7 +51,7 @@
 
 **Portfolio Project 1**: "STM32 Environmental Monitor" — ADC + timer + UART + circular buffer → GitHub
 
-### 3. RTOS + Zephyr (Oct - Dec 2026) — 13 weeks
+### 3. RTOS + Zephyr (Oct 16 - Dec 2026) — 11 weeks
 **Why**: Required for embedded roles. Industry moving to Zephyr.
 
 | Topic | Primary Resource | Course |

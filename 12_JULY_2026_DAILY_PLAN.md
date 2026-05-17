@@ -1,13 +1,17 @@
 # 📅 JULY 2026 — MASTER OVERVIEW
 
 > **Period**: July 1 (Wednesday) → July 31 (Friday)
-> **Phase**: PHASE 2 — STM32 Microcontroller Programming 🔧
+> **Phase**: Jul 1-15: PHASE 1 BUFFER (C catch-up or early STM32 prep) | Jul 16-31: PHASE 2 — STM32 🔧
 > **Month Goal**: GPIO + UART + Clock System on real STM32 hardware (HAL AND register level)
 > **AI Status**: 🔴 **BANNED for code** — AI only explains concepts, YOU write ALL code
 > **Status**: Working at Unistring (9 AM - 7/8 PM, 4hr commute)
 >
-> **⚡ THE SHIFT**: You've spent 9 weeks on pure C. Now that code runs on REAL HARDWARE.
-> Your circular buffer, state machines, and bitwise ops from June → you'll use ALL of them on STM32.
+> ⚠️ **TIMELINE NOTE**: Phase 1 (C Programming) was extended to Jul 15 to absorb the May wedding disruption.
+> **Jul 1-15**: Use for Phase 1 catch-up if needed, or begin STM32 setup/prep if Phase 1 exit criteria already met.
+> **Jul 16+**: Phase 2 officially starts. All July weekly plans below assume Phase 2 start.
+>
+> **⚡ THE SHIFT**: You've spent 11 weeks on pure C (including 2-week wedding buffer). Now that code runs on REAL HARDWARE.
+> Your circular buffer, state machines, and bitwise ops from May-June → you'll use ALL of them on STM32.
 >
 > **Primary Course**: FastBit MCU1 "Mastering MCU Driver Development" (28.5h)
 > **Primary Book**: "Mastering STM32" by Carmine Noviello (800+ pages)
@@ -206,4 +210,6 @@ After CubeMX generates code, ALWAYS:
 
 ---
 
-> **July 1st, 5:00 AM. Wire up your Black Pill. Open STM32CubeIDE. Blink an LED. Begin.**
+> **July 16th, 5:00 AM. Wire up your Black Pill. Open STM32CubeIDE. Blink an LED. Begin.**
+>
+> (If you're using Jul 1-15 for Phase 1 catch-up, start hardware work on Jul 16.)

@@ -1,6 +1,6 @@
 # 📚 MASTER RESOURCE GUIDE — What to Learn From, Where, and When
 
-> **Last Updated**: April 24, 2026
+> **Last Updated**: May 16, 2026 (audit reconciliation)
 > **Purpose**: Every learning session needs a source. This file maps EXACT resources to every topic in your roadmap.
 > **Rule**: Before you code, you WATCH or READ. Before you move on, you TEST yourself.
 
@@ -62,7 +62,7 @@ Find these on your external drive or download from your college online library. 
 
 ---
 
-### Phase 1 — C Programming (May-June 2026)
+### Phase 1 — C Programming (May-Jul 2026, 11 weeks including wedding buffer)
 
 | # | Book | Location | Role |
 |:---|:---|:---|:---|
@@ -71,7 +71,7 @@ Find these on your external drive or download from your college online library. 
 | 3 | **"Beej's Guide to C Programming"** | https://beej.us/guide/bgc/ | **Supplement** — modern reference, covers C11/C17, clearer explanations for some topics |
 | 4 | **"Modern C" by Jens Gustedt** | https://gustedt.gitlabpages.inria.fr/modern-c/ (free PDF) | **Advanced reference** — modern C best practices, for Phase 3+ |
 
-### Phase 2 — STM32 Microcontrollers (Jul-Sep 2026)
+### Phase 2 — STM32 Microcontrollers (Jul-Oct 2026)
 
 | # | Book | Location | Role |
 |:---|:---|:---|:---|
@@ -111,7 +111,7 @@ No new technical books. Focus on:
 
 ---
 
-### Chapter-to-Week Mapping (K.N. King) — May 2026
+### Chapter-to-Week Mapping (K.N. King) — May-June 2026
 
 | K.N. King Chapter | Topics | Your Week |
 |:---|:---|:---|
@@ -302,7 +302,7 @@ No new technical books. Focus on:
 | **dict.cc app** | German dictionary | Whenever you encounter an unknown word → add to Anki |
 | **Easy German podcast app** | Passive German listening | Commute BACK |
 | **PomoDone** (GitHub Pack, free 2yr) | Pomodoro timer for study sessions | Set 25-min timers during morning + evening blocks |
-| **Notion** (GitHub Pack, Education plan) | Weekly reviews, study notes, habit tracking | Sunday 4:00 PM weekly review |
+| **PROGRESS.md** (in this repo) | Sunday 4:00 PM weekly review | **ONE tracking system.** Hours, programs, German words, blockers — all here |
 | **Google AI Pro** | Concept explanations ONLY (AI Detox!) | When stuck after 20 min of trying |
 
 ### July 2026+ (Phase 2: STM32)

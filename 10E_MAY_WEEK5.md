@@ -447,7 +447,7 @@ Open a file `may_review.c`. Write answers (in comments) to these questions:
 
 ### 📋 MONTHLY REVIEW (4:00-5:00 PM)
 
-Open **Notion** → May 2026 Review:
+Open **`PROGRESS.md`** → May Monthly Retrospective section:
 
 | Metric | Target | Actual | Notes |
 |:---|:---|:---|:---|
@@ -512,15 +512,17 @@ All resources used this week:
 
 ## 🎯 END OF MAY — WHAT'S NEXT?
 
-**June 2026 (Phase 1 continued — Weeks 6-8):**
+**June 2026 (Phase 1 continued — Weeks 6-9):**
 - Makefile mastery, GDB expertise
 - Queue data structure, more state machine patterns
 - Packed structs, bit fields deep, memory-mapped I/O concept
 - **FINAL C PROJECT**: Polished GitHub repo with 15+ programs + READMEs
 - German A1 completion (finish Nicos Weg A1)
 
-**July 2026 (Phase 2 — STM32):**
-- Buy FastBit Udemy courses (₹399 each on sale)
+> **Phase 1 now extends through Jul 15** to absorb the wedding disruption (May 1-13).
+> Extra buffer weeks (Jul 1-15) can be used for catch-up or deeper capstone work.
+
+**July 16 (Phase 2 — STM32):**
 - Install STM32CubeIDE
 - Start: GPIO → UART → Timers → Interrupts → ADC
 - Your first blinking LED — but you'll understand EVERY BIT you set
