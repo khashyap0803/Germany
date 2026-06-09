@@ -1,8 +1,9 @@
 # 📊 DECISION ANALYSIS — Complete Documentation
 
-> **Date**: April 14, 2026
+> **Date**: April 14, 2026 (updated June 8, 2026)
 > **Session**: Full strategic planning session
-> **Status**: Nothing started yet. Starting May 2026.
+> **Real Start Date**: June 9, 2026 (not May — 5.5 weeks delayed due to personal reasons)
+> **Bond Correction**: Bond expires ~October 2027 (NOT January 2028 as originally documented)
 
 ---
 
@@ -150,10 +151,12 @@ Embedded startups hiring at ₹15-25K only need:
 
 ## 7. STRATEGIC OPTIONS (Decision Tree)
 
-### Option A: Stay at Unistring till Bond Ends (~Jan 2028)
-- ✅ Save ₹3L
-- ❌ Zero study capacity → arrive at 2028 with nothing prepared
-- **Probability**: 30-45% (if you somehow manage ~2 hrs/day mornings + weekends)
+### Option A: Stay at Unistring till Bond Ends (~Oct 2027)
+- ✅ Save ₹3L bond penalty
+- Bond expires Oct 2027 → resign → 3-month notice → last working day ~Jan 2028 → 9 months free
+- ✅ Weekends + pre-gym reading = ~21 hrs/week study (gym starts 5:30 AM, all coding on weekends)
+- No evening coding — gym ends 6:30 AM, back home 8:30-9 PM, too tired for coding
+- **Probability**: 55-70% (if weekends are consistently used for 16.5 hrs coding/study)
 
 ### Option B: Build skills 4 months → Leave for Embedded Startup (~Sep 2026)
 - ❌ Pay ₹3L bond penalty
@@ -183,7 +186,8 @@ Embedded startups hiring at ₹15-25K only need:
 4. **₹3L bond penalty = investment of ₹120/hr** for 2,500 hours of real learning
 5. **Startup-first is the fastest path** to embedded skills and Germany
 6. **Minimum 2 hrs/day, ideally 3-4 hrs/day** for Germany to be realistic
-7. **Winter 2028 remains the optimal intake** regardless of which path chosen
+7. **Bond expires Oct 2027** → resign Oct 2027 → last day Jan 2028 → 9 months free before applications
+8. **Winter 2028 remains the optimal intake** regardless of which path chosen
 8. **German university admissions don't care about company prestige** — only task relevance
 
 ---

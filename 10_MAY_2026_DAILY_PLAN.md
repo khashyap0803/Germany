@@ -1,8 +1,16 @@
-# 📅 MAY 2026 — MASTER OVERVIEW
+# MAY 2026 — ARCHIVED (NOT STARTED)
+
+> **ARCHIVE NOTE**: May 2026 was never executed. The roadmap real start date is **June 9, 2026**.
+> This file is kept as a reference for the Phase 1 Week 1–5 content outline.
+> **Do NOT use these dates or this schedule.** See `11_JUNE_2026_DAILY_PLAN.md` for the actual start.
+
+---
+
+# ORIGINAL CONTENT (Reference Only — dates are wrong, schedule has no gym)
 
 > **Period**: May 1 (Friday) → May 31 (Sunday)
 > **Month Goal**: C programming fundamentals + German A1 start
-> **AI Status**: 🔴 **BANNED for code** — AI only explains concepts, YOU write ALL code
+> **AI Status**: BANNED for code — AI only explains concepts, YOU write ALL code
 > **Status**: Working at Unistring (9 AM - 7/8 PM, 4hr commute)
 >
 > **Your PC (Custom Build)**:

@@ -1,4 +1,11 @@
-# 📅 WEEK 4 — May 19-25 (Tue-Mon): STRUCTS + BITWISE — Gateway to STM32
+# ARCHIVED — MAY WEEK 4 (NOT STARTED — See July 2026 files for actual Phase 1 Week 4)
+
+> **ARCHIVE NOTE**: This week was never executed. Real start = June 9, 2026. See `12A_JULY_WEEK1.md`.
+> Content below is reference material for Phase 1 Week 4 topics (Structs + Bitwise).
+
+---
+
+# WEEK 4 — May 19-25 (Tue-Mon): STRUCTS + BITWISE — Gateway to STM32 [REFERENCE ONLY]
 
 > **Topics**: struct, typedef, nested structs, pointer to struct, bitwise operators, bit manipulation, register simulation
 > **K.N. King Chapters**: Ch 14, 16 (Preprocessor, Structures/Unions/Enumerations)

@@ -1,170 +1,182 @@
-# ⏰ OPTIMIZED 24-HOUR DAILY SCHEDULE
+# OPTIMIZED 24-HOUR DAILY SCHEDULE
 
-> **Last Updated**: May 16, 2026 (reconciled with actual May execution data)
+> **Last Updated**: June 8, 2026 — Rewritten with mandatory gym 5:30–6:30 AM daily
+
+---
 
 ## YOUR REAL CONSTRAINTS (No BS)
-- **Commute**: 4 hrs/day — crowded, noisy, multiple transfers → **NOT usable for reading/writing/coding, but usable for audio** (German podcasts, passive listening)
-- **Office**: 9 AM - 6:30 PM (best) to 8 PM (worst) → ~9.5-11 hrs
-- **Gym**: Willing to compromise → **FREED UP 5-7 AM = 2 HOURS**
-- **Sleep**: Must sleep by 10:00 PM, wake at 5 AM = **7 hours sleep** (non-negotiable minimum)
-- **Health**: Sleep and mental health are prerequisites, not luxuries
 
-## ⚡ THE ACTUAL SCHEDULE (Weekdays — Best Case: Leave office 6:30 PM)
+- **Gym**: MANDATORY daily, 5:30–6:30 AM — non-negotiable. Energises you for the day. Cannot be moved to evenings (too exhausted after 14-hr days).
+- **Commute**: 4 hrs/day — crowded, noisy, multiple transfers — NOT usable for reading/writing/coding. **Fully usable for audio** (German podcasts, passive listening).
+- **Office**: 9 AM – 6:30 PM (best) to 8 PM (typical) → 9.5–11 hrs
+- **Sleep**: Must sleep by 10:00 PM, wake at 5:00 AM = 7 hours (non-negotiable minimum)
+- **Evenings**: Physically exhausted after 14-hr work + commute day. Evening coding does NOT work in practice.
 
-> ⚠️ **Reality check (May 2026)**: Evening study blocks don't work — you're physically exhausted after 9.5-hr office + 4-hr commute. The morning block is your ONLY reliable weekday coding time. Accept this.
+---
 
-| Time | Activity | Duration | Notes |
+## WEEKDAY SCHEDULE (Mon–Fri) — Standard Day (Office till 6:30 PM)
+
+| Time | Activity | Duration | Type |
 |:---|:---|:---|:---|
-| **5:00 AM** | Wake up | 10 min | Alarm, cold water, freshen up. **NO PHONE.** |
-| **5:10 - 6:30 AM** | 🎯 **MORNING DEEP STUDY** | **1 hr 20 min** | C/Embedded OR German (alternate days). This is your ONLY active weekday block. |
-| **6:30 - 7:00 AM** | Get ready, breakfast | 30 min | |
-| **7:00 - 8:30 AM** | Commute to office | 1.5 hrs | 🎧 **Audio-only**: German podcast/Nicos Weg (passive listening) |
-| **8:30 AM - 6:30 PM** | Office | ~10 hrs | Use lunch break for Anki (15 min) |
-| **6:30 - 8:30 PM** | Commute home | 2 hrs | 🎧 **Audio-only**: German podcast/Easy German (passive) |
-| **8:30 - 9:00 PM** | Dinner, freshen up | 30 min | |
-| **9:00 - 9:30 PM** | 📖 **Bed reading** (optional) | 30 min | K&R book, theory only. Skip if exhausted. |
-| **9:30 - 10:00 PM** | Wind down | 30 min | No screens, prepare for sleep |
-| **10:00 PM - 5:00 AM** | 😴 **Sleep** | **7 hrs** | **Non-negotiable.** Sleep debt kills consistency. |
+| **5:00 AM** | Wake up — cold water, freshen up, NO PHONE | 10 min | — |
+| **5:00–5:25 AM** | **THEORY READING** — K.N. King or Mastering STM32 on tablet | 25 min | Active (reading) |
+| **5:25–5:30 AM** | Prep for gym — gym bag, water bottle | 5 min | — |
+| **5:30–6:30 AM** | **GYM** | 1 hour | Gym |
+| **6:30–7:00 AM** | Shower, quick breakfast | 30 min | — |
+| **7:00–8:30 AM** | Commute to office | 1.5 hrs | **German audio** (Nicos Weg / DW podcasts) |
+| **8:30 AM–6:30 PM** | Office (Unistring) | ~10 hrs | Work |
+| **12:30–12:45 PM** | LUNCH ANKI — German flashcard review | 15 min | Active (Anki) |
+| **6:30–8:30 PM** | Commute home | 2 hrs | **German audio** (Easy German podcast) |
+| **8:30–9:30 PM** | Dinner, freshen up | 1 hour | — |
+| **9:30–10:00 PM** | **BED READING** — theory pages (K&R or Mastering STM32) | 30 min | Active (reading) |
+| **10:00 PM–5:00 AM** | **SLEEP** | 7 hours | Non-negotiable |
 
-## 📊 Weekday Study Hours Breakdown (HONEST)
+### What "Theory Reading" means (5:00–5:25 AM and 9:30–10:00 PM)
+- Read K.N. King chapters — no coding required, just reading and understanding
+- Read "Mastering STM32" theory sections (clock tree, peripheral diagrams, register tables)
+- Read K&R — dense, short chapters — 5–10 pages is productive
+- Watch a short (10–15 min) theory video on phone if reading feels too passive
+- **Do NOT attempt to code at this time** — no laptop needed, no WSL2, just a book or tablet
 
-| Category | Hours | Type | Notes |
+### Weekday honest study hours
+
+| Block | Time | Type | Hours |
 |:---|:---|:---|:---|
-| Morning block | 1.3 hrs | ⚡ Active (coding/grammar) | This is where real learning happens |
-| Commute audio | 3.5 hrs | 🎧 Passive (listening) | Valuable for German ear training, NOT counted as core study |
-| Lunch Anki | 0.25 hrs | 📱 Active (flashcards) | Quick review |
-| Bed reading (optional) | 0-0.5 hrs | 📖 Semi-active | Only when energy permits |
-| **TOTAL ACTIVE** | **~1.5-1.8 hrs/day** | | |
-| **+ Passive audio** | **~3.5 hrs/day** | | Bonus, not core |
+| Pre-gym theory reading | 5:00–5:25 AM | Active reading | 0.4 hrs |
+| German audio commute in | 7:00–8:30 AM | Passive listening | 1.5 hrs |
+| Lunch Anki | 12:30–12:45 PM | Active flashcards | 0.25 hrs |
+| German audio commute back | 6:30–8:30 PM | Passive listening | 2.0 hrs |
+| Bed reading | 9:30–10:00 PM | Active reading | 0.5 hrs |
+| **Total active (reading + Anki)** | | | **~1.2 hrs** |
+| **Total passive audio** | | | **~3.5 hrs** |
 
-> **COMMUTE NOTE**: Even in crowded buses, you CAN wear earbuds and listen to German podcasts/lessons passively. You can't read/write, but passive listening is STILL valuable at A1-B1 level. It trains your ear.
+> All coding, debugging, and hands-on hardware work happens on **weekends only**. Weekdays are for theory reading and German immersion. Accept this. It is realistic.
 
-## ⚡ THE SCHEDULE (Weekdays — Worst Case: Leave office 8 PM)
+---
+
+## WEEKDAY SCHEDULE — Worst Case (Office till 8 PM)
+
+| Time | Activity |
+|:---|:---|
+| 5:00–5:25 AM | Theory reading (same as normal day) |
+| 5:30–6:30 AM | Gym |
+| 6:30–7:00 AM | Shower + breakfast |
+| 7:00–8:30 AM | Commute (German audio) |
+| 8:30 AM–8:00 PM | Office |
+| 8:00–9:30 PM | Commute home (German audio) |
+| 9:30–10:00 PM | Dinner |
+| 10:00 PM | Sleep |
+
+> On late days: skip bed reading entirely. Sleep is more valuable than 30 min of tired reading.
+
+---
+
+## WEEKEND SCHEDULE
+
+On weekends, gym is still at 5:30–6:30 AM. The gym slot replaces what was previously "light exercise." Study still starts at 7:30 AM — the weekend schedule is UNCHANGED.
+
+### Saturday (Power Study Day — 9.5 hours)
 
 | Time | Activity | Duration |
 |:---|:---|:---|
-| 5:00 - 6:30 AM | 🎯 **DEEP STUDY** | **1.3 hrs** (even more critical on late days) |
-| 6:30 - 7:00 AM | Get ready | 30 min |
-| 7:00 - 8:30 AM | Commute (audio) | 1.5 hrs |
-| 8:30 AM - 8:00 PM | Office | 11.5 hrs |
-| 8:00 - 9:30 PM | Commute (audio) | 1.5 hrs |
-| 9:30 - 10:00 PM | Dinner | 30 min |
-| 10:00 PM - 5:00 AM | **Sleep** | **7 hrs** |
-
-**Late days = only 1.3 hrs active + 3 hrs passive audio. That's okay. Consistency > intensity.**
-
-> ⚠️ On late days, skip bed reading entirely. Sleep is more valuable than 30 min of tired reading.
-
-## 🏋️ GYM STRATEGY
-- **Drop daily gym during intense study phases**
-- **Keep 2-3 days/week** (Tue, Thu, Sat morning) — 30-45 min bodyweight at home instead of 2hr gym trip
-- Home workout saves 1+ hour of travel to gym
-
-## 📅 WEEKEND SCHEDULE
-
-### Saturday (POWER STUDY DAY)
-| Time | Activity | Duration |
-|:---|:---|:---|
-| 6:00 - 7:00 AM | Wake up, light exercise at home | 1 hr |
-| 7:00 - 7:30 AM | Breakfast | 30 min |
-| **7:30 - 12:30 PM** | 🎯 **EMBEDDED SYSTEMS DEEP STUDY** | **5 hrs** |
-| 12:30 - 1:30 PM | Lunch + rest | 1 hr |
-| **1:30 - 4:30 PM** | 🎯 **GERMAN STUDY (grammar + writing)** | **3 hrs** |
-| 4:30 - 5:00 PM | Break | 30 min |
-| **5:00 - 6:30 PM** | 🎯 **German speaking practice (AI/italki)** | **1.5 hrs** |
+| 5:00 AM | Wake up | 10 min |
+| 5:30–6:30 AM | **GYM** | 1 hour |
+| 6:30–7:30 AM | Shower, breakfast, prep study space | 1 hour |
+| **7:30–12:30 PM** | **EMBEDDED SYSTEMS — DEEP CODING** | **5 hours** |
+| 12:30–1:30 PM | Lunch + rest (walk, no screens) | 1 hour |
+| **1:30–4:30 PM** | **GERMAN STUDY — grammar + writing** | **3 hours** |
+| 4:30–5:00 PM | Break | 30 min |
+| **5:00–6:30 PM** | **GERMAN SPEAKING PRACTICE** — ChatGPT Voice or italki | **1.5 hours** |
 | 6:30 onwards | Free time, social, rest | — |
 
-**Saturday total: ~9.5 hours study**
+**Saturday total active study: 9.5 hours**
 
-### Sunday (BALANCED DAY)
+### Sunday (Balanced Day — 7 hours)
+
 | Time | Activity | Duration |
 |:---|:---|:---|
-| 7:00 - 8:00 AM | Wake up, rest | 1 hr |
-| 8:00 - 8:30 AM | Breakfast | 30 min |
-| **8:30 - 11:30 AM** | 🎯 **EMBEDDED PROJECTS (hands-on)** | **3 hrs** |
-| 11:30 - 1:00 PM | Lunch + complete rest | 1.5 hrs |
-| **1:00 - 3:00 PM** | 🎯 **German review + Anki bulk** | **2 hrs** |
-| **3:00 - 5:00 PM** | 🎯 **IELTS prep** (when the time comes) | **2 hrs** |
-| 5:00 onwards | **REST. Recharge. Social.** | — |
+| 5:00 AM | Wake up | 10 min |
+| 5:30–6:30 AM | **GYM** | 1 hour |
+| 6:30–7:30 AM | Shower, breakfast | 1 hour |
+| **7:30–10:30 AM** | **EMBEDDED PROJECTS — hands-on** | **3 hours** |
+| 10:30 AM–12:00 PM | Rest, lunch | 1.5 hours |
+| **12:00–2:00 PM** | **GERMAN REVIEW + ANKI BULK** | **2 hours** |
+| **2:00–4:00 PM** | **IELTS PREP** (from Apr 2027 onwards — use for project work before that) | **2 hours** |
+| 4:00 PM onwards | REST. Recharge. Social. | — |
 
-**Sunday total: ~7 hours study**
+**Sunday total active study: 7 hours**
 
-## 📊 WEEKLY STUDY HOURS TOTAL (HONEST NUMBERS)
+---
 
-| Day | Active Study | Passive Audio | Notes |
+## WEEKLY STUDY HOURS TOTAL (HONEST NUMBERS)
+
+| Source | Hours/Week | Type |
+|:---|:---|:---|
+| Weekday pre-gym reading (5 × 25 min) | 2.1 hrs | Active reading |
+| Weekday bed reading (5 × 30 min) | 2.5 hrs | Active reading |
+| Weekday Anki lunch (5 × 15 min) | 1.25 hrs | Active flashcards |
+| Weekday German audio commute | 17.5 hrs | Passive listening |
+| Saturday coding + German | 9.5 hrs | Active coding + studying |
+| Sunday coding + German | 7 hrs | Active coding + studying |
+| **TOTAL ACTIVE (reading + coding + Anki)** | **~22 hrs** | |
+| **+ PASSIVE AUDIO (commute)** | **~17.5 hrs** | Bonus |
+
+> At 70% consistency: ~15 hrs/week active + ~12 hrs passive. Over 28 months (~120 weeks): ~1,800 active hours + ~1,440 passive hours. Sufficient for German B2 + IELTS + embedded skills mastery.
+
+> **Difference from original plan**: Original had 1.5 hrs/day coding in morning block. New plan has 0 weekday coding — all coding on weekends. This reduces weekday active CODING to zero but keeps reading/theory alive. Weekend sessions become the sole coding time — which is fine because weekends give 9.5 + 7 = 16.5 hrs of uninterrupted deep work.
+
+---
+
+## WEEKDAY THEORY READING ROTATION
+
+| Day | Pre-Gym Reading (5:00–5:25 AM) | Bed Reading (9:30–10:00 PM) |
+|:---|:---|:---|
+| **Monday** | K.N. King — current chapter | K&R — same topic, expert view |
+| **Tuesday** | Mastering STM32 — preview Phase 2 material | K.N. King — review previous day |
+| **Wednesday** | German grammar notes / Nicos Weg lesson offline | K&R — C reference |
+| **Thursday** | K.N. King — next chapter | Mastering STM32 — hardware concepts |
+| **Friday** | Review + re-read hardest concept of the week | K&R or "Making Embedded Systems" |
+
+> The goal is simple: by the time you sit down to code on Saturday, you have ALREADY read the theory 5 times during the week. Saturday coding sessions become execution of what you already understand.
+
+---
+
+## AI & AUTOMATION — WHERE TO USE AI
+
+### German Language (biggest AI advantage)
+
+| Task | AI Tool | How |
+|:---|:---|:---|
+| Conversation practice | ChatGPT Voice / Gemini Live | "Act as a German friend, speak at A2 level, correct my mistakes" |
+| Grammar explanation | Claude / ChatGPT | "Explain German Akkusativ vs Dativ with examples" |
+| Flashcard generation | ChatGPT → Anki CSV export | "Generate 20 Anki cards for German A2 food vocabulary in CSV format" |
+| Writing correction | Claude / ChatGPT | Paste German writing, ask for correction + explanation |
+| Pronunciation | Google Translate voice | Listen and repeat |
+| Commute audio | DW Nicos Weg app (offline) | Download episodes before leaving home |
+
+### IELTS Preparation
+
+| Task | AI Tool | How |
+|:---|:---|:---|
+| Writing Task 1 & 2 | Claude / ChatGPT | "Score my IELTS essay and give band-level feedback" |
+| Speaking practice | ChatGPT Voice | "Act as IELTS examiner, ask Part 2 cue card questions" |
+| Vocabulary building | Anki + AI generation | Generate topic-wise IELTS vocab flashcards |
+
+### Embedded Systems (within AI policy for current phase)
+
+| Task | AI Tool | How | AI Policy |
 |:---|:---|:---|:---|
-| Mon-Fri (avg) | 5 × 1.5 = **7.5 hrs** | 5 × 3.5 = 17.5 hrs | Morning blocks only |
-| Saturday | **9.5 hrs** | — | Power study day |
-| Sunday | **7 hrs** | — | Balanced day |
-| **WEEKLY ACTIVE** | **~24 hrs** | ~17.5 hrs passive | |
-
-> At 70% consistency, that's **~17 hrs/week active + 12 hrs passive**. Over 28 months (~120 weeks), that's **~2,040 active hours + ~1,440 passive hours**. This is enough for German B2 + IELTS + Embedded skills.
-
-> [!IMPORTANT]
-> The old estimate of "41.5 hrs/week" counted passive commute audio as study time AND assumed evening coding blocks that don't work in practice. **24 hrs/week active is the honest number.** Plan accordingly.
+| Concept explanation | Claude / ChatGPT | "Explain I2C protocol timing in simple terms" | Always allowed |
+| Code review (Phase 3+) | Claude | Paste your C code, ask for review | Phase 3+ only |
+| Boilerplate generation (Phase 3+) | Copilot / Claude | Generate, then YOU explain every line | Phase 3+ only |
+| Project ideas | ChatGPT | "Give me 5 STM32 project ideas at intermediate level" | Always allowed |
+| Interview prep | ChatGPT | "Ask me embedded interview questions one by one" | Always allowed |
 
 ---
 
-## 🤖 AI & AUTOMATION — WHERE TO USE AI
+## PROGRESS TRACKING
 
-### 1. German Language (BIGGEST AI advantage)
-| Task | AI Tool | How |
-|:---|:---|:---|
-| **Conversation practice** | ChatGPT Voice / Gemini Live | "Act as a German friend, speak at A2 level, correct my mistakes" |
-| **Grammar explanation** | Claude / ChatGPT | "Explain German Akkusativ vs Dativ with examples" |
-| **Flashcard generation** | ChatGPT → Anki export | "Generate 20 Anki cards for German A2 food vocabulary in CSV format" |
-| **Writing correction** | ChatGPT / Claude | Paste your German writing, ask for correction + explanation |
-| **Pronunciation** | Google Translate voice | Listen and repeat |
-| **Translate commute audio** | Download DW podcasts offline | Listen during commute |
-
-### 2. IELTS Preparation
-| Task | AI Tool | How |
-|:---|:---|:---|
-| **Writing Task 1 & 2** | ChatGPT / Claude | "Score my IELTS essay and give band-level feedback" |
-| **Speaking practice** | ChatGPT Voice | "Act as IELTS examiner, ask part 2 cue card questions" |
-| **Reading comprehension** | ChatGPT | "Generate an IELTS-style reading passage with questions" |
-| **Vocabulary building** | Anki + AI generation | Generate topic-wise IELTS vocab flashcards |
-
-### 3. Embedded Systems Learning
-| Task | AI Tool | How |
-|:---|:---|:---|
-| **Concept explanation** | ChatGPT / Claude / Gemini | "Explain I2C protocol with timing diagram in simple terms" |
-| **Code review** | Claude / Gemini | Paste your C code, ask for review and improvement |
-| **Debug help** | ChatGPT with error logs | Paste compiler errors, get solutions |
-| **Project ideas** | ChatGPT | "Give me 5 STM32 project ideas at intermediate level" |
-| **Interview prep** | ChatGPT | "Ask me embedded systems interview questions one by one" |
-
-### 4. Application Documents
-| Task | AI Tool | How |
-|:---|:---|:---|
-| **Motivation letter draft** | Claude (best for writing) | "Help me write a motivation letter for M.Eng Embedded Systems at FH Dortmund" |
-| **CV formatting** | ChatGPT | "Convert my details into Europass CV format" |
-| **SOP review** | Claude | Paste SOP, ask for improvement suggestions |
-
-### 5. Life Automation
-| Task | Tool | How |
-|:---|:---|:---|
-| **Schedule reminders** | Google Calendar | Set recurring study blocks with notifications |
-| **Habit tracking** | PROGRESS.md (this repo) | Weekly review Sundays at 4 PM — the ONE tracking tool |
-| **Deadline tracking** | Google Sheets / `07_MONTHLY_TIMELINE.md` | All university deadlines tracked in the roadmap |
-| **Document checklist** | This STUDY folder | Keep all docs organized digitally |
-
----
-
-## 🧠 ALTERNATING STUDY PATTERN (Mon-Fri)
-
-To avoid burnout, alternate focus areas:
-
-> ⚠️ **Note**: Evening blocks were removed from the corrected schedule (you're too exhausted after 14-hr work+commute days). The evening column below is **aspirational/optional** — only do it if you genuinely have energy. The morning block is what counts.
-
-| Day | Morning (5:10-6:30 AM) | Evening (optional, if energy) |
-|:---|:---|:---|
-| **Monday** | 🇩🇪 German grammar | 💻 Embedded theory |
-| **Tuesday** | 💻 Embedded coding | 🇩🇪 German writing |
-| **Wednesday** | 🇩🇪 German (Nicos Weg) | 💻 Embedded project |
-| **Thursday** | 💻 Embedded theory | 🇩🇪 German (AI conversation) |
-| **Friday** | 🇩🇪 German review | 💻 Embedded review |
-
-**Commute audio (every day)**: German podcast/lesson
-
-This way you get ~3-4 sessions each of German + Embedded per week on weekdays, plus heavy weekend sessions.
+- **ONE tool only**: `PROGRESS.md` in this repo
+- Update every **Sunday at 4:00 PM** during weekly review
+- No Notion, no Habitica, no multiple systems — just this file + Anki streaks
+- If adherence drops below 50% for 2 consecutive weeks → trigger Recovery Protocol (see `00_MASTER_ROADMAP.md`)

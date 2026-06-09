@@ -1,4 +1,11 @@
-# 📅 WEEK 3 — May 12-18 (Tue-Mon): POINTERS ⚠️ MOST IMPORTANT WEEK
+# ARCHIVED — MAY WEEK 3 (NOT STARTED — See June 2026 files for actual Phase 1 Week 3)
+
+> **ARCHIVE NOTE**: This week was never executed. Real start = June 9, 2026. See `11C_JUNE_WEEK3.md`.
+> Content below is reference material for Phase 1 Week 3 topics (Pointers).
+
+---
+
+# WEEK 3 — May 12-18 (Tue-Mon): POINTERS — MOST IMPORTANT WEEK [REFERENCE ONLY]
 
 > **Topics**: Addresses, dereferencing, pointer arithmetic, pass-by-reference, arrays & pointers, malloc/free, double pointers, function pointers
 > **K.N. King Chapters**: Ch 11-13, 17 (Pointers, Pointers and Arrays, Strings, Advanced Uses of Pointers)

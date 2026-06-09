@@ -1,4 +1,11 @@
-# 📅 WEEK 2 — May 5-11 (Tue-Mon): FUNCTIONS DEEP + ARRAYS + STRINGS
+# ARCHIVED — MAY WEEK 2 (NOT STARTED — See June 2026 files for actual Phase 1 Week 2)
+
+> **ARCHIVE NOTE**: This week was never executed. Real start = June 9, 2026. See `11B_JUNE_WEEK2.md`.
+> Content below is reference material for Phase 1 Week 2 topics.
+
+---
+
+# WEEK 2 — May 5-11 (Tue-Mon): FUNCTIONS DEEP + ARRAYS + STRINGS [REFERENCE ONLY]
 
 > **Topics**: Multi-file programs, arrays (1D, 2D), sorting algorithms, string manipulation, C standard library
 > **K.N. King Chapters**: Ch 6-10 (Loops, Basic Types, Arrays, Functions, Program Organization)

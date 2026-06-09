@@ -1,354 +1,401 @@
-# 📅 WEEK 2 — Jul 6-12 (Mon-Sun): GPIO DEEP — ALL MODES + ALTERNATE FUNCTIONS
+# JULY WEEK 2 (Jul 7–13) — Phase 1 Week 5: SPECIAL C TOPICS
 
-> **Topics**: GPIO output modes (push-pull, open-drain), input modes (floating, pull-up, pull-down), alternate function, GPIO speed, multiple LEDs/buttons, LED patterns
-> **FastBit MCU1**: GPIO sections (all of them — HAL + register)
-> **"Mastering STM32" Book**: Chapter 4 (GPIO Management)
-> **Reference Manual**: RM0383 Section 8 (GPIO) — complete mastery
-> **Programs on hardware**: 5-7
-> **German**: Nicos Weg A2 Lessons 4-8
-
----
-
-## DAY 6 — Monday, Jul 6
-
-### 🔶 Morning Block (5:10 - 6:30 AM) — GPIO OUTPUT MODES
-
-#### 📺 WATCH (15 min)
-**FastBit MCU1**: GPIO output types — push-pull vs open-drain
-
-#### 💻 CODE (1h)
-
-**Exercise 1 — Push-pull vs Open-drain (5:25-5:55):**
-
-Create `05_gpio_output_modes`:
-```c
-// Push-pull: drives HIGH and LOW (default for LEDs)
-// Pin can source AND sink current
-
-// Open-drain: only drives LOW, floats for HIGH
-// Needs external pull-up resistor for HIGH
-// Used for: I2C (SDA/SCL), driving loads with different voltage
-```
-
-Configure two pins: one push-pull, one open-drain.
-- Push-pull pin drives LED directly
-- Open-drain pin: connect external 10K pull-up to 3.3V, then LED
-
-Observe with multimeter: measure voltage on each pin in HIGH and LOW states.
-
-**Exercise 2 — GPIO speed settings (5:55-6:15):**
-
-Configure same pin at different speeds:
-- Low speed → measure rise time on logic analyzer
-- Very High speed → measure rise time
-
-> **On STM32, higher speed = faster edge transitions = more EMI noise.** Only use High/Very High for fast protocols (SPI at 10+ MHz). Use Low for LEDs.
-
-Register deep dive: `OSPEEDR` bits per pin:
-```
-00 = Low speed
-01 = Medium speed
-10 = Fast speed
-11 = High speed
-```
-
-### ✅ Day 6 Checklist
-- [ ] Push-pull vs open-drain: can explain the difference + when to use each
-- [ ] Measured voltage with multimeter on both output types
-- [ ] Understand GPIO speed settings and EMI implications
-- [ ] Drew output stage diagram on paper (PMOS + NMOS for push-pull)
+> **Topics**: volatile, const, extern, static, enum, typedef, preprocessor (#define, #ifdef, macros), file I/O (fopen/fclose/fread/fwrite/fgets/fprintf)
+> **K.N. King Reading**: Ch 14 (Preprocessor), Ch 20 (Low-Level — volatile/const), Ch 22 (Input/Output)
+> **K&R Bed Reading**: Chapter 7 (Input and Output)
+> **FastBit Embedded C**: Watch the volatile + const + extern sections on Saturday warmup
+> **AI Policy**: BANNED for code — AI may only explain concepts
+> **Dates**: Tuesday July 7 → Monday July 13, 2026
 
 ---
 
-## DAY 7 — Tuesday, Jul 7
+## WEEKDAY READING SCHEDULE (Jul 7–11)
 
-### 🔶 Morning Block (5:10 - 6:30 AM) — GPIO INPUT DEEP
+### Tuesday July 7 — Pre-Gym (5:00–5:25 AM)
+**Read**: K.N. King Chapter 14 (Preprocessor — pages 1–20)
+- `#define` for constants: `#define PI 3.14159265` — NOT a variable, replaced by text
+- `#define` for macros with arguments: `#define SQUARE(x) ((x)*(x))` — parentheses critical
+- Why `SQUARE(x+1)` expands to `((x+1)*(x+1))` but `SQUARE(x+1)` without parens would break
+- `#include` system headers `<file.h>` vs user headers `"file.h"` — what the difference means
+- Include guards: `#ifndef MYHEADER_H` — prevents double-inclusion
 
-#### 💻 CODE (1h 20m)
+**Bed Reading (9:30–10:00 PM)**: K&R Chapter 7 pages 151–165 (Standard Input/Output)
 
-**Exercise 1 — All input modes (5:10-5:50):**
+### Wednesday July 8 — Pre-Gym (5:00–5:25 AM)
+**Read**: K.N. King Chapter 14 (Preprocessor — pages 20–end)
+- Conditional compilation: `#ifdef DEBUG`, `#ifndef NDEBUG`, `#if`, `#else`, `#endif`
+- `#ifdef` for platform-specific code: different paths for Windows vs Linux
+- `#pragma once` — modern alternative to include guards (NOT in K&R-style C, but widely used)
+- Predefined macros: `__FILE__`, `__LINE__`, `__DATE__`, `__TIME__` — useful for debugging
+- `#error` directive: compile-time assertion
 
-Create `06_gpio_input_modes`:
+**Bed Reading**: K&R Chapter 7 pages 165–180
+
+### Thursday July 9 — Pre-Gym (5:00–5:25 AM)
+**Read**: K.N. King Chapter 20 (Low-Level — volatile and const sections)
+- `volatile`: tells compiler "this variable can change without your knowledge" — do NOT optimize it away
+  - Example: `volatile uint32_t *STATUS_REG = (uint32_t *)0x40020010;`
+  - Without volatile: compiler may cache the value in a register — misses hardware changes
+  - With volatile: compiler re-reads from memory every time (critical for hardware registers + ISR variables)
+- `const`: tells compiler "do not allow modification"
+  - `const int *p` — pointer to const int (can't change `*p`)
+  - `int *const p` — const pointer to int (can't change `p` itself, but can change `*p`)
+  - `const int *const p` — both pointer and value are const
+- `extern`: declares a variable/function defined in another file
+  - `extern int g_counter;` in a .h file tells the compiler "this exists somewhere else"
+  - `int g_counter = 0;` in one .c file is the actual definition
+
+**Bed Reading**: K&R Chapter 7 pages 180–195
+
+### Friday July 10 — Pre-Gym (5:00–5:25 AM)
+**Read**: K.N. King Chapter 22 (Input/Output — pages 1–25)
+- `fopen(filename, mode)`: modes "r", "w", "a", "rb", "wb" — what each does
+- ALWAYS check: `if (fp == NULL) { perror("fopen"); exit(1); }`
+- `fclose(fp)`: MUST be called or data may not be flushed to disk
+- `fprintf(fp, ...)`: same as printf but writes to file
+- `fscanf(fp, ...)`: same as scanf but reads from file
+- `fgets(buf, n, fp)`: safe line reading — reads up to n-1 chars, adds '\0'
+- `feof(fp)` vs `ferror(fp)`: checking end-of-file vs errors
+
+**Bed Reading**: K&R Chapter 7 pages 195–210 (File Access, Error Handling)
+
+### Monday July 13 — Pre-Gym (5:00–5:25 AM)
+**Read**: K.N. King Chapter 22 (Input/Output — pages 25–end)
+- Binary vs text mode: `"rb"` vs `"r"` — on Windows these differ (line endings!)
+- `fread(buf, size, count, fp)` and `fwrite(buf, size, count, fp)` — binary I/O
+- `fseek(fp, offset, SEEK_SET/SEEK_CUR/SEEK_END)` and `ftell(fp)`: file position
+- `rewind(fp)`: reset to beginning of file
+- Buffering: why data isn't written immediately, how to force flush with `fflush(fp)`
+
+**Bed Reading**: K&R Chapter 7 — re-read the sections you found hard
+
+---
+
+## SATURDAY JULY 11 — SPECIAL TOPICS CODING (7:30 AM–6:30 PM)
+
+### Warmup (7:30–8:00 AM): FastBit Embedded C Videos
+Watch specific sections at 1.5× (search in the Udemy course):
+- Section on `volatile` and why it matters in embedded (~10 min)
+- Section on `const` with pointers in embedded (~8 min)
+
+### BLOCK 1 (8:00–9:30 AM): Preprocessor + Conditional Compilation
+Write ALL from scratch. NO AI code.
+
+```
+week5/
+├── macros_demo.c       — Function-like macros, debug macros, stringify
+├── config.h            — Conditional compilation for debug/release builds
+└── platform.c          — Platform-specific code using #ifdef
+```
+
+**macros_demo.c** requirements:
 ```c
-// Configure multiple input pins with different settings:
-// PA0: Floating input (no pull — for external switch with external pull-up)
-// PA1: Internal pull-up (for button connected to GND)
-// PA4: Internal pull-down (for button connected to VCC)
+// Utility macros:
+#define MIN(a, b)          ((a) < (b) ? (a) : (b))
+#define MAX(a, b)          ((a) > (b) ? (a) : (b))
+#define CLAMP(x, lo, hi)   ((x) < (lo) ? (lo) : (x) > (hi) ? (hi) : (x))
+#define ABS(x)             ((x) < 0 ? -(x) : (x))
+#define ARRAY_SIZE(arr)    (sizeof(arr) / sizeof((arr)[0]))
+
+// Debug macro (prints file + line + message only in debug mode):
+#ifdef DEBUG
+#define DBG(fmt, ...) fprintf(stderr, "[%s:%d] " fmt "\n", __FILE__, __LINE__, ##__VA_ARGS__)
+#else
+#define DBG(fmt, ...) /* nothing — compiled out in release */
+#endif
+
+// Test all macros with various values
+// Compile twice: once with -DDEBUG (debug mode) and once without
 ```
 
-Wire 3 buttons:
-- Button 1: PA0 → GND, external 10K pull-up to 3.3V
-- Button 2: PA1 → GND (internal pull-up enabled)
-- Button 3: PA4 → 3.3V (internal pull-down enabled)
-
-Read all 3 and display on UART (or toggle different LEDs).
-
-**What to understand**: Internal pull-up/down saves external components. This is configured via `PUPDR` register:
-```
-00 = No pull-up, no pull-down
-01 = Pull-up
-10 = Pull-down
-11 = Reserved
-```
-
-**Exercise 2 — Software debouncing (5:50-6:20):**
-
+**config.h** requirements:
 ```c
-// Simple debounce: read twice with delay
-uint8_t debounce_read(GPIO_TypeDef *port, uint16_t pin) {
-    if (port->IDR & pin) {
-        HAL_Delay(50);
-        if (port->IDR & pin) {
-            return 1;
+// Hardware configuration that changes between boards
+#ifndef CONFIG_H
+#define CONFIG_H
+
+#define BOARD_BLACK_PILL   1
+#define BOARD_NUCLEO       2
+
+// Set your current board:
+#define CURRENT_BOARD      BOARD_BLACK_PILL
+
+// Conditional pin assignments:
+#if (CURRENT_BOARD == BOARD_BLACK_PILL)
+    #define LED_PIN    13   // PC13 on Black Pill
+    #define UART_TX    2    // PA2 (USART2)
+    #define CPU_FREQ   84000000UL
+#elif (CURRENT_BOARD == BOARD_NUCLEO)
+    #define LED_PIN    5    // PA5 on Nucleo
+    #define UART_TX    2    // PA2 (USART2)
+    #define CPU_FREQ   80000000UL
+#else
+    #error "Unknown board selected"
+#endif
+
+#endif
+```
+
+Write a `config_test.c` that `#include "config.h"` and prints the LED_PIN and CPU_FREQ values. Verify it changes when you change CURRENT_BOARD.
+
+### BREAK (9:30–9:45)
+
+### BLOCK 2 (9:45–11:15 AM): volatile + const + extern in Practice
+```
+week5/
+├── volatile_demo.c     — Simulate ISR variable, show why volatile matters
+├── const_demo.c        — All 4 const-pointer combinations + const structs
+└── extern_demo/        — Multi-file extern variable example
+    ├── counter.h        — extern declaration
+    ├── counter.c        — actual definition
+    └── extern_main.c   — uses the counter
+```
+
+**volatile_demo.c** — simulate an interrupt-driven flag:
+```c
+#include <stdio.h>
+#include <signal.h>   // for signal() to simulate an interrupt
+
+volatile int timer_fired = 0;   // volatile because set by "interrupt" (signal handler)
+
+void timer_isr(int sig) {
+    timer_fired = 1;            // simulated interrupt: sets flag
+    (void)sig;
+}
+
+int main(void) {
+    signal(SIGALRM, timer_isr); // register signal handler (simulates NVIC in STM32)
+
+    // Simulate a periodic timer firing
+    for (int i = 0; i < 5; i++) {
+        timer_fired = 0;
+        raise(SIGALRM);         // fire the "interrupt"
+
+        if (timer_fired) {
+            printf("Timer fired! Processing...\n");
         }
     }
     return 0;
 }
 ```
 
-Better: state machine debouncer (use your June state machine pattern!):
+In comments: explain WHY timer_fired must be volatile. What would happen if it were not volatile? (Compiler might optimize the `if (timer_fired)` check away since it "knows" no code between the check and the assignment modifies it.)
+
+**extern_demo/** — three-file project:
 ```c
-typedef enum { IDLE, PRESSED_WAIT, PRESSED, RELEASED_WAIT } ButtonState;
-```
+// counter.h
+#ifndef COUNTER_H
+#define COUNTER_H
+extern int g_event_count;  // declaration — tells compiler "this exists somewhere"
+void increment_counter(void);
+void reset_counter(void);
+int  get_count(void);
+#endif
 
-### ✅ Day 7 Checklist
-- [ ] All 3 input modes tested (floating, pull-up, pull-down)
-- [ ] PUPDR register understood — drew on paper
-- [ ] Debouncing implemented (simple + state machine)
-- [ ] Can explain: why does a button bounce? How does debouncing fix it?
+// counter.c
+#include "counter.h"
+int g_event_count = 0;     // definition — actual memory allocation
+void increment_counter(void) { g_event_count++; }
+void reset_counter(void)     { g_event_count = 0; }
+int  get_count(void)         { return g_event_count; }
 
----
-
-## DAY 8 — Wednesday, Jul 8
-
-### 🔶 Morning Block (5:10 - 6:30 AM) — ALTERNATE FUNCTION (AF)
-
-#### 📺 WATCH (15 min)
-**FastBit MCU1**: Alternate function section
-
-#### 💻 CODE (1h)
-
-**Concept**: Every GPIO pin can do multiple things. For example, PA2 can be:
-- Regular GPIO (input or output)
-- USART2_TX (alternate function 7)
-- TIM5_CH3 (alternate function 2)
-- etc.
-
-The AF is selected via `GPIOA->AFR[0]` (pins 0-7) and `GPIOA->AFR[1]` (pins 8-15).
-Each pin gets 4 bits to select AF0-AF15.
-
-**Exercise — Find alternate functions in datasheet:**
-
-Open **DS10314** (STM32F411 Datasheet) → Table 9: "Alternate function mapping"
-
-For USART2 on your Black Pill, find:
-- PA2 = USART2_TX → AF7
-- PA3 = USART2_RX → AF7
-
-**This is prep for next week's UART.** You don't need to code UART yet, just understand HOW alternate functions work:
-
-```c
-// To configure PA2 as USART2_TX (AF7):
-
-// 1. Set MODER to Alternate Function (10)
-GPIOA->MODER &= ~(3U << 4);   // Clear bits [5:4] for PA2
-GPIOA->MODER |=  (2U << 4);   // Set to AF mode (10)
-
-// 2. Set AF7 in AFR[0] for pin 2 (bits [11:8])
-GPIOA->AFR[0] &= ~(0xFU << 8);  // Clear AF bits for PA2
-GPIOA->AFR[0] |=  (7U << 8);    // Set AF7 (USART2)
-```
-
-### ✅ Day 8 Checklist
-- [ ] Understand alternate function concept — pins are multipurpose
-- [ ] Found USART2 AF mapping in datasheet (PA2=TX, PA3=RX, AF7)
-- [ ] Wrote AF configuration code for PA2/PA3 (register level)
-- [ ] Can explain: MODER = AF mode, AFR selects which alternate function
-
----
-
-## DAY 9 — Thursday, Jul 9
-
-### 🔶 Morning Block (5:10 - 6:30 AM) — CLOCK SYSTEM (RCC) INTRO
-
-#### 📺 WATCH (20 min)
-**FastBit MCU1**: RCC section — clock tree overview
-
-#### 💻 STUDY (1h)
-
-**The STM32F411 clock tree** (RM0383 Section 6: RCC):
-
-```
-                    HSI (16 MHz internal RC)
-                    HSE (8-25 MHz external crystal)
-                         ↓
-                    ┌─────────┐
-                    │   PLL   │ → SYSCLK (up to 100 MHz for STM32F411)
-                    └─────────┘
-                         ↓
-                    ┌─────────┐
-                    │   AHB   │ → HCLK (CPU, DMA, memory)
-                    └────┬────┘
-                    ┌────┴────┐
-                ┌───┤         ├───┐
-            ┌───┴───┐     ┌───┴───┐
-            │ APB1  │     │ APB2  │
-            │ ≤50MHz│     │≤100MHz│
-            └───────┘     └───────┘
-            USART2,3      USART1,6
-            I2C1,2,3      SPI1,4
-            SPI2,3        TIM1,9-11
-            TIM2-5        ADC1
-            etc.          etc.
-```
-
-**KEY**: Before using ANY peripheral, you MUST enable its clock via RCC:
-```c
-RCC->AHB1ENR |= RCC_AHB1ENR_GPIOAEN;    // Enable GPIOA clock
-RCC->APB1ENR |= RCC_APB1ENR_USART2EN;    // Enable USART2 clock
-RCC->APB2ENR |= RCC_APB2ENR_ADC1EN;      // Enable ADC1 clock
-```
-
-**If you forget this → the peripheral simply doesn't respond. Most common STM32 beginner mistake.**
-
-**Exercise**: Draw the complete clock tree on paper. Label:
-- HSI frequency
-- SYSCLK after PLL
-- AHB prescaler value
-- APB1 and APB2 frequencies
-- Which bus each peripheral is on
-
-### ✅ Day 9 Checklist
-- [ ] Clock tree diagram drawn on paper
-- [ ] Know: HSI = 16 MHz, max SYSCLK = 100 MHz (F411)
-- [ ] Know: APB1 ≤ 50 MHz, APB2 ≤ 100 MHz
-- [ ] Know: MUST enable peripheral clock before using it (RCC->xxxENR)
-- [ ] Know which bus USART2 is on (APB1)
-
----
-
-## DAY 10 — Friday, Jul 10
-
-### 🔶 Morning Block (5:10 - 6:30 AM) — LED PATTERNS + COMBINE EVERYTHING
-
-#### 💻 CODE (1h 20m)
-
-**Exercise 1 — LED chaser (5:10-5:40):**
-
-Create `07_led_chaser`:
-- Wire 4 LEDs to PA0, PA1, PA4, PA5 (avoid PA2/PA3 — reserved for UART)
-- Create a "Knight Rider" pattern: LEDs light up one at a time, sweeping back and forth
-- Use register-level GPIO, not HAL
-
-```c
-uint16_t led_pins[] = {0, 1, 4, 5};  // Pin numbers
-
-void led_on(uint8_t pin_num) {
-    GPIOA->BSRR = (1U << pin_num);
-}
-
-void led_off(uint8_t pin_num) {
-    GPIOA->BSRR = (1U << (pin_num + 16));
+// extern_main.c — uses counter module
+#include <stdio.h>
+#include "counter.h"
+int main(void) {
+    increment_counter();
+    increment_counter();
+    increment_counter();
+    printf("Count: %d\n", get_count());  // Expected: 3
+    reset_counter();
+    printf("After reset: %d\n", get_count());  // Expected: 0
+    return 0;
 }
 ```
+Compile: `gcc -Wall -Wextra -g -std=c99 counter.c extern_main.c -o extern_demo`
 
-**Exercise 2 — Button-controlled LED brightness (crude PWM) (5:40-6:10):**
+### BREAK (11:15–11:30)
 
-Toggle LED very fast with variable on/off ratio:
-```c
-// Crude PWM using software delays
-void crude_pwm(uint16_t on_time, uint16_t off_time) {
-    GPIOC->BSRR = (1U << 13);       // LED OFF (active low)
-    for (volatile int i = 0; i < off_time; i++);
-    GPIOC->BSRR = (1U << (13+16));  // LED ON
-    for (volatile int i = 0; i < on_time; i++);
-}
+### BLOCK 3 (11:30 AM–12:30 PM): File I/O Programs
+```
+week5/
+├── file_write.c        — Write data to a text file (names + scores)
+├── file_read.c         — Read and process the file written above
+└── binary_io.c         — fwrite/fread struct array to binary file
 ```
 
-Button press increases brightness (longer on_time). This previews PWM — you'll do it properly with timers in August.
+**file_write.c** requirements:
+- Create `scores.txt` with `fprintf`
+- Write format: `name,score\n` for 5 students (hard-coded)
+- Print confirmation: "Written 5 records to scores.txt"
+- ALWAYS check fopen return. ALWAYS call fclose.
 
-### ✅ Day 10 Checklist
-- [ ] 4-LED chaser working (register-level)
-- [ ] Crude software PWM for LED dimming
-- [ ] All pins configured without HAL
-- [ ] Can set up any GPIO pin for any mode from memory
+**file_read.c** requirements:
+- Open `scores.txt` with `"r"` mode
+- Read line by line with `fgets`
+- Parse each line: split on comma, extract name and score (use `sscanf`)
+- Calculate and print: average score, highest score + student name
+- Handle missing file gracefully (if fopen returns NULL, print error + exit)
 
----
+**binary_io.c** requirements:
+```c
+typedef struct { char name[20]; int score; } Record;
 
-## DAY 11 — Saturday, Jul 11 (DEEP STUDY DAY)
+// Write 5 Record structs to binary file "scores.bin" using fwrite
+// Read them back using fread into a new array
+// Verify: print both arrays, they should be identical
+// Also: use fseek + ftell to get file size (should be 5 * sizeof(Record))
+```
 
-### 💻 Deep Sessions (6:30 AM - 12:45 PM)
+### LUNCH (12:30–1:30 PM)
 
-**Session 1 (6:30-7:30)**: FastBit MCU1 — GPIO exercises and quizzes
-- Complete ALL FastBit GPIO exercises
-- Take the section quiz
+### GERMAN BLOCK 1 (1:30–4:30 PM)
+- Nicos Weg Lessons 30–31 (reaching Lesson 30 milestone!)
+- Learn modal verbs: können (can), müssen (must), wollen (want to)
+- Write 10 sentences: "Ich kann Deutsch lernen. Ich muss arbeiten. Ich will nach Deutschland gehen."
+- Anki: add 15 new cards
 
-**Session 2 (7:45-9:15)**: Register map exercise
-- Open RM0383 Section 8.4 (GPIO register descriptions)
-- For EACH register (MODER, OTYPER, OSPEEDR, PUPDR, IDR, ODR, BSRR, LCKR, AFR):
-  - Draw the bit layout
-  - Write the reset value
-  - Write a 1-line C example setting specific bits
-
-**Session 3 (9:30-11:00)**: "Mastering STM32" Chapter 4 exercises
-- Read ALL of Chapter 4 (GPIO Management)
-- Do every exercise in the chapter
-- Compare HAL functions to your register implementations
-
-**Session 4 (11:15-12:45)**: Interview prep
-Write answers for:
-1. "What is the difference between push-pull and open-drain?"
-2. "Why does STM32 need RCC clock enable before using a peripheral?"
-3. "What is an alternate function? How do you configure it?"
-4. "What is the BSRR register and why is it better than writing to ODR?"
-5. "Draw the STM32F411 memory map from memory."
-
-### 🇩🇪 German (2:00-5:00 PM)
-- Nicos Weg A2 Lessons 5-7
-- Modal verbs practice: "Ich kann programmieren. Ich muss lernen."
-- Anki: 165+ cards total
-
-### ✅ Day 11 Checklist
-- [ ] All FastBit GPIO exercises done
-- [ ] All 9 GPIO registers drawn on paper with bit layouts
-- [ ] "Mastering STM32" Ch 4 read completely
-- [ ] 5 interview answers written
+### GERMAN BLOCK 2 (5:00–6:30 PM)
+- Nicos Weg Lessons 32–33
+- AnkiDroid: review ALL pending cards
+- Write from memory: introduce yourself AND explain what you're studying and why (in German)
 
 ---
 
-## DAY 12 — Sunday, Jul 12 (REVIEW + GIT)
+## SUNDAY JULY 12 — FILE I/O DEEP + ENUM + GIT (7:30 AM–4:00 PM)
 
-### 💻 Morning (7:30 AM - 12:30 PM)
+### BLOCK 1 (7:30–9:00 AM): Enum + Static
+Watch: Neso Academy "Enumeration in C" (~8 min) first.
 
-**7:30-9:00**: From blank project, write register-level code that:
-1. Configures PA5 as output (push-pull, low speed, no pull)
-2. Configures PA0 as input (internal pull-up)
-3. LED follows button: pressed = ON, released = OFF
-4. All done WITHOUT referencing any notes or RM0383
+```
+week5/
+├── enum_demo.c         — Days of week, traffic light, error codes
+└── static_demo.c       — static local variable (persists between calls), static function
+```
 
-Target: complete in < 20 minutes. This is your "GPIO from memory" test.
+**enum_demo.c** requirements:
+```c
+typedef enum { MON=1, TUE, WED, THU, FRI, SAT, SUN } Weekday;
+typedef enum { RED, YELLOW, GREEN } TrafficLight;
+typedef enum { ERR_NONE=0, ERR_OVERFLOW=-1, ERR_NULL=-2, ERR_RANGE=-3 } ErrorCode;
 
-**9:15-10:45**: Read RM0383 Section 6 (RCC) — Clock tree section
-- Focus on PLL configuration (you'll configure SYSCLK to 100 MHz next week)
-- Find USART2 clock source (APB1)
+// Functions to implement:
+const char *weekday_name(Weekday d);     // returns "Monday", "Tuesday", etc.
+const char *light_name(TrafficLight t);  // returns "RED", "YELLOW", "GREEN"
+const char *error_msg(ErrorCode e);      // returns human-readable error message
 
-**11:00-12:30**: Git push all Week 2 projects. Write comprehensive README.
+// Demonstrate: switch/case with enum, compare enum to int,
+// print the numeric value of each enum member
+```
 
-### ✅ Day 12 Checklist
-- [ ] GPIO from memory test: complete in < 20 min
-- [ ] RCC section read — understand PLL, prescalers
-- [ ] All code pushed to GitHub
+**static_demo.c** requirements:
+```c
+// Static local variable — persists between function calls
+int call_counter(void) {
+    static int count = 0;  // initialized only once, persists
+    count++;
+    return count;
+}
+
+// Static function — visible only in this .c file (like "private")
+static void helper_function(void) {
+    printf("I'm a private helper\n");
+}
+
+// Test: call call_counter() 5 times, print result each time (should be 1,2,3,4,5)
+// Show: static local is NOT reset between calls (unlike normal local)
+```
+
+### BLOCK 2 (9:15–10:30 AM): Log File System
+```
+week5/
+├── logger.h        — Logger interface: log_init, log_write, log_close, log_levels
+└── logger.c        — Implementation using file I/O
+```
+
+**logger.h**:
+```c
+#ifndef LOGGER_H
+#define LOGGER_H
+
+typedef enum { LOG_DEBUG, LOG_INFO, LOG_WARNING, LOG_ERROR } LogLevel;
+
+int  log_init(const char *filename);
+void log_write(LogLevel level, const char *message);
+void log_close(void);
+
+#endif
+```
+
+**logger.c** requirements:
+- Use a `static FILE *log_fp = NULL;` (module-private file pointer)
+- `log_init` opens the file; returns -1 on failure
+- `log_write` appends: `[TIMESTAMP][LEVEL] message\n` — use `time()` for timestamp
+- `log_close` closes the file
+- Test from `logger_main.c` — write 10 log entries at different levels
+
+### GIT PUSH (10:30–11:00 AM)
+```bash
+cd ~/C-Practice
+git add week5/
+git commit -m "Week 5: volatile, const, extern, preprocessor macros, file I/O, enum, logger module"
+git push origin main
+```
+
+Write `week5/README.md` — list every file + one-line description.
+
+### REST + LUNCH (11:00 AM–12:00 PM)
+
+### GERMAN (12:00–2:00 PM)
+- Nicos Weg Lessons 34–35
+- Anki mega review (aim for 80+ words total)
+- Write German from memory: what you learned this week and your study plan
+
+### EXTENDED CODING (2:00–4:00 PM): Config + Logger Integration
+Build a `mini_embedded_sim.c` that combines Week 4 and Week 5 skills:
+- `#include "config.h"` — uses board config defines
+- `#include "logger.h"` — uses your logger module
+- `#include "gpio_sim.h"` — uses Week 4 GPIO simulator
+- Simulate: configure GPIO, toggle LED 10 times with 500ms delay, log each state change to file
+- At the end: print "Simulation complete. See sim_log.txt for details."
+
+Compile: `gcc -Wall -Wextra -g -std=c99 gpio_sim.c logger.c mini_embedded_sim.c -o sim`
+Run, then: `cat sim_log.txt` — verify log has 10+ entries.
 
 ---
 
-## 📋 WEEK 2 CHECKPOINT
+## WEEK 5 CHECKPOINT (Monday July 13, 4:00 PM)
 
-- [ ] ✅ All GPIO output modes mastered (push-pull, open-drain)
-- [ ] ✅ All GPIO input modes mastered (floating, pull-up, pull-down)
-- [ ] ✅ Alternate function concept understood — AF register configured
-- [ ] ✅ RCC clock tree drawn from memory — know which bus each peripheral uses
-- [ ] ✅ Software debouncing implemented (simple + state machine)
-- [ ] ✅ Multi-LED patterns working (register-level)
-- [ ] ✅ Can configure ANY GPIO pin for ANY mode from memory in < 5 min
-- [ ] ✅ RM0383 GPIO and RCC sections read
-- [ ] ✅ Nicos Weg A2 lessons 4-8, 165+ Anki cards
+Update PROGRESS.md now. Be honest.
+
+| Checkpoint Item | Done? |
+|:---|:---|
+| volatile: can explain why it's needed for hardware registers and ISR flags | |
+| const: know all 4 pointer-const combinations and when to use each | |
+| extern: multi-file project with extern variable compiles and runs | |
+| Preprocessor macros: MIN, MAX, CLAMP, DEBUG macro written correctly | |
+| Conditional compilation: same code behaves differently with -DDEBUG | |
+| File I/O: can write and read text files (fopen, fprintf, fgets, fclose) | |
+| Binary file I/O: fwrite/fread struct array to binary file | |
+| Logger module: log_init, log_write, log_close — Valgrind clean | |
+| enum used correctly in switch/case | |
+| static local variable: persists between calls | |
+| GitHub: week5 pushed with README | |
+| Nicos Weg: Lessons 30–35 done | |
+| Anki: 80+ German words total | |
+
+**Self-rating (special C topics 1–10)**: ___ (minimum 6 before Week 6)
+
+---
+
+## WEEKDAY THEORY FOCUS (Week 5)
+
+| Day | Read Before Gym | Bed Read |
+|:---|:---|:---|
+| Tue Jul 7 | K.N. King Ch 14 pp. 1–20 | K&R Ch 7 pp. 151–165 |
+| Wed Jul 8 | K.N. King Ch 14 pp. 20–end | K&R Ch 7 pp. 165–180 |
+| Thu Jul 9 | K.N. King Ch 20 (volatile/const) | K&R Ch 7 pp. 180–195 |
+| Fri Jul 10 | K.N. King Ch 22 pp. 1–25 | K&R Ch 7 pp. 195–210 |
+| Mon Jul 13 | K.N. King Ch 22 pp. 25–end | K&R Ch 7 — re-read hard parts |
+
+> volatile is the most important keyword in embedded C. If you don't understand it yet after reading, ask AI to explain ONLY the concept (no code). Then write the volatile_demo.c yourself.

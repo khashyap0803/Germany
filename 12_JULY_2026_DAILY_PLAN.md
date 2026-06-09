@@ -1,215 +1,148 @@
-# 📅 JULY 2026 — MASTER OVERVIEW
+# JULY 2026 — PHASE 1 CONTINUATION (Weeks 4–8)
 
 > **Period**: July 1 (Wednesday) → July 31 (Friday)
-> **Phase**: Jul 1-15: PHASE 1 BUFFER (C catch-up or early STM32 prep) | Jul 16-31: PHASE 2 — STM32 🔧
-> **Month Goal**: GPIO + UART + Clock System on real STM32 hardware (HAL AND register level)
-> **AI Status**: 🔴 **BANNED for code** — AI only explains concepts, YOU write ALL code
-> **Status**: Working at Unistring (9 AM - 7/8 PM, 4hr commute)
->
-> ⚠️ **TIMELINE NOTE**: Phase 1 (C Programming) was extended to Jul 15 to absorb the May wedding disruption.
-> **Jul 1-15**: Use for Phase 1 catch-up if needed, or begin STM32 setup/prep if Phase 1 exit criteria already met.
-> **Jul 16+**: Phase 2 officially starts. All July weekly plans below assume Phase 2 start.
->
-> **⚡ THE SHIFT**: You've spent 11 weeks on pure C (including 2-week wedding buffer). Now that code runs on REAL HARDWARE.
-> Your circular buffer, state machines, and bitwise ops from May-June → you'll use ALL of them on STM32.
->
-> **Primary Course**: FastBit MCU1 "Mastering MCU Driver Development" (28.5h)
-> **Primary Book**: "Mastering STM32" by Carmine Noviello (800+ pages)
-> **Reference Manual**: RM0383 (STM32F411) + RM0351 (STM32L476RG)
-> **Datasheet**: DS10314 (STM32F411xC/E)
->
-> **Hardware for July**:
-> - STM32F411CEU6 (WeAct Black Pill) — PRIMARY development board
-> - Nucleo-L476RG — onboard ST-Link/V2-1 (SWD debugger for BOTH boards)
-> - Robocraze ST-Link V2 (metal shell) — portable backup programmer
-> - Sipeed SLogic — logic analyzer for UART signal verification
-> - Breadboard + LEDs + pushbuttons + 10K resistors + jumper wires
-> - FT232 USB-UART — serial communication to PC
+> **Phase**: Phase 1 — C Programming Foundation (Weeks 4–8 of 11)
+> **Goal**: Structs, bitwise ops, special C topics, Makefiles + GDB, dynamic memory, data structures, state machines
+> **AI Status**: BANNED for code — AI only explains concepts, YOU write ALL code
+> **Real Context**: Working at Unistring (9 AM – 7/8 PM), 4-hr commute, gym 5:30–6:30 AM daily
+> **Last Updated**: June 8, 2026
 
 ---
 
-## ⏰ DAILY TEMPLATES (Modified for Hardware)
+## JULY OVERVIEW
 
-### 🟦 WEEKDAY (Mon-Fri)
+### What happens in July:
+- **Week 4** (Jun 30–Jul 6): Structs + Bitwise operators (carries over from June 30)
+- **Week 5** (Jul 7–13): Special C topics — volatile, const, enum, typedef, file I/O
+- **Week 6** (Jul 14–20): Makefiles + GDB + multi-file projects
+- **Week 7** (Jul 21–27): Dynamic memory + linked lists + queues
+- **Week 8** (Jul 28–Aug 3): State machines + memory layout (starts in July, finishes in August)
 
-| Time | Duration | Activity | Tool |
-|:---|:---|:---|:---|
-| **5:00 AM** | 10 min | Wake up. Water. Wash face. **NO PHONE.** | Alarm |
-| **5:10 - 6:30 AM** | 1h 20m | 🔶 **MORNING BLOCK — STM32 study** | STM32CubeIDE + board + FastBit MCU1 |
-| **6:30 - 7:00 AM** | 30m | Get ready, breakfast | — |
-| **7:00 - 8:30 AM** | 1.5h | 🎧 **COMMUTE IN — German audio** | DW Nicos Weg A2 + AnkiDroid |
-| **12:30 - 12:45 PM** | 15m | 📱 **LUNCH ANKI — German cards** | AnkiDroid |
-| **7:00 - 8:30 PM** | 1.5h | 🎧 **COMMUTE BACK — German audio** | Easy German / DW podcasts |
-| **9:30 - 10:00 PM** | 30m | 📖 **BED READING — "Mastering STM32"** | PDF on tablet/phone |
-| **10:00 PM** | — | **SLEEP. Non-negotiable.** | — |
-
-### 🟩 SATURDAY — 9 hour deep study day
-
-| Time | Duration | Activity |
-|:---|:---|:---|
-| **6:00 AM** | — | Wake up. Coffee/tea. |
-| **6:30 - 7:30 AM** | 1h | 💻 STM32 warmup — review yesterday's code, read reference manual section |
-| **7:45 - 9:15 AM** | 1.5h | 💻 **STM32 Deep Session 1** — HAL implementation |
-| **9:30 - 11:00 AM** | 1.5h | 💻 **STM32 Deep Session 2** — Register-level same feature |
-| **11:15 AM - 12:45 PM** | 1.5h | 💻 **STM32 Deep Session 3** — debugging + exercises |
-| **12:45 - 2:00 PM** | 1.25h | Lunch + rest |
-| **2:00 - 3:30 PM** | 1.5h | 🇩🇪 **German Session 1** — Nicos Weg A2 + writing |
-| **3:45 - 5:00 PM** | 1.25h | 🇩🇪 **German Session 2** — speaking with Google AI |
-| **5:00 PM+** | — | Free. Gym, family, relax. |
-
-### 🟨 SUNDAY — 7 hour study + review day
-
-| Time | Duration | Activity |
-|:---|:---|:---|
-| **7:30 - 9:00 AM** | 1.5h | 💻 STM32 practice — recreate yesterday's project from scratch |
-| **9:15 - 10:45 AM** | 1.5h | 💻 Read Reference Manual — deep dive into current peripheral |
-| **11:00 AM - 12:30 PM** | 1.5h | 💻 Git push + code cleanup + document in README |
-| **2:00 - 3:00 PM** | 1h | 🇩🇪 German review |
-| **3:00 - 4:00 PM** | 1h | 🇩🇪 Anki mega review |
-| **4:00 - 4:30 PM** | 30m | 📋 Weekly review |
+### July exit goal:
+By July 31, you should be able to:
+- Define and use structs in multi-file projects
+- Write bitwise macros: SET_BIT, CLEAR_BIT, TOGGLE_BIT, READ_BIT
+- Build a multi-file project with a Makefile — compile, link, clean
+- Debug a program using GDB: set breakpoints, inspect variables, step through code
+- Write and use malloc/free correctly — Valgrind clean every time
+- Implement singly linked list from memory in under 25 minutes
+- Implement circular buffer from memory in under 15 minutes
+- 80+ German words in Anki, Nicos Weg Lessons 1–30 done
 
 ---
 
-## 📚 BOOKS & RESOURCES FOR JULY
+## DAILY SCHEDULE TEMPLATE (July — same as June)
 
-### Primary Resources
+### Weekday (Mon–Fri)
 
-| Resource | Format | How to Use |
-|:---|:---|:---|
-| **FastBit MCU1 "Mastering MCU Driver Development"** (28.5h) | Udemy | PRIMARY video. Watch section → code along → then re-implement from scratch WITHOUT the video. |
-| **"Mastering STM32" by Carmine Noviello** | PDF/Book | PRIMARY book. Read the relevant chapter BEFORE starting each peripheral. BED READING. |
-| **RM0383 (STM32F411 Reference Manual)** | PDF (1700+ pages) | DEEP REFERENCE. Read the specific peripheral section (GPIO, USART, RCC). Don't read cover-to-cover — use it as a dictionary. |
-| **RM0351 (STM32L476RG Reference Manual)** | PDF | SECONDARY reference for Nucleo board. |
-| **DS10314 (STM32F411 Datasheet)** | PDF | Pin assignments, electrical specs, package info. |
-| **FastBit ARM Cortex-M3/M4** (15h) | Udemy | Watch in Week 1 — ARM architecture, memory map, NVIC, bus architecture. |
-
-### YouTube (Free Supplements)
-
-| Channel | Use For |
+| Time | Activity |
 |:---|:---|
-| **Controllerstech** | STM32 tutorials: GPIO, UART, timers. Clear visual explanations. |
-| **Phil's Lab** | PCB design + STM32 bare-metal. Professional-grade content. |
-| **Fastbit Embedded Brain Academy** (YouTube) | Free previews of the Udemy courses |
-| **Embedded Artistry** | Advanced bare-metal patterns |
+| 5:00–5:25 AM | **PRE-GYM READING** — K.N. King or relevant chapter on tablet |
+| 5:25–5:30 AM | Gym prep |
+| 5:30–6:30 AM | **GYM** |
+| 6:30–7:00 AM | Shower, quick breakfast |
+| 7:00–8:30 AM | **COMMUTE IN** — Nicos Weg German audio |
+| 12:30–12:45 PM | **LUNCH ANKI** — German flashcards |
+| 6:30–8:30 PM | **COMMUTE BACK** — Easy German podcast |
+| 8:30–9:30 PM | Dinner, freshen up |
+| 9:30–10:00 PM | **BED READING** — theory review |
+| 10:00 PM | Sleep |
 
-### Tools
+> All coding, debugging, and program-writing happens on WEEKENDS ONLY.
+> Weekdays = theory reading + German immersion. This is sustainable — accept it.
 
-| Tool | When | Purpose |
-|:---|:---|:---|
-| **STM32CubeIDE** | Every session | IDE: code editor + CubeMX + build + debug |
-| **STM32CubeMX** | Inside CubeIDE | Pin/clock/peripheral configuration GUI → generates init code |
-| **Tera Term / PuTTY** | UART sessions | Serial terminal to view STM32 output on PC |
-| **PulseView + SLogic** | UART debugging | Capture and decode UART signals on logic analyzer |
-| **OpenOCD + GDB** | Advanced debugging | Debug via ST-Link when CubeIDE debugger isn't enough |
+### Saturday (Primary Coding Day)
 
----
-
-## 🔧 HARDWARE SETUP (Do this Week 1)
-
-### Wiring: Black Pill ↔ Nucleo ST-Link
-
-The Nucleo-L476RG has an onboard ST-Link/V2-1. You can use it to program the Black Pill:
-
-```
-Nucleo ST-Link    →    Black Pill (STM32F411)
-─────────────          ──────────────────────
-CN4 Pin 2 (SWCLK) →    SWCLK (PA14)
-CN4 Pin 4 (SWDIO) →    SWDIO (PA13)
-CN4 Pin 3 (GND)   →    GND
-CN4 Pin 1 (VDD)   →    3.3V (optional — or power Black Pill via USB)
-```
-
-**Remove the jumpers** on the Nucleo's CN2 connector to disconnect the onboard STM32L476RG, allowing the ST-Link to target the external Black Pill.
-
-### Wiring: FT232 USB-UART ↔ Black Pill
-
-```
-FT232           →    Black Pill
-────────             ──────────
-TX              →    PA3 (USART2_RX)
-RX              →    PA2 (USART2_TX)
-GND             →    GND
-```
-
-**⚠️ Do NOT connect VCC from FT232 to 3.3V if Black Pill is USB-powered. Only connect TX, RX, GND.**
-
----
-
-## 🛡️ PHASE 2 LEARNING PHILOSOPHY
-
-### The "HAL First, Then Register" Pattern
-
-For EVERY peripheral in July, follow this exact pipeline:
-
-```
-1. FastBit MCU1 video → watch the section
-2. "Mastering STM32" book → read the chapter
-3. HAL implementation → use CubeMX-generated code, understand it
-4. Register-level implementation → write the SAME thing using only registers
-5. Reference Manual → read the peripheral section to verify your understanding
-6. GDB debug → step through your code, verify register values
-```
-
-**Why both HAL and Register?**
-- HAL: what you'll use 80% of the time at work (productivity)
-- Register: what you need when HAL fails, when debugging hard bugs, when porting to new chips
-- Interview question #1: "Can you configure UART without HAL?" → YES, you can.
-
-### The "What Changed?" Rule
-
-After CubeMX generates code, ALWAYS:
-1. Open the generated `main.c`, `stm32f4xx_hal_msp.c`, `system_stm32f4xx.c`
-2. Read EVERY line of init code
-3. Ask: "What register did this configure? Why?"
-4. Open RM0383 and find that register
-5. **If you can't explain a line → you don't understand it → study it until you do**
-
----
-
-## 📊 MONTHLY TARGETS
-
-| Metric | Target |
+| Time | Activity |
 |:---|:---|
-| STM32 programs running on real hardware | **15+** |
-| HAL implementations | **8+** (GPIO, UART, clock, button, LED, timer preview) |
-| Register-level implementations | **5+** (GPIO, UART, RCC at minimum) |
-| Reference Manual sections read | **4+** (GPIO, RCC, USART, NVIC) |
-| FastBit MCU1 sections completed | **10-15** |
-| "Mastering STM32" chapters read | **Ch 1-10** |
-| GitHub commits with hardware code | **15+** |
-| German Nicos Weg A2 lessons | **Start (lessons 1-10)** |
-| German Anki cards | **170+ total** |
-| Days woke at 5 AM | **≥ 25** |
-| Total active study hours | **~100 hours** |
+| 5:30–6:30 AM | Gym |
+| 6:30–7:30 AM | Shower + breakfast |
+| **7:30–12:30 PM** | **5 HOURS — C PROGRAMMING DEEP CODING** |
+| 12:30–1:30 PM | Lunch + rest |
+| **1:30–4:30 PM** | **3 HOURS — GERMAN (grammar + writing)** |
+| 4:30–5:00 PM | Break |
+| **5:00–6:30 PM** | **1.5 HOURS — GERMAN SPEAKING (ChatGPT Voice or italki)** |
+
+### Sunday (7 hours)
+
+| Time | Activity |
+|:---|:---|
+| 5:30–6:30 AM | Gym |
+| 6:30–7:30 AM | Shower + breakfast |
+| **7:30–10:30 AM** | **3 HOURS — C PROJECTS + MINI-REVIEW + GIT** |
+| 10:30 AM–12:00 PM | Rest + lunch |
+| **12:00–2:00 PM** | **2 HOURS — GERMAN REVIEW + ANKI BULK** |
+| **2:00–4:00 PM** | **2 HOURS — EXTENDED C CODING** |
+| 4:00 PM onwards | Rest |
 
 ---
 
-## 📅 WEEKLY BREAKDOWN — SEE SEPARATE FILES
+## JULY READING PLAN
 
-| File | Dates | Topic |
+### K.N. King Chapters (Pre-Gym + Bed Reading)
+| Week | Pre-Gym Reading | Bed Reading |
 |:---|:---|:---|
-| **`12A_JULY_WEEK1.md`** | Jul 1-5 (Wed-Sun) | STM32 setup + ARM architecture + first blink (HAL + Register) |
-| **`12B_JULY_WEEK2.md`** | Jul 6-12 (Mon-Sun) | GPIO deep: modes, pull-up/down, button input, BSRR, ODR |
-| **`12C_JULY_WEEK3.md`** | Jul 13-19 (Mon-Sun) | Clock system (RCC) + UART (HAL + Register) |
-| **`12D_JULY_WEEK4.md`** | Jul 20-26 (Mon-Sun) | UART deep: receive, printf redirect, interrupts intro |
-| **`12E_JULY_WEEK5.md`** | Jul 27-31 (Mon-Fri) | Timers intro + month review + August prep |
+| Week 4 (Jul 1–6) | Ch 16 (Structures) | K&R Ch 6 (Structures) |
+| Week 5 (Jul 7–13) | Ch 14 (Preprocessor), Ch 20 (Low-Level) | K&R Ch 7 (I/O) |
+| Week 6 (Jul 14–20) | Review of Ch 11–16 for GDB context | K&R Ch 8 (UNIX interface) |
+| Week 7 (Jul 21–27) | Ch 17 (Advanced Pointers) | K&R Ch 5 revisit |
+| Week 8 (Jul 28–31) | Ch 18 (Declarations), Ch 19 (Program Structure) | K&R Ch 6 revisit |
+
+### FastBit Embedded C — Watch on Saturday warmups
+- Week 5 onward: FastBit "Embedded C" sections on volatile, const, extern, bitfields
+- These are short (10-15 min each) — watch in the warmup period before coding blocks
 
 ---
 
-## 🔑 JULY MINDSET
+## BOOKS + RESOURCES FOR JULY
 
-> **May-June you learned C on a PC. July you learn C on a microcontroller.**
->
-> The language is the same. The patterns are the same. But now:
-> - `printf()` → `HAL_UART_Transmit()` (no screen, only serial)
-> - `int x = 5;` → `GPIOA->BSRR = (1 << 5);` (writing to real hardware)
-> - `while(1)` → this loop runs FOREVER on the chip (no Ctrl+C)
-> - Debugging = connecting wires, measuring voltages, reading register dumps
->
-> **Every bug is harder to find. Every success is more rewarding. Welcome to embedded.** ⚡
+| Resource | How to Use |
+|:---|:---|
+| **K.N. King "C Programming: A Modern Approach"** | Primary — pre-gym + bed reading all month |
+| **K&R "The C Programming Language"** | Bed reading alternate nights — terse but precise |
+| **FastBit Embedded C** (Udemy) | Saturday warmups — specific topics only |
+| **Neso Academy YouTube** | Sunday warmups — short concept videos (7-12 min) |
+| **Jacob Sorber YouTube** | Week 6: Makefiles + GDB videos |
+| **mycodeschool YouTube** | Week 7: Data structures playlist |
+
+### AI Policy (STRICT — Phase 1)
+- AI MAY: explain concepts, answer theory questions, explain error messages
+- AI MAY NOT: write any code, show example programs, complete partial code
+- Rule: write it wrong first, then debug it yourself
 
 ---
 
-> **July 16th, 5:00 AM. Wire up your Black Pill. Open STM32CubeIDE. Blink an LED. Begin.**
->
-> (If you're using Jul 1-15 for Phase 1 catch-up, start hardware work on Jul 16.)
+## GERMAN LANGUAGE (July)
+
+### July German targets
+- Nicos Weg: Lessons 23–30 complete by end of July (A1 nearly done)
+- Anki: 80+ words reviewed with spaced repetition
+- New grammar: accusative case, modal verbs (können, müssen, wollen), basic past tense
+- Practice: daily routine, work, hobbies + "Ich studiere Informatik am Wochenende."
+
+---
+
+## WEEKLY FILES
+
+- `12A_JULY_WEEK1.md` — Jul 1–6: Week 4 (Structs + Bitwise)
+- `12B_JULY_WEEK2.md` — Jul 7–13: Week 5 (volatile, const, enum, preprocessor, file I/O)
+- `12C_JULY_WEEK3.md` — Jul 14–20: Week 6 (Makefiles + GDB + multi-file projects)
+- `12D_JULY_WEEK4.md` — Jul 21–27: Week 7 (Dynamic memory + linked lists + queues)
+- `12E_JULY_WEEK5.md` — Jul 28–31: Week 8 start (State machines + memory layout)
+
+---
+
+## JULY EXIT CRITERIA (before moving to August Week 9)
+
+- [ ] Can define a struct, use it in a multi-file project, access via pointer with ->
+- [ ] Can write SET_BIT / CLEAR_BIT / TOGGLE_BIT / READ_BIT macros from memory
+- [ ] Makefile: can write a complete Makefile for a 5-file project from scratch
+- [ ] GDB: can set breakpoints, step through code, inspect variables, examine memory
+- [ ] malloc/free: used in 5+ programs, all Valgrind clean
+- [ ] Linked list: can write singly linked list from memory in under 25 minutes
+- [ ] Circular buffer: can write from memory in under 15 minutes
+- [ ] GitHub C-Practice: 5+ commits in July (one per week minimum)
+- [ ] Nicos Weg: Lessons 23–30 done
+- [ ] Anki: 80+ German words
+
+If any criterion is not met by July 31 → use early August buffer days to finish before moving to Week 9.

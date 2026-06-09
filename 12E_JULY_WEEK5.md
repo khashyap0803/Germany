@@ -1,270 +1,133 @@
-# 📅 WEEK 5 — Jul 27-31 (Mon-Fri): TIMERS INTRO + MONTH REVIEW + AUGUST PREP
+# JULY WEEK 5 (Jul 28–31) — Phase 1 Week 8 START: STATE MACHINES + MEMORY LAYOUT
 
-> **Topics**: Timer basics, timer interrupt, SysTick deep, PLL configuration (100 MHz SYSCLK), month review
-> **FastBit MCU1**: Timer sections (intro + basic timer)
-> **"Mastering STM32" Book**: Chapter 9 (Timers), Chapter 5 revisit (Clock tree)
-> **Reference Manual**: RM0383 Section 11 (General-purpose timers), Section 6 (RCC/PLL)
-> **Programs on hardware**: 3-4
-> **German**: Nicos Weg A2 Lessons 19-20
-
----
-
-## DAY 27 — Monday, Jul 27
-
-### 🔶 Morning Block (5:10 - 6:30 AM) — TIMER THEORY
-
-#### 📺 WATCH (20 min)
-**FastBit MCU1**: Timer section — introduction + basic timer concepts
-
-#### 📖 STUDY (1h)
-
-**What is a timer?** A counter that counts clock cycles.
-
-```
-Timer clock (from RCC) → Prescaler → Counter → Auto-reload → Interrupt/Event
-     84 MHz               ÷8400        0→9999     overflow!       [IRQ]
-     
-     Result: 84,000,000 / 8400 / 10000 = 1 Hz = exactly 1 second
-```
-
-**Key registers:**
-- **PSC** (Prescaler): divides the input clock
-- **ARR** (Auto-Reload Register): counter counts from 0 to ARR, then resets
-- **CNT** (Counter): current count value
-- **CR1** (Control Register 1): enable/disable, direction
-- **SR** (Status Register): overflow flag (UIF)
-- **DIER** (DMA/Interrupt Enable): enable timer interrupt
-
-**Timer formula:**
-```
-Timer frequency = fCLK / (PSC + 1) / (ARR + 1)
-
-Example: 1-second interrupt
-fCLK = 16 MHz (HSI, default)
-PSC = 15999 → divides to 1000 Hz
-ARR = 999  → counts 1000 ticks = 1 second
-Verify: 16,000,000 / (15999+1) / (999+1) = 1 Hz ✅
-```
-
-**Draw on paper:**
-1. Timer block diagram (clock → prescaler → counter → reload → interrupt)
-2. Timer formula with your values
-
-### ✅ Day 27 Checklist
-- [ ] Timer concepts understood: prescaler, auto-reload, counter
-- [ ] Timer formula memorized and can calculate for any frequency
-- [ ] Timer block diagram drawn on paper
-- [ ] Know which timers exist on STM32F411 (TIM1-5, TIM9-11)
+> **Topics**: State machines with enum + function pointer dispatch, memory layout (text/data/BSS/heap/stack), packed structs, bit fields
+> **K.N. King Reading**: Chapter 16 revisit (bit fields) + Chapter 18 (Declarations)
+> **K&R Bed Reading**: Chapter 6 revisit (Structures — unions section)
+> **YouTube**: Jacob Sorber "State Machines in C" (~10 min)
+> **AI Policy**: BANNED for code — AI may only explain concepts
+> **Dates**: Tuesday July 28 → Friday July 31, 2026
+> **Note**: Only 4 days (Tue–Fri). Week 8 continues in 13A_AUGUST_WEEK1.md.
 
 ---
 
-## DAY 28 — Tuesday, Jul 28
+## WEEKDAY READING SCHEDULE (Jul 28–31)
 
-### 🔶 Morning Block (5:10 - 6:30 AM) — TIMER INTERRUPT (HAL)
+### Tuesday July 28 — Pre-Gym (5:00–5:25 AM)
+**Read**: K.N. King Chapter 18 (Declarations — pages 1–20)
+- Storage class specifiers: auto, register, static, extern — what each means
+- Type qualifiers: const, volatile — review + deepen
+- `register` keyword: hint to compiler to use CPU register (mostly ignored by modern compilers)
+- Alignment: `_Alignas` (C11) — force a variable to be aligned on N-byte boundary
+- Understanding a complex declaration: `int (*fp)(int, int)` = pointer to function taking 2 ints
 
-#### 💻 CODE (1h 20m)
+**Bed Reading (9:30–10:00 PM)**: K&R Chapter 6 pages 165–185 (Unions, Bit-fields)
 
-Create `11_timer_interrupt_hal`:
+### Wednesday July 29 — Pre-Gym (5:00–5:25 AM)
+**Read**: State machines (search online: "State Machine in C embedded tutorial" — read 1-2 short articles)
+Key concepts to understand:
+- States: the distinct conditions a system can be in (IDLE, RUNNING, ERROR, SHUTDOWN)
+- Events: triggers that cause state transitions (BUTTON_PRESS, TIMER_TICK, ERROR_DETECTED)
+- Transitions: rules that say "in state X, on event Y, go to state Z"
+- State diagram: circles = states, arrows = transitions (always draw this before coding)
+- Implementation patterns:
+  - Simple: `switch(current_state)` with nested `switch(event)` — works but gets messy
+  - Better: function pointer array — `handlers[current_state](event)` — scales cleanly
 
-**CubeMX setup:**
-1. Enable TIM2 (32-bit timer on APB1)
-2. Clock source: Internal Clock
-3. Prescaler: 15999 (divides 16 MHz to 1 kHz)
-4. Counter Period (ARR): 999 (1000 counts = 1 second)
-5. Enable TIM2 global interrupt in NVIC
-6. Generate code
+**Bed Reading**: K&R Chapter 6 — re-read unions and bit-fields
 
-**In main.c:**
-```c
-int main(void) {
-    // ... init ...
-    
-    // Start timer interrupt
-    HAL_TIM_Base_Start_IT(&htim2);
-    
-    printf("Timer started! LED toggles every 1 second via interrupt.\r\n");
-    
-    while (1) {
-        // Main loop does other work
-        process_uart();
-        check_buttons();
-    }
-}
+### Thursday July 30 — Pre-Gym (5:00–5:25 AM)
+**Read**: Memory layout (search online: "C program memory layout text data bss heap stack" — any clear article)
+- TEXT segment: compiled machine code — read-only, loaded from executable
+- RODATA: string literals and const globals — read-only
+- DATA segment: initialized global variables — loaded from executable, writable
+- BSS segment: uninitialized globals — zero-filled at startup, writable
+- HEAP: dynamic allocations (malloc) — grows upward from BSS
+- STACK: local variables, function parameters, return addresses — grows downward from top
 
-// Timer interrupt callback
-void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
-    if (htim->Instance == TIM2) {
-        HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
-    }
-}
-```
+Draw this diagram on paper — you will be asked to reproduce it from memory.
 
-**The LED now toggles at EXACTLY 1 second** — not approximately like `HAL_Delay`. Hardware timers are precise to the clock crystal accuracy.
+Key embedded relevance: STM32 has 128KB flash (holds TEXT + RODATA + DATA copy) and 128KB RAM (holds DATA + BSS + HEAP + STACK). If your program is too large — it doesn't fit. No swap. No VM.
 
-**Modify**: Change ARR to 499 → LED toggles every 500ms. Change PSC to get 100ms. Experiment.
+**Bed Reading**: K.N. King Chapter 18 pages 20–end
 
-### ✅ Day 28 Checklist
-- [ ] Timer interrupt driving LED toggle — precise 1-second interval
-- [ ] PSC and ARR values calculated manually and verified
-- [ ] Changed frequency by modifying PSC/ARR
-- [ ] Main loop runs freely while timer handles LED
+### Friday July 31 — Pre-Gym (5:00–5:25 AM)
+**Read**: K.N. King Chapter 16 — bit fields section (re-read)
+- Bit field syntax: `uint32_t enable : 1; uint32_t mode : 3;` — fields fit into single uint32_t
+- `__attribute__((packed))` vs natural alignment — why packed matters for hardware registers
+- Unions for type punning: access same memory as different types
+  - `union { uint32_t raw; struct { uint8_t b0, b1, b2, b3; }; }` — access 32-bit word as 4 bytes
+
+**Bed Reading**: K&R Chapter 6 — unions (final read for this month)
 
 ---
 
-## DAY 29 — Wednesday, Jul 29
+## SATURDAY AUGUST 1 → Week 8 continues in 13A_AUGUST_WEEK1.md
 
-### 🔶 Morning Block (5:10 - 6:30 AM) — PLL CONFIGURATION (100 MHz)
+The first coding session for Week 8 is on **Saturday August 1**.
+See `13A_AUGUST_WEEK1.md` for the full Saturday/Sunday plan.
 
-#### 💻 CODE (1h 20m)
-
-**By default, STM32F411 runs at 16 MHz (HSI).** Let's configure PLL to get full speed.
-
-**CubeMX Clock Configuration tab:**
-1. Input: HSI = 16 MHz (or HSE if you have a crystal)
-2. PLL Source: HSI
-3. PLL M = 8 (16 / 8 = 2 MHz to PLL input)
-4. PLL N = 200 (2 × 200 = 400 MHz VCO)
-5. PLL P = 4 (400 / 4 = 100 MHz SYSCLK)
-6. AHB Prescaler = 1 (HCLK = 100 MHz)
-7. APB1 Prescaler = 2 (APB1 = 50 MHz)
-8. APB2 Prescaler = 1 (APB2 = 100 MHz)
-
-**After changing clock → recalculate timer values!**
-```
-Old: 16 MHz / (15999+1) / (999+1) = 1 Hz
-New: 50 MHz (APB1 timer clock*) / (49999+1) / (999+1) = 1 Hz
-
-* Note: When APB1 prescaler > 1, timer clock = APB1 × 2 = 100 MHz!
-  So: 100 MHz / (99999+1) / (999+1) = 1 Hz
-```
-
-**Exercise**: After PLL config, verify:
-- `printf("SYSCLK = %lu Hz\r\n", HAL_RCC_GetSysClockFreq());`
-- `printf("HCLK   = %lu Hz\r\n", HAL_RCC_GetHCLKFreq());`
-- `printf("APB1   = %lu Hz\r\n", HAL_RCC_GetPCLK1Freq());`
-- `printf("APB2   = %lu Hz\r\n", HAL_RCC_GetPCLK2Freq());`
-
-Also update UART BRR if using register-level UART.
-
-### ✅ Day 29 Checklist
-- [ ] PLL configured — SYSCLK = 100 MHz
-- [ ] Verified clock frequencies via printf
-- [ ] Timer recalculated for new clock
-- [ ] UART still works at 115200 after clock change
+This week (Jul 28–31) is reading-only — all 4 days are weekdays.
 
 ---
 
-## DAY 30 — Thursday, Jul 30
+## JULY END-OF-MONTH REVIEW (Friday July 31, evening)
 
-### 🔶 Morning Block (5:10 - 6:30 AM) — JULY COMPREHENSIVE REVIEW
+Update PROGRESS.md now. Be honest about ALL of July.
 
-**Build a "July Demo" project that combines EVERYTHING:**
+### July Complete Checklist
 
-Create `12_july_demo`:
-```
-Features:
-1. SYSCLK = 100 MHz via PLL ✅
-2. GPIO output: LED on PC13 ✅
-3. GPIO input: Button on PA0 with pull-up + debounce ✅
-4. UART TX/RX: printf redirect + interrupt receive ✅
-5. Circular buffer: UART RX buffered ✅
-6. Timer interrupt: LED toggles every 500ms ✅
-7. Non-blocking: all tasks run concurrently ✅
-8. Command menu: LED ON/OFF, STATUS, TIMER SPEED ✅
-```
+| Achievement | Done? |
+|:---|:---|
+| **Week 4**: Struct + typedef + arrow operator — written from scratch | |
+| **Week 4**: SET_BIT / CLEAR_BIT / TOGGLE_BIT / READ_BIT macros from memory | |
+| **Week 5**: volatile — can explain why needed for hardware registers | |
+| **Week 5**: Preprocessor macros with arguments written correctly | |
+| **Week 5**: File I/O — text and binary read/write | |
+| **Week 5**: Logger module using static file pointer | |
+| **Week 6**: Makefile — can write from memory for 3-file project | |
+| **Week 6**: GDB — found at least 2 bugs using only GDB | |
+| **Week 7**: Singly linked list — ALL operations, Valgrind clean | |
+| **Week 7**: Circular buffer — from memory in under 20 min | |
+| **Week 7**: Dynamic array with auto-resize | |
+| **GitHub**: 4+ commits in July (one per week) | |
+| **Nicos Weg**: Lessons 23–46 done | |
+| **Anki**: 100+ German words total | |
+| **K.N. King**: Ch 14–18 + Ch 20 read | |
+| **K&R**: Ch 4–7 read | |
 
-This single project proves you can:
-- Configure GPIO, UART, Timer, Clock, Interrupts
-- Use HAL AND understand the registers underneath
-- Write non-blocking firmware with interrupt-driven I/O
-- Reuse data structures from Phase 1 (circular buffer)
+### July Self-Ratings
 
-### ✅ Day 30 Checklist
-- [ ] July demo project: all 8 features working
-- [ ] Clean code: separate .c/.h files, Makefile-style organization
-- [ ] Can explain every register configured
-- [ ] README documents everything
+| Topic | Rating (1–10) | Need more work? |
+|:---|:---|:---|
+| Structs + bitwise | | |
+| volatile + const + extern | | |
+| Makefiles | | |
+| GDB debugging | | |
+| Dynamic memory / Valgrind | | |
+| Linked lists + circular buffer | | |
 
----
-
-## DAY 31 — Friday, Jul 31 — LAST DAY OF JULY
-
-### 🔶 Morning Block (5:10 - 6:30 AM) — PHASE 2 PROGRESS CHECK
-
-**Self-assessment (answer honestly):**
-
-```
-GPIO:
-□ Can configure any pin as input/output/AF from registers? 
-□ Know push-pull vs open-drain?
-□ Can use BSRR for atomic set/reset?
-
-UART:
-□ Can init UART from registers (RCC, GPIO AF, BRR, CR1)?
-□ Can send/receive with HAL AND registers?
-□ Printf redirect working?
-□ Interrupt-driven RX with circular buffer?
-
-Clock:
-□ Can configure PLL for 100 MHz?
-□ Know which bus each peripheral is on?
-□ Can recalculate timer/UART values for different clocks?
-
-Timers:
-□ Timer formula: fCLK / (PSC+1) / (ARR+1)?
-□ Timer interrupt driving LED?
-
-Interrupts:
-□ Understand NVIC priorities?
-□ Know ISR rules (short, volatile, set flags)?
-□ Non-blocking main loop pattern?
-```
-
-**If any answer is NO → mark it for August Week 1 review.**
-
-**August preview:** PWM, ADC, SPI, I2C, DMA. The pace accelerates.
-
-### Git push:
-```bash
-cd /mnt/f/Documents/DEVELOP/STM32-Practice
-git add -A
-git commit -m "July complete: GPIO, UART, Clock, Timer, Interrupts - Phase 2 Month 1"
-git push
-```
-
-### ✅ Day 31 Checklist
-- [ ] Self-assessment completed honestly
-- [ ] Weak areas identified for August review
-- [ ] All July code pushed to GitHub
-- [ ] July demo project polished with README
+Any topic below 6: add extra time in August Week 8 before moving to Week 9 (capstone).
 
 ---
 
-## 📋 WEEK 5 CHECKPOINT — END OF JULY
+## BRIDGE TO AUGUST
 
-- [ ] ✅ Timer basics: prescaler, ARR, interrupt — can calculate for any frequency
-- [ ] ✅ PLL configured: SYSCLK = 100 MHz, all peripheral clocks verified
-- [ ] ✅ July demo project: GPIO + UART + Timer + Interrupts all working together
-- [ ] ✅ Non-blocking firmware pattern mastered
-- [ ] ✅ Nicos Weg A2 lessons 19-20, 180+ Anki cards
+Week 8 content (state machines, memory layout, packed structs, function pointer dispatch):
+- **Saturday Aug 1**: State machine coding — traffic light, vending machine, handler table
+- **Sunday Aug 2**: Memory layout visualization, packed structs, bit fields, union type punning
+
+See `13A_AUGUST_WEEK1.md` for full details.
 
 ---
 
-## 🎯 JULY COMPLETE — WHAT YOU'VE BUILT
+## WEEKDAY THEORY FOCUS (Week 8 Start)
 
-```
-JULY 2026: YOUR FIRST MONTH ON REAL HARDWARE
+| Day | Read Before Gym | Bed Read |
+|:---|:---|:---|
+| Tue Jul 28 | K.N. King Ch 18 pp. 1–20 | K&R Ch 6 pp. 165–185 |
+| Wed Jul 29 | State machine articles (online) | K&R Ch 6 — unions |
+| Thu Jul 30 | Memory layout article (online) | K.N. King Ch 18 pp. 20–end |
+| Fri Jul 31 | K.N. King Ch 16 — bit fields | K&R Ch 6 — unions final |
 
-Week 1:  Setup + first blink → "I can flash code to a microcontroller"
-Week 2:  GPIO deep → "I can control ANY pin in ANY mode from registers"
-Week 3:  UART → "My STM32 talks to my PC — I have printf debugging"
-Week 4:  Interrupts → "My firmware handles events without blocking"
-Week 5:  Timers + PLL → "I control time precisely and run at full speed"
-
-You configured real hardware registers.
-You debugged with GDB + logic analyzer.
-You reused your June C code (circular buffer) on STM32.
-You built a multi-peripheral demo without AI.
-
-AUGUST → SPI, I2C, ADC, PWM, DMA. The peripheral collection grows. 🔧
-```
+> These 4 days are reading only — the coding comes Saturday Aug 1.
+> Use this week to build a strong mental model of state machines before coding them.

@@ -1,590 +1,362 @@
-# 📅 WEEK 3 — Jun 15-21 (Mon-Sun): STATE MACHINES + ADVANCED C + MEMORY LAYOUT
+# JUNE WEEK 3 (Jun 23–29) — Phase 1 Week 3: POINTERS
 
-> **Topics**: State machines with enum + function pointers, memory layout (text/data/BSS/heap/stack), typedef patterns, packed structs, bit fields, function pointers deep
-> **K.N. King Chapters**: Ch 16 (Structures, Unions, Enumerations deep), Ch 20 (Low-Level Programming)
-> **K&R Bed Reading**: Chapter 6 (Structures — deep revisit)
-> **FastBit Udemy**: Structures, bitfields, embedded-specific sections
-> **Programs to write**: 6-8
-> **German**: Nicos Weg Lessons 36-40, daily Anki, more past tense
-> **🎯 THIS WEEK**: You learn the patterns that 90% of embedded firmware is built on.
-> **📚 Full resource details**: See `10_RESOURCES.md`
-
----
-
-## DAY 15 — Monday, Jun 15
-
-### 🔶 Morning Block (5:10 - 6:30 AM) — STATE MACHINES (Part 1)
-
-#### 📺 WATCH FIRST (10 min)
-
-**Search YouTube**: "State Machine in C embedded" — pick any short video that shows the enum + switch pattern.
-
-#### 💻 CODE (1h 10m)
-
-**What is a state machine?** Almost every embedded system IS a state machine:
-- Traffic light: RED → GREEN → YELLOW → RED
-- Washing machine: IDLE → FILL → WASH → RINSE → SPIN → DONE
-- UART receiver: IDLE → START_BIT → DATA_BITS → STOP_BIT
-
-**Exercise 1 — Traffic light state machine (5:20-5:50):**
-
-Create `week8/state_machine_basic.c`:
-```c
-#include <stdio.h>
-#include <unistd.h>  // for sleep()
-
-typedef enum {
-    STATE_RED,
-    STATE_GREEN,
-    STATE_YELLOW,
-    STATE_COUNT  // Trick: always put this last to get total count
-} TrafficState;
-
-const char *state_names[] = {"RED", "GREEN", "YELLOW"};
-const int state_durations[] = {5, 4, 2};  // seconds
-
-int main(void) {
-    TrafficState current = STATE_RED;
-    
-    printf("Traffic Light State Machine\n");
-    printf("==========================\n");
-    
-    for (int cycle = 0; cycle < 3; cycle++) {
-        printf("\n--- Cycle %d ---\n", cycle + 1);
-        
-        // Process each state
-        for (int s = 0; s < STATE_COUNT; s++) {
-            current = (TrafficState)s;
-            printf("[%s] for %d seconds\n", state_names[current], state_durations[current]);
-            sleep(state_durations[current]);
-        }
-    }
-    
-    return 0;
-}
-```
-
-**Exercise 2 — Vending machine state machine (5:50-6:20):**
-
-Create `week8/vending_machine.c`:
-```c
-#include <stdio.h>
-
-typedef enum {
-    STATE_IDLE,
-    STATE_COIN_INSERTED,
-    STATE_ITEM_SELECTED,
-    STATE_DISPENSING,
-    STATE_CHANGE_RETURN,
-    STATE_ERROR
-} VendingState;
-
-typedef enum {
-    EVENT_INSERT_COIN,
-    EVENT_SELECT_ITEM,
-    EVENT_DISPENSE_DONE,
-    EVENT_CANCEL,
-    EVENT_ERROR,
-    EVENT_RESET
-} VendingEvent;
-
-// State handler function type
-typedef VendingState (*StateHandler)(VendingEvent event, int *balance);
-
-// Implement a handler for each state
-VendingState handle_idle(VendingEvent event, int *balance) {
-    switch (event) {
-        case EVENT_INSERT_COIN:
-            *balance += 25;
-            printf("  Coin inserted. Balance: %d cents\n", *balance);
-            return STATE_COIN_INSERTED;
-        default:
-            printf("  Waiting for coin...\n");
-            return STATE_IDLE;
-    }
-}
-
-// YOU: implement handle_coin_inserted, handle_item_selected,
-// handle_dispensing, handle_change_return, handle_error
-
-int main(void) {
-    VendingState current = STATE_IDLE;
-    int balance = 0;
-    
-    // State handler table (function pointer array!)
-    StateHandler handlers[] = {
-        handle_idle,
-        // handle_coin_inserted,
-        // handle_item_selected,
-        // handle_dispensing,
-        // handle_change_return,
-        // handle_error
-    };
-    
-    // Simulate events
-    VendingEvent events[] = {
-        EVENT_INSERT_COIN,
-        EVENT_INSERT_COIN,
-        EVENT_SELECT_ITEM,
-        EVENT_DISPENSE_DONE,
-    };
-    
-    for (int i = 0; i < 4; i++) {
-        printf("State: %d, Event: %d\n", current, events[i]);
-        current = handlers[current](events[i], &balance);
-    }
-    
-    return 0;
-}
-```
-
-**What to understand**: The `handlers[]` array maps state → function. This eliminates giant switch-case blocks. This is the **industry-standard pattern** for embedded firmware.
-
-#### 📖 READ (6:20-6:30)
-- K.N. King Ch 16 — Sections on enumerations and unions
-
-### ✅ Day 15 Checklist
-- [ ] Traffic light state machine working
-- [ ] Vending machine with function pointer dispatch table started
-- [ ] Can explain: enum, function pointer, state transition
-- [ ] Drew state diagram on paper (circles + arrows)
+> **Topics**: Address-of & dereference, pointer arithmetic, arrays-as-pointers, swap by pointer, double pointers, dynamic memory, malloc/free, Valgrind, function pointers
+> **K.N. King Reading**: Ch 11–12 (Pointers, Dynamic Storage Allocation) — read all week
+> **K&R Bed Reading**: Chapter 5 (Pointers and Arrays) — the most important chapter in K&R
+> **mycodeschool Playlist**: "Pointers in C/C++" — 15 videos — watch on Saturday morning (1.5×)
+> **AI Policy**: BANNED for code — AI may only explain concepts
+> **Dates**: Tuesday June 23 → Monday June 29, 2026
+> **WARNING**: This is the hardest week of Phase 1. Set aside more time if needed. Do NOT rush this.
 
 ---
 
-## DAY 16 — Tuesday, Jun 16
+## WEEKDAY READING SCHEDULE (Jun 23–27)
 
-### 🔶 Morning Block (5:10 - 6:30 AM) — STATE MACHINES (Part 2) + FUNCTION POINTERS DEEP
+### Tuesday June 23 — Pre-Gym (5:00–5:25 AM)
+**Read**: K.N. King Chapter 11 (Pointers — pages 1–20)
+- What is a pointer: a variable that holds a memory address
+- Address-of operator `&`: gives you the address of a variable
+- Dereference operator `*`: gives you the value at that address
+- Pointer declarations: `int *p;` — p is "pointer to int"
+- NULL pointer: what it means, why you must check before dereferencing
 
-#### 💻 CODE (1h 20m)
+**Bed Reading (9:30–10:00 PM)**: K&R Chapter 5 pages 93–110 (Pointers and Addresses, Pointers and Function Arguments)
 
-**Exercise 1 — Complete the vending machine** (5:10-5:40):
-- Implement ALL state handler functions
-- Add proper event processing for each state
-- Test with multiple event sequences
+### Wednesday June 24 — Pre-Gym (5:00–5:25 AM)
+**Read**: K.N. King Chapter 11 (Pointers — pages 20–40)
+- Pointer arithmetic: p+1 advances by `sizeof(*p)` bytes (NOT by 1 byte)
+- Comparing pointers: only meaningful when pointing into the same array
+- Pointers and arrays: array name is a constant pointer to element 0
+- `arr[i]` and `*(arr + i)` are IDENTICAL — understand why
 
-**Exercise 2 — Callback functions (5:40-6:10):**
+**Bed Reading**: K&R Chapter 5 pages 110–125 (Pointers and Arrays, Address Arithmetic)
 
-Create `week8/callbacks.c`:
-```c
-#include <stdio.h>
+### Thursday June 25 — Pre-Gym (5:00–5:25 AM)
+**Read**: K.N. King Chapter 11 (Pointers — pages 40–end)
+- Passing arrays to functions: array decays to pointer → function can modify original
+- Why `swap(a, b)` doesn't work — call by VALUE makes a copy
+- Why `swap(&a, &b)` works — function receives addresses, modifies originals
+- Pointers to pointers: `int **pp` — pointer to a pointer to int
 
-// Callback type: function that processes an integer
-typedef void (*DataCallback)(int value);
+**Bed Reading**: K&R Chapter 5 pages 125–140 (Character Pointers, Pointer Arrays)
 
-// These are callback functions
-void print_value(int value) {
-    printf("Value: %d\n", value);
-}
+### Friday June 26 — Pre-Gym (5:00–5:25 AM)
+**Read**: K.N. King Chapter 12 (Dynamic Storage Allocation)
+- Heap vs stack: what lives where, who manages what
+- `malloc(n)`: allocates n bytes, returns `void *` or NULL on failure
+- ALWAYS check malloc return for NULL before using
+- `free(ptr)`: returns memory to heap — MUST be called on every malloc
+- `calloc(n, size)`: malloc + zeroes memory
+- Memory leaks: allocated but never freed — program slowly consumes RAM
 
-void print_squared(int value) {
-    printf("Squared: %d\n", value * value);
-}
+**Bed Reading**: K&R Chapter 5 pages 140–167 (Multi-dimensional arrays, Command-line args, Pointers to Functions)
 
-void print_hex(int value) {
-    printf("Hex: 0x%X\n", value);
-}
+### Monday June 29 — Pre-Gym (5:00–5:25 AM)
+**Read**: K.N. King Chapter 12 (Dynamic Storage Allocation — review)
+- `realloc(ptr, newsize)`: resize existing allocation — may move to different address
+- Dangling pointer: pointer to freed memory — undefined behavior if used
+- Double-free: freeing the same pointer twice — crash or heap corruption
+- Rules: always free what you malloc, always NULL after free, always check malloc
 
-// This function takes a callback — it doesn't know WHAT the callback does
-void process_array(int *arr, int size, DataCallback callback) {
-    for (int i = 0; i < size; i++) {
-        callback(arr[i]);
-    }
-}
-
-// Generic sort with comparator callback (like qsort!)
-typedef int (*Comparator)(int a, int b);
-
-int ascending(int a, int b) { return a - b; }
-int descending(int a, int b) { return b - a; }
-
-void bubble_sort(int *arr, int size, Comparator cmp) {
-    for (int i = 0; i < size - 1; i++) {
-        for (int j = 0; j < size - i - 1; j++) {
-            if (cmp(arr[j], arr[j+1]) > 0) {
-                int temp = arr[j];
-                arr[j] = arr[j+1];
-                arr[j+1] = temp;
-            }
-        }
-    }
-}
-
-int main(void) {
-    int data[] = {42, 17, 8, 255, 100};
-    int n = 5;
-    
-    printf("=== Print values ===\n");
-    process_array(data, n, print_value);
-    
-    printf("\n=== Print squared ===\n");
-    process_array(data, n, print_squared);
-    
-    printf("\n=== Print hex ===\n");
-    process_array(data, n, print_hex);
-    
-    printf("\n=== Sort ascending ===\n");
-    bubble_sort(data, n, ascending);
-    process_array(data, n, print_value);
-    
-    printf("\n=== Sort descending ===\n");
-    bubble_sort(data, n, descending);
-    process_array(data, n, print_value);
-    
-    return 0;
-}
-```
-
-**What to understand**: Callbacks decouple WHAT from HOW. STM32 HAL uses callbacks everywhere: `HAL_UART_RxCpltCallback()`, `HAL_TIM_PeriodElapsedCallback()`, etc. This IS how embedded firmware works.
-
-### ✅ Day 16 Checklist
-- [ ] Vending machine complete with all states
-- [ ] Callback pattern understood — process_array with different callbacks
-- [ ] Custom sort with comparator callback working
-- [ ] Can explain: how does `qsort()` use function pointers?
+**Bed Reading**: K&R Chapter 5 — re-read any section that wasn't clear the first time
 
 ---
 
-## DAY 17 — Wednesday, Jun 17
+## SATURDAY JUNE 27 — POINTERS DEEP CODING (7:30 AM–6:30 PM)
 
-### 🔶 Morning Block (5:10 - 6:30 AM) — MEMORY LAYOUT
+### Warmup (7:30–9:00 AM): mycodeschool Pointers Playlist
+Watch videos 1–8 at 1.5× speed. Take notes on paper — draw every diagram they draw.
 
-#### 💻 CODE (1h 20m)
+```
+Video 1:  Introduction to pointers               (~12 min)
+Video 2:  Pointer types, pointer arithmetic       (~14 min)
+Video 3:  Pointers and arrays                     (~12 min)
+Video 4:  Pointer to pointer (double pointer)     (~10 min)
+Video 5:  Passing pointers to functions           (~12 min)
+Video 6:  Pointers and arrays in functions        (~10 min)
+Video 7:  Pointers and dynamic memory (stack vs heap) (~15 min)
+Video 8:  Dynamic memory allocation (malloc)      (~12 min)
+```
 
-**Exercise 1 — Visualize memory layout (5:10-5:50):**
+After watching: DRAW from memory on paper:
+- Memory diagram: stack (local vars, function frames) vs heap (malloc'd data)
+- What `int *p = &x` looks like in memory (box for x, box for p, arrow between them)
+- What `p++` does to a pointer vs what `(*p)++` does
 
-Create `week8/memory_layout.c`:
+### BLOCK 1 (9:00–10:30 AM): Pointer Fundamentals
+Write ALL programs from scratch. NO copy-paste. NO AI code.
+
+```
+week3/
+├── pointer_basics.c    — &, *, NULL check, sizeof pointer
+├── pointer_arith.c     — pointer arithmetic with arrays
+└── swap.c              — swap_wrong (by value) vs swap_correct (by pointer)
+```
+
+**pointer_basics.c** requirements:
 ```c
-#include <stdio.h>
-#include <stdlib.h>
+// Declare int x = 42
+// Declare int *p = &x
+// Print: address of x, value of x, value of p (same as address), value at *p (same as x)
+// Change x through pointer: *p = 100 — print x again (shows 100)
+// Show pointer size: sizeof(p) — always 8 on 64-bit, 4 on 32-bit
+// Show: p is NOT the same as *p (address vs value)
+// Try: int *null_p = NULL — print it (shows 0), but DON'T dereference it (that's undefined behavior)
+```
 
-// Global initialized (goes to .data section)
-int global_init = 42;
+**pointer_arith.c** requirements:
+```c
+int arr[] = {10, 20, 30, 40, 50};
+int *p = arr;  // p points to arr[0]
 
-// Global uninitialized (goes to .bss section)
-int global_uninit;
+// Print all 5 elements FOUR ways:
+// 1. arr[i]         — array indexing
+// 2. *(arr + i)     — pointer arithmetic with array name
+// 3. p[i]           — pointer used like an array
+// 4. *(p + i)       — pointer arithmetic with p
 
-// Constant (goes to .rodata section)
-const char *message = "Hello, embedded world!";
+// Advance p through the array manually:
+// p = arr; print *p; p++; print *p; etc.
 
-// Static (goes to .data or .bss)
-static int static_var = 100;
+// Show pointer subtraction: int *end = arr + 5; printf("distance = %ld\n", end - arr);
+```
 
-void show_addresses(void) {
-    // Local variable (stack)
-    int local_var = 7;
-    
-    // Dynamic allocation (heap)
-    int *heap_var = malloc(sizeof(int));
-    *heap_var = 99;
-    
-    printf("=== MEMORY LAYOUT ===\n\n");
-    printf("TEXT (code):\n");
-    printf("  main()         = %p\n", (void *)main);
-    printf("  show_addresses = %p\n", (void *)show_addresses);
-    
-    printf("\nRODATA (constants):\n");
-    printf("  message        = %p  (\"%s\")\n", (void *)message, message);
-    
-    printf("\nDATA (initialized globals):\n");
-    printf("  global_init    = %p  (value: %d)\n", (void *)&global_init, global_init);
-    printf("  static_var     = %p  (value: %d)\n", (void *)&static_var, static_var);
-    
-    printf("\nBSS (uninitialized globals):\n");
-    printf("  global_uninit  = %p  (value: %d)\n", (void *)&global_uninit, global_uninit);
-    
-    printf("\nHEAP (dynamic):\n");
-    printf("  heap_var       = %p  (value: %d)\n", (void *)heap_var, *heap_var);
-    
-    printf("\nSTACK (local):\n");
-    printf("  local_var      = %p  (value: %d)\n", (void *)&local_var, local_var);
-    
-    printf("\n=== Address order (low to high): TEXT < RODATA < DATA < BSS < HEAP ... STACK ===\n");
-    
-    free(heap_var);
+**swap.c** requirements:
+```c
+// Version 1: swap_wrong(int a, int b) — swaps the copies, original unchanged
+// Version 2: swap_correct(int *a, int *b) — swaps originals through pointers
+
+// Test:
+// int x = 5, y = 10;
+// swap_wrong(x, y);  print x and y — they are NOT swapped
+// swap_correct(&x, &y); print x and y — they ARE swapped
+// Draw this on paper: show the two function call stacks
+```
+
+### BREAK (10:30–10:45)
+
+### BLOCK 2 (10:45 AM–12:15 PM): Strings as Char Pointers + Double Pointers
+```
+week3/
+├── string_pointers.c   — String traversal with char pointers, pointer-based strlen
+└── double_ptr.c        — Pointer to pointer: modify pointer from inside function
+```
+
+**string_pointers.c** requirements:
+```c
+// Part 1: traverse a string with a pointer (not array indexing)
+// Write ptr_strlen(const char *s) using pointer traversal:
+//   while (*s != '\0') { s++; count++; }
+// Write ptr_toupper(char *s) using pointer traversal — modify in place
+// Write ptr_count_char(const char *s, char c) — count occurrences
+
+// Part 2: pointer vs array notation
+// char arr[] = "hello";   // arr is array — CAN modify arr[0]
+// char *ptr = "hello";    // ptr is pointer to string literal — do NOT modify
+// Show sizeof difference: sizeof(arr) vs sizeof(ptr)
+// Explain in comments: why modifying ptr[0] is undefined behavior
+```
+
+**double_ptr.c** requirements:
+```c
+// Why double pointer? When you need to change a pointer inside a function.
+
+// Function that allocates memory and returns through double pointer:
+void allocate_array(int **arr, int size) {
+    *arr = malloc(size * sizeof(int));
+    // caller's pointer now points to new malloc'd memory
 }
 
-int main(void) {
-    show_addresses();
-    return 0;
+// Function that resets a pointer to NULL (for cleanup):
+void free_and_null(int **arr) {
+    free(*arr);
+    *arr = NULL;   // prevents dangling pointer
 }
+
+// Demonstrate:
+// int *p = NULL;
+// allocate_array(&p, 5);   // p is now valid
+// fill and print the array
+// free_and_null(&p);        // p is now NULL
+// printf("p is %s\n", p == NULL ? "NULL" : "not NULL");
 ```
 
-**MANDATORY**: Draw the memory layout on paper:
+### LUNCH (12:15–1:15 PM)
+
+### GERMAN BLOCK 1 (1:15–4:15 PM)
+- Nicos Weg Lessons 17–19 (DW online or app)
+- Review all vocabulary from Weeks 1–2 German sessions
+- Write 10 sentences using accusative case: "Ich habe einen Computer. Ich trinke einen Kaffee."
+- Anki: add 15 new cards from today's lessons
+
+### GERMAN BLOCK 2 (4:45–6:15 PM)
+- Nicos Weg Lesson 20 (milestone — 1/3 of A1 complete)
+- AnkiDroid: review ALL pending cards
+- Write from memory: your full introduction + daily schedule in German
+
+---
+
+## SUNDAY JUNE 28 — DYNAMIC MEMORY + FUNCTION POINTERS + GIT (7:30 AM–4:00 PM)
+
+### BLOCK 1 (7:30–9:00 AM): Watch Remaining mycodeschool Videos
+Watch videos 9–15 at 1.5× speed.
+
 ```
-High Address
-┌──────────────┐
-│    STACK      │ ← local variables, function args, return addresses
-│    ↓ grows    │
-│              │
-│    ↑ grows    │
-│    HEAP       │ ← malloc/calloc
-├──────────────┤
-│    BSS        │ ← uninitialized globals (zeroed)
-├──────────────┤
-│    DATA       │ ← initialized globals
-├──────────────┤
-│    RODATA     │ ← string literals, const data
-├──────────────┤
-│    TEXT       │ ← your compiled code (instructions)
-└──────────────┘
-Low Address
+Video 9:  Memory leak and dangling pointer        (~12 min)
+Video 10: Pointers and 2D arrays                 (~12 min)
+Video 11: Pointers to functions                  (~10 min)
+Video 12: Function pointers and callbacks         (~12 min)
+Video 13: void pointers and generic programming  (~10 min)
+Video 14: Const pointers                         (~8 min)
+Video 15: Summary + practice                     (~10 min)
 ```
 
-**Exercise 2 — Check sizes with `size` command (5:50-6:10):**
+After watching: DRAW on paper:
+- The difference between `int *p`, `int * const p`, `const int *p`, `const int * const p`
+- What a dangling pointer looks like (pointer → freed memory)
+
+### BLOCK 2 (9:15–10:45 AM): Dynamic Memory Programs
+```
+week3/
+├── dynamic_array.c     — malloc/realloc to grow array dynamically
+├── my_malloc_strings.c — malloc'd strings, free every one, Valgrind clean
+└── valgrind_demo.c     — TWO versions: one with leak, one fixed. Run both under Valgrind.
+```
+
+**dynamic_array.c** requirements:
+```c
+// Build a growable integer array:
+// Start with malloc(5 * sizeof(int))
+// Fill first 5 elements
+// Grow with realloc to 10 elements
+// Fill elements 5–9
+// Print all 10
+// Free — no leaks
+// Run with: valgrind --leak-check=full ./dynamic_array
+// Expected: 0 bytes in 0 blocks lost
+```
+
+**valgrind_demo.c** requirements:
+```c
+// Version 1 — INTENTIONAL memory leak (keep for demonstration):
+//   malloc 100 ints, fill them, print them, but DO NOT free
+//   Valgrind will report: definitely lost: 400 bytes in 1 blocks
+//   Compile as: gcc -g valgrind_demo_leak.c -o demo_leak
+
+// Version 2 — Fixed version (same program with free added):
+//   Same as version 1 but with free() before return
+//   Valgrind will report: 0 bytes in 0 blocks lost
+//   Compile as: gcc -g valgrind_demo_fixed.c -o demo_fixed
+
+// Compare Valgrind output side by side — understand what "definitely lost" means
+```
+
+Rules:
+- Every `malloc` or `calloc` call needs a matching `free`
+- After `free(p)`, set `p = NULL` immediately
+- Before using any malloc'd pointer: check `if (ptr == NULL) { /* handle error */ }`
+
+### GIT PUSH (10:45–11:15 AM)
 ```bash
-gcc -o layout memory_layout.c
-size layout   # Shows: text, data, bss sections sizes
-
-# Compare with a minimal program
-echo 'int main(){return 0;}' > tiny.c
-gcc -o tiny tiny.c
-size tiny     # Much smaller!
+cd ~/C-Practice
+git add week3/
+git commit -m "Week 3: pointers — arithmetic, swap, dynamic memory, function pointers. Valgrind clean."
+git push origin main
 ```
 
-**What to understand**: On STM32 with 128KB flash + 128KB RAM:
-- TEXT + RODATA + DATA → must fit in FLASH (128KB)
-- DATA (copy) + BSS + HEAP + STACK → must fit in RAM (128KB)
-- If your program is too big → it doesn't fit. No virtual memory. No swap.
+Write `week3/README.md`:
+- List every file in week3/
+- One sentence per file: what concept it demonstrates
+- Add a section "Key insight this week": in your own words, explain what a pointer is and why C uses them
 
-### ✅ Day 17 Checklist
-- [ ] memory_layout.c running — see all section addresses
-- [ ] Drew memory layout diagram on paper
-- [ ] Used `size` command to check section sizes
-- [ ] Can explain: text, data, bss, heap, stack + what goes where
+### REST + LUNCH (11:15 AM–12:00 PM)
 
----
+### GERMAN (12:00–2:00 PM)
+- Nicos Weg Lessons 21–22
+- Anki mega review (clear all pending cards — aim for 50+ words total)
+- Write German from memory: introduce yourself AND describe what you are studying and why
 
-## DAY 18 — Thursday, Jun 18
+### EXTENDED CODING (2:00–4:00 PM): Pointer-Based Functions Rewrite
+Take your Week 1 and Week 2 programs and rewrite them to use pointers:
 
-### 🔶 Morning Block (5:10 - 6:30 AM) — PACKED STRUCTS + BIT FIELDS
+```
+week3/
+├── ptr_bubble_sort.c   — bubble_sort(int *arr, int n) — modifies original array via pointer
+├── ptr_my_strlen.c     — my_strlen using pointer traversal (while *s++ != '\0')
+└── ptr_functions.c     — max_in_array, sum_array, find_element — all use pointer parameters
+```
 
-#### 💻 CODE (1h 20m)
+**ptr_bubble_sort.c** — from memory, no reference:
+- Write `void bubble_sort(int *arr, int n)` — sorts in place via pointer
+- Write `void print_array(const int *arr, int n)` — const pointer: cannot modify elements
+- Test with an array of 10 numbers — sort ascending, print each pass
 
-**Exercise 1 — Struct padding (5:10-5:35):**
-
-Create `week8/struct_padding.c`:
+**ptr_my_strlen.c** — two implementations:
 ```c
-#include <stdio.h>
-#include <stdint.h>
+// Version 1: index-based (what you wrote in Week 2)
+int my_strlen_index(const char *s) {
+    int count = 0;
+    while (s[count] != '\0') count++;
+    return count;
+}
 
-// Normal struct — compiler adds padding for alignment
-struct Normal {
-    char a;     // 1 byte + 3 padding
-    int b;      // 4 bytes
-    char c;     // 1 byte + 3 padding
-};              // Total: 12 bytes (not 6!)
-
-// Reordered — less padding
-struct Reordered {
-    int b;      // 4 bytes
-    char a;     // 1 byte
-    char c;     // 1 byte + 2 padding
-};              // Total: 8 bytes
-
-// Packed — no padding (used in embedded for hardware registers)
-struct __attribute__((packed)) Packed {
-    char a;     // 1 byte
-    int b;      // 4 bytes
-    char c;     // 1 byte
-};              // Total: 6 bytes (exact)
-
-int main(void) {
-    printf("Normal:    sizeof = %zu\n", sizeof(struct Normal));
-    printf("Reordered: sizeof = %zu\n", sizeof(struct Reordered));
-    printf("Packed:    sizeof = %zu\n", sizeof(struct Packed));
-    
-    return 0;
+// Version 2: pointer-based (new — more idiomatic C)
+int my_strlen_ptr(const char *s) {
+    const char *start = s;
+    while (*s) s++;         // advance until null terminator
+    return (int)(s - start); // pointer subtraction = length
 }
 ```
 
-**Exercise 2 — Bit fields (5:35-6:00):**
+Both must return IDENTICAL results for the same input. Verify with 10 test strings.
 
-Create `week8/bit_fields.c`:
-```c
-#include <stdio.h>
-#include <stdint.h>
+**IMPORTANT end-of-week challenge**: From a blank file, write BOTH of these from memory with no references:
+1. `swap(int *a, int *b)` — correct pointer-based swap
+2. `my_strlen(const char *s)` — pointer traversal version
 
-// Simulating a hardware register with bit fields
-typedef struct {
-    uint32_t enable     : 1;   // Bit 0
-    uint32_t mode       : 2;   // Bits 1-2
-    uint32_t speed      : 3;   // Bits 3-5
-    uint32_t reserved   : 2;   // Bits 6-7
-    uint32_t data       : 8;   // Bits 8-15
-    uint32_t status     : 4;   // Bits 16-19
-    uint32_t reserved2  : 12;  // Bits 20-31
-} PeripheralReg;
-
-int main(void) {
-    PeripheralReg reg = {0};
-    
-    printf("sizeof(PeripheralReg) = %zu bytes\n", sizeof(PeripheralReg));
-    
-    // Set fields
-    reg.enable = 1;
-    reg.mode = 2;       // Mode 2
-    reg.speed = 5;      // Speed 5
-    reg.data = 0xAB;    // Data byte
-    reg.status = 0xF;   // All status bits set
-    
-    printf("enable: %u\n", reg.enable);
-    printf("mode:   %u\n", reg.mode);
-    printf("speed:  %u\n", reg.speed);
-    printf("data:   0x%X\n", reg.data);
-    printf("status: 0x%X\n", reg.status);
-    
-    // Print raw 32-bit value
-    uint32_t *raw = (uint32_t *)&reg;
-    printf("Raw register value: 0x%08X\n", *raw);
-    
-    return 0;
-}
-```
-
-**What to understand**: THIS is exactly how STM32 peripheral registers are organized. CMSIS headers define register structs with bit fields.
-
-**Exercise 3 — Memory-mapped I/O preview (6:00-6:20):**
-
-Create `week8/memory_mapped_io.c`:
-```c
-#include <stdio.h>
-#include <stdint.h>
-
-// Simulating STM32 GPIO register (memory-mapped at a fixed address)
-typedef struct {
-    volatile uint32_t MODER;    // Mode register
-    volatile uint32_t OTYPER;   // Output type register
-    volatile uint32_t OSPEEDR;  // Output speed register
-    volatile uint32_t PUPDR;    // Pull-up/pull-down register
-    volatile uint32_t IDR;      // Input data register
-    volatile uint32_t ODR;      // Output data register
-    volatile uint32_t BSRR;     // Bit set/reset register
-} GPIO_TypeDef;
-
-// On real STM32: #define GPIOA ((GPIO_TypeDef *)0x40020000)
-// Here we simulate with a local struct:
-GPIO_TypeDef fake_gpioa = {0};
-
-int main(void) {
-    GPIO_TypeDef *GPIOA = &fake_gpioa;
-    
-    // "Configure" pin 5 as output (like LED on Nucleo)
-    GPIOA->MODER |= (1 << 10);   // Set bit 10 (pin 5, mode = 01 = output)
-    
-    // "Turn on" pin 5
-    GPIOA->ODR |= (1 << 5);
-    
-    // "Turn off" pin 5
-    GPIOA->ODR &= ~(1 << 5);
-    
-    // Better way: use BSRR (atomic set/reset)
-    GPIOA->BSRR = (1 << 5);       // Set pin 5
-    GPIOA->BSRR = (1 << 21);      // Reset pin 5 (bit 21 = reset for pin 5)
-    
-    printf("MODER: 0x%08X\n", GPIOA->MODER);
-    printf("ODR:   0x%08X\n", GPIOA->ODR);
-    
-    return 0;
-}
-```
-
-> **⚠️ THIS IS EXACTLY WHAT YOU'LL DO IN JULY ON REAL STM32 HARDWARE.**
-> The only difference: `GPIOA` will point to `0x40020000` (real hardware address) instead of a local variable.
-
-### ✅ Day 18 Checklist
-- [ ] Understand struct padding — why sizeof differs from expected
-- [ ] Bit fields working — simulated hardware register
-- [ ] Memory-mapped I/O pattern understood — struct pointer to fixed address
-- [ ] Can explain: volatile, packed, why BSRR is better than ODR
+If you can do both in under 5 minutes total → you understand pointers. If not → re-read K.N. King Ch 11 and try again.
 
 ---
 
-## DAY 19 — Friday, Jun 19
+## WEEK 3 CHECKPOINT (Monday June 29, 4:00 PM)
 
-### 🔶 Morning Block (5:10 - 6:30 AM) — UNIONS + ADVANCED PATTERNS
+Update PROGRESS.md now. Be honest.
 
-#### 💻 CODE (1h 20m)
+| Checkpoint Item | Done? |
+|:---|:---|
+| Can explain: what is a pointer, what is & and * | |
+| swap(int *a, int *b) written from memory — works correctly | |
+| Understand why swap(a, b) by value does NOT swap | |
+| Pointer arithmetic: p+1 advances by sizeof(*p) | |
+| Know that arr[i] and *(arr+i) are identical | |
+| malloc/free used in at least 3 programs | |
+| Valgrind: all programs show 0 leaks | |
+| my_strlen written with pointer traversal (while *s++ style) | |
+| mycodeschool 15 videos watched, notes taken | |
+| GitHub: week3 pushed with README | |
+| Nicos Weg: lessons 17–22 done | |
+| Anki: 50+ German words total | |
+| K.N. King Ch 11–12 read | |
+| K&R Ch 5 read | |
 
-**Exercise 1 — Union for type punning:**
-```c
-typedef union {
-    uint32_t raw;
-    struct {
-        uint8_t byte0;
-        uint8_t byte1;
-        uint8_t byte2;
-        uint8_t byte3;
-    } bytes;
-    struct {
-        uint16_t low;
-        uint16_t high;
-    } words;
-} Register32;
-```
+**Self-rating (pointers 1–10)**: ___ (minimum 6 before Week 4 — you WILL use pointers in structs)
 
-Use this to extract individual bytes from a 32-bit value. Draw the memory layout.
-
-**Exercise 2 — Tagged union (variant type):**
-```c
-typedef enum { TYPE_INT, TYPE_FLOAT, TYPE_STRING } DataType;
-
-typedef struct {
-    DataType type;
-    union {
-        int i;
-        float f;
-        char s[32];
-    } value;
-} Variant;
-```
-
-Create an array of Variant and process each based on its type tag.
-
-### ✅ Day 19 Checklist
-- [ ] Union for register byte access working
-- [ ] Tagged union pattern understood
-- [ ] Drew union memory layout (all members share same address)
+> If your self-rating is below 6: spend the first weekday mornings of Week 4 re-reading K.N. King Ch 11.
+> Do not proceed to structs without a working mental model of pointers.
+> The rest of embedded C (malloc, linked lists, function callbacks, hardware register access) is ALL pointers.
 
 ---
 
-## DAY 20-21 — Saturday-Sunday, Jun 20-21 (DEEP STUDY + REVIEW)
+## WEEKDAY THEORY FOCUS (Week 3)
 
-### Saturday (6:30 AM - 12:45 PM)
+| Day | Read Before Gym | Bed Read |
+|:---|:---|:---|
+| Tue Jun 23 | K.N. King Ch 11 pp. 1–20 | K&R Ch 5 pp. 93–110 |
+| Wed Jun 24 | K.N. King Ch 11 pp. 20–40 | K&R Ch 5 pp. 110–125 |
+| Thu Jun 25 | K.N. King Ch 11 pp. 40–end | K&R Ch 5 pp. 125–140 |
+| Fri Jun 26 | K.N. King Ch 12 (Dynamic Memory) | K&R Ch 5 pp. 140–167 |
+| Mon Jun 29 | K.N. King Ch 12 (review) | K&R Ch 5 — re-read hard parts |
 
-**Session 1**: Build a "Hardware Register Simulator" — combine structs, bit fields, function pointers, state machine:
-- Create a fake peripheral with configuration registers
-- Write `configure()`, `enable()`, `read_status()`, `write_data()` functions
-- Use a state machine for the peripheral lifecycle (RESET → INIT → RUNNING → ERROR)
-
-**Session 2**: K.N. King Ch 16 + Ch 20 exercises
-
-**Session 3**: Interview prep — write answers for:
-1. "What is a state machine? Draw one for an elevator."
-2. "Explain struct padding and how to avoid it"
-3. "What is volatile and when must you use it?"
-4. "How are hardware registers accessed in C?" (memory-mapped I/O)
-5. "What is a callback function? Give an example from embedded systems."
-
-### Sunday (7:30 AM - 12:30 PM)
-
-**7:30-9:00**: Implement state machine from memory (no reference)
-**9:15-10:45**: Implement memory-mapped I/O simulator from memory
-**11:00-12:30**: Git push all week 8 code. Write READMEs.
-
-### 🇩🇪 German (both days, afternoon)
-- Nicos Weg lessons 38-40
-- Anki review (140+ cards)
-- Practice: daily routine in German with past tense
-
----
-
-## 📋 WEEK 3 CHECKPOINT
-
-- [ ] ✅ State machine with enum + function pointer dispatch — can build from scratch
-- [ ] ✅ Callbacks / function pointers — understand the pattern, can explain
-- [ ] ✅ Memory layout — can draw text/data/BSS/heap/stack from memory
-- [ ] ✅ Packed structs, bit fields — understand struct padding
-- [ ] ✅ Memory-mapped I/O — can simulate GPIO register access in pure C
-- [ ] ✅ Unions — type punning, tagged unions
-- [ ] ✅ All code pushed to GitHub
-- [ ] ✅ Nicos Weg lessons 36-40, 140+ Anki cards
+> Pointers will feel confusing mid-week. That is normal. The confusion resolves when you CODE.
+> Read carefully on weekdays. Draw diagrams in your notebook. Then code on the weekend.
+> The mycodeschool videos + your own diagrams are more valuable than re-reading the same paragraph 5 times.

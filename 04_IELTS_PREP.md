@@ -47,6 +47,12 @@
 - 🎯 **Sunday afternoon = IELTS slot** (see daily schedule)
 - Write 3-4 essays/week, get AI feedback
 
+> 🔴 **CRITICAL DE-CONFLICTION RULE (Aug–Sep 2027)**: This is the most overloaded window of the entire roadmap. Three things compete for the same weekend hours: Phase 4/5 embedded, German B2 push, and IELTS intensive. **IELTS WINS.** For these 8 weeks:
+> - **IELTS** = #1 priority. Full mock every weekend + 3-4 essays/week. Non-negotiable.
+> - **German** = MAINTENANCE ONLY. Anki + commute audio. No new grammar. Resume B2 push in October after the exam.
+> - **Embedded** = MAINTENANCE ONLY. Portfolio polish + 1 short session/week to stay warm. No new heavy topics (VHDL/Project 4 deep work pauses).
+> Do NOT try to do all three at full intensity. That guarantees you do all three badly. A 7.0 IELTS is worth more to your application than a half-finished VHDL project.
+
 ### Phase 4: Exam (Oct/Nov 2027)
 - Book IELTS at nearest British Council center
 - Take the exam

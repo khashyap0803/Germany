@@ -1,380 +1,385 @@
-# 📅 WEEK 3 — Jul 13-19 (Mon-Sun): UART — TALK TO YOUR PC
+# JULY WEEK 3 (Jul 14–20) — Phase 1 Week 6: MAKEFILES + GDB + MULTI-FILE PROJECTS
 
-> **Topics**: UART theory, USART2 HAL, USART2 register-level, printf redirect, serial terminal, logic analyzer
-> **FastBit MCU1**: UART/USART sections (all)
-> **"Mastering STM32" Book**: Chapter 8 (UART/USART)
-> **Reference Manual**: RM0383 Section 19 (USART)
-> **Hardware**: Black Pill + FT232 USB-UART + Tera Term on PC
-> **Programs on hardware**: 4-6
-> **German**: Nicos Weg A2 Lessons 9-13
-
----
-
-## DAY 13 — Monday, Jul 13
-
-### 🔶 Morning Block (5:10 - 6:30 AM) — UART THEORY
-
-#### 📺 WATCH (20 min)
-**FastBit MCU1**: USART section intro — theory
-**Controllerstech YouTube**: "STM32 UART" basics (~10 min)
-
-#### 📖 STUDY (1h)
-
-**UART fundamentals** (draw on paper):
-```
-TX ─────┐          ┌───── RX
-        │          │
-    ┌───┴──────────┴───┐
-    │ IDLE  START  D0 D1 D2 D3 D4 D5 D6 D7  STOP │
-    │  1     0    LSB ──────────────────── MSB  1  │
-    └──────────────────────────────────────────────┘
-    
-    Baud rate: bits per second (e.g., 115200)
-    Frame: 1 start + 8 data + 1 stop = 10 bits per byte
-    At 115200 baud: 11,520 bytes/second
-```
-
-**Key concepts:**
-- **Baud rate**: sender and receiver MUST match exactly
-- **Start bit**: always LOW — signals start of transmission
-- **Stop bit**: always HIGH — signals end of frame
-- **No clock line**: sender and receiver use their own clocks (asynchronous)
-- **TX and RX are crossed**: sender's TX → receiver's RX
-
-**Read RM0383 Section 19**: Focus on:
-- Section 19.3: USART functional description
-- Section 19.3.4: Baud rate generation (BRR register calculation)
-- Section 19.6: USART registers
-
-### ✅ Day 13 Checklist
-- [ ] UART frame format drawn on paper (start, 8 data, stop)
-- [ ] Understand: baud rate, asynchronous, TX/RX crossover
-- [ ] Read RM0383 USART section intro
-- [ ] Know: USART2 is on APB1, need to enable RCC->APB1ENR
+> **Topics**: Makefiles (variables, rules, pattern rules, automatic variables, .PHONY), GDB (breakpoints, step/next, examine memory, watch), multi-file project architecture
+> **K.N. King Reading**: Chapter 15 (Writing Large Programs) — header files, compilation, linking
+> **K&R Bed Reading**: Chapter 4 (Functions and Program Structure) — compilation units, scope
+> **YouTube**: Jacob Sorber "Makefiles" series + "GDB Tutorial" (~3 videos)
+> **AI Policy**: BANNED for code — AI may only explain concepts
+> **Dates**: Tuesday July 14 → Monday July 20, 2026
 
 ---
 
-## DAY 14 — Tuesday, Jul 14
+## WEEKDAY READING SCHEDULE (Jul 14–18)
 
-### 🔶 Morning Block (5:10 - 6:30 AM) — UART WITH HAL
+### Tuesday July 14 — Pre-Gym (5:00–5:25 AM)
+**Read**: K.N. King Chapter 15 (Writing Large Programs — pages 1–20)
+- Why split into multiple files? Maintainability, reuse, separate compilation
+- `.h` files: declarations only (function prototypes, typedefs, macros, struct definitions)
+- `.c` files: definitions (actual function bodies, global variable definitions)
+- Include guards: `#ifndef FILE_H` — prevents double-inclusion when multiple .c files include the same .h
+- The rule: `extern` declarations in .h, actual definitions in .c
 
-#### 💻 CODE (1h 20m)
+**Bed Reading (9:30–10:00 PM)**: K&R Chapter 4 pages 67–83
 
-**Step 1 — CubeMX UART setup (5:10-5:30):**
-1. New project: `08_uart_hal`
-2. CubeMX: Enable USART2 → Mode: Asynchronous
-3. Pins: PA2 = USART2_TX, PA3 = USART2_RX (should auto-assign)
-4. Baud rate: 115200, 8 data bits, 1 stop bit, No parity
-5. Generate code
+### Wednesday July 15 — Pre-Gym (5:00–5:25 AM)
+**Read**: K.N. King Chapter 15 (pages 20–end)
+- Compilation process: `.c` → (preprocessor) → `.i` → (compiler) → `.s` → (assembler) → `.o` → (linker) → executable
+- Object files `.o`: what they contain, why they exist
+- Linker: resolves external references across `.o` files
+- `static` at file scope: limits visibility to current translation unit (like "private" in C)
+- Building without a Makefile: `gcc file1.c file2.c file3.c -o program` — why this becomes painful for large projects
 
-**Step 2 — Send "Hello World" (5:30-5:45):**
-```c
-// In main(), inside while(1):
-char msg[] = "Hello from STM32F411!\r\n";
-HAL_UART_Transmit(&huart2, (uint8_t *)msg, strlen(msg), HAL_MAX_DELAY);
-HAL_Delay(1000);
-```
+**Bed Reading**: K&R Chapter 4 pages 83–88 (Scope Rules, Initialization)
 
-**Step 3 — Wire FT232 and open terminal (5:45-6:00):**
-```
-FT232 TX  → PA3 (STM32 RX)
-FT232 RX  → PA2 (STM32 TX)
-FT232 GND → GND
-```
-Open **Tera Term** on PC:
-- New Connection → Serial → select COM port (check Device Manager)
-- Setup → Serial Port → 115200, 8, N, 1
-- You should see "Hello from STM32F411!" every second!
+### Thursday July 16 — Pre-Gym (5:00–5:25 AM)
+**Read**: GNU Make manual concepts (search: "GNU Make tutorial" — read the first 3 sections online)
+- A Makefile is a recipe: `target: dependencies`, then TAB + command
+- Variables: `CC = gcc`, `CFLAGS = -Wall -Wextra -g -std=c99`
+- Pattern rules: `%.o: %.c` — builds any .o from the corresponding .c
+- Automatic variables: `$@` (target name), `$<` (first dependency), `$^` (all dependencies)
+- `.PHONY` targets: `clean` is not a file — declare it phony to prevent confusion
+- `make` vs `make clean` vs `make all` — what each does
 
-**Step 4 — Send formatted data (6:00-6:15):**
-```c
-char buf[64];
-int count = 0;
-while (1) {
-    int len = snprintf(buf, sizeof(buf), "Count: %d\r\n", count++);
-    HAL_UART_Transmit(&huart2, (uint8_t *)buf, len, HAL_MAX_DELAY);
-    HAL_Delay(500);
-}
-```
+**Bed Reading**: K&R Chapter 4 — re-read compilation units section
 
-### ✅ Day 14 Checklist
-- [ ] UART transmit working — see data in Tera Term
-- [ ] FT232 wired correctly (TX↔RX crossover)
-- [ ] Formatted data (counter) streaming over UART
-- [ ] Verified baud rate match between STM32 and Tera Term
+### Friday July 17 — Pre-Gym (5:00–5:25 AM)
+**Read**: GDB quick reference (search: "GDB cheat sheet" — print or save on phone)
+- `gcc -g`: include debug symbols (MUST have this for GDB to show line numbers)
+- `gdb ./program`: start GDB
+- `break main` or `break filename.c:42`: set breakpoint
+- `run [args]`: start program
+- `next` (n): execute one line, don't enter functions
+- `step` (s): execute one line, enter functions
+- `continue` (c): run until next breakpoint
+- `print x` (p x): print value of variable x
+- `x/4xw 0x...`: examine memory at address (4 words in hex format)
+- `backtrace` (bt): show call stack
+- `watch x`: break when variable x changes value
+- `quit`: exit GDB
 
----
+**Bed Reading**: K&R Chapter 4 pages 88–102
 
-## DAY 15 — Wednesday, Jul 15
+### Monday July 20 — Pre-Gym (5:00–5:25 AM)
+**Read**: Review K.N. King Ch 15 — linker errors section
+- "undefined reference" = definition missing (forgot to link the .o or .c)
+- "multiple definition" = defined in two places (forgot include guard or defined in .h instead of .c)
+- Review the difference: DECLARATION (prototype, no memory) vs DEFINITION (body, allocates memory)
 
-### 🔶 Morning Block (5:10 - 6:30 AM) — UART RECEIVE
-
-#### 💻 CODE (1h 20m)
-
-**Exercise 1 — Receive single character (5:10-5:35):**
-```c
-uint8_t rx_byte;
-while (1) {
-    HAL_UART_Receive(&huart2, &rx_byte, 1, HAL_MAX_DELAY);  // Blocking!
-    
-    // Echo back with modification
-    char buf[32];
-    int len = snprintf(buf, sizeof(buf), "Received: '%c' (0x%02X)\r\n", rx_byte, rx_byte);
-    HAL_UART_Transmit(&huart2, (uint8_t *)buf, len, HAL_MAX_DELAY);
-}
-```
-
-Type in Tera Term → see the echo.
-
-**Exercise 2 — Simple command menu (5:35-6:10):**
-```c
-void print_menu(UART_HandleTypeDef *huart) {
-    char *menu = "\r\n=== STM32 Menu ===\r\n"
-                 "1. Toggle LED\r\n"
-                 "2. Read button\r\n"
-                 "3. Show uptime\r\n"
-                 ">> ";
-    HAL_UART_Transmit(huart, (uint8_t *)menu, strlen(menu), HAL_MAX_DELAY);
-}
-```
-
-Process the received character:
-```c
-switch (rx_byte) {
-    case '1':
-        HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
-        send_string("LED toggled!\r\n");
-        break;
-    case '2':
-        if (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0))
-            send_string("Button: NOT pressed\r\n");
-        else
-            send_string("Button: PRESSED\r\n");
-        break;
-    case '3': {
-        char buf[32];
-        snprintf(buf, sizeof(buf), "Uptime: %lu ms\r\n", HAL_GetTick());
-        send_string(buf);
-        break;
-    }
-}
-```
-
-### ✅ Day 15 Checklist
-- [ ] Character echo working (type → see echo)
-- [ ] Menu system with 3 commands working
-- [ ] Can control LED from PC via UART
-- [ ] Understand: HAL_UART_Receive is BLOCKING — stops your main loop
+**Bed Reading**: K&R Chapter 4 — re-read header files section
 
 ---
 
-## DAY 16 — Thursday, Jul 16
+## SATURDAY JULY 18 — MAKEFILES + MULTI-FILE PROJECT (7:30 AM–6:30 PM)
 
-### 🔶 Morning Block (5:10 - 6:30 AM) — PRINTF REDIRECT (RETARGET)
+### Warmup (7:30–8:00 AM): Jacob Sorber YouTube Videos
+Watch these in order (search on YouTube):
+- "Makefiles: 95% of what you need to know" by Jacob Sorber (~10 min)
+- "Introduction to GDB" — any short tutorial (~12 min)
 
-#### 💻 CODE (1h 20m)
+### BLOCK 1 (8:00–9:30 AM): Write a Complete Makefile from Scratch
+Create a 5-file project and write its Makefile manually. NO CMake. NO IDE-generated Makefile.
 
-**The goal**: Make `printf()` work over UART. Then you can use `printf` for debugging just like on PC.
+```
+week6/calculator/
+├── Makefile
+├── main.c
+├── math_ops.h + math_ops.c     — add, sub, mul, div_safe, power, factorial
+├── string_utils.h + string_utils.c — parse_number, is_valid_input
+└── io_utils.h + io_utils.c     — print_menu, read_choice, print_result
+```
 
-**Method — Override `_write` syscall:**
+**Makefile** requirements — write this from scratch:
+```makefile
+CC      = gcc
+CFLAGS  = -Wall -Wextra -g -std=c99
+TARGET  = calculator
+SRCS    = main.c math_ops.c string_utils.c io_utils.c
+OBJS    = $(SRCS:.c=.o)
 
-Create `retarget.c`:
+.PHONY: all clean
+
+all: $(TARGET)
+
+$(TARGET): $(OBJS)
+	$(CC) $(CFLAGS) -o $@ $^
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c -o $@ $<
+
+clean:
+	rm -f $(OBJS) $(TARGET)
+```
+
+Every `.h` file needs a proper include guard. Every `.c` file includes only what it needs.
+
+Rules for this project:
+- `math_ops.c` should NOT include `io_utils.h` (no I/O in math module)
+- `io_utils.c` should NOT include `math_ops.h` (no math in I/O module)
+- Only `main.c` knows about all modules
+
+Run: `make` → compiles all 4 .c files → links into `calculator`
+Run: `make clean` → removes all .o files and binary
+Edit `math_ops.c` → run `make` → only `math_ops.o` and `calculator` recompile (the others don't)
+
+### BREAK (9:30–9:45)
+
+### BLOCK 2 (9:45–11:15 AM): GDB Debugging Session
+Debug TWO programs using GDB. NO printf debugging allowed in this block.
+
+**Program 1 — Segfault hunt** (`week6/buggy1.c`):
+Write this program with the intentional bugs, then find them using GDB:
 ```c
 #include <stdio.h>
-#include "stm32f4xx_hal.h"
+#include <string.h>
 
-extern UART_HandleTypeDef huart2;
-
-int _write(int file, char *ptr, int len) {
-    HAL_UART_Transmit(&huart2, (uint8_t *)ptr, len, HAL_MAX_DELAY);
-    return len;
-}
-```
-
-Now in `main.c`:
-```c
-printf("Hello from printf! Count = %d\r\n", count);
-printf("HAL_GetTick() = %lu ms\r\n", HAL_GetTick());
-printf("sizeof(int) on STM32 = %zu\r\n", sizeof(int));  // 4 bytes!
-```
-
-**What to understand**: `printf` calls `_write()` which you redirect to UART. This is the **same** mechanism used in professional firmware. Many companies ban `printf` in production (too slow/big) but it's essential for development.
-
-**Exercise — Also redirect `scanf`:**
-```c
-int _read(int file, char *ptr, int len) {
-    HAL_UART_Receive(&huart2, (uint8_t *)ptr, 1, HAL_MAX_DELAY);
-    return 1;
-}
-```
-
-Now you can use `scanf` to read from Tera Term!
-
-### ✅ Day 16 Checklist
-- [ ] printf redirected to UART — working in Tera Term
-- [ ] scanf redirected from UART — can read user input
-- [ ] Understand: `_write` syscall override mechanism
-- [ ] Can use printf for debugging just like on PC
-
----
-
-## DAY 17 — Friday, Jul 17
-
-### 🔶 Morning Block (5:10 - 6:30 AM) — UART REGISTER LEVEL ⚠️ CRITICAL
-
-#### 💻 CODE (1h 20m)
-
-Create `09_uart_register` — implement UART WITHOUT any HAL:
-
-```c
-#include "stm32f4xx.h"
-
-void uart2_init(uint32_t baud) {
-    // 1. Enable clocks
-    RCC->AHB1ENR |= RCC_AHB1ENR_GPIOAEN;   // GPIOA clock
-    RCC->APB1ENR |= RCC_APB1ENR_USART2EN;   // USART2 clock
-    
-    // 2. Configure PA2 (TX) as AF7
-    GPIOA->MODER &= ~(3U << 4);
-    GPIOA->MODER |=  (2U << 4);    // AF mode
-    GPIOA->AFR[0] &= ~(0xFU << 8);
-    GPIOA->AFR[0] |=  (7U << 8);   // AF7 = USART2
-    
-    // 3. Configure PA3 (RX) as AF7
-    GPIOA->MODER &= ~(3U << 6);
-    GPIOA->MODER |=  (2U << 6);    // AF mode
-    GPIOA->AFR[0] &= ~(0xFU << 12);
-    GPIOA->AFR[0] |=  (7U << 12);  // AF7 = USART2
-    
-    // 4. Configure USART2
-    // BRR = fCLK_APB1 / baud_rate
-    // At default HSI (no PLL): APB1 prescaler = 1, so APB1 = 16 MHz
-    // BRR = 16000000 / 115200 ≈ 139 = 0x8B
-    // NOTE: After PLL config (Week 5), APB1 prescaler = 2, and timer
-    // clocks double, but USART clock = APB1 = SYSCLK/2. Recalculate!
-    USART2->BRR = 16000000UL / baud;  // Hardcoded for HSI default
-    
-    USART2->CR1 = 0;
-    USART2->CR1 |= USART_CR1_TE;    // Transmitter enable
-    USART2->CR1 |= USART_CR1_RE;    // Receiver enable
-    USART2->CR1 |= USART_CR1_UE;    // USART enable
-}
-
-void uart2_send_char(char c) {
-    while (!(USART2->SR & USART_SR_TXE));  // Wait until TX buffer empty
-    USART2->DR = c;
-}
-
-void uart2_send_string(const char *str) {
-    while (*str) {
-        uart2_send_char(*str++);
+void copy_string(char *dest, const char *src) {
+    for (int i = 0; i <= strlen(src); i++) {  // BUG: <= should be <
+        dest[i] = src[i];
     }
 }
 
-char uart2_receive_char(void) {
-    while (!(USART2->SR & USART_SR_RXNE));  // Wait until RX buffer not empty
-    return USART2->DR;
+int sum_array(int *arr, int n) {
+    int sum = 0;
+    for (int i = 0; i <= n; i++) {  // BUG: off-by-one reads past array end
+        sum += arr[i];
+    }
+    return sum;
 }
 
 int main(void) {
-    uart2_init(115200);
-    uart2_send_string("Hello from REGISTER-LEVEL UART!\r\n");
-    
-    while (1) {
-        char c = uart2_receive_char();
-        uart2_send_string("Got: ");
-        uart2_send_char(c);
-        uart2_send_string("\r\n");
-    }
+    char buf[5];
+    copy_string(buf, "hello");   // writes 6 bytes into 5-byte buffer
+    printf("buf = %s\n", buf);
+    int nums[] = {1, 2, 3, 4, 5};
+    printf("sum = %d\n", sum_array(nums, 5));  // reads nums[5] (out of bounds)
+    return 0;
 }
 ```
 
-**MANDATORY**: For every register you write:
-1. Open RM0383 Section 19.6 (USART registers)
-2. Find: CR1, CR2, CR3, BRR, SR, DR registers
-3. Verify each bit you set
+GDB session to run:
+```bash
+gcc -Wall -Wextra -g -std=c99 buggy1.c -o buggy1
+gdb ./buggy1
+(gdb) break main
+(gdb) run
+(gdb) step           # step into copy_string
+(gdb) print i
+(gdb) print strlen(src)
+(gdb) backtrace      # see call stack when crash happens
+```
 
-**Verify with logic analyzer** (Sipeed SLogic + PulseView):
-- Connect SLogic CH0 to PA2 (TX line)
-- Decode as UART: 115200, 8N1
-- See your characters in the decode view!
+Document in comments: what GDB showed you, how you found each bug.
 
-### ✅ Day 17 Checklist
-- [ ] UART init from registers — TX and RX working
-- [ ] BRR calculation understood (fCLK / baud)
-- [ ] Send and receive characters without HAL
-- [ ] Verified on logic analyzer — saw UART waveform + decoded characters
-- [ ] Can explain: SR (status), DR (data), BRR (baud rate), CR1 (control)
+**Program 2 — Infinite loop bug hunt** (`week6/buggy2.c`):
+```c
+#include <stdio.h>
+
+int binary_search(int *arr, int n, int target) {
+    int left = 0, right = n;  // BUG: should be n-1
+    while (left <= right) {
+        int mid = left + (right - left) / 2;
+        if (arr[mid] == target) return mid;
+        if (arr[mid] < target) left = mid;   // BUG: should be mid+1
+        else right = mid;                     // BUG: should be mid-1
+    }
+    return -1;
+}
+
+int main(void) {
+    int sorted[] = {2, 5, 8, 12, 16, 23, 38, 56, 72, 91};
+    int idx = binary_search(sorted, 10, 23);
+    printf("Found 23 at index: %d (expected 5)\n", idx);
+    return 0;
+}
+```
+
+Use GDB watch points to find why it loops forever:
+```bash
+gdb ./buggy2
+(gdb) break binary_search
+(gdb) run
+(gdb) watch left
+(gdb) watch right
+(gdb) continue    # watch left/right changing — spot the infinite loop
+```
+
+### BREAK (11:15–11:30)
+
+### BLOCK 3 (11:30 AM–12:30 PM): Advanced Makefile — Build Directory
+Write a Makefile that puts `.o` files in a `build/` subdirectory:
+```makefile
+CC       = gcc
+CFLAGS   = -Wall -Wextra -g -std=c99
+BUILD    = build
+SRCS     = $(wildcard *.c)
+OBJS     = $(SRCS:%.c=$(BUILD)/%.o)
+TARGET   = $(BUILD)/program
+
+.PHONY: all clean debug release
+
+all: $(TARGET)
+
+$(TARGET): $(OBJS) | $(BUILD)
+	$(CC) $(CFLAGS) -o $@ $^
+
+$(BUILD)/%.o: %.c | $(BUILD)
+	$(CC) $(CFLAGS) -c -o $@ $<
+
+$(BUILD):
+	mkdir -p $@
+
+clean:
+	rm -rf $(BUILD)
+
+debug: CFLAGS += -DDEBUG -O0
+debug: $(TARGET)
+
+release: CFLAGS += -DNDEBUG -O2
+release: $(TARGET)
+```
+
+### LUNCH (12:30–1:30 PM)
+
+### GERMAN BLOCK 1 (1:30–4:30 PM)
+- Nicos Weg Lessons 36–37
+- Simple past tense: -te ending for regular verbs
+- Write 10 sentences: "Ich lernte gestern C. Ich arbeitete den ganzen Tag."
+- Anki: add 15 new cards
+
+### GERMAN BLOCK 2 (5:00–6:30 PM)
+- Nicos Weg Lessons 38–39
+- AnkiDroid: review ALL pending cards
+- Write from memory: describe your week in German using past tense
 
 ---
 
-## DAY 18 — Saturday, Jul 18 (DEEP STUDY DAY)
+## SUNDAY JULY 19 — GDB MEMORY + INTEGRATION PROJECT + GIT (7:30 AM–4:00 PM)
 
-### 💻 Deep Sessions (6:30 AM - 12:45 PM)
+### BLOCK 1 (7:30–9:00 AM): GDB Memory Examination
+```
+week6/
+└── gdb_memory.c    — Program to inspect memory layout with GDB
+```
 
-**Session 1 (6:30-7:30)**: FastBit MCU1 — complete ALL USART sections
+Write a program with stack + heap allocations, then examine memory in GDB:
+```c
+#include <stdio.h>
+#include <stdlib.h>
 
-**Session 2 (7:45-9:15)**: "Mastering STM32" Chapter 8 — full read + exercises
+int main(void) {
+    int stack_arr[5] = {0xAA, 0xBB, 0xCC, 0xDD, 0xEE};
+    char stack_str[20] = "Hello, GDB!";
+    int *heap_arr = malloc(5 * sizeof(int));
+    for (int i = 0; i < 5; i++) heap_arr[i] = i * 100;
 
-**Session 3 (9:30-11:00)**: Build a "Serial Data Logger"
-- Combine: button input + UART output
-- When button is pressed, send a timestamped message:
-  ```
-  [00012345] Button pressed! Count: 42
-  ```
-- Use your circular buffer from June to buffer messages!
+    printf("stack_arr at: %p\n", (void *)stack_arr);
+    printf("heap_arr at:  %p\n", (void *)heap_arr);
+    // SET BREAKPOINT HERE IN GDB
 
-**Session 4 (11:15-12:45)**: Interview prep
-1. "Explain UART frame format. What is baud rate?"
-2. "How do you calculate the BRR value for STM32?"
-3. "What is the difference between blocking and interrupt-driven UART?"
-4. "What happens if TX and RX baud rates don't match?"
-5. "How would you debug a UART communication problem?" (Answer: logic analyzer)
+    free(heap_arr);
+    return 0;
+}
+```
 
-### 🇩🇪 German (2:00-5:00 PM)
-- Nicos Weg A2 Lessons 11-13
-- Practice: describe your hobbies in German ("Ich programmiere gern.")
+GDB commands to practice:
+```
+x/5dw stack_arr   — examine 5 decimal words at stack_arr
+x/20cb stack_str  — examine 20 chars at stack_str
+x/5dw heap_arr    — examine heap memory
+info locals       — show all local variables
+p sizeof(int)     — print expression
+```
 
-### ✅ Day 18 Checklist
-- [ ] All FastBit USART content completed
-- [ ] "Mastering STM32" Ch 8 read
-- [ ] Serial data logger working (button → UART)
-- [ ] Circular buffer used on STM32 (reuse from June!)
-- [ ] 5 interview answers written
+Note the address range differences: stack addresses are much higher than heap addresses.
+
+### BLOCK 2 (9:15–10:30 AM): Integration Project
+Combine Weeks 4, 5, 6 into one properly organized project:
+```
+week6/embedded_project/
+├── Makefile
+├── config.h          — board configuration (from Week 5)
+├── bit_macros.h      — bit manipulation macros (from Week 4)
+├── gpio_sim.h/.c     — GPIO module (from Week 4)
+├── logger.h/.c       — Logger module (from Week 5)
+├── timer_sim.h/.c    — NEW: timer simulation
+└── main.c
+```
+
+**timer_sim.h** (new — write from scratch):
+```c
+#ifndef TIMER_SIM_H
+#define TIMER_SIM_H
+#include <time.h>
+
+typedef struct { clock_t start; unsigned long ticks; } Timer;
+
+void          timer_init(Timer *t);
+void          timer_tick(Timer *t);
+unsigned long timer_get_ticks(const Timer *t);
+double        timer_elapsed_ms(const Timer *t);
+
+#endif
+```
+
+The full project must: compile with `make`, run clean under Valgrind, write log to file.
+
+### GIT PUSH (10:30–11:00 AM)
+```bash
+cd ~/C-Practice
+git add week6/
+git commit -m "Week 6: Makefiles, GDB debugging (found 5 bugs), multi-file project with timer/GPIO/logger"
+git push origin main
+```
+
+Write `week6/README.md` — list files, GDB commands used, bugs found.
+
+### REST + LUNCH (11:00 AM–12:00 PM)
+
+### GERMAN (12:00–2:00 PM)
+- Nicos Weg Lesson 40 (milestone — two-thirds of A1 complete)
+- Anki mega review (aim for 90+ words total)
+- Write German from memory: what you built this week
+
+### EXTENDED CODING (2:00–4:00 PM): From Memory Challenge
+Without looking at previous code:
+1. Write a Makefile for a 3-file project from scratch (10 min max)
+2. Find a bug using only GDB, no printf (15 min max)
+3. Write `bit_macros.h` with all 4 macros from memory (5 min max)
 
 ---
 
-## DAY 19 — Sunday, Jul 19 (REVIEW + GIT)
+## WEEK 6 CHECKPOINT (Monday July 20, 4:00 PM)
 
-### 💻 Morning (7:30 AM - 12:30 PM)
+Update PROGRESS.md now. Be honest.
 
-**7:30-9:00**: From blank project, implement register-level UART from memory.
-- Target: init + send string + receive char in < 25 minutes.
-- If failed → redo until you can.
+| Checkpoint Item | Done? |
+|:---|:---|
+| Can write a complete Makefile for a 3-file project from memory | |
+| Pattern rule %.o: %.c with $@, $<, $^ | |
+| make clean removes .o files and binary | |
+| GDB: set breakpoint, step through code, print variables | |
+| GDB: found a bug using only GDB (no printf debugging) | |
+| GDB: x/ command to examine raw memory | |
+| Multi-file project: clean .h/.c separation, include guards | |
+| "Undefined reference" error: know what causes it | |
+| static at file scope: "private" to module | |
+| GitHub: week6 pushed with README | |
+| Nicos Weg: Lessons 36–40 done | |
+| Anki: 90+ German words total | |
 
-**9:15-10:45**: Use Sipeed SLogic to capture and analyze UART traffic
-- Measure actual baud rate — does it match 115200?
-- Count start/stop/data bits in the waveform
-- Take a screenshot for your GitHub README
-
-**11:00-12:30**: Git push all UART projects. Update README with wiring diagram.
-
-### ✅ Day 19 Checklist
-- [ ] Register-level UART from memory in < 25 min
-- [ ] Logic analyzer capture showing UART waveform
-- [ ] All code pushed with README + wiring diagram
-- [ ] Weekly review completed
+**Self-rating (Makefiles + GDB 1–10)**: ___ (minimum 6 before Week 7)
 
 ---
 
-## 📋 WEEK 3 CHECKPOINT
+## WEEKDAY THEORY FOCUS (Week 6)
 
-- [ ] ✅ UART theory: frame format, baud rate, async communication
-- [ ] ✅ UART HAL: transmit, receive, printf redirect, scanf redirect
-- [ ] ✅ UART register-level: init, send, receive — all without HAL
-- [ ] ✅ BRR calculation from scratch
-- [ ] ✅ Logic analyzer used to verify UART signals
-- [ ] ✅ Serial data logger with circular buffer working
-- [ ] ✅ Can write UART init + send/receive from memory
-- [ ] ✅ RM0383 USART section read
-- [ ] ✅ Nicos Weg A2 lessons 9-13, 170+ Anki cards
+| Day | Read Before Gym | Bed Read |
+|:---|:---|:---|
+| Tue Jul 14 | K.N. King Ch 15 pp. 1–20 | K&R Ch 4 pp. 67–83 |
+| Wed Jul 15 | K.N. King Ch 15 pp. 20–end | K&R Ch 4 pp. 83–88 |
+| Thu Jul 16 | GNU Make tutorial (online, first 3 sections) | K&R Ch 4 pp. 88–102 |
+| Fri Jul 17 | GDB cheat sheet — memorize commands | K&R Ch 4 — re-read |
+| Mon Jul 20 | K.N. King Ch 15 — linker errors section | K&R Ch 4 — header files |
+
+> A bug you find with GDB in 5 minutes would take 30 minutes to find with printf.
+> Learn GDB this week. Use it every week after this for the rest of Phase 1.

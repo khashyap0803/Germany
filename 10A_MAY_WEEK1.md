@@ -1,4 +1,11 @@
-# 📅 WEEK 1 — May 1-4 (Fri-Mon): SETUP + C BASICS
+# ARCHIVED — MAY WEEK 1 (NOT STARTED — See June 2026 files for actual Phase 1 Week 1)
+
+> **ARCHIVE NOTE**: This week was never executed. Real start = June 9, 2026. See `11A_JUNE_WEEK1.md`.
+> Content below is reference material for Phase 1 Week 1 topics.
+
+---
+
+# WEEK 1 — May 1-4 (Fri-Mon): SETUP + C BASICS [REFERENCE ONLY]
 
 > **Topics**: Environment setup, WSL2 + gcc, printf, scanf, variables, data types, operators, conditions, basic loops
 > **K.N. King Chapters**: Ch 1-3 (Introducing C, C Fundamentals, Formatted I/O)

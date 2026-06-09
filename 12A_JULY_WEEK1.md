@@ -1,301 +1,394 @@
-# 📅 WEEK 1 — Jul 1-5 (Wed-Sun): STM32 SETUP + ARM ARCHITECTURE + FIRST BLINK
+# JULY WEEK 1 (Jul 1–6) — Phase 1 Week 4: STRUCTS + BITWISE OPERATORS
 
-> **Topics**: STM32CubeIDE setup, ARM Cortex-M4 architecture, memory map, first project, blink LED (HAL), blink LED (register-level)
-> **FastBit MCU1**: Sections 1-3 (Introduction, Development board, IDE setup)
-> **FastBit ARM Cortex**: Sections 1-4 (ARM architecture, memory map, bus interfaces)
-> **"Mastering STM32" Book**: Chapters 1-4 (Introduction, Setting up the tool chain, Hello World, GPIO)
-> **Reference Manual**: RM0383 Section 2 (Memory map), Section 8 (GPIO)
-> **Programs on hardware**: 3-5
-> **German**: Nicos Weg A2 Lesson 1-3 (start A2!)
-> **📚 Full resource details**: See `10_RESOURCES.md`
+> **Topics**: Struct declaration, member access, pointer to struct (->), struct arrays, typedef, bitwise AND/OR/XOR/NOT/shifts, bit manipulation macros
+> **K.N. King Reading**: Ch 16 (Structures — complete) + Ch 20 first half (Low-Level Programming)
+> **K&R Bed Reading**: Chapter 6 (Structures)
+> **AI Policy**: BANNED for code — AI may only explain concepts
+> **Dates**: Wednesday July 1 → Monday July 6, 2026
+> **Note**: Week 4 Day 1 was June 30 (Tuesday). See 11D_JUNE_WEEK4.md for that day's reading.
 
 ---
 
-## 📺 PRE-WEEK HOMEWORK (Do June 30 evening if not done)
+## WEEKDAY READING SCHEDULE (Jul 1–4)
 
-1. **Install STM32CubeIDE** from st.com (should be done from June Week 4)
-2. **Download Reference Manual RM0383** (STM32F411) — bookmark in your browser
-3. **Download Datasheet DS10314** (STM32F411xC/E)
-4. **Watch FastBit ARM Cortex** — Section 1 (Introduction, 30 min at 1.5×)
+### Wednesday July 1 — Pre-Gym (5:00–5:25 AM)
+**Read**: K.N. King Chapter 16 pages 20–40
+- Nested structs: `struct Address` inside `struct Person`
+- Array of structs: `struct Student class[50]` — how to loop through
+- Passing struct by pointer to function: `void update_age(struct Person *p)`
+- Arrow operator: `p->age` is shorthand for `(*p).age` — ALWAYS use `->`
+
+**Bed Reading (9:30–10:00 PM)**: K&R Chapter 6 pages 127–145 (Basics of Structures, Structures and Functions)
+
+### Thursday July 2 — Pre-Gym (5:00–5:25 AM)
+**Read**: K.N. King Chapter 16 pages 40–end
+- `typedef struct { ... } TypeName;` — convenience alias so you don't write `struct` every time
+- Self-referential structs: `struct Node { int data; struct Node *next; }` — foundation of linked lists
+- Size of struct is NOT sum of members — compiler adds padding for alignment
+- `offsetof()` macro: tells you where in memory a member lives
+
+**Bed Reading**: K&R Chapter 6 pages 145–165 (Arrays of Structures, Pointers to Structures, Self-referential Structures)
+
+### Friday July 3 — Pre-Gym (5:00–5:25 AM)
+**Read**: K.N. King Chapter 20 pages 1–20 (Low-Level Programming)
+- Bitwise AND `&`: both bits must be 1 → used to CLEAR bits and READ bits
+- Bitwise OR `|`: either bit must be 1 → used to SET bits
+- Bitwise XOR `^`: bits must differ → used to TOGGLE bits
+- Bitwise NOT `~`: inverts all bits
+- Left shift `<<`: multiply by 2^n (fast); Right shift `>>`: divide by 2^n
+- Compound assignment: `x &= ~mask;` clears bits in mask
+
+Draw on paper (before gym):
+```
+SET bit 3:    reg |=  (1 << 3)     // OR with bit mask
+CLEAR bit 3:  reg &= ~(1 << 3)     // AND with inverted mask
+TOGGLE bit 3: reg ^=  (1 << 3)     // XOR with bit mask
+READ bit 3:   (reg >> 3) & 1       // shift down, mask lowest bit
+```
+
+**Bed Reading**: K&R Chapter 2 pages 48–53 (Bitwise Operators)
+
+### Monday July 6 — Pre-Gym (5:00–5:25 AM)
+**Read**: K.N. King Chapter 20 pages 20–40
+- Bit fields inside structs (already previewed in K.N. King Ch 16)
+- `volatile` keyword: what it means, why you need it for hardware registers
+- `const` with pointers: `const int *p` vs `int *const p` vs `const int *const p`
+
+**Bed Reading**: K&R Chapter 6 — re-read self-referential structs section
 
 ---
 
-## DAY 1 — Wednesday, Jul 1 ⭐ FIRST HARDWARE DAY
+## SATURDAY JULY 4 — STRUCTS + TYPEDEF (7:30 AM–6:30 PM)
 
-### 🔶 Morning Block (5:10 - 6:30 AM) — STM32CubeIDE + FIRST PROJECT
+### Warmup (7:30–8:00 AM): Watch Neso Academy Videos
+- "Structures in C" (~12 min at 1.5×)
+- "Array of Structures" (~8 min at 1.5×)
+- "Structures and Pointers" (~10 min at 1.5×)
 
-#### 📺 WATCH (20 min) — 5:10 to 5:30 AM
+### BLOCK 1 (8:00–9:30 AM): Basic Struct Programs
+Write ALL from scratch. NO AI code.
 
-**FastBit MCU1**: Section 1 — Course introduction + development board overview
-- Watch at 1.5× speed. Note which board they use (likely Nucleo).
-- Your board: **STM32F411CEU6 (Black Pill)** — same chip family, different package.
+```
+week4/
+├── structs_basic.c     — Point, Rectangle, Circle structs with area/perimeter functions
+├── student_db.c        — Array of 5 students: name, roll, 3 marks; sort by average
+└── employee.c          — Employee struct: name, id, salary; raise(), print_all(), find_by_id()
+```
 
-#### 💻 HARDWARE + CODE (40 min) — 5:30 to 6:10 AM
-
-**Step 1 — Create first project (5:30-5:45):**
-1. Open **STM32CubeIDE**
-2. File → New → STM32 Project
-3. Search: **STM32F411CEU6** → select it
-4. Name: `01_blink_hal`
-5. Targeted Project Type: STM32Cube → Finish
-6. CubeMX opens → you see the chip pinout diagram
-
-**Step 2 — Configure LED pin in CubeMX (5:45-5:55):**
-1. Find **PC13** on the pinout (Black Pill's onboard LED)
-2. Click PC13 → set to **GPIO_Output**
-3. In GPIO configuration: Output type = Push-Pull, Speed = Low, No pull
-4. Go to **Project Manager** tab → Generate Code
-
-**Step 3 — Write blink code (5:55-6:10):**
-In `main.c`, inside `while(1)`:
+**structs_basic.c** requirements:
 ```c
-/* USER CODE BEGIN WHILE */
-while (1)
-{
-    HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
-    HAL_Delay(500);  // 500ms delay
-    /* USER CODE END WHILE */
+typedef struct { float x, y; } Point;
+typedef struct { Point top_left; Point bottom_right; } Rectangle;
+typedef struct { Point center; float radius; } Circle;
+
+// Functions to implement (NO AI):
+float   point_distance(Point a, Point b);
+float   rect_area(Rectangle r);
+float   rect_perimeter(Rectangle r);
+float   circle_area(Circle c);       // PI = 3.14159265
+float   circle_circumference(Circle c);
+int     rect_contains_point(Rectangle r, Point p);  // 1 if point inside, 0 if not
+```
+
+**student_db.c** requirements:
+- Define `Student` with `name[50]`, `roll`, `marks[3]` (float), `average` (float)
+- `calc_average(Student *s)` — fills s->average from s->marks
+- `print_student(const Student *s)` — formatted table row
+- `sort_by_average(Student arr[], int n)` — bubble sort descending
+- `find_by_roll(Student arr[], int n, int roll)` — returns index or -1
+- Hard-code 5 students, call calc_average for each, sort, print ranked list
+
+**employee.c** requirements:
+- Define `Employee` with `name[50]`, `id` (int), `salary` (float)
+- `void raise_salary(Employee *e, float percent)` — e->salary *= (1 + percent/100)
+- `void print_all(Employee arr[], int n)` — formatted table
+- `int find_by_id(Employee arr[], int n, int id)` — return index or -1
+- Test with 4 employees: give 10% raise to ID 1002, print before and after
+
+### BREAK (9:30–9:45)
+
+### BLOCK 2 (9:45–11:15 AM): Bitwise Operators
+```
+week4/
+├── bitwise_demo.c      — All 6 operators with examples and printed binary
+├── bit_macros.h        — SET_BIT, CLEAR_BIT, TOGGLE_BIT, READ_BIT macros
+└── bit_flags.c         — Use your macros to simulate GPIO register + LED flags
+```
+
+**bitwise_demo.c** — write a `print_binary(unsigned int n)` helper first, then show:
+```c
+void print_binary(unsigned int n) {
+    // print all 32 bits from MSB to LSB
+    // hint: loop from bit 31 down to bit 0
+    // ((n >> i) & 1) gives the value of bit i
 }
-```
-
-**Step 4 — Flash and run:**
-1. Connect Black Pill to Nucleo's ST-Link (see overview for wiring)
-2. Click the green "Run" button (or Debug button)
-3. Select "ST-Link" as debugger
-4. **THE LED BLINKS!** 🎉
-
-> **You just ran YOUR code on REAL hardware. This is what it's all about.**
-
-#### 📖 READ (6:10 - 6:30 AM)
-- Open **RM0383** → Section 2: Memory and bus architecture
-- Find the **memory map** diagram. Note where GPIO registers are (0x4002 0000 range)
-- Note: FLASH starts at 0x0800 0000, SRAM at 0x2000 0000
-
-### ✅ Day 1 Checklist
-- [ ] STM32CubeIDE project created for STM32F411CEU6
-- [ ] CubeMX: PC13 configured as GPIO_Output
-- [ ] LED blinks at 500ms using HAL
-- [ ] Read RM0383 memory map — know where GPIO registers live
-- [ ] **First real hardware program running** ⭐
-
----
-
-## DAY 2 — Thursday, Jul 2
-
-### 🔶 Morning Block (5:10 - 6:30 AM) — ARM ARCHITECTURE OVERVIEW
-
-#### 📺 WATCH (30 min) — 5:10 to 5:40 AM
-
-**FastBit ARM Cortex-M3/M4**: Sections 1-2
-- ARM Cortex-M4 processor features
-- Bus interfaces: AHB, APB1, APB2
-- Memory map: Code, SRAM, Peripheral, External RAM regions
-- **KEY CONCEPT**: Every peripheral (GPIO, UART, Timer) is at a FIXED memory address
-
-#### 💻 EXPLORE (30 min) — 5:40 to 6:10 AM
-
-**Exercise 1 — Explore the generated code:**
-
-Open these files in your `01_blink_hal` project and READ every line:
-1. `Core/Src/main.c` — your application code
-2. `Core/Src/stm32f4xx_hal_msp.c` — MCU-specific init (clock enables)
-3. `Core/Src/system_stm32f4xx.c` — system clock configuration
-4. `Core/Src/stm32f4xx_it.c` — interrupt handlers (SysTick!)
-5. `Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h` — **THE REGISTER DEFINITIONS**
-
-**Open `stm32f411xe.h` and find:**
-```c
-// Find the GPIO_TypeDef struct — THIS is what you simulated in June Week 3!
-typedef struct {
-    __IO uint32_t MODER;    // Mode register        (offset 0x00)
-    __IO uint32_t OTYPER;   // Output type           (offset 0x04)
-    __IO uint32_t OSPEEDR;  // Output speed          (offset 0x08)
-    __IO uint32_t PUPDR;    // Pull-up/pull-down     (offset 0x0C)
-    __IO uint32_t IDR;      // Input data            (offset 0x10)
-    __IO uint32_t ODR;      // Output data           (offset 0x14)
-    __IO uint32_t BSRR;     // Bit set/reset         (offset 0x18)
-    __IO uint32_t LCKR;     // Lock                  (offset 0x1C)
-    __IO uint32_t AFR[2];   // Alternate function    (offset 0x20-0x24)
-} GPIO_TypeDef;
-
-// Find GPIOC base address:
-#define GPIOC_BASE  (AHB1PERIPH_BASE + 0x0800UL)
-#define GPIOC       ((GPIO_TypeDef *) GPIOC_BASE)
-```
-
-> **This is EXACTLY the memory-mapped I/O pattern you built in `week8/memory_mapped_io.c`!**
-> The only difference: now `GPIOC` points to REAL hardware at address `0x4002 0800`.
-
-#### 📖 READ (6:10 - 6:30 AM)
-- **"Mastering STM32"** — Chapter 1-2 (Introduction, Setting up)
-
-### ✅ Day 2 Checklist
-- [ ] Watched ARM Cortex architecture overview
-- [ ] Read ALL generated files in blink project
-- [ ] Found GPIO_TypeDef in CMSIS header — recognized the pattern from June
-- [ ] Know: AHB1, APB1, APB2 bus hierarchy
-- [ ] Know: GPIOC base address = 0x4002 0800
-
----
-
-## DAY 3 — Friday, Jul 3
-
-### 🔶 Morning Block (5:10 - 6:30 AM) — BLINK LED (REGISTER LEVEL) ⚠️ CRITICAL
-
-#### 📺 WATCH (15 min)
-
-**FastBit MCU1**: GPIO section — register-level configuration
-
-#### 💻 CODE (1h) — THE REAL TEST
-
-Create a NEW project: `02_blink_register`
-
-In `main.c`, replace ALL HAL calls with direct register access:
-
-```c
-#include "stm32f4xx.h"
 
 int main(void) {
-    // 1. Enable GPIOC clock (RCC AHB1 peripheral clock enable register)
-    RCC->AHB1ENR |= RCC_AHB1ENR_GPIOCEN;  // Set bit 2
-    
-    // 2. Configure PC13 as General Purpose Output
-    // MODER register: 2 bits per pin. Pin 13 = bits [27:26]
-    // 01 = General purpose output mode
-    GPIOC->MODER &= ~(3U << 26);   // Clear bits 27:26
-    GPIOC->MODER |=  (1U << 26);   // Set bit 26 (output mode)
-    
-    // 3. Configure output type: push-pull (bit 13 = 0)
-    GPIOC->OTYPER &= ~(1U << 13);
-    
-    // 4. Configure speed: low (bits [27:26] = 00)
-    GPIOC->OSPEEDR &= ~(3U << 26);
-    
-    // 5. No pull-up/pull-down
-    GPIOC->PUPDR &= ~(3U << 26);
-    
-    while (1) {
-        // Toggle PC13 using BSRR (atomic set/reset)
-        GPIOC->BSRR = (1U << 13);          // Set PC13 (LED OFF — active low!)
-        for (volatile int i = 0; i < 500000; i++);  // Crude delay
-        
-        GPIOC->BSRR = (1U << (13 + 16));   // Reset PC13 (LED ON)
-        for (volatile int i = 0; i < 500000; i++);
-    }
+    unsigned int a = 0b10110011;   // = 179
+    unsigned int b = 0b01101101;   // = 109
+
+    printf("a         = "); print_binary(a); printf("\n");
+    printf("b         = "); print_binary(b); printf("\n");
+    printf("a & b     = "); print_binary(a & b);  printf("  (AND)\n");
+    printf("a | b     = "); print_binary(a | b);  printf("  (OR)\n");
+    printf("a ^ b     = "); print_binary(a ^ b);  printf("  (XOR)\n");
+    printf("~a        = "); print_binary(~a);      printf("  (NOT a)\n");
+    printf("a << 2    = "); print_binary(a << 2);  printf("  (left shift 2)\n");
+    printf("a >> 2    = "); print_binary(a >> 2);  printf("  (right shift 2)\n");
+    return 0;
 }
 ```
 
-**MANDATORY: For every line, open RM0383 Section 8 (GPIO) and find:**
-- MODER register layout (Figure 24, Table 24)
-- OTYPER register layout
-- BSRR register: why bits 0-15 = SET and bits 16-31 = RESET
+**bit_macros.h** — write these macros:
+```c
+#ifndef BIT_MACROS_H
+#define BIT_MACROS_H
 
-**Draw on paper**: The MODER register with all 16 pin configurations (32 bits, 2 per pin).
+#define SET_BIT(reg, bit)     ((reg) |=  (1U << (bit)))
+#define CLEAR_BIT(reg, bit)   ((reg) &= ~(1U << (bit)))
+#define TOGGLE_BIT(reg, bit)  ((reg) ^=  (1U << (bit)))
+#define READ_BIT(reg, bit)    (((reg) >> (bit)) & 1U)
+#define WRITE_BIT(reg, bit, val) \
+    ((val) ? SET_BIT(reg, bit) : CLEAR_BIT(reg, bit))
 
-### ✅ Day 3 Checklist
-- [ ] Blink LED working WITHOUT any HAL function calls
-- [ ] Can explain: RCC clock enable, MODER, OTYPER, OSPEEDR, PUPDR, BSRR
-- [ ] Drew MODER register layout on paper
-- [ ] Verified register addresses match RM0383
-- [ ] **Understand: HAL does exactly this under the hood**
+#endif
+```
+
+**bit_flags.c** — simulate a GPIO output register:
+```c
+#include <stdint.h>
+#include "bit_macros.h"
+
+// Simulate STM32 GPIO ODR (Output Data Register)
+// Bit 5 = LED1 (like Nucleo PA5)
+// Bit 6 = LED2
+// Bit 7 = LED3
+// Bit 0 = Button (input, read only)
+
+void print_gpio_state(uint32_t reg, const char *label);
+
+int main(void) {
+    uint32_t gpio_reg = 0;
+
+    // Turn on LED1 (pin 5)
+    SET_BIT(gpio_reg, 5);
+    print_gpio_state(gpio_reg, "LED1 ON");
+
+    // Turn on LED2 (pin 6)
+    SET_BIT(gpio_reg, 6);
+    print_gpio_state(gpio_reg, "LED2 ON");
+
+    // Toggle LED1 (should turn off)
+    TOGGLE_BIT(gpio_reg, 5);
+    print_gpio_state(gpio_reg, "LED1 toggled OFF");
+
+    // Read LED2 state
+    printf("LED2 is %s\n", READ_BIT(gpio_reg, 6) ? "ON" : "OFF");
+
+    // Clear all LEDs
+    CLEAR_BIT(gpio_reg, 5);
+    CLEAR_BIT(gpio_reg, 6);
+    CLEAR_BIT(gpio_reg, 7);
+    print_gpio_state(gpio_reg, "All LEDs OFF");
+
+    return 0;
+}
+```
+
+### BREAK (11:15–11:30)
+
+### BLOCK 3 (11:30 AM–12:30 PM): Linked List Node (Struct + Pointer Preview)
+```
+week4/
+└── list_node.c     — struct Node with self-reference; manually build 3-node chain
+```
+
+**list_node.c** requirements — manually wire up 3 nodes WITHOUT malloc yet (use stack arrays):
+```c
+typedef struct Node {
+    int data;
+    struct Node *next;  // Self-referential!
+} Node;
+
+int main(void) {
+    // Create 3 nodes on the stack
+    Node n1 = {10, NULL};
+    Node n2 = {20, NULL};
+    Node n3 = {30, NULL};
+
+    // Wire them together manually
+    n1.next = &n2;
+    n2.next = &n3;
+    // n3.next is already NULL
+
+    // Traverse the list
+    Node *p = &n1;
+    while (p != NULL) {
+        printf("%d -> ", p->data);
+        p = p->next;
+    }
+    printf("NULL\n");   // Expected: 10 -> 20 -> 30 -> NULL
+}
+```
+
+**Key insight**: `p->data` means "the data member of the node that p points to." Draw this diagram on paper — boxes connected by arrows. This is the foundation for Week 7 (full dynamic linked list with malloc).
+
+### LUNCH (12:30–1:30 PM)
+
+### GERMAN BLOCK 1 (1:30–4:30 PM)
+- Nicos Weg Lessons 23–25
+- New grammar: accusative case (direct object) — "Ich habe einen Stift. Ich sehe den Computer."
+- Write 10 sentences using accusative case
+- Anki: add 15 new cards
+
+### GERMAN BLOCK 2 (5:00–6:30 PM)
+- Nicos Weg Lessons 26–27
+- AnkiDroid: review ALL pending cards
+- ChatGPT Voice: "I'm an A1 German learner. Ask me questions about my day and what I'm doing."
 
 ---
 
-## DAY 4 — Saturday, Jul 4 (DEEP STUDY DAY)
+## SUNDAY JULY 5 — BITWISE DEEP + STRUCT REVIEW + GIT (7:30 AM–4:00 PM)
 
-### 💻 STM32 Deep Sessions (6:30 AM - 12:45 PM)
+### BLOCK 1 (7:30–9:00 AM): Bitwise Practice Programs
+Watch: Jacob Sorber "Bitwise Operations in C" (~10 min) first.
 
-**Session 1 (6:30-7:30)**: FastBit ARM Cortex — Sections 3-4
-- Bus interfaces deep dive (AHB, APB)
-- Vector table, stack pointer, reset sequence
-- How does the MCU boot? What happens before `main()`?
-
-**Session 2 (7:45-9:15)**: Debug the blink with GDB
 ```
-1. Click "Debug" button in STM32CubeIDE
-2. Step through your register-level blink
-3. Open "SFR" (Special Function Register) view
-4. Watch GPIOC->MODER change as you step through
-5. Watch GPIOC->ODR toggle as LED turns on/off
+week4/
+├── number_utils.c      — is_power_of_two, count_set_bits, swap_without_temp, reverse_bits
+└── bitmask_ops.c       — RGB color packing/unpacking, flag register simulation
 ```
 
-**Session 3 (9:30-11:00)**: Button input (HAL)
-- Create `03_button_input_hal`
-- Configure PA0 as GPIO_Input with internal pull-up
-- Read button state: `HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0)`
-- LED ON when button pressed, OFF when released
-- Add debouncing with `HAL_Delay(50)`
+**number_utils.c** requirements:
+```c
+int is_power_of_two(unsigned int n);  // trick: n & (n-1) == 0 if power of 2
+int count_set_bits(unsigned int n);   // Brian Kernighan: while(n) { n &= n-1; count++; }
+void swap_without_temp(int *a, int *b);  // a ^= b; b ^= a; a ^= b;
+unsigned int reverse_bits(unsigned int n);  // reverse all 32 bits
 
-**Session 4 (11:15-12:45)**: Button input (Register level)
-- Create `04_button_input_register`
-- Same button, same LED, but pure register access
-- Read IDR register: `if (GPIOA->IDR & (1U << 0))`
-- Configure PUPDR for internal pull-up
+// Test all 4 functions with multiple inputs
+// Verify swap_without_temp against the standard temp-based swap
+```
 
-### 🇩🇪 German (2:00-5:00 PM)
-- **Start Nicos Weg A2!** Lesson 1-2
-- Review all A1 vocabulary in Anki
-- A2 introduces: Perfekt tense, modal verbs (können, müssen, wollen)
+**bitmask_ops.c** requirements:
+```c
+// Pack RGB color into a 32-bit integer:
+// Bits 23-16 = Red, Bits 15-8 = Green, Bits 7-0 = Blue
 
-### ✅ Day 4 Checklist
-- [ ] ARM boot sequence understood (vector table → Reset_Handler → main)
-- [ ] Used SFR view in debugger to watch registers change in real-time
-- [ ] Button input working with HAL (with debounce)
-- [ ] Button input working with register access
-- [ ] Started Nicos Weg A2
+uint32_t pack_rgb(uint8_t r, uint8_t g, uint8_t b);
+uint8_t  get_red(uint32_t color);
+uint8_t  get_green(uint32_t color);
+uint8_t  get_blue(uint32_t color);
+uint32_t set_red(uint32_t color, uint8_t r);  // Change only the red channel
 
----
+// Test:
+// uint32_t orange = pack_rgb(255, 165, 0);
+// Extract and print r, g, b
+// Change red to 200, verify g and b unchanged
+```
 
-## DAY 5 — Sunday, Jul 5 (REVIEW + GIT)
+### BLOCK 2 (9:15–10:30 AM): Struct Review — Write from Memory
+From a blank file, write BOTH of these from memory (no references):
+1. `Student` struct + `calc_average()` + `sort_by_average()` — should take under 15 min
+2. `bit_macros.h` — SET_BIT, CLEAR_BIT, TOGGLE_BIT, READ_BIT — should take under 5 min
 
-### 💻 Morning (7:30 AM - 12:30 PM)
+If you can do both without looking → you've solidified Week 4.
 
-**7:30-9:00**: From scratch, write a register-level blink program WITHOUT any reference.
-- Time yourself. Target: under 15 minutes.
-- If you can't → you don't understand GPIO yet → redo Day 3.
-
-**9:15-10:45**: Read **RM0383 Section 8 (GPIO)** — ALL of it (about 15 pages)
-- Draw the GPIO block diagram on paper
-- List all GPIO registers with their offsets
-- Understand alternate function (AF) — you'll need this for UART
-
-**11:00-12:30**: Push code to GitHub
+### GIT PUSH (10:30–11:00 AM)
 ```bash
-# Create a new repo structure for STM32 work
-mkdir -p /mnt/f/Documents/DEVELOP/STM32-Practice
-cd /mnt/f/Documents/DEVELOP/STM32-Practice
-git init
-# Copy project folders (or symlink)
+cd ~/C-Practice
+git add week4/
+git commit -m "Week 4: structs (Student, Employee, geometry), bitwise macros, linked list node preview"
+git push origin main
 ```
 
-Write a README explaining:
-- What hardware you're using
-- How to wire Black Pill to Nucleo ST-Link
-- What each project does
-- Register-level vs HAL comparison
+Write `week4/README.md`:
+- List every file in week4/
+- One sentence per file
+- Section "Key insight": explain the arrow operator `->` in your own words
 
-### 🇩🇪 German (2:00-4:00 PM)
-- Nicos Weg A2 Lesson 3
-- Anki: add A2 vocabulary (new deck or expand A1 deck)
-- Review: "Ich kann... / Ich muss... / Ich will..."
+### REST + LUNCH (11:00 AM–12:00 PM)
 
-### ✅ Day 5 Checklist
-- [ ] Register-level blink from memory in < 15 min
-- [ ] RM0383 GPIO section fully read
-- [ ] GPIO block diagram drawn on paper
-- [ ] All projects pushed to GitHub with README
-- [ ] Nicos Weg A2 started (lessons 1-3)
+### GERMAN (12:00–2:00 PM)
+- Nicos Weg Lessons 28–29
+- Anki mega review (clear all pending — aim for 65+ words total)
+- Write German from memory: daily routine + what you are studying
+
+### EXTENDED CODING (2:00–4:00 PM): GPIO Register Simulator
+```
+week4/
+├── gpio_sim.h      — GPIO struct + function declarations
+├── gpio_sim.c      — Implementation
+└── gpio_main.c     — Demo: configure pins, set/clear/toggle, read state
+```
+
+**gpio_sim.h** — simulate a real GPIO peripheral:
+```c
+#ifndef GPIO_SIM_H
+#define GPIO_SIM_H
+
+#include <stdint.h>
+#include "bit_macros.h"
+
+typedef enum {
+    GPIO_MODE_INPUT  = 0b00,
+    GPIO_MODE_OUTPUT = 0b01,
+    GPIO_MODE_ALTFN  = 0b10,
+    GPIO_MODE_ANALOG = 0b11
+} GPIO_Mode;
+
+typedef struct {
+    uint32_t MODER;   // Mode register (2 bits per pin)
+    uint32_t ODR;     // Output Data Register (1 bit per pin)
+    uint32_t IDR;     // Input Data Register  (1 bit per pin, read-only in hardware)
+    uint32_t BSRR;    // Bit Set/Reset Register
+} GPIO_Regs;
+
+void gpio_set_mode(GPIO_Regs *gpio, uint8_t pin, GPIO_Mode mode);
+void gpio_write_pin(GPIO_Regs *gpio, uint8_t pin, uint8_t value);
+void gpio_toggle_pin(GPIO_Regs *gpio, uint8_t pin);
+uint8_t gpio_read_pin(const GPIO_Regs *gpio, uint8_t pin);
+void gpio_print_state(const GPIO_Regs *gpio, const char *name);
+
+#endif
+```
+
+Implement all functions. Use your bit macros wherever possible. The MODER register uses 2 bits per pin (so pin N uses bits 2N and 2N+1).
+
+> This is the EXACT same struct layout as real STM32 GPIO registers. In July Phase 2 (August), the only change will be: `GPIO_Regs *gpio = (GPIO_Regs *)0x40020000;` — the struct pointer will point to real hardware memory.
 
 ---
 
-## 📋 WEEK 1 CHECKPOINT
+## WEEK 4 CHECKPOINT (Monday July 6, 4:00 PM)
 
-- [ ] ✅ STM32CubeIDE installed, working, can flash to Black Pill via Nucleo ST-Link
-- [ ] ✅ Blink LED with HAL (understand every generated line)
-- [ ] ✅ Blink LED with register access (can write from memory)
-- [ ] ✅ Button input with HAL AND register level
-- [ ] ✅ ARM Cortex-M4 architecture basics (bus, memory map, boot sequence)
-- [ ] ✅ RM0383 GPIO section read completely
-- [ ] ✅ GPIO register layout drawn on paper (MODER, ODR, IDR, BSRR)
-- [ ] ✅ GDB + SFR view used to watch register changes
-- [ ] ✅ Nicos Weg A2 started (lessons 1-3), 160+ Anki cards
+Update PROGRESS.md now. Be honest.
+
+| Checkpoint Item | Done? |
+|:---|:---|
+| Struct with members, constructor, typedef — written from scratch | |
+| Arrow operator -> understood and used correctly | |
+| Array of structs: sort by field using bubble sort | |
+| Bitwise: AND, OR, XOR, NOT, shifts — all demonstrated | |
+| SET_BIT / CLEAR_BIT / TOGGLE_BIT / READ_BIT macros written from memory | |
+| GPIO register simulator using struct + bit macros | |
+| struct Node with self-referential pointer built | |
+| GitHub: week4 pushed with README | |
+| Nicos Weg: Lessons 23–29 done | |
+| Anki: 65+ German words total | |
+| K.N. King Ch 16 + Ch 20 (first half) read | |
+
+**Self-rating (structs + bitwise 1–10)**: ___ (minimum 6 before Week 5)
+
+---
+
+## WEEKDAY THEORY FOCUS (Week 4)
+
+| Day | Read Before Gym | Bed Read |
+|:---|:---|:---|
+| Wed Jul 1 | K.N. King Ch 16 pp. 20–40 | K&R Ch 6 pp. 127–145 |
+| Thu Jul 2 | K.N. King Ch 16 pp. 40–end | K&R Ch 6 pp. 145–165 |
+| Fri Jul 3 | K.N. King Ch 20 pp. 1–20 | K&R Ch 2 pp. 48–53 |
+| Mon Jul 6 | K.N. King Ch 20 pp. 20–40 | K&R Ch 6 — re-read self-referential structs |
+
+> Bitwise operations feel abstract until you see them control hardware.
+> The GPIO simulator this week makes them concrete. After writing SET_BIT/CLEAR_BIT, you will never forget them.

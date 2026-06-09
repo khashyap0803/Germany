@@ -1,4 +1,11 @@
-# 📅 WEEK 5 — May 26-31 (Tue-Sun): SPECIAL TOPICS + MONTH REVIEW
+# ARCHIVED — MAY WEEK 5 (NOT STARTED — See July 2026 files for actual Phase 1 Week 5)
+
+> **ARCHIVE NOTE**: This week was never executed. Real start = June 9, 2026. See `12B_JULY_WEEK2.md`.
+> Content below is reference material for Phase 1 Week 5 topics (Special Topics).
+
+---
+
+# WEEK 5 — May 26-31 (Tue-Sun): SPECIAL TOPICS + MONTH REVIEW [REFERENCE ONLY]
 
 > **Topics**: enum, volatile, const, static, extern, file I/O, preprocessor, Makefile, month test
 > **K.N. King Chapters**: Ch 22 (Input/Output), Ch 14 revisit (Preprocessor), review all chapters

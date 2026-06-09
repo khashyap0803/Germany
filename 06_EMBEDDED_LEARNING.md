@@ -1,7 +1,8 @@
 # 💻 EMBEDDED SYSTEMS LEARNING PLAN
 
 ## Strategy: Type 3 "AI Supervisor Engineer" — manual foundations → AI-accelerated mastery
-## Time: Mornings (5:10-6:30) + Weekends (~16.5 hrs) + Passive commute audio (~17 hrs/week)
+## Real Start: June 9, 2026 (not May — gym 5:30-6:30 AM daily eliminates weekday morning coding)
+## Time: Pre-gym reading (5:00-5:25 AM) + Weekends (~16.5 hrs coding) + Commute audio (~17 hrs/week)
 ## See `09_ULTIMATE_STUDY_PLAN.md` for the DETAILED daily/weekly schedule
 
 ---
@@ -10,15 +11,29 @@
 
 | Phase | Period | AI Rule |
 |---|---|---|
-| **Phase 1-2** | May–Oct 2026 | 🔴 **AI BANNED for code.** AI only explains concepts. YOU write ALL code. |
-| **Phase 3** | Oct–Dec 2026 | 🟡 **Supervised AI.** AI generates boilerplate. You REVIEW and EXPLAIN every line. |
-| **Phase 4+** | Jan 2027+ | 🟢 **AI Partner.** Generate, review, test, sign off — like a senior engineer. |
+| **Phase 1** | Jun 9–Aug 24, 2026 | 🔴 **AI BANNED for code.** AI only explains concepts. YOU write ALL code. |
+| **Phase 2** | Aug 25–Nov 23, 2026 | 🔴 **AI BANNED for code.** Same rule — hardware work, zero AI code. |
+| **Phase 3** | Nov 24, 2026–Feb 8, 2027 | 🟡 **Supervised AI.** AI generates boilerplate. You REVIEW and EXPLAIN every line. |
+| **Phase 4+** | Feb 9, 2027+ | 🟢 **AI Partner.** Generate, review, test, sign off — like a senior engineer. |
+
+---
+
+## ⚠️ ECE FUNDAMENTALS — READ `15_FUNDAMENTALS_BRIDGE.md` FIRST
+
+You do NOT need to relearn your B.E. degree (Thevenin/Norton/mesh/EDC/Signals/Control). For admission it changes nothing; for embedded work, the only basics that matter are **practical electronics** and **digital logic**. Two small bridges are inserted into the timeline — total ~5 weekends, no phase delay:
+
+| Bridge | When | Why |
+|:---|:---|:---|
+| **Practical Electronics** (Ohm's law, voltage divider, pull-ups, logic levels, reading datasheets) | Aug 18–29, 2026 (deload + first Phase 2 weekend) | So you understand/wire the STM32 without frying it |
+| **Digital Logic** (number systems, Boolean, gates, flip-flops, FSM) | Oct 2027 (after IELTS exam, before VHDL) | Prerequisite for VHDL (Phase 5) |
+
+**Everything else from your degree: skip unless a specific job/course forces it.** Full detail + resources in `15_FUNDAMENTALS_BRIDGE.md`.
 
 ---
 
 ## LEARNING PATH (Priority Order)
 
-### 1. C Programming DEEP (May - Jul 2026) — 11 weeks (includes 2-week wedding buffer)
+### 1. C Programming DEEP (Jun 9 – Aug 24, 2026) — 11 weeks
 **Why**: Foundation of ALL embedded work. You MUST know C properly.
 
 | Topic | Primary Resource | Secondary Resource | Practice |
@@ -34,7 +49,7 @@
 
 **Pipeline**: Read King → Do exercises → Watch FastBit → Code yourself → EXPLAIN out loud
 
-### 2. Microcontroller Programming (Jul 16 - Oct 15, 2026) — 13 weeks
+### 2. Microcontroller Programming (Aug 25 – Nov 23, 2026) — 13 weeks
 **Why**: Core of embedded systems. Register-level understanding.
 
 | Topic | Primary Resource | Course | Hardware |
@@ -51,7 +66,7 @@
 
 **Portfolio Project 1**: "STM32 Environmental Monitor" — ADC + timer + UART + circular buffer → GitHub
 
-### 3. RTOS + Zephyr (Oct 16 - Dec 2026) — 11 weeks
+### 3. RTOS + Zephyr (Nov 24, 2026 – Feb 8, 2027) — 11 weeks
 **Why**: Required for embedded roles. Industry moving to Zephyr.
 
 | Topic | Primary Resource | Course |
@@ -64,8 +79,9 @@
 **AI Tools Introduction**: Start using Copilot/Ember for FreeRTOS boilerplate (YOU verify every line)
 
 **Portfolio Project 2**: "FreeRTOS Multi-Sensor Dashboard" + Zephyr re-implementation → GitHub
+**Note**: Bond expires Oct 2027 → resign → last working day ~Jan 2028 → 9 months free for applications
 
-### 4. Protocols + Linux + AI Tools Mastery (Jan - Jun 2027) — 26 weeks
+### 4. Protocols + Linux + AI Tools Mastery (Feb 9 – Aug 9, 2027) — 26 weeks
 **Why**: Complete the embedded stack. Master AI tools as a supervisor.
 
 | Topic | Resource | AI Tool to Learn |
@@ -82,13 +98,15 @@
 
 **Portfolio Project 3**: ESP32 IoT device — AI-accelerated (generate 60%, verify 100%) → GitHub
 
-### 5. VHDL + Portfolio Polish (Jul - Dec 2027) — 26 weeks
+### 5. VHDL + IELTS + Portfolio Polish (Aug 10, 2027 – Feb 8, 2028) — 26 weeks
 
-| Topic | Resource |
-|:---|:---|
-| Digital logic review | Neso Academy (YouTube) + Morris Mano book |
-| VHDL basics + simulation | Free VHDL tutorials, HDLBits |
-| Counter, FSM, ALU designs | Practice + Joseph Yiu ARM book |
+> 🔴 **De-confliction**: Aug–Sep 2027 = **IELTS INTENSIVE** (everything else on maintenance). VHDL heavy work is moved to AFTER the IELTS exam (Oct 2027+). The **Digital Logic Bridge** (`15_FUNDAMENTALS_BRIDGE.md`) runs in Oct 2027 right after the exam, as the lead-in to VHDL.
+
+| Topic | When | Resource |
+|:---|:---|:---|
+| **Digital logic bridge** (gates, flip-flops, FSM) | Oct 2027 (post-IELTS) | Neso Academy Digital Electronics + Morris Mano — see `15_FUNDAMENTALS_BRIDGE.md` |
+| VHDL basics + simulation | Nov 2027+ | Free VHDL tutorials, HDLBits, GHDL |
+| Counter, FSM, ALU designs | Nov 2027 – Feb 2028 | Practice + Joseph Yiu ARM book |
 
 **Portfolio Project 4**: VHDL/Verilog design + AI-assisted PCB (Flux) → GitHub
 
@@ -142,13 +160,13 @@ sudo apt install gcc-arm-none-eabi gdb-multiarch make cmake git
 
 | # | Course | Hours | Phase |
 |:---|:---|:---|:---|
-| 1 | FastBit Embedded C Programming | 16.5h | Phase 1 (May 2026) |
-| 2 | FastBit MCU Driver Development (MCU1) | 28.5h | Phase 2 (Jul 2026) |
-| 3 | FastBit Timers/PWM/CAN (MCU2) | 29h | Phase 2-3 (Aug-Dec 2026) |
-| 4 | FastBit Zephyr RTOS | 9h | Phase 3 (Dec 2026) |
-| 5 | Linux 100+ hours | 100h+ | Phase 4 (Jan 2027) |
-| **Buy Jun** | FastBit ARM Cortex-M3/M4 | 15h | Phase 2 |
-| **Buy Sep** | FastBit FreeRTOS | 14h | Phase 3 |
+| 1 | FastBit Embedded C Programming | 16.5h | Phase 1 (Jun–Aug 2026) |
+| 2 | FastBit MCU Driver Development (MCU1) | 28.5h | Phase 2 (Aug–Nov 2026) |
+| 3 | FastBit Timers/PWM/CAN (MCU2) | 29h | Phase 2-3 (Sep 2026–Feb 2027) |
+| 4 | FastBit Zephyr RTOS | 9h | Phase 3 (Feb 2027) |
+| 5 | Linux 100+ hours | 100h+ | Phase 4 (Feb–Aug 2027) |
+| **Buy Aug 2026** | FastBit ARM Cortex-M3/M4 | 15h | Phase 2 (Aug 2026) |
+| **Buy Nov 2026** | FastBit FreeRTOS | 14h | Phase 3 (Nov 2026) |
 
 See `10_RESOURCES.md` for complete book + platform library.
 
@@ -168,10 +186,10 @@ README.md should include:
 ```
 
 ### Target: 4 solid projects by mid-2028
-1. **STM32 Environmental Monitor** (STM32 + ADC + UART + timer) — Sep 2026
-2. **FreeRTOS Multi-Sensor Dashboard** + Zephyr branch (STM32 + RTOS) — Dec 2026
-3. **IoT Device** (ESP32 + WiFi + MQTT + sensors, AI-accelerated) — Mar 2027
-4. **VHDL Design** + AI-assisted PCB (Flux) — Aug 2027
+1. **STM32 Environmental Monitor** (STM32 + ADC + UART + timer) — Nov 2026
+2. **FreeRTOS Multi-Sensor Dashboard** + Zephyr branch (STM32 + RTOS) — Feb 2027
+3. **IoT Device** (ESP32 + WiFi + MQTT + sensors, AI-accelerated) — May 2027
+4. **VHDL Design** + AI-assisted PCB (Flux) — Oct 2027
 
 ### Key Rules:
 > **Phase 1-2**: WRITE EVERY LINE OF CODE YOURSELF. No AI code generation. No copy-paste.
