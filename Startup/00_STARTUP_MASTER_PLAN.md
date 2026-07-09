@@ -1,141 +1,99 @@
 # 🚀 STARTUP MASTER PLAN — Khashyap + Family
 
-> **Created**: July 1, 2026 · **Revised**: July 3, 2026 — after father's review (v2: healthcare-software pivot)
+> **Created**: July 1, 2026 · **v2**: July 3 (healthcare-software) · **v3**: **July 9, 2026 — ALL-IN ON MEDICAL DEVICES**
 > **Owner**: Khashyap (technical lead + founder)
-> **Rule for this folder**: Everything startup-related lives under `Startup/`. The Germany roadmap files (`00`–`15`, weekly plans) stay as-is and are reused, not edited.
+> **Rule for this folder**: Everything startup-related lives under `Startup/`. The Germany roadmap files (root `00`–`15`, weekly plans) stay as-is and are reused, not edited.
 
 ---
 
-## THE ONE-LINE VERSION (v2)
+## ⚡ v3 — THE ACTIVE PLAN (supersedes v2)
 
-> Sell **AI software/automation services** now (proven skill, earns in weeks) → productize into **healthcare-vertical software** for clinics, diagnostics and telehealth (the reachable side of medical) → launch a **separate hardware-devices venture** once the family is financially safe — hardware is **mandatory eventually, but never survival-critical.** Neuro/neuroinformatics stays the far horizon.
+**Khashyap chose to go ALL-IN on biomedical devices and drop the software-services detour.** His reasoning (Jul 9, 2026): the family is **not** drowning — two incomes now, EMI covered, and the **house can be sold to clear the loan** if it ever burdens them after father's retirement (worst case = an ordinary middle-class life, not ruin). That removes the "must replace father's income" survival pressure that shaped v2. So he'd rather pour every hour into the actual dream — devices — than into chatbot-freelancing whose skills don't compound toward it.
 
----
+**Two locked strategy decisions (Jul 9):**
+1. **Novel Class B device first → ladder to Class C/D later** — NOT a direct jump to C/D (impossible for a first-timer; see `11`).
+2. **Year 1 = zero selling, zero company registration** — pure skill-building + clinical problem discovery. (This *reverses* v2's "register a proprietorship now.")
 
-## WHY v2 (father's stress-test — and what it changed)
-
-Your father, an actual industry veteran, broke the old plan's weakest link, and he was right:
-
-- **Regulated pharma buys critical instruments on TRUST and LIABILITY, not price.** A batch is worth crores; one faulty sensor destroys it. They buy Hamilton/Sartorius/Mettler at 3× cost *because* those names carry validated reliability. A startup sensor in a GMP line is unthinkable. Bioprocess instrumentation isn't a blue ocean — it's a **fortress** (low competition *because* the barriers are near-insurmountable).
-- **Father has domain knowledge, not a sales network.** He can judge ideas, guide what to build, and warn what not to do — he cannot open customer doors. All client acquisition = platforms + cold outreach + inbound. No shortcuts.
-- **The layer-jumps were cliffs.** The old ladder made family survival depend on the *least* certain layer. Wrong model.
-
-**The fix:** survival rests on the MOST certain layer (software). Upper layers are built as *extensions and options*, and hardware becomes a **parallel second company** funded by the first — so no failure above Layer 1 can ever take the family down.
-
-**Locked decisions (Jul 3, 2026):**
-1. Medical hardware → reframed to medical **software first**; hardware later — **mandatory at some point** (structural commitment below), timing flexible.
-2. A profitable software company that saves the family = **an acceptable primary win.** Hardware = parallel venture when time + surplus money exist.
-3. Focus: **healthcare/medical broadly — clinics + diagnostics + telehealth** (reachable software buyers). Bioprocess/pharma allowed opportunistically, never as the core bet.
-4. Father = **domain advisor only.**
+**The v2 files are now DEFERRED:** `01`–`10` (cash engine, Vijaya outreach, local leads) describe the v2 software-services approach — **kept only as history / an emergency fallback**, not the live plan. **The active plan is files `11`–`14`.**
 
 ---
 
-## THE THREE LAYERS (v2)
+## THE ONE-LINE VERSION (v3)
 
-| Layer | What | When | Risk | Role |
+> Spend Year 1 becoming a real **biomedical-device engineer** (five biosignal learning prototypes, no selling) → use clinical discovery to lock ONE **novel neuro/wearable Class-B measurement device** → after the bond ends, get it **grant-funded** (Nidhi-PRAYAS → BIRAC-BIG) through a Hyderabad incubator, certify it (ISO 13485 / IEC 60601 / CDSCO) and sell it → that earns the QMS, track record, clinical partners and capital that make the **Class C/D neuro dream** actually reachable. Germany (an embedded-**biomedical** masters, e.g. Bremerhaven) is delayed — and now *serves* this path instead of competing with it.
+
+---
+
+## THE THREE RUNGS (v3 — detail in `11`)
+
+| Rung | What | When | Money | Risk |
 |:---|:---|:---|:---|:---|
-| **Layer 1 — AI Software & Automation Services** | Chatbots, internal tools, data/report automation, content pipelines, mini-apps — for SMEs, with a deliberate lean toward healthcare-adjacent buyers (clinics, labs, dentists, pharmacies) | **Now → always** | Low | 💰 Cash engine + skill + healthcare exposure. **The survival layer.** |
-| **Layer 2 — HealthTech Vertical Software Products** | Productized software for clinics/diagnostics/telehealth: clinic ops SaaS, lab report automation, patient follow-up systems, doctor/lab AI assistants. Built from the pains Layer-1 clients repeat. | ~Year 1.5 → 4 | Medium | 🌉 Recurring product revenue (MRR) + the real medical moat. Still software = your proven skill. |
-| **Layer 3 — Medical Hardware Devices** (+ neuro someday) | Physical devices via the safe routes: SaMD (software-as-medical-device) first, partnerships with established manufacturers, then own devices. **Run as a SEPARATE second company.** | When gates pass (could be 2029, could be 2032) | High | 🏔️ **Mandatory eventually — never survival-critical.** The dream, structurally protected. |
+| **Rung 0 — Learning prototypes** | 5 uncertified biosignal builds (ECG → PPG → EMG → EEG → multimodal wearable). Never sold, never on a patient. | Now → ~mid-2027 | **Family ≤ ₹1–3L** | Low — it's learning |
+| **Rung 1 — Device #1: a novel Class B** | ONE neuro/wearable **measurement/screening** device, chosen from a *validated clinical need*. Grant-funded, certified, sold. | ~2028–2031 | **Grants + investors** | Medium |
+| **Rung 2 — Device #2+: Class C/D** | The neuro dream (higher-risk device). Separate entity. Reachable *because* Rung 1 earned the QMS + track record + clinical partners + capital. | 2031+ | VC | High |
 
-### 🔩 THE HARDWARE COMMITMENT (so "mandatory" is structural, not a hope)
-1. **Track B never stops:** firmware learning (C → STM32 → RTOS, no-AI discipline) continues throughout — the hardware venture's technical foundation is always being built. (Also = Germany prep, always.)
-2. **The Hardware Fund:** once the company nets ≥ ₹50k/month for 3 straight months, **10% of monthly profit accrues to a ring-fenced hardware fund.** The venture gets fuel automatically, not "someday when we feel rich."
-3. **Separate entity:** the hardware venture registers as its own company (clean liability — its failure cannot legally or financially touch the family company).
-4. **Entry routes, in order of safety:** SaMD → co-develop/white-label with an existing manufacturer → own manufacturing. Never start at "own manufacturing."
-
-### 🪤 THE SUCCESS-TRAP ESCAPE (father's Point 1b, answered structurally)
-"What if Layer 1 clicks so hard I'm trapped in delivery forever?" — **Rule:** when recurring revenue holds ≥ ₹1L/month for 3 months, **hire the first delivery person** and permanently protect ~30% of founder time for product/R&D. Getting "stuck" in a profitable company is only a trap if you never hire. This rule is the door out, decided now, in writing.
+**Why measurement/screening first:** a wrong reading = a re-test, not a death → keeps Device #1 **Class B** (affordable to certify) and satisfies your father's "no/very-less failure" bar. Life-support/implants wait for Rung 2.
 
 ---
 
-## THE TWO DEADLINES
+## STANDING RED LINES (v3 — these protect the family)
 
-| Deadline | Date (approx.) | Meaning |
+1. **Family money funds ONLY Rung-0 learning** (≤ ₹1–3L, staged). It **never** touches certification.
+2. **Certification + scale money = grants + investors only** (PRAYAS, BIRAC-BIG, seed VC — see `14`).
+3. **The house is the loan backstop — NEVER startup fuel.** "Sell house to clear EMI if burdened" must never quietly become "sell house to fund my device." Hold this line.
+4. **Keep ≥50% of any liquid buffer** as family emergency reserve until real grant money lands.
+
+---
+
+## THE TWO DEADLINES (reframed by v3)
+
+| Deadline | Date (approx.) | Meaning under v3 |
 |:---|:---|:---|
-| **Soft** | ~1 yr (bond ends ~mid/late 2027 — *confirm exact date*) | Company registered, first clients, L1 revenue real, you free to join formally. |
-| **Hard** | ~5 yrs (~2031, father retires) | Father's ₹1,50,000/month → ₹0. Company must be replacing it. |
+| **Bond end** | ~mid/late 2027 (*confirm exact date*) | The gate to quit-job / go full-time / apply for BIRAC-BIG (BIG requires quitting employment — verified). Until then: after-hours only. |
+| **Father's retirement** | ~2031 | Father's ₹1,50,000/month → ₹0. **No longer a survival cliff** (house backstops the loan) — but by design, Device #1 should be launching around then, so the family's *upside* arrives as his salary ends. |
+
+> The old "north-star = replace ₹1.7L/month by 2031" target is **retired in v3.** Survival is handled by the house backstop; the goal is now the *device*, not an income-replacement number.
 
 ---
 
-## THE NORTH-STAR NUMBER (corrected — Jul 3, 2026)
-
-**Today:** ₹1,50,000 (father) + ₹20,000 (you, → ₹37,000 soon) = **₹1,70,000/month**, minus **₹1,00,000 EMI** = **~₹70,000/month** surplus (→ ~₹87,000 at your ₹37k).
-
-**The cliff (corrected — shorter than v1):** EMI is ₹1,00,000/month for **10 years** (→ ~2036). Father retires ~2031. So the EMI outlives his salary by **~5 years** (not 10 as v1 said). After ~2036 the ₹1L/month drag disappears entirely — maximum pressure is 2031–2036.
-
-> 🎯 **Target: ~₹2,00,000–2,50,000/month net to the family by 2030–31** (EMI ₹1L + living ₹50–70k + sister + buffer). After 2036: pressure drops by ₹1L/month permanently.
-
-Interim gates (base case first, stretch in brackets):
-- Month ~2–4: **first paying client**
-- Month ~9–12: **₹15–25k/month recurring** *(stretch: ₹25–50k by month 6–9)*
-- Year ~2: **₹50k–1L/month** + Layer-2 product discovered (from repeated client pains) and in build
-- Year ~4–5: **₹2–2.5L+/month** (services + product MRR), first hires — *the gate that must eventually hold*
-
-Full honest probabilities per gate: `08_FEASIBILITY_AND_PROBABILITY.md`.
-
----
-
-## MONEY: STAGED, NEVER ALL AT ONCE
-
-| Tranche | Amount | Unlocks | Gate to release |
-|:---|:---|:---|:---|
-| **T1** | ~₹10k–50k (₹1L max) | Registration (~₹0–5k) + setup; tools already owned. Breakdown → `07` | — (start) |
-| **T2** | ~₹50k–1.5L | Layer-2 **software product** build + marketing (cheaper than hardware was!) | Paying L1 clients + a *repeated* healthcare pain identified |
-| **T3** | Larger + Hardware Fund | Scale, first hire, then the hardware venture's seed | Product MRR real + main company stable |
-
-Keep **≥50% of the ₹10L untouched until G2 passes** — it doubles as the family emergency buffer.
-
----
-
-## FAMILY ROLES (v2 — summary; detail in `03`)
+## FAMILY ROLES (v3 — summary; detail in `12`)
 
 | Person | Role | Depth |
 |:---|:---|:---|
-| **Khashyap** | Technical lead + founder + all sales (platforms/cold/inbound) | Ultra |
-| **Father** | **Domain advisor** (judge ideas, name real clinic/lab/pharma pains, review plans, warn about traps) + registered proprietor until bond ends | Overview+ (AI-assisted) |
-| **Mother** | Operations: follow-ups, SOPs, bookkeeping, WE-Hub angle | Overview (AI-assisted) |
-| **Sister** | Co-engineer — ECE/EVL → embedded (feeds hardware venture); CSE/AI → health-software co-builder | Ultra |
+| **Khashyap** | Founder + lead engineer (all four learning tracks) + all funding/clinical outreach | Ultra |
+| **Sister** (branch confirmed Jul 10) | Co-engineer — ECE/BME/EEE → embedded+biosignals; CSE/AI → DSP/edge-ML + firmware-software. Ramped hours, **degree first.** Full strength ~2030 (P3). | Ultra |
+| **Father** | **Technical + quality advisor** (judge designs, name failure modes, GMP/quality discipline). **Not** deep clinical-neuro biology — his own stated limit; that gap is filled by clinicians in Phase 1. | Overview (technical) |
+| **Mother** | Ops/admin — **but no company to register in Year 1**, so her active role starts Phase 2 (incorporation, bookkeeping). | Overview |
 
 ---
 
-## LEGAL (safe-side)
+## HOW GERMANY FITS (v3 — now aligned, not competing)
 
-- Proprietorship in **father's name** until your bond ends (**mother's name instead** if his employer's terms restrict outside business — check; with L2 now *software*, the bioprocess conflict-of-interest worry is largely gone, but verify anyway). Detail: `07`.
-- You: after-hours only until bond ends; office micro-time = light learning/outreach only.
-- Hardware venture later = **separate entity** (see Hardware Commitment).
-
----
-
-## HOW GERMANY FITS
-
-Deferred, not dropped. Track B (C → STM32 → RTOS) doubles as masters prep forever. IELTS/logistics paused. Passive commute German continues. Decision point at bond-end 2027: defer further or hand the masters to your sister. Revisit seriously in the Layer-3 era.
+Delayed, not dead — and **repurposed**. Khashyap's plan: a Germany masters in **Embedded Systems** with a **biomedical/medical-device** subdomain, building a patient-grade device as the thesis. Verified: **Hochschule Bremerhaven's M.Sc. Embedded Systems Design** explicitly targets the industrial-scientific-**medical** (ISM) device market with medical-device application modules + lab project work — and doing thesis/HiWi work in another department's lab is normal in Germany, so the biomed-lab access he wants is realistic. The firmware track (C → STM32 → RTOS) is simultaneously device-skill AND masters prep. When Germany revives, re-rank universities toward medtech clusters (Erlangen — Medical Valley, Lübeck — Dräger) alongside Bremerhaven.
 
 ---
 
 ## FILE MAP
 
-| File | Purpose |
-|:---|:---|
-| `00` | This anchor (v2) |
-| `01` | Cash engine: buyers, offers, INR pricing, outreach, objection answers |
-| `02` | Time budget, office micro-time, Germany deferral, health guardrails |
-| `03` | Family roles + sister's branch-contingent plan |
-| `04` | First 90 days, step-by-step |
-| `05` | The dated climb (v2): services → health software → hardware venture |
-| `06` | Per-person learning tracks |
-| `07` | Registration structures + real costs |
-| `08` | **The honest pass-percentages**, gate by gate |
-| `09` | Outreach #1 — Vijaya Health Care (email + WhatsApp + walk-in script) |
+| File | Status | Purpose |
+|:---|:---|:---|
+| `00` | **ACTIVE** | This anchor (v3) |
+| `11` | **ACTIVE** | Device ladder & products — Rung 0/1/2, learning prototypes, Class-B candidates |
+| `12` | **ACTIVE** | Learning curriculum — the 4 tracks (electronics · medical · regulatory · clinical), per person |
+| `13` | **ACTIVE** | Problem selection — father's criteria as a scorecard + scored candidate problems |
+| `14` | **ACTIVE** | Regulatory (CDSCO/ISO/IEC) + funding ladder (PRAYAS→BIG) + honest gate-by-gate odds |
+| `01`–`10` | ⏸️ **DEFERRED (v2)** | Software-services approach — history / emergency fallback only. Not the live plan. |
+
+*(`01` cash engine · `02` time · `03` family/sister · `04` first-90-days · `05` v2 climb · `06` v2 learning tracks · `07` legal/registration · `08` v2 odds · `09` Vijaya outreach · `10` local leads — all v2, deferred.)*
 
 ---
 
-## HONEST RISKS (v2)
+## HONEST RISKS (v3)
 
-1. **Time/burnout** — biggest. Mitigation: weekends-first, sleep non-negotiable, `02` guardrails.
-2. **First sale takes 2–4 months** — mitigation: three channels at once, free-audit entry, price low for testimonials.
-3. **Market saturation / DIY buyers** (father's Point 1a) — real but partial; most SMEs will never build their own tools. Mitigation: multi-segment testing, move fast off dead segments. Objection answers in `01`.
-4. **Success-trap** (father's Point 1b) — answered structurally: the hiring rule above.
-5. **AI-dependence** — fine for software, fatal for firmware. The Track A/B wall in `06`.
-6. **Sister overload → backlogs** — degree first, ramped hours (`03`).
-7. **Hardware drift** — "mandatory later" becoming "never." Answered structurally: Track B never stops + the 10% Hardware Fund + separate entity with its own gate.
+1. **Long, low-odds climb** — a certified, selling device is single-digit-to-teens likely (normal for hardware medtech). Mitigation: **excellent downside** — even a stall leaves you a skilled medtech engineer with prototypes = perfect for the Germany masters or a top medtech job. Every rung has salvage value (unlike v2's path). See `14` odds.
+2. **Clinical access** — your biggest concrete gap (no network; father can't open clinical doors). Mitigation: OPD observation, patient groups, the 20-clinician question (`13`).
+3. **Time/burnout** — job + after-hours learning for a year+. Mitigation: sleep non-negotiable, consistency over intensity.
+4. **Picking the wrong device** — the #1 medtech killer. Mitigation: the Phase-1 exit gate — no build until ≥3 clinicians confirm the need (`13`).
+5. **Certification money** — real and large. Mitigation: the red lines above — grants/investors only, never the house.
+6. **Sister overload** — degree first, ramped hours (`12`).
+7. **Ambition drift to C/D too early** — Mitigation: the Rung-1-before-Rung-2 discipline; C1/C5 scorecard gatekeepers (`13`).
