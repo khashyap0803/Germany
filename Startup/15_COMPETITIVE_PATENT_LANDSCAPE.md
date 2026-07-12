@@ -8,15 +8,15 @@
 ## 1. WHO'S ALREADY DOING IT — PRODUCTS ON THE MARKET
 
 ### International — movement-disorder MONITORING (crowded, mature, patented)
-Five devices are conditionally endorsed by the UK's NICE for remote PD monitoring — meaning this is a *mature*, clinically-validated, competitive space, not a blank field:
+**Five monitoring devices are conditionally endorsed by the UK's NICE** — PKG, Kinesia 360, Kinesia U, PDMonitor, STAT-ON (Kinesia 360 & U are counted as two of the five, but share a vendor, so they're one row below). This is a *mature, clinically-validated, competitive* space, not a blank field. Cala is listed separately — it's a **therapy** device (FDA-cleared, *not* one of the NICE-endorsed monitors):
 
-| Product | Company / origin | What it does |
-|:---|:---|:---|
-| **PKG (Parkinson's KinetiGraph)** | Global Kinetics (AU/US) | Wrist wearable; bradykinesia, tremor %, dyskinesia scores |
-| **Kinesia 360 / Kinesia U** | Great Lakes NeuroTechnologies (US) | Wrist+ankle sensors; tremor, bradykinesia, dyskinesia |
-| **PDMonitor** | PD Neurotechnology (Greece) | Multi-sensor motor-symptom monitoring |
-| **STAT-ON** | Sense4Care (Spain) | Waist sensor; motor fluctuations |
-| **Cala kIQ Plus** | Cala Health (US, FDA-cleared) | *Therapy* (neurostimulation wristband) that also monitors |
+| Product | Company / origin | NICE-endorsed monitor? | What it does |
+|:---|:---|:---|:---|
+| **PKG (Parkinson's KinetiGraph)** | Global Kinetics (AU/US) | ✅ | Wrist wearable; bradykinesia, tremor %, dyskinesia scores |
+| **Kinesia 360 + Kinesia U** | Great Lakes NeuroTechnologies (US) | ✅ (both) | Wrist+ankle sensors; tremor, bradykinesia, dyskinesia |
+| **PDMonitor** | PD Neurotechnology (Greece) | ✅ | Multi-sensor motor-symptom monitoring |
+| **STAT-ON** | Sense4Care (Spain) | ✅ | Waist sensor; motor fluctuations |
+| **Cala kIQ Plus** | Cala Health (US) | ❌ (FDA *therapy*, not NICE monitoring) | Neurostimulation wristband — *treats* tremor; shown for completeness |
 
 ### India — the one that matters most for you: **Lifespark Technologies** ⚠️
 - **Mumbai, built at IIT Bombay (incubated at SINE), ISO 13485 certified, Shark Tank India S3.** Founder Amey Desai. Founded 2018.

@@ -61,7 +61,7 @@
 | Person | Role | Depth |
 |:---|:---|:---|
 | **Khashyap** | Founder + lead engineer (all four learning tracks) + all funding/clinical outreach | Ultra |
-| **Sister** (branch confirmed Jul 10) | Co-engineer — ECE/BME/EEE → embedded+biosignals; CSE/AI → DSP/edge-ML + firmware-software. Ramped hours, **degree first.** Full strength ~2030 (P3). | Ultra |
+| **Sister** (branch — EAMCET result out ~Jul 10; ⚠️ *confirm which*) | Co-engineer — ECE/BME/EEE → embedded+biosignals; CSE/AI → DSP/edge-ML + firmware-software. Ramped hours, **degree first.** Full strength ~2030 (P3). | Ultra |
 | **Father** | **Technical + quality advisor** (judge designs, name failure modes, GMP/quality discipline). **Not** deep clinical-neuro biology — his own stated limit; that gap is filled by clinicians in Phase 1. | Overview (technical) |
 | **Mother** | Ops/admin — **but no company to register in Year 1**, so her active role starts Phase 2 (incorporation, bookkeeping). | Overview |
 

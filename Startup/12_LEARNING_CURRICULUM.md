@@ -135,7 +135,7 @@ Detailed method is in `13`. The *skill* to build here:
 | Person | Tracks | Depth | Notes |
 |:---|:---|:---|:---|
 | **Khashyap** | 1, 2, 3, 4 (all) | Ultra on 1; working on 2–4 | Founder + lead engineer. Track 1 no-AI. |
-| **Sister** (if ECE/BME/EEE — confirm Jul 10) | 1 (+2 basics) | Ultra, ramped | Co-engineer. Sem-1: 4–6 hrs/wk shadowing prototypes 1–2. From sem-2: 8–12 hrs/wk, owns a subsystem. **Degree first, always.** If she lands CSE/AI → she owns Track 1D (DSP/edge-ML) + firmware-software instead. |
+| **Sister** (branch — EAMCET result out ~Jul 10; ⚠️ confirm which) | 1 (+2 basics) | Ultra, ramped | Co-engineer. Sem-1: 4–6 hrs/wk shadowing prototypes 1–2. From sem-2: 8–12 hrs/wk, owns a subsystem. **Degree first, always.** If she lands CSE/AI → she owns Track 1D (DSP/edge-ML) + firmware-software instead. |
 | **Father** | Technical/quality advisor to Tracks 1–3 | Overview | Judges designs, warns of failure modes, brings GMP/quality discipline. **Not** clinical-neuro depth (his own stated limit). |
 | **Mother** | — | — | Not on the technical curriculum. Ops/admin role stays as in `03` (registration, bookkeeping — but note: **no company to register in Year 1**, so her active role starts Phase 2). |
 

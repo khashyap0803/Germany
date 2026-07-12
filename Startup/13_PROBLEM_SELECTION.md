@@ -50,17 +50,26 @@ Scored 1–5 on C1–C7 from current desk knowledge. **Field discovery can overt
 
 > ⚠️ **Read `15` alongside this.** Real-time patent/product research (Jul 9 2026) found the Parkinson's-tremor space is **more crowded** than the scores below assumed — 5 NICE-endorsed international monitors, real patents, AND an Indian player (**Lifespark Technologies**, ISO 13485, Shark Tank). The competition (C3) scores below are the *original* desk estimates; `15` corrects them and proposes a **new front-runner (Essential Tremor / ET-vs-PD differentiation)** that reuses identical tech in a bigger, less-contested market.
 
-### ⭐ #1 — Parkinson's / movement-disorder tremor & bradykinesia quantification wearable
+### ⭐ #1 — Essential Tremor / ET-vs-PD differentiation + severity wearable  (NEW front-runner, post-`15` research)
+*A wrist/hand wearable that objectively distinguishes essential tremor from Parkinson's tremor and tracks severity — attacking the 20–30% ET/PD misdiagnosis problem that the PD-focused incumbents don't solve.*
+
+| C1 | C2 | C3 | C4 | C5 | C6 | C7 | **Total** |
+|:--|:--|:--|:--|:--|:--|:--|:--|
+| 5 | 5 | 4 | 5 | 5 | 4 | 5 | **33/35** |
+
+- **Why it now leads:** identical hardware to the PD monitor (IMU + EMG + DSP) but aimed at a **bigger, less-contested** problem — ET is ~8× commoner than PD and heavily under-diagnosed, and the *differentiation* angle is a named clinical pain the crowded PD-monitoring players ignore. Decision-support → low failure-cost (C1) → Class B (C5). See `15` §6 Option A.
+- **Rung-2 ladder:** same as PD — movement measurement → closed-loop neuromodulation = the Class C/D neuro dream.
+
+### #2 — Parkinson's tremor & bradykinesia quantification wearable  (was #1 — downgraded after `15`)
 *Objectively measure tremor, slowness and dyskinesia so neurologists can titrate medication and monitor remotely — instead of the subjective, once-in-6-months UPDRS exam.*
 
 | C1 | C2 | C3 | C4 | C5 | C6 | C7 | **Total** |
 |:--|:--|:--|:--|:--|:--|:--|:--|
-| 5 | 5 | 4 | 4 | 5 | 4 | 5 | **32/35** |
+| 5 | 5 | ~~4~~ **2** | 4 | 5 | 4 | 5 | **30/35** |
 
-- **Why it wins:** pure **neuro + wearable** (your exact pull), it's **decision-support** (a wrong reading ≠ harm → Class B, low failure-cost), neurologists genuinely lack objective motor data, India's aging population is large and growing, and the electronics (IMU + EMG + on-device signal processing) sit squarely where you + your father can operate. Global wearables exist but India-focused, affordable ones barely do.
-- **Rung-2 ladder:** from *measuring* movement → *closed-loop* neuromodulation (DBS-adjacent) = your Class C/D neuro dream.
+- **Why downgraded:** the tech and market are still excellent, but C3 (less competition) drops from 4→**2** — file `15` found 5 NICE-endorsed international monitors, real patents, AND an Indian player (Lifespark). Still viable, but only with a **sharp cost/niche edge**, not head-on. Everything else about it (neuro+wearable, decision-support, C/D ladder) stays strong.
 
-### #2 — Diabetic Peripheral Neuropathy (DPN) early-screening device
+### #3 — Diabetic Peripheral Neuropathy (DPN) early-screening device
 *Quantitatively detect nerve damage in diabetics' feet early, before ulcers/amputations — replacing the subjective monofilament test.*
 
 | C1 | C2 | C3 | C4 | C5 | C6 | C7 | **Total** |
@@ -69,7 +78,7 @@ Scored 1–5 on C1–C7 from current desk knowledge. **Field discovery can overt
 
 - **Why it's strong:** India is the **diabetes capital** (~100M+ diabetics; ~half develop neuropathy), amputations are preventable with early detection, current screening is manual/subjective, screening = Class B, huge market. Slightly lower C7 (peripheral nerve, less "neuro-glamorous" than brain — but it IS neuro, and the market may be the biggest on this list).
 
-### #3 — Home sleep-apnea (OSA) screening wearable
+### #4 — Home sleep-apnea (OSA) screening wearable
 *Screen for obstructive sleep apnea at home (SpO₂ + effort + optional single-channel EEG) vs scarce, expensive sleep-lab polysomnography.*
 
 | C1 | C2 | C3 | C4 | C5 | C6 | C7 | **Total** |
@@ -78,7 +87,7 @@ Scored 1–5 on C1–C7 from current desk knowledge. **Field discovery can overt
 
 - **Why:** massively underdiagnosed in India, multimodal wearable (great skills fit), big market. **But** more global competition (C3 lower) and CPAP giants adjacent.
 
-### #4 — Nocturnal seizure / epilepsy home-monitor
+### #5 — Nocturnal seizure / epilepsy home-monitor
 *Detect convulsive seizures at night and alert family (SUDEP risk reduction) via accelerometry/EMG.*
 
 | C1 | C2 | C3 | C4 | C5 | C6 | C7 | **Total** |
@@ -87,7 +96,7 @@ Scored 1–5 on C1–C7 from current desk knowledge. **Field discovery can overt
 
 - **Why it's compelling:** India has the **world's largest epilepsy burden** (~12M), no affordable home monitor, deeply **neuro**, emotionally powerful. **The catch (lower C1):** a *missed* seizure has a high perceived failure-cost, so it carries more liability and must be framed carefully as "an aid, not a guarantee." Great cause; handle the risk-class framing with extra care.
 
-### #5 — Stroke / neuro hand-rehab biofeedback device
+### #6 — Stroke / neuro hand-rehab biofeedback device
 *Home rehab using EMG-biofeedback (or gentle FES) for stroke survivors, where rehab access is poor.*
 
 | C1 | C2 | C3 | C4 | C5 | C6 | C7 | **Total** |

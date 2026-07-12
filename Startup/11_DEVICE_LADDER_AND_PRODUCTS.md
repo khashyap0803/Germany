@@ -64,19 +64,39 @@ These are **not products**. They are how you go from "embedded engineer" to "bio
 
 > These map 1:1 to your existing firmware track (C → STM32 → RTOS) — that track doesn't change, it just gets a **biosignal payload**. See `12`.
 
+### ▶️ START HERE — FIRST 30 DAYS (so this is actionable Monday, not "someday")
+
+**Buy only for Prototype 1 (~₹2–4k — do NOT bulk-buy all 5 kits yet):**
+- STM32 dev board — you likely already have one from FastBit (Nucleo / "Blue Pill"). ₹0 if so.
+- **AD8232 ECG module** (~₹400–600) + snap ECG electrodes & leads (~₹200)
+- Breadboard + jumper wires (~₹200); optional cheap USB logic analyzer (~₹500) for SPI/I²C debugging later
+
+**The four weeks:**
+| Week | Do | "Done" looks like |
+|:--|:--|:--|
+| 1 | Refresh/finish FastBit **ADC + DMA** modules | You can sample an analog pin at 250–500 Hz into a buffer |
+| 2 | Wire AD8232 → STM32 ADC; stream samples to PC; plot | A live (noisy) plot of **your own ECG** |
+| 3 | Add filtering: baseline-drift high-pass + **50 Hz notch** | A clean waveform with a clear R-peak |
+| 4 | Compute heart rate from R-R intervals; **start your Design History File** (one page: what I built / measured / what failed) | A labelled ECG plot + computed HR + page 1 of your DHF |
+
+**Rules while doing it:** no-AI on the firmware (Track 1 discipline, `12`); spend ≤ ₹4k this month (Rung-0 budget, `14`); this is *learning*, never on anyone but yourself.
+
+**Why this is the perfect first step:** ECG is the gentlest biosignal, the AD8232 is cheap and forgiving, and finishing it proves the whole loop — analog acquisition → filtering → a clinical number → documented — in one month, for under ₹4,000. That's your first evidence the plan is real.
+
 ---
 
 ## RUNG 1 — DEVICE #1: a NOVEL CLASS B (your first real product)
 
-You do **not** pick this from a wishlist — you pick it from a **validated clinical need** (that's the entire point of Phase 1 discovery, `13`). But so you can aim your learning, here are the **candidate problem-spaces** that fit your interests (neuro, neuro+wearable, wearable+diagnostic) AND your father's criteria. Full scoring is in `13`; the shortlist:
+You do **not** pick this from a wishlist — you pick it from a **validated clinical need** (that's the entire point of Phase 1 discovery, `13`). But so you can aim your learning, here are the **candidate problem-spaces** that fit your interests (neuro, neuro+wearable, wearable+diagnostic) AND your father's criteria. Full scoring is in `13`; competition reality-check is in `15`. The shortlist:
 
 | Candidate | One-line | Why it fits Class-B-novel |
 |:---|:---|:---|
-| **Parkinson's / movement-disorder tremor quantification wearable** ⭐ front-runner | Objectively measure tremor & slowness to help doctors titrate medication | Neuro + wearable + **decision-support (low failure-cost)** + huge aging market + weak India competition |
-| **Diabetic peripheral neuropathy (DPN) screening device** | Catch nerve damage early in diabetics before foot ulcers/amputation | India = diabetes capital; screening = Class B; massive market; father can grasp peripheral nerve |
+| **Essential Tremor / ET-vs-PD differentiation wearable** ⭐ front-runner (post-`15` research) | Objectively tell essential tremor apart from Parkinson's tremor, and track severity | ET is ~8× commoner than PD, under-diagnosed, and 20–30% misdiagnosed vs PD — a named, under-served gap on the **same IMU/EMG hardware** |
+| **Parkinson's tremor/bradykinesia quantification wearable** (was front-runner — downgraded) | Objectively measure tremor & slowness to help doctors titrate medication | Neuro + wearable + decision-support (low failure-cost). **BUT now crowded** — 5 international monitors + patents + an Indian player (Lifespark). Pursue only with a sharp cost/niche edge (`15`) |
+| **Diabetic peripheral neuropathy (DPN) screening device** | Catch nerve damage early in diabetics before foot ulcers/amputation | India = diabetes capital; screening = Class B; massive market; father can grasp peripheral nerve. *(India already has VIBROSCREEN/Vibrasense — differentiate)* |
 | **Nocturnal seizure / epilepsy home-monitor** | Alert family to convulsive seizures at night (SUDEP risk) | India = largest epilepsy burden; neuro core; emotionally compelling (carries more liability — handle carefully) |
 | **Home sleep-apnea screening wearable** | Screen for OSA at home vs scarce/expensive sleep labs | Big underdiagnosed market; multimodal wearable; screening = Class B |
-| **Stroke / neuro hand-rehab biofeedback device** | Home rehab with EMG-biofeedback for stroke survivors | Rehab access poor in India; therapeutic but low-risk; neuro + wearable |
+| **Stroke / neuro hand-rehab biofeedback device** | Home rehab with EMG-biofeedback for stroke survivors | Rehab access poor in India; therapeutic but low-risk; neuro + wearable *(Lifespark is in gait therapy — avoid head-on)* |
 
 **Why a *measurement/screening/decision-support* device is the ideal Rung 1:** it informs a clinician's decision rather than keeping a patient alive, so a failure is a *missed reading*, not a death. That keeps it **Class B**, keeps certification affordable, and keeps your father's "no/very-less failure" bar achievable. Life-support (Rung 2) waits until you've earned the right to attempt it.
 
