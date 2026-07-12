@@ -2,7 +2,7 @@
 
 > How you (and your sister) go from "embedded engineer" to "person who can design a certified neuro wearable."
 > **Four tracks run in parallel.** Track 1 is the spine; Tracks 2–4 wrap around it. Depth: **you + sister = ultra; father = technical advisor only (can't go deep into biology/clinical); mother = not on this curriculum.**
-> ⏱️ All of this happens **outside your job hours** until the bond ends (~mid/late 2027). Your Unistring RF/embedded work is *paid, aligned training* — treat it as Track 1 income + practice, not a distraction.
+> ⏱️ All of this happens **outside your job hours** until the bond ends (nominal Jul 21 2027; realistically late 2027 – early 2028 with leave-based extension). Your Unistring RF/embedded work is *paid, aligned training* — treat it as Track 1 income + practice, not a distraction.
 
 ---
 
@@ -135,7 +135,7 @@ Detailed method is in `13`. The *skill* to build here:
 | Person | Tracks | Depth | Notes |
 |:---|:---|:---|:---|
 | **Khashyap** | 1, 2, 3, 4 (all) | Ultra on 1; working on 2–4 | Founder + lead engineer. Track 1 no-AI. |
-| **Sister** (branch — EAMCET result out ~Jul 10; ⚠️ confirm which) | 1 (+2 basics) | Ultra, ramped | Co-engineer. Sem-1: 4–6 hrs/wk shadowing prototypes 1–2. From sem-2: 8–12 hrs/wk, owns a subsystem. **Degree first, always.** If she lands CSE/AI → she owns Track 1D (DSP/edge-ML) + firmware-software instead. |
+| **Sister** (EAMCET Phase-1: ECE at MVSR; may shift in 2 remaining phases) | 1 (+2 basics) | Ultra, ramped | Co-engineer. Sem-1: 4–6 hrs/wk shadowing prototypes 1–2. From sem-2: 8–12 hrs/wk, owns a subsystem. **Degree first, always.** If she ends up in CSE/AI → she owns Track 1D (DSP/edge-ML) + firmware-software instead. |
 | **Father** | Technical/quality advisor to Tracks 1–3 | Overview | Judges designs, warns of failure modes, brings GMP/quality discipline. **Not** clinical-neuro depth (his own stated limit). |
 | **Mother** | — | — | Not on the technical curriculum. Ops/admin role stays as in `03` (registration, bookkeeping — but note: **no company to register in Year 1**, so her active role starts Phase 2). |
 

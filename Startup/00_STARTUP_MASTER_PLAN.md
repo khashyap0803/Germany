@@ -49,7 +49,7 @@
 
 | Deadline | Date (approx.) | Meaning under v3 |
 |:---|:---|:---|
-| **Bond end** | ~mid/late 2027 (*confirm exact date*) | The gate to quit-job / go full-time / apply for BIRAC-BIG (BIG requires quitting employment — verified). Until then: after-hours only. |
+| **Bond end** | Nominal **Jul 21, 2027**; effective **late 2027 – early 2028** | Bond extends by ~**3× the leave days taken** (~60 leaves accrued so far, more to come) → real end drifts past Jul 2027. This is the gate to quit-job / go full-time / apply for BIRAC-BIG (BIG requires quitting employment — verified). Until then: after-hours only. |
 | **Father's retirement** | ~2031 | Father's ₹1,50,000/month → ₹0. **No longer a survival cliff** (house backstops the loan) — but by design, Device #1 should be launching around then, so the family's *upside* arrives as his salary ends. |
 
 > The old "north-star = replace ₹1.7L/month by 2031" target is **retired in v3.** Survival is handled by the house backstop; the goal is now the *device*, not an income-replacement number.
@@ -61,7 +61,7 @@
 | Person | Role | Depth |
 |:---|:---|:---|
 | **Khashyap** | Founder + lead engineer (all four learning tracks) + all funding/clinical outreach | Ultra |
-| **Sister** (branch — EAMCET result out ~Jul 10; ⚠️ *confirm which*) | Co-engineer — ECE/BME/EEE → embedded+biosignals; CSE/AI → DSP/edge-ML + firmware-software. Ramped hours, **degree first.** Full strength ~2030 (P3). | Ultra |
+| **Sister** (EAMCET Phase-1: **ECE at MVSR** — may still shift to CSE/other electronics in the 2 remaining phases) | Co-engineer — ECE/electronics → embedded+biosignals (current path); if she moves to CSE/AI → DSP/edge-ML + firmware-software. Ramped hours, **degree first.** Full strength ~2030 (P3). | Ultra |
 | **Father** | **Technical + quality advisor** (judge designs, name failure modes, GMP/quality discipline). **Not** deep clinical-neuro biology — his own stated limit; that gap is filled by clinicians in Phase 1. | Overview (technical) |
 | **Mother** | Ops/admin — **but no company to register in Year 1**, so her active role starts Phase 2 (incorporation, bookkeeping). | Overview |
 
