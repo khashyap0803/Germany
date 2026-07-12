@@ -82,6 +82,7 @@ Delayed, not dead — and **repurposed**. Khashyap's plan: a Germany masters in 
 | `12` | **ACTIVE** | Learning curriculum — the 4 tracks (electronics · medical · regulatory · clinical), per person |
 | `13` | **ACTIVE** | Problem selection — father's criteria as a scorecard + scored candidate problems |
 | `14` | **ACTIVE** | Regulatory (CDSCO/ISO/IEC) + funding ladder (PRAYAS→BIG) + honest gate-by-gate odds |
+| `15` | **ACTIVE** | Competitive/patent/feasibility landscape (real-time research) — who's already there, FTO law, open-source, India-feasibility, strategic reframe to Essential Tremor |
 | `01`–`10` | ⏸️ **DEFERRED (v2)** | Software-services approach — history / emergency fallback only. Not the live plan. |
 
 *(`01` cash engine · `02` time · `03` family/sister · `04` first-90-days · `05` v2 climb · `06` v2 learning tracks · `07` legal/registration · `08` v2 odds · `09` Vijaya outreach · `10` local leads — all v2, deferred.)*

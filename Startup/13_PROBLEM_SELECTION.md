@@ -48,6 +48,8 @@ This is your **hardest gap**: you have no clinical network, and your father can'
 
 Scored 1–5 on C1–C7 from current desk knowledge. **Field discovery can overturn any of these** — that's the point of Phase 1. Ranked by total.
 
+> ⚠️ **Read `15` alongside this.** Real-time patent/product research (Jul 9 2026) found the Parkinson's-tremor space is **more crowded** than the scores below assumed — 5 NICE-endorsed international monitors, real patents, AND an Indian player (**Lifespark Technologies**, ISO 13485, Shark Tank). The competition (C3) scores below are the *original* desk estimates; `15` corrects them and proposes a **new front-runner (Essential Tremor / ET-vs-PD differentiation)** that reuses identical tech in a bigger, less-contested market.
+
 ### ⭐ #1 — Parkinson's / movement-disorder tremor & bradykinesia quantification wearable
 *Objectively measure tremor, slowness and dyskinesia so neurologists can titrate medication and monitor remotely — instead of the subjective, once-in-6-months UPDRS exam.*
 
@@ -96,10 +98,12 @@ Scored 1–5 on C1–C7 from current desk knowledge. **Field discovery can overt
 
 ---
 
-## THE RECOMMENDATION (how to hold this)
+## THE RECOMMENDATION (how to hold this — UPDATED after `15` research)
 
-- **Front-runner to aim your learning at: the Parkinson's tremor wearable (#1).** It maximizes your father's criteria AND your neuro+wearable pull, and it has the cleanest ladder to your Class-C/D neuro dream. So point Rung-0 prototype #5 (multimodal IMU+EMG wearable, `11`) at *movement signals* — you'll be building toward #1 while you learn.
-- **But do NOT tattoo it on.** These scores are desk estimates. If Phase-1 discovery shows neurologists are desperate for something else, or #1 is more crowded than it looks, **the scorecard re-decides.** Validated need beats a pretty score.
+- **Aim your learning at the movement-disorder tremor wearable family** — this maximizes your father's criteria AND your neuro+wearable pull, and has the cleanest ladder to the Class-C/D neuro dream. Point Rung-0 prototype #5 (multimodal IMU+EMG wearable, `11`) at *movement signals* — you build toward it while you learn.
+- **BUT the specific target shifts from "PD monitor" to "Essential-Tremor / ET-vs-PD differentiation + severity" (see `15`).** Reason: PD tremor monitoring is already crowded (5 international devices + Lifespark in India), whereas ET is ~8× more common, heavily under-diagnosed, and 20–30% of ET/PD cases are *misdiagnosed as each other* — a real, named, under-served clinical problem using the **same hardware.**
+- **And still do NOT tattoo it on.** These are desk + web estimates. If Phase-1 discovery shows neurologists are desperate for something else, **the scorecard re-decides.** Validated need beats a pretty score.
+- **The reassurance from `15`:** Lifespark proves an Indian team *can* reach ISO 13485 + a certified neuro wearable + revenue via the exact SINE/IIT-B incubator path we planned. The category is **proven and fundable** — your job is to out-execute on cost + a sharper niche, not to invent from scratch (the algorithms are open-source anyway).
 - **Two convictions to keep:** (1) Device #1 must be **measurement/screening/decision-support** (protects C1+C5); (2) it must be something **you'd happily spend 3 years on** (C7) — because you will.
 
 ---

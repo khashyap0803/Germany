@@ -19,6 +19,25 @@
 
 ---
 
+## 🛒 COURSES — WHAT TO BUY (and what NOT to)
+
+**You already own more than you'll finish in 6–12 months: FastBit (embedded C / STM32 / RTOS / drivers) + a Udemy electronics crash-course + a PCB-design course.** That covers Track 1A–1C's *taught* portion completely.
+
+**Verdict: do NOT buy any more courses right now.** The #1 beginner trap is *course-collecting* — buying the next course instead of building. Rule: **finish FastBit + the PCB course by building the 5 prototypes**, and only buy a new course when you hit a *specific wall* free resources can't get you over.
+
+What you're "missing" is real, but it's **free**, not a purchase:
+| Gap | Best (free) source — not a paid course |
+|:---|:---|
+| Analog front-end / biosignal acquisition | ADI/TI **application notes + AFE datasheets** (AD8232, ADS1292, ADS1299) — these *are* the textbook |
+| DSP for biosignals | **NPTEL**; Steven Smith *The Scientist & Engineer's Guide to DSP* (free online) |
+| Embedded / TinyML | **Harvard TinyMLx (edX, audit free)**; TensorFlow Lite Micro docs |
+| BLE / low-power wearable | **Nordic DevAcademy** (free, official) |
+| Medical instrumentation | **NPTEL Biomedical Instrumentation**; Webster's textbook |
+
+The *only* paid thing worth considering **much later** (Phase 2–3): a structured **medical-device design / regulatory (ISO 13485 / IEC 62304)** course — and even that is largely covered free by CDSCO/standards docs. Not now.
+
+---
+
 ## TRACK 1 — ELECTRONICS & EMBEDDED (the spine)
 
 You already have a C → STM32 → RTOS path (`06`, FastBit course, C-Practice). **That path does not change — it gains a biosignal payload.**
@@ -44,6 +63,25 @@ You already have a C → STM32 → RTOS path (`06`, FastBit course, C-Practice).
 - TinyML / edge inference (TensorFlow Lite Micro) — classify on-device (seizure? tremor severity?)
 
 **Resources (free/cheap):** NPTEL *Biomedical Instrumentation* & *Embedded Systems*; ADI/TI application notes (the AFE datasheets ARE the textbook); KiCad official docs; Nordic DevAcademy (free); your existing FastBit course.
+
+### 🎯 IS THE C/STM32 PLAN "PERFECTLY TAILORED"? — the mapping that makes it so
+
+Your FastBit + PCB courses teach the *generic* embedded skillset. What makes it **device-tailored** is that each firmware skill is learned by immediately building the prototype that needs it — never learning a peripheral in the abstract. Follow this exact order (each row = "learn this FastBit/firmware module → the moment you can, build this"):
+
+| Learn (firmware skill) | Then immediately build | Why this order |
+|:---|:---|:---|
+| C fundamentals (pointers, bitwise, structs) | *(nothing yet — foundation)* | Can't touch hardware safely without it |
+| GPIO, clock, timers | Blink→button→PWM (FastBit basics) | Muscle memory on the toolchain |
+| **ADC + DMA** ⭐ | **Prototype 1: ECG front-end** (AD8232→ADS1292) | Biosignals ARE analog sampling — this is THE core skill; do it first, deep |
+| **I²C** | **Prototype 2: PPG/SpO₂** (MAX30102 is I²C) | Optical sensor talks I²C; reuse ADC skills |
+| ADC + envelope detection | **Prototype 3: EMG** | Movement/rehab signals; bridges toward tremor |
+| **SPI + high-speed DMA** | **Prototype 4: EEG** (ADS1299 is SPI, 8-ch, fast) | Multi-channel neuro = your hardest acquisition; SPI throughput matters |
+| **FreeRTOS + BLE + low-power** | **Prototype 5: multimodal wearable** (IMU + EMG/ECG, battery, BLE) | A real wearable needs an RTOS, wireless, and battery discipline all at once |
+| DSP + TinyML (Track 1D) | On-device tremor/feature classification on Prototype 5 | Turns raw signal into a *clinical number* — the actual product value |
+
+**So: is it well-tailored? Mostly yes — with two adjustments (now baked in above):**
+1. **Front-load ADC/DMA and SPI.** Generic courses treat all peripherals equally; for *your* device, ADC/DMA (analog biosignals) and SPI (the ADS1299 EEG chip) are the make-or-break peripherals. Spend disproportionate time there; you can skim modules like CAN bus that biosignal wearables rarely use.
+2. **Never learn a peripheral without a biosignal target the same week.** The mapping above guarantees every firmware skill lands on a prototype — that's the difference between "did an STM32 course" and "can build a medical wearable."
 
 ---
 
