@@ -21,15 +21,15 @@
 | # | University | Program | Fit | Sent | Reply |
 |:--|:---|:---|:---|:---|:---|
 | 1 | FH Dortmund | M.Eng. Embedded Systems Engineering | ⭐ Core | ✅ Oct 5 | 📨 Ticket #202610058159 (Oct 5) — admissions closed; see below |
-| 2 | Hochschule Bremerhaven | M.Sc. Embedded Systems Design | ⭐ Core | | |
+| 2 | Hochschule Bremerhaven | M.Sc. Embedded Systems Design | ⭐ Core | ✅ Oct 5 | ⏳ No reply yet |
 | 3 | HAW Hamburg (+ FH Westküste) | M.Sc. Microelectronic Systems | ⭐ Core | ✅ Oct 5 | 🤖 Auto-reply Oct 5 — "will respond in due course; don't resend" |
 | 4 | TH Deggendorf | M.Sc. Electrical Engineering and Information Technology | ⭐ Core | ✅ Resent to `welcome@th-deg.de` Oct 5 | 🤖 Ticket #4232091 (Oct 5) — form reply: no individual answers on eligibility; use FAQ + **online consultation sessions** |
 | 5 | Hochschule Darmstadt (h_da) | M.Sc. Electrical Engineering and Information Technology (International) | ⭐ Core | ✅ Oct 5 | ✅ **REAL ANSWER Oct 5** from Sabine François (IMSEIT Course Coordinator) — **backlogs: NO effect** · see below |
-| 6 | RWU Ravensburg-Weingarten | M.Eng. Electrical Engineering and Embedded Systems | Good (€1,500/sem fee) | | |
-| 7 | TU Chemnitz | M.Sc. Embedded Systems | Good (university) | | |
-| 8 | University of Freiburg | M.Sc. Embedded Systems Engineering | Good (€1,500/sem fee, C1 English) | | |
+| 6 | RWU Ravensburg-Weingarten | M.Eng. Electrical Engineering and Embedded Systems | Good (€1,500/sem fee) | ✅ Oct 5 | ⏳ No reply yet |
+| 7 | TU Chemnitz | M.Sc. Embedded Systems | Good (university) | ✅ Oct 5 | ⏳ No reply yet |
+| 8 | University of Freiburg | M.Sc. Embedded Systems Engineering | Good (€1,500/sem fee, C1 English) | ✅ Oct 5 | ⏳ No reply yet |
 | 9 | Saarland University | M.Sc. Embedded Systems | ⬇️ **Deprioritised** — see below | ✅ Oct 5 | 🤖 Standard reply Oct 5: **GRE or GATE mandatory**; "only the very best students"; won't answer eligibility questions |
-| 10 | TU Hamburg (TUHH) | M.Sc. Microelectronics and Microsystems | Reach ("very good" grades expected) | | |
+| 10 | TU Hamburg (TUHH) | M.Sc. Microelectronics and Microsystems | Reach ("very good" grades expected) | ✅ Oct 5 | ⏳ No reply yet |
 | 11 | Paderborn University | M.Sc. Electrical Systems Engineering | Reach (GRE required for non-EU) | ✅ Oct 5 | 🤖 Auto-reply Oct 5 — "will answer as soon as possible" |
 
 ### ⭐ What Darmstadt's reply told us (Oct 5, 2026) — the first real answer

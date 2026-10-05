@@ -1,5 +1,8 @@
 # 👨‍👩‍👧‍👦 FAMILY ROLES & LEARNING TRACKS
 
+> ## ⏸️ DEFERRED — v2 FILE (history / emergency fallback only)
+> **This file describes the v2 software-services approach and is NOT the live plan.** v3 (Jul 9, 2026) went all-in on medical devices: **no selling and no company registration in Year 1**, which reverses this file's "register a proprietorship now" and "mother handles client follow-ups" content. The active family-roles summary is in **`00`**; the sister's live track is **`16`**.
+
 > Everyone has a role that fits their age, stamina, and interest. Parents learn **overview + some detail** (leaning on AI). You and your sister learn **ultra-depth**.
 
 ---
@@ -37,29 +40,24 @@
 
 ---
 
-## SISTER — Co-Engineer (branch-contingent) — Ultra-depth
+## SISTER — Co-Engineer — Ultra-depth (software side)
 
-> Results **July 10, 2026**; college starts **3rd week of August 2026**. She'll be a full-time fresher — so **her degree comes first.** Do NOT let startup work create backlogs (you know that cost better than anyone).
+> ### ✅ BRANCH RESOLVED — August 2026
+> The ECE-vs-CSE fork below is **dead**. Confirmed: **B.Tech Information Technology, Vardhaman College of Engineering** (Shamshabad), starting 3rd week of August 2026 → graduating ~June 2030.
+>
+> **➡️ The live, detailed track is `16_SISTER_IT_TRACK.md`.** Three things in the old fork are now wrong and must not be reused:
+> 1. **The hours.** "Sem 1: 4–6 hrs/wk, then 8–12" is retired. Her commute is **~4 hours round trip** to Shamshabad; with college that's ~11 committed hours a day. **Year 1 = ZERO extra startup hours** — her Sem-1/2 coursework already delivers C programming, practical electronics (Bridge 1) and digital logic (Bridge 2). Ramp begins Year 2.
+> 2. **The ECE branch.** She will **never** be the firmware/analog engineer. That work is permanently Khashyap's — logged honestly as `00` risk #8. She *does* get real sensor hardware (IoT Lab: Arduino + Raspberry Pi + soldering + multimeter), digital logic, and an optional **PCB Design** elective.
+> 3. **"Steer her college projects."** Still right, but far bigger than assumed: her degree contains **~1,080 hours of credit-bearing project work**, including a chained 4-semester product sequence (Design Thinking → Product Design → **Technology Entrepreneurship, incl. patents/IP/FTO** → Product Evaluation) and a **630-hour final-year Major Project**. All of it must point at **one** problem statement, decided in her first week.
+>
+> **What she owns instead:** DSP/edge-ML classifier · Android companion app · clinician web dashboard · cloud + patient-data/DPDP · **IEC 62304 medical-device software lifecycle** (previously unowned by anyone).
+>
+> **German masters:** still a live option for her, but aimed at **Medical Informatics / Digital Health / Data Science / CS** — *not* Embedded Systems (ECTS/background wall). She'll likely be a cleaner applicant than Khashyap: no backlogs.
 
-### Ideal time for her (ramped, not flat)
-- **Semester 1 (Aug–Dec 2026): ~4–6 hrs/week.** She's settling into college — new place, new pace. Overloading a fresher in sem 1 is exactly how backlogs start (you know this). Light, curiosity-driven startup exposure only.
-- **From semester 2 (2027): ~8–12 hrs/week**, *structured to overlap her own syllabus* so it doubles as coursework. Protect her sleep and grades — she has 4 years, no need to sprint and crash.
-- Steer her **college mini-projects, labs, and electives** toward startup-relevant work — that's "free" aligned time.
-
-### If she gets ECE / EVL / Robotics → **she becomes the embedded/firmware depth**
-- She follows the **same C → STM32 → RTOS → protocols track** as you (reuse the existing `06_EMBEDDED_LEARNING.md` + weekly plans) — but she has *more* time than you (student), so she can go faster and deeper. Over 4 years she can become the genuine firmware engineer the **hardware venture's** devices need.
-- Her college has labs, components, and professors — use them. Bioinstrumentation / sensors / signal electronics electives = directly on-path.
-- **Division of labour:** you run software + sales; she becomes the hardware/firmware specialist. By the time the hardware venture launches, she's its technical co-founder.
-
-### If she gets CSE / AI / Data → **she becomes the software/AI depth**
-- She goes deep on the exact stack you already use: **Python, web/app dev, LLM apps (the Career_Guide/Tracker stack), data pipelines, ML.**
-- Immediate value: she helps **scale the Layer-1 cash engine** (build client bots/tools alongside you), then **co-builds the Layer-2 HealthTech product** (2028) — real revenue help, faster than the hardware path.
-- Long-game: she owns the **AI/analytics/cloud layer** of the future devices. Neuroinformatics (your someday-dream) is *heavily* software/ML — a CSE/AI sister is perfect for it.
-- Her college projects steer toward **AI + health/bio** themes.
-
-### Either branch — shared basics
-- Business/founder literacy (how the company makes money, basic sales, client communication).
-- She's also a candidate to be the one who eventually does the **German masters** while you anchor the company in India — worth a real conversation with her.
+### Still true, and unchanged
+- **Degree first, always.** If grades slip, startup hours go to zero immediately.
+- Business/founder literacy (how the company makes money, basic communication).
+- Protect her sleep. She has four years — no need to sprint and crash.
 
 ---
 
