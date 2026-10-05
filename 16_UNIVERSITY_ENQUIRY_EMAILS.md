@@ -29,7 +29,7 @@
 | 7 | TU Chemnitz | M.Sc. Embedded Systems | Good (university) | ✅ Oct 5 | ⏳ No reply yet |
 | 8 | University of Freiburg | M.Sc. Embedded Systems Engineering | Good (€1,500/sem fee, C1 English) | ✅ Oct 5 | ⏳ No reply yet |
 | 9 | Saarland University | M.Sc. Embedded Systems | ⬇️ **Deprioritised** — see below | ✅ Oct 5 | 🤖 Standard reply Oct 5: **GRE or GATE mandatory**; "only the very best students"; won't answer eligibility questions |
-| 10 | TU Hamburg (TUHH) | M.Sc. Microelectronics and Microsystems | Reach ("very good" grades expected) | ✅ Oct 5 | ⏳ No reply yet |
+| 10 | TU Hamburg (TUHH) | M.Sc. Microelectronics and Microsystems | Reach ("very good" grades expected) | ✅ Oct 5 | 📅 Personal reply Oct 5 (Sandra Steffens, STUDIS) — can't answer yet; **contact again in November 2027** |
 | 11 | Paderborn University | M.Sc. Electrical Systems Engineering | Reach (GRE required for non-EU) | ✅ Oct 5 | 🤖 Auto-reply Oct 5 — "will answer as soon as possible" |
 
 ### ⭐ What Darmstadt's reply told us (Oct 5, 2026) — the first real answer
@@ -61,6 +61,12 @@ From **Sabine François, IMSEIT Course Coordinator** (`sabine.francois@h-da.de`)
 ### What Deggendorf's reply told us (Oct 5, 2026 — Ticket #4232091)
 - **They don't answer eligibility questions by email.** The only route to a personal answer is their **online consultation sessions** (listed on THD's "Events / Veranstaltungen" page). Joining one costs nothing and is the best next step for this university.
 - **Non-EU fees, found while checking:** since Winter 2025/26 DIT charges a **€60 application fee** (one-time) and a **€500 service fee per semester** (+ ~€82 student-union fee). So it's ~€582/semester, not "free".
+
+### What TUHH's reply told us (Oct 5, 2026)
+From **Sandra Steffens, STUDIS Student Services** (`sandra.steffens@tuhh.de`, +49 40 30601 3538):
+- Documents are only assessed **as part of a complete application**, never in advance.
+- **The required documents for Winter 2028/29 aren't fixed yet**, so they can't answer now.
+- ➡️ **"Please contact us again in November 2027."** That's just before TUHH's application window opens (1 Dec 2027 – 1 Mar 2028). Put it in your calendar; don't email before then.
 
 ### What Saarland's reply told us (Oct 5, 2026)
 - **GRE General Test *or* Indian GATE is mandatory** for anyone whose degree is from outside Europe. No minimum score, but no exemptions.
