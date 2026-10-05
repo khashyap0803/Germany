@@ -1,5 +1,8 @@
 # 🎓 LEARNING TRACKS — Per Person
 
+> ## ⏸️ DEFERRED — v2 FILE (history / emergency fallback only)
+> **This file describes the v2 software-services approach and is NOT the live plan.** The active learning curriculum is **`12`** (four tracks: electronics · medical · regulatory · clinical); the sister's live track is **`16`**. Track B (C → STM32 → RTOS) below is still correct and carried forward into `12` Track 1 — only the *services/cash-engine* framing is dead.
+
 > You + sister = **ultra-depth**. Parents = **overview + some detail** (AI-assisted, short, outcome-focused).
 > Rule that governs everything: **AI-orchestration is fine for software; firmware/hardware must be learned the disciplined, no-AI way.**
 
@@ -27,25 +30,20 @@ This is your existing Germany roadmap, reused verbatim (content is good; ignore 
 
 ---
 
-## SISTER — branch-contingent (result Jul 10, college ~3rd week Aug) — ultra-depth, **degree first**
+## SISTER — ✅ RESOLVED: B.Tech IT @ Vardhaman — ultra-depth (software), **degree first**
 
-> Ideal: **sem 1 ~4–6 hrs/week (settling in), then ~8–12 hrs/week from sem 2**, structured to overlap her syllabus. Protect grades + sleep — she has 4 years, no need to sprint and crash (you know the backlog cost).
+> **The ECE-vs-CSE fork that was here is dead.** Confirmed August 2026: **B.Tech Information Technology, Vardhaman College of Engineering**, Aug 2026 → ~Jun 2030.
+>
+> **➡️ Live track: `16_SISTER_IT_TRACK.md`.** Summary of what changed:
+> - **Hours:** "4–6/wk then 8–12" is retired → **Year 1 = zero extra hours** (~11-hour committed day incl. a 4-hour commute; and her coursework already covers C, Bridge 1 and Bridge 2). Ramp: 2–4 (Y2) → 6–10 (Y3) → 10–14 + a 630-hr Major Project (Y4).
+> - **Firmware/hardware depth: not available to her.** Permanently Khashyap's — `00` risk #8. She does get sensor-level hardware (IoT Lab), digital logic, and an optional PCB Design elective.
+> - **She owns instead:** DSP/edge-ML classifier · Android app · clinician dashboard · cloud + DPDP · **IEC 62304**.
+> - **~1,080 hours of credit-bearing project work** in her degree — all of it to be pointed at one problem statement.
+> - **German masters** still open, but Medical Informatics / Digital Health / Data Science — not Embedded Systems.
 
-### If ECE / EVL / Robotics → she becomes the FIRMWARE/HARDWARE depth
-- **Same path as your Track B** (C → STM32 → RTOS → protocols) but she has more time → she can go deeper and become the genuine hardware engineer the **hardware venture's** devices need.
-- Steer her **college labs, mini-projects, electives** toward sensors, embedded, signal electronics, bioinstrumentation — "free" aligned time.
-- Use her college's lab equipment + professors.
-- **Endgame:** she owns firmware/hardware; you own software+sales. She's the hardware venture's technical co-founder when it launches.
-
-### If CSE / AI / Data → she becomes the SOFTWARE/AI depth
-- **Deep on your Track A stack + more:** Python, web/app dev, LLM apps (the Career_Guide/Tracker stack), data pipelines, ML fundamentals.
-- **Immediate value:** she helps build client bots/tools alongside you (Layer 1), then **co-builds the Layer-2 HealthTech product** (2028) — real revenue help.
-- **Long game:** she owns the **AI/analytics/cloud layer** of future devices; **neuroinformatics** (your someday-dream) is heavily ML/software — a CSE/AI sister is ideal for it.
-- Steer her college projects toward **AI + health/bio** themes.
-
-### Either branch — shared
-- Business/founder literacy (how the company earns, basic sales, client comms).
-- Candidate to do the **German masters** later while you anchor India — discuss with her.
+### Still true, and unchanged
+- Business/founder literacy (how the company earns, basic communication).
+- **Degree first, always** — grades slip, hours go to zero.
 
 ---
 

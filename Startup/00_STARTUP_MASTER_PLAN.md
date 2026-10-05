@@ -61,7 +61,7 @@
 | Person | Role | Depth |
 |:---|:---|:---|
 | **Khashyap** | Founder + lead engineer (all four learning tracks) + all funding/clinical outreach | Ultra |
-| **Sister** (EAMCET Phase-1: **ECE at MVSR** — may still shift to CSE/other electronics in the 2 remaining phases) | Co-engineer — ECE/electronics → embedded+biosignals (current path); if she moves to CSE/AI → DSP/edge-ML + firmware-software. Ramped hours, **degree first.** Full strength ~2030 (P3). | Ultra |
+| **Sister** — **CONFIRMED: B.Tech Information Technology, Vardhaman College of Engineering** (Shamshabad; starts 3rd wk Aug 2026 → graduates ~Jun 2030) | Co-engineer, **software side**: DSP/edge-ML classifier · mobile app · clinician dashboard · cloud + patient-data (DPDP) · **IEC 62304 software lifecycle**. **Year 1 = ZERO extra hours** — her coursework *is* the work. Ramps from Y2. **Degree first, always.** Full strength ~2030 (P3). Detail: `16`. | Ultra (software) |
 | **Father** | **Technical + quality advisor** (judge designs, name failure modes, GMP/quality discipline). **Not** deep clinical-neuro biology — his own stated limit; that gap is filled by clinicians in Phase 1. | Overview (technical) |
 | **Mother** | Ops/admin — **but no company to register in Year 1**, so her active role starts Phase 2 (incorporation, bookkeeping). | Overview |
 
@@ -83,6 +83,7 @@ Delayed, not dead — and **repurposed**. Khashyap's plan: a Germany masters in 
 | `13` | **ACTIVE** | Problem selection — father's criteria as a scorecard + scored candidate problems |
 | `14` | **ACTIVE** | Regulatory (CDSCO/ISO/IEC) + funding ladder (PRAYAS→BIG) + honest gate-by-gate odds |
 | `15` | **ACTIVE** | Competitive/patent/feasibility landscape (real-time research) — who's already there, FTO law, open-source, India-feasibility, strategic reframe to Essential Tremor |
+| `16` | **ACTIVE** | Sister's track — B.Tech IT @ Vardhaman: zero-extra-hours Year 1, semester-by-semester coursework overlap, the 1,080-hr project chain, elective picks, division of labour |
 | `01`–`10` | ⏸️ **DEFERRED (v2)** | Software-services approach — history / emergency fallback only. Not the live plan. |
 
 *(`01` cash engine · `02` time · `03` family/sister · `04` first-90-days · `05` v2 climb · `06` v2 learning tracks · `07` legal/registration · `08` v2 odds · `09` Vijaya outreach · `10` local leads — all v2, deferred.)*
@@ -93,8 +94,9 @@ Delayed, not dead — and **repurposed**. Khashyap's plan: a Germany masters in 
 
 1. **Long, low-odds climb** — a certified, selling device is single-digit-to-teens likely (normal for hardware medtech). Mitigation: **excellent downside** — even a stall leaves you a skilled medtech engineer with prototypes = perfect for the Germany masters or a top medtech job. Every rung has salvage value (unlike v2's path). See `14` odds.
 2. **Clinical access** — your biggest concrete gap (no network; father can't open clinical doors). Mitigation: OPD observation, patient groups, the 20-clinician question (`13`).
-3. **Time/burnout** — job + after-hours learning for a year+. Mitigation: sleep non-negotiable, consistency over intensity.
+3. **Time/burnout** — job + after-hours learning for a year+. Mitigation: sleep non-negotiable, consistency over intensity. ⚠️ **Worsened by risk 8** — there is no longer a second person who can absorb hardware work.
 4. **Picking the wrong device** — the #1 medtech killer. Mitigation: the Phase-1 exit gate — no build until ≥3 clinicians confirm the need (`13`).
 5. **Certification money** — real and large. Mitigation: the red lines above — grants/investors only, never the house.
-6. **Sister overload** — degree first, ramped hours (`12`).
+6. **Sister overload** — **higher than previously assessed.** Her day is ~11 hours committed (≈4 hrs commute to Shamshabad + college) *before* her own study. Mitigation is no longer "ramped hours" but **zero extra hours in Year 1** — her coursework already overlaps the plan almost completely (`16`). Degree first, always.
 7. **Ambition drift to C/D too early** — Mitigation: the Rung-1-before-Rung-2 discipline; C1/C5 scorecard gatekeepers (`13`).
+8. 🆕 **Hardware single point of failure — Khashyap alone.** Her branch (IT) means the family will never have a second firmware/analog engineer. `03`/`06`'s promise that she'd become "the hardware venture's technical co-founder" is **retired**. Every analog front-end, STM32/RTOS, low-power, PCB and EMC task sits on one person, after hours, until grant money funds a hire (2028 at the earliest — `14` P2). **Mitigations:** (a) she takes the *PCB Design and Fabrication* open elective to share board work; (b) treat the first grant hire as a firmware engineer, not a generalist; (c) `14` gate **G2 (credible prototype)** should be read a notch lower than its stated 55–65%. **Counterweight:** she absorbs the entire software half (classifier · app · dashboard · cloud · **IEC 62304**), which `15` §4 argues is where the real moat lives — so **G5/G6 move up**.

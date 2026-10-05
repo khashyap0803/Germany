@@ -60,7 +60,7 @@
 2. **Retainers + templates** — G2 is won by recurring revenue and delivery speed.
 3. **Healthcare-leaning client mix in L1** — every clinic/lab client is free Layer-2 research (feeds G4 directly).
 4. **The pain log** — build only what ≥3 clients repeated. Kills the "guessed product" failure mode.
-5. **Sister goes CSE/AI** — real build capacity for L1 *and* the product (+5–10% on G2/G4).
+5. ~~**Sister goes CSE/AI**~~ → **RESOLVED Aug 2026: she's in B.Tech IT @ Vardhaman** (`16`). Effect under v3's gates (`14`, not this v2 table): **G5/G6 up** (she owns the classifier, app, dashboard, cloud, DPDP and **IEC 62304**); **G2 down** (no second firmware/analog engineer — `00` risk #8).
 6. **Father's domain sessions** — his pain-knowledge substitutes for the network he doesn't have; it sharpens *what* you build.
 7. **Sleep + 70% consistency** — protects every gate from the #1 killer.
 8. **Honouring gates + the untouched 50%** — caps downside no matter what.

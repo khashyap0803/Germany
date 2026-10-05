@@ -17,7 +17,30 @@
 
 ---
 
-## JUNE 2026
+## 🔁 RESTART — Oct 5 → Nov 29, 2026 (plan: `18_RESTART_8_WEEKS.md`)
+
+> **Honest note (Oct 5, 2026):** June–September 2026: **no study done.** Converted to full-time at Unistring on Oct 5. Restarting with a deliberately small minimum (~3.5 hrs/week). The June–August sections below were never executed; they stay as reference only.
+
+| Wk | Dates | Weekday reading (≥3 of 5 days) | Sat — C (2 hrs) | Sun — Electronics (1 hr) | Pushed to GitHub | Honest note (1 line) |
+|:--|:---|:--:|:--:|:--:|:--:|:---|
+| 1 | Oct 5–11 | ☐ | ☐ Ch 1–3 + rewrite wk1 | ☐ Ohm's law | ☐ | |
+| 2 | Oct 12–18 | ☐ | ☐ Ch 4–5 | ☐ Series/parallel, divider | ☐ | |
+| 3 | Oct 19–25 | ☐ | ☐ Ch 6 | ☐ KVL/KCL | ☐ | |
+| 4 | Oct 26–Nov 1 | ☐ | ☐ Ch 7–8 | ☐ LED resistor, pull-ups | ☐ | |
+| 5 | Nov 2–8 🪔 | ☐ | ☐ Buffer (optional) | — | ☐ | |
+| 6 | Nov 9–15 | ☐ | ☐ Ch 9–10 | ☐ Capacitors, RC | ☐ | |
+| 7 | Nov 16–22 | ☐ | ☐ Ch 11 pointers | ☐ RC low-pass filter | ☐ | |
+| 8 | Nov 23–29 | ☐ | ☐ Ch 12 + from-memory | ☐ Diode, transistor switch | ☐ | |
+
+**One-off tasks:** ☐ Bond end date from HR in writing (Week 1)
+**Week 8 review (Nov 29):** ☐ ≥6/8 weeks · ☐ 20+ programs · ☐ `swap()` from memory · ☐ explain Ohm/KVL/KCL/divider/RC · ☐ bond date confirmed
+
+**Parking lot** (ideas that came up — *don't act on them until Nov 29*):
+-
+
+---
+
+## JUNE 2026 *(never executed — reference only)*
 
 ### Week 1 (Jun 9–15) — Setup + C Basics
 > Phase 1 Week 1: environment setup, variables, loops, functions, arrays

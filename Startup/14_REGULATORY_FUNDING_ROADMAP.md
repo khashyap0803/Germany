@@ -84,7 +84,7 @@ INVESTORS  (seed VC, ₹-crores)  →  scale, and later fund Rung-2 Class C/D (s
 | **P3 — Certify & validate** | ~2029–2031 | ISO 13485, IEC 60601, CDSCO Class-B licence, clinical evaluation, launch Device #1 | Grants + seed | Full-time founder |
 | **P4 — Ladder to C/D** | 2031+ | Device #2 climbs risk class (separate entity, VC-funded) | VC | — |
 
-**Sister** (co-engineer, graduating ~2030) reaches full strength right as P3 needs the most hands. **Father retires ~2031** — by design, that's when Device #1 should be launching, i.e. the family's *upside* is arriving as his salary ends (though — per your Jul-9 reset — his income ending is no longer a survival cliff; the house backstops the loan).
+**Sister** (co-engineer, **B.Tech IT @ Vardhaman**, graduating ~Jun 2030) reaches full strength right as P3 needs the most hands — and her **final-year Major Project is 14 credits / 630 hours (Jan–May 2030), landing inside this P3 window**; aim it at the device's classifier + clinician dashboard (`16`). Her Y2S2 **commercialization/patent-readiness dossier (~May 2028)** is a usable artifact for the P2 incubator application. Note she brings **no** firmware/analog capability — see `00` risk #8. **Father retires ~2031** — by design, that's when Device #1 should be launching, i.e. the family's *upside* is arriving as his salary ends (though — per your Jul-9 reset — his income ending is no longer a survival cliff; the house backstops the loan).
 
 ---
 

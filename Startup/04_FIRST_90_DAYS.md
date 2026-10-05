@@ -1,5 +1,8 @@
 # 📅 FIRST 90 DAYS — July → September 2026
 
+> ## ⏸️ DEFERRED — v2 FILE (history / emergency fallback only)
+> **Do not execute this file.** It plans the v2 software-services launch (register a proprietorship, Fiverr/Upwork profiles, cold outreach to clinics). v3 (Jul 9, 2026) reversed both: **Year 1 = zero selling, zero company registration.** The live 30-day starter is in **`11`** (ECG front-end prototype); the live plan is `00` → `11`–`16`.
+
 > Concrete, do-this-now steps. Goal by Day 90: **company registered (father's or mother's name — see `07`), a portfolio, platform profiles live, first outreach done, ideally first paying client, Tranche-1 spend only.** Don't perfect — start.
 > **Dates are relative, not calendar-locked** — if you start a week late, just shift everything; the sequence is what matters.
 
@@ -52,7 +55,7 @@
 - [ ] Keep weekend C practice going. Target by end of August: variables → loops → functions → arrays (pointers next). Client work wins the weekend when there's a client — C resumes after.
 
 ### Weeks 7–8 (Aug — sister starts college ~3rd week)
-- [ ] **Sister onboards** on her branch-track (from `03`). Sem-1 pace: ~4–6 hrs/week, degree-first.
+- [ ] ~~**Sister onboards** on her branch-track (from `03`). Sem-1 pace: ~4–6 hrs/week, degree-first.~~ → **Superseded Aug 2026:** she's in B.Tech IT @ Vardhaman; **Sem-1 pace is ZERO extra hours** (her coursework covers it) — see `16`.
 - [ ] **First domain-advisor session with father**: list the **5–10 realest operational pains** he's seen in labs/pharma/clinics over his career (manual registers? report chasing? follow-up chaos? doc drudgery?). Start the **pain log** — this seeds the Layer-2 product (see `05` P1).
 - [ ] Second paying client or second strong lead.
 

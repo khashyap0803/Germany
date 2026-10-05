@@ -110,7 +110,7 @@ Most hobbyist engineers ignore this and die at the certification wall. **You lea
 | **ISO 13485** | Quality Management System for medical devices | The master key — no QMS, no certification, no sale |
 | **ISO 14971** | Risk management | You'll do this for your device from day one; defines your Class |
 | **IEC 60601** | Electrical safety + EMC of medical electrical equipment | Every powered patient-contact device must pass; testing = ₹-lakhs (`14`) |
-| **IEC 62304** | Medical device *software* lifecycle | Your firmware is regulated software — document it as such |
+| **IEC 62304** | Medical device *software* lifecycle | Your firmware is regulated software — document it as such. ⭐ **Owner: sister** (her A9517 Software Engineering course is the academic base — see `16`). Until now nobody owned this. |
 | **ISO 10993** | Biocompatibility (anything touching skin) | Electrodes/wearable straps need this — awareness now, testing later |
 | **CDSCO / MDR 2017** | India's medical device regulation & classification | Defines your license path; **this is the India-specific rulebook** (`14`) |
 
@@ -135,9 +135,27 @@ Detailed method is in `13`. The *skill* to build here:
 | Person | Tracks | Depth | Notes |
 |:---|:---|:---|:---|
 | **Khashyap** | 1, 2, 3, 4 (all) | Ultra on 1; working on 2–4 | Founder + lead engineer. Track 1 no-AI. |
-| **Sister** (EAMCET Phase-1: ECE at MVSR; may shift in 2 remaining phases) | 1 (+2 basics) | Ultra, ramped | Co-engineer. Sem-1: 4–6 hrs/wk shadowing prototypes 1–2. From sem-2: 8–12 hrs/wk, owns a subsystem. **Degree first, always.** If she ends up in CSE/AI → she owns Track 1D (DSP/edge-ML) + firmware-software instead. |
+| **Sister** — **B.Tech IT, Vardhaman College of Engineering** (confirmed Aug 2026) | **1D** (DSP/edge-ML) + **3** (IEC 62304) + 2 basics | Ultra on 1D/3 | Co-engineer, software side. **Year 1 = ZERO extra hours** — her Sem-1/2 coursework already delivers C + Bridge 1 + Bridge 2. Ramps 2–4 hrs/wk (Y2) → 6–10 (Y3) → 10–14 + a 630-hr Major Project (Y4). **Degree first, always.** ➡️ **Full detail: `16`.** |
 | **Father** | Technical/quality advisor to Tracks 1–3 | Overview | Judges designs, warns of failure modes, brings GMP/quality discipline. **Not** clinical-neuro depth (his own stated limit). |
 | **Mother** | — | — | Not on the technical curriculum. Ops/admin role stays as in `03` (registration, bookkeeping — but note: **no company to register in Year 1**, so her active role starts Phase 2). |
+
+### 📌 Her degree does a large slice of this curriculum for free
+
+Because she is at VCE (R25 regulation), several items on the four tracks arrive as **graded coursework with a lab and an examiner** — no extra hours, no self-discipline required. The highlights (full map in `16`):
+
+| Track item | Delivered by | When |
+|:---|:---|:---|
+| **1A — C (pointers, structs, memory)** | A9501/A9502 Programming for Problem Solving + Lab | Y1S1 (Aug–Dec 2026) |
+| **Bridge 1 — practical electronics** (`15_FUNDAMENTALS_BRIDGE`) | A9204/A9205 Basic Electrical Engineering + Lab | Y1S1 |
+| **Bridge 2 — digital logic** (`15_FUNDAMENTALS_BRIDGE`) | A9402 Digital Electronics | Y1S2 (Jan–May 2027) |
+| **1D — DSP / edge-ML** | A9702/A9703 Machine Learning + Lab, Computational Maths Lab, Python Lab | Y2S1–Y3S1 |
+| **1C — PCB design** (partial) | A9484 PCB Design and Fabrication *(open elective — must be chosen)* | Y3 |
+| **3 — IEC 62304 foundation** | A9517 Software Engineering (requirements, V&V, testing, risk mgmt, ISO 9000) | Y2S2 (Jan–May 2028) |
+| **3 — design controls in practice** | A9024 Community Driven Product Evaluation (standards, compliance, benchmarking, trials) | Y2S2 |
+| **4 — clinical/market discovery method** | A9021 Design Thinking (field research, SDG 3) → A9023 Technology Entrepreneurship (**patents, IP, patent search & drafting**) | Y1S1 → Y2S1 |
+| Sensor hardware, soldering, breadboard | A9606 IoT Laboratory (Arduino + Raspberry Pi + sensors) | Y2S2 |
+
+> **The no-AI rule (Track 1) still applies to her.** Her C lab requires hand-written code anyway, so the college rules and ours align — no conflict.
 
 ---
 
@@ -151,3 +169,4 @@ Detailed method is in `13`. The *skill* to build here:
 | **Phase 3** | 2029–2031 | Track 3 dominates (certification), Track 1 productionizes |
 
 ➡️ **Next:** `13` — how to pick the ONE problem, with your father's criteria as a scorecard.
+➡️ **See also:** `16` — sister's track in full (VCE-R25 semester map, project chain, elective picks, division of labour).

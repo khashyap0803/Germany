@@ -115,6 +115,23 @@ Nov 2027 – Feb 2028    Phase 5 VHDL — digital logic makes it click
 
 ---
 
+## 📌 NOTE — YOUR SISTER GETS BOTH BRIDGES AS GRADED COURSEWORK
+
+Confirmed August 2026: she's in **B.Tech IT at Vardhaman College of Engineering** (VCE-R25). Her first-year syllabus contains both bridges in full, with labs and examiners:
+
+| Bridge | Her course | When |
+|:---|:---|:---|
+| **Bridge 1 — Practical Electronics** | **A9204 Basic Electrical Engineering + A9205 Lab** — Ohm's law, KVL/KCL, Thevenin, Norton, superposition, series RL/RC, breadboards, multimeters | Y1 Sem 1 (Aug–Dec 2026) |
+| **Bridge 2 — Digital Logic** | **A9402 Digital Electronics** — number systems, Boolean algebra, K-maps, combinational logic, latches & flip-flops, counters, shift registers, PLA/PAL | Y1 Sem 2 (Jan–May 2027) |
+
+Two consequences:
+1. **She'll be ahead of you on digital logic** — she covers it Jan–May 2027; your Bridge 2 is Oct 2027. Her notes, lab records and textbook (Mano & Ciletti, the same book in your `Books/`) are a free resource when you reach it.
+2. **Don't skip your own bridges on that basis.** Hers are graded coursework for *her* degree; yours are prerequisites for *your* STM32 and VHDL work. Different purposes, same content.
+
+*(Full mapping of her degree against the startup curriculum: `Startup/16_SISTER_IT_TRACK.md`.)*
+
+---
+
 ## ONE-PARAGRAPH SUMMARY (read this if you read nothing else)
 
 You do **not** need to relearn your ECE degree. For admission it changes nothing; for embedded work, 80% is software you're already building and the other 20% is *practical* electronics, not circuit theory. Learn exactly two things at exactly two moments: **practical electronics before you touch the STM32** (so you don't fry it), and **digital logic before you start VHDL** (so it makes sense). Skip mesh, nodal, Thevenin, Norton, EDC, Signals, and Control entirely unless a specific job or course forces one on you. Your portfolio — not re-derived theorems — is what makes you a real engineer.
