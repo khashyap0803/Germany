@@ -18,6 +18,9 @@ C-Practice/**/*.exe
 Thumbs.db
 desktop.ini
 
+# Claude Code local settings (machine-specific permissions)
+.claude/
+
 # IDE files
 .vscode/
 *.swp
