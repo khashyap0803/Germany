@@ -21,16 +21,40 @@
 | # | University | Program | Fit | Sent | Reply |
 |:--|:---|:---|:---|:---|:---|
 | 1 | FH Dortmund | M.Eng. Embedded Systems Engineering | ⭐ Core | ✅ Oct 5 | 📨 Ticket #202610058159 (Oct 5) — admissions closed; see below |
-| 2 | Hochschule Bremerhaven | M.Sc. Embedded Systems Design | ⭐ Core | ✅ Oct 5 | ⏳ No reply yet |
-| 3 | HAW Hamburg (+ FH Westküste) | M.Sc. Microelectronic Systems | ⭐ Core | ✅ Oct 5 | 🤖 Auto-reply Oct 5 — "will respond in due course; don't resend" |
+| 2 | Hochschule Bremerhaven | M.Sc. Embedded Systems Design | ⭐ Core | ✅ Oct 5 | ✅ **REAL ANSWER Oct 6** (Christoph Lüders) — **exam attempts have no bearing**; ⚠️ **summer intake only, deadline 31 Dec**; ⚠️ mechanical-engineering 5 CP must already be in your degree · see below |
+| 3 | HAW Hamburg (+ FH Westküste) | M.Sc. Microelectronic Systems | ⭐ Core | ✅ Oct 5 | ➖ Partial answer Oct 5 (Frau Pleus) — only explained intakes (summer @ FH Westküste, Dec 1–Jan 15; winter @ HAW). Backlog question not answered. |
 | 4 | TH Deggendorf | M.Sc. Electrical Engineering and Information Technology | ⭐ Core | ✅ Resent to `welcome@th-deg.de` Oct 5 | 🤖 Ticket #4232091 (Oct 5) — form reply: no individual answers on eligibility; use FAQ + **online consultation sessions** |
 | 5 | Hochschule Darmstadt (h_da) | M.Sc. Electrical Engineering and Information Technology (International) | ⭐ Core | ✅ Oct 5 | ✅ **REAL ANSWER Oct 5** from Sabine François (IMSEIT Course Coordinator) — **backlogs: NO effect** · see below |
 | 6 | RWU Ravensburg-Weingarten | M.Eng. Electrical Engineering and Embedded Systems | Good (€1,500/sem fee) | ✅ Oct 5 | ⏳ No reply yet |
 | 7 | TU Chemnitz | M.Sc. Embedded Systems | Good (university) | ✅ Oct 5 | ⏳ No reply yet |
-| 8 | University of Freiburg | M.Sc. Embedded Systems Engineering | Good (€1,500/sem fee, C1 English) | ✅ Oct 5 | ⏳ No reply yet |
+| 8 | University of Freiburg | M.Sc. Embedded Systems Engineering | ❌ **DROPPED** | ✅ Oct 5 | ❌ **Honest answer Oct 6** (Ursula Epe): "admission with a CGPA lower than 9/10 is **highly unlikely**"; backlogs "do not give a good impression" |
 | 9 | Saarland University | M.Sc. Embedded Systems | ⬇️ **Deprioritised** — see below | ✅ Oct 5 | 🤖 Standard reply Oct 5: **GRE or GATE mandatory**; "only the very best students"; won't answer eligibility questions |
 | 10 | TU Hamburg (TUHH) | M.Sc. Microelectronics and Microsystems | Reach ("very good" grades expected) | ✅ Oct 5 | 📅 Personal reply Oct 5 (Sandra Steffens, STUDIS) — can't answer yet; **contact again in November 2027** |
 | 11 | Paderborn University | M.Sc. Electrical Systems Engineering | Reach (GRE required for non-EU) | ✅ Oct 5 | 🤖 Auto-reply Oct 5 — "will answer as soon as possible" |
+
+### ⭐ What Bremerhaven's reply told us (Oct 6, 2026) — second real answer
+From **Christoph Lüders, Student Advisory Service** (`studienberatung@hs-bremerhaven.de`, +49 471 4823-556). He invited further questions.
+1. **Backlogs:** "The number of attempts at an examination has **no bearing** on the academic assessment," provided the degree is completed and the required average is met (2.3 → you: 2.25 ✅). **Second university to confirm backlogs don't count.**
+2. **ECTS:** Bremerhaven doesn't assess non-EU degrees itself (uni-assist does). If your degree has **≥180 but <210 ECTS**, the missing 30 can be recognised through **≥20 weeks of relevant professional experience + a written report** on it. Your Unistring job covers this — **start keeping notes on what you do at work** so you can write that report.
+3. **Subject requirements (no gaps can be made up later):**
+   - Mathematics and/or physics — **15 CP**
+   - **Mechanical engineering — 5 CP** ⚠️ *the risky one for an ECE degree*
+   - Electrical engineering — 10 CP
+   - Computer science / programming — 5 CP
+   - Control engineering — 5 CP
+   ➡️ **Action:** go through your CBIT semester memos and list any mechanical-type subjects with their credits (e.g. Engineering Graphics/Drawing, Engineering Mechanics, Workshop, Basic Mechanical Engineering). Then ask Mr Lüders whether they'd count.
+4. **🔴 ESD starts in the SUMMER semester ONLY (April).** Apply via **uni-assist**, deadline **always 31 December**. The Summer 2028 round opens on uni-assist around **mid/late October 2027**.
+   ➡️ **Timeline impact:** for an **April 2028** start you must apply by **31 Dec 2027**, so IELTS, APS and German A1 must all be done by ~**November 2027**. If that's too tight (or the bond doesn't allow it), the next chance is **April 2029** (deadline 31 Dec 2028).
+5. **Fees:** semester fee **€438** (from Winter 2026/27), no tuition. uni-assist charges a processing fee.
+
+### ❌ What Freiburg's reply told us (Oct 6, 2026)
+From **Ursula Epe, Programme Co-ordination**: "Admission with a CGPA lower than **9/10** is **highly unlikely**." Backlogs: "does not give a good impression." IELTS 7.0 / TOEFL 95 required; Indian B.E. accepted "in principle". **Verdict: drop Freiburg.** Its official 2.9 cutoff is misleading; in practice it's far more selective.
+
+### ➖ What HAW Hamburg's reply told us (Oct 5, 2026)
+From **Frau Pleus, Student Admission and Registration Office**: only explained the intakes. **Summer** semester is run by **FH Westküste** (Heide), application **1 Dec – 15 Jan**; **winter** by **HAW Hamburg**. 3 semesters. The backlog/grade questions weren't answered. If you want an answer, ask the subject contact (`lutz.leutelt@haw-hamburg.de`) or FH Westküste (`fbt-stuko@fh-westkueste.de`) — not the admissions office again.
+
+### Saarland — second reply (Oct 6, 2026)
+From **Ryhene Rais, Study Coordination**: same position — won't assess eligibility; needs "a strong background in mathematics and computer science"; you may upload extra certificates under "Skills" in the portal; "only accepts the very best students." Still a long shot.
 
 ### ⭐ What Darmstadt's reply told us (Oct 5, 2026) — the first real answer
 From **Sabine François, IMSEIT Course Coordinator** (`sabine.francois@h-da.de`):
