@@ -30,7 +30,7 @@
 | 8 | University of Freiburg | M.Sc. Embedded Systems Engineering | ❌ **DROPPED** | ✅ Oct 5 | ❌ **Honest answer Oct 6** (Ursula Epe): "admission with a CGPA lower than 9/10 is **highly unlikely**"; backlogs "do not give a good impression" |
 | 9 | Saarland University | M.Sc. Embedded Systems | ⬇️ **Deprioritised** — see below | ✅ Oct 5 | 🤖 Standard reply Oct 5: **GRE or GATE mandatory**; "only the very best students"; won't answer eligibility questions |
 | 10 | TU Hamburg (TUHH) | M.Sc. Microelectronics and Microsystems | Reach ("very good" grades expected) | ✅ Oct 5 | 📅 Personal reply Oct 5 (Sandra Steffens, STUDIS) — can't answer yet; **contact again in November 2027** |
-| 11 | Paderborn University | M.Sc. Electrical Systems Engineering | Reach (GRE required for non-EU) | ✅ Oct 5 | 🤖 Auto-reply Oct 5 — "will answer as soon as possible" |
+| 11 | Paderborn University | M.Sc. Electrical Systems Engineering | Reach (GRE required for non-EU) | ✅ Oct 5 | 🚫 Reply Oct 9 (International Office) — can't assess before a formal application; backlog question → "contact the faculty's course coordinator". Not pursued (GRE needed anyway). |
 
 ### ⭐ What Bremerhaven's reply told us (Oct 6, 2026) — second real answer
 From **Christoph Lüders, Student Advisory Service** (`studienberatung@hs-bremerhaven.de`, +49 471 4823-556). He invited further questions.
