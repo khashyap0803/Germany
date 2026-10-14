@@ -32,7 +32,7 @@
 | 7 | Nov 16–22 | ☐ | ☐ Ch 11 pointers | ☐ RC low-pass filter | ☐ | |
 | 8 | Nov 23–29 | ☐ | ☐ Ch 12 + from-memory | ☐ Diode, transistor switch | ☐ | |
 
-**One-off tasks:** ☐ Bond end date from HR in writing (Week 1)
+**One-off tasks:** ☑ Bond end date from HR: **1 Oct 2027**, +1 day per leave day (Oct 14) · ☐ Get it **in writing** + ask about notice period
 **Week 8 review (Nov 29):** ☐ ≥6/8 weeks · ☐ 20+ programs · ☐ `swap()` from memory · ☐ explain Ohm/KVL/KCL/divider/RC · ☐ bond date confirmed
 
 **Parking lot** (ideas that came up — *don't act on them until Nov 29*):

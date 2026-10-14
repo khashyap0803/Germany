@@ -17,8 +17,8 @@
 | **Backlogs** | 15+ (ALL CLEARED) ⚠️ Real risk — see strategy below |
 | **Current Job** | Embedded HW Engineer, Unistring Tech Solutions (Defence/RF) |
 | **Job Start** | August 2025 |
-| **Bond Period** | 2 years from Aug 2025 → **Expires ~October 2027** |
-| **Resignation** | Submit at bond expiry Oct 2027 → 3-month notice → **Free ~January 2028** |
+| **Bond Period** | Ends **1 October 2027** (confirmed by HR, Oct 2026) — extended **1 day per leave day** taken |
+| **Resignation** | ⚠️ Ask HR: can the notice period be served *during* the bond (so the last day = bond end)? If notice starts only after the bond → free ~Jan 2028 |
 | **Salary** | ₹20K (intern) → ₹37K (full-time post-graduation) |
 | **Daily Commute** | 4 hrs total — crowded bus + metro + bus — **NOT usable for coding, usable for audio** |
 | **Work Hours** | 9 AM – 6:30 PM (best) to 8 PM (typical) |

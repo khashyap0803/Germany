@@ -49,7 +49,7 @@
 
 | Deadline | Date (approx.) | Meaning under v3 |
 |:---|:---|:---|
-| **Bond end** | Nominal **Jul 21, 2027**; effective **late 2027 – early 2028** | Bond extends by ~**3× the leave days taken** (~60 leaves accrued so far, more to come) → real end drifts past Jul 2027. This is the gate to quit-job / go full-time / apply for BIRAC-BIG (BIG requires quitting employment — verified). Until then: after-hours only. |
+| **Bond end** | **1 Oct 2027** (confirmed by HR, Oct 2026) | Extended **1 day for every leave day taken** (not 3× as previously assumed). Each leave day = 1 day later. Gate to quit-job / full-time / BIRAC-BIG. Until then: after-hours only. |
 | **Father's retirement** | ~2031 | Father's ₹1,50,000/month → ₹0. **No longer a survival cliff** (house backstops the loan) — but by design, Device #1 should be launching around then, so the family's *upside* arrives as his salary ends. |
 
 > The old "north-star = replace ₹1.7L/month by 2031" target is **retired in v3.** Survival is handled by the house backstop; the goal is now the *device*, not an income-replacement number.

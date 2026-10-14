@@ -52,7 +52,7 @@ INVESTORS  (seed VC, ₹-crores)  →  scale, and later fund Rung-2 Class C/D (s
 ```
 
 **Hard eligibility fact you must plan around (verified Jul 2026):**
-> **BIRAC BIG requires an employed applicant to undertake to QUIT their job and go full-time if selected**, and to be **incubated at an incubator.** → With your bond running to **~late 2027 – early 2028** (nominal Jul 21 2027, extended ~3× by leave days taken), **BIG is off the table until it ends.** This isn't a blocker; it *sets the sequence*: garage/skills during the bond → grants after. (Silver lining: a later bond-end buys you *more* Phase-0 skill-building runway before the quit-job clock starts.)
+> **BIRAC BIG requires an employed applicant to undertake to QUIT their job and go full-time if selected**, and to be **incubated at an incubator.** → With your bond running to **1 Oct 2027** (+1 day per leave day taken), **BIG is off the table until it ends.** This isn't a blocker; it *sets the sequence*: garage/skills during the bond → grants after. (Silver lining: a later bond-end buys you *more* Phase-0 skill-building runway before the quit-job clock starts.)
 
 **Hyderabad is arguably India's best city for this** — use it:
 - **T-Works** — public hardware prototyping facility (pay-per-use, no residency; your Rung-0 workshop)
@@ -80,7 +80,7 @@ INVESTORS  (seed VC, ₹-crores)  →  scale, and later fund Rung-2 Class C/D (s
 |:--|:--|:--|:--|:--|
 | **P0 — Foundations** | Now → ~late 2027 | Rung-0 prototypes 1→5; learn Tracks 1 & 3; start Track 2 | ≤ ₹1–3L family | **Keep job.** After-hours only |
 | **P1 — Problem lock** | ~2027 (overlaps P0) | Clinical discovery; pick THE problem (`13` gate); breadboard PoC | (part of above) | Keep job |
-| **P2 — Fund & incorporate** | Bond end (~late 2027 – early 2028) → 2028 | Quit-job gate; incorporate; join incubator; PRAYAS → BIG with prototype | Grants begin | **Bond ends → decision** |
+| **P2 — Fund & incorporate** | Bond end (**1 Oct 2027**) → 2028 | Quit-job gate; incorporate; join incubator; PRAYAS → BIG with prototype | Grants begin | **Bond ends → decision** |
 | **P3 — Certify & validate** | ~2029–2031 | ISO 13485, IEC 60601, CDSCO Class-B licence, clinical evaluation, launch Device #1 | Grants + seed | Full-time founder |
 | **P4 — Ladder to C/D** | 2031+ | Device #2 climbs risk class (separate entity, VC-funded) | VC | — |
 

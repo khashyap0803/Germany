@@ -86,7 +86,7 @@
 | Oct-Nov 2027 | IELTS exam |
 | Aug-Sep 2027 | APS certificate application (moved earlier for buffer) |
 | Dec 31, 2027 | Bremerhaven application (Summer 2028) |
-| Jan 2028 | Bond ends → Submit resignation |
+| **1 Oct 2027** | Bond ends (+1 day per leave taken) — confirm notice-period rules with HR |
 | Apr 15, 2028 | RWU application (Winter 2028) |
 | Jul 15, 2028 | Dortmund + others (Winter 2028) |
 | Oct 2028 | 🎓 Fly to Germany |

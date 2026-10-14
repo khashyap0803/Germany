@@ -2,7 +2,7 @@
 
 > How you (and your sister) go from "embedded engineer" to "person who can design a certified neuro wearable."
 > **Four tracks run in parallel.** Track 1 is the spine; Tracks 2–4 wrap around it. Depth: **you + sister = ultra; father = technical advisor only (can't go deep into biology/clinical); mother = not on this curriculum.**
-> ⏱️ All of this happens **outside your job hours** until the bond ends (nominal Jul 21 2027; realistically late 2027 – early 2028 with leave-based extension). Your Unistring RF/embedded work is *paid, aligned training* — treat it as Track 1 income + practice, not a distraction.
+> ⏱️ All of this happens **outside your job hours** until the bond ends (**1 Oct 2027**, +1 day per leave day taken). Your Unistring RF/embedded work is *paid, aligned training* — treat it as Track 1 income + practice, not a distraction.
 
 ---
 
