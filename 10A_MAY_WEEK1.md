@@ -187,8 +187,8 @@ mkdir week1 && cd week1
 
 **Program 7 — `type_casting.c`:**
 - CGPA calculation: `450 / 600` = `0` (WRONG!) vs `(float)450 / 600` = `0.75` (RIGHT!)
-- Bavarian formula: write it in C: `grade = ((10 - 7.5) / (10 - 4.0)) * 3 + 1`
-- Print: "Your German grade: 2.25"
+- Bavarian formula: write it in C: `grade = ((10 - 7.87) / (10 - 5.0)) * 3 + 1`
+- Print: "Your German grade: 2.28"
 
 ---
 

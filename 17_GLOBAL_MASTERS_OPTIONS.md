@@ -1,7 +1,7 @@
 # 🌍 GLOBAL MASTER'S OPTIONS — Embedded Systems for Medical Devices
 
 > **Researched**: October 5, 2026, from official university pages, government announcements and program databases (sources at the bottom).
-> **Your profile used for every judgement**: B.E. ECE (CBIT, 2026), CGPA 7.5/10 (≈ German 2.25), **15 backlogs (all cleared)**, ~1 year embedded/defence work experience, family budget ≈ ₹11 lakh (one German blocked-account year), goal = **embedded systems engineer in the medical-device domain**.
+> **Your profile used for every judgement**: B.E. ECE (CBIT, 2026), CGPA **7.87/10** (≈ German 2.28, First Class with Distinction), **15 backlogs (14 credit + 1 non-credit, all cleared)**, ~1 year embedded/defence work experience, family budget ≈ ₹11 lakh (one German blocked-account year), goal = **embedded systems engineer in the medical-device domain**.
 > ⚠️ **Fees, caps and visa rules change every year.** Treat every number as "approximately, as of Oct 2026" and re-check before you apply. Currency conversions are rough: €1 ≈ ₹100 · £1 ≈ ₹115 · $1 ≈ ₹88 · CAD 1 ≈ ₹63 · AUD 1 ≈ ₹57 · CHF 1 ≈ ₹108.
 
 ---
@@ -39,7 +39,7 @@ Germany's medical-device companies cluster in a few places. A university in or n
 |:---|:---|:---|:---|:---|:---|
 | **TH Lübeck** (with Uni Lübeck) | **M.Sc. Biomedical Engineering** | English | **Free** | ⭐⭐⭐ | Right next to **Dräger**. Accepts Electrical Eng./Electronics bachelors. 4 sem. **Non-EU deadline: 1 Jan – 1 May** (for winter). |
 | **HAW Hamburg** | **M.Sc. Biomedical Engineering** | English | **Free** | ⭐⭐⭐ | Hamburg medtech cluster (Philips, Olympus). 3 sem. Same university as your Microelectronic Systems email. |
-| **FAU Erlangen-Nürnberg** | M.Sc. Medical Engineering — **Medical Robotics** track | English | Free | ⭐⭐ | Grade **2.5 or better ✅** (you: 2.25). **Siemens Healthineers** is next door. ⚠️ The *Medical Electronics* track is **German-only**. Two-stage admission: document review + **online admission test**. Deadline 31 May (winter). University, so more theory-heavy. |
+| **FAU Erlangen-Nürnberg** | M.Sc. Medical Engineering — **Medical Robotics** track | English | Free | ⭐⭐ | Grade **2.5 or better ✅** (you: ≈2.28). **Siemens Healthineers** is next door. ⚠️ The *Medical Electronics* track is **German-only**. Two-stage admission: document review + **online admission test**. Deadline 31 May (winter). University, so more theory-heavy. |
 | **TU Ilmenau** | M.Sc. Biomedical Engineering | English & German | Free | ⭐⭐ | 3 sem. Strong in measurement/biosignals. Small town (cheap). |
 | **Anhalt UAS** (Köthen) | M.Sc. Biomedical Engineering | English & German | Free | ⭐⭐ | Applied sciences (FH). Small town. |
 | **Ulm University** | M.Sc. Biomedical Engineering | English & German | €1,500 | ⭐ | BW fees. |
@@ -149,7 +149,7 @@ Add the medtech-city programs to your email/application list:
 6. Check your **DSU eligibility** once, with the house counted.
 
 ### One Asian "lottery ticket" that costs only effort
-7. **MEXT (Japan) Embassy scholarship** — deadline ≈ **1 April 2027**. It's fully funded; one attempt costs you an application and an exam day. Check whether 7.5/10 clears the Embassy's GPA bar first.
+7. **MEXT (Japan) Embassy scholarship** — deadline ≈ **1 April 2027**. It's fully funded; one attempt costs you an application and an exam day. Check whether 7.87/10 clears the Embassy's GPA bar first.
 
 ### Skip
 UK, USA, Canada, Australia, Switzerland, Norway, Sweden, Netherlands, Singapore, KAUST — either 2–4× your budget or out of reach with 15 backlogs.

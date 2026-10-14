@@ -12,16 +12,17 @@
 **CBIT minimum passing CGPA = 4 (on 10-point scale)**
 
 ```
-German Grade = ((10 - 7.5) / (10 - 4)) × 3 + 1 = 2.25 ("Gut" / Good)
+German Grade = ((10 - 7.87) / (10 - 5)) × 3 + 1 ≈ 2.28  (conservative; ≈2.07 if lowest pass = 4)
+# Corrected Oct 2026 from the actual final memo: CGPA 7.87, not 7.5
 ```
 
-| University | Grade Required | Your Grade (2.25) | Status |
+| University | Grade Required | Your Grade (≈2.28) | Status |
 |:---|:---|:---|:---|
-| FH Dortmund | 2.5 | 2.25 | ✅ Passes easily |
-| HS Bremerhaven | 2.3 (or 2.6 w/ 2yr exp) | 2.25 | ✅ Passes even WITHOUT boost |
-| RWU | 2.5 | 2.25 | ✅ Passes easily |
-| HS Fulda | 2.5 | 2.25 | ✅ Passes |
-| HS Esslingen | — | 2.25 | ✅ Passes |
+| FH Dortmund | 2.5 | ≈2.28 | ✅ Passes easily |
+| HS Bremerhaven | 2.3 (or 2.6 w/ 2yr exp) | ≈2.28 | ✅ Passes, but only by 0.02 |
+| RWU | 2.5 | ≈2.28 | ✅ Passes easily |
+| HS Fulda | 2.5 | ≈2.28 | ✅ Passes |
+| HS Esslingen | — | ≈2.28 | ✅ Passes |
 
 **Key outcome**: Grade is NOT a blocker for ANY university. The 2-year experience boost at Bremerhaven is nice-to-have, not need-to-have.
 
@@ -180,7 +181,7 @@ Embedded startups hiring at ₹15-25K only need:
 
 ## 8. FINAL CONCLUSIONS
 
-1. **Grade 2.25 is safe** — passes all universities without needing experience boost
+1. **Grade ≈2.28 (CGPA 7.87) is safe at FHs** — passes all universities without needing experience boost
 2. **Unistring work is NOT engineering** — it's analysis/documentation
 3. **The defence domain (radars/jammers/drones) IS valuable** for German SOP narrative
 4. **₹3L bond penalty = investment of ₹120/hr** for 2,500 hours of real learning

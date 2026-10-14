@@ -114,7 +114,7 @@ Use the Europass CV format (standard in Europe): https://europass.europa.eu/
 
 ### Key Sections:
 1. Personal Information
-2. Education (B.E. ECE, CBIT, 2022-2026, CGPA 7.5)
+2. Education (B.E. ECE, CBIT, 2022-2026, CGPA 7.87/10, First Class with Distinction)
 3. Work Experience (Unistring Tech Solutions, Aug 2025 - present)
 4. Skills (C, Embedded C, STM32, ESP32, RTOS, SPI/I2C/UART, KiCad, Git)
 5. Projects (GitHub portfolio projects)

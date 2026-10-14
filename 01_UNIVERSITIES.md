@@ -8,7 +8,7 @@
 | Language | **English** |
 | Tuition | **FREE** (~€300/sem contribution) |
 | State | North Rhine-Westphalia |
-| Grade Required | 2.5 German → You: 2.25 ✅ |
+| Grade Required | 2.5 German → You: ≈2.28 ✅ |
 | ECTS | 180 minimum |
 | IELTS/TOEFL | 6.5 / 90 iBT |
 | Intake | **Winter (October)** |
@@ -23,7 +23,7 @@
 | Language | **English** |
 | Tuition | **FREE** (~€300/sem) |
 | State | Bremen |
-| Grade Required | 2.3 → OR **2.6 with 2yr experience** → You: 2.25 ✅✅ |
+| Grade Required | 2.3 → OR **2.6 with 2yr experience** → You: ≈2.28 ✅ (just) |
 | ECTS | 210 preferred |
 | IELTS | B2 (~6.0-6.5) |
 | **German Required** | **A1 level mandatory** |
@@ -37,7 +37,7 @@
 |:---|:---|
 | Language | **English** |
 | Tuition | ⚠️ **€1,500/sem** (Baden-Württemberg non-EU fee) |
-| Grade Required | 2.5 → You: 2.25 ✅ |
+| Grade Required | 2.5 → You: ≈2.28 ✅ |
 | ECTS | 210 (may need extra modules for 180) |
 | IELTS/TOEFL | 6.0 / 70 iBT |
 | Prerequisites | **VHDL/Verilog + OOP (C++/Java)** knowledge required |
@@ -124,7 +124,7 @@
 
 ## HONEST ADMISSION PROBABILITY (No Sugar Coating)
 
-> Assessed June 8, 2026. Based on: 15+ backlogs (cleared), CGPA 7.5 (German: 2.25), Unistring experience (documentation/analysis), portfolio in progress.
+> Assessed June 8, 2026. Based on: 15 backlogs (cleared; 14 credit + 1 non-credit), CGPA 7.87 (German ≈2.28), Unistring experience (documentation/analysis), portfolio in progress.
 
 | University | Honest Probability | Main Risk Factor |
 |:---|:---:|:---|

@@ -13,7 +13,7 @@
 |:---|:---|
 | **Degree** | B.E. ECE, CBIT Hyderabad |
 | **Graduation** | Last exams May 2026 → Degree cert likely **Jun–Sep 2026** |
-| **CGPA** | 7.5/10 → **German Grade 2.25 ("Gut"/Good)** |
+| **CGPA** | **7.87/10** (First Class with Distinction) → **German Grade ≈ 2.28** (conservative) – 2.07 (optimistic) |
 | **Backlogs** | 15+ (ALL CLEARED) ⚠️ Real risk — see strategy below |
 | **Current Job** | Embedded HW Engineer, Unistring Tech Solutions (Defence/RF) |
 | **Job Start** | August 2025 |
@@ -28,14 +28,45 @@
 
 ---
 
+## ✅ VERIFIED TRANSCRIPT FACTS (from final memos, Oct 2026)
+
+| Fact | Value |
+|:---|:---|
+| Final CGPA | **7.87 / 10** — **First Class with Distinction** (B.E. ECE, CBIT, Apr 2026, R22) |
+| Total credits | ≈ **160 Indian credits**, 8 semesters (usually treated as ~240 ECTS) |
+| Failed at first attempt | **15** = 14 credit subjects + 1 non-credit (Indian Constitution) — all cleared |
+| Breakdown | Sem 2: 1 · Sem 3: 2 · Sem 4: 1 (non-credit) · **Sem 5: 10 (whole semester, all cleared May 2025 with SGPA 8.77)** · Sem 6: 1 |
+| Sem 1 Chemistry | Initially shown as fail; **passed on re-evaluation** → corrected first-year memo issued. **Submit only the corrected memo.** |
+
+**Subject coverage vs. Bremerhaven ESD requirements**
+
+| Requirement | Your subjects | Status |
+|:---|:---|:---|
+| Math/physics 15 CP | Calculus, Vector Calculus & DE, Transform Theory, Probability & Stochastic Processes, EMT & QM (+lab) | ✅ |
+| Mechanical 5 CP | **Engineering Mechanics (4)**, CAD & Drafting (2.5), Robotics & Drones Lab (3), Digital Fabrication Lab (1.5) | ✅ |
+| Electrical 10 CP | Basic Electrical Eng (+lab), Network Analysis (+lab), Electronic Devices, Analog Circuits | ✅ |
+| Programming 5 CP | Problem Solving & Programming (+lab), C & Data Structures (+lab), Embedded C | ✅ |
+| Control 5 CP | **Control Systems (3 Indian credits ≈ 4.5 ECTS)** | ⚠️ borderline — asked Bremerhaven |
+
+**Embedded strengths (for Darmstadt/Dortmund):** Embedded C **S**, RTOS **A**, Computer Architecture & Microprocessors **A**, Sensing Techniques & Sensor Systems **A**, Microcontrollers **B** + Lab **S**, Embedded Systems **B**, IoT **B** + Lab **S**.
+**Gap:** no course named *Software Engineering* (Dortmund lists it as required).
+
+---
+
 ## CGPA CONVERSION (Bavarian Formula)
 
 ```
-German Grade = ((10 - 7.5) / (10 - 4)) × 3 + 1 = 2.25 ("Gut" / Good)
+Conservative (lowest passing grade point = 5, grade 'E' on the CBIT sheet):
+German Grade = ((10 - 7.87) / (10 - 5)) × 3 + 1 ≈ 2.28  ("Gut")
+
+Optimistic (lowest passing = 4):
+German Grade = ((10 - 7.87) / (10 - 4)) × 3 + 1 ≈ 2.07
+
+→ Plan with 2.28. uni-assist decides which value applies.
 ```
 
-- Most FHs require **2.5 or better** → You qualify at **2.25**
-- HS Bremerhaven with 2yr relevant experience lowers req to ~2.6 → You qualify even with 2.25
+- Most FHs require **2.5 or better** → You qualify at **≈2.28**
+- HS Bremerhaven requires **2.3** (or 2.6 with 2yr relevant experience) → at ≈2.28 you qualify **just barely**; at 2.07 comfortably
 
 ---
 
@@ -43,7 +74,8 @@ German Grade = ((10 - 7.5) / (10 - 4)) × 3 + 1 = 2.25 ("Gut" / Good)
 
 ### Real risk factors — in order of severity
 
-**1. 15+ backlogs — this is the main danger**
+**1. 15 backlogs (14 credit subjects + 1 non-credit, all cleared) — the main danger**
+> ✅ **Update Oct 2026:** Darmstadt ("No") and Bremerhaven ("no bearing") confirmed in writing that failed-then-passed exams don't count against you. Freiburg said they "don't give a good impression".
 - German universities are forensic. Individual semester marksheets show original "F" grades even after clearing.
 - uni-assist may auto-reject at >10 backlogs before a human reads your file.
 - Attempting to hide them = permanent platform ban. NEVER hide them.
@@ -59,11 +91,11 @@ German Grade = ((10 - 7.5) / (10 - 4)) × 3 + 1 = 2.25 ("Gut" / Good)
 **3. Unistring experience classification risk**
 - Your actual work = RF analysis, documentation, BOM in Excel. NOT hands-on coding or hardware design.
 - HS Bremerhaven's "2yr experience" grade boost requires RELEVANT technical experience.
-- If they don't count RF documentation → no boost → grade stays 2.25 (still qualifies, narrower margin).
+- If they don't count RF documentation → no boost → grade stays ≈2.28 (still qualifies at Bremerhaven, but by only 0.02).
 - **Mitigation**: Strong SOP narrative + GitHub portfolio of real embedded code = proof of engineering capability.
 
-**4. CGPA 2.25 — actually a strength**
-- Required 2.5. Yours is 2.25. You are already above the threshold.
+**4. CGPA 7.87 (≈2.28) — solid for FHs**
+- Required 2.5 at most FHs. Yours is ≈2.28. Not good enough for selective universities (Freiburg said <9/10 is 'highly unlikely').
 
 ### Per-university honest probability
 
@@ -96,7 +128,7 @@ German Grade = ((10 - 7.5) / (10 - 4)) × 3 + 1 = 2.25 ("Gut" / Good)
 
 ### What helps you:
 1. All backlogs CLEARED — you ARE eligible to apply
-2. Final CGPA 2.25 German is genuinely competitive
+2. Final CGPA 7.87 (≈2.28 German), First Class with Distinction
 3. 2+ years work experience by Winter 2028 applications
 4. FHs value practical experience over pure academics
 5. Defence/RF domain background is rare — valuable in German automotive radar / IoT context

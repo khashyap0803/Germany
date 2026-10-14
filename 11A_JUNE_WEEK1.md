@@ -76,7 +76,7 @@ week1/
 ├── variables.c      — All 6 types: int, float, double, char, long, unsigned. Print with sizeof()
 ├── input.c          — scanf two numbers, print sum/difference/product/quotient
 ├── ascii.c          — Print ASCII values of 'A'-'Z', 'a'-'z', '0'-'9'
-└── type_cast.c      — Calculate your CGPA in German grade: ((10-7.5)/(10-4))*3+1
+└── type_cast.c      — Calculate your CGPA in German grade: ((10-7.87)/(10-5))*3+1
 ```
 
 Compile each: `gcc -Wall -Wextra -g -std=c99 hello.c -o hello`

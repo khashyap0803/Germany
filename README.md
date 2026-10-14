@@ -62,7 +62,7 @@
 
 | Metric | Value |
 |:---|:---|
-| CGPA | 7.5/10 → German 2.25 (Gut) |
+| CGPA | 7.87/10 → German ≈2.28 (Gut) · First Class with Distinction |
 | IELTS Target | 7.0 |
 | German Target | B2 |
 | Blocked Account | €11,904 (~₹11L) |

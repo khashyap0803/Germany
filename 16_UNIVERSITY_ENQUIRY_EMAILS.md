@@ -5,6 +5,8 @@
 
 ---
 
+> ⚠️ **Correction (Oct 14, 2026):** the emails below were sent with **CGPA 7.5 / ≈2.25**. Your actual final CGPA is **7.87** (First Class with Distinction, ≈2.28 German). The backlog count of **15** is correct (14 credit + 1 non-credit). Nothing needs resending — the error understated you. **Use 7.87 in every future email and application.**
+
 ## HOW TO SEND
 
 1. **One email per university.** Never CC several universities together.
@@ -34,7 +36,7 @@
 
 ### ⭐ What Bremerhaven's reply told us (Oct 6, 2026) — second real answer
 From **Christoph Lüders, Student Advisory Service** (`studienberatung@hs-bremerhaven.de`, +49 471 4823-556). He invited further questions.
-1. **Backlogs:** "The number of attempts at an examination has **no bearing** on the academic assessment," provided the degree is completed and the required average is met (2.3 → you: 2.25 ✅). **Second university to confirm backlogs don't count.**
+1. **Backlogs:** "The number of attempts at an examination has **no bearing** on the academic assessment," provided the degree is completed and the required average is met (2.3 → you: ≈2.28 ✅, just). **Second university to confirm backlogs don't count.**
 2. **ECTS:** Bremerhaven doesn't assess non-EU degrees itself (uni-assist does). If your degree has **≥180 but <210 ECTS**, the missing 30 can be recognised through **≥20 weeks of relevant professional experience + a written report** on it. Your Unistring job covers this — **start keeping notes on what you do at work** so you can write that report.
 3. **Subject requirements (no gaps can be made up later):**
    - Mathematics and/or physics — **15 CP**
@@ -102,7 +104,7 @@ From **Sandra Steffens, STUDIS Student Services** (`sandra.steffens@tuhh.de`, +4
 
 | University / program | Why |
 |:---|:---|
-| Frankfurt UAS — High Integrity Systems | Minimum German grade **1.8** (yours ≈ 2.25) and 70% computer science coursework |
+| Frankfurt UAS — High Integrity Systems | Minimum German grade **1.8** (yours ≈ 2.28) and 70% computer science coursework |
 | RPTU Kaiserslautern — Embedded Computing Systems | Minimum German grade **1.7** |
 | Hochschule Schmalkalden — Mechatronics & Robotics | Minimum German grade **2.0** |
 | Uni Duisburg-Essen — Embedded Systems Engineering | 50% taught in German, needs **German B2** |
@@ -396,7 +398,7 @@ Phone/WhatsApp: +91 9032827339
 
 **To:** `studienberatung@ese.uni-freiburg.de`
 
-> Note: **€1,500/semester** for non-EU students. Requires English at **C1** (plan on IELTS 7.0). Minimum grade 2.9 — yours (2.25) is well inside that.
+> Note: **€1,500/semester** for non-EU students. Requires English at **C1** (plan on IELTS 7.0). Minimum grade 2.9 on paper — but Freiburg replied that <9/10 is 'highly unlikely'. Dropped.
 
 **Subject:**
 ```
@@ -578,8 +580,8 @@ Phone/WhatsApp: +91 9032827339
 
 ## WHAT I LEARNED WHILE CHECKING (worth knowing before you apply)
 
-- **FH Dortmund:** non-EU applicants must complete a **pre-check** first; application window **1 April – 15 June**. Minimum grade 2.5 (you: 2.25 ✅). Requires software engineering, control engineering, signal processing and systems engineering in your degree, and at least 180 ECTS.
-- **Bremerhaven:** minimum grade **2.3**, or **2.6 with 2 years' relevant experience after your bachelor's**. You're at 2.25, so you pass even without the bonus, but only just. Non-EU deadlines: **31 December** (summer), **30 June** (winter), via uni-assist.
+- **FH Dortmund:** non-EU applicants must complete a **pre-check** first; application window **1 April – 15 June**. Minimum grade 2.5 (you: ≈2.28 ✅). Requires software engineering, control engineering, signal processing and systems engineering in your degree, and at least 180 ECTS.
+- **Bremerhaven:** minimum grade **2.3**, or **2.6 with 2 years' relevant experience after your bachelor's**. You're at ≈2.28 (CGPA 7.87), so you pass without the bonus — but only by 0.02. Non-EU deadlines: **31 December** (summer), **30 June** (winter), via uni-assist.
 - **Several programs need some German** (Bremerhaven A1, Chemnitz A1, Deggendorf A2). Getting a Goethe A1 certificate early widens your options.
 - **English:** most need IELTS 6.0–6.5; **Freiburg and Saarland need C1 (IELTS 7.0)**. Aiming for 7.0 keeps every door open.
 
