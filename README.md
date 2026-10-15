@@ -18,6 +18,7 @@
 |:---|:---|
 | [00_MASTER_ROADMAP.md](00_MASTER_ROADMAP.md) | Profile, verified transcript, risks, money, contingencies |
 | [01_UNIVERSITIES.md](01_UNIVERSITIES.md) | Final target list, intakes, deadlines, application plan |
+| [20_BEST_PROGRAMS_DAAD.md](20_BEST_PROGRAMS_DAAD.md) | Full DAAD screen (129 programs): best free, embedded/medical programs you qualify for |
 | [03_GERMAN_LANGUAGE.md](03_GERMAN_LANGUAGE.md) | German A1 (exam Jul 2027) → A2 (2028) |
 | [04_IELTS_PREP.md](04_IELTS_PREP.md) | 12-month English → IELTS plan (exam early Oct 2027) |
 | [05_APPLICATION_DOCS.md](05_APPLICATION_DOCS.md) | Documents, APS, backlog wording, motivation letter, CV, visa |
