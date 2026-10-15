@@ -5,7 +5,7 @@
 
 ---
 
-> ⚠️ **Correction (Oct 14, 2026):** the emails below were sent with **CGPA 7.5 / ≈2.25**. Your actual final CGPA is **7.87** (First Class with Distinction, ≈2.28 German). The backlog count of **15** is correct (14 credit + 1 non-credit). Nothing needs resending — the error understated you. **Use 7.87 in every future email and application.**
+> ⚠️ **Correction (Oct 14, 2026):** the emails were *sent* with **CGPA 7.5 / ≈2.25**; the templates below are now corrected. Your actual final CGPA is **7.87** (First Class with Distinction, ≈2.28 German). The backlog count of **15** is correct (14 credit + 1 non-credit). Nothing needs resending — the error understated you. **Use 7.87 in every future email and application.**
 
 ## HOW TO SEND
 
@@ -135,8 +135,8 @@ I am planning to apply for the M.Sc. Embedded Systems Design at Hochschule Breme
 My academic background:
 - Degree: Bachelor of Engineering (B.E.) in Electronics and Communication Engineering
 - University: Chaitanya Bharathi Institute of Technology (CBIT), Hyderabad, India (affiliated to Osmania University) – 4-year programme, 8 semesters, graduated 2026
-- CGPA: 7.5 / 10 (minimum passing CGPA: 4.0) – approximately 2.25 on the German scale by the modified Bavarian formula
-- Examination history: I did not pass 15 course examinations at the first attempt. I subsequently passed all of them, and my degree has been awarded with no pending subjects.
+- CGPA: 7.87 / 10, First Class with Distinction (lowest passing grade point: 5.0) – approximately 2.28 on the German scale by the modified Bavarian formula
+- Examination history: I did not pass 15 course examinations at the first attempt (14 credit-bearing courses and one non-credit course). I subsequently passed all of them, and my degree has been awarded with no pending subjects.
 
 Professional experience:
 Since August 2025 I have worked at Unistring Tech Solutions, a defence electronics company in Hyderabad, first as an intern and, since October 2026, as a full-time Junior Hardware Design Engineer.
@@ -182,8 +182,8 @@ I am planning to apply for the M.Sc. Microelectronic Systems at HAW Hamburg and 
 My academic background:
 - Degree: Bachelor of Engineering (B.E.) in Electronics and Communication Engineering
 - University: Chaitanya Bharathi Institute of Technology (CBIT), Hyderabad, India (affiliated to Osmania University) – 4-year programme, 8 semesters, graduated 2026
-- CGPA: 7.5 / 10 (minimum passing CGPA: 4.0) – approximately 2.25 on the German scale by the modified Bavarian formula
-- Examination history: I did not pass 15 course examinations at the first attempt. I subsequently passed all of them, and my degree has been awarded with no pending subjects.
+- CGPA: 7.87 / 10, First Class with Distinction (lowest passing grade point: 5.0) – approximately 2.28 on the German scale by the modified Bavarian formula
+- Examination history: I did not pass 15 course examinations at the first attempt (14 credit-bearing courses and one non-credit course). I subsequently passed all of them, and my degree has been awarded with no pending subjects.
 
 Professional experience:
 Since August 2025 I have worked at Unistring Tech Solutions, a defence electronics company in Hyderabad, first as an intern and, since October 2026, as a full-time Junior Hardware Design Engineer.
@@ -228,8 +228,8 @@ I am planning to apply for the M.Sc. Electrical Engineering and Information Tech
 My academic background:
 - Degree: Bachelor of Engineering (B.E.) in Electronics and Communication Engineering
 - University: Chaitanya Bharathi Institute of Technology (CBIT), Hyderabad, India (affiliated to Osmania University) – 4-year programme, 8 semesters, graduated 2026
-- CGPA: 7.5 / 10 (minimum passing CGPA: 4.0) – approximately 2.25 on the German scale by the modified Bavarian formula
-- Examination history: I did not pass 15 course examinations at the first attempt. I subsequently passed all of them, and my degree has been awarded with no pending subjects.
+- CGPA: 7.87 / 10, First Class with Distinction (lowest passing grade point: 5.0) – approximately 2.28 on the German scale by the modified Bavarian formula
+- Examination history: I did not pass 15 course examinations at the first attempt (14 credit-bearing courses and one non-credit course). I subsequently passed all of them, and my degree has been awarded with no pending subjects.
 
 Professional experience:
 Since August 2025 I have worked at Unistring Tech Solutions, a defence electronics company in Hyderabad, first as an intern and, since October 2026, as a full-time Junior Hardware Design Engineer.
@@ -275,8 +275,8 @@ I am planning to apply for the international M.Sc. Electrical Engineering and In
 My academic background:
 - Degree: Bachelor of Engineering (B.E.) in Electronics and Communication Engineering
 - University: Chaitanya Bharathi Institute of Technology (CBIT), Hyderabad, India (affiliated to Osmania University) – 4-year programme, 8 semesters, graduated 2026
-- CGPA: 7.5 / 10 (minimum passing CGPA: 4.0) – approximately 2.25 on the German scale by the modified Bavarian formula
-- Examination history: I did not pass 15 course examinations at the first attempt. I subsequently passed all of them, and my degree has been awarded with no pending subjects.
+- CGPA: 7.87 / 10, First Class with Distinction (lowest passing grade point: 5.0) – approximately 2.28 on the German scale by the modified Bavarian formula
+- Examination history: I did not pass 15 course examinations at the first attempt (14 credit-bearing courses and one non-credit course). I subsequently passed all of them, and my degree has been awarded with no pending subjects.
 
 Professional experience:
 Since August 2025 I have worked at Unistring Tech Solutions, a defence electronics company in Hyderabad, first as an intern and, since October 2026, as a full-time Junior Hardware Design Engineer.
@@ -321,8 +321,8 @@ I am planning to apply for the M.Eng. Electrical Engineering and Embedded System
 My academic background:
 - Degree: Bachelor of Engineering (B.E.) in Electronics and Communication Engineering
 - University: Chaitanya Bharathi Institute of Technology (CBIT), Hyderabad, India (affiliated to Osmania University) – 4-year programme, 8 semesters, graduated 2026
-- CGPA: 7.5 / 10 (minimum passing CGPA: 4.0) – approximately 2.25 on the German scale by the modified Bavarian formula
-- Examination history: I did not pass 15 course examinations at the first attempt. I subsequently passed all of them, and my degree has been awarded with no pending subjects.
+- CGPA: 7.87 / 10, First Class with Distinction (lowest passing grade point: 5.0) – approximately 2.28 on the German scale by the modified Bavarian formula
+- Examination history: I did not pass 15 course examinations at the first attempt (14 credit-bearing courses and one non-credit course). I subsequently passed all of them, and my degree has been awarded with no pending subjects.
 
 Professional experience:
 Since August 2025 I have worked at Unistring Tech Solutions, a defence electronics company in Hyderabad, first as an intern and, since October 2026, as a full-time Junior Hardware Design Engineer.
@@ -368,8 +368,8 @@ I am planning to apply for the M.Sc. Embedded Systems at Chemnitz University of 
 My academic background:
 - Degree: Bachelor of Engineering (B.E.) in Electronics and Communication Engineering
 - University: Chaitanya Bharathi Institute of Technology (CBIT), Hyderabad, India (affiliated to Osmania University) – 4-year programme, 8 semesters, graduated 2026
-- CGPA: 7.5 / 10 (minimum passing CGPA: 4.0) – approximately 2.25 on the German scale by the modified Bavarian formula
-- Examination history: I did not pass 15 course examinations at the first attempt. I subsequently passed all of them, and my degree has been awarded with no pending subjects.
+- CGPA: 7.87 / 10, First Class with Distinction (lowest passing grade point: 5.0) – approximately 2.28 on the German scale by the modified Bavarian formula
+- Examination history: I did not pass 15 course examinations at the first attempt (14 credit-bearing courses and one non-credit course). I subsequently passed all of them, and my degree has been awarded with no pending subjects.
 
 Professional experience:
 Since August 2025 I have worked at Unistring Tech Solutions, a defence electronics company in Hyderabad, first as an intern and, since October 2026, as a full-time Junior Hardware Design Engineer.
@@ -414,8 +414,8 @@ I am planning to apply for the M.Sc. Embedded Systems Engineering at the Univers
 My academic background:
 - Degree: Bachelor of Engineering (B.E.) in Electronics and Communication Engineering
 - University: Chaitanya Bharathi Institute of Technology (CBIT), Hyderabad, India (affiliated to Osmania University) – 4-year programme, 8 semesters, graduated 2026
-- CGPA: 7.5 / 10 (minimum passing CGPA: 4.0) – approximately 2.25 on the German scale by the modified Bavarian formula
-- Examination history: I did not pass 15 course examinations at the first attempt. I subsequently passed all of them, and my degree has been awarded with no pending subjects.
+- CGPA: 7.87 / 10, First Class with Distinction (lowest passing grade point: 5.0) – approximately 2.28 on the German scale by the modified Bavarian formula
+- Examination history: I did not pass 15 course examinations at the first attempt (14 credit-bearing courses and one non-credit course). I subsequently passed all of them, and my degree has been awarded with no pending subjects.
 
 Professional experience:
 Since August 2025 I have worked at Unistring Tech Solutions, a defence electronics company in Hyderabad, first as an intern and, since October 2026, as a full-time Junior Hardware Design Engineer.
@@ -460,8 +460,8 @@ I am planning to apply for the M.Sc. Embedded Systems at Saarland University and
 My academic background:
 - Degree: Bachelor of Engineering (B.E.) in Electronics and Communication Engineering
 - University: Chaitanya Bharathi Institute of Technology (CBIT), Hyderabad, India (affiliated to Osmania University) – 4-year programme, 8 semesters, graduated 2026
-- CGPA: 7.5 / 10 (minimum passing CGPA: 4.0) – approximately 2.25 on the German scale by the modified Bavarian formula
-- Examination history: I did not pass 15 course examinations at the first attempt. I subsequently passed all of them, and my degree has been awarded with no pending subjects.
+- CGPA: 7.87 / 10, First Class with Distinction (lowest passing grade point: 5.0) – approximately 2.28 on the German scale by the modified Bavarian formula
+- Examination history: I did not pass 15 course examinations at the first attempt (14 credit-bearing courses and one non-credit course). I subsequently passed all of them, and my degree has been awarded with no pending subjects.
 
 Professional experience:
 Since August 2025 I have worked at Unistring Tech Solutions, a defence electronics company in Hyderabad, first as an intern and, since October 2026, as a full-time Junior Hardware Design Engineer.
@@ -506,8 +506,8 @@ I am planning to apply for the M.Sc. Microelectronics and Microsystems at Hambur
 My academic background:
 - Degree: Bachelor of Engineering (B.E.) in Electronics and Communication Engineering
 - University: Chaitanya Bharathi Institute of Technology (CBIT), Hyderabad, India (affiliated to Osmania University) – 4-year programme, 8 semesters, graduated 2026
-- CGPA: 7.5 / 10 (minimum passing CGPA: 4.0) – approximately 2.25 on the German scale by the modified Bavarian formula
-- Examination history: I did not pass 15 course examinations at the first attempt. I subsequently passed all of them, and my degree has been awarded with no pending subjects.
+- CGPA: 7.87 / 10, First Class with Distinction (lowest passing grade point: 5.0) – approximately 2.28 on the German scale by the modified Bavarian formula
+- Examination history: I did not pass 15 course examinations at the first attempt (14 credit-bearing courses and one non-credit course). I subsequently passed all of them, and my degree has been awarded with no pending subjects.
 
 Professional experience:
 Since August 2025 I have worked at Unistring Tech Solutions, a defence electronics company in Hyderabad, first as an intern and, since October 2026, as a full-time Junior Hardware Design Engineer.
@@ -552,8 +552,8 @@ I am planning to apply for the English-taught M.Sc. Electrical Systems Engineeri
 My academic background:
 - Degree: Bachelor of Engineering (B.E.) in Electronics and Communication Engineering
 - University: Chaitanya Bharathi Institute of Technology (CBIT), Hyderabad, India (affiliated to Osmania University) – 4-year programme, 8 semesters, graduated 2026
-- CGPA: 7.5 / 10 (minimum passing CGPA: 4.0) – approximately 2.25 on the German scale by the modified Bavarian formula
-- Examination history: I did not pass 15 course examinations at the first attempt. I subsequently passed all of them, and my degree has been awarded with no pending subjects.
+- CGPA: 7.87 / 10, First Class with Distinction (lowest passing grade point: 5.0) – approximately 2.28 on the German scale by the modified Bavarian formula
+- Examination history: I did not pass 15 course examinations at the first attempt (14 credit-bearing courses and one non-credit course). I subsequently passed all of them, and my degree has been awarded with no pending subjects.
 
 Professional experience:
 Since August 2025 I have worked at Unistring Tech Solutions, a defence electronics company in Hyderabad, first as an intern and, since October 2026, as a full-time Junior Hardware Design Engineer.

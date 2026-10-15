@@ -24,7 +24,7 @@ Embedded = ~80% software (C, RTOS, drivers, protocols — your roadmap nails thi
 ---
 
 ## BRIDGE 1: PRACTICAL ELECTRONICS FOR EMBEDDED
-### Timing: Deload week + first Phase 2 weekend (Aug 18–29, 2026) — BEFORE you wire up the STM32
+### Timing (Oct 2026 review): theory runs on **Sundays of the restart plan (Oct–Nov 2026)** using Neso Academy + your breadboard; the hands-on checklist below is repeated in **Feb 2027**, right before STM32 wiring. You've forgotten these basics, so budget ~8–10 Sundays, not 2 weekends.
 ### Cost: ~2 weekends / ~12 hours
 ### Why now: So you understand voltage/current/pins before touching hardware — and don't fry your Black Pill.
 
@@ -63,7 +63,7 @@ AC analysis, phasors, impedance, Thevenin/Norton/mesh/nodal theorems, transistor
 ---
 
 ## BRIDGE 2: DIGITAL LOGIC
-### Timing: October 2027 — AFTER the IELTS exam, BEFORE VHDL heavy work (see Phase 5)
+### Timing (Oct 2026 review): **optional** — only needed if you apply to RWU (VHDL required). If so, Nov–Dec 2027. Your sister studies this exact content (A9402 Digital Electronics) Jan–May 2027 — borrow her notes.
 ### Cost: ~2-3 weekends / ~25 hours
 ### Why then: Digital logic is genuinely prerequisite to VHDL. You partly touch it via bitwise ops in Phase 1, but FSM/flip-flops need a dedicated block right before VHDL.
 
@@ -102,16 +102,14 @@ Transistor-level gate implementation (CMOS internals), advanced timing analysis,
 ## WHERE THESE FIT IN THE TIMELINE
 
 ```
-Jun 9 – Aug 17, 2026   Phase 1 (C programming) — bitwise ops give you a head start on number systems
-Aug 18 – Aug 29, 2026  ⭐ BRIDGE 1: Practical Electronics (deload weekend + first Phase 2 weekend)
-Aug 25, 2026+          Phase 2 (STM32) — now you understand the hardware you're wiring
-...
-Aug – Sep 2027         IELTS intensive (everything else on maintenance)
-Oct 2027               IELTS exam → ⭐ BRIDGE 2: Digital Logic (2-3 weekends after the exam)
-Nov 2027 – Feb 2028    Phase 5 VHDL — digital logic makes it click
+Oct – Nov 2026         ⭐ BRIDGE 1 theory: Sundays of the restart plan (Ohm, KVL/KCL, divider, LED, pull-ups, RC, diode, transistor)
+Dec 2026 – Jan 2027    Op-amps via TI Precision Labs (biosignal front-ends need them)
+Feb 2027               ⭐ BRIDGE 1 hands-on checklist, then STM32 wiring
+Jun – Jul 2027         Analog front-end in practice: AD8232 ECG prototype
+Nov – Dec 2027         ⭐ BRIDGE 2 Digital Logic — ONLY if applying to RWU (VHDL)
 ```
 
-**Total added cost: ~5 weekends across 17 months. No phase delay.** Both bridges sit in slots that were light anyway (deload week, post-IELTS-exam lull).
+**Bridge 1 is now part of the restart plan's Sundays, so it costs no extra time. Bridge 2 is optional.**
 
 ---
 

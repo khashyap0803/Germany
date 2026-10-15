@@ -1,95 +1,60 @@
-# 📝 IELTS PREPARATION PLAN
+# 📝 IELTS — 12-month plan from a weak base to 7.0
 
-## Target: IELTS Academic 7.0+ (minimum 6.5)
-## Timeline: Start focused prep April 2027, Take exam Oct/Nov 2027
-## Validity: 2 years (valid till Oct/Nov 2029 — covers Winter 2028)
-
----
-
-## WHY IELTS (not TOEFL)
-- More test centers in India
-- Face-to-face speaking (easier for most)
-- Both accepted equally by German universities
-- Cost: ~₹16,250
-
-## SCORE REQUIREMENTS BY UNIVERSITY
-
-| University | IELTS Required | TOEFL iBT |
-|:---|:---|:---|
-| FH Dortmund | **6.5** | 90 |
-| HS Bremerhaven | **B2 (~6.0-6.5)** | — |
-| RWU | **6.0** | 70 |
-| FH Westküste | **B2 (~6.0-6.5)** | — |
-
-**Your target: 7.0** — higher score compensates for backlogs and strengthens every application.
+> **Rebuilt**: October 15, 2026. Timeline in `07_MONTHLY_TIMELINE.md`.
+> **Honest starting point (your own words):** frequent spelling mistakes even in common words, dependent on autocorrect, weak grammar, can't articulate paragraphs or essays quickly, not fluent in speaking.
+> **So the plan is: English foundation first (Oct 2026 – Mar 2027), IELTS-specific prep second (Apr – Sep 2027), exam in early October 2027.**
 
 ---
 
-## PREPARATION TIMELINE
+## TARGETS & DEADLINES
 
-### Phase 1: Diagnosis (Apr 2027) — 2 weeks
-- Take a free online IELTS mock test (British Council website)
-- Identify weakest section (Reading/Writing/Listening/Speaking)
-- Understand IELTS format, timing, scoring
-
-### Phase 2: Foundation (May - Jul 2027) — 3 months
-| Section | Study Plan | AI Tool |
-|:---|:---|:---|
-| **Listening** | Practice with BBC/DW English podcasts, IELTS listening samples | — |
-| **Reading** | 1 IELTS reading passage daily (Cambridge books) | ChatGPT: explain wrong answers |
-| **Writing** | 2 essays/week (Task 1 + Task 2) | Claude: "Score this IELTS essay, give band feedback" |
-| **Speaking** | Practice answering Part 1, 2, 3 questions | ChatGPT Voice: "Be my IELTS examiner" |
-| **Vocabulary** | Academic word list, Anki deck | AI-generate IELTS topic vocabulary |
-
-### Phase 3: Intensive (Aug - Sep 2027) — 2 months
-- 1 full mock test every weekend
-- Focus entirely on weakest sections
-- 🎯 **Sunday afternoon = IELTS slot** (see daily schedule)
-- Write 3-4 essays/week, get AI feedback
-
-> 🔴 **CRITICAL DE-CONFLICTION RULE (Aug–Sep 2027)**: This is the most overloaded window of the entire roadmap. Three things compete for the same weekend hours: Phase 4/5 embedded, German B2 push, and IELTS intensive. **IELTS WINS.** For these 8 weeks:
-> - **IELTS** = #1 priority. Full mock every weekend + 3-4 essays/week. Non-negotiable.
-> - **German** = MAINTENANCE ONLY. Anki + commute audio. No new grammar. Resume B2 push in October after the exam.
-> - **Embedded** = MAINTENANCE ONLY. Portfolio polish + 1 short session/week to stay warm. No new heavy topics (VHDL/Project 4 deep work pauses).
-> Do NOT try to do all three at full intensity. That guarantees you do all three badly. A 7.0 IELTS is worth more to your application than a half-finished VHDL project.
-
-### Phase 4: Exam (Oct/Nov 2027)
-- Book IELTS at nearest British Council center
-- Take the exam
-- If score < 6.5: retake in Dec 2027/Jan 2028
+| Requirement | Score |
+|:---|:---|
+| Most targets (Dortmund, Bremerhaven B2, HAW, Chemnitz, Deggendorf, Darmstadt) | **6.0–6.5** |
+| Comfort target (keeps every door open, incl. TUHH/FAU) | **7.0** |
+| **Exam date** | **Early October 2027** (computer-delivered: results in a few days) |
+| Retake window | November 2027 — still before Bremerhaven (31 Dec) and Darmstadt (Dec portal) |
+| Why not later | Bremerhaven Summer 2028 needs it by Dec 2027; Dortmund's Pre-Check needs it by ~Feb 2028 |
+| Note | An English-taught bachelor's is **not** accepted as proof (Dortmund said so explicitly) |
 
 ---
 
-## FREE IELTS RESOURCES
-1. **IELTS Liz** — YouTube (best free content)
-2. **British Council IELTS prep** — free materials
-3. **Road to IELTS** — free British Council online course
-4. **Cambridge IELTS books 14-19** — practice tests (PDFs available)
-5. **ChatGPT/Claude** — unlimited essay scoring and speaking practice
+## STAGE 1 — ENGLISH FOUNDATION (Oct 2026 – Mar 2027)
+
+**Course:** Udemy *The English Master Course: English Grammar, English Speaking* (Scott Mendoza, 83.5 h) — **30 min/day** (commute or lunch).
+
+**Daily habits (these matter more than the course):**
+1. **Autocorrect OFF** on phone and laptop. Computer IELTS has no spellcheck; paper IELTS has no autocorrect.
+2. **Spelling list:** every word you misspell goes into a notebook (or Anki). Review 5 min/day.
+3. **Write by hand, 3×/week:** one paragraph (80–120 words) about your day, work or a topic. Then ask AI to mark *only* the mistakes (not rewrite it), and rewrite it yourself.
+4. **Speak aloud, 10 min/day:** describe your day / a project / an opinion → record on phone → listen back once.
+5. **Read** one short English article a day (BBC, The Hindu editorial) and note 3 useful phrases.
+
+**End of March check:** can you write 150 words on a simple topic in 20 minutes with fewer than ~5 spelling mistakes?
 
 ---
 
-## AI-POWERED IELTS WORKFLOW
+## STAGE 2 — IELTS PREPARATION (Apr – Jul 2027)
 
-### Writing Practice (30 min)
-```
-1. Pick a Task 2 topic from Cambridge IELTS
-2. Write essay in 40 minutes (timed)
-3. Paste into Claude:
-   "Score this IELTS Task 2 essay. Give me:
-    - Band score estimate for each criterion (Task Achievement,
-      Coherence, Lexical Resource, Grammar)
-    - 3 specific improvements
-    - A rewritten version of my weakest paragraph"
-4. Study the feedback, note mistakes
-```
+- **April:** take a free full practice test (British Council / IDP) → note band per section → this is your baseline.
+- **Course:** Udemy *IELTS Band 7+ Complete Prep Course* (Keino Campbell, 97.5 h) — 30–45 min/day, plus the free **British Council "Road to IELTS"** and **IELTS Liz** (YouTube/website).
+- **Weekly:** 2 Writing Task 2 essays (40 min, timed, hand-written) + 1 Task 1 → AI band feedback → rewrite the weakest paragraph.
+- **Speaking:** 3×/week AI "examiner" practice (Part 1 → Part 2 cue card → Part 3), recorded.
+- **Listening/Reading:** 1 section per weekday on the commute/lunch (Cambridge IELTS books are worth buying, ~₹500 each).
 
-### Speaking Practice (20 min)
-```
-1. Open ChatGPT Voice Mode
-2. Say: "You are an IELTS speaking examiner. Ask me Part 1
-   questions about [home/work/hobbies], then give me a Part 2
-   cue card, then Part 3 discussion questions. Score my speaking
-   at the end."
-3. Practice naturally, don't memorize scripts
-```
+---
+
+## STAGE 3 — INTENSIVE (Aug – Sep 2027)
+
+**IELTS wins every conflict.** Embedded drops to 1 h/week maintenance; German to commute audio only.
+- 1 **full timed mock** every weekend
+- 3–4 essays/week with feedback
+- Daily speaking practice; one human speaking mock if possible (a friend, tutor, or paid mock)
+- Work only on your **weakest** section in the final 3 weeks
+
+---
+
+## EXAM (early Oct 2027)
+- Book in **July** (computer-delivered IELTS Academic at IDP/British Council Hyderabad).
+- If below 6.5 → retake in **November** focusing on the weakest section only.
+- IELTS is valid 2 years → covers all 2028 applications and the visa.

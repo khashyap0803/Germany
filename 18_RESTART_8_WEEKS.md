@@ -1,6 +1,7 @@
 # 🔁 RESTART — 8 WEEKS (Oct 5 → Nov 29, 2026)
 
 > **One page. No other plan files are opened, edited or created during these 8 weeks.**
+> Part of the master timeline in `07_MONTHLY_TIMELINE.md` (Phase 0). **Daily alongside this:** 30 min of *The English Master Course* (commute/lunch) with autocorrect OFF — see `04_IELTS_PREP.md`.
 > Goal: **prove you can study consistently.** Not to catch up. Not to finish Phase 1.
 > Why this exists: June–Sept 2026 produced zero study and ~10 planning commits. This plan is deliberately small enough that you can't fail it.
 
@@ -12,7 +13,7 @@
 |:---|:---|:---|
 | **Mon–Fri** | Read the K.N. King chapter for this Saturday. Exhausted? **Read one page.** That counts. | 15 min/day |
 | **Saturday** | **C programming** — write programs, compile with `gcc -Wall -Wextra`, push to GitHub | **2 hrs** |
-| **Sunday** | **Electronics basics** — one concept, built on a breadboard, measured with your multimeter. Use your sister's *Basic Electrical Engineering* notes/textbook — she's studying the same things this semester. | **1 hr** |
+| **Sunday** | **Electronics basics** — one concept, built on a breadboard, measured with your multimeter. Theory from **Neso Academy**; your sister's *Basic Electrical Engineering* notes cover the same topics this semester. | **1 hr** |
 | **Sunday, last 10 min** | Tick this week's row in `PROGRESS.md`. Honest. | 10 min |
 
 **Rules**
@@ -50,7 +51,7 @@
 - [ ] Can explain **Ohm's law, KVL, KCL, voltage divider and RC time constant** out loud — and you've built each one
 - [ ] **Bond end date confirmed** in writing
 
-**Then (and only then):** write the *next* 8 weeks on one page — Dec 2026 → Jan 2027: K.N. King Ch 13–17 (strings, preprocessor, structs, bitwise), op-amps, and the **first STM32 blink**. That's the start of Darmstadt's requirement #2 ("experience in 32-bit microcontrollers").
+**Then (and only then):** follow `07_MONTHLY_TIMELINE.md` → Phase 1 (Dec 2026 – Jan 2027): K.N. King Ch 13–20, Makefiles, GDB, data structures, state machines, op-amps (TI Precision Labs), C exit test on Jan 31. STM32 starts Feb 2027. That's the start of Darmstadt's requirement #2 ("experience in 32-bit microcontrollers").
 
 **If you didn't pass:** that's information, not failure. Look at *why* (time? energy? motivation?), shrink the minimum again, and run another 8 weeks. Don't add more.
 

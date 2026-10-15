@@ -1,5 +1,8 @@
 # AUGUST WEEK 5 (Aug 25–31) — PHASE 2 WEEK 1: STM32 BEGINS
 
+> 🗂️ **REVIEW OCT 2026 — CONTENT REFERENCE ONLY.** The dates in this file belong to the June–August 2026 plan, which was never executed. Use it for **what to study and which programs to write**; follow the dates in `18_RESTART_8_WEEKS.md` (now) and `07_MONTHLY_TIMELINE.md` (overall). Chapter → new date: Ch 1–12 = Oct–Nov 2026 · Ch 13–20, Makefiles, GDB, data structures, state machines, exit tests = Dec 2026–Jan 2027 · STM32 week (13E) = Feb 2027.
+
+
 > **Phase**: PHASE 2 — STM32 Microcontroller Programming (Week 1 of 13)
 > **Topics**: ARM Cortex-M4 architecture, memory map, STM32CubeIDE, first LED blink (HAL), first LED blink (register-level)
 > **Primary Course**: FastBit MCU1 "Mastering MCU Driver Development" (28.5h) — Sections 1–3

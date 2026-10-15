@@ -254,9 +254,9 @@ What AI tools FAIL at (the 5% where your salary lives):
 
 | Phase | Period | AI Rule |
 |---|---|---|
-| **Phase 1-2** | May–Oct 2026 | 🔴 **AI BANNED for code.** AI only explains concepts. YOU write ALL code. |
-| **Phase 3** | Oct–Dec 2026 | 🟡 **Supervised AI.** AI generates boilerplate. You REVIEW and EXPLAIN every line. |
-| **Phase 4+** | Jan 2027+ | 🟢 **AI Partner.** You use AI as a senior engineer would — generate, review, test, sign off. |
+| **Phases 0–2** | Oct 2026 – May 2027 | 🔴 **AI BANNED for code.** AI only explains concepts. YOU write ALL code. |
+| **Phase 3** | Jun – Oct 2027 | 🟡 **Supervised AI.** AI generates boilerplate. You REVIEW and EXPLAIN every line. |
+| **Phase 4+** | Nov 2027+ | 🟢 **AI Partner.** You use AI as a senior engineer would — generate, review, test, sign off. |
 
 **Why Phase 1-2 ban?** Because if you learn WITH AI from day 1:
 - You can't debug without AI → you're dependent
@@ -364,19 +364,21 @@ gdb ./prog                      # Start GDB
 
 | Date | Milestone | You Can... |
 |---|---|---|
-| **Jul 15, 2026** | Phase 1 complete | Write any C program with pointers, structs, file I/O from scratch |
-| **Oct 15, 2026** | Phase 2 complete | Write STM32 GPIO/UART/SPI/I2C drivers from register level |
-| **Dec 31, 2026** | Phase 3 complete | Build a FreeRTOS multi-task embedded application |
-| **Jun 30, 2027** | Phase 4 complete | Write Linux device drivers, understand ARM architecture |
-| **Dec 31, 2027** | Phase 5 complete | Digital design + VHDL, TDD for firmware, portfolio complete |
-| **Jul 2028** | Germany ready | B2 German, strong portfolio, MS applications sent |
+| **Nov 29, 2026** | Restart review passed | Pointers, `swap()` from memory; Ohm/KVL/KCL/RC explained and built |
+| **Jan 31, 2027** | C complete (exit test) | Circular buffer, linked list, Makefile, state machine, GDB — from memory |
+| **Apr 30, 2027** | Project 1 on GitHub | STM32 register-level GPIO/UART/I²C/SPI drivers |
+| **Jul 31, 2027** | Project 2 on GitHub + Goethe A1 | ECG monitor: ADC + DMA + on-chip DSP |
+| **Oct 2027** | IELTS done · bond ends · resigned | Target band 7.0 |
+| **Dec 31, 2027** | Wave-1 applications sent | Bremerhaven, Darmstadt, TUHH |
+| **Mar 2028** | Project 3 (custom PCB + FreeRTOS) | Hardware design evidence |
+| **Apr or Oct 2028** | 🎓 Start in Germany | — |
 
 ### The Non-Negotiables
 
 1. **5:00 AM wake-up** — aim for 25+ days per month. If you miss 3+ days in a week, trigger the **Recovery Protocol** (see `00_MASTER_ROADMAP.md` Contingency Protocols).
 2. **Code EVERY day** — even 1 small program on the worst day is better than 0.
-3. **No AI code until October 2026** — the foundation must be built by hand.
-4. **German EVERY day** — 3+ hours passive (commute), 15 min active (Anki). No days off.
+3. **No AI-written code until June 2027** (end of Phase 2) — the foundation must be built by hand.
+4. **Language EVERY day** — English (now) and German (from Jan 2027) on the commute; 10 min of active practice.
 5. **Sunday weekly review** — track progress in `PROGRESS.md`, adjust next week, push to GitHub.
 6. **Monthly readiness check** — answer the 6 questions honestly.
 7. **Quarterly deload week** — every 3 months, take one light week (see `00_MASTER_ROADMAP.md` Deload Schedule).

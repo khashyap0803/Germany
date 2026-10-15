@@ -52,7 +52,7 @@ INVESTORS  (seed VC, ₹-crores)  →  scale, and later fund Rung-2 Class C/D (s
 ```
 
 **Hard eligibility fact you must plan around (verified Jul 2026):**
-> **BIRAC BIG requires an employed applicant to undertake to QUIT their job and go full-time if selected**, and to be **incubated at an incubator.** → With your bond running to **1 Oct 2027** (+1 day per leave day taken), **BIG is off the table until it ends.** This isn't a blocker; it *sets the sequence*: garage/skills during the bond → grants after. (Silver lining: a later bond-end buys you *more* Phase-0 skill-building runway before the quit-job clock starts.)
+> **BIRAC BIG requires an employed applicant to undertake to QUIT their job and go full-time if selected**, and to be **incubated at an incubator.** → With your bond running to **1 Oct 2027** (+1 day per leave day taken), **BIG is off the table until it ends** — and, since the Oct 2026 reconciliation, until after the master's in Germany (BIG requires you full-time in India). This isn't a blocker; it *sets the sequence*: garage/skills during the bond → grants after. (Silver lining: a later bond-end buys you *more* Phase-0 skill-building runway before the quit-job clock starts.)
 
 **Hyderabad is arguably India's best city for this** — use it:
 - **T-Works** — public hardware prototyping facility (pay-per-use, no residency; your Rung-0 workshop)
@@ -78,13 +78,13 @@ INVESTORS  (seed VC, ₹-crores)  →  scale, and later fund Rung-2 Class C/D (s
 
 | Phase | Window | Goal | Money | Job/bond |
 |:--|:--|:--|:--|:--|
-| **P0 — Foundations** | Now → ~late 2027 | Rung-0 prototypes 1→5; learn Tracks 1 & 3; start Track 2 | ≤ ₹1–3L family | **Keep job.** After-hours only |
-| **P1 — Problem lock** | ~2027 (overlaps P0) | Clinical discovery; pick THE problem (`13` gate); breadboard PoC | (part of above) | Keep job |
-| **P2 — Fund & incorporate** | Bond end (**1 Oct 2027**) → 2028 | Quit-job gate; incorporate; join incubator; PRAYAS → BIG with prototype | Grants begin | **Bond ends → decision** |
-| **P3 — Certify & validate** | ~2029–2031 | ISO 13485, IEC 60601, CDSCO Class-B licence, clinical evaluation, launch Device #1 | Grants + seed | Full-time founder |
-| **P4 — Ladder to C/D** | 2031+ | Device #2 climbs risk class (separate entity, VC-funded) | VC | — |
+| **P0 — Foundations** | Now → Dec 2027 | Rung-0 prototypes 1–2 (ECG); learn Tracks 1 & 3; start Track 2 | ≤ ₹1–3L family | **Keep job.** After-hours only |
+| **P1 — Master's + problem lock** | 2028 – 2030 (Germany) | Prototypes 3–5 in university labs; clinical discovery via university hospital; thesis on a medical device; Werkstudent in medtech | Family (living) + part-time work | Student |
+| **P2 — Fund & incorporate** | ~2030 – 2031 | India (incubator → PRAYAS → BIG) **or** Germany (spin-off, EXIST) | Grants begin | **Decision after the master's** |
+| **P3 — Certify & validate** | ~2031–2034 | ISO 13485, IEC 60601, CDSCO Class-B licence, clinical evaluation, launch Device #1 | Grants + seed | Full-time founder |
+| **P4 — Ladder to C/D** | 2034+ | Device #2 climbs risk class (separate entity, VC-funded) | VC | — |
 
-**Sister** (co-engineer, **B.Tech IT @ Vardhaman**, graduating ~Jun 2030) reaches full strength right as P3 needs the most hands — and her **final-year Major Project is 14 credits / 630 hours (Jan–May 2030), landing inside this P3 window**; aim it at the device's classifier + clinician dashboard (`16`). Her Y2S2 **commercialization/patent-readiness dossier (~May 2028)** is a usable artifact for the P2 incubator application. Note she brings **no** firmware/analog capability — see `00` risk #8. **Father retires ~2031** — by design, that's when Device #1 should be launching, i.e. the family's *upside* is arriving as his salary ends (though — per your Jul-9 reset — his income ending is no longer a survival cliff; the house backstops the loan).
+**Sister** (co-engineer, **B.Tech IT @ Vardhaman**, graduating ~Jun 2030) reaches full strength right as the **P2 decision (~2030–2031)** arrives — and her **final-year Major Project (14 credits / 630 hours, Jan–May 2030)** lands just before it; aim it at the device's classifier + clinician dashboard (`16`). Her Y2S2 **commercialization/patent-readiness dossier (~May 2028)** is groundwork for the later P2 decision. Note she brings **no** firmware/analog capability — see `00` risk #8. **Father retires ~2031** — after the reconciliation, that's roughly when Device #1 *starts* (P2), not when it launches; launch moves to ~2033–2034 (though — per your Jul-9 reset — his income ending is no longer a survival cliff; the house backstops the loan).
 
 ---
 

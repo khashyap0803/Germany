@@ -1,5 +1,8 @@
 # JUNE WEEK 4 (Jun 30) — Phase 1 Week 4 Day 1: STRUCTS BEGIN
 
+> 🗂️ **REVIEW OCT 2026 — CONTENT REFERENCE ONLY.** The dates in this file belong to the June–August 2026 plan, which was never executed. Use it for **what to study and which programs to write**; follow the dates in `18_RESTART_8_WEEKS.md` (now) and `07_MONTHLY_TIMELINE.md` (overall). Chapter → new date: Ch 1–12 = Oct–Nov 2026 · Ch 13–20, Makefiles, GDB, data structures, state machines, exit tests = Dec 2026–Jan 2027 · STM32 week (13E) = Feb 2027.
+
+
 > **Topics**: Introduction to structs — struct declaration, member access, struct as function argument
 > **K.N. King Reading**: Chapter 16 (Structures — first 20 pages today, continue in July)
 > **AI Policy**: BANNED for code — AI may only explain concepts

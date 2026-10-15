@@ -163,10 +163,10 @@ Because she is at VCE (R25 regulation), several items on the four tracks arrive 
 
 | Phase | Window | Track focus |
 |:---|:---|:---|
-| **Phase 0** | Now → ~mid-2027 (during bond) | **Track 1 heavy** (prototypes 1→5) + Track 3 (learn standards) + start Track 2 |
-| **Phase 1** | ~2027 | **Track 4 heavy** (clinical discovery, pick THE problem) + Track 2 deepens on chosen signal |
-| **Phase 2** | Bond end → 2028 | Track 1 (build the real prototype) + Track 3 (apply design controls for real) |
-| **Phase 3** | 2029–2031 | Track 3 dominates (certification), Track 1 productionizes |
+| **Phase 0** | Now → Dec 2027 (during bond + notice) | **Track 1 heavy** (prototypes 1→5) + Track 3 (learn standards) + start Track 2 |
+| **Phase 1** | 2028–2030 (master's in Germany) | **Track 4 heavy** (clinical discovery via university hospital, pick THE problem) + Track 2 deepens + thesis |
+| **Phase 2** | ~2030–2031 (after the master's) | Track 1 (build the real prototype) + Track 3 (apply design controls for real) |
+| **Phase 3** | ~2031–2034 | Track 3 dominates (certification), Track 1 productionizes |
 
 ➡️ **Next:** `13` — how to pick the ONE problem, with your father's criteria as a scorecard.
 ➡️ **See also:** `16` — sister's track in full (VCE-R25 semester map, project chain, elective picks, division of labour).

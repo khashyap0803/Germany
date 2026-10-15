@@ -1,5 +1,8 @@
 # 📊 DECISION ANALYSIS — Complete Documentation
 
+> 🗂️ **REVIEW OCT 2026 — HISTORICAL ANALYSIS (Apr–Jun 2026).** Decisions since: you **stayed at Unistring** (Option A/D), were made full-time on Oct 5, 2026; bond ends **1 Oct 2027**; CGPA is **7.87 (≈2.28)**. Current plan: `07_MONTHLY_TIMELINE.md`.
+
+
 > **Date**: April 14, 2026 (updated June 8, 2026)
 > **Session**: Full strategic planning session
 > **Real Start Date**: June 9, 2026 (not May — 5.5 weeks delayed due to personal reasons)

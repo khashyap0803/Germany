@@ -1,30 +1,28 @@
-# KHASHYAP — Masters in Embedded Systems, Germany
-## Complete Roadmap | Target: Winter Semester 2028 (October 2028)
+# KHASHYAP — Master's in Embedded Systems (medical devices), Germany
+## Roadmap | Targets: **Summer 2028 (Bremerhaven, April)** and **Winter 2028 (October)**
 
-> **Last Updated**: June 8, 2026 — Full rewrite: gym schedule, June 9 start date, bond Oct 2027 correction
-> **Strategy**: Type 3 "AI Supervisor Engineer" — manual foundations → AI acceleration
-> **Created by**: AI-assisted planning (verify all info on official websites)
+> **Last Updated**: October 15, 2026 — full review: real restart date, bond confirmed, verified transcript, university replies, final course list
+> **The month-by-month plan lives in `07_MONTHLY_TIMELINE.md`.** This file holds the profile, risks, money and contingencies.
+> **Strategy**: Type 3 "AI Supervisor Engineer" — hand-written foundations first, AI acceleration later
+> **Created with AI assistance** — verify every requirement on official websites before paying anything
 
 ---
 
-## YOUR PROFILE SUMMARY
+## YOUR PROFILE
 
 | Parameter | Value |
 |:---|:---|
-| **Degree** | B.E. ECE, CBIT Hyderabad |
-| **Graduation** | Last exams May 2026 → Degree cert likely **Jun–Sep 2026** |
-| **CGPA** | **7.87/10** (First Class with Distinction) → **German Grade ≈ 2.28** (conservative) – 2.07 (optimistic) |
-| **Backlogs** | 15+ (ALL CLEARED) ⚠️ Real risk — see strategy below |
-| **Current Job** | Embedded HW Engineer, Unistring Tech Solutions (Defence/RF) |
-| **Job Start** | August 2025 |
-| **Bond Period** | Ends **1 October 2027** (confirmed by HR, Oct 2026) — extended **1 day per leave day** taken |
-| **Resignation** | ⚠️ Ask HR: can the notice period be served *during* the bond (so the last day = bond end)? If notice starts only after the bond → free ~Jan 2028 |
-| **Salary** | ₹20K (intern) → ₹37K (full-time post-graduation) |
-| **Daily Commute** | 4 hrs total — crowded bus + metro + bus — **NOT usable for coding, usable for audio** |
-| **Work Hours** | 9 AM – 6:30 PM (best) to 8 PM (typical) |
-| **Gym** | **5:30–6:30 AM daily** (mandatory, energises for work day) |
-| **Wake Up** | **5:00 AM** |
-| **Post-grad experience** | Counts from degree date (~Jul 2026) → **~27 months by Oct 2028** |
+| **Degree** | B.E. Electronics & Communication Engineering, CBIT Hyderabad (Autonomous, affiliated to Osmania University), R22, passed **April 2026** |
+| **CGPA** | **7.87 / 10 — First Class with Distinction** → German grade **≈ 2.28** (conservative) |
+| **Failed at first attempt** | **15** (14 credit subjects + 1 non-credit) — **all cleared** |
+| **Job** | Unistring Tech Solutions (defence electronics) — intern from Aug 2025, **full-time from Oct 5, 2026** |
+| **Bond** | Ends **1 Oct 2027**, **+1 day per leave day** taken (HR, Oct 2026 — get it in writing) |
+| **Resignation** | Only after the bond ends → **3-month notice** → last working day **≈ 1 Jan 2028** (+leave days) |
+| **Commute** | ~4 h/day (bus + metro) — **audio only** (English course, German) |
+| **Work hours** | ~9:00 AM – 6:30/8:00 PM |
+| **Study reality** | Jun–Sep 2026: none. **Restarted Oct 5, 2026** at ~3.5 h/week (`18_RESTART_8_WEEKS.md`) |
+| **Passport** | Valid till 2032 |
+| **Work experience by Oct 2028** | ~26 months post-graduation-equivalent (Aug 2025 → Jan 2028 employment) |
 
 ---
 
@@ -32,11 +30,11 @@
 
 | Fact | Value |
 |:---|:---|
-| Final CGPA | **7.87 / 10** — **First Class with Distinction** (B.E. ECE, CBIT, Apr 2026, R22) |
-| Total credits | ≈ **160 Indian credits**, 8 semesters (usually treated as ~240 ECTS) |
-| Failed at first attempt | **15** = 14 credit subjects + 1 non-credit (Indian Constitution) — all cleared |
-| Breakdown | Sem 2: 1 · Sem 3: 2 · Sem 4: 1 (non-credit) · **Sem 5: 10 (whole semester, all cleared May 2025 with SGPA 8.77)** · Sem 6: 1 |
-| Sem 1 Chemistry | Initially shown as fail; **passed on re-evaluation** → corrected first-year memo issued. **Submit only the corrected memo.** |
+| Final CGPA | **7.87 / 10** — First Class with Distinction (April 2026) |
+| Total credits | ≈ **160 Indian credits**, 8 semesters (a 4-year B.E. is usually treated as ~240 ECTS) |
+| Failed at first attempt | **15** = 14 credit subjects + 1 non-credit (Indian Constitution) |
+| Breakdown | Sem 2: 1 · Sem 3: 2 · Sem 4: 1 (non-credit) · **Sem 5: 10 (whole semester — all cleared May 2025 with SGPA 8.77)** · Sem 6: 1 |
+| Sem 1 Chemistry | First result showed fail; **passed on re-evaluation** → corrected first-year memo issued. **Submit only the corrected memo.** |
 
 **Subject coverage vs. Bremerhaven ESD requirements**
 
@@ -46,274 +44,129 @@
 | Mechanical 5 CP | **Engineering Mechanics (4)**, CAD & Drafting (2.5), Robotics & Drones Lab (3), Digital Fabrication Lab (1.5) | ✅ |
 | Electrical 10 CP | Basic Electrical Eng (+lab), Network Analysis (+lab), Electronic Devices, Analog Circuits | ✅ |
 | Programming 5 CP | Problem Solving & Programming (+lab), C & Data Structures (+lab), Embedded C | ✅ |
-| Control 5 CP | **Control Systems (3 Indian credits ≈ 4.5 ECTS)** | ⚠️ borderline — asked Bremerhaven |
+| Control 5 CP | **Control Systems (3 Indian credits ≈ 4.5 ECTS)** | ⚠️ borderline — ask Mr Lüders (Oct 2026) |
 
 **Embedded strengths (for Darmstadt/Dortmund):** Embedded C **S**, RTOS **A**, Computer Architecture & Microprocessors **A**, Sensing Techniques & Sensor Systems **A**, Microcontrollers **B** + Lab **S**, Embedded Systems **B**, IoT **B** + Lab **S**.
-**Gap:** no course named *Software Engineering* (Dortmund lists it as required).
+**Gap:** no course named *Software Engineering* (Dortmund lists it). Mitigation: an NPTEL *Software Engineering* certificate in Jan–Apr 2028 + documented engineering practice in your GitHub projects; Dortmund's Pre-Check decides.
 
 ---
 
-## CGPA CONVERSION (Bavarian Formula)
+## CGPA CONVERSION (modified Bavarian formula)
 
 ```
-Conservative (lowest passing grade point = 5, grade 'E' on the CBIT sheet):
-German Grade = ((10 - 7.87) / (10 - 5)) × 3 + 1 ≈ 2.28  ("Gut")
+German grade = 1 + 3 × (Best − Yours) / (Best − Lowest pass)
 
-Optimistic (lowest passing = 4):
-German Grade = ((10 - 7.87) / (10 - 4)) × 3 + 1 ≈ 2.07
-
-→ Plan with 2.28. uni-assist decides which value applies.
+Lowest pass = 5 (grade 'E' on the CBIT sheet)  →  1 + 3 × 2.13/5 ≈ 2.28   ← plan with this
+Lowest pass = 4                                 →  1 + 3 × 2.13/6 ≈ 2.07
 ```
-
-- Most FHs require **2.5 or better** → You qualify at **≈2.28**
-- HS Bremerhaven requires **2.3** (or 2.6 with 2yr relevant experience) → at ≈2.28 you qualify **just barely**; at 2.07 comfortably
-
----
-
-## HONEST ADMISSION PROBABILITY (No Sugar Coating)
-
-### Real risk factors — in order of severity
-
-**1. 15 backlogs (14 credit subjects + 1 non-credit, all cleared) — the main danger**
-> ✅ **Update Oct 2026:** Darmstadt ("No") and Bremerhaven ("no bearing") confirmed in writing that failed-then-passed exams don't count against you. Freiburg said they "don't give a good impression".
-- German universities are forensic. Individual semester marksheets show original "F" grades even after clearing.
-- uni-assist may auto-reject at >10 backlogs before a human reads your file.
-- Attempting to hide them = permanent platform ban. NEVER hide them.
-- Cannot be fixed retroactively. Can only be narrated honestly in the SOP.
-- **Critical action in 2027**: Email every target university directly to ask their exact backlog policy BEFORE paying application fees. Dortmund: service-esm@fh-dortmund.de
-
-**2. ECTS gap — secondary risk**
-- B.E. ECE India ≈ 180 ECTS. Several unis require 210.
-- RWU explicitly requires 210. This may be a hard barrier.
-- Dortmund likely accepts 180 (confirm by email).
-- **Mitigation**: Confirm via email. Drop unis that hard-reject 180 ECTS.
-
-**3. Unistring experience classification risk**
-- Your actual work = RF analysis, documentation, BOM in Excel. NOT hands-on coding or hardware design.
-- HS Bremerhaven's "2yr experience" grade boost requires RELEVANT technical experience.
-- If they don't count RF documentation → no boost → grade stays ≈2.28 (still qualifies at Bremerhaven, but by only 0.02).
-- **Mitigation**: Strong SOP narrative + GitHub portfolio of real embedded code = proof of engineering capability.
-
-**4. CGPA 7.87 (≈2.28) — solid for FHs**
-- Required 2.5 at most FHs. Yours is ≈2.28. Not good enough for selective universities (Freiburg said <9/10 is 'highly unlikely').
-
-### Per-university honest probability
-
-| University | Realistic Chance | Main Risk |
-|:---|:---|:---|
-| FH Dortmund | **50–60%** | Backlog policy unknown — email service-esm@fh-dortmund.de in 2027 |
-| HS Bremerhaven | **50–60%** | NC-frei (no seat cap) — if criteria met = guaranteed. Experience boost uncertain. |
-| RWU Ravensburg | **30–40%** | ECTS gap 180 vs 210 required; €1,500/sem tuition |
-| HAW Hamburg | **40–50%** | Backlog policy unknown |
-| HS Fulda | **35–45%** | German-taught (DSH-2 needed) — risky unless you hit B2 |
-| HS Esslingen | **40–50%** | ECTS gap possible; €1,500/sem tuition |
-
-**At least ONE admission from 6 applications: 65–72%** if IELTS 7.0 achieved, GitHub portfolio strong, SOP honest.
-
-### What makes this work:
-- IELTS 7.0+ (makes every application competitive beyond just the filter)
-- 4 solid GitHub projects with real hand-written embedded code
-- SOP that owns the backlogs as a turning point backed by hard evidence
-- Pre-contact every university in 2027 before paying application fees
-
-### What kills your chances:
-- IELTS below 6.5 (cut at automated filter)
-- Empty or AI-generated GitHub portfolio
-- Hiding or minimizing backlogs
-- Applying to fewer than 6 universities
+- uni-assist decides which "lowest pass" applies.
+- Most FHs require **2.5** → ✅. Bremerhaven requires **2.3** → ✅ by 0.02 (or 2.6 with 2 years' relevant experience).
+- *History:* with the old (wrong) CGPA of 7.5, the realistic grade was 2.50 — which would have **failed** Bremerhaven.
 
 ---
 
-## BACKLOG STRATEGY
+## ADMISSION RISKS — WHERE THEY STAND (Oct 2026)
 
-### What helps you:
-1. All backlogs CLEARED — you ARE eligible to apply
-2. Final CGPA 7.87 (≈2.28 German), First Class with Distinction
-3. 2+ years work experience by Winter 2028 applications
-4. FHs value practical experience over pure academics
-5. Defence/RF domain background is rare — valuable in German automotive radar / IoT context
-6. HS Bremerhaven is NC-frei (no seat cap) — meet criteria = guaranteed admission
-
-### Action plan:
-- Target **NC-free programs** first (meet criteria = in)
-- Build **GitHub portfolio** (4 projects) — hard proof of actual embedded ability
-- Write strong SOP framing backlogs as turning point + evidence (cleared, employed, studying)
-- Apply to **6 universities** to diversify
-- Email each university in **2027** to confirm backlog policy before applying
-
----
-
-## WHY WINTER 2028 IS BEST
-
-| Intake | Deadline | Post-Grad Exp | German | Bond Status | Free Time | Verdict |
-|:---|:---|:---|:---|:---|:---|:---|
-| Summer 2027 | Jan 2027 | ~6 months | ~A2 | Active | None | Impossible |
-| Winter 2027 | Jul 2027 | ~12 months | ~B1 | Active | None | Impossible |
-| Summer 2028 | Dec 2027 | ~18 months | B1–B2 | Expired | Tight | Risky |
-| **Winter 2028** | **Jul 2028** | **~27 months** | **B2** | **Bond expires Oct 2027 → free Jan 2028** | **9 months** | **BEST** |
-
-### Key reasons:
-- Bond expires Oct 2027 → resign immediately → 3-month notice → **free from January 2028**
-- Jan–Oct 2028 = **9 months fully free** for visa prep, applications, savings, portfolio polish
-- Passport valid till 2032 — no renewal needed
-- Enough time for German B2, IELTS 7.0, APS certificate, savings, GitHub portfolio
-
-### Application timeline:
-- **Dec 2027**: Submit Bremerhaven application (Summer 2028 backup, deadline Dec 31)
-- **Jan 2028**: Submit remaining Summer 2028 apps (backup, deadline ~Jan 15)
-- **Jan 2028**: Take Goethe B2 exam
-- **Apr 2028**: Submit RWU application (Winter 2028, deadline Apr 15)
-- **May–Jul 2028**: Submit all Winter 2028 applications (Dortmund, HAW, etc.)
-- **Jul 2028**: Dortmund + others deadline (~Jul 15)
-
-### Degree Certificate Timeline:
-- Last exams: May 2026
-- Provisional certificate: Jun–Jul 2026 (get this ASAP from CBIT)
-- Final degree certificate: Aug–Sep 2026 or later
-- APS and uni-assist both accept provisional certificates
-- You MUST submit final degree before enrollment in Germany
-
----
-
-## PASSPORT STATUS
-
-Passport valid until 2032 — no renewal needed.
-
----
-
-## FINANCIAL PLAN
-
-### Costs Summary (INR)
-
-| Item | Amount |
+| Risk | Status |
 |:---|:---|
-| Blocked Account (visa requirement) | ₹11,00,000 (~€11,904) |
-| IELTS Exam | ₹16,250 |
-| APS Certificate | ₹18,000 |
-| Uni-assist fees (6 universities) | ~₹10,000 |
-| Passport | Valid till 2032 — no cost |
-| Visa Fee | ₹6,500 |
-| Flight | ₹40,000–70,000 |
-| First month deposit + rent | ₹80,000–1,00,000 |
-| **TOTAL NEEDED** | **₹13,00,000–14,00,000** |
+| **15 backlogs** | ✅ **Darmstadt: "No" effect. Bremerhaven: "no bearing".** ❌ Freiburg: "does not give a good impression" (dropped). Others: decided at application/Pre-Check. Never hide them — explain Sem 5 in one honest sentence (`05`). |
+| **Credits (ECTS)** | Probably fine (~240). Bremerhaven: if rated 180–209, missing 30 can be credited for **≥20 weeks' relevant work + a written report** → **keep monthly notes of what you do at work**. |
+| **Grade 2.28** | Fine for FHs; not competitive for selective universities (Freiburg needs ~9/10, Saarland "only the very best"). |
+| **English** | Weak spelling/grammar/speaking today → 12-month plan in `04_IELTS_PREP.md`. Target 7.0, most targets need 6.0–6.5. |
+| **Portfolio** | Empty today. Darmstadt said exactly what it wants: **C/C++, 32-bit microcontrollers, systems engineering, hardware design** → Projects 1–3 in `07`. |
+| **Unistring work type** | Mostly documentation/analysis → Bremerhaven's experience bonus may not apply. You pass the 2.3 cutoff without it. |
 
-### Your Savings (Jun 2026 → Jan 2028 while working)
-- Full-time: ₹12K/month × 19 months (Jun 2026 – Dec 2027) = ₹2,28,000
-- **Total self-savings: ~₹2,30,000**
+### Honest odds (judgement, not statistics)
+- **Bremerhaven (criteria-based, backlogs OK):** good *if* IELTS + APS + A1 are done by Nov 2027 and control credits are accepted.
+- **Darmstadt (competitive, 1,500+ applicants):** depends almost entirely on your portfolio.
+- **At least one admission for Summer/Winter 2028 from ~7 serious applications:** realistic — roughly **70–85%** *if* IELTS ≥ 6.5 and Projects 1–2 exist on GitHub. Without projects, closer to 50–60%.
 
-### Gap: ~₹10–11 lakhs → Solutions:
-1. **Family support** (primary — family is capable)
-2. **Education Loan** (safety net):
-   - SBI Scholar Loan: 8.15–11.15% interest, collateral may be needed
-   - HDFC Credila: 9.75–13.50%, faster processing, unsecured up to ₹50–80L
-   - Tax benefit: Section 80E — interest fully tax-deductible
-3. **DAAD Scholarship** — apply via funding-guide.de
-4. **Part-time work in Germany**: 20 hrs/week × €14.60/hr = ~€1,168/month (covers living costs)
+---
 
-### Education Loan Action:
-- Research SBI Scholar Loan and HDFC Credila by **Jan 2027** (awareness stage)
-- Get pre-approval before admission letter arrives (late 2027)
-- Apply formally at bond expiry Oct 2027
+## TARGETS (full list + deadlines in `01_UNIVERSITIES.md`)
+
+| Priority | University — Program | Intake | Why |
+|:---|:---|:---|:---|
+| ⭐ 1 | **HS Bremerhaven — M.Sc. Embedded Systems Design** | **April 2028** (apply by 31 Dec 2027) | Medical devices named as an application area; criteria-based; backlogs OK |
+| ⭐ 2 | **h_da Darmstadt — M.Sc. EE&IT (Embedded & Microelectronics)** | Oct 2028 (apply Dec 2027) | Backlogs OK; 1 year in industry; competitive |
+| ⭐ 3 | **FH Dortmund — M.Eng. Embedded Systems Engineering** | Oct 2028 (Pre-Check Jan–Feb 2028) | Strong fit; Pre-Check decides |
+| ⭐ 4 | **TH Lübeck — M.Sc. Biomedical Engineering** | Oct 2028 (1 Jan – 1 May 2028) | Free; next to Dräger |
+| ⭐ 5 | **HAW Hamburg — Microelectronic Systems / Biomedical Eng.** | Oct 2028 (by 15 Jul) | Hamburg medtech cluster |
+| 6–7 | TU Chemnitz (Embedded Systems) · TH Deggendorf (EE&IT) | Oct 2028 (by 15 Jul) | Solid backups |
+| Reach | TUHH · FAU Erlangen (Medical Robotics) · RWU (€1,500/sem) | Oct 2028 | Competitive or costly |
+| ❌ | Freiburg (dropped) · Saarland (only with GRE/GATE) · Paderborn (GRE) | — | — |
+
+---
+
+## MONEY
+
+### One-time costs before you fly (check current amounts before paying)
+
+| Item | Approx. |
+|:---|:---|
+| Udemy courses (8, Oct 2026 sale) | ₹4,122 |
+| ECG prototype parts (AD8232, electrodes, misc.) + PCB fabrication | ₹3,000–6,000 |
+| IELTS exam (1 attempt; budget for 2) | ~₹18,000 each |
+| Goethe A1 exam | check Goethe-Zentrum Hyderabad |
+| APS certificate | ~₹18,000 (check aps-india.de) |
+| uni-assist fees (~4 applications) | ~€75 first + ~€30 each extra (check) |
+| **Blocked account** (2026 amount) | **€11,904 ≈ ₹11–12 lakh** (€992/month) |
+| Health insurance, visa fee, flight, deposit + first rent | ~₹1.5–2 lakh |
+| **Total before departure** | **≈ ₹14–15 lakh** |
+
+### Cost of study per year (from `17_GLOBAL_MASTERS_OPTIONS.md` / Darmstadt comparison)
+- Bremerhaven ≈ €11,500/yr · Darmstadt ≈ €12,700/yr (year 2 in industry is usually paid) · Chemnitz ≈ €10,500/yr
+- Part-time work (Werkstudent / mini-job) typically covers a large share of living costs from semester 2.
+
+### Funding
+1. **Family support** (primary) — covers the blocked account.
+2. **Your savings** Oct 2026 → Dec 2027 (full-time salary): decide a fixed monthly amount and track it in `PROGRESS.md`.
+3. **Education loan** only as backup (SBI Scholar, HDFC Credila) — research Dec 2027, apply after an admission letter.
+4. **DAAD scholarships** — search funding-guide.de; competitive.
 
 ---
 
 ## CONTINGENCY PROTOCOLS
 
-### 1. Illness / Health Interruption
-- Mild (1–3 days): Anki from bed (15 min/day). German audio. No coding.
-- Severe (1+ week): Full rest. Resume at 50% intensity for 3 days before returning to full schedule.
-- Rule: Never try to "catch up" lost days. Just resume current week's topics.
-
-### 2. Motivation Burnout / Can't Wake Up at 5 AM
-- Trigger: Missing 3+ morning sessions in a week.
-- Protocol: Take a deload week — reduce to 50% intensity (1 program/day, Anki only for German).
-- Root cause check: Material too hard? (re-watch videos) Too boring? (switch to project work) Too exhausted? (prioritise sleep 3 days)
-- Recovery: After deload week, restart at normal pace. Do NOT add extra hours to compensate.
-
-### 3. Work Emergency / Overtime Spike
-- If 1–2 weeks of 8–9 PM finish: Weekends carry the load. Pre-gym reading and bed reading still happen.
-- If overtime becomes permanent: Revisit `08_DECISION_ANALYSIS.md` — consider leaving Unistring.
-
-### 4. Job Change (Leaving Unistring Before Bond Expiry)
-- Before bond expires (Oct 2027): Pay ₹3L penalty. Worth it only if gained study time × skill value > ₹3L.
-- After bond expires: Resign immediately (3-month notice). Apply to embedded startups during notice.
-- Adjust timeline: More study time → can accelerate or deepen projects.
-
-### 5. Resource Unavailability
-- Udemy course gone: Download ALL videos NOW via Udemy app offline mode.
-- YouTube channel deleted: Save playlists to Watch Later. Download with yt-dlp.
-- Book PDF corrupt: Keep backups on 512GB SATA SSD.
-- Website down: Use Wayback Machine (web.archive.org).
-
-### 6. Family Emergency
-- 1–2 weeks disruption: Same as illness protocol. Resume, don't catch up.
-- Extended (1+ month): Pause roadmap. Add lost time to Phase 6 buffer (Jan–Oct 2028 has 9 months flexibility).
-
-### 7. IELTS Score Below Target
-- Score 6.0–6.4: Retake in Dec 2027 or Jan 2028. Focus on weakest section.
-- Score below 6.0: Major concern. Intensive IELTS for 2 months. Delay Goethe B2 exam.
-- Backup: RWU accepts 6.0, Bremerhaven accepts B2 equivalent. Apply while retaking.
-
-### 8. German Progress Slower Than Expected
-- Not at A2 by Oct 2026: Increase weekend German to 4 hrs (reduce embedded by 2 hrs temporarily).
-- Not at B1 by Mar 2027: Start paid italki sessions (₹2K/month).
-- Not at B2 by exam time: Take Goethe B1 instead. Apply to English-only programs.
-
-### 9. All 6 Universities Reject
-- Apply again for Winter 2029 intake with updated portfolio (1 year more experience, same skills).
-- Apply Summer 2028 to Bremerhaven (extra shot — deadline Dec 31, 2027).
-- Not the end. 65–72% is not 100%. A second attempt is realistic and survivable.
+1. **Illness / family emergency** — rest; resume the *current* week, never "catch up". Every slip is absorbed by the 2028 free months (see `07` → "If things slip").
+2. **Burnout / missed weeks** — 3+ missed sessions in 2 weeks → halve the weekly minimum for 2 weeks; don't quit.
+3. **Work overload** — weekends carry the load; weekday reading drops to zero without guilt.
+4. **Leaving before the bond ends** — penalty applies; not recommended. The plan is built around 1 Oct 2027.
+5. **Resource gone** — download Udemy videos for offline use; keep PDFs backed up on the 512 GB SSD.
+6. **IELTS below 6.5** — retake within 4–6 weeks; most targets need 6.0–6.5.
+7. **German A1 exam failed** — retake; Bremerhaven needs A1 at enrolment, so it must be done before April 2028.
+8. **No admission for 2028** — Bremerhaven April 2029 (deadline 31 Dec 2028) + Winter 2029 round with a stronger portfolio; keep working meanwhile.
 
 ---
 
-## DELOAD WEEKS (Scheduled Recovery)
+## DELOAD WEEKS (planned light weeks)
 
-Every 3 months, take one light week. Reduced intensity prevents burnout over 28 months.
-
-| Deload Week | Date | What to Do |
-|:---|:---|:---|
-| Deload 1 | Last week of Aug 2026 | End of Phase 1 — light review, no new topics, extra sleep |
-| Deload 2 | Last week of Nov 2026 | End of Phase 2 — review STM32, plan Phase 3 |
-| Deload 3 | Last week of Feb 2027 | End of Phase 3 — celebrate RTOS complete, plan Phase 4 |
-| Deload 4 | Last week of May 2027 | Phase 4 midpoint recharge |
-| Deload 5 | Last week of Aug 2027 | Mid-Phase 5 break |
-| Deload 6 | Last week of Oct 2027 | Post-IELTS recovery; bond expiry/resignation week |
-| Deload 7 | Last week of Jan 2028 | Post-last-working-day celebration |
-| Deload 8 | Last week of Apr 2028 | Mid-free-period recharge |
+| When | Why |
+|:---|:---|
+| Nov 2–8, 2026 (Diwali) | Built into the restart plan |
+| Last week of Dec 2026 | Year end |
+| Last week of Apr 2027 | Before ADC/DMA + ECG work |
+| Last week of Jul 2027 | Before IELTS intensive |
+| Week after the IELTS exam (Oct 2027) | Recovery + resignation week |
+| First week of Jan 2028 | Last working day |
 
 ---
 
-## PHASE OVERVIEW
+## PHASE OVERVIEW (dates and detail in `07_MONTHLY_TIMELINE.md`)
 
-| Phase | Dates | Focus | AI Policy |
+| Phase | Dates | Focus | AI policy for code |
 |:---|:---|:---|:---|
-| **Phase 1** | Jun 9 – Aug 24, 2026 (11 wks) | C Programming — K.N. King, pointers, bitwise, GDB, state machines | BANNED |
-| **🔧 Bridge 1** | Aug 18–29, 2026 (~2 wkends) | Practical Electronics (Ohm's law, dividers, pull-ups) — before STM32 | — |
-| **Phase 2** | Aug 25 – Nov 23, 2026 (13 wks) | STM32 — GPIO, UART, Timers, Interrupts, ADC, DMA | BANNED |
-| **Phase 3** | Nov 24, 2026 – Feb 8, 2027 (11 wks) | FreeRTOS + Zephyr RTOS + SPI/I2C protocols | SUPERVISED |
-| **Phase 4** | Feb 9 – Aug 9, 2027 (26 wks) | Protocols (CAN/RS485) + Linux + ESP32 IoT | PARTNER |
-| **⚠️ Aug–Sep 2027** | within Phase 5 | **IELTS INTENSIVE** — embedded + German on MAINTENANCE only | PARTNER |
-| **🔧 Bridge 2** | Oct 2027 (~2-3 wkends) | Digital Logic (gates, flip-flops, FSM) — before VHDL | — |
-| **Phase 5** | Aug 10, 2027 – Feb 8, 2028 (26 wks) | IELTS → VHDL (heavy work Nov+) + APS + applications | PARTNER |
-| **Phase 6** | Feb 2028 – Oct 2028 (9 months) | Bond ended + free + final visa/application prep | — |
+| **0 — Restart** | Oct 5 – Nov 29, 2026 | K.N. King Ch 1–12 + electronics basics | 🔴 Banned |
+| **1 — Finish C** | Dec 2026 – Jan 2027 | K.N. King Ch 13–20, Makefiles, GDB, data structures, state machines | 🔴 Banned |
+| **2 — STM32** | Feb – May 2027 | ARM Cortex-M, register-level drivers, ADC + DMA → **Project 1** | 🔴 Banned |
+| **3 — ECG prototype** | Jun – Jul 2027 | AD8232 + DSP on-chip → **Project 2** · APS · Goethe A1 | 🟡 Supervised |
+| **IELTS intensive** | Aug – Oct 2027 | Exam early October; embedded on maintenance | — |
+| **4 — RTOS + PCB** | Nov 2027 – Mar 2028 | FreeRTOS, OrCAD PCB → **Project 3** · applications | 🟢 Partner |
+| **5 — Free period** | Jan – Sep 2028 | Wearable **Project 4**, German A2, remaining applications, visa | 🟢 Partner |
 
-> 🔧 **Fundamentals bridges**: You do NOT relearn your ECE degree. Only two small bridges (practical electronics + digital logic) are inserted at the moments they're needed. Full detail: `15_FUNDAMENTALS_BRIDGE.md`.
+> Fundamentals: you don't relearn the whole degree. Electronics basics run inside Phases 0–1 (Neso Academy + TI Precision Labs + breadboard); digital logic only if you apply to RWU (VHDL). See `15_FUNDAMENTALS_BRIDGE.md`.
 
 ---
 
-## See other files in this directory:
-- `PROGRESS.md` — WEEKLY TRACKING — update every Sunday at 4 PM
-- `01_UNIVERSITIES.md` — Complete university list with requirements and honest probabilities
-- `02_DAILY_SCHEDULE.md` — Updated 24-hour schedule (gym 5:30 AM integrated)
-- `03_GERMAN_LANGUAGE.md` — A1→B2 roadmap
-- `04_IELTS_PREP.md` — IELTS preparation plan
-- `05_APPLICATION_DOCS.md` — APS, motivation letter, SOP strategy
-- `06_EMBEDDED_LEARNING.md` — Embedded systems learning path overview
-- `07_MONTHLY_TIMELINE.md` — Month-by-month action checklist
-- `09_ULTIMATE_STUDY_PLAN.md` — MAIN PLAN: Phase-by-phase detailed schedule
-- `10_GOLDEN_RULES.md` — Study philosophy, AI detox protocol, debugging tips
-- `10_RESOURCES.md` — Complete book/course/platform library with phase mapping
-- `11A–11D_JUNE_WEEK*.md` — Phase 1 Week 1–4 detailed daily plans (Jun 9–30)
-- `12A–12E_JULY_WEEK*.md` — Phase 1 Week 4–8 detailed daily plans (Jul 1–31)
-- `13A–13E_AUGUST_WEEK*.md` — Phase 1 Week 9–11 + Phase 2 Week 1 (Aug 1–31)
-- `15_FUNDAMENTALS_BRIDGE.md` — ECE basics you actually need (practical electronics + digital logic); what to skip
+## FILE MAP
+See the table at the end of `07_MONTHLY_TIMELINE.md`.

@@ -1,5 +1,8 @@
 # AUGUST WEEK 1 (Aug 1–3) — Phase 1 Week 8 END: STATE MACHINES + MEMORY LAYOUT
 
+> 🗂️ **REVIEW OCT 2026 — CONTENT REFERENCE ONLY.** The dates in this file belong to the June–August 2026 plan, which was never executed. Use it for **what to study and which programs to write**; follow the dates in `18_RESTART_8_WEEKS.md` (now) and `07_MONTHLY_TIMELINE.md` (overall). Chapter → new date: Ch 1–12 = Oct–Nov 2026 · Ch 13–20, Makefiles, GDB, data structures, state machines, exit tests = Dec 2026–Jan 2027 · STM32 week (13E) = Feb 2027.
+
+
 > **Topics**: State machines (enum + function pointer dispatch table), memory layout visualization, packed structs, bit fields, union type punning
 > **K.N. King Reading**: Ch 18 (Declarations) + Ch 16 bit fields (weekday reading continues from July)
 > **K&R Bed Reading**: Chapter 6 revisit (unions + bit-fields)

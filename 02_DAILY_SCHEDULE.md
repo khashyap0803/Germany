@@ -1,5 +1,8 @@
 # OPTIMIZED 24-HOUR DAILY SCHEDULE
 
+> 🗂️ **REVIEW OCT 2026.** This is the *target* schedule (~22 h/week). It was never followed. Current reality: **~3.5 h/week** (`18_RESTART_8_WEEKS.md`), growing per the ramp in `07_MONTHLY_TIMELINE.md` (~6 h/week Dec 2026, ~8–10 h/week from Feb 2027). **Commute = English Master Course (now) and German Nicos Weg (from Jan 2027), not German only.** Grow towards this schedule; don't jump to it.
+
+
 > **Last Updated**: June 8, 2026 — Rewritten with mandatory gym 5:30–6:30 AM daily
 
 ---

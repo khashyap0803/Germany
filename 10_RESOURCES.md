@@ -1,6 +1,6 @@
 # 📚 MASTER RESOURCE GUIDE — What to Learn From, Where, and When
 
-> **Last Updated**: May 16, 2026 (audit reconciliation)
+> **Last Updated**: October 15, 2026 — final course list after the Oct 2026 Udemy sale; phase dates follow `07_MONTHLY_TIMELINE.md`
 > **Purpose**: Every learning session needs a source. This file maps EXACT resources to every topic in your roadmap.
 > **Rule**: Before you code, you WATCH or READ. Before you move on, you TEST yourself.
 
@@ -34,13 +34,13 @@
 
 ## 📕 COMPLETE BOOK LIBRARY — Phase-by-Phase
 
-> **Location**: Keep all books in `f:\Documents\DEVELOP\Books\`
+> **Location**: `F:\Documents\DEVELOP\STUDY\Books\` (PDFs are git-ignored)
 > **Annotations**: Use Adobe Acrobat Reader Pro to highlight and annotate directly in PDF. Use paper notebook for memory diagrams, pointer chains, and register layouts.
 > **College Library**: You have unlimited access — download whatever you need.
 
 ### 📋 COPY THESE TO YOUR BOOKS DIRECTORY NOW
 
-Find these on your external drive or download from your college online library. Place them all in `f:\Documents\DEVELOP\Books\`:
+All of these are already in `STUDY\Books\`:
 
 #### ✅ Already in Books directory (ALL VERIFIED)
 - [x] `C Programming - A Modern Approach - 2nd_Ed(C89, c99) - King by .pdf` — K.N. King 2nd edition (**PRIMARY for Phase 1**)
@@ -62,7 +62,7 @@ Find these on your external drive or download from your college online library. 
 
 ---
 
-### Phase 1 — C Programming (May-Jul 2026, 11 weeks including wedding buffer)
+### Phases 0–1 — C Programming (Oct 2026 – Jan 2027)
 
 | # | Book | Location | Role |
 |:---|:---|:---|:---|
@@ -71,7 +71,7 @@ Find these on your external drive or download from your college online library. 
 | 3 | **"Beej's Guide to C Programming"** | https://beej.us/guide/bgc/ | **Supplement** — modern reference, covers C11/C17, clearer explanations for some topics |
 | 4 | **"Modern C" by Jens Gustedt** | https://gustedt.gitlabpages.inria.fr/modern-c/ (free PDF) | **Advanced reference** — modern C best practices, for Phase 3+ |
 
-### Phase 2 — STM32 Microcontrollers (Jul-Oct 2026)
+### Phase 2 — STM32 Microcontrollers (Feb – May 2027)
 
 | # | Book | Location | Role |
 |:---|:---|:---|:---|
@@ -79,14 +79,14 @@ Find these on your external drive or download from your college online library. 
 | 6 | **"The 8051 Microcontroller" by Mazidi** | `Books/8051-microcontroller-...pdf` | **Supplementary** — compare 8051 architecture with ARM. Good for microcontroller fundamentals. |
 | 7 | **"Making Embedded Systems" by Elecia White (2nd ed)** | `Books/making_embedded_systems.pdf` | **Design patterns** — how to structure firmware projects, HALs, state machines. #1 embedded design book. |
 
-### Phase 3 — FreeRTOS (Oct-Dec 2026)
+### Phase 4 — FreeRTOS (Nov 2027 – Mar 2028)
 
 | # | Book | Location | Role |
 |:---|:---|:---|:---|
 | 8 | **"Mastering the FreeRTOS Real Time Kernel"** by Richard Barry | `Books/Mastering-the-FreeRTOS-Real-Time-Kernel.v1.1.0.pdf` | ⭐ **PRIMARY for Phase 3** — official guide by FreeRTOS creator. #1 and ONLY RTOS book needed. |
 | 9 | **"Making Embedded Systems" by Elecia White** | (same as #7) | **Complement** — chapters on interrupts, memory management, debugging patterns |
 
-### Phase 4 — Protocols + Linux (Jan-Jun 2027)
+### Optional / 2028 — ARM deep-dive, Linux, architecture
 
 | # | Book | Location | Role |
 |:---|:---|:---|:---|
@@ -94,7 +94,7 @@ Find these on your external drive or download from your college online library. 
 | 11 | **"Linux Device Drivers" (LDD3)** by Corbet et al. | `Books/Linux Device Drivers Third Edition.pdf` | **Linux kernel concepts** — char devices, kernel modules. Supplement with free Bootlin training materials for modern APIs. |
 | 12 | **"Computer System Architecture"** by Morris Mano | `Books/computer-system-architecture-morris-mano-third-edition.pdf` | **Computer architecture** — CPU design, memory hierarchy. Supplementary to Patterson & Hennessy. |
 
-### Phase 5 — VHDL + Advanced (Jul-Dec 2027)
+### Optional — Digital design / VHDL (only needed for RWU) + testing
 
 | # | Book | Location | Role |
 |:---|:---|:---|:---|
@@ -111,7 +111,7 @@ No new technical books. Focus on:
 
 ---
 
-### Chapter-to-Week Mapping (K.N. King) — May-June 2026
+### Chapter-to-Week Mapping (K.N. King) — *old June 2026 mapping; the current mapping is in `18_RESTART_8_WEEKS.md` and `07`*
 
 | K.N. King Chapter | Topics | Your Week |
 |:---|:---|:---|
@@ -254,44 +254,72 @@ No new technical books. Focus on:
 
 ---
 
-## 💰 PURCHASED COURSES
+## 💰 UDEMY COURSES
 
-### Udemy Courses (Already Bought)
+### Owned before Oct 2026 — embedded/electronics (use these)
+| Course | Instructor | Use in |
+|:---|:---|:---|
+| Microcontroller Embedded C Programming: Absolute Beginners | FastBit | Phases 0–1, alongside K.N. King |
+| Mastering Microcontroller and Embedded Driver Development (MCU1) | FastBit | Phase 2 (Mar–Apr 2027) |
+| Mastering Microcontroller: Timers, PWM, CAN, Low Power (MCU2) | FastBit | Phase 4 (Jan 2028) |
+| Mastering Zephyr RTOS with DeviceTree | FastBit | Optional (2028) |
+| Learn everything about Linux! 100+ hours | Vitor Mazuco | Optional (2028) |
+| Crash Course Electronics and PCB Design | Andre LaMothe | Reference for electronics/PCB |
+| Master of Essential C++ Programming | Sayman | Optional (C++ for Darmstadt's "C/C++") |
 
-| # | Course | Instructor | Hours | Repo | Use When |
-|:---|:---|:---|:---|:---|:---|
-| 1 | **"Microcontroller Embedded C Programming: Absolute Beginners"** | FastBit Embedded Brain Academy | 16.5h | `Courses/FastBit-Embedded-C/` | **Phase 1 (May 2026)** — watch at 1.5× alongside K.N. King. Visual reinforcement of C concepts with embedded context. |
-| 2 | **"Mastering Microcontroller and Embedded Driver Development"** | FastBit Embedded Brain Academy | 28.5h | (clone when Phase 2 starts) | **Phase 2 (Jul 2026)** — GPIO, SPI, I2C, UART drivers from scratch on STM32. THE course for driver dev. |
-| 3 | **"Mastering Microcontroller: Timers, PWM, CAN, Low Power (MCU2)"** | FastBit Embedded Brain Academy | 29h | (clone when Phase 2-3 starts) | **Phase 2-3 (Aug-Dec 2026)** — Advanced peripherals, CAN bus, power management. |
-| 4 | **"Learn everything about Linux! 100+ hours v2026"** | — | 100h+ | — | **Phase 4 (Jan 2027)** — Linux CLI, networking, shell scripting, Docker, Git, Kubernetes. |
-| 5 | **"Mastering Zephyr RTOS with DeviceTree and Board Bring Up"** | FastBit Embedded Brain Academy | 9h | (clone when Phase 3-4 starts) | **Phase 3-4 (Dec 2026-Jan 2027)** — AFTER FreeRTOS mastery. Zephyr workspace, DeviceTree, custom board porting. Runs on your STM32F411 + Nucleo-L476RG. |
+*Also owned but not part of this plan:* ~13 AI/Python/data courses, Java Masterclass, C# Basics, DevOps, Google Sheets. Ignore them until after the move.
 
-> **Daily Flow**: Read K.N. King chapter → do 5 exercises → watch FastBit lesson on same topic at 1.5× → code along (write yourself, don't copy) → do 2 more King exercises.
+### Bought in the Oct 2026 sale (8 courses, ₹4,122)
+| Price | Course | Size | Use in |
+|:--|:---|:--|:---|
+| ₹599 | Embedded Systems Programming on ARM Cortex-M3/M4 (FastBit) | 15 h | **Phase 2 — Feb 2027** |
+| ₹529 | ARM Cortex M Microcontroller DMA Programming Demystified (FastBit) | 10 h | **Phase 2 — May 2027** |
+| ₹539 | DSP From Ground Up on ARM Processors (BHM / Israel Gbati) | 25.5 h | **Phase 3 — Jun–Jul 2027** |
+| ₹509 | Mastering RTOS: Hands on FreeRTOS and STM32Fx (FastBit) | 14 h | **Phase 4 — Nov 2027** |
+| ₹479 | PCB Design in Cadence OrCAD/Allegro: Basics to Expert (Pradeep Raj) | 37 h | **Phase 4 — Nov 2027 → Mar 2028** |
+| ₹469 | ISO 14971 Medical Device Development & Risk Management (Robert Ryan) | 15.5 h | **2028 free period** |
+| ₹519 | The English Master Course: Grammar, Speaking (Scott Mendoza) | 83.5 h | **Now → Mar 2027** (30 min/day) |
+| ₹479 | IELTS Band 7+ Complete Prep Course (Keino Campbell) | 97.5 h | **Apr → Sep 2027** |
+
+**Rule:** one course at a time, in the order of `07_MONTHLY_TIMELINE.md`. Buying is done — finishing is the job.
+
+### Considered and NOT bought (with the free alternative)
+| Not bought | Use instead (free) |
+|:---|:---|
+| Complete Electronics: Analog Hardware Design | **Neso Academy** (theory) + **TI Precision Labs** (op-amps, noise, ADCs) + NPTEL *Analog Electronic Circuits* if needed |
+| Op-amp circuits on LTSpice | **TI Precision Labs** |
+| Embedded System Design using UML State Machines | **Miro Samek — "Modern Embedded Systems Programming"** (YouTube) |
+| Bluetooth Low Energy From Ground Up | **Nordic DevAcademy** (nRF Connect SDK, BLE fundamentals) |
+| ISO 13485 design-control course (3.5 h) | **FDA "Design Control Guidance for Medical Device Manufacturers"** (PDF) + Greenlight Guru articles |
+| VHDL courses | **nandland.com** + **HDLBits** (only needed for RWU) |
+| Udemy German A1 | **DW Nicos Weg** + **Goethe A1 exam** (a Udemy certificate is not accepted) |
+| PCB with KiCad / Altium | Phil's Lab + Robert Feranec (YouTube); KiCad is free after you leave Unistring |
+| Medical Device Software Process Blackbelt (IEC 62304) — ₹1,199 | Buy only if it drops below ₹600 |
+| Unit Testing & Other Embedded Software Catalysts — ₹2,899 | Buy only if it drops below ₹600; Grenning's TDD book (owned) meanwhile |
 
 ---
 
-## 🎓 FREE COURSES (From Your Subscriptions)
+## 🎓 FREE RESOURCES (better than paid for these topics)
 
-### Educative (6 Months Free via GitHub Student Pack)
-
-| Course | Hours | Use When | Priority |
-|:---|:---|:---|:---|
-| **"Operating Systems: Virtualization, Concurrency & Persistence"** | 40h | Phase 3 (Oct 2026) — FreeRTOS concepts, scheduling, memory management | ⭐ HIGH — claim now |
-| **"Learn C++: The Complete Course for Beginners"** | 10h | Phase 5 (Jul 2027) — C++ after mastering C | 🟡 Medium |
-
-> **Action**: Claim your Educative access NOW via GitHub Student Pack. Even if you won't use it until October, activate the 6-month window so it covers Oct 2026.
-
-### Udemy Courses You Already Own (Relevant)
-
-| Course | Use When |
+| Topic | Resource |
 |:---|:---|
-| **"Master of Essential C++ Programming"** | Phase 5 (Jul 2027) — C++ fundamentals |
+| Analog/electronics theory | **Neso Academy** (YouTube) |
+| Op-amps, noise, data converters | **TI Precision Labs** (ti.com, free videos) |
+| University-level depth + certificates | **NPTEL / SWAYAM** — free to learn; proctored exam ≈ ₹1,000. Certificates don't add ECTS in Germany but are good supporting evidence. Candidates: *Control Engineering* (only if Bremerhaven says Control Systems is short), *Software Engineering* (for Dortmund, Jan–Apr 2028), *Biomedical Signal Processing* |
+| State machines / embedded design | **Miro Samek** (YouTube) |
+| RTOS concepts | **Shawn Hymel — Introduction to RTOS** (Digi-Key, YouTube) |
+| PCB design habits | **Phil's Lab**, **Robert Feranec** (YouTube) |
+| DSP | **Steven Smith — The Scientist & Engineer's Guide to DSP** (free online) |
+| BLE / nRF52 | **Nordic DevAcademy** |
+| Medical device regulation | FDA design-control guidance, CDSCO website, Greenlight Guru |
+| IELTS | **British Council "Road to IELTS"**, **IELTS Liz**, free practice tests (British Council / IDP) |
+| German | **DW Nicos Weg**, Goethe practice tests, Easy German |
 
 ---
 
 ## 🖥️ SOFTWARE USAGE TIMELINE
 
-### May 2026 (Phase 1: C Programming)
+### Phases 0–1 (Oct 2026 – Jan 2027): C Programming
 
 | Tool | Purpose | How |
 |:---|:---|:---|
@@ -301,11 +329,11 @@ No new technical books. Focus on:
 | **DW Learn German app** | Nicos Weg lessons A1 | Commute IN (7:00-8:30 AM) |
 | **dict.cc app** | German dictionary | Whenever you encounter an unknown word → add to Anki |
 | **Easy German podcast app** | Passive German listening | Commute BACK |
-| **PomoDone** (GitHub Pack, free 2yr) | Pomodoro timer for study sessions | Set 25-min timers during morning + evening blocks |
+| **PomoDone** (GitHub Student Pack — only while still eligible, free 2yr) | Pomodoro timer for study sessions | Set 25-min timers during morning + evening blocks |
 | **PROGRESS.md** (in this repo) | Sunday 4:00 PM weekly review | **ONE tracking system.** Hours, programs, German words, blockers — all here |
 | **Google AI Pro** | Concept explanations ONLY (AI Detox!) | When stuck after 20 min of trying |
 
-### July 2026+ (Phase 2: STM32)
+### Phase 2+ (Feb 2027 onward): STM32
 
 | Tool | Purpose |
 |:---|:---|
@@ -315,12 +343,11 @@ No new technical books. Focus on:
 | **PulseView + Sigrok** | Capture SPI/I2C/UART signals from Sipeed SLogic analyzer |
 | **PlatformIO (VS Code)** | Alternative STM32/ESP32 build system |
 
-### October 2026+ (Phase 3: RTOS)
+### Phase 4+ (Nov 2027 onward): RTOS — optional professional IDEs
 
 | Tool | Purpose |
 |:---|:---|
-| **Educative** | "Operating Systems" course for RTOS theory |
-| **CLion** (JetBrains, free via GitHub Pack) | Professional C/C++ IDE for multi-file RTOS projects |
+| **CLion** (JetBrains, free via GitHub Student Pack — only while still eligible) | Professional C/C++ IDE for multi-file RTOS projects |
 | **Keil µVision 5** | Professional STM32 development (resume builder) |
 | **IAR Embedded Workbench ARM** | Alternative professional IDE (resume builder) |
 
@@ -332,9 +359,9 @@ No new technical books. Focus on:
 | **VMware Workstation Pro** | Linux VMs for embedded Linux development (Fedora Workstation + openSUSE Tumbleweed already installed, 40GB/6GB RAM each) |
 | **Altium Designer** | PCB design for portfolio project |
 | **MATLAB R2024b** | Signal processing, control systems (if needed) |
-| **Arduino Cloud** (GitHub Pack) | Arduino IoT projects |
-| **DigitalOcean** ($200 credit, GitHub Pack) | QEMU ARM emulation, MQTT broker hosting |
-| **Microsoft Azure** ($100 credit, GitHub Pack) | IoT Hub, cloud builds |
+| **Arduino Cloud** (GitHub Student Pack — only while still eligible) | Arduino IoT projects |
+| **DigitalOcean** ($200 credit, GitHub Student Pack — only while still eligible) | QEMU ARM emulation, MQTT broker hosting |
+| **Microsoft Azure** ($100 credit, GitHub Student Pack — only while still eligible) | IoT Hub, cloud builds |
 
 ---
 

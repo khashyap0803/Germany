@@ -1,5 +1,8 @@
 # AUGUST WEEK 3 (Aug 11–17) — Phase 1 Week 10: DEEP REVIEW + FROM-MEMORY CHALLENGES
 
+> 🗂️ **REVIEW OCT 2026 — CONTENT REFERENCE ONLY.** The dates in this file belong to the June–August 2026 plan, which was never executed. Use it for **what to study and which programs to write**; follow the dates in `18_RESTART_8_WEEKS.md` (now) and `07_MONTHLY_TIMELINE.md` (overall). Chapter → new date: Ch 1–12 = Oct–Nov 2026 · Ch 13–20, Makefiles, GDB, data structures, state machines, exit tests = Dec 2026–Jan 2027 · STM32 week (13E) = Feb 2027.
+
+
 > **Topics**: No new topics — this week is 100% review and from-memory practice for every skill learned in Weeks 1–9
 > **K.N. King Reading**: Review any chapters with self-ratings below 7
 > **K&R Bed Reading**: Chapter 2 (Types) + Chapter 3 (Control Flow) — re-read as an experienced programmer

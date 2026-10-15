@@ -1,5 +1,8 @@
 # JULY WEEK 4 (Jul 21–27) — Phase 1 Week 7: DYNAMIC MEMORY + LINKED LISTS + QUEUES
 
+> 🗂️ **REVIEW OCT 2026 — CONTENT REFERENCE ONLY.** The dates in this file belong to the June–August 2026 plan, which was never executed. Use it for **what to study and which programs to write**; follow the dates in `18_RESTART_8_WEEKS.md` (now) and `07_MONTHLY_TIMELINE.md` (overall). Chapter → new date: Ch 1–12 = Oct–Nov 2026 · Ch 13–20, Makefiles, GDB, data structures, state machines, exit tests = Dec 2026–Jan 2027 · STM32 week (13E) = Feb 2027.
+
+
 > **Topics**: malloc/calloc/realloc/free deep, Valgrind, singly linked list (all operations), doubly linked list, queue, circular buffer (full implementation)
 > **K.N. King Reading**: Chapter 17 (Advanced Uses of Pointers — linked lists, function pointers)
 > **K&R Bed Reading**: Chapter 5 revisit (Pointers and Arrays), Chapter 6 (Structures revisit)

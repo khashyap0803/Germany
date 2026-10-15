@@ -1,315 +1,209 @@
-# MONTH-BY-MONTH ACTION CHECKLIST
+# 🗓️ MASTER TIMELINE — Oct 2026 → Oct 2028 (the single source of truth)
 
-> **Last Updated**: June 8, 2026 — Rewritten with June 9 real start, bond Oct 2027, gym schedule
-> **Legend**: German | Embedded | Application | Financial | Admin
-
----
-
-## 2026
-
-### June 2026 (PHASE 1 STARTS — June 9)
-
-> This is the TRUE Day 1. Phase 1 begins June 9, 2026.
-
-- [ ] **REAL START DATE: June 9, 2026** — Phase 1 C Programming begins
-- [ ] Set up WSL2 on Windows, install gcc + gdb (if not done yet)
-- [ ] Install AnkiDroid + download German A1 deck + DW Nicos Weg app
-- [ ] Create GitHub repo "C-Practice" (public)
-- [ ] Start Nicos Weg A1 — 1 lesson/day during commute
-- [ ] C Programming: K.N. King Ch 1–7 (setup, variables, loops, functions, arrays, strings)
-- [ ] Watch FastBit "Embedded C Programming" at 1.5× alongside King
-- [ ] AI BANNED for code — write everything manually
-- [ ] Gym every morning 5:30–6:30 AM — no exceptions
-- [ ] Pre-gym reading 5:00–5:25 AM — K.N. King on tablet
-- [ ] Bed reading 9:30–10:00 PM — K&R reference
-- [ ] Start saving ₹10–15K/month
-- [ ] **Buy FastBit ARM Cortex-M3/M4 course** (for Phase 2 prep — on sale)
-- [ ] Organize all academic documents (physical + digital scans)
-- [ ] Request provisional certificate from CBIT ASAP (last exams were May)
-- [ ] Passport valid till 2032 — no renewal needed
-- [ ] Start tracking in PROGRESS.md — update EVERY Sunday at 4 PM
-
-### July 2026 (Phase 1 Weeks 4–8)
-
-- [ ] Continue Nicos Weg A1 (aim to complete by Aug)
-- [ ] C Programming: Pointers (mycodeschool 15 videos), Structs, Bitwise, Makefiles, GDB
-- [ ] AI BANNED — draw memory diagrams on paper
-- [ ] mycodeschool "Pointers in C/C++" playlist — watch all 15 videos
-- [ ] Jacob Sorber YouTube — GDB debugging, volatile keyword, function pointers
-- [ ] Build hardware register simulator in C (bitwise operations = STM32 prep)
-- [ ] Build circular buffer in C (will use on STM32 for UART in August)
-- [ ] Multi-file C project with proper Makefile
-- [ ] GDB debugging practice: find bugs without printf
-- [ ] Weekend sessions: 5 hrs embedded coding + 4.5 hrs German each Saturday
-- [ ] Deload week: last week of July (if Phase 1 is ahead) — OR skip if behind
-
-### August 2026 (Phase 1 Weeks 9–11 + Phase 2 Start Aug 25)
-
-- [ ] Phase 1 Week 9–10: State machines, memory layout, Phase 1 Capstone project
-- [ ] **PHASE 1 CAPSTONE**: "Embedded System Simulator" — multi-file C project combining all topics
-- [ ] Phase 1 exit test (timed, no references): circular buffer, linked list, Makefile, state machine, GDB
-- [ ] Phase 1 exit interview: answer 10 C concepts verbally
-- [ ] **Deload Week 1**: Last week of August — light review, no new topics, extra sleep
-- [ ] Complete Nicos Weg A1, begin A2 transition
-- [ ] **PHASE 2 STARTS: August 25** — STM32 microcontroller programming
-- [ ] Install STM32CubeIDE on Windows
-- [ ] Read first 50 pages of "Mastering STM32" + RM0383 memory map section
-- [ ] First blink: STM32F411 Black Pill LED via HAL
-- [ ] Buy FastBit ARM Cortex-M3/M4 course (if not bought in June)
-
-### September 2026 (Phase 2 — GPIO + UART)
-
-- [ ] Continue Nicos Weg A2 + Easy German podcast during commute
-- [ ] STM32: GPIO deep — all modes (push-pull, open-drain, pull-up/down, AF)
-- [ ] STM32: UART — HAL + register-level + printf redirect
-- [ ] FastBit MCU1 Sections 1–10
-- [ ] AI BANNED — write both HAL and register-level code yourself
-- [ ] Use Nucleo onboard ST-Link (primary) + Robocraze ST-Link V2 (backup)
-- [ ] Logic analyzer (Sipeed SLogic) — verify UART waveform on oscilloscope
-- [ ] **Buy FastBit FreeRTOS course** (for Phase 3, starting Nov 24)
-
-### October 2026 (Phase 2 — Timers + Interrupts + ADC)
-
-- [ ] Nicos Weg A2 in progress, Easy German daily
-- [ ] STM32: SysTick timer, hardware timers, NVIC interrupts
-- [ ] STM32: ADC single + DMA (continuous)
-- [ ] STM32: PWM generation
-- [ ] FastBit MCU1 + MCU2 (start)
-- [ ] "Mastering STM32" Chapters 7–14
-- [ ] AI BANNED — everything hand-written
-
-### November 2026 (Phase 2 → Phase 3 — Portfolio Project 1 + FreeRTOS Start)
-
-- [ ] Complete Nicos Weg A2 self-assessment
-- [ ] SPI + I2C protocols with Sipeed SLogic (logic analyzer verification)
-- [ ] **PORTFOLIO PROJECT 1**: STM32 Environmental Monitor
-  - STM32F411 + BMP280 sensor (or simulated ADC) + UART + timer + circular buffer
-  - GitHub with README, circuit diagram, demo video
-- [ ] **Deload Week 2**: Last week of November — review Phase 2, plan Phase 3
-- [ ] **PHASE 3 STARTS: November 24** — FreeRTOS
-- [ ] FastBit FreeRTOS course (14h at 1.5×) begins
-- [ ] "Mastering the FreeRTOS Real Time Kernel" by Richard Barry — Chapter 1–3
-- [ ] AI SUPERVISED from Phase 3: AI generates boilerplate, YOU review every line
-
-### December 2026 (Phase 3 — FreeRTOS Tasks + Queues)
-
-- [ ] Start Nicos Weg B1
-- [ ] FreeRTOS: tasks, task states, priorities, queues for inter-task communication
-- [ ] FreeRTOS: semaphores, mutexes, priority inversion
-- [ ] Understand NVIC + ISR + cooperative multitasking vs preemptive
-- [ ] Begin Portfolio Project 2 planning (FreeRTOS Multi-Sensor Dashboard)
-- [ ] End of year financial review — how much saved?
+> **Rebuilt**: October 15, 2026, after the full review. **If any other file disagrees with this one, this file wins.**
+> **Start point (honest):** June–September 2026 produced no study. The real restart was **October 5, 2026** (`18_RESTART_8_WEEKS.md`).
+> **Fixed dates this plan is built on:**
+> - **Bond ends 1 Oct 2027** (+1 day for every leave day taken). Resign on/after that date → **3-month notice → last working day ≈ 1 Jan 2028.**
+> - **Bremerhaven ESD = summer intake only** (April). uni-assist deadline **31 Dec** every year.
+> - **Darmstadt** portal opens **December** for the next winter. **Dortmund** Pre-Check from **January**, application **1 Apr – 15 Jun**.
+> - CGPA **7.87 → German ≈ 2.28**. Backlogs: **15** (14 credit + 1 non-credit), all cleared.
 
 ---
 
-## 2027
+## THE SHAPE OF THE NEXT TWO YEARS
 
-### January 2027 (Phase 3 — Zephyr RTOS + Protocol Preview)
+```
+OCT 2026 ─┬─ PHASE 0  Restart (C basics + electronics basics)          ~3.5 h/wk
+NOV 2026 ─┘
+DEC 2026 ─┬─ PHASE 1  Finish C + analog basics                         ~6 h/wk
+JAN 2027 ─┘
+FEB 2027 ─┬─ PHASE 2  STM32 (ARM Cortex-M, drivers, ADC+DMA)           ~8–10 h/wk
+  …       │           + German A1 (commute) + English foundation (daily)
+MAY 2027 ─┘
+JUN 2027 ─┬─ PHASE 3  ECG prototype (ADC+DMA+DSP) · APS · Goethe A1    ~8–10 h/wk
+JUL 2027 ─┘
+AUG 2027 ─┬─ IELTS INTENSIVE  (embedded on maintenance)
+SEP 2027 ─┤
+OCT 2027 ─┘  IELTS exam · BOND ENDS 1 Oct → resign · notice starts
+NOV 2027 ─┬─ PHASE 4  FreeRTOS + PCB (OrCAD) · APPLICATIONS WAVE 1
+DEC 2027 ─┘           Bremerhaven (31 Dec) · Darmstadt (Dec) · TUHH
+JAN 2028 ─┬─ FREE (last working day ≈ 1 Jan) · full-time portfolio
+  …       │  Dortmund Pre-Check · Lübeck · applications WAVE 2
+MAR 2028 ─┘  ── if Bremerhaven admits you: fly ~March, start April ──
+APR 2028 ─┬─ APPLICATIONS WAVE 3 (Dortmund, RWU, FAU, HAW, Chemnitz, Deggendorf)
+JUL 2028 ─┘
+AUG 2028 ─┬─ Admission → blocked account → visa → flight
+SEP 2028 ─┘
+OCT 2028 ──  START WINTER SEMESTER 2028
+```
 
-- [ ] Nicos Weg B1 in progress
-- [ ] Zephyr RTOS: FastBit Zephyr course (9h at 1.5×)
-- [ ] Port Blinky to STM32F411 + Nucleo in Zephyr, write DeviceTree from scratch
-- [ ] FreeRTOS vs Zephyr comparison (same project, two implementations)
-- [ ] Communication protocol preview: CAN bus theory, RS485 theory
-- [ ] AI SUPERVISED — Copilot/Claude generates boilerplate, YOU explain every line
-- [ ] **Start education loan research** — compare SBI Scholar Loan vs HDFC Credila
+---
 
-### February 2027 (Phase 3 → Phase 4 — Portfolio Project 2 + Phase 4 Start)
+## WEEKLY HOURS — REALISTIC RAMP (not the old 22 h/week)
 
-- [ ] B1 German grammar focus (cases, tenses)
-- [ ] **PORTFOLIO PROJECT 2**: FreeRTOS Multi-Sensor Dashboard
-  - 3 tasks: ADC/I2C sensor reading, data processing, UART output
-  - Queues for inter-task communication, mutex for UART
-  - Zephyr branch as second implementation
-  - GitHub with full documentation
-- [ ] **Deload Week 3**: Last week of February — celebrate Phase 3 complete, plan Phase 4
-- [ ] **PHASE 4 STARTS: February 9** — Protocols + Linux + IoT
-- [ ] AI PARTNER from Phase 4: Use AI like a senior engineer
-- [ ] ESP32-S3 N8R2: install ESP-IDF, first program
+| Period | Weekdays | Saturday | Sunday | Commute (audio) | Active total |
+|:---|:---|:---|:---|:---|:---|
+| Oct–Nov 2026 | 15 min reading | 2 h C | 1 h electronics | English 30 min/day | **~3.5 h** |
+| Dec 2026–Jan 2027 | 15–20 min | 3 h | 2 h | English | **~6 h** |
+| Feb–Jul 2027 | 20–30 min | 4 h | 3 h | English + German | **~8–10 h** |
+| Aug–Sep 2027 | 20 min (IELTS vocab) | 3 h IELTS + 1 h embedded | 3 h IELTS | English | IELTS-first |
+| Oct–Dec 2027 (notice period) | 20–30 min | 4 h | 3 h + applications | German | **~8–10 h** |
+| Jan–Sep 2028 (free) | — | — | — | — | **~30 h** (full-time) |
 
-### March 2027 (Phase 4 — Protocols + ESP32)
+**Rule:** only increase hours after the previous level has held for **4 weeks in a row** in `PROGRESS.md`.
 
-- [ ] Complete B1, start B1→B2 bridge
-- [ ] ESP32: WiFi connection, MQTT basics
-- [ ] CAN bus: theory + implement if hardware available
-- [ ] RS485 multi-device UART
-- [ ] Deploy Linux on old Core 2 Duo PC (Linux From Scratch target)
-- [ ] Research all target universities, bookmark official pages
+---
 
-### April 2027 (Phase 4 — Linux + IELTS Start)
+## MONTH BY MONTH
 
-- [ ] B1→B2 bridge course (DW B2 content)
-- [ ] Start "Linux 100+ hours" Udemy course
-- [ ] Linux CLI mastery (WSL2 + Fedora VM)
-- [ ] **START IELTS PREPARATION** — take diagnostic test (identify weakest section)
-- [ ] Start DAAD scholarship database search
-- [ ] **Deload Week 4**: Last week of April — recharge before IELTS ramp-up
+### 2026
 
-### May 2027 (Phase 4 — Linux + IELTS Foundation)
+#### October 2026 — Phase 0 (Restart, weeks 1–4)
+- [ ] C: K.N. King Ch 1–8 (see `18_RESTART_8_WEEKS.md`)
+- [ ] Electronics: Ohm's law, dividers, KVL/KCL, LED + pull-ups — **Neso Academy** + breadboard
+- [ ] **Buy the Udemy cart** (8 courses, ₹4,122) before the sale ends
+- [ ] **Start The English Master Course** — 30 min/day (commute or lunch). Turn **autocorrect OFF** on phone + laptop
+- [ ] Bond date ✅ (1 Oct 2027) → ask HR for it **in writing**
+- [ ] Ask a colleague: does Unistring use OrCAD/Allegro? Confirm the Cadence licence may be used for weekend learning
+- [ ] Bremerhaven follow-up to Mr Lüders: is **Control Systems (3 credits)** enough for the 5 CP control requirement?
+- [ ] **Oct 19:** one follow-up email to Chemnitz + RWU if still silent
 
-- [ ] B2 course content (DW)
-- [ ] IELTS foundation study (Listening, Reading, Writing Task 2 practice)
-- [ ] Linux command line mastery (course + WSL2 + VMs)
-- [ ] **PORTFOLIO PROJECT 3**: ESP32 IoT Device
-  - WiFi + MQTT + BMP280 + cloud dashboard
-  - AI-accelerated: generate 60% boilerplate, YOU verify 100%
-  - GitHub with full documentation
+#### November 2026 — Phase 0 (weeks 5–8)
+- [ ] 🪔 Diwali week (Nov 8) = buffer
+- [ ] C: K.N. King Ch 9–12 (functions, multi-file, **pointers**)
+- [ ] Electronics: capacitors, RC filter, diode, transistor switch
+- [ ] **Nov 29 — Restart review** (pass criteria in `18`). Pass → Phase 1. Fail → run another 8 weeks at the same size
 
-### June 2027 (Phase 4 — Linux Embedded + IELTS)
+#### December 2026 — Phase 1 (finish C)
+- [ ] K.N. King Ch 13–17: strings, preprocessor, **structs/unions/enums**, advanced pointers (linked lists)
+- [ ] FastBit *Embedded C* (owned) — the sections matching each chapter, at 1.5×
+- [ ] Electronics: **op-amps** — TI Precision Labs (first modules)
+- [ ] Hand-written: circular buffer, linked list, bit macros (`SET/CLEAR/TOGGLE/READ_BIT`)
 
-- [ ] B2 grammar + writing
-- [ ] IELTS: intensive Writing + Speaking practice
-- [ ] Cross-compilation basics
-- [ ] Shell scripting (bash)
-- [ ] Linux device drivers (LDD3 book — first 3 chapters)
+#### January 2027 — Phase 1 (C exit)
+- [ ] K.N. King Ch 18–20: declarations, program structure, **bitwise / low-level / `volatile`**
+- [ ] Makefiles + GDB (content from `12C_JULY_WEEK3.md`)
+- [ ] State machine with function-pointer dispatch (Miro Samek's free YouTube course for concepts)
+- [ ] **Start German:** DW *Nicos Weg* A1 on the commute
+- [ ] **Jan 31 — Phase 1 exit test** (5 tests from `13D_AUGUST_WEEK4.md`, from memory)
 
-### July 2027 (Phase 4 → Phase 5 — IELTS + VHDL Start)
+### 2027
 
-- [ ] B2 speaking practice (italki starts — 1 session/week)
-- [ ] IELTS: mock tests every weekend
-- [ ] Start VHDL/Verilog basics
-- [ ] **Deload Week 5**: Last week of July — mid-year recharge
-- [ ] Bond expires October 2027 — prepare resignation letter mentally
+#### February 2027 — Phase 2 (ARM Cortex-M)
+- [ ] Udemy **ARM Cortex-M3/M4 Programming** (FastBit) — memory map, NVIC, exceptions, startup
+- [ ] STM32 setup: CubeIDE, ST-Link, first blink **HAL + register level**
+- [ ] *Practical electronics bridge* hands-on (`15_FUNDAMENTALS_BRIDGE.md`) before wiring boards
 
-### August 2027 (Phase 5 — VHDL + IELTS Intensive)
+#### March–April 2027 — Phase 2 (drivers)
+- [ ] FastBit **MCU1** (owned): GPIO, interrupts, UART, I²C, SPI — register-level drivers
+- [ ] **Portfolio Project 1 → GitHub:** `stm32-baremetal-drivers` (GPIO/UART/I²C/SPI, README + logic-analyzer captures)
+- [ ] **April:** free IELTS practice test (British Council) → honest baseline → switch from English Master Course to the **IELTS Band 7+** course
 
-- [ ] B2 solidification — reading + writing + speaking
-- [ ] IELTS: final intensive prep (2 full mock tests/week)
-- [ ] VHDL: counter, FSM, ALU designs and simulation
-- [ ] **APPLY FOR APS CERTIFICATE** on aps-india.de (apply now for buffer)
-  - Documents: Class 10/12 marksheets, all 8 semester marksheets, degree cert, passport
-  - Link DigiLocker for faster processing
-- [ ] **PHASE 5 STARTS: August 10**
+#### May 2027 — Phase 2 (ADC + DMA)
+- [ ] Udemy **DMA Programming Demystified** + ADC on STM32
+- [ ] Buy for the ECG prototype: AD8232 module + electrodes (~₹1,000)
+- [ ] Startup Rung-0: start the **Design History File** (1 page per prototype)
 
-### September 2027 (Phase 5 — VHDL Portfolio + IELTS Final)
+#### June 2027 — Phase 3 (ECG prototype)
+- [ ] **Portfolio Project 2:** AD8232 → STM32 ADC + DMA → UART → live plot of your own ECG
+- [ ] Udemy **DSP From Ground Up on ARM** — first half (FIR/IIR, CMSIS-DSP)
+- [ ] **Apply for APS** (aps-india.de) — needs degree certificate + **corrected** first-year memo + all memos
+- [ ] Book the **Goethe A1** exam (Goethe-Zentrum Hyderabad) for July
 
-- [ ] B2 exam preparation materials (Goethe B2 mock tests)
-- [ ] IELTS: final mock tests + weak area focus
-- [ ] Complete VHDL project + GitHub documentation
-- [ ] APS certificate — should arrive by now (applied Aug, ~3–4 weeks processing)
-- [ ] Shortlist final 6 universities
+#### July 2027 — Phase 3 (ECG prototype done)
+- [ ] On-chip filtering: 50 Hz notch + baseline high-pass → heart rate from R-R intervals
+- [ ] Project 2 README: block diagram, plots before/after filtering, what failed
+- [ ] **Goethe-Zertifikat A1** exam
+- [ ] Book IELTS for **early October**
 
-### October 2027 (IELTS EXAM + BOND EXPIRES + RESIGN)
+#### August–September 2027 — IELTS INTENSIVE
+- [ ] **IELTS first:** 1 full mock every weekend, 3–4 hand-written essays/week, daily speaking recording
+- [ ] Embedded on maintenance: 1 h/week (tidy GitHub, write READMEs)
+- [ ] German: commute audio only
+- [ ] APS certificate should arrive — follow up if not
+- [ ] Shortlist final universities (see `01_UNIVERSITIES.md` → "Application plan")
 
-- [ ] **TAKE IELTS EXAM** — target 7.0
-- [ ] **BOND PERIOD EXPIRES ~October 2027**
-- [ ] **SUBMIT RESIGNATION** at Unistring — 3-month notice starts
-- [ ] Continue B2 study
-- [ ] **Deload Week 6**: Last week of October — post-IELTS recovery + resignation week
-- [ ] Shortlist final 6 universities confirmed
+#### October 2027 — BOND ENDS · IELTS
+- [ ] **1 Oct: bond ends** (+leave days) → **submit resignation** → notice runs to ≈ **1 Jan 2028**
+- [ ] Ask HR for an **experience/service certificate** now (needed for applications before you leave)
+- [ ] **IELTS exam** (early Oct). Below 7.0 → retake in November
+- [ ] uni-assist: create account; the **Bremerhaven Summer 2028** round opens ~mid/late October
+- [ ] Draft motivation letter + Europass CV (`05_APPLICATION_DOCS.md`)
 
-### November 2027 (Phase 5 — Applications Start)
-
-- [ ] Receive IELTS score — retake in Dec if below 6.5
-- [ ] APS certificate confirmed in hand
-- [ ] Start writing motivation letter drafts (use AI workflow)
-- [ ] Create Europass CV
-- [ ] **Take Goethe A1/A2 exam** (certified proof for Bremerhaven A1 requirement)
-- [ ] Notice period: month 2 of 3
-
-### December 2027 (Phase 5 — Bremerhaven Application)
-
-- [ ] APS certificate in hand
-- [ ] **SUBMIT BREMERHAVEN APPLICATION** (Summer 2028 backup, deadline Dec 31)
-- [ ] Customize motivation letters for each university
+#### November 2027 — Phase 4 + Applications Wave 1
+- [ ] **Submit Bremerhaven via uni-assist** (aim Nov 30; hard deadline Dec 31)
+- [ ] **Email TUHH** again (they asked you to write in November 2027)
+- [ ] Udemy **Mastering RTOS (FreeRTOS)** → port Project 2 to FreeRTOS tasks
+- [ ] Udemy **OrCAD/Allegro** — start; design the ECG board schematic
 - [ ] IELTS retake if needed
-- [ ] **Apply for education loan pre-approval** (SBI/HDFC Credila)
-- [ ] B2 practice continues
-- [ ] Notice period: month 3 of 3 → **last working day ~January 2028**
+
+#### December 2027 — Applications Wave 1
+- [ ] **Darmstadt (IMSEIT)** portal opens → apply (own portal, no uni-assist)
+- [ ] **TUHH** application window opens (1 Dec – 1 Mar)
+- [ ] Optional: FH Westküste Microelectronic Systems (summer intake, 1 Dec – 15 Jan)
+- [ ] **31 Dec — Bremerhaven deadline** (should already be submitted)
+- [ ] Loan research (SBI Scholar / HDFC Credila) — only if family funding needs a backup
+
+### 2028
+
+#### January 2028 — FREE (last working day ≈ 1 Jan)
+- [ ] Collect **relieving letter + experience certificate** (and an Arbeitszeugnis-style reference if HR will write one)
+- [ ] **Dortmund Pre-Check** portal opens mid-January → upload documents (precheck.go-study-europe.de)
+- [ ] **TH Lübeck Biomedical Engineering** — non-EU window 1 Jan – 1 May
+- [ ] Full-time portfolio: **Project 3 = custom PCB** (OrCAD → order from a PCB fab) running FreeRTOS firmware
+- [ ] Udemy **MCU2** (owned): timers, PWM, low power
+
+#### February 2028 — Bremerhaven decision window
+- [ ] **If Bremerhaven admits you:** open blocked account (€11,904 in 2026 — check the current amount), health insurance, **VFS visa appointment immediately**
+- [ ] Otherwise: continue Project 3; German A2 (Nicos Weg)
+
+#### March 2028
+- [ ] **If Bremerhaven + visa:** fly ~mid-March, semester starts April 🎓
+- [ ] Otherwise: Project 3 done; start **Project 4** (wearable: IMU + EMG/ECG + BLE via Nordic DevAcademy — the tremor-wearable direction from `Startup/11`)
+
+#### April–July 2028 — Applications Wave 3 (Winter 2028)
+| Deadline | University |
+|:---|:---|
+| 15 Apr | RWU Ravensburg-Weingarten (€1,500/sem) |
+| 1 Apr – 15 Jun | **FH Dortmund** (needs Pre-Check code) |
+| 1 May | **TH Lübeck BME** (non-EU) |
+| 31 May | FAU Erlangen Medical Engineering (Medical Robotics track) |
+| 15 Jul | **HAW Hamburg** (Microelectronic Systems / Biomedical Eng.), **TU Chemnitz**, **TH Deggendorf** |
+- [ ] Udemy **ISO 14971** (medical device risk management) — useful for interviews and the thesis
+- [ ] German A2 → Goethe A2 exam (Deggendorf needs A2 within 2 semesters; helps everywhere)
+
+#### August–September 2028
+- [ ] Accept the best offer → blocked account → health insurance → **visa** (allow 6–10 weeks) → flight → housing
+
+#### October 2028
+- [ ] 🎓 **START WINTER SEMESTER 2028**
 
 ---
 
-## 2028
+## IF THINGS SLIP (decided in advance)
 
-### January 2028 (FREE — Last Working Day + Applications)
-
-- [ ] Submit remaining Summer 2028 applications (deadline ~Jan 15) — backup only
-- [ ] **LAST WORKING DAY at Unistring** (~January 2028) — 3-month notice complete
-- [ ] Get experience certificate + relieving letter + **Arbeitszeugnis** from Unistring
-- [ ] **Take Goethe B2 exam** (or TestDaF if targeting Fulda)
-- [ ] Apply for education loan formally (admission letter expected soon)
-- [ ] Post-grad experience: Jul 2026 → Jan 2028 = ~18 months
-- [ ] **Deload Week 7**: Last week of January — celebrate freedom, mental reset
-
-### February 2028 (FREE — Winter 2028 Prep)
-
-- [ ] Begin Winter 2028 application document preparation
-- [ ] Summer 2028 admission results may start arriving
-- [ ] German B2 immersion (daily practice, no time pressure now)
-- [ ] GitHub portfolio final polish
-- [ ] Education loan paperwork
-
-### March 2028 (FREE — Applications)
-
-- [ ] Prepare all Winter 2028 application documents
-- [ ] Finalize motivation letters for each university
-- [ ] Portfolio polish done
-- [ ] Education loan processing
-
-### April 2028 (FREE — Applications)
-
-- [ ] **Submit RWU application** (Winter 2028, deadline Apr 15)
-- [ ] **Email Dortmund pre-check**: Send merged PDF to service-esm@fh-dortmund.de
-- [ ] Post-grad experience: Jul 2026 → Apr 2028 = ~21 months
-- [ ] **Deload Week 8**: Last week of April — mid-free-period recharge
-
-### May–June 2028 (FREE — Winter 2028 Applications)
-
-- [ ] **Submit Winter 2028 applications** to Dortmund, FH Westküste, HAW Hamburg, etc.
-- [ ] Open blocked account (Expatrio or Fintiba)
-- [ ] Deposit €11,904 into blocked account
-- [ ] Get health insurance (incoming student plan)
-- [ ] German immersion — daily B2 practice + refresher
-- [ ] Final GitHub portfolio polish
-- [ ] Post-grad experience by Jun 2028: ~24 months ✅
-
-### July 2028 (Waiting for Decisions)
-
-- [ ] Winter 2028 applications deadline (Jul 15 for most)
-- [ ] Admission decisions arrive (Jul–Aug)
-- [ ] Book VFS German visa appointment
-- [ ] Post-grad experience by Oct 2028: ~27 months ✅
-
-### August 2028
-
-- [ ] Accept admission offer
-- [ ] **Attend visa appointment** at VFS Global India with all documents
-
-### September 2028
-
-- [ ] Receive student visa
-- [ ] Book flight to Germany
-- [ ] Arrange student accommodation (WG / Studentenwohnheim)
-- [ ] Pack and prepare
-
-### October 2028
-
-- [ ] **FLY TO GERMANY**
-- [ ] **START WINTER SEMESTER 2028**
-- [ ] Register at Ausländerbehörde (foreigners' office)
-- [ ] Activate blocked account
-- [ ] Register with health insurance
-- [ ] Begin new chapter
+| Slip | What happens |
+|:---|:---|
+| Restart review fails (Nov 29) | Repeat 8 weeks at the same size. Everything after shifts ~2 months; Bremerhaven April 2028 likely drops, **Winter 2028 is still fine** |
+| IELTS < 7.0 in Oct | Retake Nov. Most targets need only 6.0–6.5; 7.0 is the comfort target |
+| IELTS not done by Dec 2027 | Skip Bremerhaven 2028 → apply Bremerhaven **April 2029** + Winter 2028 elsewhere |
+| Projects behind schedule | Apply with what exists — 1 solid, documented project beats 3 half-done ones |
+| No admission for Winter 2028 | Bremerhaven **April 2029** (deadline 31 Dec 2028) + Winter 2029 round, with a stronger portfolio |
+| Visa late for Bremerhaven | Defer to Winter 2028 offers already in hand |
 
 ---
 
-## CRITICAL DEADLINES SUMMARY
+## WHAT EACH FILE IS FOR NOW
 
-| Deadline | Action | Date |
-|:---|:---|:---|
-| **PASSPORT** | Valid till 2032 | No action needed |
-| **PHASE 1 STARTS** | C Programming — K.N. King | **June 9, 2026** |
-| **PHASE 2 STARTS** | STM32 — GPIO, UART | **August 25, 2026** |
-| **APS CERTIFICATE** | Apply on aps-india.de | **August 2027** |
-| **IELTS EXAM** | Target 7.0 | **October 2027** |
-| **BOND EXPIRES** | ~2-year bond from Aug 2025 | **~October 2027** |
-| **RESIGNATION** | Submit at bond expiry | **October 2027** |
-| **GOETHE A1/A2** | For Bremerhaven proof | **November 2027** |
-| **BREMERHAVEN APP** | Summer 2028 (non-EU deadline) | **December 31, 2027** |
-| **LAST WORKING DAY** | 3-month notice complete | **~January 2028** |
-| **GOETHE B2** | Or TestDaF for Fulda | **January 2028** |
-| **RWU APPLICATION** | Winter 2028 | **April 15, 2028** |
-| **BLOCKED ACCOUNT** | Deposit €11,904 | **June 2028** |
-| **OTHER WINTER APPS** | Dortmund, FH Westküste etc. | **July 15, 2028** |
-| **VISA APPOINTMENT** | VFS Global India | **August 2028** |
-| **FLY TO GERMANY** | Start new life | **October 2028** |
+| File | Use |
+|:---|:---|
+| **`07_MONTHLY_TIMELINE.md`** (this) | **The plan.** Month-by-month |
+| `18_RESTART_8_WEEKS.md` | The current 8 weeks, in detail |
+| `PROGRESS.md` | Weekly honesty log + checkpoints |
+| `00_MASTER_ROADMAP.md` | Profile, risks, money, contingencies |
+| `01_UNIVERSITIES.md` | Target list + application plan |
+| `03_GERMAN_LANGUAGE.md` · `04_IELTS_PREP.md` · `05_APPLICATION_DOCS.md` | Language + paperwork detail |
+| `06_EMBEDDED_LEARNING.md` · `10_RESOURCES.md` | What to learn, from which course/book |
+| `16_UNIVERSITY_ENQUIRY_EMAILS.md` · `17_GLOBAL_MASTERS_OPTIONS.md` | University replies + global options |
+| `09_ULTIMATE_STUDY_PLAN.md`, `10A–13E` weekly files | **Topic content only** — their dates are from the never-executed June 2026 plan |
+| `Startup/` | Long-term medical-device company plan — its Rung-0 prototypes **are** your portfolio projects |

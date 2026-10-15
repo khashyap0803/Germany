@@ -1,5 +1,8 @@
 # MAY 2026 — ARCHIVED (NOT STARTED)
 
+> 🗂️ **REVIEW OCT 2026 — CONTENT REFERENCE ONLY.** The dates in this file belong to the June–August 2026 plan, which was never executed. Use it for **what to study and which programs to write**; follow the dates in `18_RESTART_8_WEEKS.md` (now) and `07_MONTHLY_TIMELINE.md` (overall). Chapter → new date: Ch 1–12 = Oct–Nov 2026 · Ch 13–20, Makefiles, GDB, data structures, state machines, exit tests = Dec 2026–Jan 2027 · STM32 week (13E) = Feb 2027.
+
+
 > **ARCHIVE NOTE**: May 2026 was never executed. The roadmap real start date is **June 9, 2026**.
 > This file is kept as a reference for the Phase 1 Week 1–5 content outline.
 > **Do NOT use these dates or this schedule.** See `11_JUNE_2026_DAILY_PLAN.md` for the actual start.

@@ -18,7 +18,22 @@
 
 ---
 
-## THE ONE-LINE VERSION (v3)
+## 🔄 OCT 2026 RECONCILIATION — the Germany master's comes first
+
+**Since v3 (Jul 2026), the direction changed:** the Germany master's is now active for **April or October 2028** (`../07_MONTHLY_TIMELINE.md`), not "delayed". BIRAC-BIG needs you full-time *in India* inside an Indian incubator, so the original "bond ends → incorporate → grants in 2028" step can't happen while you study in Germany. The company plan is **not dropped — it's re-sequenced**, and the two plans now feed each other:
+
+| Period | Company plan | Same work in the Germany plan |
+|:---|:---|:---|
+| **2026–2027** (India, job) | Rung 0: prototypes 1–2 (**ECG**: AD8232 → STM32 ADC+DMA → DSP) · start the Design History File | **Portfolio Projects 1–2** for the applications |
+| **2028–2030** (master's) | Rung 0: prototypes 3–5 (EMG, IMU tremor wearable, BLE) in university labs · **clinical discovery through university hospital contacts** · thesis on a medical device · Werkstudent job at a medtech company (real ISO 13485 / IEC 60601 / IEC 62304 exposure) | Thesis + Projects 3–4 |
+| **~2030–2031** | **Rung 1 decision point:** start Device #1 in **India** (BIRAC/PRAYAS via a Hyderabad incubator — your sister graduates ~Jun 2030, father retires ~2031) **or in Germany** (university spin-off; Germany's **EXIST** start-up grant for graduates — check eligibility then) | — |
+| 2031+ | Rung 2 (Class C/D), unchanged | — |
+
+**Unchanged:** the red lines below, the Class-B-first ladder, the problem-selection gate (`13`), and the sister's track (`16`).
+
+---
+
+## THE ONE-LINE VERSION (v3 — timing updated by the reconciliation above)
 
 > Spend Year 1 becoming a real **biomedical-device engineer** (five biosignal learning prototypes, no selling) → use clinical discovery to lock ONE **novel neuro/wearable Class-B measurement device** → after the bond ends, get it **grant-funded** (Nidhi-PRAYAS → BIRAC-BIG) through a Hyderabad incubator, certify it (ISO 13485 / IEC 60601 / CDSCO) and sell it → that earns the QMS, track record, clinical partners and capital that make the **Class C/D neuro dream** actually reachable. Germany (an embedded-**biomedical** masters, e.g. Bremerhaven) is delayed — and now *serves* this path instead of competing with it.
 
@@ -28,8 +43,8 @@
 
 | Rung | What | When | Money | Risk |
 |:---|:---|:---|:---|:---|
-| **Rung 0 — Learning prototypes** | 5 uncertified biosignal builds (ECG → PPG → EMG → EEG → multimodal wearable). Never sold, never on a patient. | Now → ~mid-2027 | **Family ≤ ₹1–3L** | Low — it's learning |
-| **Rung 1 — Device #1: a novel Class B** | ONE neuro/wearable **measurement/screening** device, chosen from a *validated clinical need*. Grant-funded, certified, sold. | ~2028–2031 | **Grants + investors** | Medium |
+| **Rung 0 — Learning prototypes** | 5 uncertified biosignal builds (ECG → PPG → EMG → EEG → multimodal wearable). Never sold, never on a patient. | ECG: May–Jul 2027 · the rest during the master's (2028–2030) | **Family ≤ ₹1–3L** | Low — it's learning |
+| **Rung 1 — Device #1: a novel Class B** | ONE neuro/wearable **measurement/screening** device, chosen from a *validated clinical need*. Grant-funded, certified, sold. | Decision ~2030–2031, after the master's | **Grants + investors** | Medium |
 | **Rung 2 — Device #2+: Class C/D** | The neuro dream (higher-risk device). Separate entity. Reachable *because* Rung 1 earned the QMS + track record + clinical partners + capital. | 2031+ | VC | High |
 
 **Why measurement/screening first:** a wrong reading = a re-test, not a death → keeps Device #1 **Class B** (affordable to certify) and satisfies your father's "no/very-less failure" bar. Life-support/implants wait for Rung 2.
@@ -49,7 +64,7 @@
 
 | Deadline | Date (approx.) | Meaning under v3 |
 |:---|:---|:---|
-| **Bond end** | **1 Oct 2027** (confirmed by HR, Oct 2026) | Extended **1 day for every leave day taken** (not 3× as previously assumed). Each leave day = 1 day later. Gate to quit-job / full-time / BIRAC-BIG. Until then: after-hours only. |
+| **Bond end** | **1 Oct 2027** (confirmed by HR, Oct 2026) | Extended **1 day for every leave day taken** (not 3× as previously assumed). Each leave day = 1 day later. Then resign (3-month notice → free ≈ Jan 2028) → Germany master's (Apr or Oct 2028). BIRAC-BIG moves to after the master's. |
 | **Father's retirement** | ~2031 | Father's ₹1,50,000/month → ₹0. **No longer a survival cliff** (house backstops the loan) — but by design, Device #1 should be launching around then, so the family's *upside* arrives as his salary ends. |
 
 > The old "north-star = replace ₹1.7L/month by 2031" target is **retired in v3.** Survival is handled by the house backstop; the goal is now the *device*, not an income-replacement number.
@@ -67,9 +82,9 @@
 
 ---
 
-## HOW GERMANY FITS (v3 — now aligned, not competing)
+## HOW GERMANY FITS (updated Oct 2026 — Germany is now the active next step)
 
-Delayed, not dead — and **repurposed**. Khashyap's plan: a Germany masters in **Embedded Systems** with a **biomedical/medical-device** subdomain, building a patient-grade device as the thesis. Verified: **Hochschule Bremerhaven's M.Sc. Embedded Systems Design** explicitly targets the industrial-scientific-**medical** (ISM) device market with medical-device application modules + lab project work — and doing thesis/HiWi work in another department's lab is normal in Germany, so the biomed-lab access he wants is realistic. The firmware track (C → STM32 → RTOS) is simultaneously device-skill AND masters prep. When Germany revives, re-rank universities toward medtech clusters (Erlangen — Medical Valley, Lübeck — Dräger) alongside Bremerhaven.
+Active for 2028 — and **repurposed** for medical devices. Khashyap's plan: a Germany masters in **Embedded Systems** with a **biomedical/medical-device** subdomain, building a patient-grade device as the thesis. Verified: **Hochschule Bremerhaven's M.Sc. Embedded Systems Design** explicitly targets the industrial-scientific-**medical** (ISM) device market with medical-device application modules + lab project work — and doing thesis/HiWi work in another department's lab is normal in Germany, so the biomed-lab access he wants is realistic. The firmware track (C → STM32 → RTOS) is simultaneously device-skill AND masters prep. The final list (Oct 2026) already includes medtech-cluster programs — TH Lübeck BME (Dräger), HAW Hamburg, FAU Erlangen — alongside Bremerhaven, Darmstadt and Dortmund (`../01_UNIVERSITIES.md`).
 
 ---
 

@@ -1,5 +1,8 @@
 # AUGUST WEEK 2 (Aug 4–10) — Phase 1 Week 9: CAPSTONE PROJECT
 
+> 🗂️ **REVIEW OCT 2026 — CONTENT REFERENCE ONLY.** The dates in this file belong to the June–August 2026 plan, which was never executed. Use it for **what to study and which programs to write**; follow the dates in `18_RESTART_8_WEEKS.md` (now) and `07_MONTHLY_TIMELINE.md` (overall). Chapter → new date: Ch 1–12 = Oct–Nov 2026 · Ch 13–20, Makefiles, GDB, data structures, state machines, exit tests = Dec 2026–Jan 2027 · STM32 week (13E) = Feb 2027.
+
+
 > **Topics**: Full embedded system simulator in C — combines state machine, circular buffer, linked list, file I/O, Makefile, multi-file architecture, bit macros, logger, dynamic memory
 > **K.N. King Reading**: Chapter 17 review (linked lists) + Chapter 22 (I/O review)
 > **K&R Bed Reading**: Chapter 5 revisit (Pointers) — re-read as experienced programmer

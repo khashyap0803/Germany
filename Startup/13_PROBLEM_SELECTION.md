@@ -1,7 +1,7 @@
 # 🎯 PROBLEM SELECTION (v3 — how to pick THE device, and the best candidates)
 
 > Your honest starting point (your words, Jul 9 2026): *"I don't have any specific device in mind — it's ambition."* That is **normal and fine.** Devices don't start from a device idea; they start from a **validated clinical need.** This file turns "I want to build neuro wearables" into "I am building *this specific thing* because *this specific person* needs it."
-> **The rule:** you do NOT lock the device now. You lock it at the end of Phase-1 discovery (~2027), using the scorecard below. Everything before that is learning + looking.
+> **The rule:** you do NOT lock the device now. You lock it at the end of Phase-1 discovery (**2028–2030, during the master's in Germany** — university hospitals make clinical access much easier than in India today), using the scorecard below. Everything before that is learning + looking.
 
 ---
 
@@ -23,7 +23,7 @@ Your father set the bar (Jul 9): **high quality · no/very-less failure · reall
 
 ---
 
-## HOW TO ACTUALLY PICK IT — the discovery method (Phase 1, ~2027)
+## HOW TO ACTUALLY PICK IT — the discovery method (Phase 1, 2028–2030)
 
 This is your **hardest gap**: you have no clinical network, and your father can't open clinical doors (pharma ≠ clinics). Here's how a person with zero network still finds a real problem in Hyderabad:
 

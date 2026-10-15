@@ -1,5 +1,8 @@
 # ULTIMATE STUDY PLAN — Phase-by-Phase Detailed Schedule
 
+> 🗂️ **REVIEW OCT 2026 — SUPERSEDED AS A SCHEDULE.** This was the June 2026 plan (22 h/week, start Jun 9). It never ran. The live plan is **`07_MONTHLY_TIMELINE.md`**. Still useful here: the per-topic content, the STM32 peripheral pipeline (HAL → register → reference manual → GDB), and the FreeRTOS week list. Changed since: German target is A1→A2 (not B2); VHDL, Zephyr, Linux drivers and CAN are optional; biosignals (ADC+DMA+DSP) and PCB are core; IELTS exam early Oct 2027; bond ends 1 Oct 2027.
+
+
 > **Real Start Date**: June 9, 2026
 > **Target**: Winter 2028 Germany Admission + Embedded Systems Mastery
 > **Strategy**: Type 3 "AI Supervisor Engineer" — learn manually first, then AI-accelerate

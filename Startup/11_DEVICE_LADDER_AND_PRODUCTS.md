@@ -64,10 +64,12 @@ These are **not products**. They are how you go from "embedded engineer" to "bio
 
 > These map 1:1 to your existing firmware track (C → STM32 → RTOS) — that track doesn't change, it just gets a **biosignal payload**. See `12`.
 
-### ▶️ START HERE — FIRST 30 DAYS (so this is actionable Monday, not "someday")
+### ▶️ THE FIRST ECG PROTOTYPE — 4 weeks
+
+> **Timing (Oct 2026 review):** this runs **May–July 2027**, after C (Jan 2027) and STM32 basics (Feb–Apr 2027) — see `../07_MONTHLY_TIMELINE.md`. It doubles as **Portfolio Project 2** for the Germany applications. Don't start it before the ADC + DMA course.
 
 **Buy only for Prototype 1 (~₹2–4k — do NOT bulk-buy all 5 kits yet):**
-- STM32 dev board — you likely already have one from FastBit (Nucleo / "Blue Pill"). ₹0 if so.
+- STM32 dev board — **already owned** (STM32F411 Black Pill + Nucleo-L476RG). ₹0.
 - **AD8232 ECG module** (~₹400–600) + snap ECG electrodes & leads (~₹200)
 - Breadboard + jumper wires (~₹200); optional cheap USB logic analyzer (~₹500) for SPI/I²C debugging later
 

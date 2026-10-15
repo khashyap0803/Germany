@@ -1,192 +1,57 @@
-# 🏫 TARGET UNIVERSITIES — Complete List
+# 🏫 TARGET UNIVERSITIES — final list & application plan
 
-## TIER 1: HIGHEST PRIORITY (Apply to ALL)
-
-### 1. FH Dortmund — M.Eng. Embedded Systems Engineering
-| Field | Detail |
-|:---|:---|
-| Language | **English** |
-| Tuition | **FREE** (~€300/sem contribution) |
-| State | North Rhine-Westphalia |
-| Grade Required | 2.5 German → You: ≈2.28 ✅ |
-| ECTS | 180 minimum |
-| IELTS/TOEFL | 6.5 / 90 iBT |
-| Intake | **Winter (October)** |
-| Deadline | ~July 15 for international |
-| Pre-check | Email docs to service-esm@fh-dortmund.de |
-| Website | fh-dortmund.de |
-| **Fit Score** | ⭐⭐⭐⭐⭐ |
-
-### 2. HS Bremerhaven — M.Sc. Embedded Systems Design
-| Field | Detail |
-|:---|:---|
-| Language | **English** |
-| Tuition | **FREE** (~€300/sem) |
-| State | Bremen |
-| Grade Required | 2.3 → OR **2.6 with 2yr experience** → You: ≈2.28 ✅ (just) |
-| ECTS | 210 preferred |
-| IELTS | B2 (~6.0-6.5) |
-| **German Required** | **A1 level mandatory** |
-| Intake | **Summer (April)** — non-EU deadline: Dec 31 |
-| Apply via | uni-assist |
-| Website | hs-bremerhaven.de |
-| **Fit Score** | ⭐⭐⭐⭐⭐ (BEST with your 2yr experience) |
-
-### 3. RWU Ravensburg-Weingarten — M.Eng. EE & Embedded Systems
-| Field | Detail |
-|:---|:---|
-| Language | **English** |
-| Tuition | ⚠️ **€1,500/sem** (Baden-Württemberg non-EU fee) |
-| Grade Required | 2.5 → You: ≈2.28 ✅ |
-| ECTS | 210 (may need extra modules for 180) |
-| IELTS/TOEFL | 6.0 / 70 iBT |
-| Prerequisites | **VHDL/Verilog + OOP (C++/Java)** knowledge required |
-| ⚠️ ECTS | **210 required** — your B.E. ECE (CBIT) is likely ~180 ECTS. May need bridging modules (+1-2 semesters). **Risk factor.** |
-| Intake | **Winter** — deadline April 15 |
-| Website | rwu.de |
-| **Fit Score** | ⭐⭐⭐⭐ (lower IELTS req, but BW tuition + ECTS gap risk) |
-
-### 4. FH Westküste + HAW Hamburg — M.Sc. Microelectronic Systems
-| Field | Detail |
-|:---|:---|
-| Language | **English** |
-| Tuition | **FREE** (~€350/sem) |
-| State | Schleswig-Holstein / Hamburg |
-| ECTS | 210 |
-| IELTS | B2 level |
-| Intake | Summer (FH Westküste, Nov-Jan) / Winter (HAW Hamburg) |
-| Website | fh-westkueste.de |
-| **Fit Score** | ⭐⭐⭐⭐ |
+> **Rebuilt**: October 15, 2026, from official program pages (checked Oct 5, 2026) and the replies to your enquiry emails (`16_UNIVERSITY_ENQUIRY_EMAILS.md`). Medtech-cluster and non-German options: `17_GLOBAL_MASTERS_OPTIONS.md`.
+> **Your numbers:** CGPA 7.87 → German ≈ **2.28** · 15 failed-then-passed exams · B.E. ECE (8 semesters, ~160 Indian credits) · ~2 years' work by 2028.
+> ⚠️ Requirements and deadlines change yearly — **re-check every program page before you pay a fee.**
 
 ---
 
-## TIER 2: ADDITIONAL OPTIONS
+## THE APPLICATION PLAN AT A GLANCE
 
-### 5. HS Fulda — M.Eng. Embedded Systems
-| Field | Detail |
+| # | University — Program | Intake | Apply | Fee/sem | Backlogs | Notes |
+|:--|:---|:---|:---|:---|:---|:---|
+| ⭐1 | **HS Bremerhaven — M.Sc. Embedded Systems Design** | **Summer only (April 2028)** | **uni-assist, by 31 Dec 2027** (round opens ~mid/late Oct 2027) | €438, no tuition | ✅ **"no bearing"** (written) | Grade ≤2.3 ✅ (2.28) · A1 German required · subject credits ✅ except **Control 5 CP — borderline**, ask · medical devices named as an application area |
+| ⭐2 | **h_da Darmstadt — M.Sc. EE&IT (International), Embedded & Microelectronics** | Winter (Oct 2028) | **Own portal, opens Dec 2027** — no uni-assist | €401 | ✅ **"No"** (written) | 1,500+ applicants · wants C/C++, 32-bit MCUs, systems engineering, hardware design · year 2 = internship + thesis in industry |
+| ⭐3 | **FH Dortmund — M.Eng. Embedded Systems Engineering** | Winter | **Pre-Check** from mid-Jan 2028 (precheck.go-study-europe.de) → apply **1 Apr – 15 Jun 2028** | ~€325 | Decided in Pre-Check | Grade 2.5 ✅ · needs software eng., control, signal processing, systems eng. in your degree (**Software Engineering gap**) · emails unanswered while admissions are closed |
+| ⭐4 | **TH Lübeck — M.Sc. Biomedical Engineering** | Winter | Non-EU **1 Jan – 1 May 2028** | Free | Ask | Next to **Dräger** · accepts Electrical/Electronics bachelors |
+| ⭐5 | **HAW Hamburg — M.Sc. Microelectronic Systems** *(or M.Sc. Biomedical Engineering)* | Winter at HAW / Summer at FH Westküste | Winter: VPD → **1 Jun – 15 Jul 2028** · Summer (FH Westküste): 1 Dec – 15 Jan | ~€375 | Not answered | Hamburg medtech cluster (Philips, Olympus) |
+| 6 | **TU Chemnitz — M.Sc. Embedded Systems** | Winter | uni-assist ~Apr – **15 Jul 2028** | ~€296 | No reply | German **A1** required · expects op-amps, signal processing, MCUs, C/C++ |
+| 7 | **TH Deggendorf — M.Sc. EE&IT** | Winter | **15 Apr – 15 Jul 2028** | **€582** (incl. €500 non-EU service fee) + €60 application | Ask in an **online consultation session** | Assessment test · A2 German within 2 semesters |
+| R | **TU Hamburg — M.Sc. Microelectronics & Microsystems** | Winter | **1 Dec 2027 – 1 Mar 2028** (pre-check) | ~€350 | "Contact us again **Nov 2027**" | Wants "very good" grades — reach |
+| R | **FAU Erlangen — M.Sc. Medical Engineering (Medical Robotics, English)** | Winter | **31 May 2028** | Free | Ask | Grade ≤2.5 ✅ · online admission test · *Medical Electronics* track is German-only · next to Siemens Healthineers |
+| R | **RWU Ravensburg-Weingarten — M.Eng. EE & Embedded Systems** | Winter (Sept) | **15 Apr 2028** | **€1,500 tuition** + fees | No reply | 210 ECTS · VHDL + OOP expected · 30 seats |
+| ✗ | University of Freiburg — Embedded Systems Eng. | — | — | — | ❌ | **Dropped:** "CGPA below 9/10 highly unlikely" |
+| ✗ | Saarland — Embedded Systems | — | — | — | Won't assess | Only if you take **GRE or GATE** anyway; "only the very best" |
+| ✗ | Paderborn — Electrical Systems Eng. | — | — | — | Won't assess | GRE required for non-EU |
+| ✗ | Frankfurt UAS (grade 1.8), RPTU (1.7), Schmalkalden (2.0), Duisburg-Essen (German B2) | — | — | — | — | Ruled out on requirements |
+
+**Plan:** apply to **Bremerhaven + Darmstadt + Dortmund + Lübeck + HAW Hamburg + Chemnitz + Deggendorf** (7 serious applications), plus 1–2 reaches if time/money allow.
+
+---
+
+## PER-UNIVERSITY ACTIONS (in date order)
+
+| When | Action |
 |:---|:---|
-| Language | ⚠️ **GERMAN-TAUGHT** (DSH-2 or TestDaF) |
-| Tuition | **FREE** |
-| Grade Required | 2.5 |
-| NC | **Non-NC (no cap!)** — meet criteria = guaranteed admission |
-| Intake | Winter + Summer |
-| **Fit Score** | ⭐⭐⭐ (only if you reach B2+ German by application time) |
-
-### 6. HS Esslingen — M.Eng. Automotive Systems
-| Field | Detail |
-|:---|:---|
-| Language | **English** |
-| Tuition | ⚠️ €1,500/sem (Baden-Württemberg) |
-| Focus | Automotive embedded + systems engineering |
-| German | A2 required by end of 2nd semester |
-| Website | hs-esslingen.de |
-| **Fit Score** | ⭐⭐⭐ (automotive focus, BW tuition) |
+| **Oct 2026** | Reply to Mr Lüders (Bremerhaven): is Control Systems (3 Indian credits) enough for the 5 CP control requirement? |
+| **Oct 19, 2026** | One follow-up to Chemnitz and RWU if still silent |
+| **2027** | Join a **TH Deggendorf online consultation session** and ask the backlog question |
+| **Oct 2027** | uni-assist account · Bremerhaven Summer 2028 round opens |
+| **Nov 2027** | **Submit Bremerhaven** · email **TUHH** again (reply to Sandra Steffens' thread) |
+| **Dec 2027** | **Darmstadt** portal · **TUHH** window opens · optional FH Westküste (summer) |
+| **31 Dec 2027** | Bremerhaven hard deadline |
+| **Jan 2028** | **Dortmund Pre-Check** · **Lübeck** window opens |
+| **Apr–Jul 2028** | RWU (15 Apr) · Dortmund (15 Jun) · Lübeck (1 May) · FAU (31 May) · HAW, Chemnitz, Deggendorf (15 Jul) |
 
 ---
 
-## TIER 3: NC-FREI / HIGH-ACCEPTANCE EXPANSION (the lever to ~90%)
-
-> **THIS IS HOW YOU GET FROM ~80% TO ~90%.** Studying harder alone tops out around 80-85% — your backlogs and ECTS gap are fixed structural risks. The way to push higher is **application strategy**: apply to MORE universities (target 10-12 total) and load up on **NC-frei (zulassungsfrei) programs**.
-
-### What "NC-frei" means and why it matters
-- **NC-frei / zulassungsfrei** = the program does NOT cap seats by a competitive grade cutoff.
-- If you meet the **formal entry requirements** (recognized degree, language, ECTS), you are **admitted** — no ranking against other applicants.
-- This converts "maybe they pick someone better than me" into "if I qualify, I'm in."
-- ⚠️ **Important caveat**: NC-frei removes the *competition* risk, NOT the *eligibility* risk. You must still clear the backlog/ECTS filter. So **email these too** before applying.
-
-### Expansion candidates to RESEARCH + EMAIL (verify everything — do not apply blind)
-> These are FHs/HS known for being accessible to international students and for offering English-taught or NC-frei EE/embedded/mechatronics master's. **Confirm current program name, language, NC status, ECTS requirement, backlog policy, and deadlines on each official site before applying.**
-
-| University | Why on this list | Verify |
-|:---|:---|:---|
-| **Hochschule Schmalkalden** | English-taught master's, very international-friendly, low barriers | Program list, ECTS req, backlog policy |
-| **Hochschule Anhalt** | Many English-taught programs, NC-frei reputation, tuition-free | Embedded/EE program availability, intake |
-| **Frankfurt UAS** (Frankfurt University of Applied Sciences) | English MSc options, large international cohort | Exact program, IELTS req |
-| **TH Deggendorf (DIT)** | English-taught, strong international support | EE/embedded/mechatronics program, deadline |
-| **TH Ingolstadt** | Embedded/automotive focus, English programs | Program, ECTS, fees |
-| **Hochschule Hamm-Lippstadt** | English programs, newer FH, accessible | Embedded/EE availability |
-
-### How to find MORE NC-frei programs yourself
-1. **hochschulkompass.de** (official German higher-ed portal) — filter: Master + subject (Elektrotechnik/Embedded) + look for **"Zulassungsmodus: zulassungsfrei"**
-2. **DAAD database** — daad.de/international-programmes — filter Master + English + Electrical/Embedded
-3. **study-in-germany.de** — official, filter tuition-free + English
-4. **mygermanuniversity.com** — filter tuition-free + English + FH
-5. For each hit: open the official program page → check language, ECTS requirement, NC status, and **email the international office your backlog question** before paying
-
-### Target application portfolio (for ~90%)
-- **2-3 "reach" with great fit**: FH Dortmund, HAW Hamburg (competitive but strong match)
-- **3-4 NC-frei / criteria-based**: HS Bremerhaven, HS Fulda (if German), + 2-3 from Tier 3
-- **3-4 expansion**: remaining Tier 3 candidates you've verified
-- **Total: 10-12 applications.** uni-assist makes batch applying cheaper (VPD reused across unis).
-- **Floor effect**: with 4-5 NC-frei programs where you meet criteria, your "at least one admission" probability rises toward 88-92%.
+## WHAT EVERY APPLICATION NEEDS (checklist in `05_APPLICATION_DOCS.md`)
+IELTS (6.5+, target 7.0) · APS certificate · degree certificate + **all** memos (corrected first-year memo) · Europass CV · motivation letter per university · experience certificate from Unistring · German A1 certificate (Bremerhaven, Chemnitz) · uni-assist VPD where required · GitHub portfolio link.
 
 ---
 
-## HONEST ADMISSION PROBABILITY (No Sugar Coating)
-
-> Assessed June 8, 2026. Based on: 15 backlogs (cleared; 14 credit + 1 non-credit), CGPA 7.87 (German ≈2.28), Unistring experience (documentation/analysis), portfolio in progress.
-
-| University | Honest Probability | Main Risk Factor |
-|:---|:---:|:---|
-| FH Dortmund | **50–60%** | Backlog policy UNKNOWN — email BEFORE applying |
-| HS Bremerhaven | **50–60%** | Experience boost uncertain (documentation ≠ engineering) |
-| RWU Ravensburg | **30–40%** | ECTS gap (180 vs 210) + €1,500/sem fee |
-| HAW Hamburg | **40–50%** | Backlog policy unknown |
-| HS Fulda | **35–45%** | German-taught (DSH-2) — risky unless B2 achieved |
-| HS Esslingen | **40–50%** | €1,500/sem + ECTS gap possible |
-
-**Overall: at least ONE admission from 6 applications = 65–72%** (if IELTS ≥ 7.0 + strong portfolio + pre-contact unis)
-
-**Overall with the Tier 3 strategy (10–12 applications incl. 4–5 NC-frei) = 88–92%.** This is the real path to "90%": not studying harder, but applying smarter. See the Tier 3 section above.
-
-**Even so, this is NOT a guaranteed 100%. Visa, finances, and document timing carry residual risk. But the academic admission itself becomes near-certain with enough NC-frei applications where you meet criteria. The backlogs remain the one thing to confirm by email first.**
-
-### What makes it work vs. what kills it
-
-**Works if**:
-- IELTS ≥ 7.0 (makes every application quality-tier)
-- 4 solid GitHub projects showing REAL embedded code (no AI-generated slop)
-- SOP frames backlogs as turning point + backed by portfolio evidence
-- You email universities in 2027 to pre-confirm backlog policy BEFORE spending money
-
-**Fails if**:
-- IELTS < 6.5 (cut at filter stage at multiple unis)
-- GitHub is empty or has obvious AI code
-- You hide or minimize backlogs (risk: automatic disqualification + platform ban)
-- You only apply to a handful of universities instead of 10-12 (skipping the NC-frei expansion = capping yourself at ~80%)
-
----
-
-## CRITICAL ACTION: EMAIL EVERY UNIVERSITY IN 2027
-
-> **This is the single most important action in the entire plan.**
-> Do NOT pay application fees until you have email confirmation of backlog policy.
-
-| University | Contact Email | What to Ask |
-|:---|:---|:---|
-| FH Dortmund | service-esm@fh-dortmund.de | "I have 15 cleared backlogs from Indian B.E. ECE. Is this acceptable for M.Eng. Embedded Systems?" |
-| HS Bremerhaven | studienberatung@hs-bremerhaven.de | "I have 15+ cleared backlogs. Will my 2yr engineering experience be counted for grade improvement?" |
-| RWU | studienbuero@rwu.de | "My B.E. ECE is ~180 ECTS. Do you require 210? Are bridging modules available?" |
-| HAW Hamburg | master-admissions@haw-hamburg.de | "I have 15 cleared backlogs from Indian B.E. ECE. What is your policy?" |
-
-**When to email**: Start emailing in **April 2027** (9 months before first application deadline).
-**What to include**: Your degree name, university name, CGPA, number of backlogs cleared.
-
----
-
-## APPLICATION STRATEGY
-
-1. **Apply to 10-12 universities** across different German states (6 core + Tier 3 NC-frei expansion). More qualified applications = higher "at least one admission" probability.
-2. **Primary #1**: FH Dortmund (180 ECTS OK, free tuition, strongest embedded program fit)
-3. **Primary #2**: HS Bremerhaven (NC-frei = if you meet criteria, guaranteed seat)
-4. **Secondary**: FH Westküste/HAW Hamburg
-5. **Caution**: RWU (ECTS gap risk — 180 vs their 210 requirement; also €1,500/sem BW fee)
-6. **Backup**: HS Fulda (if German B2+) + HS Esslingen
-7. **Use uni-assist** for most (centralized portal)
-8. **Pre-contact all unis April 2027**: Email backlog policy question BEFORE paying fees
-9. **Search DAAD database**: filter Master + English + Embedded/Electrical
-10. **Search mygermanuniversity.com**: filter by tuition-free + English + FH
-
-> **Prioritize FH Dortmund and HS Bremerhaven** as top two.
-> Dortmund: 180 ECTS OK, free tuition, English, strong embedded program.
-> Bremerhaven: NC-frei (no competition — meet criteria = admitted), experience boost possible.
+## WHY THIS LIST (and not the old one)
+- **Kept:** the programs where backlogs are confirmed OK (Bremerhaven, Darmstadt) or decided fairly in a pre-check (Dortmund), plus medtech-city programs (Lübeck, HAW Hamburg) that fit the medical-device goal.
+- **Dropped:** HS Fulda (German-taught, needs C1/DSH-2) and HS Esslingen (automotive, BW fees) — off your direction. Freiburg, Saarland, Paderborn — see table.
+- **Bremerhaven correction:** it is a **summer-intake** program (April), not winter. That gives you **two shots in 2028**: April (Bremerhaven) and October (everyone else).
+- **Finding more programs:** daad.de/international-programmes and hochschulkompass.de (filter: Master, English, "zulassungsfrei"). Email the international office before paying any fee.
