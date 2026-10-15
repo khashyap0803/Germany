@@ -10,7 +10,7 @@
 | 1 | **[07_MONTHLY_TIMELINE.md](07_MONTHLY_TIMELINE.md)** | **The plan** — month by month, Oct 2026 → Oct 2028 |
 | 2 | **[18_RESTART_8_WEEKS.md](18_RESTART_8_WEEKS.md)** | The current 8 weeks (Oct 5 → Nov 29, 2026) |
 | 3 | **[19_DAY_BY_DAY_PLAN.md](19_DAY_BY_DAY_PLAN.md)** | Every day Oct 2026 → Oct 2028 (tick it in the [online tracker](https://claude.ai/artifact/7hafZ8gt7CzNCSrRRy2Zd9)) |
-| 3 | **[PROGRESS.md](PROGRESS.md)** | Weekly honest tracking — every Sunday |
+| 4 | **[PROGRESS.md](PROGRESS.md)** | Weekly honest tracking — every Sunday |
 
 ## 📋 Reference
 
