@@ -1,0 +1,598 @@
+<title>Road to Germany 2028</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: a lab-notebook tool — sticky header with today's status and a focus timer, tabbed views below, one column on phones. */
+:root{
+  --bg:#f3f5f2; --panel:#ffffff; --ink:#18221f; --muted:#5d6b66; --line:#d9e0dc;
+  --accent:#0e6b5c; --accent-soft:#d6ece6; --warn:#b4610f; --bad:#b3261e; --done:#2f7d46; --track:#e7ece9; --skip:#8f9a96;
+  --k-c:#2f5fb3; --k-elec:#b4610f; --k-course:#6a4bb0; --k-proj:#0e6b5c; --k-read:#5d6b66;
+  --k-eng:#a63a64; --k-ielts:#c0392b; --k-ger:#8a6d00; --k-adm:#455a64; --k-app:#1d5f8a; --k-mile:#7a1f8f; --k-track:#5d6b66; --k-rest:#8f9a96;
+  --display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
+  --body:"Atkinson Hyperlegible",ui-sans-serif,system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1513; --panel:#16201d; --ink:#e6eeea; --muted:#9aaba4; --line:#2a3833;
+  --accent:#4cc2a8; --accent-soft:#163a33; --warn:#f0a35a; --bad:#ff8a7a; --done:#6fcf8a; --track:#22302b; --skip:#6b7a75;
+  --k-c:#7aa2f0; --k-elec:#f0a35a; --k-course:#b49cf0; --k-proj:#4cc2a8; --k-read:#9aaba4;
+  --k-eng:#ef7fae; --k-ielts:#ff8a7a; --k-ger:#e3c55a; --k-adm:#9fb4bf; --k-app:#73b8e6; --k-mile:#d78cf0; --k-track:#9aaba4; --k-rest:#6b7a75;
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1513; --panel:#16201d; --ink:#e6eeea; --muted:#9aaba4; --line:#2a3833;
+  --accent:#4cc2a8; --accent-soft:#163a33; --warn:#f0a35a; --bad:#ff8a7a; --done:#6fcf8a; --track:#22302b; --skip:#6b7a75;
+  --k-c:#7aa2f0; --k-elec:#f0a35a; --k-course:#b49cf0; --k-proj:#4cc2a8; --k-read:#9aaba4;
+  --k-eng:#ef7fae; --k-ielts:#ff8a7a; --k-ger:#e3c55a; --k-adm:#9fb4bf; --k-app:#73b8e6; --k-mile:#d78cf0; --k-track:#9aaba4; --k-rest:#6b7a75;
+  color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5;margin:0}
+.wrap{max-width:1100px;margin:0 auto;padding-inline:16px;padding-block:0 48px}
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding-block:12px}
+.toprow{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:end;justify-content:space-between}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(22px,4vw,30px);margin:0;letter-spacing:-.01em;text-wrap:balance}
+h2{font-family:var(--display);font-weight:600;font-size:22px;margin:0}
+h3.sec{font-family:var(--display);font-weight:600;font-size:17px;margin:24px 0 8px}
+.sub{color:var(--muted);font-size:13px}
+.stats{display:flex;flex-wrap:wrap;gap:8px 20px;font-family:var(--mono);font-size:13px;font-variant-numeric:tabular-nums}
+.stats b{font-weight:600}
+.bar{height:6px;background:var(--track);border-radius:3px;overflow:hidden;margin-top:10px}
+.bar>i{display:block;height:100%;background:var(--accent)}
+nav.tabs{display:flex;gap:4px;margin-top:12px;overflow-x:auto;scrollbar-width:thin}
+nav.tabs button{font:600 14px var(--body);background:none;border:1px solid transparent;color:var(--muted);padding:6px 12px;border-radius:6px;cursor:pointer;white-space:nowrap}
+nav.tabs button[aria-selected="true"]{color:var(--ink);background:var(--panel);border-color:var(--line)}
+button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.banner{margin-top:12px;padding:8px 12px;border:1px solid var(--warn);color:var(--warn);border-radius:6px;font-size:13px}
+.timer{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin-top:10px;padding:8px 12px;background:var(--accent-soft);border-radius:6px;font-size:14px}
+.timer .clock{font:600 20px var(--mono);font-variant-numeric:tabular-nums}
+.timer .what{flex:1 1 200px;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+section.view{margin-top:20px}
+@media (max-width:600px){header.top{position:static}}
+.daynav{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.daynav h2{margin-right:8px;min-width:0}
+.btn{font:600 13px var(--body);background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:6px 10px;cursor:pointer}
+.btn:hover{border-color:var(--accent)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+.btn.ghost{background:none;border-color:transparent;color:var(--muted);padding:2px 6px;font-size:12px}
+.btn.ghost:hover{color:var(--ink);border-color:var(--line)}
+input[type=date],input[type=text],input[type=search],select{font:14px var(--body);background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:6px 8px;min-width:0}
+input[type=date]{font:13px var(--mono)}
+.phasepill{font:600 12px var(--mono);color:var(--accent);background:var(--accent-soft);padding:3px 8px;border-radius:999px}
+.meta{color:var(--muted);font-size:13px;margin:6px 0 14px}
+ul.tasks{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+ul.tasks li{display:grid;grid-template-columns:auto 1fr auto;gap:4px 12px;align-items:start;background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--kc,var(--line));border-radius:6px;padding:10px 12px}
+ul.tasks li.done{opacity:.6}
+ul.tasks li.done .tt{text-decoration:line-through}
+ul.tasks li.skipped{opacity:.55;border-left-style:dashed}
+ul.tasks li.skipped .tt{color:var(--muted)}
+ul.tasks input[type=checkbox]{width:20px;height:20px;margin-top:2px;accent-color:var(--done)}
+.tt{min-width:0;overflow-wrap:anywhere}
+.tt code,.how code{font-family:var(--mono);font-size:.9em}
+.how{grid-column:2/4;color:var(--muted);font-size:13px}
+.acts{grid-column:2/4;display:flex;flex-wrap:wrap;gap:4px}
+.chip{font:600 11px var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--kc);white-space:nowrap}
+.chip.sk{color:var(--skip);margin-left:6px}
+.mins{display:block;color:var(--muted);font:12px var(--mono);text-align:right}
+textarea{width:100%;min-height:80px;font:14px var(--body);background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:8px;margin-top:6px;resize:vertical}
+label.small{font-size:13px;color:var(--muted);display:block;margin-top:18px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:12px 14px}
+details.card summary{cursor:pointer;font-weight:700}
+.upnext{display:grid;gap:4px;font-size:14px;margin-top:8px}
+.upnext div{display:flex;gap:10px}
+.upnext .n{font:600 13px var(--mono);color:var(--accent);flex:none;width:64px;text-align:right}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:12px;margin-top:16px;align-items:start}
+.week{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px;margin-top:12px}
+.wday{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:8px;min-width:0}
+.wday.today{border-color:var(--accent)}
+.wday h3{font:600 13px var(--mono);margin:0 0 6px;cursor:pointer}
+.mini{display:flex;gap:6px;align-items:start;font-size:12px;margin-top:6px}
+.mini input{margin-top:2px;flex:none;accent-color:var(--done)}
+.mini span{min-width:0;overflow-wrap:anywhere}
+.mini.done span,.mini.skipped span{text-decoration:line-through;color:var(--muted)}
+@media (max-width:820px){.week{grid-template-columns:1fr}}
+.review{display:grid;gap:8px;margin-top:8px}
+.review .row{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.seg{display:inline-flex;flex-wrap:wrap;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.seg button{font:600 13px var(--mono);background:var(--panel);color:var(--muted);border:0;border-right:1px solid var(--line);padding:6px 10px;cursor:pointer}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--accent);color:var(--bg)}
+.months{display:grid;gap:24px}
+.cal h3{font-family:var(--display);font-weight:600;font-size:18px;margin:0 0 8px}
+.grid7{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px}
+.dow{font:11px var(--mono);color:var(--muted);text-align:center}
+.cell{aspect-ratio:1/1;max-width:100%;border-radius:5px;border:1px solid var(--line);background:var(--panel);font:12px var(--mono);display:flex;flex-direction:column;justify-content:space-between;padding:4px;cursor:pointer;color:var(--ink);text-align:left;position:relative;overflow:hidden}
+.cell .fill{position:absolute;left:0;bottom:0;right:0;background:var(--done);opacity:.28}
+.cell.today{outline:2px solid var(--accent)}
+.cell.mile::after{content:"";position:absolute;top:4px;right:4px;width:7px;height:7px;border-radius:50%;background:var(--k-mile)}
+.cell.note::before{content:"";position:absolute;bottom:4px;right:4px;width:6px;height:6px;border-radius:1px;background:var(--warn)}
+.cell.blank{visibility:hidden}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12px;color:var(--muted);margin-top:8px}
+.phases{display:grid;gap:12px}
+.phase{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:12px 14px}
+.phase.now{border-color:var(--accent)}
+.phase h3{font-family:var(--display);font-weight:600;font-size:17px;margin:0}
+.phase .when{font:12px var(--mono);color:var(--muted)}
+.ms{list-style:none;padding:0;margin:8px 0 0;display:grid;gap:4px;font-size:13px}
+.ms li{display:flex;gap:8px}
+.ms .d{font-family:var(--mono);color:var(--muted);flex:none;width:88px}
+.ms li.done{color:var(--muted);text-decoration:line-through}
+.courses{display:grid;gap:10px}
+.course{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 12px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:10px 12px}
+.course .n{font-weight:700;min-width:0}
+.course .c{font:12px var(--mono);text-align:right;color:var(--muted)}
+.course .bar{grid-column:1/3;margin-top:0}
+.course .span{grid-column:1/3;font:12px var(--mono);color:var(--muted);overflow-wrap:anywhere}
+.course.behind{border-color:var(--warn)}
+.course .lag{color:var(--warn)}
+.chart{display:grid;grid-template-columns:repeat(var(--n),minmax(0,1fr));gap:4px;align-items:end;height:160px;margin-top:8px;border-bottom:1px solid var(--line)}
+.chart .col{position:relative;height:100%}
+.chart .pl{position:absolute;bottom:0;left:15%;right:15%;background:var(--track);border-radius:3px 3px 0 0}
+.chart .dn{position:absolute;bottom:0;left:15%;right:15%;background:var(--accent);border-radius:3px 3px 0 0}
+.chart .col.cur .pl{outline:1px dashed var(--accent)}
+.xlab{display:grid;grid-template-columns:repeat(var(--n),minmax(0,1fr));gap:4px;font:10px var(--mono);color:var(--muted);text-align:center;margin-top:4px;overflow:hidden}
+table.kinds{width:100%;border-collapse:collapse;font-size:14px}
+table.kinds td,table.kinds th{padding:6px 4px;border-bottom:1px solid var(--line);text-align:left}
+table.kinds td.r,table.kinds th.r{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums}
+.big{font:600 28px var(--mono);font-variant-numeric:tabular-nums}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.words{display:grid;gap:6px;margin-top:8px}
+.word{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:8px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:6px 10px;font-size:14px}
+.word .w{font-weight:700;overflow-wrap:anywhere}
+.word .h{color:var(--muted);font-size:13px;overflow-wrap:anywhere}
+.word .sc{font:12px var(--mono);color:var(--muted);white-space:nowrap}
+.addrow{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr) auto;gap:8px;margin-top:10px}
+@media (max-width:560px){.addrow{grid-template-columns:1fr}}
+.quiz{margin-top:12px}
+.quiz .prompt{font-size:18px;margin:8px 0}
+.quiz input{width:100%;font:600 20px var(--mono);padding:10px}
+.res-ok{color:var(--done);font-weight:700}
+.res-bad{color:var(--bad);font-weight:700}
+.hits{display:grid;gap:6px;margin-top:12px}
+.hit{display:grid;grid-template-columns:96px minmax(0,1fr);gap:10px;background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--kc);border-radius:6px;padding:8px 10px;cursor:pointer;text-align:left;color:var(--ink);font:14px var(--body)}
+.hit .d{font:12px var(--mono);color:var(--muted)}
+.hit mark{background:var(--accent-soft);color:inherit}
+.empty{color:var(--muted);padding:24px;border:1px dashed var(--line);border-radius:6px;text-align:center}
+.toast{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:8px 14px;border-radius:6px;font-size:14px;z-index:9;display:flex;gap:10px;align-items:center;max-width:calc(100% - 32px)}
+.toast button{background:none;border:1px solid var(--bg);color:var(--bg);border-radius:4px;padding:2px 8px;cursor:pointer;font:600 13px var(--body)}
+.kbd{font:11px var(--mono);border:1px solid var(--line);border-radius:3px;padding:0 4px;color:var(--muted)}
+@media (prefers-reduced-motion:no-preference){.bar>i{transition:width .3s}}
+</style>
+
+<div class="wrap">
+<header class="top">
+  <div class="toprow">
+    <div>
+      <h1>Road to Germany 2028</h1>
+      <div class="sub" id="subline">Day-by-day plan · Oct 5, 2026 → Oct 1, 2028</div>
+    </div>
+    <div class="stats" id="stats"></div>
+  </div>
+  <div class="bar" aria-hidden="true"><i id="overallbar" style="width:0%"></i></div>
+  <div class="timer" id="timer" hidden></div>
+  <nav class="tabs" role="tablist">
+    <button role="tab" data-v="today" aria-selected="true">Day</button>
+    <button role="tab" data-v="week" aria-selected="false">Week</button>
+    <button role="tab" data-v="month" aria-selected="false">Calendar</button>
+    <button role="tab" data-v="stats" aria-selected="false">Stats</button>
+    <button role="tab" data-v="phases" aria-selected="false">Milestones</button>
+    <button role="tab" data-v="courses" aria-selected="false">Courses</button>
+    <button role="tab" data-v="words" aria-selected="false">Word lists</button>
+    <button role="tab" data-v="find" aria-selected="false">Find</button>
+  </nav>
+  <div class="banner" id="banner" hidden></div>
+</header>
+
+<section class="view" id="v-today"></section>
+<section class="view" id="v-week" hidden></section>
+<section class="view" id="v-month" hidden></section>
+<section class="view" id="v-stats" hidden></section>
+<section class="view" id="v-phases" hidden></section>
+<section class="view" id="v-courses" hidden></section>
+<section class="view" id="v-words" hidden></section>
+<section class="view" id="v-find" hidden></section>
+</div>
+<div id="toastbox"></div>
+
+<script id="plan" type="application/json">__PLAN__</script>
+<script>
+(function(){
+const PLAN = JSON.parse(document.getElementById('plan').textContent);
+const DAYS = PLAN.days, BYDATE = {};
+// Stable task ids: date + hash(kind|text), so regenerating the plan never moves a tick onto another task.
+function h32(s){ let h=0x811c9dc5; for(let i=0;i<s.length;i++){ h^=s.charCodeAt(i); h=Math.imul(h,16777619); } return (h>>>0).toString(36); }
+DAYS.forEach((d,i)=>{ d.i=i; BYDATE[d.d]=d; const seen={}; d.t.forEach(t=>{ const b=h32(t.k+"|"+t.t); seen[b]=(seen[b]||0)+1; t.id=d.d+"#"+b+(seen[b]>1?"-"+seen[b]:""); }); });
+const TASK = {}; DAYS.forEach(d=>d.t.forEach(t=>TASK[t.id]=t));
+const KIND = {c:"C",elec:"Electronics",course:"Course",proj:"Project",read:"Reading",eng:"English",ielts:"IELTS",ger:"German",adm:"Admin",app:"Application",mile:"Milestone",track:"Tracking",rest:"Rest"};
+const FIRST = DAYS[0].d, LAST = DAYS[DAYS.length-1].d;
+const iso = d => d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
+const parse = s => { const [y,m,dd]=s.split("-").map(Number); return new Date(y,m-1,dd); };
+const addDays = (s,n) => { const d=parse(s); d.setDate(d.getDate()+n); return iso(d); };
+const diffDays = (a,b) => Math.round((parse(b)-parse(a))/86400000);
+const clamp = s => s<FIRST?FIRST:(s>LAST?LAST:s);
+const REAL_TODAY = iso(new Date());
+const TODAY = clamp(REAL_TODAY);
+const fmt = (s,o) => parse(s).toLocaleDateString(undefined,o||{weekday:"short",day:"numeric",month:"short",year:"numeric"});
+const escT = s => String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const esc = s => escT(s).replace(/`([^`]+)`/g,"<code>$1</code>");
+const reEsc = s => s.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
+const actionable = t => t.k!=="rest";
+const hm = m => m>=60? Math.floor(m/60)+"h"+(m%60?String(m%60).padStart(2,"0"):"") : m+"m";
+
+// ---------------- state. db docs: months/YYYY-MM {done:{id:true|"s"}, notes:{date:text}} · weeks/<monday> {energy,good,change} · lists/<en|de> {words:[]}
+const state = {}; const weeks = {}; const lists = {en:{words:[]}, de:{words:[]}};
+const month = s => s.slice(0,7);
+const get = m => state[m] || (state[m] = {done:{}, notes:{}});
+let db = null, mode = "local", timer = null, writing = false;
+const pending = new Set();
+function loadLocal(){ try{ const raw = localStorage.getItem("rtg2028"); if(raw){ const o=JSON.parse(raw); if(o.months){ Object.assign(state,o.months); Object.assign(weeks,o.weeks||{}); Object.assign(lists,o.lists||{}); } else Object.assign(state,o); } }catch(e){} }
+function saveLocal(){ try{ localStorage.setItem("rtg2028", JSON.stringify({months:state,weeks,lists})); }catch(e){} }
+const EMPTY = {done:{}, notes:{}};
+const peek = m => state[m] || EMPTY; // read without creating empty month docs
+const status = t => peek(month(t.id)).done[t.id];
+const isDone = t => status(t)===true;
+const isHandled = t => !!status(t);
+function setStatus(t,v){ const m=get(month(t.id)); if(v) m.done[t.id]=v; else delete m.done[t.id]; queue("months/"+month(t.id)); }
+function setNote(d,v){ const m=get(month(d)); if(v) m.notes[d]=v; else delete m.notes[d]; queue("months/"+month(d)); }
+function bodyOf(path){ const [c,id]=path.split("/"); if(c==="months") return {done:get(id).done, notes:get(id).notes}; if(c==="weeks") return weeks[id]||{}; return lists[id]||{words:[]}; }
+function queue(path){ pending.add(path); saveLocal(); clearTimeout(timer); timer=setTimeout(flush, 700); renderStats(); }
+async function write(path){ await db.doc(path).set(JSON.parse(JSON.stringify(bodyOf(path)))); }
+async function flush(){
+  if(!db) return;
+  if(writing){ clearTimeout(timer); timer=setTimeout(flush,400); return; }
+  writing = true;
+  try{
+    while(pending.size){
+      const path = pending.values().next().value; pending.delete(path);
+      try{ await write(path); }
+      catch(e){
+        let err=e;
+        if(e && e.code==="unavailable"){ await new Promise(r=>setTimeout(r,800+Math.random()*800)); try{ await write(path); continue; }catch(e2){ err=e2; } }
+        showBanner("Couldn't save to your tracker right now ("+(err&&err.code||"error")+"). Your changes are kept in this browser and will save on your next change.");
+      }
+    }
+  } finally { writing = false; }
+}
+function showBanner(t){ const b=document.getElementById("banner"); b.textContent=t; b.hidden=!t; }
+let toastT;
+function toast(msg, undo){
+  const box=document.getElementById("toastbox"); clearTimeout(toastT);
+  box.innerHTML=`<div class="toast" role="status"><span>${escT(msg)}</span>${undo?'<button id="undo">Undo</button>':""}</div>`;
+  if(undo) box.querySelector("#undo").onclick=()=>{ undo(); box.innerHTML=""; };
+  toastT=setTimeout(()=>box.innerHTML="", 6000);
+}
+// Version 1 of this page keyed ticks by position ("2026-10-15#4"); convert them to stable ids.
+function migrate(m){
+  let changed=false; const s=get(m);
+  for(const k of Object.keys(s.done)){ const mm=/^(\d{4}-\d{2}-\d{2})#(\d+)$/.exec(k); if(!mm) continue;
+    const day=BYDATE[mm[1]], t=day&&day.t[+mm[2]]; if(t && !s.done[t.id]) s.done[t.id]=s.done[k]; delete s.done[k]; changed=true; }
+  return changed;
+}
+
+// ---------------- stats
+function dayStats(d){ const day=BYDATE[d]; if(!day) return {n:0,k:0,h:0,pm:0,dm:0}; let n=0,k=0,h=0,pm=0,dm=0; day.t.forEach(t=>{ if(actionable(t)){ n++; pm+=t.m; if(isDone(t)){k++;dm+=t.m;} if(isHandled(t)) h++; } }); return {n,k,h,pm,dm}; }
+function phaseOf(d){ return PLAN.phases.find(p=>d>=p.from&&d<=p.to); }
+function missed(days){ const out=[]; for(let d=addDays(TODAY,-days); d<TODAY; d=addDays(d,1)){ const day=BYDATE[d]; if(!day) continue; day.t.forEach(t=>{ if(actionable(t)&&t.m>0&&!isHandled(t)) out.push({d,t}); }); } return out; }
+function streak(){
+  let s=0; const t0=dayStats(TODAY); if(t0.n && t0.h===t0.n && t0.k>0) s=1;
+  let d=addDays(TODAY,-1);
+  while(d>=FIRST){ const st=dayStats(d); if(st.n===0){ d=addDays(d,-1); continue; } if(st.h===st.n && st.k>0){ s++; d=addDays(d,-1);} else break; }
+  return s;
+}
+function renderStats(){
+  let n=0,k=0,nAll=0,kAll=0;
+  for(const day of DAYS){ const s=dayStats(day.d); nAll+=s.n; kAll+=s.k; if(day.d<=TODAY){ n+=s.n; k+=s.k; } }
+  const until = target => diffDays(REAL_TODAY,target);
+  const ph = phaseOf(TODAY);
+  const items = [
+    ["Phase", ph?ph.id:"—"],
+    ["Done to date", n? Math.round(100*k/n)+"%":"—"],
+    ["Whole plan", (Math.round(1000*kAll/nAll)/10)+"%"],
+    ["Streak", streak()+" d"],
+    ["Bond", until("2027-10-01")>=0? until("2027-10-01")+" d":"done"],
+    ["IELTS", until("2027-10-09")>=0? until("2027-10-09")+" d":"done"],
+    ["Fly", until("2028-09-28")>=0? until("2028-09-28")+" d":"✈"]
+  ];
+  document.getElementById("stats").innerHTML = items.map(([a,b])=>`<span>${a} <b>${escT(b)}</b></span>`).join("");
+  document.getElementById("overallbar").style.width = (n?Math.round(100*k/n):0)+"%";
+  document.getElementById("subline").textContent = "Oct 5, 2026 → Oct 1, 2028 · "+(mode==="db"?"saved to your tracker":"saved in this browser only");
+}
+
+// ---------------- focus timer (in memory only)
+const T = {task:null, left:0, run:false, iv:null};
+function beep(){ try{ const a=new (window.AudioContext||window.webkitAudioContext)(); [0,0.35,0.7].forEach(o=>{ const g=a.createGain(), os=a.createOscillator(); os.frequency.value=880; os.connect(g); g.connect(a.destination); g.gain.setValueAtTime(.15,a.currentTime+o); g.gain.exponentialRampToValueAtTime(.0001,a.currentTime+o+.3); os.start(a.currentTime+o); os.stop(a.currentTime+o+.3); }); }catch(e){} }
+function startTimer(t){ clearInterval(T.iv); T.task=t; T.left=Math.min(t.m,50)*60; T.run=true; T.iv=setInterval(tick,1000); drawTimer(); }
+function tick(){ if(!T.run) return; T.left--; if(T.left<=0){ T.left=0; T.run=false; clearInterval(T.iv); beep(); } drawTimer(); }
+function drawTimer(){
+  const el=document.getElementById("timer");
+  if(!T.task){ el.hidden=true; document.title="Road to Germany 2028"; return; } el.hidden=false;
+  const mm=String(Math.floor(T.left/60)).padStart(2,"0"), ss=String(T.left%60).padStart(2,"0");
+  const fin=T.left===0;
+  el.innerHTML=`<span class="clock">${mm}:${ss}</span><span class="what">${fin?"Time's up — ":""}${esc(T.task.t)}</span>
+    ${fin?`<button class="btn primary" id="tdone">Tick it ✓</button>`:`<button class="btn" id="tpause">${T.run?"Pause":"Resume"}</button><button class="btn" id="tplus">+5 min</button>`}
+    <button class="btn" id="tstop">${fin?"Close":"Stop"}</button>`;
+  const q=s=>el.querySelector(s);
+  if(q("#tpause")) q("#tpause").onclick=()=>{ T.run=!T.run; clearInterval(T.iv); if(T.run) T.iv=setInterval(tick,1000); drawTimer(); };
+  if(q("#tplus")) q("#tplus").onclick=()=>{ T.left+=300; drawTimer(); };
+  if(q("#tdone")) q("#tdone").onclick=()=>{ setStatus(T.task,true); T.task=null; drawTimer(); render(); };
+  q("#tstop").onclick=()=>{ clearInterval(T.iv); T.task=null; drawTimer(); };
+  document.title = (T.run? mm+":"+ss+" · " : "") + "Road to Germany 2028";
+}
+
+// ---------------- views
+let cur = TODAY, view = "today";
+function taskLi(t, compact, showDate){
+  const st=status(t), kc=`var(--k-${t.k})`, cls = st===true?"done":(st==="s"?"skipped":"");
+  if(compact){
+    return `<div class="mini ${cls}">${actionable(t)?`<input type="checkbox" data-id="${t.id}" ${st===true?"checked":""} aria-label="Done">`:""}<span><b style="color:${kc}">${KIND[t.k]}</b> ${esc(t.t)}</span></div>`;
+  }
+  return `<li class="${cls}" style="--kc:${kc}">
+    ${actionable(t)?`<input type="checkbox" data-id="${t.id}" ${st===true?"checked":""} aria-label="Mark done">`:"<span></span>"}
+    <div class="tt"><span class="chip">${showDate?fmt(t.id.slice(0,10),{weekday:"short",day:"numeric",month:"short"})+" · ":""}${KIND[t.k]}</span>${st==="s"?'<span class="chip sk">skipped</span>':""}<br>${esc(t.t)}</div>
+    <span class="mins">${t.m?t.m+" min":""}</span>
+    ${t.h?`<div class="how">How: ${esc(t.h)}</div>`:""}
+    ${actionable(t)&&st!==true?`<div class="acts">${t.m>0&&!st?`<button class="btn ghost" data-focus="${t.id}">▶ Focus ${Math.min(t.m,50)} min</button>`:""}<button class="btn ghost" data-skip="${t.id}">${st==="s"?"Un-skip":"Skip"}</button></div>`:""}
+  </li>`;
+}
+function upcoming(n){
+  const out=[]; for(const day of DAYS){ if(day.d<=REAL_TODAY) continue; for(const t of day.t){ if(t.k==="mile"||t.k==="app") out.push({d:day.d,t}); } if(out.length>=n) break; } return out.slice(0,n);
+}
+function renderToday(){
+  const day = BYDATE[cur], ph = phaseOf(cur), s = dayStats(cur);
+  const el = document.getElementById("v-today");
+  const miss = cur===TODAY ? missed(14) : [];
+  const up = upcoming(4);
+  el.innerHTML = `
+    <div class="daynav">
+      <h2>${fmt(cur,{weekday:"long",day:"numeric",month:"long",year:"numeric"})}</h2>
+      <button class="btn" id="prev" aria-label="Previous day">◀</button>
+      <button class="btn" id="tod">Today</button>
+      <button class="btn" id="next" aria-label="Next day">▶</button>
+      <input type="date" id="pick" min="${FIRST}" max="${LAST}" value="${cur}" aria-label="Go to date">
+    </div>
+    <div class="meta">${ph?`<span class="phasepill">${ph.id}</span> ${esc(ph.name)} · `:""}${day.dl?"Deload week (lighter) · ":""}${s.pm?hm(s.pm)+" planned · ":""}${s.n?s.k+"/"+s.n+" done":"rest day"} · <span class="kbd">←</span> <span class="kbd">→</span> days, <span class="kbd">T</span> today</div>
+    <ul class="tasks">${day.t.map(t=>taskLi(t)).join("")}</ul>
+    <label class="small" for="note">Honest note for ${fmt(cur,{day:"numeric",month:"short"})} — what actually happened?</label>
+    <textarea id="note" placeholder="e.g. Did Ch 4 but skipped the speaking practice — too tired after office.">${escT(peek(month(cur)).notes[cur]||"")}</textarea>
+    <div class="grid2">
+      ${miss.length?`<details class="card"><summary>${miss.length} unfinished from the last 14 days</summary>
+        <p class="sub">Don't double up today. Tick what you actually did; skip the rest and move on.</p>
+        <button class="btn" id="skipall">Skip all of these</button>
+        <ul class="tasks" style="margin-top:8px">${miss.map(x=>taskLi(x.t,false,true)).join("")}</ul></details>`
+        :(cur===TODAY?`<div class="card"><b>Nothing left over</b><div class="sub">Every task in the last 14 days is ticked or skipped.</div></div>`:"")}
+      ${up.length?`<div class="card"><b>Coming up</b><div class="upnext">${up.map(x=>`<div><span class="n">${diffDays(REAL_TODAY,x.d)} d</span><span>${esc(x.t.t)}</span></div>`).join("")}</div></div>`:""}
+    </div>`;
+  el.querySelector("#prev").onclick=()=>go(-1);
+  el.querySelector("#next").onclick=()=>go(1);
+  el.querySelector("#tod").onclick=()=>{cur=TODAY;render();};
+  el.querySelector("#pick").onchange=e=>{ if(e.target.value){cur=clamp(e.target.value);render();} };
+  const sa=el.querySelector("#skipall"); if(sa) sa.onclick=()=>{ const items=missed(14); items.forEach(x=>setStatus(x.t,"s")); render(); toast(items.length+" tasks skipped", ()=>{ items.forEach(x=>setStatus(x.t,null)); render(); }); };
+  let nt; el.querySelector("#note").oninput=e=>{ clearTimeout(nt); const v=e.target.value, d=cur; nt=setTimeout(()=>setNote(d,v.trim()),600); };
+}
+function go(n){ cur=clamp(addDays(cur,n)); render(); }
+function weekStart(s){ const d=parse(s); const k=(d.getDay()+6)%7; d.setDate(d.getDate()-k); return iso(d); }
+function renderWeek(){
+  const ws = weekStart(cur), el=document.getElementById("v-week");
+  let cols="", pm=0, dm=0, n=0, k=0;
+  for(let i=0;i<7;i++){
+    const d=addDays(ws,i), day=BYDATE[d], st=dayStats(d); pm+=st.pm; dm+=st.dm; n+=st.n; k+=st.k;
+    cols += `<div class="wday ${d===TODAY?"today":""}"><h3 data-go="${d}">${fmt(d,{weekday:"short",day:"numeric",month:"short"})}</h3>${day?day.t.map(t=>taskLi(t,true)).join(""):`<div class="sub">Outside the plan</div>`}</div>`;
+  }
+  const r = weeks[ws]||{};
+  el.innerHTML = `<div class="daynav"><h2>Week of ${fmt(ws,{day:"numeric",month:"long",year:"numeric"})}</h2>
+    <button class="btn" id="wp" aria-label="Previous week">◀</button><button class="btn" id="wt">This week</button><button class="btn" id="wn" aria-label="Next week">▶</button></div>
+    <div class="meta">${k}/${n} tasks · ${hm(dm)} of ${hm(pm)} planned time done</div>
+    <div class="week">${cols}</div>
+    <div class="card" style="margin-top:16px"><b>Sunday review</b> <span class="sub">— 5 minutes, honest. Copy the gist into PROGRESS.md.</span>
+      <div class="review">
+        <div class="row"><span class="sub">Energy this week</span><div class="seg" id="energy">${[1,2,3,4,5].map(x=>`<button aria-pressed="${r.energy===x}" data-e="${x}">${x}</button>`).join("")}</div></div>
+        <label class="small" for="rg" style="margin-top:4px">What worked</label><textarea id="rg" style="min-height:56px">${escT(r.good||"")}</textarea>
+        <label class="small" for="rc" style="margin-top:4px">One thing to change next week</label><textarea id="rc" style="min-height:56px">${escT(r.change||"")}</textarea>
+      </div></div>`;
+  el.querySelector("#wp").onclick=()=>go(-7);
+  el.querySelector("#wn").onclick=()=>go(7);
+  el.querySelector("#wt").onclick=()=>{cur=TODAY;render();};
+  el.querySelectorAll("[data-go]").forEach(h=>h.onclick=()=>{cur=h.dataset.go;switchView("today");});
+  const setR=(f,v)=>{ weeks[ws]=Object.assign({},weeks[ws],{[f]:v}); queue("weeks/"+ws); };
+  el.querySelectorAll("[data-e]").forEach(b=>b.onclick=()=>{ const v=+b.dataset.e; setR("energy", (weeks[ws]||{}).energy===v?null:v); renderWeek(); });
+  let t1,t2; el.querySelector("#rg").oninput=e=>{clearTimeout(t1);const v=e.target.value;t1=setTimeout(()=>setR("good",v.trim()),600);};
+  el.querySelector("#rc").oninput=e=>{clearTimeout(t2);const v=e.target.value;t2=setTimeout(()=>setR("change",v.trim()),600);};
+}
+function renderMonth(){
+  const el=document.getElementById("v-month");
+  const months=[]; let m=parse(FIRST); m.setDate(1);
+  while(iso(m)<=LAST){ months.push(new Date(m)); m.setMonth(m.getMonth()+1); }
+  const mileDays = new Set(DAYS.filter(d=>d.t.some(t=>t.k==="mile")).map(d=>d.d));
+  el.innerHTML = `<div class="legend"><span>Fill = share done</span><span style="color:var(--k-mile)">● milestone</span><span style="color:var(--warn)">■ has a note</span><span>Click a day to open it</span></div>
+  <div class="months">${months.map(mm=>{
+    const y=mm.getFullYear(), mo=mm.getMonth(); const first=new Date(y,mo,1); const lead=(first.getDay()+6)%7; const n=new Date(y,mo+1,0).getDate();
+    let cells=["Mon","Tue","Wed","Thu","Fri","Sat","Sun"].map(x=>`<div class="dow">${x}</div>`).join("");
+    for(let i=0;i<lead;i++) cells+=`<div class="cell blank"></div>`;
+    for(let dd=1;dd<=n;dd++){ const s=iso(new Date(y,mo,dd)); const st=dayStats(s); const inPlan=!!BYDATE[s];
+      const pct = st.n? st.k/st.n : 0; const hasNote=!!peek(month(s)).notes[s];
+      cells+= inPlan?`<button class="cell ${s===TODAY?"today":""} ${mileDays.has(s)?"mile":""} ${hasNote?"note":""}" data-go="${s}" aria-label="${fmt(s)}: ${st.k} of ${st.n} done"><span>${dd}</span><span class="fill" style="height:${Math.round(pct*100)}%"></span></button>`:`<div class="cell blank"></div>`; }
+    return `<div class="cal"><h3>${mm.toLocaleDateString(undefined,{month:"long",year:"numeric"})}</h3><div class="grid7">${cells}</div></div>`;
+  }).join("")}</div>`;
+  el.querySelectorAll("[data-go]").forEach(c=>c.onclick=()=>{cur=c.dataset.go;switchView("today");});
+  const t = el.querySelector(".cell.today"); if(t) t.scrollIntoView({block:"center"});
+}
+function renderStatsView(){
+  const el=document.getElementById("v-stats");
+  let pm=0,dm=0,n=0,k=0,sk=0,notes=0; const kinds={};
+  for(const day of DAYS){ if(day.d>TODAY) break;
+    for(const t of day.t){ if(!actionable(t)) continue; const st=status(t); n++; pm+=t.m; if(st===true){k++;dm+=t.m;} if(st==="s") sk++;
+      const g=kinds[t.k]||(kinds[t.k]={n:0,k:0,pm:0,dm:0}); g.n++; g.pm+=t.m; if(st===true){g.k++; g.dm+=t.m;} }
+    if(peek(month(day.d)).notes[day.d]) notes++; }
+  const wk=[]; const ws=weekStart(TODAY); for(let i=11;i>=0;i--){ const s=addDays(ws,-7*i); let p=0,d=0; for(let j=0;j<7;j++){ const st=dayStats(addDays(s,j)); p+=st.pm; d+=st.dm; } wk.push({s,p,d}); }
+  const mx=Math.max(60,...wk.map(w=>Math.max(w.p,w.d)));
+  const energies = wk.map(w=>(weeks[w.s]||{}).energy).filter(Boolean);
+  el.innerHTML = `<div class="kpis">
+      <div class="card"><div class="sub">Study time done (to date)</div><div class="big">${hm(dm)}</div><div class="sub">of ${hm(pm)} planned</div></div>
+      <div class="card"><div class="sub">Tasks done</div><div class="big">${k}</div><div class="sub">${n} due · ${sk} skipped · ${n-k-sk} open</div></div>
+      <div class="card"><div class="sub">Current streak</div><div class="big">${streak()} d</div><div class="sub">days where every task was ticked or skipped</div></div>
+      <div class="card"><div class="sub">Honest notes written</div><div class="big">${notes}</div><div class="sub">${energies.length?"avg energy "+(energies.reduce((a,b)=>a+b,0)/energies.length).toFixed(1)+"/5 (12 wk)":"rate energy in Week → Sunday review"}</div></div>
+    </div>
+    <h3 class="sec">Last 12 weeks — planned (grey) vs done (green) minutes</h3>
+    <div class="chart" style="--n:12">${wk.map((w,i)=>`<div class="col ${i===11?"cur":""}" title="${fmt(w.s,{day:"numeric",month:"short"})}: ${w.d} of ${w.p} min"><span class="pl" style="height:${100*w.p/mx}%"></span><span class="dn" style="height:${100*w.d/mx}%"></span></div>`).join("")}</div>
+    <div class="xlab" style="--n:12">${wk.map(w=>`<span>${fmt(w.s,{day:"numeric",month:"short"})}</span>`).join("")}</div>
+    <h3 class="sec">By subject (to date)</h3>
+    <table class="kinds"><thead><tr><th>Subject</th><th class="r">Tasks</th><th class="r">Time done</th><th class="r">%</th></tr></thead><tbody>
+    ${Object.entries(kinds).sort((a,b)=>b[1].pm-a[1].pm).map(([kk,g])=>`<tr><td><b style="color:var(--k-${kk})">${KIND[kk]}</b></td><td class="r">${g.k}/${g.n}</td><td class="r">${hm(g.dm)} / ${hm(g.pm)}</td><td class="r">${g.n?Math.round(100*g.k/g.n):0}%</td></tr>`).join("")}
+    </tbody></table>`;
+}
+function renderPhases(){
+  const el=document.getElementById("v-phases");
+  el.innerHTML=`<div class="phases">${PLAN.phases.map(p=>{
+    let n=0,k=0; const ms=[];
+    DAYS.forEach(d=>{ if(d.d<p.from||d.d>p.to) return; d.t.forEach(t=>{ if(actionable(t)){n++; if(isDone(t))k++;} if(t.k==="mile"||t.k==="app") ms.push({d:d.d,t}); }); });
+    const now = TODAY>=p.from&&TODAY<=p.to;
+    return `<div class="phase ${now?"now":""}"><div class="when">${p.id} · ${fmt(p.from,{day:"numeric",month:"short",year:"numeric"})} → ${fmt(p.to,{day:"numeric",month:"short",year:"numeric"})} · ${n?Math.round(100*k/n):0}% done</div>
+      <h3>${esc(p.name)}</h3><div class="bar"><i style="width:${n?Math.round(100*k/n):0}%"></i></div>
+      ${ms.length?`<ul class="ms">${ms.map(x=>`<li class="${isDone(x.t)?"done":""}"><span class="d">${fmt(x.d,{day:"numeric",month:"short",year:"2-digit"})}</span><span>${esc(x.t.t)}</span></li>`).join("")}</ul>`:""}</div>`;
+  }).join("")}</div>`;
+}
+function renderCourses(){
+  const groups = {};
+  DAYS.forEach(d=>d.t.forEach(t=>{
+    if(!["course","proj","c","elec","eng","ielts","ger"].includes(t.k)) return;
+    let key = t.t.split(":")[0];
+    if(t.k==="proj") key = t.t.split(" — ")[0];
+    if(t.k==="c") key="K.N. King + C programs (Saturdays)"; if(t.k==="elec") key="Electronics basics (Sundays)";
+    if(t.k==="ger") key="German"; if(t.k==="eng" && !key.startsWith("English Master")) key="English habits (speaking, writing)";
+    if(t.k==="ielts" && !key.startsWith("IELTS Band")) key="IELTS practice & mocks";
+    if(key.length>60) return;
+    const g = groups[key] || (groups[key]={n:0,k:0,due:0,dueK:0,from:d.d,to:d.d,next:null}); g.n++; if(isDone(t)) g.k++; g.to=d.d;
+    if(d.d<TODAY){ g.due++; if(isHandled(t)) g.dueK++; }
+    if(!g.next && d.d>=TODAY && !isHandled(t)) g.next=t;
+  }));
+  const keys = Object.keys(groups).filter(k=>groups[k].n>=3).sort((a,b)=>groups[a].from.localeCompare(groups[b].from));
+  document.getElementById("v-courses").innerHTML = `<p class="sub">“Behind” = sessions before today that aren't ticked or skipped.</p><div class="courses">${keys.map(k=>{const g=groups[k]; const pct=Math.round(100*g.k/g.n); const lag=g.due-g.dueK;
+    const nx = g.next && g.from<=addDays(TODAY,14) ? g.next.t.replace(new RegExp("^"+reEsc(k)+":?\\s*"),"") : "";
+    return `<div class="course ${lag>=3?"behind":""}"><span class="n">${esc(k)}</span><span class="c">${g.k}/${g.n} · ${pct}%${lag?` · <span class="lag">${lag} behind</span>`:""}</span><div class="bar"><i style="width:${pct}%"></i></div><span class="span">${fmt(g.from,{day:"numeric",month:"short",year:"numeric"})} → ${fmt(g.to,{day:"numeric",month:"short",year:"numeric"})}${nx?` · next (${fmt(g.next.id.slice(0,10),{day:"numeric",month:"short"})}): ${esc(nx.length>90?nx.slice(0,88)+"…":nx)}`:""}</span></div>`;}).join("")}</div>`;
+}
+
+// ---------------- word lists: English spelling + German vocab, quiz by ear
+let wl = "en", quiz = null;
+const LIST = {en:{name:"English spelling", w:"Word you misspelled", h:"Sentence or meaning (optional)", lang:"en-GB"}, de:{name:"German vocab", w:"German word (with der/die/das)", h:"English meaning", lang:"de-DE"}};
+const canSpeak = "speechSynthesis" in window;
+function speak(text, lang){ try{ const u=new SpeechSynthesisUtterance(text); u.lang=lang; u.rate=.85; const v=speechSynthesis.getVoices().find(v=>v.lang&&v.lang.toLowerCase().startsWith(lang.slice(0,2))); if(v) u.voice=v; speechSynthesis.cancel(); speechSynthesis.speak(u); }catch(e){} }
+function mask(hint, word){ if(!hint) return ""; const core=word.replace(/^(der|die|das)\s+/i,""); return hint.split(new RegExp(reEsc(core),"gi")).join("_____"); }
+function pickWord(){ const ws=lists[wl].words; if(!ws.length) return null;
+  const scored=ws.map((w,i)=>({i,s:(w.ok||0)-2*(w.bad||0)+Math.random()*1.5+(quiz&&quiz.i===i&&ws.length>1?99:0)})); scored.sort((a,b)=>a.s-b.s); return scored[0].i; }
+function renderWords(){
+  const el=document.getElementById("v-words"), L=LIST[wl], ws=lists[wl].words;
+  el.innerHTML = `<div class="daynav"><div class="seg" role="group" aria-label="List">${Object.keys(LIST).map(k=>`<button aria-pressed="${k===wl}" data-wl="${k}">${LIST[k].name} (${lists[k].words.length})</button>`).join("")}</div></div>
+    <p class="sub">${wl==="en"?"Every word you misspell (handwritten paragraph, IELTS writing) goes here. The quiz reads it aloud; you type it — no autocorrect.":"New Nicos Weg words go here. The quiz says the German word and shows the meaning; you spell it."}</p>
+    <form class="addrow" id="addf" autocomplete="off"><input type="text" id="aw" placeholder="${L.w}" spellcheck="false" autocapitalize="off" autocorrect="off" aria-label="${L.w}" required><input type="text" id="ah" placeholder="${L.h}" aria-label="${L.h}"><button class="btn primary">Add</button></form>
+    <div class="card quiz" id="quiz"></div>
+    <h3 class="sec">${ws.length} words · weakest first</h3>
+    <div class="words">${ws.length? ws.map((w,i)=>({w,i})).sort((a,b)=>((a.w.ok||0)-2*(a.w.bad||0))-((b.w.ok||0)-2*(b.w.bad||0))).map(({w,i})=>`<div class="word"><div><div class="w">${escT(w.w)}</div>${w.h?`<div class="h">${escT(w.h)}</div>`:""}</div><span class="sc">✓${w.ok||0} ✗${w.bad||0}</span><button class="btn ghost" data-del="${i}" aria-label="Delete ${escT(w.w)}">✕</button></div>`).join("") : `<div class="empty">No words yet. Add the first one above.</div>`}</div>`;
+  el.querySelectorAll("[data-wl]").forEach(b=>b.onclick=()=>{ wl=b.dataset.wl; quiz=null; renderWords(); });
+  el.querySelector("#addf").onsubmit=e=>{ e.preventDefault(); const w=el.querySelector("#aw").value.trim(), h=el.querySelector("#ah").value.trim(); if(!w) return;
+    if(ws.some(x=>x.w.toLowerCase()===w.toLowerCase())){ toast("Already in the list"); return; }
+    lists[wl]={words:[...ws,{w,h,ok:0,bad:0,at:REAL_TODAY}]}; queue("lists/"+wl); renderWords(); document.getElementById("aw").focus(); };
+  el.querySelectorAll("[data-del]").forEach(b=>b.onclick=()=>{ const i=+b.dataset.del, which=wl, arr=[...lists[which].words]; const [rm]=arr.splice(i,1); lists[which]={words:arr}; queue("lists/"+which); quiz=null; renderWords();
+    toast("Deleted “"+rm.w+"”", ()=>{ lists[which]={words:[...lists[which].words,rm]}; queue("lists/"+which); renderWords(); }); });
+  drawQuiz();
+}
+function drawQuiz(){
+  const q=document.getElementById("quiz"); if(!q) return; const ws=lists[wl].words, L=LIST[wl];
+  if(!ws.length){ q.innerHTML=`<b>Quiz</b><div class="sub">Add a few words to start.</div>`; return; }
+  if(!quiz){ q.innerHTML=`<b>Quiz</b> <span class="sub">${canSpeak?"listen → type → check":"read the clue → type the word"}</span><div style="margin-top:8px"><button class="btn primary" id="qs">Start quiz</button></div>`; q.querySelector("#qs").onclick=()=>{ quiz={i:pickWord(),ans:null}; drawQuiz(); }; return; }
+  const w=ws[quiz.i]; if(!w){ quiz=null; drawQuiz(); return; }
+  const clue = wl==="de" ? (w.h||"") : mask(w.h, w.w);
+  q.innerHTML=`<b>Quiz</b> <span class="sub">${canSpeak?"listen and type what you hear":"type the word"}</span>
+    <div class="prompt">${canSpeak?`<button class="btn" id="qsay">🔊 Say it again</button> `:""}${clue?`<span>${escT(clue)}</span>`:""}</div>
+    <form id="qf" autocomplete="off"><input type="text" id="qa" spellcheck="false" autocapitalize="off" autocorrect="off" aria-label="Your spelling" ${quiz.ans!==null?"disabled":""} value="${quiz.ans!==null?escT(quiz.ans):""}"></form>
+    <div id="qr" style="margin-top:8px"></div>`;
+  if(canSpeak) q.querySelector("#qsay").onclick=()=>speak(w.w,L.lang);
+  const qr=q.querySelector("#qr");
+  if(quiz.ans===null){
+    if(canSpeak && !quiz.spoken){ quiz.spoken=true; speak(w.w,L.lang); }
+    q.querySelector("#qa").focus();
+    q.querySelector("#qf").onsubmit=e=>{ e.preventDefault(); const a=q.querySelector("#qa").value.trim(); if(!a) return; quiz.ans=a;
+      const ok = a===w.w || (wl==="en" && a.toLowerCase()===w.w.toLowerCase());
+      quiz.ok=ok; const arr=[...lists[wl].words]; arr[quiz.i]=Object.assign({},w,ok?{ok:(w.ok||0)+1}:{bad:(w.bad||0)+1}); lists[wl]={words:arr}; queue("lists/"+wl); drawQuiz(); };
+  } else {
+    qr.innerHTML = (quiz.ok?`<span class="res-ok">Correct ✓</span>`:`<span class="res-bad">Not quite ✗</span> — it's <b style="font-family:var(--mono)">${escT(w.w)}</b>. Write it 3× by hand.`)+
+      ` <button class="btn primary" id="qn">Next word</button> <button class="btn" id="qx">Stop</button>`;
+    qr.querySelector("#qn").onclick=()=>{ quiz={i:pickWord(),ans:null}; renderWords(); };
+    qr.querySelector("#qx").onclick=()=>{ quiz=null; renderWords(); };
+    qr.querySelector("#qn").focus();
+  }
+}
+
+// ---------------- find
+let findQ="";
+function renderFind(){
+  const el=document.getElementById("v-find");
+  el.innerHTML=`<input type="search" id="fq" placeholder="Search the whole plan: DMA, Goethe, Project 2, Darmstadt…" value="${escT(findQ)}" style="width:100%" aria-label="Search the plan"><div class="hits" id="hits"></div>`;
+  const inp=el.querySelector("#fq"); inp.oninput=()=>{ findQ=inp.value; drawHits(); }; drawHits(); inp.focus();
+}
+function drawHits(){
+  const box=document.getElementById("hits"); const q=findQ.trim().toLowerCase();
+  if(q.length<2){ box.innerHTML=`<div class="sub">Type at least 2 letters.</div>`; return; }
+  const hits=[]; for(const day of DAYS) for(const t of day.t){ if((t.t+" "+(t.h||"")).toLowerCase().includes(q)) hits.push({d:day.d,t}); }
+  const re=new RegExp("("+reEsc(escT(q))+")","ig");
+  box.innerHTML = (hits.length?`<div class="sub">${hits.length} matches${hits.length>200?" · showing first 200":""}</div>`:`<div class="empty">No matches.</div>`)+
+    hits.slice(0,200).map(x=>`<button class="hit" data-go="${x.d}" style="--kc:var(--k-${x.t.k})"><span class="d">${fmt(x.d,{day:"numeric",month:"short",year:"2-digit"})}${isDone(x.t)?" ✓":""}</span><span>${esc(x.t.t).replace(re,"<mark>$1</mark>")}</span></button>`).join("");
+  box.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>{cur=b.dataset.go;switchView("today");});
+}
+
+// ---------------- wiring
+const VIEWS={today:renderToday,week:renderWeek,month:renderMonth,stats:renderStatsView,phases:renderPhases,courses:renderCourses,words:renderWords,find:renderFind};
+function render(){ renderStats(); VIEWS[view](); }
+function switchView(v){
+  view=v; document.querySelectorAll("nav.tabs button").forEach(b=>b.setAttribute("aria-selected", String(b.dataset.v===v)));
+  Object.keys(VIEWS).forEach(x=>document.getElementById("v-"+x).hidden = x!==v);
+  try{ localStorage.setItem("rtg2028-view", v); }catch(e){}
+  render(); window.scrollTo(0,0);
+}
+document.querySelectorAll("nav.tabs button").forEach(b=>b.onclick=()=>switchView(b.dataset.v));
+document.addEventListener("change", e=>{
+  const c=e.target; if(c.matches('input[type=checkbox][data-id]')){ setStatus(TASK[c.dataset.id], c.checked?true:null); render(); }
+});
+document.addEventListener("click", e=>{
+  const f=e.target.closest("[data-focus]"); if(f){ startTimer(TASK[f.dataset.focus]); return; }
+  const s=e.target.closest("[data-skip]"); if(s){ const t=TASK[s.dataset.skip]; setStatus(t, status(t)==="s"?null:"s"); render(); }
+});
+document.addEventListener("keydown", e=>{
+  if(e.target.closest("input,textarea,select")||e.ctrlKey||e.metaKey||e.altKey) return;
+  if(view==="today"){ if(e.key==="ArrowLeft") go(-1); else if(e.key==="ArrowRight") go(1); else if(e.key==="t"||e.key==="T"){ cur=TODAY; render(); } }
+  else if(view==="week"){ if(e.key==="ArrowLeft") go(-7); else if(e.key==="ArrowRight") go(7); }
+});
+
+loadLocal();
+Object.keys(state).forEach(migrate);
+try{ const v=localStorage.getItem("rtg2028-view"); if(v && VIEWS[v]) view=v; }catch(e){}
+switchView(view);
+
+// ---------------- connect the shared store: one subscription per collection
+(async function(){
+  const api = window.claude && window.claude.use ? await window.claude.use("db") : null;
+  if(!api){ mode="local"; showBanner("Ticks are saved in this browser only. Open this page from claude.ai while signed in to save them to your tracker."); renderStats(); return; }
+  db = api; mode="db"; showBanner("");
+  const offline = JSON.parse(JSON.stringify({months:state, weeks, lists}));
+  const first = {months:true, weeks:true, lists:true};
+  const refresh = ()=>{ saveLocal(); const a=document.activeElement; if((a && a.matches("textarea,input[type=text],input[type=search]")) || (view==="words" && quiz)) renderStats(); else render(); };
+  const onErr = err=>showBanner("Live sync stopped ("+(err&&err.code)+"). Reload the page to reconnect; your changes are kept in this browser.");
+  db.collection("months").onSnapshot(snap=>{
+    snap.docs.forEach(doc=>{ const path="months/"+doc.id; if(pending.has(path)) return; const v=doc.data()||{}; state[doc.id]={done:Object.assign({}, v.done||{}), notes:Object.assign({}, v.notes||{})}; if(migrate(doc.id)) pending.add(path); });
+    if(first.months){ first.months=false;
+      for(const m of Object.keys(offline.months)){ const s=get(m), o=offline.months[m]; let ch=false;
+        for(const k of Object.keys(o.done||{})){ if(!s.done[k]){ s.done[k]=o.done[k]; ch=true; } }
+        for(const k of Object.keys(o.notes||{})){ if(!s.notes[k]){ s.notes[k]=o.notes[k]; ch=true; } }
+        if(migrate(m)) ch=true; if(ch) pending.add("months/"+m); } }
+    if(pending.size) flush(); refresh();
+  }, onErr);
+  db.collection("weeks").onSnapshot(snap=>{
+    snap.docs.forEach(doc=>{ if(pending.has("weeks/"+doc.id)) return; weeks[doc.id]=Object.assign({}, doc.data()||{}); });
+    if(first.weeks){ first.weeks=false; for(const w of Object.keys(offline.weeks)){ if(!weeks[w] || !Object.keys(weeks[w]).length){ weeks[w]=offline.weeks[w]; pending.add("weeks/"+w); } } if(pending.size) flush(); }
+    refresh();
+  }, onErr);
+  db.collection("lists").onSnapshot(snap=>{
+    snap.docs.forEach(doc=>{ if(pending.has("lists/"+doc.id)) return; const v=doc.data()||{}; lists[doc.id]={words:Array.isArray(v.words)?v.words.map(x=>Object.assign({},x)):[]}; });
+    if(first.lists){ first.lists=false; for(const k of Object.keys(offline.lists)){ if(!lists[k]) lists[k]={words:[]}; const have=new Set(lists[k].words.map(x=>x.w.toLowerCase())); const add=(offline.lists[k].words||[]).filter(x=>!have.has(x.w.toLowerCase())); if(add.length){ lists[k]={words:[...lists[k].words,...add]}; pending.add("lists/"+k); } } if(pending.size) flush(); }
+    refresh();
+  }, onErr);
+})();
+})();
+</script>
