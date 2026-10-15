@@ -4,7 +4,7 @@
 > **Start point (honest):** June–September 2026 produced no study. The real restart was **October 5, 2026** (`18_RESTART_8_WEEKS.md`).
 > **Fixed dates this plan is built on:**
 > - **Bond ends 1 Oct 2027** (+1 day for every leave day taken). Resign on/after that date → **3-month notice → last working day ≈ 1 Jan 2028.**
-> - **Bremerhaven ESD = summer intake only** (April). uni-assist deadline **31 Dec** every year.
+> - **Bremerhaven ESD = summer intake only** (April), deadline 31 Dec. ⚠️ **Since Oct 15, 2026 a long shot**: Control Systems (3 Indian credits ≈ 4.5 ECTS) is probably below its 5 CP rule, and credits can't be made up. **The real target is Winter 2028.**
 > - **Darmstadt** portal opens **December** for the next winter. **Dortmund** Pre-Check from **January**, application **1 Apr – 15 Jun**.
 > - CGPA **7.87 → German ≈ 2.28**. Backlogs: **15** (14 credit + 1 non-credit), all cleared.
 
@@ -26,10 +26,10 @@ AUG 2027 ─┬─ IELTS INTENSIVE  (embedded on maintenance)
 SEP 2027 ─┤
 OCT 2027 ─┘  IELTS exam · BOND ENDS 1 Oct → resign · notice starts
 NOV 2027 ─┬─ PHASE 4  FreeRTOS + PCB (OrCAD) · APPLICATIONS WAVE 1
-DEC 2027 ─┘           Bremerhaven (31 Dec) · Darmstadt (Dec) · TUHH
+DEC 2027 ─┘           Darmstadt (Dec) · TUHH · (Bremerhaven long shot, 31 Dec)
 JAN 2028 ─┬─ FREE (last working day ≈ 1 Jan) · full-time portfolio
   …       │  Dortmund Pre-Check · Lübeck · applications WAVE 2
-MAR 2028 ─┘  ── if Bremerhaven admits you: fly ~March, start April ──
+MAR 2028 ─┘  ── (only if the Bremerhaven long shot works: fly ~March) ──
 APR 2028 ─┬─ APPLICATIONS WAVE 3 (Dortmund, RWU, FAU, HAW, Chemnitz, Deggendorf)
 JUL 2028 ─┘
 AUG 2028 ─┬─ Admission → blocked account → visa → flight
@@ -65,7 +65,7 @@ OCT 2028 ──  START WINTER SEMESTER 2028
 - [ ] **Start The English Master Course** — 30 min/day (commute or lunch). Turn **autocorrect OFF** on phone + laptop
 - [ ] Bond date ✅ (1 Oct 2027) → ask HR for it **in writing**
 - [ ] Ask a colleague: does Unistring use OrCAD/Allegro? Confirm the Cadence licence may be used for weekend learning
-- [ ] Bremerhaven follow-up to Mr Lüders: is **Control Systems (3 credits)** enough for the 5 CP control requirement?
+- [x] Bremerhaven follow-up to Mr Lüders → **Oct 15 answer: can't assess, no make-up allowed, advised to look elsewhere** → Bremerhaven is now a long shot
 - [ ] **Oct 19:** one follow-up email to Chemnitz + RWU if still silent
 
 #### November 2026 — Phase 0 (weeks 5–8)
@@ -127,11 +127,11 @@ OCT 2028 ──  START WINTER SEMESTER 2028
 - [ ] **1 Oct: bond ends** (+leave days) → **submit resignation** → notice runs to ≈ **1 Jan 2028**
 - [ ] Ask HR for an **experience/service certificate** now (needed for applications before you leave)
 - [ ] **IELTS exam** (early Oct). Below 7.0 → retake in November
-- [ ] uni-assist: create account; the **Bremerhaven Summer 2028** round opens ~mid/late October
+- [ ] uni-assist: create account (optional: the Bremerhaven Summer 2028 long-shot round opens ~mid/late October)
 - [ ] Draft motivation letter + Europass CV (`05_APPLICATION_DOCS.md`)
 
 #### November 2027 — Phase 4 + Applications Wave 1
-- [ ] **Submit Bremerhaven via uni-assist** (aim Nov 30; hard deadline Dec 31)
+- [ ] *(Optional long shot)* Bremerhaven via uni-assist (aim Nov 30; hard deadline Dec 31) — only if the extra uni-assist fee is worth a lottery ticket to you
 - [ ] **Email TUHH** again (they asked you to write in November 2027)
 - [ ] Udemy **Mastering RTOS (FreeRTOS)** → port Project 2 to FreeRTOS tasks
 - [ ] Udemy **OrCAD/Allegro** — start; design the ECG board schematic
@@ -141,7 +141,7 @@ OCT 2028 ──  START WINTER SEMESTER 2028
 - [ ] **Darmstadt (IMSEIT)** portal opens → apply (own portal, no uni-assist)
 - [ ] **TUHH** application window opens (1 Dec – 1 Mar)
 - [ ] Optional: FH Westküste Microelectronic Systems (summer intake, 1 Dec – 15 Jan)
-- [ ] **31 Dec — Bremerhaven deadline** (should already be submitted)
+- [ ] 31 Dec — Bremerhaven deadline (only if applying)
 - [ ] Loan research (SBI Scholar / HDFC Credila) — only if family funding needs a backup
 
 ### 2028
@@ -153,7 +153,7 @@ OCT 2028 ──  START WINTER SEMESTER 2028
 - [ ] Full-time portfolio: **Project 3 = custom PCB** (OrCAD → order from a PCB fab) running FreeRTOS firmware
 - [ ] Udemy **MCU2** (owned): timers, PWM, low power
 
-#### February 2028 — Bremerhaven decision window
+#### February 2028 — Bremerhaven decision window (only if you applied)
 - [ ] **If Bremerhaven admits you:** open blocked account (€11,904 in 2026 — check the current amount), health insurance, **VFS visa appointment immediately**
 - [ ] Otherwise: continue Project 3; German A2 (Nicos Weg)
 
@@ -186,9 +186,9 @@ OCT 2028 ──  START WINTER SEMESTER 2028
 |:---|:---|
 | Restart review fails (Nov 29) | Repeat 8 weeks at the same size. Everything after shifts ~2 months; Bremerhaven April 2028 likely drops, **Winter 2028 is still fine** |
 | IELTS < 7.0 in Oct | Retake Nov. Most targets need only 6.0–6.5; 7.0 is the comfort target |
-| IELTS not done by Dec 2027 | Skip Bremerhaven 2028 → apply Bremerhaven **April 2029** + Winter 2028 elsewhere |
+| IELTS not done by Dec 2027 | Darmstadt's portal closes — retake IELTS by Mar 2028; Dortmund, Lübeck, HAW, Chemnitz, Deggendorf deadlines (May–Jul 2028) are still open |
 | Projects behind schedule | Apply with what exists — 1 solid, documented project beats 3 half-done ones |
-| No admission for Winter 2028 | Bremerhaven **April 2029** (deadline 31 Dec 2028) + Winter 2029 round, with a stronger portfolio |
+| No admission for Winter 2028 | Summer 2029 programs (e.g. FH Westküste, deadline 15 Jan) + Winter 2029 round, with a stronger portfolio; widen the list via the DAAD database |
 | Visa late for Bremerhaven | Defer to Winter 2028 offers already in hand |
 
 ---

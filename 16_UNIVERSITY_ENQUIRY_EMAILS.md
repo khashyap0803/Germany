@@ -23,7 +23,7 @@
 | # | University | Program | Fit | Sent | Reply |
 |:--|:---|:---|:---|:---|:---|
 | 1 | FH Dortmund | M.Eng. Embedded Systems Engineering | ⭐ Core | ✅ Oct 5 | 📨 Ticket #202610058159 (Oct 5) — admissions closed; see below |
-| 2 | Hochschule Bremerhaven | M.Sc. Embedded Systems Design | ⭐ Core | ✅ Oct 5 | ✅ **REAL ANSWER Oct 6** (Christoph Lüders) — **exam attempts have no bearing**; ⚠️ **summer intake only, deadline 31 Dec**; ⚠️ mechanical-engineering 5 CP must already be in your degree · see below |
+| 2 | Hochschule Bremerhaven | M.Sc. Embedded Systems Design | ⭐ Core | ✅ Oct 5 | ✅ **REAL ANSWER Oct 6** (Christoph Lüders) — **exam attempts have no bearing**; ⚠️ **summer intake only, deadline 31 Dec**; ⚠️ mechanical-engineering 5 CP must already be in your degree · **2nd reply Oct 15: control credits can't be confirmed, no make-up allowed, advised to look elsewhere → ⚠️ LONG SHOT** · see below |
 | 3 | HAW Hamburg (+ FH Westküste) | M.Sc. Microelectronic Systems | ⭐ Core | ✅ Oct 5 | ➖ Partial answer Oct 5 (Frau Pleus) — only explained intakes (summer @ FH Westküste, Dec 1–Jan 15; winter @ HAW). Backlog question not answered. |
 | 4 | TH Deggendorf | M.Sc. Electrical Engineering and Information Technology | ⭐ Core | ✅ Resent to `welcome@th-deg.de` Oct 5 | 🤖 Ticket #4232091 (Oct 5) — form reply: no individual answers on eligibility; use FAQ + **online consultation sessions** |
 | 5 | Hochschule Darmstadt (h_da) | M.Sc. Electrical Engineering and Information Technology (International) | ⭐ Core | ✅ Oct 5 | ✅ **REAL ANSWER Oct 5** from Sabine François (IMSEIT Course Coordinator) — **backlogs: NO effect** · see below |
@@ -48,6 +48,16 @@ From **Christoph Lüders, Student Advisory Service** (`studienberatung@hs-bremer
 4. **🔴 ESD starts in the SUMMER semester ONLY (April).** Apply via **uni-assist**, deadline **always 31 December**. The Summer 2028 round opens on uni-assist around **mid/late October 2027**.
    ➡️ **Timeline impact:** for an **April 2028** start you must apply by **31 Dec 2027**, so IELTS, APS and German A1 must all be done by ~**November 2027**. If that's too tight (or the bond doesn't allow it), the next chance is **April 2029** (deadline 31 Dec 2028).
 5. **Fees:** semester fee **€438** (from Winter 2026/27), no tuition. uni-assist charges a processing fee.
+
+### ⚠️ Bremerhaven follow-up (sent Oct 14, answered Oct 15, 2026)
+**You asked:** mechanical = Engineering Mechanics (4) + CAD and Drafting (2.5) + Robotics & Drones Lab (3) Indian credits; control = Control Systems (3 Indian credits). Is that enough for the 5 CP control requirement?
+**Mr Lüders' answer (summary):** Bremerhaven does not assess non-EU bachelor's degrees, so he can't say how the credits will convert. The ESD admission rules **don't allow missing subject knowledge or credits to be made up**, so "to be on the safe side" he recommends looking into other English-taught master's programmes (DAAD international-programmes database).
+**What it means:**
+- Mechanical looks fine (9.5 Indian credits ≈ 14 ECTS ≥ 5 CP).
+- Control: 3 Indian credits × 1.5 ≈ **4.5 ECTS < 5 CP** → probably rejected on this one rule, and it can't be fixed later.
+- uni-assist/the university might count control content from other subjects, but nobody will confirm that in advance. **Treat Bremerhaven as a long shot**: apply only if the extra uni-assist fee is worth it to you, and never build the timeline around April 2028.
+- **No reply needed.** If you want to be polite, send two lines: "Thank you for the honest answer — that helps me plan."
+- **Lesson for every other program:** check subject-specific CP rules before paying a fee, and multiply your Indian credits by ~1.5.
 
 ### ❌ What Freiburg's reply told us (Oct 6, 2026)
 From **Ursula Epe, Programme Co-ordination**: "Admission with a CGPA lower than **9/10** is **highly unlikely**." Backlogs: "does not give a good impression." IELTS 7.0 / TOEFL 95 required; Indian B.E. accepted "in principle". **Verdict: drop Freiburg.** Its official 2.9 cutoff is misleading; in practice it's far more selective.

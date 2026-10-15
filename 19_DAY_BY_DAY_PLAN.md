@@ -1,6 +1,6 @@
 # 19 — Day-by-Day Plan (Oct 5, 2026 → Oct 1, 2028)
 
-> Generated from `tools/gen_day_plan.py` (Oct 15, 2026). Same data as the online tracker: https://claude.ai/artifact/7hafZ8gt7CzNCSrRRy2Zd9
+> Generated from `tools/gen_day_plan.py` (last run 2026-10-15). Same data as the online tracker: https://claude.ai/artifact/7hafZ8gt7CzNCSrRRy2Zd9
 > Source of truth for phases: `07_MONTHLY_TIMELINE.md`. Times are minutes. Tick days in the tracker, not here.
 
 
@@ -65,7 +65,7 @@
 - [English] English Master Course: §2 (part) (30 min) — _Commute or lunch, 1.25× speed. Pause and repeat sentences aloud._
 - [English] Speak aloud 10 min: describe your day / a project / an opinion → record → listen once (10 min) — _Phone recorder. Listen for one mistake to fix tomorrow._
 - [Reading] Read 15 min: K.N. King Ch 6 (loops) (15 min) — _Before gym or at bedtime. Highlight 3 things to try on Saturday._
-- [Admin] Follow-up emails: Chemnitz + RWU (reply to your own sent mail), and Bremerhaven control-credit question if still unanswered (15 min)
+- [Admin] Follow-up emails: Chemnitz + RWU (reply to your own sent mail) (15 min)
 
 **Tue 20 Oct** · 75 min
 - [English] English Master Course: §2 (part) · §3 (part) (30 min) — _Commute or lunch, 1.25× speed. Pause and repeat sentences aloud._
@@ -2044,7 +2044,7 @@
 **Mon 18 Oct** · 60 min
 - [German] German maintenance: 10 min Anki or Easy German audio (10 min) — _Keep A1 alive while IELTS has priority._
 - [Reading] Read 20 min: preview '§1–5 RTOS intro, FreeRTOS project for STM32' (FreeRTOS book / OrCAD notes) (20 min)
-- [Admin] Create uni-assist account; check the Bremerhaven Summer 2028 round is open (30 min)
+- [Admin] Create uni-assist account (optional: Bremerhaven Summer 2028 long-shot round) (30 min)
 
 **Tue 19 Oct** · 30 min
 - [German] German maintenance: 10 min Anki or Easy German audio (10 min) — _Keep A1 alive while IELTS has priority._
@@ -2124,7 +2124,7 @@
 
 **Sat 06 Nov** · 300 min
 - [Course] Udemy Mastering RTOS: §14–16 Task states, delay APIs, notifications (part) · §17–19 Licensing, memory/stack, task deletion · §20–22 Interrupt vs task priority, ISR-safe APIs, hooks (part) (180 min)
-- [Application] Bremerhaven: customise motivation letter; gather uni-assist documents (120 min)
+- [Application] Gather uni-assist documents (VPD for Chemnitz/HAW) + decide on the Bremerhaven long shot (120 min)
 
 **Sun 07 Nov** · 130 min
 - [Course] Udemy Mastering RTOS: §20–22 Interrupt vs task priority, ISR-safe APIs, hooks (part) · §23 Queue management (part) (120 min)
@@ -2209,7 +2209,7 @@
 **Sat 27 Nov** · 360 min
 - [Course] Udemy OrCAD/Allegro: §4 Introducing OrCAD/Allegro (part) · §5 Symbol creation (IEEE) (part) (180 min)
 - [Project] Project 3 — Create / import symbols in OrCAD Capture (60 min)
-- [Application] 🎯 SUBMIT BREMERHAVEN via uni-assist (deadline 31 Dec) (120 min)
+- [Application] (Optional long shot) Bremerhaven via uni-assist — deadline 31 Dec. Otherwise: polish the Darmstadt motivation letter (120 min)
 
 **Sun 28 Nov** · 130 min
 - [Course] Udemy OrCAD/Allegro: §5 Symbol creation (IEEE) (part) (120 min)
@@ -2525,7 +2525,7 @@
 - [Project] Project 4 — nRF Connect SDK Fundamentals — lessons 3–4 (GPIO, logging) (day 2/3) (150 min)
 - [German] German A2: next Nicos Weg A2 lesson + 15 min speaking/writing (60 min)
 - [Course] NPTEL Software Engineering (IIT Kharagpur) — this week's lectures + assignment (for Dortmund's SE requirement) (60 min) — _Take the proctored exam (~₹1,000) at the end._
-- [Application] Bremerhaven decision expected — if admitted: blocked account (€11,904), insurance, VFS visa appointment IMMEDIATELY (60 min)
+- [Application] Bremerhaven decision (only if you applied) — if admitted: blocked account, insurance, VFS visa appointment immediately (60 min)
 
 **Tue 08 Feb** · 210 min
 - [Project] Project 4 — nRF Connect SDK Fundamentals — lessons 3–4 (GPIO, logging) (day 3/3) (150 min)

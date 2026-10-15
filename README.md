@@ -35,7 +35,7 @@
 | | |
 |:---|:---|
 | CGPA | **7.87/10** (First Class with Distinction) → German **≈ 2.28** |
-| Failed-then-passed exams | 15 (14 credit + 1 non-credit) — Darmstadt & Bremerhaven: no effect |
+| Failed-then-passed exams | 15 (14 credit + 1 non-credit) — Darmstadt & Bremerhaven: no effect (Bremerhaven is now a long shot on control credits) |
 | Bond | Ends **1 Oct 2027** (+1 day per leave day) → notice → free **≈ Jan 2028** |
 | IELTS target | 7.0 (exam early Oct 2027) |
 | German | Goethe A1 (Jul 2027) |
@@ -51,10 +51,10 @@
 | Jul 2027 | Goethe A1 exam |
 | Early Oct 2027 | IELTS exam |
 | 1 Oct 2027 | Bond ends → resign |
-| Nov–31 Dec 2027 | **Bremerhaven** (uni-assist) · Darmstadt portal (Dec) · TUHH |
+| Nov–31 Dec 2027 | **Darmstadt** portal (Dec) · TUHH · (optional) Bremerhaven long shot |
 | ≈ 1 Jan 2028 | Last working day |
 | Jan–Feb 2028 | Dortmund Pre-Check · Lübeck |
-| Apr 2028 | 🎓 Bremerhaven start (if admitted) |
+| Apr 2028 | (Bremerhaven start — only if the long shot works) |
 | Apr–15 Jul 2028 | Winter 2028 applications |
 | Oct 2028 | 🎓 Winter semester start |
 

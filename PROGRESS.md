@@ -32,7 +32,7 @@
 | 7 | Nov 16–22 | ☐ | ☐ Ch 11 pointers | ☐ RC low-pass filter | ☐ | |
 | 8 | Nov 23–29 | ☐ | ☐ Ch 12 + from-memory | ☐ Diode, transistor switch | ☐ | |
 
-**One-off tasks:** ☑ Bond end date from HR: **1 Oct 2027**, +1 day per leave day (Oct 14) · ☐ Get it **in writing** (notice period confirmed: 3 months, starting after the bond) · ☐ Ask colleague: OrCAD/Allegro at work? · ☑ Sent Mr Lüders the control/mechanical-credit question (no reply yet — follow up Oct 19 with the Chemnitz + RWU follow-ups) · ☐ Oct 19 follow-ups (Chemnitz, RWU) · ☑ Udemy cart bought (Oct 15 — all 8 verified in library, cart empty) · ☐ Start English Master Course + autocorrect OFF
+**One-off tasks:** ☑ Bond end date from HR: **1 Oct 2027**, +1 day per leave day (Oct 14) · ☐ Get it **in writing** (notice period confirmed: 3 months, starting after the bond) · ☐ Ask colleague: OrCAD/Allegro at work? · ☑ Mr Lüders answered (Oct 15): can't assess, no make-up → Bremerhaven = long shot · ☐ Oct 19 follow-ups (Chemnitz, RWU) · ☑ Udemy cart bought (Oct 15 — all 8 verified in library, cart empty) · ☐ Start English Master Course + autocorrect OFF
 **Week 8 review (Nov 29):** ☐ ≥6/8 weeks · ☐ 20+ programs · ☐ `swap()` from memory · ☐ explain Ohm/KVL/KCL/divider/RC · ☐ bond date confirmed
 
 **Parking lot** (ideas that came up — *don't act on them until Nov 29*):
@@ -51,8 +51,8 @@
 | **Jun 30, 2027** | APS + ECG | APS applied · ECG signal visible on PC | |
 | **Jul 31, 2027** | Project 2 + German | `stm32-ecg-monitor` with DSP on GitHub · Goethe A1 taken | |
 | **Oct 31, 2027** | IELTS + bond | IELTS score: ___ · resignation submitted · experience certificate requested | |
-| **Dec 31, 2027** | Wave 1 sent | Bremerhaven · Darmstadt · TUHH submitted | |
-| **Feb 29, 2028** | Wave 2 | Dortmund Pre-Check · Lübeck · Bremerhaven decision: ___ | |
+| **Dec 31, 2027** | Wave 1 sent | Darmstadt · TUHH submitted (+ Bremerhaven if you chose the long shot) | |
+| **Feb 29, 2028** | Wave 2 | Dortmund Pre-Check · Lübeck · Bremerhaven decision (if applied): ___ | |
 | **Mar 31, 2028** | Project 3 | Custom PCB + FreeRTOS firmware on GitHub | |
 | **Jul 15, 2028** | Wave 3 sent | All Winter 2028 applications submitted | |
 | **Sep 2028** | Visa | Visa in passport | |

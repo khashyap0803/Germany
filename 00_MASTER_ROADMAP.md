@@ -1,5 +1,5 @@
 # KHASHYAP — Master's in Embedded Systems (medical devices), Germany
-## Roadmap | Targets: **Summer 2028 (Bremerhaven, April)** and **Winter 2028 (October)**
+## Roadmap | Target: **Winter 2028 (October)** · Bremerhaven April 2028 = long shot only
 
 > **Last Updated**: October 15, 2026 — full review: real restart date, bond confirmed, verified transcript, university replies, final course list
 > **The month-by-month plan lives in `07_MONTHLY_TIMELINE.md`.** This file holds the profile, risks, money and contingencies.
@@ -44,7 +44,7 @@
 | Mechanical 5 CP | **Engineering Mechanics (4)**, CAD & Drafting (2.5), Robotics & Drones Lab (3), Digital Fabrication Lab (1.5) | ✅ |
 | Electrical 10 CP | Basic Electrical Eng (+lab), Network Analysis (+lab), Electronic Devices, Analog Circuits | ✅ |
 | Programming 5 CP | Problem Solving & Programming (+lab), C & Data Structures (+lab), Embedded C | ✅ |
-| Control 5 CP | **Control Systems (3 Indian credits ≈ 4.5 ECTS)** | ⚠️ borderline — ask Mr Lüders (Oct 2026) |
+| Control 5 CP | **Control Systems (3 Indian credits ≈ 4.5 ECTS)** | ❌ likely short — Mr Lüders (Oct 15, 2026): can't confirm, no make-up allowed → Bremerhaven = long shot |
 
 **Embedded strengths (for Darmstadt/Dortmund):** Embedded C **S**, RTOS **A**, Computer Architecture & Microprocessors **A**, Sensing Techniques & Sensor Systems **A**, Microcontrollers **B** + Lab **S**, Embedded Systems **B**, IoT **B** + Lab **S**.
 **Gap:** no course named *Software Engineering* (Dortmund lists it). Mitigation: an NPTEL *Software Engineering* certificate in Jan–Apr 2028 + documented engineering practice in your GitHub projects; Dortmund's Pre-Check decides.
@@ -77,7 +77,7 @@ Lowest pass = 4                                 →  1 + 3 × 2.13/6 ≈ 2.07
 | **Unistring work type** | Mostly documentation/analysis → Bremerhaven's experience bonus may not apply. You pass the 2.3 cutoff without it. |
 
 ### Honest odds (judgement, not statistics)
-- **Bremerhaven (criteria-based, backlogs OK):** good *if* IELTS + APS + A1 are done by Nov 2027 and control credits are accepted.
+- **Bremerhaven (criteria-based, backlogs OK):** ⚠️ **long shot since Oct 15, 2026** — Control Systems (3 Indian credits ≈ 4.5 ECTS) is probably below the 5 CP rule, the university won't pre-assess, and missing credits can't be made up. The advisor recommended other programmes.
 - **Darmstadt (competitive, 1,500+ applicants):** depends almost entirely on your portfolio.
 - **At least one admission for Summer/Winter 2028 from ~7 serious applications:** realistic — roughly **70–85%** *if* IELTS ≥ 6.5 and Projects 1–2 exist on GitHub. Without projects, closer to 50–60%.
 
@@ -87,7 +87,7 @@ Lowest pass = 4                                 →  1 + 3 × 2.13/6 ≈ 2.07
 
 | Priority | University — Program | Intake | Why |
 |:---|:---|:---|:---|
-| ⭐ 1 | **HS Bremerhaven — M.Sc. Embedded Systems Design** | **April 2028** (apply by 31 Dec 2027) | Medical devices named as an application area; criteria-based; backlogs OK |
+| ⚠️ LS | HS Bremerhaven — M.Sc. Embedded Systems Design | April 2028 (apply by 31 Dec 2027) | Long shot: control credits likely short (advisor, Oct 15, 2026) |
 | ⭐ 2 | **h_da Darmstadt — M.Sc. EE&IT (Embedded & Microelectronics)** | Oct 2028 (apply Dec 2027) | Backlogs OK; 1 year in industry; competitive |
 | ⭐ 3 | **FH Dortmund — M.Eng. Embedded Systems Engineering** | Oct 2028 (Pre-Check Jan–Feb 2028) | Strong fit; Pre-Check decides |
 | ⭐ 4 | **TH Lübeck — M.Sc. Biomedical Engineering** | Oct 2028 (1 Jan – 1 May 2028) | Free; next to Dräger |
@@ -134,8 +134,8 @@ Lowest pass = 4                                 →  1 + 3 × 2.13/6 ≈ 2.07
 4. **Leaving before the bond ends** — penalty applies; not recommended. The plan is built around 1 Oct 2027.
 5. **Resource gone** — download Udemy videos for offline use; keep PDFs backed up on the 512 GB SSD.
 6. **IELTS below 6.5** — retake within 4–6 weeks; most targets need 6.0–6.5.
-7. **German A1 exam failed** — retake; Bremerhaven needs A1 at enrolment, so it must be done before April 2028.
-8. **No admission for 2028** — Bremerhaven April 2029 (deadline 31 Dec 2028) + Winter 2029 round with a stronger portfolio; keep working meanwhile.
+7. **German A1 exam failed** — retake; Chemnitz needs A1, so it must be done before the July 2028 deadline.
+8. **No admission for 2028** — Summer 2029 programs + Winter 2029 round with a stronger portfolio (widen the list via the DAAD database); keep working meanwhile.
 
 ---
 
