@@ -33,6 +33,7 @@
 | 9 | Saarland University | M.Sc. Embedded Systems | ⬇️ **Deprioritised** — see below | ✅ Oct 5 | 🤖 Standard reply Oct 5: **GRE or GATE mandatory**; "only the very best students"; won't answer eligibility questions |
 | 10 | TU Hamburg (TUHH) | M.Sc. Microelectronics and Microsystems | Reach ("very good" grades expected) | ✅ Oct 5 | 📅 Personal reply Oct 5 (Sandra Steffens, STUDIS) — can't answer yet; **contact again in November 2027** |
 | 11 | Paderborn University | M.Sc. Electrical Systems Engineering | Reach (GRE required for non-EU) | ✅ Oct 5 | 🚫 Reply Oct 9 (International Office) — can't assess before a formal application; backlog question → "contact the faculty's course coordinator". Not pursued (GRE needed anyway). |
+| 12 | HS Anhalt (Köthen) | M.Sc. Biomedical Engineering | ⭐ DAAD backup (summer intake possible) | ⏳ Send Oct 22 | — |
 
 ### ⭐ What Bremerhaven's reply told us (Oct 6, 2026) — second real answer
 From **Christoph Lüders, Student Advisory Service** (`studienberatung@hs-bremerhaven.de`, +49 471 4823-556). He invited further questions.
@@ -389,6 +390,52 @@ My questions:
 2. Is a 4-year Indian B.E. in Electronics and Communication Engineering usually considered equivalent to your Bachelor's in Electrical Engineering and Information Technology?
 3. Is there a minimum final grade for admission?
 4. I am planning to apply for the Winter Semester 2028/29 through uni-assist (approximately April to 15 July). Is a German A1 certificate required at the time of application, or only at enrolment?
+
+I am happy to send my transcripts and degree certificate if that would help you assess my case.
+
+Thank you very much for your time. I look forward to hearing from you.
+
+Kind regards,
+Khashyap Katarapu
+B.E. (ECE), CBIT Hyderabad, 2026
+Hyderabad, India
+Email: nani080305@gmail.com
+Phone/WhatsApp: +91 9032827339
+```
+
+---
+
+## 12. HS Anhalt (Köthen) — M.Sc. Biomedical Engineering  *(DAAD backup, added Oct 15, 2026 — send Oct 22)*
+
+**To:** `prodekan.emw@hs-anhalt.de` (Prof. Dr. Marianne Maktabi, program-specific questions) · CC `Katrin.Klose@hs-anhalt.de` (organisational)
+
+> Grade ≤ 2.7 · IELTS 7.0 · winter **and summer** intake (summer window 15 Sep – 15 Jan via uni-assist). Tracks include Biomedical Device Technology and Biomedical Instrumentation.
+
+**Subject:**
+```
+Eligibility enquiry – M.Sc. Biomedical Engineering – Indian B.E. (ECE) with cleared backlogs
+```
+
+**Body:**
+```
+Dear Prof. Dr. Maktabi,
+
+I am planning to apply for the M.Sc. Biomedical Engineering at Hochschule Anhalt and would be grateful for your advice on my eligibility before I begin the application process.
+
+My academic background:
+- Degree: Bachelor of Engineering (B.E.) in Electronics and Communication Engineering
+- University: Chaitanya Bharathi Institute of Technology (CBIT), Hyderabad, India (affiliated to Osmania University) – 4-year programme, 8 semesters, graduated 2026
+- CGPA: 7.87 / 10, First Class with Distinction (lowest passing grade point: 5.0) – approximately 2.28 on the German scale by the modified Bavarian formula
+- Examination history: I did not pass 15 course examinations at the first attempt (14 credit-bearing courses and one non-credit course). I subsequently passed all of them, and my degree has been awarded with no pending subjects.
+
+Professional experience:
+Since August 2025 I have worked at Unistring Tech Solutions, a defence electronics company in Hyderabad, first as an intern and, since October 2026, as a full-time Junior Hardware Design Engineer. I am building embedded projects towards medical electronics (an ECG front-end with STM32 and digital filtering).
+
+My questions:
+1. Do examinations that were failed at the first attempt and later passed affect the selection procedure?
+2. Is a 4-year Indian B.E. in Electronics and Communication Engineering accepted as a suitable first degree, and would I be admitted to the 3-semester or the 4-semester variant?
+3. Are there specific subject or credit-point requirements (for example in medicine, mechanics or control engineering) that my degree must already contain?
+4. I am considering the Summer Semester 2028 (application via uni-assist by 15 January 2028). Are all compulsory modules offered in English?
 
 I am happy to send my transcripts and degree certificate if that would help you assess my case.
 

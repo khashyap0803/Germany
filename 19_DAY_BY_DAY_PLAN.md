@@ -78,11 +78,12 @@
 - [English] Speak aloud 10 min: describe your day / a project / an opinion → record → listen once (10 min) — _Phone recorder. Listen for one mistake to fix tomorrow._
 - [Reading] Read 15 min: K.N. King Ch 6 (loops) (15 min) — _Before gym or at bedtime. Highlight 3 things to try on Saturday._
 
-**Thu 22 Oct** · 75 min
+**Thu 22 Oct** · 90 min
 - [English] English Master Course: §6 (part) · §7 (part) (30 min) — _Commute or lunch, 1.25× speed. Pause and repeat sentences aloud._
 - [English] Speak aloud 10 min: describe your day / a project / an opinion → record → listen once (10 min) — _Phone recorder. Listen for one mistake to fix tomorrow._
 - [English] Handwritten paragraph (80–120 words) → AI marks ONLY mistakes → rewrite; add misspelled words to your spelling list (20 min) — _Autocorrect OFF. Don't let AI rewrite it for you._
 - [Reading] Read 15 min: K.N. King Ch 6 (loops) (15 min) — _Before gym or at bedtime. Highlight 3 things to try on Saturday._
+- [Admin] Enquiry email to HS Anhalt (Biomedical Engineering, Köthen): backlogs + ECE eligibility — template in 16 (15 min)
 
 **Fri 23 Oct** · 55 min
 - [English] English Master Course: §7 (part) (30 min) — _Commute or lunch, 1.25× speed. Pause and repeat sentences aloud._
@@ -2178,9 +2179,10 @@
 - [German] German maintenance: 10 min Anki or Easy German audio (10 min) — _Keep A1 alive while IELTS has priority._
 - [Reading] Read 20 min: preview '§1–3 Intro, install, introduction to PCBs' (FreeRTOS book / OrCAD notes) (20 min)
 
-**Sat 20 Nov** · 240 min
+**Sat 20 Nov** · 360 min
 - [Course] Udemy OrCAD/Allegro: §1–3 Intro, install, introduction to PCBs · §4 Introducing OrCAD/Allegro (part) (180 min)
 - [Project] Project 3 — Write requirements for the ECG board (power, AD8232, connector to Black Pill, test points) (60 min)
+- [Application] HS Anhalt Biomedical Engineering — SUMMER 2028 application via uni-assist (window 15 Sep – 15 Jan; grade ≤2.7, IELTS 7.0) (120 min)
 
 **Sun 21 Nov** · 130 min
 - [Course] Udemy OrCAD/Allegro: §4 Introducing OrCAD/Allegro (part) (120 min)
@@ -2256,9 +2258,10 @@
 - [German] German maintenance: 10 min Anki or Easy German audio (10 min) — _Keep A1 alive while IELTS has priority._
 - [Reading] Read 20 min: preview '§5 Symbol creation (IEEE)' (FreeRTOS book / OrCAD notes) (20 min)
 
-**Wed 08 Dec** · 30 min
+**Wed 08 Dec** · 75 min
 - [German] German maintenance: 10 min Anki or Easy German audio (10 min) — _Keep A1 alive while IELTS has priority._
 - [Reading] Read 20 min: preview '§5 Symbol creation (IEEE)' (FreeRTOS book / OrCAD notes) (20 min)
+- [Application] (Optional) TH Augsburg M.Eng. EE — summer 2028 (window 15 Nov – 15 Dec) · Nordhausen IoT window opens 1 Dec (45 min)
 
 **Thu 09 Dec** · 30 min
 - [German] German maintenance: 10 min Anki or Easy German audio (10 min) — _Keep A1 alive while IELTS has priority._
