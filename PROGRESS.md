@@ -32,7 +32,7 @@
 | 7 | Nov 16–22 | ☐ | ☐ Ch 11 pointers | ☐ RC low-pass filter | ☐ | |
 | 8 | Nov 23–29 | ☐ | ☐ Ch 12 + from-memory | ☐ Diode, transistor switch | ☐ | |
 
-**One-off tasks:** ☑ Bond end date from HR: **1 Oct 2027**, +1 day per leave day (Oct 14) · ☐ Get it **in writing** (notice period confirmed: 3 months, starting after the bond) · ☐ Ask colleague: OrCAD/Allegro at work? · ☐ Reply to Mr Lüders (control credits) · ☐ Oct 19 follow-ups (Chemnitz, RWU) · ☐ Buy Udemy cart · ☐ Start English Master Course + autocorrect OFF
+**One-off tasks:** ☑ Bond end date from HR: **1 Oct 2027**, +1 day per leave day (Oct 14) · ☐ Get it **in writing** (notice period confirmed: 3 months, starting after the bond) · ☐ Ask colleague: OrCAD/Allegro at work? · ☑ Sent Mr Lüders the control/mechanical-credit question (no reply yet — follow up Oct 19 with the Chemnitz + RWU follow-ups) · ☐ Oct 19 follow-ups (Chemnitz, RWU) · ☑ Udemy cart bought (Oct 15 — all 8 verified in library, cart empty) · ☐ Start English Master Course + autocorrect OFF
 **Week 8 review (Nov 29):** ☐ ≥6/8 weeks · ☐ 20+ programs · ☐ `swap()` from memory · ☐ explain Ohm/KVL/KCL/divider/RC · ☐ bond date confirmed
 
 **Parking lot** (ideas that came up — *don't act on them until Nov 29*):
