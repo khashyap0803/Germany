@@ -16,7 +16,7 @@
 | ⭐2 | **FH Dortmund — M.Eng. Embedded Systems Engineering** | Winter | **Pre-Check** from mid-Jan 2028 (precheck.go-study-europe.de) → apply **1 Apr – 15 Jun 2028** | ~€325 | Decided in Pre-Check | Grade 2.5 ✅ · ⚠️ **C1 English** (aim IELTS 7.0) · needs software eng., control, signal processing, systems eng. in your degree (**Software Engineering gap; control credits may be short like Bremerhaven — the Pre-Check gives a binding answer**) · emails unanswered while admissions are closed |
 | ⭐3 | **TH Lübeck — M.Sc. Biomedical Engineering** | Winter | Non-EU **1 Jan – 1 May 2028** | Free | Ask | Next to **Dräger** · accepts Electrical/Electronics bachelors |
 | ⭐4 | **HAW Hamburg — M.Sc. Microelectronic Systems** ⚠️ *not in the DAAD 2026/27 list — verify it still runs; the Biomedical Engineering MSc needs **GRE + A2** (not for you)* | Winter at HAW / Summer at FH Westküste | Winter: VPD → **1 Jun – 15 Jul 2028** · Summer (FH Westküste): 1 Dec – 15 Jan | ~€375 | Not answered | Hamburg medtech cluster (Philips, Olympus) |
-| 5 | **TU Chemnitz — M.Sc. Embedded Systems** | Winter | uni-assist ~Apr – **15 Jul 2028** | ~€296 | No reply | German **A1** required · expects op-amps, signal processing, MCUs, C/C++ |
+| ⭐5 | **TU Chemnitz — M.Sc. Embedded Systems** | Winter | uni-assist ~Apr – **15 Jul 2028** | ~€340 | ✅ **"usually no effect"** (written, Oct 28) | **No minimum grade** (individual assessment) · ECE "good chance" · A1 needed only for enrolment (conditional admission possible) · expects op-amps, signal processing, MCUs, C/C++ |
 | 6 | **TH Deggendorf — M.Sc. EE&IT** | Winter | **15 Apr – 15 Jul 2028** | **€582** (incl. €500 non-EU service fee) + €60 application | Ask in an **online consultation session** | Assessment test · A2 German within 2 semesters |
 | R | **TU Hamburg — M.Sc. Microelectronics & Microsystems** | Winter | **1 Dec 2027 – 1 Mar 2028** (pre-check) | ~€350 | "Contact us again **Nov 2027**" | Wants "very good" grades — reach |
 | R | **FAU Erlangen — M.Sc. Medical Engineering (Medical Robotics, English)** | Winter | **31 May 2028** | Free | Ask | Grade ≤2.5 ✅ · online admission test · *Medical Electronics* track is German-only · next to Siemens Healthineers |
@@ -80,7 +80,7 @@ transfer functions & block diagrams → **feedback loops** → **stability** (Ro
 | When | Action |
 |:---|:---|
 | ~~Oct 2026~~ | ✅ Asked Mr Lüders (Oct 14) → answer Oct 15: can't assess, no make-up allowed, "look into other programmes" → Bremerhaven = long shot |
-| **Oct 19, 2026** | One follow-up to Chemnitz and RWU if still silent |
+| **Oct 19, 2026** | One follow-up to Chemnitz and RWU if still silent → ✅ Chemnitz answered Oct 28 |
 | **Oct 22, 2026** | Enquiry email to **HS Anhalt** (Biomedical Engineering) — backlogs + ECE eligibility |
 | **2027** | Join a **TH Deggendorf online consultation session** and ask the backlog question |
 | **Oct 2027** | uni-assist account · (optional) Bremerhaven Summer 2028 round opens |

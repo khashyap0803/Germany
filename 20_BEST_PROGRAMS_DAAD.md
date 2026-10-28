@@ -29,7 +29,7 @@ The bilingual programs that *do* accept A1 don't fit you:
 | 2 | **TH Lübeck — M.Sc. Biomedical Engineering** | Medical devices at its core; joint with Uni Lübeck | ✅ "electronics, information technology" named · ≤ 2.5 ✅ · B2 | 1 Jan – 1 May | **Dräger** (ventilators, monitors), Euroimmun, Olympus |
 | 3 | **HS Anhalt (Köthen) — M.Sc. Biomedical Engineering** | Tracks: **Biomedical Device Technology, Instrumentation, Signal Processing**; **summer intake too** | ✅ ≤ 2.7 · IELTS **7.0** | 15 Mar–15 Jul · **15 Sep–15 Jan** | Leipzig/Halle (smaller market) |
 | 4 | **FH Dortmund — M.Eng. Embedded Systems Engineering** | Pure embedded | ✅ ≤ 2.5 · ⚠️ **C1 English** (IELTS ~7.0) · needs control + software-engineering content → binding **Pre-Check** | Pre-Check Jan → apply 1 Apr – 15 Jun | Ruhr area: Elmos Semiconductor, industrial automation and electronics firms |
-| 5 | **TU Chemnitz — M.Sc. Embedded Systems** | University (TU), strong embedded chair | ✅ German **A1** (you'll have it Jul 2027) · B2 English · board decides ECE equivalence | until 15 Jul | Saxony: Silicon Saxony chip cluster, automotive suppliers |
+| 5 | **TU Chemnitz — M.Sc. Embedded Systems** | University (TU), strong embedded chair | ✅ **Confirmed by email (Oct 28):** backlogs usually no effect · **no minimum grade** · ECE "good chance" · A1 only at enrolment · B2 English | until 15 Jul | Saxony: Silicon Saxony chip cluster, automotive suppliers |
 
 ## 🥈 TIER 2 — strong additions (new from this search)
 

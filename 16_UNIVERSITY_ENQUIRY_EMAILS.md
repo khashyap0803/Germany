@@ -28,7 +28,7 @@
 | 4 | TH Deggendorf | M.Sc. Electrical Engineering and Information Technology | ⭐ Core | ✅ Resent to `welcome@th-deg.de` Oct 5 | 🤖 Ticket #4232091 (Oct 5) — form reply: no individual answers on eligibility; use FAQ + **online consultation sessions** |
 | 5 | Hochschule Darmstadt (h_da) | M.Sc. Electrical Engineering and Information Technology (International) | ⭐ Core | ✅ Oct 5 | ✅ **REAL ANSWER Oct 5** from Sabine François (IMSEIT Course Coordinator) — **backlogs: NO effect** · see below |
 | 6 | RWU Ravensburg-Weingarten | M.Eng. Electrical Engineering and Embedded Systems | Good (€1,500/sem fee) | ✅ Oct 5 | ⏳ No reply yet |
-| 7 | TU Chemnitz | M.Sc. Embedded Systems | Good (university) | ✅ Oct 5 | ⏳ No reply yet |
+| 7 | TU Chemnitz | M.Sc. Embedded Systems | ⭐ **Core (upgraded Oct 28)** | ✅ Oct 5 | ✅ **REAL ANSWER Oct 28** (Sven Quinger, academic advisor) — backlogs usually **no effect**; ECE "good chance"; **no minimum grade**; **A1 not needed to apply** (conditional admission) · see below |
 | 8 | University of Freiburg | M.Sc. Embedded Systems Engineering | ❌ **DROPPED** | ✅ Oct 5 | ❌ **Honest answer Oct 6** (Ursula Epe): "admission with a CGPA lower than 9/10 is **highly unlikely**"; backlogs "do not give a good impression" |
 | 9 | Saarland University | M.Sc. Embedded Systems | ⬇️ **Deprioritised** — see below | ✅ Oct 5 | 🤖 Standard reply Oct 5: **GRE or GATE mandatory**; "only the very best students"; won't answer eligibility questions |
 | 10 | TU Hamburg (TUHH) | M.Sc. Microelectronics and Microsystems | Reach ("very good" grades expected) | ✅ Oct 5 | 📅 Personal reply Oct 5 (Sandra Steffens, STUDIS) — can't answer yet; **contact again in November 2027** |
@@ -59,6 +59,16 @@ From **Christoph Lüders, Student Advisory Service** (`studienberatung@hs-bremer
 - uni-assist/the university might count control content from other subjects, but nobody will confirm that in advance. **Treat Bremerhaven as a long shot**: apply only if the extra uni-assist fee is worth it to you, and never build the timeline around April 2028.
 - **No reply needed.** If you want to be polite, send two lines: "Thank you for the honest answer — that helps me plan."
 - **Lesson for every other program:** check subject-specific CP rules before paying a fee, and multiply your Indian credits by ~1.5.
+
+### ⭐ What TU Chemnitz's reply told us (Oct 28, 2026) — fourth real answer
+From **Sven Quinger, Academic Advisor, Faculty of EE&IT** (`studienberatung@etit.tu-chemnitz.de`, +49 371 531 24055).
+1. **Backlogs:** "Usually, this has **no effect** on the evaluation." → **third university to say backlogs don't count** (after Darmstadt and Bremerhaven).
+2. **ECE vs their EE&IT bachelor's:** depends on the curriculum, "but usually there should be a **good chance**". → Send the CBIT syllabus with the application so the board can compare.
+3. **Minimum grade:** **none** — each application is assessed individually.
+4. **German A1:** you can **apply without it**. If eligible, you get a **conditional admission** and enrol once you show A1.
+   ➡️ Your Goethe A1 is planned for **Jul 2027**, well before the 15 Jul 2028 deadline, so this is only a safety net.
+
+**Verdict:** Chemnitz moves up to **core**. It's a university (TU), tuition-free, embedded-focused, and now confirmed on backlogs, grade and German. **No reply needed** — optional two-line thank-you.
 
 ### ❌ What Freiburg's reply told us (Oct 6, 2026)
 From **Ursula Epe, Programme Co-ordination**: "Admission with a CGPA lower than **9/10** is **highly unlikely**." Backlogs: "does not give a good impression." IELTS 7.0 / TOEFL 95 required; Indian B.E. accepted "in principle". **Verdict: drop Freiburg.** Its official 2.9 cutoff is misleading; in practice it's far more selective.

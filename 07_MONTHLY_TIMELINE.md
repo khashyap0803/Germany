@@ -66,7 +66,7 @@ OCT 2028 ──  START WINTER SEMESTER 2028
 - [ ] Bond date ✅ (1 Oct 2027) → ask HR for it **in writing**
 - [ ] Ask a colleague: does Unistring use OrCAD/Allegro? Confirm the Cadence licence may be used for weekend learning
 - [x] Bremerhaven follow-up to Mr Lüders → **Oct 15 answer: can't assess, no make-up allowed, advised to look elsewhere** → Bremerhaven is now a long shot
-- [ ] **Oct 19:** one follow-up email to Chemnitz + RWU if still silent
+- [x] **Oct 19:** follow-up to Chemnitz + RWU → **Chemnitz answered Oct 28** (backlogs no effect, no minimum grade, A1 only for enrolment)
 
 #### November 2026 — Phase 0 (weeks 5–8)
 - [ ] 🪔 Diwali week (Nov 8) = buffer
